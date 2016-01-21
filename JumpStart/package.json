@@ -1,0 +1,14 @@
+{
+  "name": "Movie_entries",
+  "versions": "0.1.0",
+  "description": "Practice on 0119",
+  "main": "app.js",
+  "dependencies": {
+    "consolidate": "~0.13.1",
+    "express": "~4.13.3",
+    "multer": "^1.1.0",
+    "nunjucks": "~2.2.0"
+  },
+  "author": "Shannon Bradhaw",
+  "license": "0BSD"
+}

@@ -1,7 +1,7 @@
 //upload the file , call the submit module , send the status to user
 
 function route(app, mongo){	
-	app.get('/submit.html',function(req,res){
+	app.get('/submit',function(req,res){
 		res.render('submit');
 	});
 }

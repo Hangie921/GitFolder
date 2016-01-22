@@ -1,4 +1,21 @@
 html
 	head
+	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+	script(src="../js/jquery_fullPage.js")
+	//link(href="../css/jquery_fullPage.css", rel='stylesheet')
+	link(href="../css/index.css", rel='stylesheet')
+	script(src="../js/index_fullpage.js")
 	body
-		h1 != "hihihihi"
+		#fullpage
+			.section#sec1
+				h1 Index
+				li 
+					a(href='/submit') submit
+				li 
+					a(href='/coming') coming soon
+			.section#sec2
+				h2 Section2
+			.section#sec3
+				h2 Section3
+			.section#sec4
+				h2 Section4

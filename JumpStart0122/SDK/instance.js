@@ -14,6 +14,7 @@ var config = require ("../FrontEnd/config/server_init.json");
 function initApp(){
 	app.set("views",config.server.view_path);
 	app.set('view engine',config.server.view_engine);
+	app.use( express.static( "../FrontEnd/static" ) );
 	var server = app.listen(3000,function(){  //initial the server 
 			server.address().port = config.server.port;
 			console.log("Express server listening on port %s ",config.server.port);

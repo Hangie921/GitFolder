@@ -3,6 +3,7 @@ var instance = require("../SDK/instance"),
 	index_page = require("./controller/index"),
 	submit_page = require("./controller/submit"),
 	coming_page = require("./controller/coming_soon");
+	upload = require("./controller/upload");
 
 var app = instance.startApp(),
 	mongo = instance.startMongo();
@@ -15,6 +16,7 @@ var app = instance.startApp(),
 index_page.index_route(app,mongo);
 submit_page.submit_route(app,mongo);
 coming_page.coming_route(app,mongo);
+upload.route(app,mongo);
 
 
 

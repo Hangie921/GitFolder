@@ -1,15 +1,10 @@
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Submit</h1>
+head
+	title Submit
+	meta(charset='UTF-8')
+
+body
+	h1 Submit
 	
-	<form action="/upload" enctype="multipart/form-data" method="post">
-    	<input type="file" name="upload">
-    	<input type="submit" value="Upload file" />
-    </form>
-
-
-</body>
-</html>
+	form(action="/upload", enctype="multipart/form-data", method="post")
+		input(type='file', name='upload')
+		input(type="submit", value="Upload file")

@@ -5,7 +5,7 @@
 		"port":3000,
 		"static_folder": "../static",
 		"view_engine": "jade",
-		"view_path": "../view",
+		"view_path": "../FrontEnd/view",
 		"upload_path": "../upload"
 		},
 	"mongo":{

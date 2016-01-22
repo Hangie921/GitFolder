@@ -1,0 +1,20 @@
+
+{
+	"server":{
+		
+		"port":3000,
+		"static_folder": "../static",
+		"view_engine": "jade",
+		"view_path": "../view",
+		"upload_path": "../upload"
+		},
+	"mongo":{
+		
+		"url": "localhost",
+		"port": "27017",
+		"db":"",
+		"auth": "",
+		"user_name": "",
+		"user_password": ""
+	}
+}

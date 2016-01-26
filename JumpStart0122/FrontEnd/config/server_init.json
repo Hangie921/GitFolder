@@ -9,10 +9,9 @@
 		"upload_path": "../upload"
 		},
 	"mongo":{
-		
 		"url": "localhost",
 		"port": "27017",
-		"db":"",
+		"db":"jumpstart",
 		"auth": "",
 		"user_name": "",
 		"user_password": ""

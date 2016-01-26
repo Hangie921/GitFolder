@@ -1,9 +1,10 @@
-//start the server and the mongo , return a combination object of the both
+//init the server and the mongo , return a combination of the both
 
 var express = require("express"),
 	// jade = require("jade"),
 	app = express(),
-	mongo = require("mongodb"),
+	MongoClient = require('mongodb').MongoClient,
+	Server = require("mongodb").Server,
 	assert = require('assert'),
 	fs = require('fs'),
 	http = require('http');
@@ -22,12 +23,12 @@ function initApp(){
 	return app;
 }
 
-function initMongo(){
-	var MongoClient = mongo.connect("mongodb://localhost:27017/test1",function(err,db){
-	assert.equal(err,null);
-	console.log("Successfully connect Mongo");
-});
-	return mongo;
+function initMongo(){  //return the mongoClient object when call the initial function (undone)
+	
+	//set up the connection to the server
+	var mongoClient = new MongoClient();
+	mongoClient.url = "mongodb://"+config.mongo.url+":"+config.mongo.port+"/jumpstart";
+	return mongoClient;
 }
 
 exports.startApp = initApp;

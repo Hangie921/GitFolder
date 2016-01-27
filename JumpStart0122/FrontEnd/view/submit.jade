@@ -10,7 +10,14 @@ body
 		.teamDetail
 			input(type='text', name="team_name", placeholder="Team name")
 			input(type="textarea", name="product_brief", cols="80", rows="20" placeholder="Product Brief")
-			input(type="textarea", name="member_brief", cols="20", rows="20" placeholder="Team-member_brief")
+			.memberBrief
+				h2 Member1
+				input(type="textarea", name="member_brief_name", cols="20", rows="20" placeholder="member name")
+				input(type="textarea", name="member_brief_info", cols="20", rows="20" placeholder="member info")
+			.memberBrief
+				h2 Member2
+				input(type="textarea", name="member_brief_name", cols="20", rows="20" placeholder="member name")
+				input(type="textarea", name="member_brief_info", cols="20", rows="20" placeholder="member info")
 			input(type='file', name='BP_file', placeholder="Upload ur BP")
 			
 		.contactDetail

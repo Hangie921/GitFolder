@@ -1,5 +1,5 @@
 
-function route(app, mongo){	
+function route(app, mongoClient){	
 	app.get('/coming',function(req,res){
 		res.render('coming_soon');
 	});

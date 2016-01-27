@@ -1,4 +1,4 @@
-function route(app, mongo){
+function route(app, mongoClient){
 	app.get('/',function(req,res){  
 		res.render('index');
 	});

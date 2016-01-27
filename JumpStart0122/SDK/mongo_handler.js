@@ -4,12 +4,12 @@ var instance = require('../SDK/instance'),
 	config = require('../FrontEnd/config/server_init');
 
 
-function handle(app,mongoClient,crud,req,res){
+function handle(app,mongoClient,crud,req,res,doc){
 	var status = false;
 	if(crud === "find"){
-
+		findDetail(app,mongoClient,req,res);
 	}else if(crud === "insert"){
-		insertToDetail(app,mongoClient,req,res);
+		insertToDetail(app,mongoClient,req,res,doc);
 		// console.log("Insert success");
 	}else if(crud === "update"){
 		update(req,res);
@@ -21,17 +21,25 @@ function handle(app,mongoClient,crud,req,res){
 	
 }
 
-function insertToDetail(app,mongoClient,req,res){
+function findDetail(app,mongoClient,req,res){
+	console.log("start to find");
+
+}
+
+
+function insertToDetail(app,mongoClient,req,res,doc){
 	console.log('start to insert');
+	console.log(doc);
 	mongoClient.connect(mongoClient.url,function(err,db){
-		db.collection('detail').insertOne(req.body,function(err,result){
+		db.collection('detail').insertOne(doc,function(err,result){
 			if(err){
 				console.log(err);
 			}else{
 				console.log("Inserted docs into 'detail' collection");
 			}
-
+		db.close();
 		});
+		
 	});
 	// console.log(req.body.teamName);
 	//req.body

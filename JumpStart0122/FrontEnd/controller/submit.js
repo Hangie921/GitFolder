@@ -1,6 +1,6 @@
 //upload the file , call the submit module , send the status to user
 
-function route(app, mongo){	
+function route(app, mongoClient){	
 	app.get('/submit',function(req,res){
 		res.render('submit');
 	});

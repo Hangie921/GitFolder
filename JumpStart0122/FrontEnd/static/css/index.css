@@ -5,13 +5,13 @@
 }
 .section p{
 	font-size: 40px;
-	color: FFFFFF;
+	color: #FFFFFF;
 	margin-left: auto;
 	margin-right: auto;
 }
 .section{
 	text-align: center;
-	color: FFFFFF;
+	color: #FFFFFF;
 	font-size: 40px;
 }
 .a {
@@ -28,9 +28,8 @@
 }
 #sec1 a:hover
 {
-    color: #00FF00;
-}http://jsfiddle.net/nicooprat/gddts/
-http://jsfiddle.net/nicooprat/gddts/
+    color: #FFB300;
+}
 #sec1 li{
 	display: inline-block;
 	margin-left: 20px;

@@ -7,7 +7,8 @@ var express = require("express"),
 	Server = require("mongodb").Server,
 	assert = require('assert'),
 	fs = require('fs'),
-	http = require('http');
+	http = require('http'),
+	path = require('path');
 
 var config = require ("../FrontEnd/config/server_init.json");
 

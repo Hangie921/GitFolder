@@ -4,8 +4,9 @@ var instance = require("../SDK/instance"),
 	submit_page = require("./controller/submit"),
 	coming_page = require("./controller/coming_soon"),
 	upload = require("./controller/upload"),
-	show = require("./controller/show")
-	path = require('path');
+	show = require("./controller/show"),
+	contact_us = require("./controller/contact_us");
+var path = require('path');
 
 var app = instance.startApp(path.dirname(process.argv[1])),
 	mongoClient = instance.startMongo();
@@ -17,6 +18,7 @@ submit_page.submit_route(app,mongoClient);
 coming_page.coming_route(app,mongoClient);
 upload.route(app,mongoClient);
 show.show_route(app,mongoClient);
+contact_us.route(app,mongoClient);
 
 
 

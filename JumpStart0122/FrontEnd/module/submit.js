@@ -17,11 +17,9 @@ var schema = {
 		"team_name" : "",  
 		"product_brief" : "",
 		"member_brief" : {  // add the member dynamically
-			// "member_1" :{
-			// 	"name" : "",
-			// 	"intro" : ""
-			// },
+
 		},
+
 		"bp_file" : {
 			"file_name" : "",
 			"file_path" : ""
@@ -34,6 +32,7 @@ var schema = {
 			"phone" : ""
 		}
 	},
+	
 	"reg_time" : timestamp,
 	"readed" : {
 		"Randy" : {

@@ -2,9 +2,7 @@
 	"server":{
 		
 		"port":3000,
-		"static_folder": "../FrontEnd/static",
 		"view_engine": "jade",
-		"view_path": "../FrontEnd/view",
 		"upload_path": "./upload",
 		"upload_file_format": ".pdf"
 		},

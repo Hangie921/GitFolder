@@ -11,11 +11,10 @@ var express = require("express"),
 
 var config = require ("../FrontEnd/config/server_init.json");
 
-
-function initApp(){
-	app.set("views",config.server.view_path);
+function initApp(dir_path){
+	app.set("views",path.join(dir_path, "view"));
 	app.set('view engine',config.server.view_engine);
-	app.use( express.static( config.server.static_folder ) );
+	app.use( express.static( path.join(dir_path, "static") ) );
 	var server = app.listen(config.server.port ,function(){  //initial the server 
 			server.address().port = config.server.port;
 			console.log("Express server listening on port %s ",config.server.port);

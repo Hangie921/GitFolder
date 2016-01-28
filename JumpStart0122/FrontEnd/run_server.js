@@ -13,7 +13,7 @@ var app = instance.startApp(path.dirname(process.argv[1])),
 
 //route the different page
 index_page.index_route(app,mongoClient);
-// submit_page.submit_route(app,mongoClient);
+submit_page.submit_route(app,mongoClient);
 coming_page.coming_route(app,mongoClient);
 upload.route(app,mongoClient);
 show.show_route(app,mongoClient);

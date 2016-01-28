@@ -12,7 +12,9 @@ function route(app,mongoClient){
 				console.log("file uploaded");
 				console.log('Uploading the info');
 				var doc = submit.to_object(req,res);
-				mongo_handler.handle(app,mongoClient,'insert',req,res,doc);
+				mongo_handler.handle(app,mongoClient,'insert',req,res,doc,function(req,res){
+					res.render('show');
+				});
 			}else{
 				console.log(err);
 			}	

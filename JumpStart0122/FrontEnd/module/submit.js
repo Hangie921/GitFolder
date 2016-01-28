@@ -58,9 +58,9 @@ function to_object(req,res){
 	console.log("Start to input members to the member_brief field");
 
 	for(var i =0; i<req.body.member_brief_name.length;i++){
-
-		team_info.member_brief= { member_name: //how can I change the member_name with the variable i
-									{"name":req.body.member_brief_name[i],"info":req.body.member_brief_info[i]}};
+		var name = "member_"+i;
+		team_info.member_brief[name]= //how can I change the member_name with the variable i
+									{"name":req.body.member_brief_name[i],"info":req.body.member_brief_info[i]};
 	}
 
 	console.log("Start to log the member_brief object");
@@ -70,8 +70,8 @@ function to_object(req,res){
 	team_info.contact.email = req.body.email;
 	team_info.contact.address = req.body.address;
 	team_info.contact.phone = req.body.phone;
-	team_info.bp_file.file_name = req.file.filename;
-	team_info.bp_file.file_path = req.file.path;
+	team_info.bp_file.file_name = req.file == true ? req.file.filename:null;
+	team_info.bp_file.file_path = req.file == true ? req.file.path:null;
 	return team_info;//team_info is already an object
 }
 

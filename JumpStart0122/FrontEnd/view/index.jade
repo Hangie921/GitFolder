@@ -2,7 +2,7 @@ html
 	head
 	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
 	script(src="../js/jquery_fullPage.js")
-	script(src="../js/jquery.slotmachine.min.js")
+	script(src="../js/jquery.slotmachine.js")
 	link(href="../css/index.css", rel='stylesheet')
 	script(src="../js/index.js")
 
@@ -12,7 +12,13 @@ html
 				.sloganContainer
 					h2 當你擁有
 					h2 100,000,000+ 使用者
-					h2 你會＿＿＿＿＿
+					h2 你會 
+						.slotMachine#slot3 
+							span.slot 喝杯咖啡先
+							span.slot 上個廁所先
+							span.slot 睡一覺再說
+							span.slot 晚上吃什麼
+					h2#slotButton3 開始行動
 				//- ul
 				//- 	li 
 				//- 		a(href='/submit') submit
@@ -30,7 +36,7 @@ html
 						.slot IS EASY TO USE
 						.slot IS FANFASTIC
 						.slot IS FASHION
-					button#slotButton Spin
+					button#slotButton2 Spin
 			.section#sec3
 				h2 Intro
 			.section#sec4

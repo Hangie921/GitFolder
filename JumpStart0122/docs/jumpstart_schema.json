@@ -1,36 +1,8 @@
-// ============
-// INPUT from user
-// ============
-body{  //the whole package of the form submit
-	
-	//team_detail field name
-	"team_name": "",  
-	"product_brief" : "",
-	"member_brief" :{
-		"member_1" :{  //more member if necessary
-			"name" : "",
-			"intro" : ""
-		},
-	},
-	
-	//contact_detail  field name
-	"contact" : "",
-	"email" : "",
-	"phone" : "",
-	"address" : "",
-
-	//file field name
-	"BP_file":{
-		"file_name" : "",
-		"file_path" : ""
-	},
-},
-
 ================
-DB
+FrontEnd
 ================
 DB : Jumpstart
-Col : Register
+Collection : detail
 {
 	"team_info" : {
 		"team_name" : "",  
@@ -73,5 +45,17 @@ Col : Register
 		}
 	},
 	"_id":
+}
+
+===================
+BackEnd
+===================
+DB : Jumpstart
+Collection : member
+{
+	"req_time" : timestamp,
+	"last_login_time" : timestamp,
+	"acc" : "",
+	"psw" : "md5 encode!!!!!!!!",
 }
 

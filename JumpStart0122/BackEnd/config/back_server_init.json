@@ -1,0 +1,17 @@
+{
+	"server":{
+		
+		"port":5000,
+		"view_engine": "jade",
+		"upload_path": "./upload",
+		"upload_file_format": ".pdf"
+		},
+	"mongo":{
+		"url": "localhost",
+		"port": "27017",
+		"db":"jumpstart",
+		"auth": "",
+		"user_name": "",
+		"user_password": ""
+	}
+}

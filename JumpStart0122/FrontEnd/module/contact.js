@@ -36,12 +36,12 @@ function to_object(req,res){
 }
 
 function form_handle(req,res,callback){
-
+	console.log('Uploading the detail');
 	// pack the detail of the form into req.body
 	var upload = multer().single();
 	upload(req,res,function(err){
 		if(!err){
-			console.log(req.file);
+			console.log("detail uploaded");
 			callback(err,req,res);
 		}else{
 			console.log(err);

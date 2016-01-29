@@ -45,3 +45,15 @@
 #sec4{
 	background-color: #FF6F00;
 }
+
+/*the setting about the slotMachine*/
+.slotMachine{
+	height: 33px;
+	margin-bottom: 10px;
+}
+.slot{
+	height: 33px;
+}
+.slot:nth-child(3){
+	visibility: hidden;
+}

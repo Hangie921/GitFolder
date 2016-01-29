@@ -1,0 +1,11 @@
+head
+	meta(charset="UTF-8")
+	title Document
+body
+	h1 BackEnd Login
+	form(action="/login", enctype="multipart/form-data", method="post")
+		h3 account: 
+			input(type='text',name='acc',placeholder='account')
+		h3 password:
+			input(type='text',name='psw',placeholder='password')
+		input(type='submit',value='login')

@@ -8,8 +8,11 @@ var instance = require("../SDK/instance"),
 	contact_us = require("./controller/contact_us");
 var path = require('path');
 
-var app = instance.startApp(path.dirname(process.argv[1])),
-	mongoClient = instance.startMongo();
+var config = require ("../FrontEnd/config/server_init.json");
+
+
+var app = instance.startApp(config.server.port,config.server.view_engine,path.dirname(process.argv[1])),
+	mongoClient = instance.startMongo(config.mongo.url,config.mongo.port,config.mongo.db);
 
 
 //route the different page

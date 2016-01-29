@@ -2,9 +2,9 @@ html
 	head
 	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
 	script(src="../js/jquery_fullPage.js")
-	//- link(href="../css/jquery_fullPage.css", rel='stylesheet')
+	script(src="../js/jquery.slotmachine.min.js")
 	link(href="../css/index.css", rel='stylesheet')
-	script(src="../js/index_fullpage.js")
+	script(src="../js/index.js")
 
 	body
 		#fullpage
@@ -14,12 +14,25 @@ html
 					li 
 						a(href='/submit') submit
 					li 
-						a(href='/coming') coming soon
-					li 
 						a(href='/contact_us') contact us
+					li 
+						a(href='/coming') coming soon
 			.section#sec2
 				h2 About
+				.slotMachineContainer
+					.slotMachine#slot1 Ping!
+					.slotMachine#slot2 
+						.slot IS AWESOME
+						.slot ROCKS!
+						.slot IS EASY TO USE
+						.slot IS FANFASTIC
+						.slot IS FASHION
+					button#slotButton Spin
 			.section#sec3
 				h2 Intro
 			.section#sec4
 				h2 Trusted by
+
+
+
+

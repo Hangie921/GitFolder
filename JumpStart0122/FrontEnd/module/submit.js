@@ -1,4 +1,5 @@
-// write the details of the files into db
+//This is the module that handles all the function about submit the context
+//
 var config = require("../config/server_init.json");
 var multer = require('multer'),
     storage1 = multer.diskStorage({
@@ -49,8 +50,7 @@ var schema = {
 };
 var team_info = schema.team_info;
 
-function to_object(req,res){
-	//add the member_brief coloumn dynamically 
+function to_object(req,res){   //pack all the info of the form into a object
 	team_info.team_name = req.body.team_name;
 	team_info.product_brief = req.body.product_brief;
 	
@@ -59,8 +59,8 @@ function to_object(req,res){
 
 	for(var i =0; i<req.body.member_brief_name.length;i++){
 		var name = "member_"+i;
-		team_info.member_brief[name]= //how can I change the member_name with the variable i
-									{"name":req.body.member_brief_name[i],"info":req.body.member_brief_info[i]};
+		team_info.member_brief[name]= {"name":req.body.member_brief_name[i],"info":req.body.member_brief_info[i]};
+		//add the member of the team according to how many 'member_brief_name' field are there in the form
 	}
 
 	console.log("Start to log the member_brief object");
@@ -75,7 +75,7 @@ function to_object(req,res){
 	return team_info;//team_info is already an object
 }
 
-function file_handler(req,res,field_name,callback){
+function file_handler(req,res,field_name,callback){ // upload the bp file if there is any
 	
 	var upload = multer({ storage: storage1 }).single(field_name); // declare a multer object
 	upload(req,res,function(err){

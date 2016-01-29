@@ -1,0 +1,4 @@
+function empty_session(){
+
+}
+

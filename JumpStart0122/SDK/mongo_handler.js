@@ -5,55 +5,91 @@ var instance = require('../SDK/instance'),
 
 
 function handle(app,mongoClient,crud,req,res,doc,collection,callback){
-	var status = false;
+	var result = null;
 	if(crud === "find"){
-		findDetail(app,mongoClient,req,res,collection);
+		var query;
+		var projection;
+		findDetail(app,mongoClient,query,projection,collection,function(docArray){
+			result = docArray;
+		});
+
 	}else if(crud === "insert"){
 		insertToCollection(app,mongoClient,req,res,doc,collection,callback);
 		// console.log("Insert success");
+		//change the rusult
 	}else if(crud === "update"){
 		update(req,res);
 		// console.log("update success");
+		//change the rusult
 	}else if(crud === "deleteInfo"){
 		deleteInfo();
 		// console.log("delete success");
-	}else if(crud === "insert_contact"){
-
+		//change the rusult
 	}
 	
+	return docArray;
 }
 
-function findDetail(app,mongoClient,req,res,collection){
-	console.log("start to find");
+function findDetail(app,mongoClient,collection,query,condition,callback){ //undone
+	//pack all the conditions in to a condition object
+	
+	// var condition = {
+	// 	"projection":{"_id":0},
+	// 	"sort":,
+	// 	"skip":0,
+	// 	"limit":0
+	// } 
 
+	//start to judge the condition and set default
+	if(typeof condition !== Object){
+		condition = {
+			projcetion: {"_id":0},
+			sort: {},
+			skip: 0,
+			limit: 0
+		};
+	
+	}else{
+		for(var x in condition){
+			
+		}
+	}
+
+
+
+	//start to query the data and return the docArray to callback()
+	console.log("start to find in collection '" + collection + "'.");
+	var docArray = null;
+	mongoClient.connect(mongoClient,function(err,db){
+		if(!err){
+			var cursor = db.collection(collection).find(query,projection);
+			if(cursor.toArray().length > 0){
+				docArray = cursor.toArray();
+			}else{
+				console.log('There is no result in DB');
+			}
+		}else{
+			console.log(err);
+		}
+		db.close();
+	});
+
+	callback(docArray);
 }
 
 function insertToCollection(app,mongoClient,req,res,doc,collection,callback){
+	//Assign a collection to insert docs
+
 	console.log('Start to insert to '+ collection);
 	mongoClient.connect(mongoClient.url,function(err,db){
 		db.collection(collection).insertOne(doc,function(err,result){
 			if(!err){
-				console.log("Insert doc into '"+collection+"' collection!");
+				console.log("Insert doc into '" + collection + "' collection!");
 			}else{
 				console.log(err);
 			}
 		db.close();
 		});
-	});
-	callback(req,res);
-}
-
-function insertToDetail(app,mongoClient,req,res,doc,callback){
-	console.log('start to insert');
-	mongoClient.connect(mongoClient.url,function(err,db){
-		db.collection('detail').insertOne(doc,function(err,result){
-			if(err){
-				console.log(err);
-			}else{
-				console.log("Inserted docs into 'detail' collection");
-			}
-		db.close();
-		});	
 	});
 	callback(req,res);
 }

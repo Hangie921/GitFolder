@@ -1,7 +1,6 @@
 //init the server and the mongo , return a combination of the both
 
 var express = require("express"),
-	// jade = require("jade"),
 	app = express(),
 	MongoClient = require('mongodb').MongoClient,
 	Server = require("mongodb").Server,
@@ -10,24 +9,24 @@ var express = require("express"),
 	http = require('http'),
 	path = require('path');
 
-var config = require ("../FrontEnd/config/server_init.json");
 
-function initApp(dir_path){
+
+function initApp(port,view_engine,dir_path){
 	app.set("views",path.join(dir_path, "view"));
-	app.set('view engine',config.server.view_engine);
+	app.set('view engine',view_engine);
 	app.use( express.static( path.join(dir_path, "static") ) );
-	var server = app.listen(config.server.port ,function(){  //initial the server 
-			server.address().port = config.server.port;
-			console.log("Express server listening on port %s ",config.server.port);
+	var server = app.listen(port ,function(){  //initial the server 
+			server.address().port = port;
+			console.log("Express server listening on port %s ", port);
 	});
 	return app;
 }
 
-function initMongo(){  //return the mongoClient object when call the initial function (undone)
+function initMongo(url,port,db){  //return the mongoClient object when call the initial function 
 	
 	//set up the connection to the server
 	var mongoClient = new MongoClient();
-	mongoClient.url = "mongodb://"+config.mongo.url+":"+config.mongo.port+"/"+config.mongo.db;
+	mongoClient.url = "mongodb://"+url+":"+port+"/"+db;
 	return mongoClient;
 }
 

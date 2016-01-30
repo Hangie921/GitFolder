@@ -76,23 +76,23 @@ h1, h2, h3, h4, h5 {
 
 /* line 1, ../sass/base/_base.scss */
 body {
-  font-family: "微軟正黑體", Sans-serif;
+  font-family: "文鼎黑體", Sans-serif;
   font-size: 16px;
   line-height: 1.7em;
   color: #333333;
 }
 
-/* line 9, ../sass/base/_base.scss */
+/* line 10, ../sass/base/_base.scss */
 a {
   color: #fff;
 }
 
-/* line 13, ../sass/base/_base.scss */
+/* line 14, ../sass/base/_base.scss */
 ul, li {
   list-style: none;
 }
 
-/* line 17, ../sass/base/_base.scss */
+/* line 18, ../sass/base/_base.scss */
 input, textarea, button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -101,7 +101,7 @@ input, textarea, button {
   border-radius: 0px;
 }
 
-/* line 21, ../sass/base/_base.scss */
+/* line 22, ../sass/base/_base.scss */
 img.device {
   width: 100%;
 }
@@ -188,8 +188,107 @@ div#sec_home {
   background-size: 100% auto;
 }
 
+/* line 22, ../sass/modules/_sections.scss */
+.sloganContainer {
+  margin-top: 50px;
+  max-width: 500px;
+  overflow: hidden;
+  color: white;
+  height: 700px;
+}
+/* line 28, ../sass/modules/_sections.scss */
+.sloganContainer h2 {
+  font-size: 50px;
+}
+/* line 33, ../sass/modules/_sections.scss */
+.sloganContainer .slotMachine {
+  font-size: 40px;
+  position: relative;
+  display: block;
+}
+/* line 41, ../sass/modules/_sections.scss */
+.sloganContainer span.machine-border {
+  display: block;
+  background: #fff;
+  height: 1px;
+  width: 250px;
+  float: right;
+  margin-right: 141px;
+  margin-top: -6px;
+}
+/* line 51, ../sass/modules/_sections.scss */
+.sloganContainer #slot3 {
+  margin-left: 107px;
+}
+/* line 55, ../sass/modules/_sections.scss */
+.sloganContainer h2#slotButton3 {
+  margin-top: 40px;
+  width: 170px;
+  padding: 10px;
+  display: block;
+  font-size: 33px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  transition: all 0.5s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+}
+/* line 71, ../sass/modules/_sections.scss */
+.sloganContainer h2#slotButton3 span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 58px;
+  width: 50px;
+  text-indent: -9999px;
+}
+/* line 80, ../sass/modules/_sections.scss */
+.sloganContainer h2#slotButton3 span:before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: transparent;
+  top: 0px;
+  width: 41px;
+  height: 40px;
+  left: 30px;
+  top: 8px;
+  border-top: 1px solid #fff;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+/* line 95, ../sass/modules/_sections.scss */
+.sloganContainer h2#slotButton3 span:after {
+  position: absolute;
+  content: '';
+  display: block;
+  background: transparent;
+  top: 0px;
+  width: 41px;
+  height: 40px;
+  left: 57px;
+  top: 36px;
+  border-top: 1px solid #fff;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+/* line 111, ../sass/modules/_sections.scss */
+.sloganContainer h2#slotButton3:hover {
+  margin-left: 15px;
+}
+
 /********** Jump Now Section ********/
-/* line 23, ../sass/modules/_sections.scss */
+/* line 122, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
 }
@@ -242,27 +341,64 @@ div.slide.team_details span, div.slide.personal_details span {
 
 /* line 1, ../sass/layouts/_header.scss */
 header {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   float: left;
-  width: 100%;
+  width: 100% !important;
   margin: 20px auto;
-  padding: 0 10% 0;
+  padding: 0 10% !important;
 }
 /* line 9, ../sass/layouts/_header.scss */
 header div {
   float: left;
+  padding: 0 !important;
+}
+/* line 13, ../sass/layouts/_header.scss */
+header a.navbar-brand {
+  display: block;
+  width: 220px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background: url(../img/jumpstart-logo.png) left no-repeat;
+  text-indent: -9999px;
 }
 
-/* line 16, ../sass/layouts/_header.scss */
+/* line 25, ../sass/layouts/_header.scss */
+div.main-menu {
+  float: right;
+}
+
+/* line 29, ../sass/layouts/_header.scss */
 ul.menu {
   margin: 0;
   float: right;
+  display: block;
 }
-/* line 20, ../sass/layouts/_header.scss */
-ul.menu display:block
-li {
+/* line 33, ../sass/layouts/_header.scss */
+ul.menu li {
   float: left;
   padding-right: 100px;
+  margin: 13px 0px;
+  text-transform: uppercase;
+  text-align: right;
+}
+/* line 40, ../sass/layouts/_header.scss */
+ul.menu li a {
+  text-align: right;
+  display: block;
+  padding: 3px 10px;
+  font-family: "raleway";
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/* line 48, ../sass/layouts/_header.scss */
+ul.menu li a:hover {
+  color: white;
+}
+
+/* line 55, ../sass/layouts/_header.scss */
+.jumpnow_link a {
+  background: rgba(242, 107, 42, 0.7);
 }

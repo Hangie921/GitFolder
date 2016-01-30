@@ -18,6 +18,105 @@ div#sec_home {
 	background-size:100% auto;
 
 }
+
+.sloganContainer {
+	margin-top:50px;
+	max-width:500px;
+	overflow:hidden;
+	color:$white;
+	height:700px;
+	h2 {
+		font-size:50px;
+
+	}
+
+	.slotMachine {
+		
+		font-size:40px;
+		position:relative;
+		display: block;
+
+
+	}
+	span.machine-border {
+	display: block;
+    background: #fff;
+    height: 1px;
+    width: 250px;
+    float: right;
+    margin-right: 141px;
+    margin-top: -6px;
+
+	}
+	#slot3{
+		margin-left: 107px;
+	}
+
+	h2#slotButton3 {
+		margin-top:40px;
+		width:170px;
+		padding:10px;
+		display: block;
+		font-size:33px;
+		border-top:1px solid #fff;
+		border-left:1px solid #fff;
+		border-bottom:1px solid #fff;
+		position:relative;
+		transition: all 0.5s ;
+		-ms-transition: all 0.25s ;
+		-o-transition: all 0.25s ;
+		-webkit-transition: all 0.25s ;
+		-moz-transition: all 0.25s ;
+		
+		span {
+			position:absolute;
+			right:0;
+			top:0;
+			height:58px;
+			width:50px;
+			text-indent: -9999px;
+		
+
+			&:before {
+				position:absolute;
+				content:'';
+				display: block;
+				background:transparent;
+				top:0px;
+				width:41px;
+				height:40px;
+				left: 30px;
+ 				top:8px;
+				border-top:1px solid #fff;
+				-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+			}
+			&:after {
+				position:absolute;
+				content:'';
+				display: block;
+				background:transparent;
+				top:0px;
+				width:41px;
+				height:40px;
+				left: 57px;
+    			top: 36px;
+				border-top:1px solid #fff;
+				-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+			}
+		}
+		&:hover {
+			margin-left:15px;
+
+		}
+
+	}
+
+
+}
 /********** Jump Now Section ********/
 
 div#sec_jumpnow {

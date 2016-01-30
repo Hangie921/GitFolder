@@ -26,7 +26,7 @@
 #sec1 .sloganContainer{
 	width: 60%;
 	height: 50%;
-	padding-top: 200px;
+	/*padding-top: 200px;*/
 }
 #sec1 .sloganContainer h2{
 	text-align: left;
@@ -54,6 +54,9 @@
 #sec4{
 	background-color: #FF6F00;
 }
+#sec5{
+	background-color: #5B2424;
+}
 
 /*the setting about the slotMachine*/
 .slotMachine{
@@ -74,10 +77,6 @@
 #slot3 .slot{
 	display: block;
 	height: 1.5em;
-}
-#slot3 .slot:nth-child(3){
-	visibility: hidden;
-
 }
 #slotButton3{
 	cursor: pointer;

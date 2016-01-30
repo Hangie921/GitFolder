@@ -79,19 +79,19 @@ html
 									input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 											span.input__label-content.input__label-content--hoshi 隊伍名稱
-								textarea(placeholder='產品介紹')
+								textarea(placeholder='產品介紹',name='product_brief')
 								span.input.input--hoshi
-									input#input-4.input__field.input__field--hoshi(type='file',name="BP_file")
+									input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-											span.input__label-content.input__label-content--hoshi 下載	
+											span.input__label-content.input__label-content--hoshi 上傳檔案	
 							.col-md-4
 								.team_detail_single
 									span.input.input--hoshi
-										input#input-4.input__field.input__field--hoshi(type='text',name="member_brief_name")
+										input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 												span.input__label-content.input__label-content--hoshi 成員
 									span.input.input--hoshi
-										input#input-4.input__field.input__field--hoshi(type='text',name="member_brief_info")
+										input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_info')
 
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 												span.input__label-content.input__label-content--hoshi 負責項目
@@ -101,19 +101,19 @@ html
 			
 					.slide.personal_details
 							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text',name="contact")
+								input#input-4.input__field.input__field--hoshi(type='text',name='contact')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 										span.input__label-content.input__label-content--hoshi 姓名
 							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text',name="phone")
+								input#input-4.input__field.input__field--hoshi(type='text',name='phone')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 										span.input__label-content.input__label-content--hoshi 電話
 							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text',name="email")
+								input#input-4.input__field.input__field--hoshi(type='text',name='email')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 										span.input__label-content.input__label-content--hoshi Email
 							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text',name="address")
+								input#input-4.input__field.input__field--hoshi(type='text',name='address')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 										span.input__label-content.input__label-content--hoshi 聯絡地址
 							label
@@ -125,21 +125,20 @@ html
 
 			.section#sec_contact
 				.col-md-4
-					form(action='/contact',enctype="multipart/form-data",method="post")
+					form(action='/contact', enctype="multipart/form-data",method="post")
 						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name="user_name")
+							input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
 							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 									span.input__label-content.input__label-content--hoshi 姓名
 						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name="user_phone")
+							input#input-4.input__field.input__field--hoshi(type='text',name='user_phone')
 							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 									span.input__label-content.input__label-content--hoshi 電話
 						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name="user_email")
+							input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
 							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 									span.input__label-content.input__label-content--hoshi Email
-						
-						textarea(placeholder='內容',name="user_msg")
+						textarea(placeholder='內容',name='user_msg')
 						input(type='submit' value='submit')
 						
 

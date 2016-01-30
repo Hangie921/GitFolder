@@ -27,7 +27,7 @@ function handle(app,mongoClient,crud,req,res,doc,collection,callback){
 		//change the rusult
 	}
 	
-	// return docArray;
+	return docArray;
 }
 
 function findDetail(app,mongoClient,collection,query,condition,callback){ //undone

@@ -1,5 +1,6 @@
 html
 	head
+		meta(charset="UTF-8")
 		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
 		script(src="../js/jquery_fullPage.js")
 		script(src="../js/jquery.slotmachine.min.js")
@@ -12,8 +13,6 @@ html
 		script(src="https://use.typekit.net/umx0psn.js")
 		script(type='text/javascript'). 
 			try{Typekit.load({ async: true });}catch(e){}
-
-
 
 	body
 		#fullpage
@@ -96,7 +95,7 @@ html
 
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 												span.input__label-content.input__label-content--hoshi 負責項目
-									button(class='button',id='del_member', href='google.com') 刪除成員
+									button(class='button',id='del_member') 刪除成員
 								button(id='add_member') 添加成員
 								a(class='button', href='google.com') 下一步
 			

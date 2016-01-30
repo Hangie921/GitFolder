@@ -7,15 +7,22 @@ $(document).ready(function() {
     });
 
     var machine3 = $('#slot3').slotMachine({
-    	active : 1,
+    	active : 0,
     	delay : 6000,
-    	auto : true,
-    	spins : true
+    	auto : true
     });
 
 
 	$("#slotButton3").click(function(){
-		machine3.stop();
+			machine3.futureActive = 3;
+			machine3.stop();
+			machine3.shuffle(1,function(){
+				setTimeout(function(){
+					$.fn.fullpage.moveTo(3, 0);
+				},3000);
+			})
+			// $.fn.fullpage.moveTo(3, 0);
+		
 	});
 
 });

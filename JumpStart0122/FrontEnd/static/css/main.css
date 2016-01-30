@@ -6,6 +6,7 @@
 /* BASE -Base Styles, Variables, mixins, etc* */
 /*Font Colors*/
 /*Background Colours*/
+/*Setting*/
 /* Showcase Area */
 /* Mixins */
 /* line 1, ../sass/base/_normalize.scss */
@@ -81,17 +82,17 @@ body {
   color: #333333;
 }
 
-/* line 8, ../sass/base/_base.scss */
+/* line 9, ../sass/base/_base.scss */
 a {
   color: #fff;
 }
 
-/* line 12, ../sass/base/_base.scss */
+/* line 13, ../sass/base/_base.scss */
 ul, li {
   list-style: none;
 }
 
-/* line 16, ../sass/base/_base.scss */
+/* line 17, ../sass/base/_base.scss */
 input, textarea, button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -100,7 +101,7 @@ input, textarea, button {
   border-radius: 0px;
 }
 
-/* line 20, ../sass/base/_base.scss */
+/* line 21, ../sass/base/_base.scss */
 img.device {
   width: 100%;
 }
@@ -180,8 +181,15 @@ div.fp-section {
   -webkit-box-sizing: border-box;
 }
 
-/********** Jump Now Section ********/
+/****HOME******/
 /* line 16, ../sass/modules/_sections.scss */
+div#sec_home {
+  background: url("../img/home_bg.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+/********** Jump Now Section ********/
+/* line 23, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
 }
@@ -230,4 +238,31 @@ div.slide.team_details span, div.slide.personal_details span {
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   background: #f16b29 !important;
   color: #fff !important;
+}
+
+/* line 1, ../sass/layouts/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 10% 0;
+}
+/* line 9, ../sass/layouts/_header.scss */
+header div {
+  float: left;
+}
+
+/* line 16, ../sass/layouts/_header.scss */
+ul.menu {
+  margin: 0;
+  float: right;
+}
+/* line 20, ../sass/layouts/_header.scss */
+ul.menu display:block
+li {
+  float: left;
+  padding-right: 100px;
 }

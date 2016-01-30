@@ -517,21 +517,25 @@ class SlotMachine {
                 case 1:
                 case 2:
                     this._animationFX = FX_SLOW;
+                    delay/=3;
                     break;
                 case 3:
                 case 4:
                     this._animationFX = FX_NORMAL;
-                    delay /= 1.5;
+                    // delay /= 1.5;
+                    delay/=3;
                     break;
                 default:
                     this._animationFX = FX_FAST;
-                    delay /= 2;
+                    // delay /= 2;
+                    delay/=3;
             }
         // Infinite spin
         } else {
             // Set animation effects
             this._animationFX = FX_NORMAL;
-            delay /= 1.5;
+            // delay /= 1.5;
+            delay /= 3;
         }
 
         // Perform animation
@@ -592,13 +596,14 @@ class SlotMachine {
         this.active = this.futureActive;
 
         // Get delay
-        const delay = this.settings.delay * 3;
+        // const delay = this.settings.delay * 0.01;
+        const delay = 100;
 
         // Perform animation
         this.$container.animate({
             marginTop: this.getTileOffset(this.active)
-        }, delay, 'easeOutBounce', function cb () {
-
+        }, delay, 'linear', function cb () {
+            // default:easeOutBounce
             this.stopping = false;
             this.running = false;
             this.futureActive = null;

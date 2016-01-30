@@ -2,16 +2,18 @@
 
 $(document).ready(function() {
 
+	//initial the fullpage
     $('#fullpage').fullpage({  //the fullpage start
 
     });
 
+
+    //The slot Machine part
     var machine3 = $('#slot3').slotMachine({
     	active : 0,
     	delay : 6000,
     	auto : true
     });
-
 
 	$("#slotButton3").click(function(){
 			machine3.futureActive = 3;
@@ -21,8 +23,9 @@ $(document).ready(function() {
 					$.fn.fullpage.moveTo(3, 0);
 				},3000);
 			})
-			// $.fn.fullpage.moveTo(3, 0);
-		
 	});
+
+	//The rocket animation
+	
 
 });

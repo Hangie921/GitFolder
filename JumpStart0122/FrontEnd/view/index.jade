@@ -3,7 +3,7 @@ html
 		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
 		script(src="../js/jquery_fullPage.js")
 		script(src="../js/jquery.slotmachine.min.js")
-		link(href="../css/boostrap.css", rel='stylesheet')
+		link(href="../css/bootstrap.css", rel='stylesheet')
 		link(href="../css/jquery_fullPage.css", rel='stylesheet')
 		link(href="../css/set1.css", rel='stylesheet')
 		link(href="../css/set2.css", rel='stylesheet')
@@ -52,32 +52,32 @@ html
 				.slide
 					h2 jumpnow
 				.slide.team_details
-				
-					h2.hoshi
-					.col-md-4.clearfix
-						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text')
-							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi 隊伍名稱
-						textarea(placeholder='產品介紹')
-						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='file')
-							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi 下載
-						
-					.col-md-4
-						.team_detail_single
+					form(action="/submit", method="post")
+						h2.hoshi
+						.col-md-4.clearfix
 							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text')
+								input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-										span.input__label-content.input__label-content--hoshi 成員
+										span.input__label-content.input__label-content--hoshi 隊伍名稱
+							textarea(placeholder='產品介紹',name='product_brief')
 							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text')
+								input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-										span.input__label-content.input__label-content--hoshi 負責項目
-							a(class='button', href='google.com') -
-						a(class='button', href='google.com') 添加成員
-						a(class='button', href='google.com') 下一步
+										span.input__label-content.input__label-content--hoshi 下載
+							
+						.col-md-4
+							.team_detail_single
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='member_brief_name')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 成員
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='member_brief_info')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 負責項目
+								a(class='button', href='google.com') -
+							a(class='button', href='google.com') 添加成員
+							a(class='button', href='google.com') 下一步
 				
 		
 				.slide.personal_details

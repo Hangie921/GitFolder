@@ -1,4 +1,18 @@
 /* Sections */
-section{
-	padding:30px 0;
+div.fp-section{
+	padding:10% 10%;
+
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+
+
+}
+
+/********** Jump Now Section ********/
+
+div#sec_jumpnow {
+	background: $primary-color;
 }

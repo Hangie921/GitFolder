@@ -23,17 +23,57 @@ h1, h2, h3, h4, h5 {
   padding-top: 0;
 }
 
+/* line 13, ../sass/base/_normalize.scss */
+.fp-tableCell {
+  vertical-align: top !important;
+}
+
+/*the setting about the slotMachine*/
+/* line 18, ../sass/base/_normalize.scss */
+.slotMachine {
+  height: 33px;
+  margin-bottom: 10px;
+}
+
+/* line 22, ../sass/base/_normalize.scss */
+#slot2 .slot {
+  height: 33px;
+}
+
+/* line 25, ../sass/base/_normalize.scss */
+#slot2 .slot:nth-child(3) {
+  visibility: hidden;
+}
+
+/* line 28, ../sass/base/_normalize.scss */
+#slot3 {
+  margin-left: 152px;
+  margin-top: -62px;
+  height: 1.5em;
+}
+
+/* line 33, ../sass/base/_normalize.scss */
+#slot3 .slot {
+  display: block;
+  height: 1.5em;
+}
+
+/* line 37, ../sass/base/_normalize.scss */
+#slotButton3 {
+  cursor: pointer;
+}
+
 /* line 1, ../sass/base/_base.scss */
 body {
   font-family: "微軟正黑體", Sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7em;
   color: #333333;
 }
 
 /* line 8, ../sass/base/_base.scss */
 a {
-  color: #00aff0;
+  color: #f16b29;
 }
 
 /* line 12, ../sass/base/_base.scss */
@@ -92,7 +132,7 @@ img.device {
 
 /* line 14, ../sass/modules/_blocks.scss */
 .block-primary {
-  background: #00aff0;
+  background: #f16b29;
   color: #fff;
 }
 
@@ -121,37 +161,31 @@ img.device {
 
 /* Sections */
 /* line 2, ../sass/modules/_sections.scss */
-section {
-  padding: 30px 0;
+div.fp-section {
+  padding: 10% 10%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/********** Jump Now Section ********/
+/* line 16, ../sass/modules/_sections.scss */
+div#sec_jumpnow {
+  background: #f16b29;
 }
 
 /* Searchbox */
-/* line 3, ../sass/modules/_forms.scss */
-.search {
-  width: 100%;
+/* line 4, ../sass/modules/_forms.scss */
+div.slide.team_details input.input__field--hoshi, div.slide.personal_details input.input__field--hoshi {
+  min-height: 50px;
+  color: white;
 }
-/* line 5, ../sass/modules/_forms.scss */
-.search h3 {
-  margin-top: 0;
-  padding-top: 0;
-}
-/* line 11, ../sass/modules/_forms.scss */
-.search input[type="search"] {
-  border: 0;
-  height: 50px;
-  width: 80%;
-  border: 2px solid #00aff0;
-  font-size: 18px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-}
-/* line 21, ../sass/modules/_forms.scss */
-.search button {
-  border: 0;
-  background: none;
+/* line 8, ../sass/modules/_forms.scss */
+div.slide.team_details span, div.slide.personal_details span {
   padding: 0;
-  vertical-align: top;
-  margin-left: -4px;
+  color: white;
 }
 
 /* LAYOUTS- Page Layout Styles */
@@ -169,7 +203,7 @@ section {
 }
 /* line 12, ../sass/layouts/_nav.scss */
 .navbar a {
-  color: #00aff0 !important;
+  color: #f16b29 !important;
   font-size: 20px;
   letter-spacing: -0.5px;
   padding-bottom: 24px !important;
@@ -178,6 +212,6 @@ section {
 
 /* line 21, ../sass/layouts/_nav.scss */
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background: #00aff0 !important;
+  background: #f16b29 !important;
   color: #fff !important;
 }

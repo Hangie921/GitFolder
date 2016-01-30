@@ -9,3 +9,31 @@ h1,h2,h3,h4,h5 {
 .no-pad-top {
 	padding-top:0;
 }
+
+.fp-tableCell {
+	vertical-align:top !important;
+}
+
+/*the setting about the slotMachine*/
+.slotMachine{
+	height: 33px;
+	margin-bottom: 10px;
+}
+#slot2 .slot{
+	height: 33px;
+}
+#slot2 .slot:nth-child(3){
+	visibility: hidden;
+}
+#slot3{
+	margin-left: 152px;
+	margin-top: -62px;
+	height: 1.5em;
+}
+#slot3 .slot{
+	display: block;
+	height: 1.5em;
+}
+#slotButton3{
+	cursor: pointer;
+}

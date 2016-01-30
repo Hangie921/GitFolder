@@ -8,14 +8,14 @@ $(document).ready(function() {
     });
 
 
-    //The slot Machine part
+    //The slot Machine animation
     var machine3 = $('#slot3').slotMachine({
     	active : 0,
     	delay : 6000,
     	auto : true
     });
 
-	$("#slotButton3").click(function(){
+	$('#slotButton3').click(function(){
 			machine3.futureActive = 3;
 			machine3.stop();
 			machine3.shuffle(1,function(){
@@ -25,7 +25,20 @@ $(document).ready(function() {
 			})
 	});
 
-	//The rocket animation
-	
+
+
+	//add the member input dynamically
+	var DOM = "<div class='col-md-4'><div class='team_detail_single'><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' href='google.com' class='button'>刪除成員</button></div>";
+
+	$('#add_member').click(function(e){
+		e.preventDefault();
+		alert('test');
+		$('#sec_jumpnow .team_details').append(DOM);
+	});
+
+	//delete the member input dynamically
+	$('#del_member').click(function(){
+
+	});	
 
 });

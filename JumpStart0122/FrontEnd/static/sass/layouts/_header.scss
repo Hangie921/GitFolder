@@ -1,0 +1,25 @@
+header {
+	position:fixed;
+	top:0;
+	left:0;
+	float:left;
+	width:100%;
+	margin:20px auto;
+	padding: 0 $standard-padding 0;
+	div {
+		float:left;
+	}
+}
+
+
+
+ul.menu {
+	margin:0;
+	float:right;
+	display:block;
+	li{
+	float:left;
+	padding-right:100px;
+	}
+}
+

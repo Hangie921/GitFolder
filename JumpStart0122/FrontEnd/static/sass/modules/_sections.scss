@@ -1,7 +1,6 @@
 /* Sections */
 div.fp-section{
 	padding:10% 10%;
-
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-o-box-sizing:border-box;
@@ -9,8 +8,16 @@ div.fp-section{
 	-webkit-box-sizing:border-box;
 
 
+
 }
 
+/****HOME******/
+
+div#sec_home {
+	background:url('../img/home_bg.jpg') no-repeat;
+	background-size:100% auto;
+
+}
 /********** Jump Now Section ********/
 
 div#sec_jumpnow {

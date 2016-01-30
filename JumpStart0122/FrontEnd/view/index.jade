@@ -69,7 +69,7 @@ html
 
 			.section#sec_jumpnow
 				//- 這樣包我就可以一個form包兩個slide的input
-				form(action='/upload',enctype="multipart/form-data",method="post")  
+				form(action='/upload', enctype="multipart/form-data",method="post")  
 					.slide
 						h2 jumpnow
 					.slide.team_details
@@ -95,7 +95,7 @@ html
 
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 												span.input__label-content.input__label-content--hoshi 負責項目
-									button(class='button',id='del_member') 刪除成員
+									//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
 								button(id='add_member') 添加成員
 								a(class='button', href='google.com') 下一步
 			

@@ -30,14 +30,17 @@ $(document).ready(function() {
 	//add the member input dynamically
 	var DOM = "<div class='col-md-4'><div class='team_detail_single'><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
 
-	$('#add_member').click(function(e){
-		e.preventDefault();
-		$('#sec_jumpnow .team_details').append(DOM);
+	$('#add_member').click(function(event){
+			
+			event.preventDefault();
+			$('#sec_jumpnow .team_details').append(DOM);
 
-		$('.del_btn').click(function(e){
-			e.preventDefault();
-			$(this).parent().parent().remove();
-		});	
+			$('.del_btn').click(function(event){
+				event.preventDefault();
+				$(this).parent().parent().remove();
+			});	
+		
+		
 
 	});
 

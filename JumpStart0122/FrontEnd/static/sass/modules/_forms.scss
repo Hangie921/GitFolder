@@ -4,6 +4,11 @@ div.slide.team_details, div.slide.personal_details {
 	input.input__field--hoshi{
 		min-height:50px;
 		color:$white;
+		float:left;
+	}
+	span.input {
+		float:left;
+		clear:both
 	}
 	span {
 		padding:0;

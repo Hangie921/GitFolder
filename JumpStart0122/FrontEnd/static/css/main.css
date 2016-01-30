@@ -63,6 +63,16 @@ h1, h2, h3, h4, h5 {
   cursor: pointer;
 }
 
+/* line 41, ../sass/base/_normalize.scss */
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 /* line 1, ../sass/base/_base.scss */
 body {
   font-family: "微軟正黑體", Sans-serif;
@@ -73,7 +83,7 @@ body {
 
 /* line 8, ../sass/base/_base.scss */
 a {
-  color: #f16b29;
+  color: #fff;
 }
 
 /* line 12, ../sass/base/_base.scss */
@@ -181,8 +191,14 @@ div#sec_jumpnow {
 div.slide.team_details input.input__field--hoshi, div.slide.personal_details input.input__field--hoshi {
   min-height: 50px;
   color: white;
+  float: left;
 }
-/* line 8, ../sass/modules/_forms.scss */
+/* line 9, ../sass/modules/_forms.scss */
+div.slide.team_details span.input, div.slide.personal_details span.input {
+  float: left;
+  clear: both;
+}
+/* line 13, ../sass/modules/_forms.scss */
 div.slide.team_details span, div.slide.personal_details span {
   padding: 0;
   color: white;

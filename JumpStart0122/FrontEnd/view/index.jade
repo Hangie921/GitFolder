@@ -54,16 +54,78 @@ html
 				.slide.team_details
 				
 					h2.hoshi
+					.col-md-4.clearfix
 						span.input.input--hoshi
 							input#input-4.input__field.input__field--hoshi(type='text')
 							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi name
+									span.input__label-content.input__label-content--hoshi 隊伍名稱
+						textarea(placeholder='產品介紹')
+						span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='file')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi 下載
+						
+					.col-md-4
+						.team_detail_single
+							span.input.input--hoshi
+								input#input-4.input__field.input__field--hoshi(type='text')
+								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+										span.input__label-content.input__label-content--hoshi 成員
+							span.input.input--hoshi
+								input#input-4.input__field.input__field--hoshi(type='text')
+								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+										span.input__label-content.input__label-content--hoshi 負責項目
+							a(class='button', href='google.com') -
+						a(class='button', href='google.com') 添加成員
+						a(class='button', href='google.com') 下一步
 				
 		
 				.slide.personal_details
-					h3 slide3
+					span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='text')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi 姓名
+						span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='text')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi 電話
+						span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='text')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi Email
+						span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='text')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi 聯絡地址
+						label
+							input(type="checkbox" name='我同意' value="我同意") 
+							我同意
+						input(type='submit' value='submit')
 			.section#sec_events
 				h2 events
+
+			.section#sec_contact
+				.col-md-4
+					span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='text')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi 姓名
+						span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='text')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi 電話
+						span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='text')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi Email
+						span.input.input--hoshi
+							input#input-4.input__field.input__field--hoshi(type='text')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									span.input__label-content.input__label-content--hoshi 聯絡地址
+						
+						textarea(placeholder='內容')
+					input(type='submit' value='submit')
+						
 
 
 

@@ -1,17 +1,30 @@
 header {
-	position:fixed;
+	position:fixed !important;
 	top:0;
 	left:0;
 	float:left;
-	width:100%;
+	width:100% !important;
 	margin:20px auto;
-	padding: 0 $standard-padding 0;
+	padding: 0 $standard-padding !important;
 	div {
 		float:left;
+		padding:0 !important;
+	}
+	a.navbar-brand {
+		display:block;
+		width:220px;
+		height:50px;
+		padding:0;
+		margin:0;
+		background:url(../img/jumpstart-logo.png) left no-repeat;
+		text-indent: -9999px;
+
 	}
 }
 
-
+div.main-menu {
+	float:right
+}
 
 ul.menu {
 	margin:0;
@@ -20,6 +33,25 @@ ul.menu {
 	li{
 	float:left;
 	padding-right:100px;
-	}
-}
+    margin: 13px 0px;
+    text-transform: uppercase;
+    text-align: right;
+	
+		a {
+			text-align: right;
+			display:block;
+			padding:3px 10px;
+			font-family:$english;
+			font-weight: 600;
+			letter-spacing: 1px;
 
+			&:hover {
+				color:$white;
+			}
+		}
+	}
+	
+}
+.jumpnow_link a{
+		background:rgba(242,107,42,0.7);
+	}

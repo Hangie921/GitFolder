@@ -1,0 +1,183 @@
+/*
+	SkyApp Bootstrap Sass Theme
+	Author: Janet Hsu
+	Version: 0.0.1
+*/
+/* BASE -Base Styles, Variables, mixins, etc* */
+/*Font Colors*/
+/*Background Colours*/
+/* Showcase Area */
+/* Mixins */
+/* line 1, ../sass/base/_normalize.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+/* line 5, ../sass/base/_normalize.scss */
+.page-header {
+  margin-top: 30px;
+}
+
+/* line 9, ../sass/base/_normalize.scss */
+.no-pad-top {
+  padding-top: 0;
+}
+
+/* line 1, ../sass/base/_base.scss */
+body {
+  font-family: "微軟正黑體", Sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #333333;
+}
+
+/* line 8, ../sass/base/_base.scss */
+a {
+  color: #00aff0;
+}
+
+/* line 12, ../sass/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 16, ../sass/base/_base.scss */
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 20, ../sass/base/_base.scss */
+img.device {
+  width: 100%;
+}
+
+/* MODULES - Individual sit componets */
+/* List */
+/* line 4, ../sass/modules/_typography.scss */
+.list, .list-feature {
+  margin-bottom: 30px;
+}
+
+/* line 8, ../sass/modules/_typography.scss */
+.list-feature {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+/* line 14, ../sass/modules/_typography.scss */
+.list-feature li {
+  line-height: 2.2em;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 19, ../sass/modules/_typography.scss */
+.list-feature li:last-child {
+  border: 0;
+}
+
+/* Blocks */
+/* line 3, ../sass/modules/_blocks.scss */
+.block, .block-primary, .block-secondary, .block-light, .block-dark {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+/* line 7, ../sass/modules/_blocks.scss */
+.block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 14, ../sass/modules/_blocks.scss */
+.block-primary {
+  background: #00aff0;
+  color: #fff;
+}
+
+/* line 19, ../sass/modules/_blocks.scss */
+.block-secondary {
+  background: #7fba00;
+  color: #fff;
+}
+
+/* line 24, ../sass/modules/_blocks.scss */
+.block-light {
+  background: #e4eef2;
+  color: #666;
+}
+
+/* line 29, ../sass/modules/_blocks.scss */
+.block-dark {
+  background: #333333;
+  color: #fff;
+}
+
+/* line 34, ../sass/modules/_blocks.scss */
+.block-center {
+  text-align: center !important;
+}
+
+/* Sections */
+/* line 2, ../sass/modules/_sections.scss */
+section {
+  padding: 30px 0;
+}
+
+/* Searchbox */
+/* line 3, ../sass/modules/_forms.scss */
+.search {
+  width: 100%;
+}
+/* line 5, ../sass/modules/_forms.scss */
+.search h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 11, ../sass/modules/_forms.scss */
+.search input[type="search"] {
+  border: 0;
+  height: 50px;
+  width: 80%;
+  border: 2px solid #00aff0;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+/* line 21, ../sass/modules/_forms.scss */
+.search button {
+  border: 0;
+  background: none;
+  padding: 0;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
+/* LAYOUTS- Page Layout Styles */
+/*NavBar*/
+/* line 3, ../sass/layouts/_nav.scss */
+.navbar {
+  width: 90%;
+  margin: auto;
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  border-color: #e7e7e7;
+  min-height: 60px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+/* line 12, ../sass/layouts/_nav.scss */
+.navbar a {
+  color: #00aff0 !important;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  padding-bottom: 24px !important;
+  padding-top: 20px !important;
+}
+
+/* line 21, ../sass/layouts/_nav.scss */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background: #00aff0 !important;
+  color: #fff !important;
+}

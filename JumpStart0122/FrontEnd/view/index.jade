@@ -68,7 +68,7 @@ html
 
 			.section#sec_competition
 				.slide 
-					h2 competition
+
 				.slide
 					h3 slide2
 				.slide
@@ -77,8 +77,20 @@ html
 			.section#sec_jumpnow
 				//- 這樣包我就可以一個form包兩個slide的input
 				form(action='/upload', enctype="multipart/form-data",method="post")  
-					.slide
-						h2 jumpnow
+					.slide.jumpnow_part1
+						.col-md-5.laptop-img
+							&nbsp;
+						.col-md-7.white-text
+							h3 三個步驟馬上加入Jumpstart計畫。
+							ul.plan_list
+								li 下載商業計劃書範本
+								li 填寫計畫書及相關資料
+								li 送出
+							a.bizplan_download 
+								|商業計劃書範本 <br/>
+							a.imready.basic_btn 我準備好了!
+								
+						
 					.slide.team_details
 						h2.hoshi
 						.col-md-4.clearfix

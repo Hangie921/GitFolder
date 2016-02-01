@@ -106,6 +106,30 @@ img.device {
   width: 100%;
 }
 
+/*BACKGROUND COLOUR***/
+/* line 29, ../sass/base/_base.scss */
+.primary_bg {
+  background-color: #f16b29;
+}
+
+/*FONTS****/
+/* line 35, ../sass/base/_base.scss */
+.en_para {
+  font-family: "raleway";
+}
+
+/* line 38, ../sass/base/_base.scss */
+.cn_para {
+  font-family: "heisei-kaku-gothic-std";
+}
+
+/**COLUMNS SETTINGS***/
+/* line 45, ../sass/base/_base.scss */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
 /* MODULES - Individual sit componets */
 /* List */
 /* line 4, ../sass/modules/_typography.scss */
@@ -184,11 +208,15 @@ div.fp-section {
 /****HOME******/
 /* line 16, ../sass/modules/_sections.scss */
 div#sec_home {
-  background: url("../img/home_bg.jpg") no-repeat;
-  background-size: 100% auto;
+  background: url("../img/home_bg.jpg") no-repeat center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
 }
 
-/* line 22, ../sass/modules/_sections.scss */
+/* line 27, ../sass/modules/_sections.scss */
 .sloganContainer {
   margin-top: 50px;
   max-width: 500px;
@@ -196,17 +224,17 @@ div#sec_home {
   color: white;
   height: 700px;
 }
-/* line 28, ../sass/modules/_sections.scss */
+/* line 33, ../sass/modules/_sections.scss */
 .sloganContainer h2 {
   font-size: 50px;
 }
-/* line 33, ../sass/modules/_sections.scss */
+/* line 38, ../sass/modules/_sections.scss */
 .sloganContainer .slotMachine {
   font-size: 40px;
   position: relative;
   display: block;
 }
-/* line 41, ../sass/modules/_sections.scss */
+/* line 46, ../sass/modules/_sections.scss */
 .sloganContainer span.machine-border {
   display: block;
   background: #fff;
@@ -216,11 +244,11 @@ div#sec_home {
   margin-right: 141px;
   margin-top: -6px;
 }
-/* line 51, ../sass/modules/_sections.scss */
+/* line 56, ../sass/modules/_sections.scss */
 .sloganContainer #slot3 {
   margin-left: 107px;
 }
-/* line 55, ../sass/modules/_sections.scss */
+/* line 60, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3 {
   margin-top: 40px;
   width: 170px;
@@ -237,7 +265,7 @@ div#sec_home {
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
-/* line 71, ../sass/modules/_sections.scss */
+/* line 76, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3 span {
   position: absolute;
   right: 0;
@@ -246,7 +274,7 @@ div#sec_home {
   width: 50px;
   text-indent: -9999px;
 }
-/* line 80, ../sass/modules/_sections.scss */
+/* line 85, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3 span:before {
   position: absolute;
   content: '';
@@ -264,7 +292,7 @@ div#sec_home {
   /* Chrome, Safari, Opera */
   transform: rotate(45deg);
 }
-/* line 95, ../sass/modules/_sections.scss */
+/* line 100, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3 span:after {
   position: absolute;
   content: '';
@@ -282,13 +310,13 @@ div#sec_home {
   /* Chrome, Safari, Opera */
   transform: rotate(-45deg);
 }
-/* line 111, ../sass/modules/_sections.scss */
+/* line 116, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3:hover {
   margin-left: 15px;
 }
 
 /********** Jump Now Section ********/
-/* line 122, ../sass/modules/_sections.scss */
+/* line 127, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
 }

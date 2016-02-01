@@ -1,32 +1,40 @@
 // this is the js that contain and execute the all Front-End related js
 
 $(document).ready(function() {
-
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
-	  afterLoad: function(anchorLink, index) {
-	    if (index == 2) {
-	      $('.rocket').animate({
-	        left: "20%",
-	        top: "30%"
-	      }, 1000);
-	    }
-	  },
-	  onLeave: function(index, nextIndex, direction) {
-	    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {
-	    	$.fn.fullpage.silentMoveTo(nextIndex,0);
-	    	$('.rocket').animate({
-	    		left: "0px",
-	    		top: "0px"
-	      	}, 1000);
-		setTimeout(function(){
-			$.fn.fullpage.moveTo(nextIndex,0);
-		},1000);
-	      
-	    }
 
-	  }// end of the onLeave function
+		afterLoad: function(anchorLink, index) {
+			$.fn.fullpage.setKeyboardScrolling(false);
+		    if (index == 2) {
+		    	$('.rocket').animate({
+		        	left: "500px",
+		        	top: "500px"
+		      	}, 1000);
+		    	// $.fn.fullpage.setAllowScrolling(false);
+		    }
+		},
+		onLeave: function(index, nextIndex, direction) {
+		    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {
+		    	
+		    	$('.rocket').animate({
+		    		left: "0px",
+		    		top: "0px"
+		      	}, 1000);
+		      	
+		      	$.fn.fullpage.moveTo(nextIndex,0);
+
+		      	setTimeout(function(){
+		      		
+		      	}, 3000);
+		    	return false;	
+		    }
+		  	// $.fn.fullpage.setAllowScrolling(true);  
+		  	
+		}// end of the onLeave function
 	});
+
+
 
 
     //The slot Machine animation
@@ -66,41 +74,6 @@ $(document).ready(function() {
 	});
 
 	//animate the rocket
-
-	$('#fullpage').fullpage({
-  menu: '#myMenu',
-  lockAnchors: false,
-  anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-  navigation: true,
-  navigationPosition: 'right',
-  navigationTooltips: false,
-  showActiveTooltip: false,
-  slidesNavigation: true,
-  sectionsColor: ['#1E90FF', '#99FF99', '#A9A9A9', '#FFE55C'],
-  slideSelector: '.slide',
-  afterLoad: function(anchorLink, index) {
-    if (index == 2) {
-      $('.rocket').animate({
-        left: "20%",
-        top: "30%"
-      }, 1000);
-    }
-  },
-  onLeave: function(index, nextIndex, direction) {
-    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {
-      $.fn.fullpage.silentMoveTo(nextIndex,0);
-      $('.rocket').animate({
-        left: "0px",
-        top: "0px"
-      }, 1000);
-     setTimeout(function(){
-        $.fn.fullpage.moveTo(nextIndex,0);
-     },1000);
-      
-    }
-
-  }
-});
 	
 
 

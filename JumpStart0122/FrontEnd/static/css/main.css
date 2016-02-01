@@ -430,9 +430,9 @@ ul.menu li a:hover {
 .jumpnow_link a {
   background: rgba(242, 107, 42, 0.7);
 }
-
 .rocket{
   width: 200px;
   height: 120px;
-  border-radius: 30% ;
+  border-radius: 30%;
+  position: absolute;
 }

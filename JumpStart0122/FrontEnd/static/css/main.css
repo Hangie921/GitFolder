@@ -446,57 +446,35 @@ ul.competition-headings a.selected {
 }
 
 /********** Jump Now Section ********/
-<<<<<<< HEAD
-/* line 180, ../sass/modules/_sections.scss */
-div#sec_jumpnow {
-  background: #f16b29;
-}
-/* line 183, ../sass/modules/_sections.scss */
-=======
+
 /* line 155, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
 }
 /* line 158, ../sass/modules/_sections.scss */
->>>>>>> origin/master
 div#sec_jumpnow p {
   font-size: 26px;
   line-height: 40px;
 }
 
-<<<<<<< HEAD
-/* line 189, ../sass/modules/_sections.scss */
-=======
-/* line 164, ../sass/modules/_sections.scss */
->>>>>>> origin/master
+
 div.laptop-img {
   background: url(../img/laptop.png) no-repeat center;
   min-height: 320px;
 }
 
-<<<<<<< HEAD
-/* line 195, ../sass/modules/_sections.scss */
-=======
+
 /* line 170, ../sass/modules/_sections.scss */
->>>>>>> origin/master
 ul.plan_list {
   padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
-<<<<<<< HEAD
-/* line 199, ../sass/modules/_sections.scss */
-=======
-/* line 174, ../sass/modules/_sections.scss */
->>>>>>> origin/master
+
 ul.plan_list li {
   font-size: 26px;
   line-height: 40px;
 }
-<<<<<<< HEAD
-/* line 203, ../sass/modules/_sections.scss */
-=======
-/* line 178, ../sass/modules/_sections.scss */
->>>>>>> origin/master
+
 ul.plan_list li:before {
   width: 30px;
   height: 30px;
@@ -513,11 +491,6 @@ ul.plan_list li:before {
   counter-increment: my-badass-counter;
 }
 
-<<<<<<< HEAD
-/* line 222, ../sass/modules/_sections.scss */
-=======
-/* line 197, ../sass/modules/_sections.scss */
->>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -543,11 +516,7 @@ ul.plan_list li:before {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-<<<<<<< HEAD
-/* line 247, ../sass/modules/_sections.scss */
-=======
-/* line 222, ../sass/modules/_sections.scss */
->>>>>>> origin/master
+
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;

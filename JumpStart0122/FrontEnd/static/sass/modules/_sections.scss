@@ -13,7 +13,7 @@ div.fp-section{
 
 /****HOME******/
 
-div#sec_home, div#sec_competition {
+div#sec_home {
 	background:url('../img/home_bg.jpg') no-repeat center;
 	background-size:cover;
 	-moz-background-size:cover;
@@ -139,7 +139,7 @@ div#sec_home, div#sec_competition {
 
 #sec_about {
 	p {
-		padding-top:200px;
+		padding-top:250px;
 		text-shadow: 2px 2px 10px rgba(242, 107, 42, 0.7);
 	}
 }
@@ -163,7 +163,7 @@ div.laptop-img {
 }
 
 ul.plan_list {
-	padding:30px 0 0;
+	padding:30px 0 20px;
 	counter-reset: my-badass-counter;
 
 	li {
@@ -179,6 +179,7 @@ ul.plan_list {
 			background-color:$secondary-color;
 			display: inline-block;
 			text-align:center;
+			line-height: 30px;
 			border-radius:50%;
 			content: counter(my-badass-counter);
 			counter-increment: my-badass-counter;
@@ -201,6 +202,7 @@ ul.plan_list {
 	clear:both;
 	display:inline-block;
 	padding:0 20px;
+	text-decoration:none !important;
 	-webkit-box-shadow: 10px 10px 0px -5px rgba(221,93,32,1);
 	-moz-box-shadow: 10px 10px 0px -5px rgba(221,93,32,1);
 	-ms-box-shadow: 10px 10px 0px -5px rgba(221,93,32,1);
@@ -213,7 +215,8 @@ ul.plan_list {
 	-webkit-transition: all 0.5s;
 
 		&:hover {
-		background-color:#3333 !important;
+		color:#fff;
+		background-color:#555 !important;
 		-webkit-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
 		-moz-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
 		-ms-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);

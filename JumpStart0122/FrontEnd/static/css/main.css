@@ -10,57 +10,57 @@
 /*Setting*/
 /* Showcase Area */
 /* Mixins */
-/* line 1, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 1, ../sass/base/_normalize.scss */
 h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
-/* line 5, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 5, ../sass/base/_normalize.scss */
 h3 {
   font-size: 30px;
 }
 
-/* line 9, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 9, ../sass/base/_normalize.scss */
 .page-header {
   margin-top: 30px;
 }
 
-/* line 13, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 13, ../sass/base/_normalize.scss */
 .no-pad-top {
   padding-top: 0;
 }
 
-/* line 17, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 17, ../sass/base/_normalize.scss */
 .fp-tableCell {
   vertical-align: top !important;
 }
 
 /*the setting about the slotMachine*/
-/* line 22, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 22, ../sass/base/_normalize.scss */
 .slotMachine {
   height: 33px;
   margin-bottom: 10px;
 }
 
-/* line 26, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 26, ../sass/base/_normalize.scss */
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
   height: 1.5em;
 }
 
-/* line 31, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 31, ../sass/base/_normalize.scss */
 #slot3 .slot {
   display: block;
   height: 1.5em;
 }
 
-/* line 35, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 35, ../sass/base/_normalize.scss */
 #slotButton3 {
   cursor: pointer;
 }
 
-/* line 39, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
+/* line 39, ../sass/base/_normalize.scss */
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -70,7 +70,7 @@ h3 {
   clear: both;
 }
 
-/* line 1, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 1, ../sass/base/_base.scss */
 body {
   font-family: "文鼎黑體", Sans-serif;
   font-size: 16px;
@@ -78,17 +78,17 @@ body {
   color: #333333;
 }
 
-/* line 10, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 10, ../sass/base/_base.scss */
 a {
   color: #fff;
 }
 
-/* line 14, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 14, ../sass/base/_base.scss */
 ul, li {
   list-style: none;
 }
 
-/* line 18, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 18, ../sass/base/_base.scss */
 input, textarea, button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -97,64 +97,64 @@ input, textarea, button {
   border-radius: 0px;
 }
 
-/* line 22, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 22, ../sass/base/_base.scss */
 img.device {
   width: 100%;
 }
 
 /*BACKGROUND COLOUR***/
-/* line 29, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 29, ../sass/base/_base.scss */
 .primary_bg {
   background-color: #f16b29;
 }
 
 /*POSITIONS****/
-/* line 35, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 35, ../sass/base/_base.scss */
 .relative-position {
   position: relative;
 }
 
 /*FONTS****/
-/* line 41, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 41, ../sass/base/_base.scss */
 .en_para {
   font-family: "raleway";
 }
 
-/* line 44, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 .cn_para {
   font-family: "heisei-kaku-gothic-std";
 }
 
-/* line 48, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 48, ../sass/base/_base.scss */
 .primary-text {
   color: #f16b29;
 }
 
-/* line 51, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 51, ../sass/base/_base.scss */
 .white-text {
   color: #ffffff;
 }
 
 /**COLUMNS SETTINGS***/
-/* line 58, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 58, ../sass/base/_base.scss */
 .container {
   min-width: 1388px;
 }
 
-/* line 61, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 61, ../sass/base/_base.scss */
 .col-centered {
   float: none;
   margin: 0 auto;
 }
 
 /****BUTTONS********/
-/* line 68, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
+/* line 68, ../sass/base/_base.scss */
 .basic_btn {
   float: left;
   position: relative;
   margin-top: 20px;
   background-color: #fbaf5d;
-  min-width: 250px;
+  min-width: 300px;
   font-size: 18px;
   height: 60px;
   cursor: pointer;
@@ -162,6 +162,7 @@ img.device {
   clear: both;
   display: inline-block;
   padding: 0 20px;
+  text-decoration: none !important;
   -webkit-box-shadow: 10px 10px 0px -5px #dd5d20;
   -moz-box-shadow: 10px 10px 0px -5px #dd5d20;
   -ms-box-shadow: 10px 10px 0px -5px #dd5d20;
@@ -173,7 +174,7 @@ img.device {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 86, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_mixins.scss */
+/* line 87, ../sass/base/_mixins.scss */
 .basic_btn:after {
   content: "";
   position: absolute;
@@ -185,9 +186,10 @@ img.device {
   height: 36px;
   background: url(../img/arrow-right.png) no-repeat center center;
 }
-/* line 98, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/base/_mixins.scss */
+/* line 99, ../sass/base/_mixins.scss */
 .basic_btn:hover {
-  background-color: #3333 !important;
+  color: #fff;
+  background-color: #555 !important;
   -webkit-box-shadow: 0px 0px 0px -5px #dd5d20;
   -moz-box-shadow: 0px 0px 0px -5px #dd5d20;
   -ms-box-shadow: 0px 0px 0px -5px #dd5d20;
@@ -197,70 +199,70 @@ img.device {
 
 /* MODULES - Individual sit componets */
 /* List */
-/* line 4, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_typography.scss */
+/* line 4, ../sass/modules/_typography.scss */
 .list, .list-feature {
   margin-bottom: 30px;
 }
 
-/* line 8, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_typography.scss */
+/* line 8, ../sass/modules/_typography.scss */
 .list-feature {
   margin: 0;
   padding: 0;
   width: 80%;
 }
-/* line 14, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_typography.scss */
+/* line 14, ../sass/modules/_typography.scss */
 .list-feature li {
   line-height: 2.2em;
   border-bottom: 1px solid #cccccc;
 }
-/* line 19, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_typography.scss */
+/* line 19, ../sass/modules/_typography.scss */
 .list-feature li:last-child {
   border: 0;
 }
 
 /* Blocks */
-/* line 3, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
+/* line 3, ../sass/modules/_blocks.scss */
 .block, .block-primary, .block-secondary, .block-light, .block-dark {
   padding: 15px;
   margin-bottom: 15px;
 }
-/* line 7, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
+/* line 7, ../sass/modules/_blocks.scss */
 .block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
   margin-top: 0;
   padding-top: 0;
 }
 
-/* line 14, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
+/* line 14, ../sass/modules/_blocks.scss */
 .block-primary {
   background: #f16b29;
   color: #fff;
 }
 
-/* line 19, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
+/* line 19, ../sass/modules/_blocks.scss */
 .block-secondary {
   background: #fbaf5d;
   color: #fff;
 }
 
-/* line 24, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
+/* line 24, ../sass/modules/_blocks.scss */
 .block-light {
   background: #e4eef2;
   color: #666;
 }
 
-/* line 29, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
+/* line 29, ../sass/modules/_blocks.scss */
 .block-dark {
   background: #333333;
   color: #fff;
 }
 
-/* line 34, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
+/* line 34, ../sass/modules/_blocks.scss */
 .block-center {
   text-align: center !important;
 }
 
 /* Sections */
-/* line 2, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 2, ../sass/modules/_sections.scss */
 div.fp-section {
   padding: 10% 10%;
   box-sizing: border-box;
@@ -271,8 +273,8 @@ div.fp-section {
 }
 
 /****HOME******/
-/* line 16, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
-div#sec_home, div#sec_competition {
+/* line 16, ../sass/modules/_sections.scss */
+div#sec_home {
   background: url("../img/home_bg.jpg") no-repeat center;
   background-size: cover;
   -moz-background-size: cover;
@@ -281,7 +283,7 @@ div#sec_home, div#sec_competition {
   -webkit-background-size: cover;
 }
 
-/* line 28, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 28, ../sass/modules/_sections.scss */
 .sloganContainer {
   margin-top: 50px;
   max-width: 500px;
@@ -289,17 +291,17 @@ div#sec_home, div#sec_competition {
   color: white;
   height: 700px;
 }
-/* line 34, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 34, ../sass/modules/_sections.scss */
 .sloganContainer h2 {
   font-size: 50px;
 }
-/* line 39, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 39, ../sass/modules/_sections.scss */
 .sloganContainer .slotMachine {
   font-size: 40px;
   position: relative;
   display: block;
 }
-/* line 47, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 47, ../sass/modules/_sections.scss */
 .sloganContainer span.machine-border {
   display: block;
   background: #fff;
@@ -309,11 +311,11 @@ div#sec_home, div#sec_competition {
   margin-right: 141px;
   margin-top: -6px;
 }
-/* line 57, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 57, ../sass/modules/_sections.scss */
 .sloganContainer #slot3 {
   margin-left: 107px;
 }
-/* line 61, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 61, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3 {
   margin-top: 40px;
   width: 170px;
@@ -330,7 +332,7 @@ div#sec_home, div#sec_competition {
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
-/* line 77, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 77, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3 span {
   position: absolute;
   right: 0;
@@ -339,7 +341,7 @@ div#sec_home, div#sec_competition {
   width: 50px;
   text-indent: -9999px;
 }
-/* line 86, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 86, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3 span:before {
   position: absolute;
   content: '';
@@ -357,7 +359,7 @@ div#sec_home, div#sec_competition {
   /* Chrome, Safari, Opera */
   transform: rotate(45deg);
 }
-/* line 101, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 101, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3 span:after {
   position: absolute;
   content: '';
@@ -375,19 +377,19 @@ div#sec_home, div#sec_competition {
   /* Chrome, Safari, Opera */
   transform: rotate(-45deg);
 }
-/* line 117, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 117, ../sass/modules/_sections.scss */
 .sloganContainer h2#slotButton3:hover {
   margin-left: 15px;
 }
 
 /*ABOUT SECTIOIN***/
-/* line 129, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 129, ../sass/modules/_sections.scss */
 .top_animation {
   background: url(../img/clouds.png) no-repeat left;
   min-height: 430px;
 }
 
-/* line 133, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 133, ../sass/modules/_sections.scss */
 .rocket {
   position: absolute;
   width: 278px;
@@ -395,40 +397,40 @@ div#sec_home, div#sec_competition {
   background: url(../img/rocket.png) no-repeat center center;
 }
 
-/* line 141, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 141, ../sass/modules/_sections.scss */
 #sec_about p {
-  padding-top: 200px;
+  padding-top: 250px;
   text-shadow: 2px 2px 10px rgba(242, 107, 42, 0.7);
 }
 
 /********** Jump Now Section ********/
-/* line 150, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 150, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
 }
-/* line 153, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 153, ../sass/modules/_sections.scss */
 div#sec_jumpnow p {
   font-size: 26px;
   line-height: 40px;
 }
 
-/* line 159, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 159, ../sass/modules/_sections.scss */
 div.laptop-img {
   background: url(../img/laptop.png) no-repeat center;
   min-height: 320px;
 }
 
-/* line 165, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 165, ../sass/modules/_sections.scss */
 ul.plan_list {
-  padding: 30px 0 0;
+  padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
-/* line 169, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 169, ../sass/modules/_sections.scss */
 ul.plan_list li {
   font-size: 26px;
   line-height: 40px;
 }
-/* line 173, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 173, ../sass/modules/_sections.scss */
 ul.plan_list li:before {
   width: 30px;
   height: 30px;
@@ -439,12 +441,13 @@ ul.plan_list li:before {
   background-color: #fbaf5d;
   display: inline-block;
   text-align: center;
+  line-height: 30px;
   border-radius: 50%;
   content: counter(my-badass-counter);
   counter-increment: my-badass-counter;
 }
 
-/* line 191, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 192, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -458,6 +461,7 @@ ul.plan_list li:before {
   clear: both;
   display: inline-block;
   padding: 0 20px;
+  text-decoration: none !important;
   -webkit-box-shadow: 10px 10px 0px -5px #dd5d20;
   -moz-box-shadow: 10px 10px 0px -5px #dd5d20;
   -ms-box-shadow: 10px 10px 0px -5px #dd5d20;
@@ -469,16 +473,17 @@ ul.plan_list li:before {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 215, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 217, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
-  background-color: #3333 !important;
+  color: #fff;
+  background-color: #555 !important;
   -webkit-box-shadow: 0px 0px 0px -5px #dd5d20;
   -moz-box-shadow: 0px 0px 0px -5px #dd5d20;
   -ms-box-shadow: 0px 0px 0px -5px #dd5d20;
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 224, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
+/* line 227, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -491,52 +496,47 @@ ul.plan_list li:before {
 }
 
 /* Searchbox */
-/* line 4, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
+/* line 4, ../sass/modules/_forms.scss */
 div.slide.team_details input.input__field--hoshi, div.slide.personal_details input.input__field--hoshi {
   min-height: 50px;
   color: white;
   float: left;
 }
-/* line 9, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
+/* line 9, ../sass/modules/_forms.scss */
 div.slide.team_details span.input, div.slide.personal_details span.input {
   float: left;
   clear: both;
 }
-/* line 13, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
+/* line 13, ../sass/modules/_forms.scss */
 div.slide.team_details span, div.slide.personal_details span {
   padding: 0;
   color: white;
 }
 
+/* line 2, ../sass/modules/_animations.scss */
+.rocket_ani {
+  -moz-animation: shake 1s 0s linear infinite;
+  -webkit-animation: shake 1s 0s linear infinite;
+  -ms-animation: shake 1s 0s linear infinite;
+  -o-animation: shake 1s 0s linear infinite;
+  animation: shake 1s 0s linear infinite;
+}
+
+@keyframes shake {
+  /* line 7, ../sass/modules/_animations.scss */
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+
+  /* line 8, ../sass/modules/_animations.scss */
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 /* LAYOUTS- Page Layout Styles */
 /*NavBar*/
-/* line 3, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_nav.scss */
-.navbar {
-  width: 90%;
-  margin: auto;
-  border-right: 1px solid #e7e7e7;
-  border-left: 1px solid #e7e7e7;
-  border-color: #e7e7e7;
-  min-height: 60px;
-  background: #fff;
-  margin-bottom: 30px;
-}
-/* line 12, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_nav.scss */
-.navbar a {
-  color: #f16b29 !important;
-  font-size: 20px;
-  letter-spacing: -0.5px;
-  padding-bottom: 24px !important;
-  padding-top: 20px !important;
-}
-
-/* line 21, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_nav.scss */
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background: #f16b29 !important;
-  color: #fff !important;
-}
-
-/* line 1, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 1, ../sass/layouts/_header.scss */
 header {
   position: fixed !important;
   top: 0;
@@ -546,12 +546,12 @@ header {
   margin: 20px auto;
   padding: 0 10% !important;
 }
-/* line 9, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 9, ../sass/layouts/_header.scss */
 header div {
   float: left;
   padding: 0 !important;
 }
-/* line 13, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 13, ../sass/layouts/_header.scss */
 header a.navbar-brand {
   display: block;
   width: 220px;
@@ -562,18 +562,18 @@ header a.navbar-brand {
   text-indent: -9999px;
 }
 
-/* line 25, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 25, ../sass/layouts/_header.scss */
 div.main-menu {
   float: right;
 }
 
-/* line 29, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 29, ../sass/layouts/_header.scss */
 ul.menu {
   margin: 0;
   float: right;
   display: block;
 }
-/* line 33, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 33, ../sass/layouts/_header.scss */
 ul.menu li {
   float: left;
   padding-right: 100px;
@@ -581,7 +581,7 @@ ul.menu li {
   text-transform: uppercase;
   text-align: right;
 }
-/* line 40, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 40, ../sass/layouts/_header.scss */
 ul.menu li a {
   text-align: right;
   display: block;
@@ -590,12 +590,12 @@ ul.menu li a {
   font-weight: 600;
   letter-spacing: 1px;
 }
-/* line 48, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 48, ../sass/layouts/_header.scss */
 ul.menu li a:hover {
   color: white;
 }
 
-/* line 55, /Users/hangie921/Desktop/GitFolder/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
+/* line 55, ../sass/layouts/_header.scss */
 .jumpnow_link a {
   background: rgba(242, 107, 42, 0.7);
 }

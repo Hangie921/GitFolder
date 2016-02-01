@@ -17,20 +17,20 @@ html
 	body
 		#fullpage
 
-			.section#sec_home.container
+			.section#sec_home.container(data-anchor='home')
 				header.container
 					.col-md-2
 						a(class='navbar-brand' href='#') Jump Start
-					.main-menu
+					.main-menu#main_menu
 						ul.menu
-							li
-								a about
-							li
-								a competition
-							li.jumpnow_link 
-								a jump now
-							li 
-								a events
+							li(data-menuanchor='about')
+								a(href='#about') about
+							li(data-menuanchor='competition')
+								a(href='#competition/1') competition
+							li.jumpnow_link(data-menuanchor='jumpnow') 
+								a(href='#jumpnow') jump now
+							li(data-menuanchor='events') 
+								a(href='#events') events
 				.sloganContainer
 					h2 當你擁有
 					h2 100,000,000+ 使用者
@@ -44,33 +44,36 @@ html
 							span.slot 翹課打LOL
 							span.slot 夜唱夜衝夜遊
 							span.slot 準備創業計畫
-						span.machine-border &nbsp	
+						//- span.machine-border &nbsp	
 					h2#slotButton3 開始行動 
 						span &nbsp;
-				
-				//- ul  
-				//- 	li 
-				//- 		a(href='/submit') submit
-				//- 	li 
-				//- 		a(href='/contact_us') contact us
-				//- 	li 
-				//- 		a(href='/coming') coming soon
-			.section#sec_about.container.primary_bg
+	
+			.section#sec_about.container.primary_bg(data-anchor='about')
 				.top_animation.col-md-9.col-centered
 					.rocket.rocket_ani
 					.col-md-9.col-centered
 						p.en_para.white-text 
 							|Jumpstart, 是亞洲第一個跨國商業合作計畫, 致力於幫助當地企業與國際接軌，讓有前景理念的產品在世界舞台上綻放，創造更大的商機。		
 
+<<<<<<< HEAD
 			.section#sec_competition.container
 				.slide.competition_topic.relative-position
 					.col-md-12.col-centered
 						ul.competition-headings 
+=======
+			.section#sec_competition.container(data-anchor='competition')
+				.slide#competition_info_slide
+					h3 slide1
+				.slide.competition_topic.active#competition_topic_slide
+					.col-md-5
+						ul.competition-headings#competition_menu
+>>>>>>> origin/master
 							li
-								a 參賽資訊
+								a(href="#competition") 參賽資訊
 							li 
-								a.selected 競賽主題
+								a.selected(href="#competition/1") 競賽主題
 							li 
+<<<<<<< HEAD
 								a 獎項
 					.col-md-7.col-centered.clearfix
 						p 渴望更多在國際舞台嶄露才華的機會嗎？現在，與世界接軌的鑰匙就掌握在你手上。
@@ -99,14 +102,34 @@ html
 				.slide
 					h3 slide2
 				.slide
+=======
+								a(href="#competition/2") 獎項
+						p 渴望更多在國際舞台嶄露才華的機會嗎？現在，與世界接軌的鑰匙就掌握在你手上。
+							|亞洲人才與創業孵化平台 - Ping!為推動創業風氣，與新加坡知名創投公司 - Venturecraft VC首度合作，VC將提供巨量的 User data，期望各方人才組隊報名，互相激盪，創造更多商業價值。
+
+					.col-md-7
+						ul.partners
+							li
+								a 螞蜂窩
+							li 
+								a venture craft
+							li
+								a 365
+							li
+								a e27
+							li
+								a city tour
+					.col-md-5
+						a.basic_btn(href='#jumpnow') 我要參加
+				.slide#competition_price_slide
+>>>>>>> origin/master
 					h3 slide3
 
-			.section#sec_jumpnow
+			.section#sec_jumpnow(data-anchor='jumpnow')
 				//- 這樣包我就可以一個form包兩個slide的input
 				form(action='/upload', enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
 						.col-md-5.laptop-img
-							&nbsp;
 						.col-md-7.white-text
 							h3 三個步驟馬上加入Jumpstart計畫!
 							ul.plan_list
@@ -115,7 +138,7 @@ html
 								li 送出
 							a.bizplan_download 
 								|商業計劃書範本 <br/>
-							a.imready.basic_btn 我準備好了!
+							a.imready.basic_btn(href='#jumpnow/1') 我準備好了!
 								
 						
 					.slide.team_details
@@ -143,8 +166,8 @@ html
 												span.input__label-content.input__label-content--hoshi 負責項目
 									//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
 								button(id='add_member') 添加成員
-								a(class='button', href='google.com') 下一步
-			
+								a(class='button', href='#jumpnow/2') 下一步
+						a(class='button',href='#jumpnow') 上一步
 					.slide.personal_details.fp-auto-height
 							span.input.input--hoshi
 								input#input-4.input__field.input__field--hoshi(type='text',name='contact')
@@ -166,31 +189,35 @@ html
 								input(type="checkbox" name='我同意' value="我同意") 
 								span 我同意
 							input(type='submit' value='submit')
-			.section#sec_events
+			.section#sec_events(data-anchor='events')
 				h2 events
+				.contact_container
+					.col-md-12.contact_header
+						.col-md-6.col-md-offset-3
+							h2 CONTACT US
+						.col-md-3.btn_up_and_down
+							h3 up
+					.col-md-12
+						form(action='/contact', enctype="multipart/form-data",method="post")
+							span.input.input--hoshi
+								input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
+								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+										span.input__label-content.input__label-content--hoshi 姓名
+							span.input.input--hoshi
+								input#input-4.input__field.input__field--hoshi(type='text',name='user_phone')
+								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+										span.input__label-content.input__label-content--hoshi 電話
+							span.input.input--hoshi
+								input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
+								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+										span.input__label-content.input__label-content--hoshi Email
+							textarea(placeholder='內容',name='user_msg')
+							input(type='submit' value='submit')
+							
 
-			.section#sec_contact
-				.col-md-4
-					form(action='/contact', enctype="multipart/form-data",method="post")
-						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
-							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi 姓名
-						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name='user_phone')
-							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi 電話
-						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
-							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi Email
-						textarea(placeholder='內容',name='user_msg')
-						input(type='submit' value='submit')
-						
 
 
-
-				
+					
 
 
 

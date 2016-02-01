@@ -20,7 +20,7 @@ div#sec_home {
 	-ms-background-size:cover;
 	-o-background-size:cover;
 	-webkit-background-size:cover;
-
+	position: relative;
 
 
 }
@@ -135,6 +135,8 @@ div#sec_home {
 	width: 278px;
     height: 221px;
 	background: url(../img/rocket.png) no-repeat center center;
+	left: 0;
+	top: 80%;
 }
 
 #sec_about {
@@ -381,3 +383,21 @@ ul.partners {
 	width:100px;
 	clear:none !important;
 }
+/*****Event Section**********/
+div#sec_events{
+	position: relative;
+}
+
+/***CONTACT_US******/
+div.contact_container{
+	text-align:center;
+	position: absolute;
+	top: 80%;
+	background-color:#99FF99;
+	& .contact_header{
+		cursor: pointer;
+	}
+}
+
+
+

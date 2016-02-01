@@ -3,7 +3,7 @@
 $(document).ready(function() {
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
-    	anchor:['sec_home','sec_about','sec_competition','sec_jumpnow','sec_events','sec_contact'];
+    	anchor:['sec_home','sec_about','sec_competition','sec_jumpnow','sec_events','sec_contact'],
     	scrollingSpeed:1000,
     	resize:true,
 		afterLoad: function(anchorLink, index) {

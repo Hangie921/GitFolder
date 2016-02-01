@@ -570,6 +570,24 @@ ul.partners li:first-child {
   background: url(../img/download_btn.png) no-repeat center center;
 }
 
+/***FORMS*****/
+/* line 310, ../sass/modules/_sections.scss */
+.team_details_single > span {
+  clear: none;
+}
+
+/* line 313, ../sass/modules/_sections.scss */
+.team_member {
+  width: 100px;
+  clear: none !important;
+}
+
+/* line 317, ../sass/modules/_sections.scss */
+.responsibility {
+  width: 100px;
+  clear: none !important;
+}
+
 /* Searchbox */
 /* line 4, ../sass/modules/_forms.scss */
 div.slide.team_details input.input__field--hoshi, div.slide.personal_details input.input__field--hoshi {

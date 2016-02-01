@@ -45,32 +45,76 @@ a:hover {
   vertical-align: top !important;
 }
 
+/* line 28, ../sass/base/_normalize.scss */
+.fp-controlArrow.fp-prev {
+  height: 120px;
+  width: 65px;
+  -moz-border-radius: 150px 0 0 150px;
+  border-radius: 0 150px 150px 0;
+  -ms-border-radius: 0 150px 150px 0;
+  -webkit-border-radius: 0 150px 150px 0;
+  border: 1px solid #BBB;
+  left: -26px;
+}
+/* line 38, ../sass/base/_normalize.scss */
+.fp-controlArrow.fp-prev:before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: transparent;
+  top: 0px;
+  width: 25px;
+  height: 40px;
+  left: 25px;
+  top: 42px;
+  border-top: 1px solid #bbb;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 53, ../sass/base/_normalize.scss */
+.fp-controlArrow.fp-prev:after {
+  position: absolute;
+  content: '';
+  display: block;
+  background: transparent;
+  top: 0px;
+  width: 25px;
+  height: 40px;
+  left: 25px;
+  top: 32px;
+  border-top: 1px solid #bbb;
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 /*the setting about the slotMachine*/
-/* line 29, ../sass/base/_normalize.scss */
+/* line 71, ../sass/base/_normalize.scss */
 .slotMachine {
   height: 33px;
   margin-bottom: 10px;
 }
 
-/* line 33, ../sass/base/_normalize.scss */
+/* line 75, ../sass/base/_normalize.scss */
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
   height: 1.5em;
 }
 
-/* line 38, ../sass/base/_normalize.scss */
+/* line 80, ../sass/base/_normalize.scss */
 #slot3 .slot {
   display: block;
   height: 1.5em;
 }
 
-/* line 42, ../sass/base/_normalize.scss */
+/* line 84, ../sass/base/_normalize.scss */
 #slotButton3 {
   cursor: pointer;
 }
 
-/* line 46, ../sass/base/_normalize.scss */
+/* line 88, ../sass/base/_normalize.scss */
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -83,7 +127,7 @@ a:hover {
 /* line 1, ../sass/base/_base.scss */
 body {
   font-family: "文鼎黑體", Sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.7em;
   color: #333333;
 }
@@ -155,10 +199,11 @@ img.device {
 .col-centered {
   float: none;
   margin: 0 auto;
+  clear: both;
 }
 
 /****BUTTONS********/
-/* line 68, ../sass/base/_base.scss */
+/* line 69, ../sass/base/_base.scss */
 .basic_btn {
   float: left;
   position: relative;
@@ -465,6 +510,7 @@ div.competition_topic p {
 
 /* line 198, ../sass/modules/_sections.scss */
 ul.competition-headings {
+  text-align: center;
   padding: 20px 0 0;
 }
 /* line 202, ../sass/modules/_sections.scss */
@@ -489,16 +535,32 @@ ul.competition-headings a.selected {
 
 /**COMPETITION PARTNERS*******/
 /* line 222, ../sass/modules/_sections.scss */
+div.competition_topic a.basic_btn {
+  margin-top: 5%;
+  margin-left: 140px !important;
+}
+
+/* line 227, ../sass/modules/_sections.scss */
+div.sponsors {
+  position: absolute;
+  bottom: 150px;
+}
+
+/* line 233, ../sass/modules/_sections.scss */
 ul.partners {
   padding: 0;
+  text-align: center;
 }
-/* line 225, ../sass/modules/_sections.scss */
+/* line 237, ../sass/modules/_sections.scss */
 ul.partners li {
-  background-color: #f68e56;
+  background-color: #eee;
   width: 100px;
   height: 100px;
   display: inline-block;
   margin: 0 15px 15px 0;
+  padding: 10px;
+  cursor: pointer;
+  vertical-align: top;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -506,24 +568,77 @@ ul.partners li {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
-  -moz-background-size: 100% auto;
-  -ms-background-size: 100% auto;
-  -webkit-background-size: 100% auto;
-  -o-background-size: 100% auto;
+  -moz-background-size: 85% auto;
+  -ms-background-size: 85% auto;
+  -webkit-background-size: 85% auto;
+  -o-background-size: 85% auto;
+  -moz-background-blend-mode: multiply;
+  -ms-background-blend-mode: overlay;
+  -webkit-background-blend-mode: multiply;
+  -o-background-blend-mode: multiply;
+  background-blend-mode: multiply;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  filter: gray;
+  filter: grayscale(1);
+  transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  opacity: 0.8;
 }
-/* line 241, ../sass/modules/_sections.scss */
+/* line 272, ../sass/modules/_sections.scss */
 ul.partners li a {
   color: #f16b29;
   display: block;
   text-indent: -9999px;
 }
-/* line 247, ../sass/modules/_sections.scss */
+/* line 278, ../sass/modules/_sections.scss */
 ul.partners li:first-child {
   background-image: url(../img/螞蜂窩_logo.png);
 }
+/* line 282, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(2) {
+  background-image: url(../img/venture_craft_logo.png);
+}
+/* line 285, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(3) {
+  background-image: url(../img/365_logo.png);
+}
+/* line 288, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(4) {
+  background-image: url(../img/e27_logo.png);
+}
+/* line 291, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(5) {
+  background-image: url(../img/citytours_logo.png);
+}
+/* line 294, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(6) {
+  background-image: url(../img/ping_logo.png);
+}
+/* line 297, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(7) {
+  background-image: url(../img/DSEE_logo.png);
+}
+/* line 300, ../sass/modules/_sections.scss */
+ul.partners li:hover {
+  -moz-background-blend-mode: normal;
+  -ms-background-blend-mode: normal;
+  -webkit-background-blend-mode: normal;
+  -o-background-blend-mode: normal;
+  background-blend-mode: normal;
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: gray;
+  filter: grayscale(0);
+  opacity: 0.8;
+  background-color: white;
+}
 
 /**JUMP******/
-/* line 257, ../sass/modules/_sections.scss */
+/* line 320, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -548,7 +663,7 @@ ul.partners li:first-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 282, ../sass/modules/_sections.scss */
+/* line 345, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -558,7 +673,7 @@ ul.partners li:first-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 292, ../sass/modules/_sections.scss */
+/* line 355, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -571,18 +686,18 @@ ul.partners li:first-child {
 }
 
 /***FORMS*****/
-/* line 310, ../sass/modules/_sections.scss */
+/* line 373, ../sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
-/* line 313, ../sass/modules/_sections.scss */
+/* line 376, ../sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-/* line 317, ../sass/modules/_sections.scss */
+/* line 380, ../sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
@@ -680,15 +795,16 @@ ul.menu li a {
   display: block;
   padding: 3px 10px;
   font-family: "raleway";
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
 }
-/* line 48, ../sass/layouts/_header.scss */
+/* line 49, ../sass/layouts/_header.scss */
 ul.menu li a:hover {
   color: white;
 }
 
-/* line 55, ../sass/layouts/_header.scss */
+/* line 56, ../sass/layouts/_header.scss */
 .jumpnow_link a {
   background: rgba(242, 107, 42, 0.7);
 }

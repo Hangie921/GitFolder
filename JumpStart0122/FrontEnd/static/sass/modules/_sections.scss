@@ -196,7 +196,7 @@ div.competition_topic {
 }
 
 ul.competition-headings {
-
+	text-align:center;
 	padding:20px 0 0;
 
 	li {
@@ -218,23 +218,54 @@ ul.competition-headings {
 }
 
 /**COMPETITION PARTNERS*******/
+div.competition_topic {
+	a.basic_btn {
+		margin-top:5%;
+		margin-left:140px !important;
+	}
+}
+div.sponsors {
+	position:absolute;
+	bottom:150px;
 
+
+}
 ul.partners {
 	padding:0;
+	text-align:center;
 
 	li {
-		background-color:$tertiary-color;
+		background-color:#eee;
 		width:100px;
 		height:100px;
 		display: inline-block;
 		margin:0 15px 15px 0;
+		padding:10px;
+		cursor: pointer;
+		vertical-align: top;
 		@include border-radius(50%);
     	background-repeat: no-repeat;
     	background-position: center center;
-    	-moz-background-size: 100% auto;
-    	-ms-background-size: 100% auto;
-    	-webkit-background-size: 100% auto;
-    	-o-background-size: 100% auto;
+    	-moz-background-size: 85% auto;
+    	-ms-background-size: 85% auto;
+    	-webkit-background-size: 85% auto;
+    	-o-background-size: 85% auto;
+    	-moz-background-blend-mode: multiply;
+    	-ms-background-blend-mode: overlay;
+    	-webkit-background-blend-mode: multiply;
+    	-o-background-blend-mode: multiply;
+    	background-blend-mode: multiply;
+    	-webkit-filter: grayscale(1); 
+		-moz-filter: grayscale(1);
+		filter: gray; 
+		filter: grayscale(1);
+		transition: all 0.1s;
+		-ms-transition: all 0.1s;
+		-o-transition: all 0.1s;
+		-webkit-transition: all 0.1s;
+		-moz-transition: all 0.1s;
+		opacity: 0.8;
+
 
 
 		
@@ -248,8 +279,40 @@ ul.partners {
 			background-image:url(../img/螞蜂窩_logo.png);
 
 		}
+		&:nth-child(2){
+			background-image: url(../img/venture_craft_logo.png);
+		}
+		&:nth-child(3){
+			background-image: url(../img/365_logo.png);
+		}
+		&:nth-child(4){
+			background-image: url(../img/e27_logo.png);
+		}
+		&:nth-child(5){
+			background-image: url(../img/citytours_logo.png);
+		}
+		&:nth-child(6){
+			background-image: url(../img/ping_logo.png);
+		}
+		&:nth-child(7){
+			background-image: url(../img/DSEE_logo.png);
+		}
+		&:hover {
+			-moz-background-blend-mode: normal;
+	    	-ms-background-blend-mode: normal;
+	    	-webkit-background-blend-mode: normal;
+	    	-o-background-blend-mode: normal;
+	    	background-blend-mode: normal;
+	    	-webkit-filter: grayscale(0); 
+			-moz-filter: grayscale(0);
+			filter: gray; 
+			filter: grayscale(0);
+			opacity: 0.8;
+			background-color:white;
+		}
 	}
 }
+
 
 /**JUMP******/
 

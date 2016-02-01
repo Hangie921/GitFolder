@@ -25,6 +25,48 @@ a:hover {
 	vertical-align:top !important;
 }
 
+.fp-controlArrow.fp-prev {
+	    height: 120px;
+    width: 65px;
+    -moz-border-radius: 150px 0 0 150px;
+    border-radius: 0 150px 150px 0;
+    -ms-border-radius:0 150px 150px 0;
+    -webkit-border-radius:0 150px 150px 0;
+    border: 1px solid #BBB;
+    left:-26px;
+
+    &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: transparent;
+    top: 0px;
+    width: 25px;
+    height: 40px;
+    left: 25px;
+    top: 42px;
+    border-top: 1px solid #bbb;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    }
+    &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    background: transparent;
+    top: 0px;
+    width: 25px;
+    height: 40px;
+    left: 25px;
+    top: 32px;
+    border-top: 1px solid #bbb;
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    }
+}
+
 /*the setting about the slotMachine*/
 .slotMachine{
 	height: 33px;

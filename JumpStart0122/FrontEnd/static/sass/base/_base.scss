@@ -30,6 +30,12 @@ img.device {
 	background-color:$primary-color;
 }
 
+/*POSITIONS****/
+
+.relative-position {
+	position:relative;
+}
+
 /*FONTS****/
 
 .en_para {
@@ -39,9 +45,18 @@ img.device {
 	font-family:$chinese;
 }
 
+.primary-color {
+	color:$primary-color;
+}
+.white-color {
+	color:#ffffff;
+}
+
 
 /**COLUMNS SETTINGS***/
-
+.container {
+	min-width:1388px;
+}
 .col-centered{
 float: none;
 margin: 0 auto;

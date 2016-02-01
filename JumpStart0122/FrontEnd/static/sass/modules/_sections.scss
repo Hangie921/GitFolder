@@ -13,13 +13,14 @@ div.fp-section{
 
 /****HOME******/
 
-div#sec_home {
+div#sec_home, div#sec_competition {
 	background:url('../img/home_bg.jpg') no-repeat center;
 	background-size:cover;
 	-moz-background-size:cover;
 	-ms-background-size:cover;
 	-o-background-size:cover;
 	-webkit-background-size:cover;
+
 
 
 }
@@ -121,6 +122,15 @@ div#sec_home {
 	}
 
 
+}
+
+/*ABOUT SECTIOIN***/
+
+.rocket{
+	position:absolute;
+	width: 278px;
+    height: 221px;
+	background: url(../img/rocket.png) no-repeat center center;
 }
 /********** Jump Now Section ********/
 

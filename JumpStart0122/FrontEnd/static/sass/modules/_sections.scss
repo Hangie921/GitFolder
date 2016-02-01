@@ -14,8 +14,13 @@ div.fp-section{
 /****HOME******/
 
 div#sec_home {
-	background:url('../img/home_bg.jpg') no-repeat;
-	background-size:100% auto;
+	background:url('../img/home_bg.jpg') no-repeat center;
+	background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+
 
 }
 

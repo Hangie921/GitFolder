@@ -23,3 +23,26 @@ img.device {
 	width:100%;
 
 }
+
+/*BACKGROUND COLOUR***/
+
+.primary_bg {
+	background-color:$primary-color;
+}
+
+/*FONTS****/
+
+.en_para {
+	font-family:$english;
+}
+.cn_para {
+	font-family:$chinese;
+}
+
+
+/**COLUMNS SETTINGS***/
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}

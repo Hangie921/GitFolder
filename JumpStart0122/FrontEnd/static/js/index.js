@@ -3,6 +3,7 @@
 $(document).ready(function() {
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
+    	anchor:['sec_home','sec_about','sec_competition','sec_jumpnow','sec_events','sec_contact'];
     	scrollingSpeed:1000,
     	resize:true,
 		afterLoad: function(anchorLink, index) {
@@ -13,6 +14,12 @@ $(document).ready(function() {
 		        	top: "10%"
 		      	}, 1000);
 		    }
+		},
+		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+			console.log(index);
+			if(index == 3 && slideIndex == 1){
+				$.fn.fullpage.slideMoveRight();
+			}
 		},
 		onLeave: function(index, nextIndex, direction) {
 		    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {

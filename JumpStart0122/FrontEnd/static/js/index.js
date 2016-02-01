@@ -3,7 +3,10 @@
 $(document).ready(function() {
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
-    	anchor:['sec_home','sec_about','sec_competition','sec_jumpnow','sec_events','sec_contact'],
+    	menu:'#main_menu',
+    	anchors:['home','about','competition',
+    			'jumpnow','events'
+    	],
     	scrollingSpeed:1000,
     	resize:true,
 		afterLoad: function(anchorLink, index) {
@@ -16,10 +19,7 @@ $(document).ready(function() {
 		    }
 		},
 		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-			console.log(index);
-			if(index == 3 && slideIndex == 1){
-				$.fn.fullpage.slideMoveRight();
-			}
+			
 		},
 		onLeave: function(index, nextIndex, direction) {
 		    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {
@@ -31,6 +31,7 @@ $(document).ready(function() {
 		},// end of the onLeave function
 		verticalCentered : true,
 		resize : false
+
 	});
 
 
@@ -56,7 +57,6 @@ $(document).ready(function() {
 	var DOM = "<div class='team_detail_single'><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
 	var counter = 1;
 	$('#add_member').click(function(event){
-		if(counter!=5){
 			event.preventDefault();
 			$(this).prev().append(DOM);
 			counter += 1;
@@ -65,9 +65,12 @@ $(document).ready(function() {
 				$(this).parent().remove();
 				counter-=1;
 			});	
-		}else{
-			alert("一隊最多五人喔");
-		}
+			if(counter==5){
+				$(this).hide();
+			}else{
+				$(this).show();
+			}
+		
 	});
 
 	//animate the rocket

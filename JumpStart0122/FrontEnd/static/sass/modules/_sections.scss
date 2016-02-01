@@ -13,7 +13,7 @@ div.fp-section{
 
 /****HOME******/
 
-div#sec_home, div#sec_competition {
+div#sec_home {
 	background:url('../img/home_bg.jpg') no-repeat center;
 	background-size:cover;
 	-moz-background-size:cover;
@@ -139,7 +139,7 @@ div#sec_home, div#sec_competition {
 
 #sec_about {
 	p {
-		padding-top:200px;
+		padding-top:250px;
 		text-shadow: 2px 2px 10px rgba(242, 107, 42, 0.7);
 	}
 }
@@ -179,6 +179,7 @@ ul.plan_list {
 			background-color:$secondary-color;
 			display: inline-block;
 			text-align:center;
+			line-height: 30px;
 			border-radius:50%;
 			content: counter(my-badass-counter);
 			counter-increment: my-badass-counter;

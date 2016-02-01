@@ -83,7 +83,7 @@ html
 							li
 								a city tour
 					.col-md-5
-						a.basic_btn 我要參加
+						a.basic_btn(href='#jumpnow') 我要參加
 				.slide#competition_price_slide
 					h3 slide3
 
@@ -129,7 +129,7 @@ html
 									//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
 								button(id='add_member') 添加成員
 								a(class='button', href='#jumpnow/2') 下一步
-						a(class='button',href='#jumpnow/1') 上一步
+						a(class='button',href='#jumpnow') 上一步
 					.slide.personal_details.fp-auto-height
 							span.input.input--hoshi
 								input#input-4.input__field.input__field--hoshi(type='text',name='contact')
@@ -153,29 +153,33 @@ html
 							input(type='submit' value='submit')
 			.section#sec_events(data-anchor='events')
 				h2 events
+				.contact_container
+					.col-md-12.contact_header
+						.col-md-6.col-md-offset-3
+							h2 CONTACT US
+						.col-md-3.btn_up_and_down
+							h3 up
+					.col-md-12
+						form(action='/contact', enctype="multipart/form-data",method="post")
+							span.input.input--hoshi
+								input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
+								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+										span.input__label-content.input__label-content--hoshi 姓名
+							span.input.input--hoshi
+								input#input-4.input__field.input__field--hoshi(type='text',name='user_phone')
+								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+										span.input__label-content.input__label-content--hoshi 電話
+							span.input.input--hoshi
+								input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
+								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+										span.input__label-content.input__label-content--hoshi Email
+							textarea(placeholder='內容',name='user_msg')
+							input(type='submit' value='submit')
+							
 
-			.section#sec_contact
-				.col-md-4
-					form(action='/contact', enctype="multipart/form-data",method="post")
-						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
-							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi 姓名
-						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name='user_phone')
-							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi 電話
-						span.input.input--hoshi
-							input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
-							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-									span.input__label-content.input__label-content--hoshi Email
-						textarea(placeholder='內容',name='user_msg')
-						input(type='submit' value='submit')
-						
 
 
-
-				
+					
 
 
 

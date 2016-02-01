@@ -320,3 +320,21 @@ ul.partners {
 	width:100px;
 	clear:none !important;
 }
+/*****Event Section**********/
+div#sec_events{
+	position: relative;
+}
+
+/***CONTACT_US******/
+div.contact_container{
+	text-align:center;
+	position: absolute;
+	top: 80%;
+	background-color:#99FF99;
+	& .contact_header{
+		cursor: pointer;
+	}
+}
+
+
+

@@ -40,9 +40,7 @@ $(document).ready(function() {
     	active : 0,
     	delay : 14000,
     	auto : true
-
     });
-
 	$('#slotButton3').click(function(){
 			machine3.futureActive = 7;
 			machine3.stop();
@@ -50,7 +48,6 @@ $(document).ready(function() {
 				$.fn.fullpage.moveTo(3);
 			}, 5000);
 	});
-
 
 
 	//add and delete the member input dynamically
@@ -73,7 +70,21 @@ $(document).ready(function() {
 		
 	});
 
-	//animate the rocket
+	
+	//the contact form ani
+	var down = true;
+	$('.contact_container').click(function(){
+		if(down){
+			$(this).animate({'top':'50%'},1000);
+			$('.btn_up_and_down h3').html('down');
+			down = false;
+		}else{
+			$(this).animate({'top':'80%'},1000);
+			$('.btn_up_and_down h3').html('up');
+			down = true;
+		}
+
+	});
 	
 
 

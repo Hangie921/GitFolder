@@ -591,6 +591,25 @@ ul.partners li:first-child {
   clear: none !important;
 }
 
+/*****Event Section**********/
+/* line 324, ../sass/modules/_sections.scss */
+div#sec_events {
+  position: relative;
+}
+
+/***CONTACT_US******/
+/* line 329, ../sass/modules/_sections.scss */
+div.contact_container {
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  background-color: #99FF99;
+}
+/* line 334, ../sass/modules/_sections.scss */
+div.contact_container .contact_header {
+  cursor: pointer;
+}
+
 /* Searchbox */
 /* line 4, ../sass/modules/_forms.scss */
 div.slide.team_details input.input__field--hoshi, div.slide.personal_details input.input__field--hoshi {

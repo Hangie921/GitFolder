@@ -165,7 +165,7 @@ img.device {
   position: relative;
   margin-top: 20px;
   background-color: #fbaf5d;
-  min-width: 250px;
+  min-width: 300px;
   font-size: 18px;
   height: 60px;
   cursor: pointer;
@@ -173,6 +173,7 @@ img.device {
   clear: both;
   display: inline-block;
   padding: 0 20px;
+  text-decoration: none !important;
   -webkit-box-shadow: 10px 10px 0px -5px #dd5d20;
   -moz-box-shadow: 10px 10px 0px -5px #dd5d20;
   -ms-box-shadow: 10px 10px 0px -5px #dd5d20;
@@ -184,7 +185,7 @@ img.device {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 79, ../sass/base/_mixins.scss */
+/* line 80, ../sass/base/_mixins.scss */
 .basic_btn:after {
   content: "";
   position: absolute;
@@ -196,9 +197,10 @@ img.device {
   height: 36px;
   background: url(../img/arrow-right.png) no-repeat center center;
 }
-/* line 91, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .basic_btn:hover {
-  background-color: #3333 !important;
+  color: #fff;
+  background-color: #555 !important;
   -webkit-box-shadow: 0px 0px 0px -5px #dd5d20;
   -moz-box-shadow: 0px 0px 0px -5px #dd5d20;
   -ms-box-shadow: 0px 0px 0px -5px #dd5d20;
@@ -433,7 +435,7 @@ div.laptop-img {
 
 /* line 165, ../sass/modules/_sections.scss */
 ul.plan_list {
-  padding: 30px 0 0;
+  padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
 /* line 169, ../sass/modules/_sections.scss */
@@ -472,6 +474,7 @@ ul.plan_list li:before {
   clear: both;
   display: inline-block;
   padding: 0 20px;
+  text-decoration: none !important;
   -webkit-box-shadow: 10px 10px 0px -5px #dd5d20;
   -moz-box-shadow: 10px 10px 0px -5px #dd5d20;
   -ms-box-shadow: 10px 10px 0px -5px #dd5d20;
@@ -483,16 +486,17 @@ ul.plan_list li:before {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 216, ../sass/modules/_sections.scss */
+/* line 217, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
-  background-color: #3333 !important;
+  color: #fff;
+  background-color: #555 !important;
   -webkit-box-shadow: 0px 0px 0px -5px #dd5d20;
   -moz-box-shadow: 0px 0px 0px -5px #dd5d20;
   -ms-box-shadow: 0px 0px 0px -5px #dd5d20;
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 225, ../sass/modules/_sections.scss */
+/* line 227, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -524,32 +528,6 @@ div.slide.team_details span, div.slide.personal_details span {
 
 /* LAYOUTS- Page Layout Styles */
 /*NavBar*/
-/* line 3, ../sass/layouts/_nav.scss */
-.navbar {
-  width: 90%;
-  margin: auto;
-  border-right: 1px solid #e7e7e7;
-  border-left: 1px solid #e7e7e7;
-  border-color: #e7e7e7;
-  min-height: 60px;
-  background: #fff;
-  margin-bottom: 30px;
-}
-/* line 12, ../sass/layouts/_nav.scss */
-.navbar a {
-  color: #f16b29 !important;
-  font-size: 20px;
-  letter-spacing: -0.5px;
-  padding-bottom: 24px !important;
-  padding-top: 20px !important;
-}
-
-/* line 21, ../sass/layouts/_nav.scss */
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background: #f16b29 !important;
-  color: #fff !important;
-}
-
 /* line 1, ../sass/layouts/_header.scss */
 header {
   position: fixed !important;

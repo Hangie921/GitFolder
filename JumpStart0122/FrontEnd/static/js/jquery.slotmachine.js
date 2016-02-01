@@ -547,7 +547,6 @@ class SlotMachine {
             }, delay, 'linear', function cb () {
                 // Reset top position
                 this._marginTop = this.direction.first;
-
                 if (spins - 1 <= 0) {
                     this.stop();
                 } else {
@@ -575,7 +574,7 @@ class SlotMachine {
         this.$container.clearQueue().stop(true, false);
 
         this._fade = showGradient === undefined ? true : showGradient;
-        this._animationFX = FX_SLOW;
+        this._animationFX = FX_FAST;
         this.running = true;
         this.stopping = true;
         // Set current active element
@@ -597,7 +596,7 @@ class SlotMachine {
 
         // Get delay
         // const delay = this.settings.delay * 0.01;
-        const delay = 100;
+        const delay = 3000;
 
         // Perform animation
         this.$container.animate({

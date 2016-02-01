@@ -36,27 +36,18 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 10px;
 }
 
-/* line 22, ../sass/base/_normalize.scss */
-#slot2 .slot {
-  height: 33px;
-}
-
-/* line 25, ../sass/base/_normalize.scss */
-#slot2 .slot:nth-child(3) {
-  visibility: hidden;
-}
-
 /* line 28, ../sass/base/_normalize.scss */
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
-  height: 1.5em;
+  height: 50px;
 }
 
 /* line 33, ../sass/base/_normalize.scss */
 #slot3 .slot {
   display: block;
-  height: 1.5em;
+  height: 1.7em;
+  line-height: 1.7em;
 }
 
 /* line 37, ../sass/base/_normalize.scss */
@@ -251,13 +242,13 @@ div#sec_home, div#sec_competition {
 }
 /* line 39, ../sass/modules/_sections.scss */
 .sloganContainer .slotMachine {
-  font-size: 40px;
+  font-size: 50px;
   position: relative;
   display: block;
 }
 /* line 47, ../sass/modules/_sections.scss */
 .sloganContainer span.machine-border {
-  display: block;
+  display: none;
   background: #fff;
   height: 1px;
   width: 250px;
@@ -349,6 +340,8 @@ div#sec_home, div#sec_competition {
   width: 278px;
   height: 221px;
   background: url(../img/rocket.png) no-repeat center center;
+  left: -20%;
+  top: 70%;
 }
 
 /* line 141, ../sass/modules/_sections.scss */
@@ -471,10 +464,4 @@ ul.menu li a:hover {
 /* line 55, ../sass/layouts/_header.scss */
 .jumpnow_link a {
   background: rgba(242, 107, 42, 0.7);
-}
-.rocket{
-  width: 200px;
-  height: 120px;
-  border-radius: 30%;
-  position: absolute;
 }

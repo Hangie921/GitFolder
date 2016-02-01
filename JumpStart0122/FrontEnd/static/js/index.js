@@ -3,13 +3,14 @@
 $(document).ready(function() {
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
-
+    	scrollingSpeed:1000,
+    	resize:true,
 		afterLoad: function(anchorLink, index) {
 			$.fn.fullpage.setKeyboardScrolling(false);
 		    if (index == 2) {
 		    	$('.rocket').animate({
-		        	left: "500px",
-		        	top: "500px"
+		        	left: "30%",
+		        	top: "10%"
 		      	}, 1000);
 		    	// $.fn.fullpage.setAllowScrolling(false);
 		    }
@@ -21,13 +22,7 @@ $(document).ready(function() {
 		    		left: "0px",
 		    		top: "0px"
 		      	}, 1000);
-		      	
-		      	$.fn.fullpage.moveTo(nextIndex,0);
-
-		      	setTimeout(function(){
-		      		
-		      	}, 3000);
-		    	return false;	
+		      
 		    }
 		  	// $.fn.fullpage.setAllowScrolling(true);  
 		  	
@@ -35,42 +30,40 @@ $(document).ready(function() {
 	});
 
 
-
-
     //The slot Machine animation
     var machine3 = $('#slot3').slotMachine({
     	active : 0,
-    	delay : 6000,
+    	delay : 14000,
     	auto : true
+
     });
 
 	$('#slotButton3').click(function(){
-			machine3.futureActive = 3;
+			machine3.futureActive = 7;
 			machine3.stop();
-			machine3.shuffle(1,function(){
-				setTimeout(function(){
-					$.fn.fullpage.moveTo(3, 0);
-				},3000);
-			})
+			setTimeout(function(){
+				$.fn.fullpage.moveTo(3);
+			}, 5000);
 	});
 
 
 
 	//add and delete the member input dynamically
-	var DOM = "<div class='col-md-4'><div class='team_detail_single'><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
-
+	var DOM = "<div class='team_detail_single'><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
+	var counter = 1;
 	$('#add_member').click(function(event){
-			
+		if(counter!=5){
 			event.preventDefault();
-			$('#sec_jumpnow .team_details').append(DOM);
-
+			$(this).prev().append(DOM);
+			counter += 1;
 			$('.del_btn').click(function(event){
 				event.preventDefault();
-				$(this).parent().parent().remove();
+				$(this).parent().remove();
+				counter-=1;
 			});	
-		
-		
-
+		}else{
+			alert("一隊最多五人喔");
+		}
 	});
 
 	//animate the rocket

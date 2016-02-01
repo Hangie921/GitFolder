@@ -57,7 +57,9 @@ html
 				//- 		a(href='/coming') coming soon
 			.section#sec_about
 				h2 About
-				.rocket
+				
+				//- this rocket class is for test only
+				.rocket 
 
 			.section#sec_competition
 				.slide 
@@ -70,9 +72,9 @@ html
 			.section#sec_jumpnow
 				//- 這樣包我就可以一個form包兩個slide的input
 				form(action='/upload', enctype="multipart/form-data",method="post")  
-					.slide
+					.slide.fp-auto-height
 						h2 jumpnow
-					.slide.team_details
+					.slide.team_details.fp-auto-height
 						h2.hoshi
 						.col-md-4.clearfix
 								span.input.input--hoshi
@@ -99,7 +101,7 @@ html
 								button(id='add_member') 添加成員
 								a(class='button', href='google.com') 下一步
 			
-					.slide.personal_details
+					.slide.personal_details.fp-auto-height
 							span.input.input--hoshi
 								input#input-4.input__field.input__field--hoshi(type='text',name='contact')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')

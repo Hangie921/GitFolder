@@ -43,35 +43,24 @@ h3 {
 }
 
 /* line 26, ../sass/base/_normalize.scss */
-#slot2 .slot {
-  height: 33px;
-}
-
-/* line 29, ../sass/base/_normalize.scss */
-#slot2 .slot:nth-child(3) {
-  visibility: hidden;
-}
-
-/* line 32, ../sass/base/_normalize.scss */
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
-  height: 50px;
+  height: 1.5em;
 }
 
-/* line 37, ../sass/base/_normalize.scss */
+/* line 31, ../sass/base/_normalize.scss */
 #slot3 .slot {
   display: block;
-  height: 1.7em;
-  line-height: 1.7em;
+  height: 1.5em;
 }
 
-/* line 41, ../sass/base/_normalize.scss */
+/* line 35, ../sass/base/_normalize.scss */
 #slotButton3 {
   cursor: pointer;
 }
 
-/* line 45, ../sass/base/_normalize.scss */
+/* line 39, ../sass/base/_normalize.scss */
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -308,13 +297,13 @@ div#sec_home {
 }
 /* line 39, ../sass/modules/_sections.scss */
 .sloganContainer .slotMachine {
-  font-size: 50px;
+  font-size: 40px;
   position: relative;
   display: block;
 }
 /* line 47, ../sass/modules/_sections.scss */
 .sloganContainer span.machine-border {
-  display: none;
+  display: block;
   background: #fff;
   height: 1px;
   width: 250px;
@@ -406,8 +395,6 @@ div#sec_home {
   width: 278px;
   height: 221px;
   background: url(../img/rocket.png) no-repeat center center;
-  left: -20%;
-  top: 70%;
 }
 
 /* line 141, ../sass/modules/_sections.scss */
@@ -416,34 +403,35 @@ div#sec_home {
   text-shadow: 2px 2px 10px rgba(242, 107, 42, 0.7);
 }
 
+/***COMPETITION TOPIC****************/
 /********** Jump Now Section ********/
-/* line 150, ../sass/modules/_sections.scss */
+/* line 153, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
 }
-/* line 153, ../sass/modules/_sections.scss */
+/* line 156, ../sass/modules/_sections.scss */
 div#sec_jumpnow p {
   font-size: 26px;
   line-height: 40px;
 }
 
-/* line 159, ../sass/modules/_sections.scss */
+/* line 162, ../sass/modules/_sections.scss */
 div.laptop-img {
   background: url(../img/laptop.png) no-repeat center;
   min-height: 320px;
 }
 
-/* line 165, ../sass/modules/_sections.scss */
+/* line 168, ../sass/modules/_sections.scss */
 ul.plan_list {
   padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
-/* line 169, ../sass/modules/_sections.scss */
+/* line 172, ../sass/modules/_sections.scss */
 ul.plan_list li {
   font-size: 26px;
   line-height: 40px;
 }
-/* line 173, ../sass/modules/_sections.scss */
+/* line 176, ../sass/modules/_sections.scss */
 ul.plan_list li:before {
   width: 30px;
   height: 30px;
@@ -460,7 +448,7 @@ ul.plan_list li:before {
   counter-increment: my-badass-counter;
 }
 
-/* line 192, ../sass/modules/_sections.scss */
+/* line 195, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -486,7 +474,7 @@ ul.plan_list li:before {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 217, ../sass/modules/_sections.scss */
+/* line 220, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -496,7 +484,7 @@ ul.plan_list li:before {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 227, ../sass/modules/_sections.scss */
+/* line 230, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;

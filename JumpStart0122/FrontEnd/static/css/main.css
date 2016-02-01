@@ -264,7 +264,7 @@ img.device {
 /* Sections */
 /* line 2, ../sass/modules/_sections.scss */
 div.fp-section {
-  padding: 0 10%;
+  padding: 10% 10%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;

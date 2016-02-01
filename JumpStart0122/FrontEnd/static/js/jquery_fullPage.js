@@ -467,7 +467,7 @@
         var isTouchDevice = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|playbook|silk|BlackBerry|BB10|Windows Phone|Tizen|Bada|webOS|IEMobile|Opera Mini)/);
         var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
         var container = $(this);
-        var windowsHeight = $window.height();
+        var windowsHeight = window.innerHeight; //$window.height() by default;
         var isResizing = false;
         var isWindowFocused = true;
         var lastScrolledDestiny;

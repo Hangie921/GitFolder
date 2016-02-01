@@ -3,8 +3,6 @@
 $(document).ready(function() {
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
-    	paddingTop : '10%',
-    	// paddingBottom : '10%',
     	scrollingSpeed:1000,
     	resize:true,
 		afterLoad: function(anchorLink, index) {
@@ -14,30 +12,16 @@ $(document).ready(function() {
 		        	left: "30%",
 		        	top: "10%"
 		      	}, 1000);
-		    	// $.fn.fullpage.setAllowScrolling(false);
 		    }
 		},
 		onLeave: function(index, nextIndex, direction) {
 		    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {
-		    	
 		    	$('.rocket').animate({
 		    		left: "0",
 		    		top: "80%"
-		      	}, 1000);
-		      
+		      	}, 1000); 
 		    }
-		  	// $.fn.fullpage.setAllowScrolling(true);  
-		  	
 		},// end of the onLeave function
-		afterRender: function(){
-            var pluginContainer = $(this);
-            alert("The resulting DOM structure is ready");
-        },
-        afterResize: function(){
-            var pluginContainer = $(this);
-            alert("The sections have finished resizing");
-        },
-
 		verticalCentered : true,
 		resize : false
 	});

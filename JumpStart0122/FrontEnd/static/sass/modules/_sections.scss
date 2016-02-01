@@ -146,6 +146,33 @@ div#sec_home {
 
 /***COMPETITION TOPIC****************/
 
+div.competition_topic {
+	p {
+		padding-top:30px;
+	}
+}
+
+ul.competition-headings {
+
+	padding:20px 0 0;
+
+	li {
+		display: inline-block;
+		margin-right:30px;
+		
+
+
+	}
+	a {
+		color:$primary-color;
+
+			&.selected {
+			padding:5px 15px;
+			border:1px solid $primary-color;
+			@include border-radius(20px);
+			}
+	}
+}
 
 
 /********** Jump Now Section ********/

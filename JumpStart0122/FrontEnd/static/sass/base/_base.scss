@@ -53,6 +53,7 @@ img.device {
 }
 
 
+
 /**COLUMNS SETTINGS***/
 .container {
 	min-width:1388px;
@@ -60,4 +61,10 @@ img.device {
 .col-centered{
 float: none;
 margin: 0 auto;
+}
+
+/****BUTTONS********/
+
+.basic_btn {
+	@include button;
 }

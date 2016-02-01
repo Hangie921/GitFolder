@@ -5,6 +5,7 @@
 */
 /* BASE -Base Styles, Variables, mixins, etc* */
 /*Font Colors*/
+/*Font Size*/
 /*Background Colours*/
 /*Setting*/
 /* Showcase Area */
@@ -15,47 +16,62 @@ h1, h2, h3, h4, h5 {
 }
 
 /* line 5, ../sass/base/_normalize.scss */
+h3 {
+  font-size: 30px;
+}
+
+/* line 9, ../sass/base/_normalize.scss */
 .page-header {
   margin-top: 30px;
 }
 
-/* line 9, ../sass/base/_normalize.scss */
+/* line 13, ../sass/base/_normalize.scss */
 .no-pad-top {
   padding-top: 0;
 }
 
-/* line 13, ../sass/base/_normalize.scss */
+/* line 17, ../sass/base/_normalize.scss */
 .fp-tableCell {
   vertical-align: top !important;
 }
 
 /*the setting about the slotMachine*/
-/* line 18, ../sass/base/_normalize.scss */
+/* line 22, ../sass/base/_normalize.scss */
 .slotMachine {
   height: 33px;
   margin-bottom: 10px;
 }
 
-/* line 28, ../sass/base/_normalize.scss */
+/* line 26, ../sass/base/_normalize.scss */
+#slot2 .slot {
+  height: 33px;
+}
+
+/* line 29, ../sass/base/_normalize.scss */
+#slot2 .slot:nth-child(3) {
+  visibility: hidden;
+}
+
+/* line 32, ../sass/base/_normalize.scss */
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
   height: 50px;
 }
 
-/* line 33, ../sass/base/_normalize.scss */
+/* line 37, ../sass/base/_normalize.scss */
 #slot3 .slot {
   display: block;
   height: 1.7em;
   line-height: 1.7em;
 }
 
-/* line 37, ../sass/base/_normalize.scss */
+/* line 41, ../sass/base/_normalize.scss */
 #slotButton3 {
   cursor: pointer;
 }
 
-/* line 41, ../sass/base/_normalize.scss */
+/* line 45, ../sass/base/_normalize.scss */
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -131,15 +147,63 @@ img.device {
 }
 
 /**COLUMNS SETTINGS***/
-/* line 57, ../sass/base/_base.scss */
+/* line 58, ../sass/base/_base.scss */
 .container {
   min-width: 1388px;
 }
 
-/* line 60, ../sass/base/_base.scss */
+/* line 61, ../sass/base/_base.scss */
 .col-centered {
   float: none;
   margin: 0 auto;
+}
+
+/****BUTTONS********/
+/* line 68, ../sass/base/_base.scss */
+.basic_btn {
+  float: left;
+  position: relative;
+  margin-top: 20px;
+  background-color: #fbaf5d;
+  min-width: 250px;
+  font-size: 18px;
+  height: 60px;
+  cursor: pointer;
+  line-height: 60px;
+  clear: both;
+  display: inline-block;
+  padding: 0 20px;
+  -webkit-box-shadow: 10px 10px 0px -5px #dd5d20;
+  -moz-box-shadow: 10px 10px 0px -5px #dd5d20;
+  -ms-box-shadow: 10px 10px 0px -5px #dd5d20;
+  -o-box-shadow: 10px 10px 0px -5px #dd5d20;
+  box-shadow: 10px 10px 0px -5px #dd5d20;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+/* line 79, ../sass/base/_mixins.scss */
+.basic_btn:after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 20px;
+  right: 12px;
+  top: 12px;
+  width: 36px;
+  height: 36px;
+  background: url(../img/arrow-right.png) no-repeat center center;
+}
+/* line 91, ../sass/base/_mixins.scss */
+.basic_btn:hover {
+  background-color: #3333 !important;
+  -webkit-box-shadow: 0px 0px 0px -5px #dd5d20;
+  -moz-box-shadow: 0px 0px 0px -5px #dd5d20;
+  -ms-box-shadow: 0px 0px 0px -5px #dd5d20;
+  -o-box-shadow: 0px 0px 0px -5px #dd5d20;
+  box-shadow: 0px 0px 0px -5px #dd5d20;
 }
 
 /* MODULES - Individual sit componets */
@@ -185,7 +249,7 @@ img.device {
 
 /* line 19, ../sass/modules/_blocks.scss */
 .block-secondary {
-  background: #7fba00;
+  background: #fbaf5d;
   color: #fff;
 }
 
@@ -346,7 +410,7 @@ div#sec_home, div#sec_competition {
 
 /* line 141, ../sass/modules/_sections.scss */
 #sec_about p {
-  padding-top: 90px;
+  padding-top: 200px;
   text-shadow: 2px 2px 10px rgba(242, 107, 42, 0.7);
 }
 
@@ -354,6 +418,89 @@ div#sec_home, div#sec_competition {
 /* line 150, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
+}
+/* line 153, ../sass/modules/_sections.scss */
+div#sec_jumpnow p {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* line 159, ../sass/modules/_sections.scss */
+div.laptop-img {
+  background: url(../img/laptop.png) no-repeat center;
+  min-height: 320px;
+}
+
+/* line 165, ../sass/modules/_sections.scss */
+ul.plan_list {
+  padding: 30px 0 0;
+  counter-reset: my-badass-counter;
+}
+/* line 169, ../sass/modules/_sections.scss */
+ul.plan_list li {
+  font-size: 26px;
+  line-height: 40px;
+}
+/* line 173, ../sass/modules/_sections.scss */
+ul.plan_list li:before {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: #fbaf5d;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  content: counter(my-badass-counter);
+  counter-increment: my-badass-counter;
+}
+
+/* line 191, ../sass/modules/_sections.scss */
+.jumpnow_part1 a.bizplan_download {
+  float: left;
+  position: relative;
+  margin-top: 20px;
+  background-color: #f68e56;
+  min-width: 200px;
+  font-size: 18px;
+  height: 45px;
+  cursor: pointer;
+  line-height: 45px;
+  clear: both;
+  display: inline-block;
+  padding: 0 20px;
+  -webkit-box-shadow: 10px 10px 0px -5px #dd5d20;
+  -moz-box-shadow: 10px 10px 0px -5px #dd5d20;
+  -ms-box-shadow: 10px 10px 0px -5px #dd5d20;
+  -o-box-shadow: 10px 10px 0px -5px #dd5d20;
+  box-shadow: 10px 10px 0px -5px #dd5d20;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+/* line 215, ../sass/modules/_sections.scss */
+.jumpnow_part1 a.bizplan_download:hover {
+  background-color: #3333 !important;
+  -webkit-box-shadow: 0px 0px 0px -5px #dd5d20;
+  -moz-box-shadow: 0px 0px 0px -5px #dd5d20;
+  -ms-box-shadow: 0px 0px 0px -5px #dd5d20;
+  -o-box-shadow: 0px 0px 0px -5px #dd5d20;
+  box-shadow: 0px 0px 0px -5px #dd5d20;
+}
+/* line 224, ../sass/modules/_sections.scss */
+.jumpnow_part1 a.bizplan_download:after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 6px;
+  top: 4px;
+  width: 36px;
+  height: 36px;
+  background: url(../img/download_btn.png) no-repeat center center;
 }
 
 /* Searchbox */

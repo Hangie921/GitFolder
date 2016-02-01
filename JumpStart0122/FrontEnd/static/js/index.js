@@ -19,8 +19,8 @@ $(document).ready(function() {
 		    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {
 		    	
 		    	$('.rocket').animate({
-		    		left: "0px",
-		    		top: "0px"
+		    		left: "0",
+		    		top: "80%"
 		      	}, 1000);
 		      
 		    }

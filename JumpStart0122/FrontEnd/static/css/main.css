@@ -500,26 +500,31 @@ ul.partners li {
   height: 100px;
   display: inline-block;
   margin: 0 15px 15px 0;
-  background-size: 50% auto;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -o-background-size: 100% auto;
 }
-/* line 237, ../sass/modules/_sections.scss */
+/* line 242, ../sass/modules/_sections.scss */
 ul.partners li a {
   color: #f16b29;
   display: block;
   text-indent: -9999px;
 }
-/* line 243, ../sass/modules/_sections.scss */
+/* line 248, ../sass/modules/_sections.scss */
 ul.partners li:first-child {
   background-image: url(../img/螞蜂窩_logo.png);
 }
 
 /**JUMP******/
-/* line 253, ../sass/modules/_sections.scss */
+/* line 258, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -544,7 +549,7 @@ ul.partners li:first-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 278, ../sass/modules/_sections.scss */
+/* line 283, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -554,7 +559,7 @@ ul.partners li:first-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 288, ../sass/modules/_sections.scss */
+/* line 293, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;

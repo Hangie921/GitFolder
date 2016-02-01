@@ -229,8 +229,13 @@ ul.partners {
 		height:100px;
 		display: inline-block;
 		margin:0 15px 15px 0;
-		background-size:50% auto;
 		@include border-radius(50%);
+    	background-repeat: no-repeat;
+    	background-position: center center;
+    	-moz-background-size: 100% auto;
+    	-ms-background-size: 100% auto;
+    	-webkit-background-size: 100% auto;
+    	-o-background-size: 100% auto;
 
 
 		

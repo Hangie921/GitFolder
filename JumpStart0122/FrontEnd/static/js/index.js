@@ -3,6 +3,8 @@
 $(document).ready(function() {
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
+    	paddingTop : '10%',
+    	// paddingBottom : '10%',
     	scrollingSpeed:1000,
     	resize:true,
 		afterLoad: function(anchorLink, index) {
@@ -26,7 +28,18 @@ $(document).ready(function() {
 		    }
 		  	// $.fn.fullpage.setAllowScrolling(true);  
 		  	
-		}// end of the onLeave function
+		},// end of the onLeave function
+		afterRender: function(){
+            var pluginContainer = $(this);
+            alert("The resulting DOM structure is ready");
+        },
+        afterResize: function(){
+            var pluginContainer = $(this);
+            alert("The sections have finished resizing");
+        },
+
+		verticalCentered : true,
+		resize : false
 	});
 
 

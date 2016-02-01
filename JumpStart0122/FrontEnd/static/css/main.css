@@ -130,12 +130,12 @@ img.device {
 }
 
 /* line 48, ../sass/base/_base.scss */
-.primary-color {
+.primary-text {
   color: #f16b29;
 }
 
 /* line 51, ../sass/base/_base.scss */
-.white-color {
+.white-text {
   color: #ffffff;
 }
 
@@ -338,6 +338,12 @@ div#sec_home, div#sec_competition {
 
 /*ABOUT SECTIOIN***/
 /* line 129, ../sass/modules/_sections.scss */
+.top_animation {
+  background: url(../img/clouds.png) no-repeat left;
+  min-height: 430px;
+}
+
+/* line 133, ../sass/modules/_sections.scss */
 .rocket {
   position: absolute;
   width: 278px;
@@ -345,8 +351,14 @@ div#sec_home, div#sec_competition {
   background: url(../img/rocket.png) no-repeat center center;
 }
 
+/* line 141, ../sass/modules/_sections.scss */
+#sec_about p {
+  padding-top: 90px;
+  text-shadow: 2px 2px 10px rgba(242, 107, 42, 0.7);
+}
+
 /********** Jump Now Section ********/
-/* line 137, ../sass/modules/_sections.scss */
+/* line 150, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
 }

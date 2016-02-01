@@ -126,12 +126,25 @@ div#sec_home, div#sec_competition {
 
 /*ABOUT SECTIOIN***/
 
+.top_animation {
+	background: url(../img/clouds.png) no-repeat left;
+	min-height:430px;
+}
 .rocket{
 	position:absolute;
 	width: 278px;
     height: 221px;
 	background: url(../img/rocket.png) no-repeat center center;
 }
+
+#sec_about {
+	p {
+		padding-top:90px;
+		text-shadow: 2px 2px 10px rgba(242, 107, 42, 0.7);
+	}
+}
+
+
 /********** Jump Now Section ********/
 
 div#sec_jumpnow {

@@ -7,6 +7,13 @@
 	-o-border-radius:$radius;
 	border-radius:$radius;
 }
+@mixin animation ($ani) {
+	-moz-animation:$ani;
+	-webkit-animation:$ani;
+	-ms-animation:$ani;
+	-o-animation:$ani;
+	animation:$ani;
+}
 
 
 @mixin add-border ($size, $color, $position) {

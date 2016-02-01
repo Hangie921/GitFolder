@@ -21,46 +21,56 @@ h3 {
 }
 
 /* line 9, ../sass/base/_normalize.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 12, ../sass/base/_normalize.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 16, ../sass/base/_normalize.scss */
 .page-header {
   margin-top: 30px;
 }
 
-/* line 13, ../sass/base/_normalize.scss */
+/* line 20, ../sass/base/_normalize.scss */
 .no-pad-top {
   padding-top: 0;
 }
 
-/* line 17, ../sass/base/_normalize.scss */
+/* line 24, ../sass/base/_normalize.scss */
 .fp-tableCell {
   vertical-align: top !important;
 }
 
 /*the setting about the slotMachine*/
-/* line 22, ../sass/base/_normalize.scss */
+/* line 29, ../sass/base/_normalize.scss */
 .slotMachine {
   height: 33px;
   margin-bottom: 10px;
 }
 
-/* line 26, ../sass/base/_normalize.scss */
+/* line 33, ../sass/base/_normalize.scss */
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
   height: 1.5em;
 }
 
-/* line 31, ../sass/base/_normalize.scss */
+/* line 38, ../sass/base/_normalize.scss */
 #slot3 .slot {
   display: block;
   height: 1.5em;
 }
 
-/* line 35, ../sass/base/_normalize.scss */
+/* line 42, ../sass/base/_normalize.scss */
 #slotButton3 {
   cursor: pointer;
 }
 
-/* line 39, ../sass/base/_normalize.scss */
+/* line 46, ../sass/base/_normalize.scss */
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -73,7 +83,7 @@ h3 {
 /* line 1, ../sass/base/_base.scss */
 body {
   font-family: "文鼎黑體", Sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.7em;
   color: #333333;
 }
@@ -406,34 +416,87 @@ div#sec_home {
 }
 
 /***COMPETITION TOPIC****************/
+/* line 150, ../sass/modules/_sections.scss */
+div.competition_topic p {
+  padding-top: 30px;
+}
+
+/* line 155, ../sass/modules/_sections.scss */
+ul.competition-headings {
+  padding: 20px 0 0;
+}
+/* line 159, ../sass/modules/_sections.scss */
+ul.competition-headings li {
+  display: inline-block;
+  margin-right: 30px;
+}
+/* line 166, ../sass/modules/_sections.scss */
+ul.competition-headings a {
+  color: #f16b29;
+}
+/* line 169, ../sass/modules/_sections.scss */
+ul.competition-headings a.selected {
+  padding: 5px 15px;
+  border: 1px solid #f16b29;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
 /********** Jump Now Section ********/
+<<<<<<< HEAD
+/* line 180, ../sass/modules/_sections.scss */
+div#sec_jumpnow {
+  background: #f16b29;
+}
+/* line 183, ../sass/modules/_sections.scss */
+=======
 /* line 155, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #f16b29;
 }
 /* line 158, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div#sec_jumpnow p {
   font-size: 26px;
   line-height: 40px;
 }
 
+<<<<<<< HEAD
+/* line 189, ../sass/modules/_sections.scss */
+=======
 /* line 164, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.laptop-img {
   background: url(../img/laptop.png) no-repeat center;
   min-height: 320px;
 }
 
+<<<<<<< HEAD
+/* line 195, ../sass/modules/_sections.scss */
+=======
 /* line 170, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.plan_list {
   padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
+<<<<<<< HEAD
+/* line 199, ../sass/modules/_sections.scss */
+=======
 /* line 174, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.plan_list li {
   font-size: 26px;
   line-height: 40px;
 }
+<<<<<<< HEAD
+/* line 203, ../sass/modules/_sections.scss */
+=======
 /* line 178, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.plan_list li:before {
   width: 30px;
   height: 30px;
@@ -450,7 +513,11 @@ ul.plan_list li:before {
   counter-increment: my-badass-counter;
 }
 
+<<<<<<< HEAD
+/* line 222, ../sass/modules/_sections.scss */
+=======
 /* line 197, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -476,7 +543,11 @@ ul.plan_list li:before {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
+<<<<<<< HEAD
+/* line 247, ../sass/modules/_sections.scss */
+=======
 /* line 222, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -486,7 +557,10 @@ ul.plan_list li:before {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
+
+
 /* line 232, ../sass/modules/_sections.scss */
+
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;

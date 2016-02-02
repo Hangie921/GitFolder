@@ -752,8 +752,46 @@ div.timeline ul li:last-child {
   margin-right: 0px;
 }
 
+/* PRIZE**/
+/* line 436, ../sass/modules/_sections.scss */
+#competition_prize_slide {
+  display: block;
+}
+/* line 439, ../sass/modules/_sections.scss */
+#competition_prize_slide p {
+  color: #f16b29 !important;
+  font-size: 24px;
+  margin-top: 30px;
+}
+/* line 445, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single {
+  margin: 0 auto;
+  min-height: 400px;
+}
+/* line 448, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single:first-of-type {
+  background: url(../img/firstplace.png) no-repeat top center;
+}
+/* line 451, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single:nth-of-type(2) {
+  background: url(../img/secondplace.png) no-repeat center 30px;
+}
+/* line 454, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single:nth-of-type(3) {
+  background: url(../img/thirdplace.png) no-repeat center 78px;
+}
+/* line 458, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single h4 {
+  font-family: "raleway";
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  display: block;
+  margin-top: 300px;
+}
+
 /**JUMP******/
-/* line 440, ../sass/modules/_sections.scss */
+/* line 480, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -778,7 +816,7 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 465, ../sass/modules/_sections.scss */
+/* line 505, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -788,7 +826,7 @@ div.timeline ul li:last-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 475, ../sass/modules/_sections.scss */
+/* line 515, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -801,31 +839,43 @@ div.timeline ul li:last-child {
 }
 
 /***FORMS*****/
-/* line 493, ../sass/modules/_sections.scss */
+/* line 533, ../sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
-/* line 496, ../sass/modules/_sections.scss */
+/* line 536, ../sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-/* line 500, ../sass/modules/_sections.scss */
+/* line 540, ../sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
-/* line 505, ../sass/modules/_sections.scss */
+/* line 545, ../sass/modules/_sections.scss */
 div#sec_events {
   position: relative;
 }
 
+/* line 548, ../sass/modules/_sections.scss */
+.event_single {
+  display: block;
+  text-align: center;
+  background: url(../img/stock.jpg) no-repeat;
+  -webkit-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
 /***CONTACT_US******/
-/* line 510, ../sass/modules/_sections.scss */
+/* line 560, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 80%;
   text-align: center;
@@ -833,7 +883,7 @@ div.contact_container {
   top: 80%;
   background-color: #99FF99;
 }
-/* line 516, ../sass/modules/_sections.scss */
+/* line 566, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }

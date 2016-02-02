@@ -431,6 +431,46 @@ div.timeline {
 	
 
 }
+/* PRIZE**/
+
+#competition_prize_slide  {
+	display:block;
+	
+	p {
+	 		color:$primary-color !important;
+	 		font-size:24px;
+	 		margin-top:30px;
+	 	}
+
+	.prize-single {
+		margin:0 auto;
+		min-height:400px;
+		&:first-of-type {
+		background: url(../img/firstplace.png) no-repeat top center;
+	 	}
+	 	&:nth-of-type(2) {
+		background: url(../img/secondplace.png) no-repeat center 30px;
+	 	}
+	 	&:nth-of-type(3) {
+		background: url(../img/thirdplace.png) no-repeat center 78px;
+	 	}
+
+	 	h4 {
+	 		font-family: $english;
+			font-weight: 600;
+			font-size:50px;
+			text-align: center;
+			display: block;
+			margin-top:300px;
+	 	}
+	 	
+
+	}
+
+
+
+}
+
 
 
 
@@ -505,6 +545,16 @@ div.timeline {
 div#sec_events{
 	position: relative;
 }
+.event_single {
+		display: block;
+		text-align: center;
+		background:url(../img/stock.jpg) no-repeat;
+		-webkit-background-size:100% auto;
+		-ms-background-size:100% auto;
+		-moz-background-size:100% auto;
+		-o-background-size:100% auto;
+		background-size:100% auto;
+	}
 
 /***CONTACT_US******/
 div.contact_container{

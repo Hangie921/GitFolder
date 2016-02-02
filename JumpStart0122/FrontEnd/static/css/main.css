@@ -1243,8 +1243,16 @@ header a.navbar-brand {
   background: url(../img/jumpstart-logo.png) left no-repeat;
   text-indent: -9999px;
 }
+/* line 23, ../sass/layouts/_header.scss */
+header a {
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
 
-/* line 25, ../sass/layouts/_header.scss */
+/* line 29, ../sass/layouts/_header.scss */
 div.main-menu {
   float: right;
   position: absolute;
@@ -1252,13 +1260,13 @@ div.main-menu {
   right: 0;
 }
 
-/* line 32, ../sass/layouts/_header.scss */
+/* line 36, ../sass/layouts/_header.scss */
 ul.menu {
   margin: 0;
   float: right;
   display: block;
 }
-/* line 36, ../sass/layouts/_header.scss */
+/* line 40, ../sass/layouts/_header.scss */
 ul.menu li {
   float: left;
   padding-right: 100px;
@@ -1266,7 +1274,7 @@ ul.menu li {
   text-transform: uppercase;
   text-align: right;
 }
-/* line 43, ../sass/layouts/_header.scss */
+/* line 47, ../sass/layouts/_header.scss */
 ul.menu li a {
   text-align: right;
   display: block;
@@ -1276,12 +1284,12 @@ ul.menu li a {
   font-weight: 600;
   letter-spacing: 1px;
 }
-/* line 52, ../sass/layouts/_header.scss */
+/* line 56, ../sass/layouts/_header.scss */
 ul.menu li a:hover {
   color: white;
 }
 
-/* line 59, ../sass/layouts/_header.scss */
+/* line 63, ../sass/layouts/_header.scss */
 .jumpnow_link a {
   background: rgba(242, 107, 42, 0.7);
 }

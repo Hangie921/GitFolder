@@ -18,8 +18,12 @@ header {
 		margin:0;
 		background:url(../img/jumpstart-logo.png) left no-repeat;
 		text-indent: -9999px;
-
+	
 	}
+	a{
+		@include transition(all 1s);
+	}
+	// @include transition(all 1s);
 }
 
 div.main-menu {

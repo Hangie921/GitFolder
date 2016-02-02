@@ -15,6 +15,29 @@ $(document).ready(function() {
     	resize:true,
 		afterLoad: function(anchorLink, index) {
 			$.fn.fullpage.setKeyboardScrolling(false);
+
+			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
+		    	case 1:
+		    		$('#header').css({'background-color':'transparent','color':'#fff'});
+		    		$('#header ul li a').css({'color':'#fff'});
+		    		break;
+				case 2:
+					$('#header').css({'background-color':'#f16b29','color':'#fff'});
+					$('#header ul li a').css({'color':'#fff'});
+					break;
+				case 3:
+					$('#header').css({'color':'#f16b29','background-color':'#fff'});
+					$('#header ul li a').css({'color':'#f16b29'});
+					break;
+				case 4:
+					$('#header').css({'background-color':'#f16b29','color':'#fff'});
+					$('#header ul li a').css({'color':'#fff'});
+					break;
+				case 5:
+					$('#header').css({'color':'#f16b29','background-color':'#fff'});
+					$('#header ul li a').css({'color':'#f16b29'});
+					break;
+			}
 		},
 		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
 			if(anchorLink == 'competition'){
@@ -33,6 +56,10 @@ $(document).ready(function() {
 			}
 		},
 		onLeave: function(index, nextIndex, direction) {
+
+			$('#header').css({'background-color':'transparent'});
+		    if(direction == 'up')
+		    	$('#header ul li a').css({'color':'transparent'});
 		    if(nextIndex == 2){
 		    	$('.rocket').addClass('rocket_ani');
 		    }else if (index == 2) {
@@ -43,6 +70,8 @@ $(document).ready(function() {
 		    	machine3.futureActive = 7;
 				machine3.stop();
 		    }
+
+
 		},// end of the onLeave function
 		verticalCentered : true,
 		resize : false,

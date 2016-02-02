@@ -904,7 +904,8 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
 }
 
 /* line 121, ../sass/modules/_forms.scss */
-.prev_btn {
+.prev_btn, .next_btn {
+  float: left;
   margin-top: 40px;
   width: 170px;
   padding: 10px;
@@ -920,8 +921,8 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
-/* line 137, ../sass/modules/_forms.scss */
-.prev_btn span {
+/* line 138, ../sass/modules/_forms.scss */
+.prev_btn span, .next_btn span {
   position: absolute;
   right: 0;
   top: 0;
@@ -929,8 +930,8 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   width: 50px;
   text-indent: -9999px;
 }
-/* line 146, ../sass/modules/_forms.scss */
-.prev_btn span:before {
+/* line 147, ../sass/modules/_forms.scss */
+.prev_btn span:before, .next_btn span:before {
   position: absolute;
   content: '';
   display: block;
@@ -939,7 +940,7 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   width: 41px;
   height: 40px;
   left: 30px;
-  top: 8px;
+  top: 7px;
   border-top: 1px solid #fff;
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -947,8 +948,8 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   /* Chrome, Safari, Opera */
   transform: rotate(45deg);
 }
-/* line 161, ../sass/modules/_forms.scss */
-.prev_btn span:after {
+/* line 162, ../sass/modules/_forms.scss */
+.prev_btn span:after, .next_btn span:after {
   position: absolute;
   content: '';
   display: block;
@@ -956,8 +957,8 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   top: 0px;
   width: 41px;
   height: 40px;
-  left: 57px;
-  top: 36px;
+  left: 58px;
+  top: 37px;
   border-top: 1px solid #fff;
   -ms-transform: rotate(-45deg);
   /* IE 9 */
@@ -965,9 +966,38 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   /* Chrome, Safari, Opera */
   transform: rotate(-45deg);
 }
-/* line 177, ../sass/modules/_forms.scss */
-.prev_btn:hover {
+/* line 178, ../sass/modules/_forms.scss */
+.prev_btn:hover, .next_btn:hover {
   margin-left: 15px;
+}
+
+/* line 185, ../sass/modules/_forms.scss */
+.next_btn {
+  border-left: none;
+  border-right: 1px solid #fff;
+}
+/* line 189, ../sass/modules/_forms.scss */
+.next_btn span {
+  left: 0;
+}
+/* line 192, ../sass/modules/_forms.scss */
+.next_btn span:before {
+  left: -21px;
+  top: 8px;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+/* line 199, ../sass/modules/_forms.scss */
+.next_btn span:after {
+  left: -48px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
 }
 
 /* line 2, ../sass/modules/_animations.scss */

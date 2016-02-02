@@ -20,6 +20,7 @@ $(document).ready(function() {
 		    	case 1:
 		    		$('#header').css({'background-color':'transparent','color':'#fff'});
 		    		$('#header ul li a').css({'color':'#fff'});
+		    		$('.backToTop').hide();
 		    		break;
 				case 2:
 					$('#header').css({'background-color':'#f16b29','color':'#fff'});
@@ -56,7 +57,7 @@ $(document).ready(function() {
 			}
 		},
 		onLeave: function(index, nextIndex, direction) {
-
+			$('.backToTop').show();
 			$('#header').css({'background-color':'transparent'});
 		    if(direction == 'up')
 		    	$('#header ul li a').css({'color':'transparent'});
@@ -75,7 +76,8 @@ $(document).ready(function() {
 		},// end of the onLeave function
 		verticalCentered : true,
 		resize : false,
-		fitToSectionDelay:500
+		fitToSectionDelay:500,
+		fixedElements:'.backToTop'
 
 	});
 

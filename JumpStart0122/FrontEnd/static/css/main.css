@@ -838,6 +838,18 @@ div.contact_container .contact_header {
   cursor: pointer;
 }
 
+/* line 1, ../sass/modules/_components.scss */
+.backToTop {
+  position: fixed;
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  background-color: #f16b29;
+  z-index: 5;
+  right: 30px;
+  bottom: 30px;
+}
+
 /* Searchbox */
 /*****PERSONAL DESTAILS********/
 /* line 6, ../sass/modules/_forms.scss */

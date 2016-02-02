@@ -695,11 +695,11 @@ div.timeline ul li {
 div.timeline ul li:hover {
   position: relative;
   bottom: 15px;
-  -webkit-box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.8);
-  -moz-box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.8);
-  -ms-box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.8);
-  -o-box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.8);
-  box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.8);
+  -webkit-box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.6);
+  -moz-box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.6);
+  -ms-box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.6);
+  -o-box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.6);
+  box-shadow: 15px 15px 2px -3px rgba(220, 220, 220, 0.6);
 }
 /* line 376, ../sass/modules/_sections.scss */
 div.timeline ul li h4 {

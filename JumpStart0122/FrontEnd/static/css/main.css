@@ -282,7 +282,7 @@ img.device {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 97, ../sass/base/_mixins.scss */
+/* line 104, ../sass/base/_mixins.scss */
 .basic_btn:after {
   content: "";
   position: absolute;
@@ -294,7 +294,7 @@ img.device {
   height: 36px;
   background: url(../img/arrow-right.png) no-repeat center center;
 }
-/* line 109, ../sass/base/_mixins.scss */
+/* line 116, ../sass/base/_mixins.scss */
 .basic_btn:hover {
   color: #fff;
   background-color: #555 !important;
@@ -1053,7 +1053,7 @@ div.contact_container h2 {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 97, ../sass/base/_mixins.scss */
+/* line 104, ../sass/base/_mixins.scss */
 .personal_details_group input[type=submit]:after {
   content: "";
   position: absolute;
@@ -1065,7 +1065,7 @@ div.contact_container h2 {
   height: 36px;
   background: url(../img/arrow-right.png) no-repeat center center;
 }
-/* line 109, ../sass/base/_mixins.scss */
+/* line 116, ../sass/base/_mixins.scss */
 .personal_details_group input[type=submit]:hover {
   color: #fff;
   background-color: #555 !important;
@@ -1409,26 +1409,35 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
 }
 /* line 33, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate div {
+  -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 37, ../sass/modules/_animations.scss */
+/* line 39, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .front_face {
-  transform: rotateY(0deg);
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 41, ../sass/modules/_animations.scss */
+/* line 42, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .back_face {
-  transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg) translateZ(1px);
+  -webkit-transform: rotateY(180deg) translateZ(1px);
+  -ms-transform: rotateY(180deg) translateZ(1px);
+  -o-transform: rotateY(180deg) translateZ(1px);
+  transform: rotateY(180deg) translateZ(1px);
   background-color: rgba(255, 0, 0, 0.7);
 }
-/* line 47, ../sass/modules/_animations.scss */
+/* line 48, ../sass/modules/_animations.scss */
 .event_group .event_single:hover .event_single_rotate {
   -moz-transition: all 0.5s ease-In;
   -webkit-transition: all 0.5s ease-In;
   -ms-transition: all 0.5s ease-In;
   -o-transition: all 0.5s ease-In;
   transition: all 0.5s ease-In;
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 

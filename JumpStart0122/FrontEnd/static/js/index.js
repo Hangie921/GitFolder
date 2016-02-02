@@ -1,6 +1,10 @@
 // this is the js that contain and execute the all Front-End related js
 
 $(document).ready(function() {
+	
+	initSlot();//initial the slot machine first so that fullpage can load the
+			   //'machine3	'
+	
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
     	menu:'#header',
@@ -11,18 +15,33 @@ $(document).ready(function() {
     	resize:true,
 		afterLoad: function(anchorLink, index) {
 			$.fn.fullpage.setKeyboardScrolling(false);
-		    if (index == 2) {
-		    	$('.rocket').addClass('rocket_ani');
-		    }
 		},
 		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-			
+			if(anchorLink == 'competition'){
+				$('#competition_menu li a').removeClass('selected');
+				switch(slideIndex){
+					case 0:
+						$('#competition_menu li:nth-child(1) a').addClass('selected');
+					break;
+					case 1:
+						$('#competition_menu li:nth-child(2) a').addClass('selected');
+					break;
+					case 2:
+						$('#competition_menu li:nth-child(3) a').addClass('selected');
+					break;
+				}
+			}
 		},
 		onLeave: function(index, nextIndex, direction) {
-		    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {
+		    if(nextIndex == 2){
+		    	$('.rocket').addClass('rocket_ani');
+		    }else if (index == 2) {
 		    	setTimeout(function(){
 		    		$('.rocket').removeClass('rocket_ani'); 
 		    	}, 1000);
+		    }else if(index ==1){
+		    	machine3.futureActive = 7;
+				machine3.stop();
 		    }
 		},// end of the onLeave function
 		verticalCentered : true,
@@ -32,22 +51,27 @@ $(document).ready(function() {
 	});
 
 
-    //The slot Machine animation
-    var machine3 = $('#slot3').slotMachine({
-    	active : 0,
-    	delay : 14000,
-    	auto : true
-    });
-	$('#slotButton3').click(function(){
-			machine3.futureActive = 7;
-			machine3.stop();
-			setTimeout(function(){
-				$.fn.fullpage.moveTo(3);
-			}, 5000);
-	});
+    //The slot Machine animation initializing
+    function initSlot(){
+    	machine3 = $('#slot3').slotMachine({
+	    	active : 0,
+	    	delay : 14000,
+	    	auto : true
+    	});
+		$('#slotButton3').click(function(){
+				machine3.futureActive = 7;
+				machine3.stop();
+				setTimeout(function(){
+					$.fn.fullpage.moveTo(3);
+				}, 1800);
+		});
+    }
+    
+    
 
 
-	//add and delete the member input dynamically
+	//add and delete the member input field dynamically with the btn clicked
+
 	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member '><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
 	var counter = 1;
 	$('#add_member').click(function(event){
@@ -70,7 +94,7 @@ $(document).ready(function() {
 	});
 
 	
-	//the contact form ani
+	//the contact form ani,to show or hide the contact form
 	var down = true;
 	$('.contact_container').click(function(){
 		if(down){

@@ -194,7 +194,7 @@ img.device {
 /**COLUMNS SETTINGS***/
 /* line 58, ../sass/base/_base.scss */
 .container {
-  min-width: 1388px;
+  min-width: 100%;
 }
 
 /* line 61, ../sass/base/_base.scss */
@@ -455,7 +455,7 @@ div#sec_home {
   width: 278px;
   height: 221px;
   background: url(../img/rocket.png) no-repeat center center;
-  left: 0;
+  left: -20%;
   top: 80%;
 }
 
@@ -1019,79 +1019,79 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   }
 
   /* line 8, ../sass/modules/_animations.scss */
-  9.99999% {
-    top: 80%;
+  0.0001% {
+    top: 79%;
     left: -20%;
   }
 
   /* line 9, ../sass/modules/_animations.scss */
+  1% {
+    top: 80%;
+    left: -20%;
+  }
+
+  /* line 10, ../sass/modules/_animations.scss */
+  2% {
+    top: 79%;
+    left: -20%;
+  }
+
+  /* line 11, ../sass/modules/_animations.scss */
+  3% {
+    top: 80%;
+    left: -20%;
+  }
+
+  /* line 12, ../sass/modules/_animations.scss */
+  4% {
+    top: 79%;
+    left: -20%;
+  }
+
+  /* line 13, ../sass/modules/_animations.scss */
+  5% {
+    top: 80%;
+    left: -20%;
+  }
+
+  /* line 14, ../sass/modules/_animations.scss */
+  6% {
+    top: 79%;
+    left: -20%;
+  }
+
+  /* line 15, ../sass/modules/_animations.scss */
+  7% {
+    top: 80%;
+    left: -20%;
+  }
+
+  /* line 16, ../sass/modules/_animations.scss */
+  8% {
+    top: 79%;
+    left: -20%;
+  }
+
+  /* line 17, ../sass/modules/_animations.scss */
+  9% {
+    top: 80%;
+    left: -20%;
+  }
+
+  /* line 18, ../sass/modules/_animations.scss */
   10% {
     top: 79%;
     left: -20%;
   }
 
-  /* line 10, ../sass/modules/_animations.scss */
+  /* line 19, ../sass/modules/_animations.scss */
   11% {
     top: 80%;
     left: -20%;
   }
 
-  /* line 11, ../sass/modules/_animations.scss */
-  12% {
-    top: 79%;
-    left: -20%;
-  }
-
-  /* line 12, ../sass/modules/_animations.scss */
-  13% {
-    top: 80%;
-    left: -20%;
-  }
-
-  /* line 13, ../sass/modules/_animations.scss */
-  14% {
-    top: 79%;
-    left: -20%;
-  }
-
-  /* line 14, ../sass/modules/_animations.scss */
-  15% {
-    top: 80%;
-    left: -20%;
-  }
-
-  /* line 15, ../sass/modules/_animations.scss */
-  16% {
-    top: 79%;
-    left: -20%;
-  }
-
-  /* line 16, ../sass/modules/_animations.scss */
-  17% {
-    top: 80%;
-    left: -20%;
-  }
-
-  /* line 17, ../sass/modules/_animations.scss */
-  18% {
-    top: 79%;
-    left: -20%;
-  }
-
-  /* line 18, ../sass/modules/_animations.scss */
-  19% {
-    top: 80%;
-    left: -20%;
-  }
-
-  /* line 19, ../sass/modules/_animations.scss */
-  20% {
-    top: 79%;
-    left: -20%;
-  }
-
   /* line 20, ../sass/modules/_animations.scss */
-  30% {
+  20% {
     top: 10%;
     left: 30%;
   }

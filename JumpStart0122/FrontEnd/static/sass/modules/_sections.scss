@@ -575,6 +575,7 @@ div.timeline {
 div#sec_events{
 	position: relative;
 }
+
 .event_single {
 		padding:10px;
 		color:#fff;
@@ -583,14 +584,14 @@ div#sec_events{
 		min-height: 300px;
 		display: block;
 		text-align: center;
-		background:#999 url(../img/stock.jpg) no-repeat;
-		background-blend-mode: multiply;
+		// background:#999 url(../img/stock.jpg) no-repeat;
+		// background-blend-mode: multiply;
 		-webkit-background-size:100% auto;
 		-ms-background-size:100% auto;
 		-moz-background-size:100% auto;
 		-o-background-size:100% auto;
 		background-size:100% auto;
-		backdrop-filter: blur(10px);
+		// backdrop-filter: blur(10px);
 
 		h3 {
 			padding:30px 0 30px;
@@ -598,6 +599,11 @@ div#sec_events{
 		p {
 			font-size:20px;
 			line-height: 28px;
+		}
+		.event_single_rotate{
+			background:#999 url(../img/stock.jpg) no-repeat;
+			background-blend-mode: multiply;
+			backdrop-filter: blur(10px);
 		}
 	}
 

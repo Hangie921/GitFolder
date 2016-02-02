@@ -4,7 +4,7 @@ $(document).ready(function() {
 	
 	initSlot();//initial the slot machine first so that fullpage can load the
 			   //'machine3	'
-	
+
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
     	menu:'#header',
@@ -13,9 +13,9 @@ $(document).ready(function() {
     	],
     	scrollingSpeed:1000,
     	resize:true,
-		afterLoad: function(anchorLink, index) {
-			$.fn.fullpage.setKeyboardScrolling(false);
-
+    	//determin what to do after the loading of the each sections
+		afterLoad: function(anchorLink, index) { 
+			$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
 			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
 		    	case 1:
 		    		$('#header').css({'background-color':'transparent','color':'#fff'});
@@ -97,12 +97,8 @@ $(document).ready(function() {
 				}, 1800);
 		});
     }
-    
-    
-
 
 	//add and delete the member input field dynamically with the btn clicked
-
 	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member '><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
 	var counter = 1;
 	$('#add_member').click(function(event){
@@ -118,6 +114,7 @@ $(document).ready(function() {
 
 			});	
 
+			//add the input--filled class to maintain the animation
 			$('.team_detail_single').last().children().children('input.input__field').focus(function(){
 				$(this).parent().addClass('input--filled');
 			}).blur(function(){
@@ -125,8 +122,6 @@ $(document).ready(function() {
 					$(this).parent().removeClass('input--filled');
 				}
 			});
-			
-			
 
 			counter = counter + 1;
 			if(counter==5){
@@ -149,6 +144,9 @@ $(document).ready(function() {
 		}
 
 	});
+	
+	//the events section flip motion
+
 	
 
 

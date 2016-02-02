@@ -1,6 +1,6 @@
-var md5 = require('md5'),
+var md5 = require('../module/md5'),
 	multer = require('multer'),
-	form = multer.single();
+	form = multer();
 
 
 

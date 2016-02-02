@@ -946,7 +946,7 @@ div#sec_events {
   position: relative;
 }
 
-/* line 578, ../sass/modules/_sections.scss */
+/* line 579, ../sass/modules/_sections.scss */
 .event_single {
   padding: 10px;
   color: #fff;
@@ -955,27 +955,30 @@ div#sec_events {
   min-height: 300px;
   display: block;
   text-align: center;
-  background: #999999 url(../img/stock.jpg) no-repeat;
-  background-blend-mode: multiply;
   -webkit-background-size: 100% auto;
   -ms-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
   background-size: 100% auto;
-  backdrop-filter: blur(10px);
 }
-/* line 595, ../sass/modules/_sections.scss */
+/* line 596, ../sass/modules/_sections.scss */
 .event_single h3 {
   padding: 30px 0 30px;
 }
-/* line 598, ../sass/modules/_sections.scss */
+/* line 599, ../sass/modules/_sections.scss */
 .event_single p {
   font-size: 20px;
   line-height: 28px;
 }
+/* line 603, ../sass/modules/_sections.scss */
+.event_single .event_single_rotate {
+  background: #999999 url(../img/stock.jpg) no-repeat;
+  background-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+}
 
 /***CONTACT_US******/
-/* line 605, ../sass/modules/_sections.scss */
+/* line 611, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #f16b29;
@@ -985,11 +988,11 @@ div.contact_container {
   left: 0;
   top: 70%;
 }
-/* line 613, ../sass/modules/_sections.scss */
+/* line 619, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 616, ../sass/modules/_sections.scss */
+/* line 622, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway";
@@ -1389,6 +1392,44 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
     top: 10%;
     left: 30%;
   }
+}
+
+/* line 27, ../sass/modules/_animations.scss */
+.event_group {
+  perpective: 300px;
+}
+/* line 30, ../sass/modules/_animations.scss */
+.event_group .event_single .event_single_rotate {
+  transform-style: preserve-3d;
+  -moz-transition: all 0.5s ease-Out;
+  -webkit-transition: all 0.5s ease-Out;
+  -ms-transition: all 0.5s ease-Out;
+  -o-transition: all 0.5s ease-Out;
+  transition: all 0.5s ease-Out;
+}
+/* line 33, ../sass/modules/_animations.scss */
+.event_group .event_single .event_single_rotate div {
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 37, ../sass/modules/_animations.scss */
+.event_group .event_single .event_single_rotate .front_face {
+  transform: rotateY(0deg);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 41, ../sass/modules/_animations.scss */
+.event_group .event_single .event_single_rotate .back_face {
+  transform: rotateY(180deg);
+  background-color: rgba(255, 0, 0, 0.7);
+}
+/* line 47, ../sass/modules/_animations.scss */
+.event_group .event_single:hover .event_single_rotate {
+  -moz-transition: all 0.5s ease-In;
+  -webkit-transition: all 0.5s ease-In;
+  -ms-transition: all 0.5s ease-In;
+  -o-transition: all 0.5s ease-In;
+  transition: all 0.5s ease-In;
+  transform: rotateY(180deg);
 }
 
 /* LAYOUTS- Page Layout Styles */

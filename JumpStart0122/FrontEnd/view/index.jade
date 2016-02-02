@@ -136,7 +136,26 @@ html
 						
 					
 
-				.slide#competition_price_slide
+				.slide#competition_prize_slide
+					div.container
+						.col-md-5.col-centered
+							ul.competition-headings#competition_menu
+								li
+									a(href="#competition") 參賽資訊
+								li 
+									a.selected(href="#competition/1") 競賽主題
+								li 
+									a(href="#competition/2") 獎項
+						.col-md-12
+							.col-md-4.prize-single
+								h4 $300,000
+							.col-md-4.prize-single
+								h4 $90,000
+							.col-md-4.prize-single
+								h4 $50,000
+							.col-md-12
+								p *入選隊伍均可於新加坡設立境外公司
+
 
 					
 
@@ -212,7 +231,20 @@ html
 								span 我同意
 							input(type='submit' value='submit')
 			.section#sec_events(data-anchor='events')
-				h2 events
+				.event_group.container
+					.event_single.col-md-4
+						span 四月
+						h3 我是一個標題 
+						p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+					.event_single.col-md-4
+						span 四月
+						h3 我是一個標題 
+						p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+					.event_single.col-md-4
+						span 四月
+						h3 我是一個標題 
+						p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+
 				.contact_container
 					.col-md-12.contact_header
 						.col-md-6.col-md-offset-3

@@ -188,14 +188,12 @@ ul.plan_list {
 /*COMPETITION****/
 
 div.competition_topic {
-	p {
-		padding-top:30px;
-	}
+	
 }
 
 ul.competition-headings {
 	text-align:center;
-	padding:20px 0 0;
+	padding:20px 0 30px;
 
 	li {
 		display: inline-block;
@@ -311,6 +309,129 @@ ul.partners {
 		}
 	}
 }
+
+/**COMPETITION DETAILS**/
+#competition_info_slide {
+
+}
+.info_list{
+	ul {
+		padding:0
+	}
+	
+}
+div.timeline {
+	margin-top:30px;
+	ul{ 
+		position:relative;
+		padding:0 0 25px;
+
+		
+		&:after {
+			content:"";
+			width:100%;
+			height:3px;
+			display: block;
+			background: rgba(241, 107, 41, 0.58);
+			position:absolute;
+			bottom:0px;
+		}
+		
+		li {
+		    display: inline-block;
+		    margin-right: 7%;
+		    line-height: 30px;
+		    min-width: 200px;
+		    position: relative;
+			width: 200px;
+			padding: 10px;
+			background: #FFFFFF;
+			bottom:0px;
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+			border: #ddd solid 1px;
+			-webkit-box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
+			-moz-box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
+			-ms-box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
+			-o-box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
+			box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
+			transition: all 0.5s;
+			-webkit-transition: all 0.25s;
+			-ms-transition: all 0.25s;
+			-o-transition: all 0.25s;
+			-moz-transition: all 0.25s;
+			
+			&:hover {
+				position:relative;
+				bottom:15px;
+				-webkit-box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.8);
+				-moz-box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.8);
+				-ms-box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.8);
+				-o-box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.8);
+				box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.8);
+			}
+
+
+				h4 {
+					color:$primary-color;
+					margin:0;
+				}
+
+				p {
+					font-size:16px;
+					margin:0;
+					color:#999;
+				}
+
+				span:first-of-type {
+					font-size:14px;			
+				}
+
+				span:last-of-type {
+					display:block;
+					line-height: 30px;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					border-style: solid;
+					border-width: 22px 15px 0;
+					border-color: #FFFFFF transparent;
+					display: block;
+					width: 0;
+					z-index: 1;
+					bottom: -22px;
+					left: 0px;
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					border-style: solid;
+					border-width: 22px 15px 0;
+					border-color: #ddd transparent;
+					display: block;
+					width: 0;
+					z-index: 0;
+					bottom: -23px;
+					left: 0px;
+				}
+
+			}
+
+		li:last-child {
+			margin-right:0px;
+		}
+
+
+
+	}
+	
+
+}
+
 
 
 /**JUMP******/

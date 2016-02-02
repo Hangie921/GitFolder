@@ -101,7 +101,7 @@ div.slide.team_details, div.slide.personal_details {
 }
 
 #add_member {
-	float:right;
+
 	font-size:18px;
 	background:transparent;
 	display:block;
@@ -118,13 +118,19 @@ div.slide.team_details, div.slide.personal_details {
 	}
 }
 
-.prev_btn {
+.nav_group {
+	position: absolute;
+    right: 50px;
+    bottom: 220px;
+	
+}
+.next_btn {
+	font-size:16px;
 	float:left;
 	margin-top:40px;
-	width:170px;
+	width:87px;
 	padding:10px;
 	display: block;
-	font-size:33px;
 	border-top:1px solid #fff;
 	border-left:1px solid #fff;
 	border-bottom:1px solid #fff;
@@ -182,8 +188,8 @@ transform: rotate(-45deg);
 
 }
 
-.next_btn {
-	@extend .prev_btn;
+.prev_btn {
+	@extend .next_btn;
 	border-left:none;
 	border-right:1px solid #fff;
 	span {

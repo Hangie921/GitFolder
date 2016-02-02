@@ -3,7 +3,7 @@
 $(document).ready(function() {
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
-    	menu:'#main_menu',
+    	menu:'#header',
     	anchors:['home','about','competition',
     			'jumpnow','events'
     	],
@@ -12,10 +12,7 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index) {
 			$.fn.fullpage.setKeyboardScrolling(false);
 		    if (index == 2) {
-		    	$('.rocket').animate({
-		        	left: "30%",
-		        	top: "10%"
-		      	}, 1000);
+		    	$('.rocket').addClass('rocket_ani');
 		    }
 		},
 		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
@@ -23,14 +20,14 @@ $(document).ready(function() {
 		},
 		onLeave: function(index, nextIndex, direction) {
 		    if (index == 2 && (nextIndex == 3 || nextIndex == 1)) {
-		    	$('.rocket').animate({
-		    		left: "0",
-		    		top: "80%"
-		      	}, 1000); 
+		    	setTimeout(function(){
+		    		$('.rocket').removeClass('rocket_ani'); 
+		    	}, 1000);
 		    }
 		},// end of the onLeave function
 		verticalCentered : true,
-		resize : false
+		resize : false,
+		fitToSectionDelay:500
 
 	});
 

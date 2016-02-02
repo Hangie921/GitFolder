@@ -126,7 +126,7 @@ html
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 											span.input__label-content.input__label-content--hoshi 上傳檔案	
 							.col-md-8
-								.team_detail_single
+								.team_detail_single.clearfix
 									span.input.input--hoshi.team_member
 										input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
@@ -137,10 +137,11 @@ html
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 												span.input__label-content.input__label-content--hoshi 負責項目
 									//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
-								button(id='add_member') 添加成員
+								button(id='add_member') 添加成員 
 								a(class='button', href='#jumpnow/2') 下一步
 						a(class='button',href='#jumpnow') 上一步
 					.slide.personal_details.fp-auto-height
+						.col-md-6.personal_details_group.col-centered
 							span.input.input--hoshi
 								input#input-4.input__field.input__field--hoshi(type='text',name='contact')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
@@ -157,7 +158,7 @@ html
 								input#input-4.input__field.input__field--hoshi(type='text',name='address')
 								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 										span.input__label-content.input__label-content--hoshi 聯絡地址
-							label
+							label.iagree
 								input(type="checkbox" name='我同意' value="我同意") 
 								span 我同意
 							input(type='submit' value='submit')

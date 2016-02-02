@@ -1,5 +1,28 @@
 /* Searchbox */
 
+/*****PERSONAL DESTAILS********/
+
+.personal_details_group {
+	span.input {
+		display: block !important;
+		margin:0 auto !important;
+		float:none !important;
+		width:100%;
+	}
+
+	input[type=submit] {
+		@include button;
+	}
+
+	.iagree {
+		float:left;
+		clear:both;
+	}
+
+}
+
+/***GROUP FORM*****/
+
 div.slide.team_details, div.slide.personal_details {
 	input.input__field--hoshi{
 		min-height:50px;
@@ -46,5 +69,117 @@ div.slide.team_details, div.slide.personal_details {
 		width:100%;
 		min-height: 300px;
 			}
+
+	span.team_member {
+		width: 20%;
+    margin-right: 30px;
+	}
+	span.responsibility {
+		width: 80%
+	}
+
+	button#del_member {
+		margin:15px;
+		width:35px;
+		height:35px;
+		background:transparent;
+		border:1px solid #fff;
+		@include border-radius(50%);
+		text-indent: -9999px;
+		position:relative;
+		&:after {
+			content:"";
+			width:22px;
+			height:3px;
+			background:#fff;
+			position:absolute;
+			left:5px;
+			top:50%;
+		}
+
+	}
 }
+
+#add_member {
+	float:right;
+	font-size:18px;
+	background:transparent;
+	display:block;
+	border:none;
+	color:#fff;
+	&:after {
+		width:35px;
+		height:35px;
+		line-height: 35px;
+		content:' + ';
+		border:1px solid #fff;
+		@include border-radius(50%);
+		display: inline-block;
+	}
+}
+
+.prev_btn {
+	margin-top:40px;
+	width:170px;
+	padding:10px;
+	display: block;
+	font-size:33px;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	border-bottom:1px solid #fff;
+	position:relative;
+	transition: all 0.5s ;
+	-ms-transition: all 0.25s ;
+	-o-transition: all 0.25s ;
+	-webkit-transition: all 0.25s ;
+	-moz-transition: all 0.25s ;
+	
+	span {
+		position:absolute;
+		right:0;
+		top:0;
+		height:58px;
+		width:50px;
+		text-indent: -9999px;
+	
+
+		&:before {
+			position:absolute;
+			content:'';
+			display: block;
+			background:transparent;
+			top:0px;
+			width:41px;
+			height:40px;
+			left: 30px;
+				top:8px;
+			border-top:1px solid #fff;
+			-ms-transform: rotate(45deg); /* IE 9 */
+-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+transform: rotate(45deg);
+		}
+		&:after {
+			position:absolute;
+			content:'';
+			display: block;
+			background:transparent;
+			top:0px;
+			width:41px;
+			height:40px;
+			left: 57px;
+			top: 36px;
+			border-top:1px solid #fff;
+			-ms-transform: rotate(-45deg); /* IE 9 */
+-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+transform: rotate(-45deg);
+		}
+	}
+	&:hover {
+		margin-left:15px;
+
+	}
+
+}
+
+
 

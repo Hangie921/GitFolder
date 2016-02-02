@@ -118,22 +118,32 @@ $(document).ready(function() {
 
 			});	
 
+			$('.team_detail_single').last().children().children('input.input__field').focus(function(){
+				$(this).parent().addClass('input--filled');
+			}).blur(function(){
+				if($(this).val()===''){
+					$(this).parent().removeClass('input--filled');
+				}
+			});
+			
+			
+
 			counter = counter + 1;
 			if(counter==5){
 				$(this).hide();
 			}
-	});
+	}); //end of the #add_member clicked
 
-	
+
 	//the contact form ani,to show or hide the contact form
 	var down = true;
-	$('.contact_container').click(function(){
+	$('.contact_header').click(function(){
 		if(down){
-			$(this).animate({'top':'50%'},1000);
+			$(this).parent().animate({'top':'50%'},1000);
 			$('.btn_up_and_down h3').html('down');
 			down = false;
 		}else{
-			$(this).animate({'top':'80%'},1000);
+			$(this).parent().animate({'top':'80%'},1000);
 			$('.btn_up_and_down h3').html('up');
 			down = true;
 		}

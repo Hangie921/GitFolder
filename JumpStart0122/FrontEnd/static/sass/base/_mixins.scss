@@ -14,6 +14,13 @@
 	-o-animation:$ani;
 	animation:$ani;
 }
+@mixin transition($trans){
+	-moz-transition:$trans;
+	-webkit-transition:$trans;
+	-ms-transition:$trans;
+	-o-transition:$trans;
+	transition:$trans;
+}
 
 
 @mixin add-border ($size, $color, $position) {

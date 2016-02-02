@@ -58,7 +58,7 @@ html
 			.section#sec_competition.container(data-anchor='competition')
 				.slide#competition_info_slide
 					h3 slide1
-				.slide.competition_topic.active#competition_topic_slide
+				.slide.competition_topic.active#competition_topic_slide.relative-position
 					.col-md-5.col-centered
 						ul.competition-headings#competition_menu
 							li
@@ -118,7 +118,9 @@ html
 									input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 											span.input__label-content.input__label-content--hoshi 隊伍名稱
-								textarea(placeholder='產品介紹',name='product_brief')
+								span.input.input--hoshi 
+									|產品介紹		
+									textarea(name='product_brief')
 								span.input.input--hoshi
 									input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')

@@ -52,19 +52,21 @@ $(document).ready(function() {
 	var counter = 1;
 	$('#add_member').click(function(event){
 			event.preventDefault();
-			$(this).prev().append(DOM);
-			counter += 1;
-			$('.del_btn').click(function(event){
+			$(this).before(DOM);
+			$(this).prev().children('.del_btn').click(function(event){
 				event.preventDefault();
 				$(this).parent().remove();
-				counter-=1;
+				counter = counter - 1;
+				if(counter!=5){
+					$('#add_member').show();
+				}
+
 			});	
+
+			counter = counter + 1;
 			if(counter==5){
 				$(this).hide();
-			}else{
-				$(this).show();
 			}
-		
 	});
 
 	

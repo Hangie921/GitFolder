@@ -192,7 +192,7 @@ img.device {
 /**COLUMNS SETTINGS***/
 /* line 58, ../sass/base/_base.scss */
 .container {
-  min-width: 1388px;
+  width:100%;
 }
 
 /* line 61, ../sass/base/_base.scss */

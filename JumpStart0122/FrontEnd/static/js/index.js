@@ -16,12 +16,11 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index) { 
 			$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
 			$('#header').css({'opacity':'1'});
-			$('.scrollDown').fadeOut();
 			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
 		    	case 1:
 		    		machine3.shuffle();
-		    		$('.backToTop').fadeOut();
 		    		$('.scrollDown').fadeIn();
+		    		$('.backToTop').fadeOut();
 		    		break;
 				case 2:
 					$('#header').addClass('orange');
@@ -55,6 +54,7 @@ $(document).ready(function() {
 		},
 		onLeave: function(index, nextIndex, direction) {
 			$('.backToTop').fadeIn();
+			$('.scrollDown').fadeOut();
 			$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
 		    if(nextIndex == 2){
 		    	$('.rocket').addClass('rocket_ani');
@@ -62,9 +62,8 @@ $(document).ready(function() {
 		    	setTimeout(function(){
 		    		$('.rocket').removeClass('rocket_ani'); 
 		    	}, 1000);
-		    }else if(index ==1){
-		  //   	machine3.futureActive = 7;
-				// machine3.stop();
+		    }else if(nextIndex == 1){
+		    	$('.backToTop').fadeOut();
 		    }
 		},// end of the onLeave function
 		verticalCentered : true,

@@ -355,7 +355,7 @@ ul.partners {
 				margin-right:15px;
 				display:inline-block;
 				vertical-align: center;
-				background-color: #eeeeee;
+				background-color: #dedede;
 				@include border-radius(50%);
 			}
 		}
@@ -509,20 +509,29 @@ div.timeline {
 	 		color:$primary-color !important;
 	 		font-size:24px;
 	 		margin-top:30px;
+	 		text-align:center
 	 	}
 
 	.prize-single {
 		margin:0 auto;
 		min-height:300px;
 		&:first-of-type {
-		background: url(../img/secondplace.png) no-repeat center 60px;
+		background: url(../img/secondplace.png) no-repeat center 91px;
+			h4{
+				font-size:45px;
+				color:#757575;
+			}
 	 	}
 	 	&:nth-of-type(2) {
-		background: url(../img/firstplace.png) no-repeat center -25px;
+		background: url(../img/firstplace.png) no-repeat center 5px;
 		@include background-size(68% auto);
 	 	}
 	 	&:nth-of-type(3) {
-		background: url(../img/thirdplace.png) no-repeat center 110px;
+		background: url(../img/thirdplace.png) no-repeat center 138px;
+			h4{
+				font-size:45px;
+				color:#757575;
+			}
 	 	}
 
 	 	h4 {
@@ -533,7 +542,7 @@ div.timeline {
 			font-size:50px;
 			text-align: center;
 			display: block;
-			margin-top:300px;
+			margin-top:320px;
 	 	}
 	 	
 
@@ -649,6 +658,7 @@ div#sec_events{
 	span {
 		color:$secondary-color;
 		margin-top:30px;
+		font-weight:600;
 		font-family: $english;
 	}
 	p {

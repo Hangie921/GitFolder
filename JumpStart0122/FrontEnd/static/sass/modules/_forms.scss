@@ -12,13 +12,14 @@
 
 	input[type=submit] {
 		@include button;
+		margin-left:100px;
 	}
 
 	.iagree {
 		float:left;
 		clear:both;
 	}
-
+	
 }
 
 /***GROUP FORM*****/
@@ -98,12 +99,13 @@ div.slide.team_details, div.slide.personal_details {
 		position:relative;
 		
 		&:after {
-			content:"";
-			width:22px;
-			height:3px;
+			content:"-";
+			width:10px;
+			height:2px;
 			background:#fff;
+			margin:0 auto;
 			position:absolute;
-			left:5px;
+			left:11px;
 			top:47%;
 		}
 
@@ -122,21 +124,29 @@ div.slide.team_details, div.slide.personal_details {
 }
 
 #add_member {
-
+	margin-right: 9px;
 	font-size:18px;
 	background:transparent;
 	display:block;
 	border:none;
 	color:#fff;
 	float:right;
-	&:after {
-		width:35px;
-		height:35px;
-		line-height: 35px;
-		content:' + ';
-		border:1px solid #fff;
-		@include border-radius(50%);
-		display: inline-block;
+		&:after {
+			margin-left:5px;
+			width:35px;
+			height:35px;
+			line-height: 30px;
+			text-align: center;
+			content:' + ';
+			border:1px solid #fff;
+			@include border-radius(50%);
+			display: inline-block;
+		}
+	&:hover {
+		&:after {
+			background:#fff;
+			color:$primary-color !important;
+		}
 	}
 }
 

@@ -25,10 +25,11 @@
 // for the rotate animation
 
 .event_group{  
-	perpective:300px;
+	perspective:1000px;
 	.event_single{
 		// outline:1px solid #f00; 
 		.event_single_rotate{
+			// -webkit-transform-style:preserve-3d;
 			transform-style:preserve-3d;
 			position: relative;
 			height: 300px;

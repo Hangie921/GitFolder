@@ -155,7 +155,7 @@ a:hover {
 /*the setting about the slotMachine*/
 /* line 125, ../sass/base/_normalize.scss */
 .slotMachine {
-  height: 40px;
+  height: 45px;
   margin-bottom: 10px;
 }
 
@@ -1580,7 +1580,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
 
 /* line 27, ../sass/modules/_animations.scss */
 .event_group {
-  perpective: 300px;
+  perspective: 1000px;
 }
 /* line 31, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate {
@@ -1593,7 +1593,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   -o-transition: all 0.5s ease-Out;
   transition: all 0.5s ease-Out;
 }
-/* line 36, ../sass/modules/_animations.scss */
+/* line 37, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate div {
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -1606,13 +1606,13 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   left: 0;
   top: 0;
 }
-/* line 48, ../sass/modules/_animations.scss */
+/* line 49, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .front_face, .event_group .event_single .event_single_rotate .back_face {
   background: #999999 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   z-index: 2;
 }
-/* line 54, ../sass/modules/_animations.scss */
+/* line 55, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .back_face {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -1622,7 +1622,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   background: #999999 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
 }
-/* line 63, ../sass/modules/_animations.scss */
+/* line 64, ../sass/modules/_animations.scss */
 .event_group .event_single:nth-child(1):hover .event_single_rotate, .event_group .event_single:nth-child(2):hover .event_single_rotate {
   -moz-transition: all 0.5s ease-In;
   -webkit-transition: all 0.5s ease-In;
@@ -1636,7 +1636,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   transform: rotateY(180deg);
 }
 
-/* line 75, ../sass/modules/_animations.scss */
+/* line 76, ../sass/modules/_animations.scss */
 .scrollDownAni {
   -moz-animation: shakeArrow 2s 0s infinite linear;
   -webkit-animation: shakeArrow 2s 0s infinite linear;
@@ -1646,7 +1646,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
 }
 
 @keyframes shakeArrow {
-  /* line 80, ../sass/modules/_animations.scss */
+  /* line 81, ../sass/modules/_animations.scss */
   0% {
     -moz-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
@@ -1655,7 +1655,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
     transform: scale(1, 1);
   }
 
-  /* line 81, ../sass/modules/_animations.scss */
+  /* line 82, ../sass/modules/_animations.scss */
   50% {
     -moz-transform: scale(1.3, 1.3);
     -webkit-transform: scale(1.3, 1.3);
@@ -1664,7 +1664,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
     transform: scale(1.3, 1.3);
   }
 
-  /* line 82, ../sass/modules/_animations.scss */
+  /* line 83, ../sass/modules/_animations.scss */
   100% {
     -moz-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);

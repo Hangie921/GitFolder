@@ -533,15 +533,16 @@ class SlotMachine {
         // Infinite spin
         } else {
             // Set animation effects
-            this._animationFX = FX_NORMAL;
+            this._animationFX = FX_FAST;
             // delay /= 1.5;
-            delay /= 3;
+            delay =0;
         }
 
         // Perform animation
         if (!this.visible && this.settings.stopHidden === true) {
             this.stop();
         } else {
+            console.log(delay);
             this.$container.animate({
                 marginTop: this.direction.to
             }, delay, 'linear', function cb () {

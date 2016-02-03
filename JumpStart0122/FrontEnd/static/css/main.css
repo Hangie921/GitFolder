@@ -1460,13 +1460,13 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
 
   /* line 20, ../sass/modules/_animations.scss */
   20% {
-    top: 10%;
+    top: 5%;
     left: 30%;
   }
 
   /* line 21, ../sass/modules/_animations.scss */
   100% {
-    top: 10%;
+    top: 5%;
     left: 30%;
   }
 }

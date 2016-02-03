@@ -1156,6 +1156,30 @@ div.contact_container input[type="submit"] {
   height: 100%;
 }
 
+/* line 20, ../sass/modules/_components.scss */
+.scrollDown {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: #fff;
+  bottom: 30px;
+  left: 49%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid gainsboro;
+}
+/* line 31, ../sass/modules/_components.scss */
+.scrollDown a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
 /* Searchbox */
 /*****PERSONAL DESTAILS********/
 /* line 6, ../sass/modules/_forms.scss */
@@ -1610,6 +1634,44 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
+}
+
+/* line 75, ../sass/modules/_animations.scss */
+.scrollDownAni {
+  -moz-animation: shakeArrow 2s 0s infinite linear;
+  -webkit-animation: shakeArrow 2s 0s infinite linear;
+  -ms-animation: shakeArrow 2s 0s infinite linear;
+  -o-animation: shakeArrow 2s 0s infinite linear;
+  animation: shakeArrow 2s 0s infinite linear;
+}
+
+@keyframes shakeArrow {
+  /* line 80, ../sass/modules/_animations.scss */
+  0% {
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 81, ../sass/modules/_animations.scss */
+  50% {
+    -moz-transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -o-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+  }
+
+  /* line 82, ../sass/modules/_animations.scss */
+  100% {
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 }
 
 /* LAYOUTS- Page Layout Styles */

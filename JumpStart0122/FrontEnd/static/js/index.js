@@ -18,7 +18,7 @@ $(document).ready(function() {
 			$('#header').css({'opacity':'1'});
 			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
 		    	case 1:
-		    		machine3.shuffle();
+		    		// machine3.auto();
 		    		$('.backToTop').hide();
 		    		break;
 				case 2:
@@ -72,7 +72,9 @@ $(document).ready(function() {
 		loopBottom:false,
 		loopTop:false,
 		loopHorizontal:false,
-		recordHistory:false
+		recordHistory:false,
+		// responsiveWidth: 700,
+  //       responsiveHeight: 300
 
 	});
 

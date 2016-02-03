@@ -150,7 +150,7 @@ a:hover {
 /*the setting about the slotMachine*/
 /* line 123, ../sass/base/_normalize.scss */
 .slotMachine {
-  height: 33px;
+  height: 40px;
   margin-bottom: 10px;
 }
 
@@ -158,15 +158,12 @@ a:hover {
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
-  height: 1.8em;
 }
 
 /* line 132, ../sass/base/_normalize.scss */
 #slot3 .slot {
   display: block;
   padding-left: 20px;
-  height: 1.8em;
-  line-height: 1.8em;
 }
 
 /* line 138, ../sass/base/_normalize.scss */
@@ -1039,7 +1036,7 @@ div.contact_container {
   position: absolute;
   padding: 30px;
   left: 0;
-  top: 70%;
+  top: 30%;
 }
 /* line 662, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
@@ -1505,6 +1502,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
 /* line 48, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .front_face {
   background: #999999 url(../img/stock.jpg) no-repeat;
+  background-blend-mode: multiply;
   z-index: 2;
 }
 /* line 54, ../sass/modules/_animations.scss */
@@ -1515,9 +1513,10 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   background: #999999 url(../img/stock.jpg) no-repeat;
+  background-blend-mode: multiply;
 }
-/* line 62, ../sass/modules/_animations.scss */
-.event_group .event_single:hover .event_single_rotate {
+/* line 63, ../sass/modules/_animations.scss */
+.event_group .event_single:nth-child(1):hover .event_single_rotate, .event_group .event_single:nth-child(2):hover .event_single_rotate {
   -moz-transition: all 0.5s ease-In;
   -webkit-transition: all 0.5s ease-In;
   -ms-transition: all 0.5s ease-In;

@@ -16,10 +16,12 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index) { 
 			$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
 			$('#header').css({'opacity':'1'});
+			$('.scrollDown').fadeOut();
 			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
 		    	case 1:
 		    		machine3.shuffle();
-		    		$('.backToTop').hide();
+		    		$('.backToTop').fadeOut();
+		    		$('.scrollDown').fadeIn();
 		    		break;
 				case 2:
 					$('#header').addClass('orange');
@@ -52,7 +54,7 @@ $(document).ready(function() {
 			}
 		},
 		onLeave: function(index, nextIndex, direction) {
-			$('.backToTop').show();
+			$('.backToTop').fadeIn();
 			$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
 		    if(nextIndex == 2){
 		    	$('.rocket').addClass('rocket_ani');
@@ -68,7 +70,7 @@ $(document).ready(function() {
 		verticalCentered : true,
 		resize : false,
 		fitToSectionDelay:500,
-		fixedElements:'.backToTop,header',
+		fixedElements:'.backToTop,header,.scrollDown',
 		loopBottom:false,
 		loopTop:false,
 		loopHorizontal:false,
@@ -117,11 +119,11 @@ $(document).ready(function() {
 	var down = true;
 	$('.contact_header').click(function(){
 		if(down){
-			$(this).parent().animate({'top':'50%'},1000);
+			$(this).parent().animate({'top':'25%'},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
 			down = false;
 		}else{
-			$(this).parent().animate({'top':'80%'},1000);
+			$(this).parent().animate({'top':'70%'},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
 			down = true;
 		}

@@ -908,30 +908,32 @@ div.timeline ul li:last-child {
 }
 /* line 518, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type {
-  background: url(../img/secondplace.png) no-repeat center 60px;
+  background: url(../img/secondplace.png) no-repeat center 91px;
 }
 /* line 520, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type h4 {
   font-size: 45px;
+  color: #757575;
 }
-/* line 524, ../sass/modules/_sections.scss */
+/* line 525, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(2) {
-  background: url(../img/firstplace.png) no-repeat center -25px;
+  background: url(../img/firstplace.png) no-repeat center 5px;
   background-size: 68% auto;
   -moz-background-size: 68% auto;
   -webkit-background-size: 68% auto;
   -ms-background-size: 68% auto;
   background-size: 68% auto;
 }
-/* line 528, ../sass/modules/_sections.scss */
+/* line 529, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) {
-  background: url(../img/thirdplace.png) no-repeat center 110px;
+  background: url(../img/thirdplace.png) no-repeat center 138px;
 }
-/* line 530, ../sass/modules/_sections.scss */
+/* line 531, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) h4 {
   font-size: 45px;
+  color: #757575;
 }
-/* line 535, ../sass/modules/_sections.scss */
+/* line 537, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single h4 {
   display: block;
   text-align: center;
@@ -940,11 +942,11 @@ div.timeline ul li:last-child {
   font-size: 50px;
   text-align: center;
   display: block;
-  margin-top: 300px;
+  margin-top: 320px;
 }
 
 /**JUMP******/
-/* line 559, ../sass/modules/_sections.scss */
+/* line 561, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -969,7 +971,7 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 584, ../sass/modules/_sections.scss */
+/* line 586, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -979,7 +981,7 @@ div.timeline ul li:last-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 594, ../sass/modules/_sections.scss */
+/* line 596, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -992,32 +994,32 @@ div.timeline ul li:last-child {
 }
 
 /***FORMS*****/
-/* line 612, ../sass/modules/_sections.scss */
+/* line 614, ../sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
-/* line 615, ../sass/modules/_sections.scss */
+/* line 617, ../sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-/* line 619, ../sass/modules/_sections.scss */
+/* line 621, ../sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
-/* line 624, ../sass/modules/_sections.scss */
+/* line 626, ../sass/modules/_sections.scss */
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
-/* line 632, ../sass/modules/_sections.scss */
+/* line 634, ../sass/modules/_sections.scss */
 .event_single {
   position: relative;
   padding: 10px;
@@ -1033,33 +1035,33 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 650, ../sass/modules/_sections.scss */
+/* line 652, ../sass/modules/_sections.scss */
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
-/* line 656, ../sass/modules/_sections.scss */
+/* line 658, ../sass/modules/_sections.scss */
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
-/* line 662, ../sass/modules/_sections.scss */
+/* line 664, ../sass/modules/_sections.scss */
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
-/* line 666, ../sass/modules/_sections.scss */
+/* line 668, ../sass/modules/_sections.scss */
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
-/* line 673, ../sass/modules/_sections.scss */
+/* line 675, ../sass/modules/_sections.scss */
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1070,14 +1072,14 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
-/* line 685, ../sass/modules/_sections.scss */
+/* line 687, ../sass/modules/_sections.scss */
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
-/* line 694, ../sass/modules/_sections.scss */
+/* line 696, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #f16b29;
@@ -1087,11 +1089,11 @@ div.contact_container {
   left: 0;
   top: 30%;
 }
-/* line 702, ../sass/modules/_sections.scss */
+/* line 704, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 705, ../sass/modules/_sections.scss */
+/* line 707, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1102,20 +1104,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-/* line 716, ../sass/modules/_sections.scss */
+/* line 718, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 718, ../sass/modules/_sections.scss */
+/* line 720, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-/* line 722, ../sass/modules/_sections.scss */
+/* line 724, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 729, ../sass/modules/_sections.scss */
+/* line 731, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1127,11 +1129,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 740, ../sass/modules/_sections.scss */
+/* line 742, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 745, ../sass/modules/_sections.scss */
+/* line 747, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;

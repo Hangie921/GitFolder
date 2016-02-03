@@ -516,19 +516,21 @@ div.timeline {
 		margin:0 auto;
 		min-height:300px;
 		&:first-of-type {
-		background: url(../img/secondplace.png) no-repeat center 60px;
+		background: url(../img/secondplace.png) no-repeat center 91px;
 			h4{
 				font-size:45px;
+				color:#757575;
 			}
 	 	}
 	 	&:nth-of-type(2) {
-		background: url(../img/firstplace.png) no-repeat center -25px;
+		background: url(../img/firstplace.png) no-repeat center 5px;
 		@include background-size(68% auto);
 	 	}
 	 	&:nth-of-type(3) {
-		background: url(../img/thirdplace.png) no-repeat center 110px;
+		background: url(../img/thirdplace.png) no-repeat center 138px;
 			h4{
 				font-size:45px;
+				color:#757575;
 			}
 	 	}
 
@@ -540,7 +542,7 @@ div.timeline {
 			font-size:50px;
 			text-align: center;
 			display: block;
-			margin-top:300px;
+			margin-top:320px;
 	 	}
 	 	
 

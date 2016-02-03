@@ -26,15 +26,17 @@
 
 .event_group{  
 	perpective:300px;
-	.event_single{ 
+	.event_single{
+		// outline:1px solid #f00; 
 		.event_single_rotate{
 			transform-style:preserve-3d;
 			position: relative;
 			height: 300px;
 			@include transition(all .5s ease-Out);
-			& div{
+			div{
 				-webkit-backface-visibility:hidden;
 				-ms-backface-visibility:hidden;
+				-moz-backface-visibility:hidden;
 				-o-backface-visibility:hidden;
 				backface-visibility:hidden;
 				position: absolute;
@@ -43,20 +45,28 @@
 				left: 0;
 				top: 0;
 			}
-			& .front_face{
-				background-color:rgba(0,0,0,.5);
+			.front_face{
+				background:#999 url(../img/stock.jpg) no-repeat;
+				// background-blend-mode: multiply;
+				// background-color:rgba(0,0,0,.5);
 				z-index:2;
 			}
-			& .back_face{
+			.back_face{
 				@include transform(rotateY(180deg));
-				background-color:rgba(255,0,0,.7);
+				background:#999 url(../img/stock.jpg) no-repeat;
+				// background-blend-mode: multiply;
+				// background-color:rgba(255,0,0,.7);
 			}
 		}
 		
 		&:hover .event_single_rotate{
 			 	@include transition(all .5s ease-In);
 				@include transform(rotateY(180deg));
-			
+				// @include animation(rotate 5s 0s infinite linear);
+				// @keyframes rotate{
+				// 	0%{@include transform(rotateY(0deg));}
+				// 	100%{@include transform(rotateY(360deg));}
+				// }
 		}
 	}
 }

@@ -80,7 +80,8 @@ $(document).ready(function() {
 		fixedElements:'.backToTop',
 		loopBottom:false,
 		loopTop:false,
-		loopHorizontal:false
+		loopHorizontal:false,
+		recordHistory:false
 
 	});
 
@@ -150,6 +151,7 @@ $(document).ready(function() {
 	
 	//the events section flip motion
 
+	
 	
 
 

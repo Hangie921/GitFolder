@@ -29,25 +29,31 @@ div.slide.team_details, div.slide.personal_details {
 		color:$white;
 		float:left;
 		max-width: none;
+		margin-top:10px;
+		padding-left:3px;
+		font-size:18px;
+		font-weight: normal;
 	}
 	span.input {
 		float:left;
 		clear:both;
 		margin:0;
+
 		max-width: initial;
 	}
 	span {
-		font-size:18px;
+		font-size:14px;
 		padding:0;
 		color:$white;
 	}
 	label {
-		font-size:18px;
+		font-size:14px;
 	}
 
 	.input__field--hoshi {
 		margin:0;
 		padding:15px 15px 15px 0 ;
+		
 	}
 	.input__label--hoshi::before, .input__label--hoshi::after {
     content: '';

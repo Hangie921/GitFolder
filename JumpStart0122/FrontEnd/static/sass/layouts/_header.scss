@@ -11,13 +11,15 @@ header {
 		padding:0 !important;
 	}
 	a.navbar-brand {
-		display:block;
-		width:220px;
-		height:50px;
-		padding:0;
-		margin:0;
-		background:url(../img/jumpstart-logo.png) left no-repeat;
-		text-indent: -9999px;
+	 font-family: "plume-advertising", sen-serif;
+	 color:$secondary-color;
+    display: block;
+    width: 220px;
+    height: 50px;
+    padding: 0;
+    font-size: 35px;
+    margin: 20px 0;
+		
 	
 	}
 	a{
@@ -91,12 +93,15 @@ ul.menu {
 
 .jumpnow_link a{
 		background:rgba(242,107,42,0.7);
+		padding:0 10px;
+		display: block;
+		padding:0 10px;
 	}
 #header,#header ul li a {
 	transition:color .5s, opacity .5s;
 }
 #header.fff{
-	background-color: #fff;
+	background-color: #fbfbfb;
 }
 #header.fff ul li a{
 	color: #333;

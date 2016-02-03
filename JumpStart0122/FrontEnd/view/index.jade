@@ -3,6 +3,7 @@ html
 		meta(charset="UTF-8")
 		meta(name="viewport",content="width=device-width,initial-scale=1.0")
 		//- script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+		script(src="https://use.typekit.net/umx0psn.js")
 		script(type='text/javascript').
 			window.jQuery || document.write('<script src="../js/jquery-2.2.0.min.js">\x3C/script>')
 		script(src="../js/jquery_fullPage.js")
@@ -14,6 +15,7 @@ html
 		link(href="../css/set2.css", rel='stylesheet')
 		link(href="../css/main.css", rel='stylesheet')
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+		script(src="../js/index.js")
 		script(src="https://use.typekit.net/umx0psn.js")
 		script(type='text/javascript'). 
 			try{Typekit.load({ async: true });}catch(e){}
@@ -27,7 +29,7 @@ html
 				header.container#header
 					.col-md-12
 						.col-md-2
-							a(class='navbar-brand' href='#home') Jump Start
+							a(class='navbar-brand' href='#home') JUMPSTART.
 						.main-menu#main_menu.col-md-10
 							ul.menu
 								li(data-menuanchor='about')
@@ -146,9 +148,9 @@ html
 									a(href="#competition/2") 獎項
 						.col-md-12
 							.col-md-4.prize-single
-								h4 $300,000
+								h4 $90,000 
 							.col-md-4.prize-single
-								h4 $90,000
+								h4 $300,000
 							.col-md-4.prize-single
 								h4 $50,000
 							.col-md-12
@@ -233,24 +235,26 @@ html
 					.event_single.col-md-4
 						.event_single_rotate
 							.front_face
-								span 四月
-								h3 我是一個標題 
-								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+								h3 9 Robot
+								span 8月 2016
+								
 							.back_face
+								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
 					.event_single.col-md-4
 						.event_single_rotate
 							.front_face
-								span 四月
-								h3 我是一個標題 
-								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+								h3 MTXX
+								span 2月 2017
+								
 							.back_face
+								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
 					.event_single.col-md-4
 						.event_single_rotate
 							.front_face
-								span 四月
-								h3 我是一個標題 
-								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+								h3 COMING SOON!
+								
 							.back_face
+								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
 
 				.contact_container
 					.col-md-12.contact_header
@@ -258,25 +262,26 @@ html
 							h2 CONTACT US 
 								span 
 									i.fa.fa-angle-down
-					.col-md-12
+					.col-md-12.contact_form
 						form(action='/contact', enctype="multipart/form-data",method="post")
-							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
-								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-										span.input__label-content.input__label-content--hoshi 姓名
-							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text',name='user_phone')
-								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-										span.input__label-content.input__label-content--hoshi 電話
-							span.input.input--hoshi
-								input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
-								label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-										span.input__label-content.input__label-content--hoshi Email
-							textarea(placeholder='內容',name='user_msg')
-							input(type='submit' value='submit')
+							.col-md-4
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 姓名
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='user_phone')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 電話
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi Email
+							.col-md-8
+								textarea(placeholder='我有疑問...',name='user_msg')
+								input(type='submit' value='傳送給我們!')
 	//-classie.js is the function that runs the input effect
 	script(type='text/javascript',src='../js/classie.js').
-	script(src="../js/index.js")
 
 							
 

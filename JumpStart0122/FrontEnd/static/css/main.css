@@ -1401,33 +1401,41 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
 /* line 30, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate {
   transform-style: preserve-3d;
+  position: relative;
+  height: 300px;
   -moz-transition: all 0.5s ease-Out;
   -webkit-transition: all 0.5s ease-Out;
   -ms-transition: all 0.5s ease-Out;
   -o-transition: all 0.5s ease-Out;
   transition: all 0.5s ease-Out;
 }
-/* line 33, ../sass/modules/_animations.scss */
+/* line 35, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate div {
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
-/* line 39, ../sass/modules/_animations.scss */
+/* line 46, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .front_face {
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
-/* line 42, ../sass/modules/_animations.scss */
+/* line 50, ../sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .back_face {
-  -moz-transform: rotateY(180deg) translateZ(1px);
-  -webkit-transform: rotateY(180deg) translateZ(1px);
-  -ms-transform: rotateY(180deg) translateZ(1px);
-  -o-transform: rotateY(180deg) translateZ(1px);
-  transform: rotateY(180deg) translateZ(1px);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   background-color: rgba(255, 0, 0, 0.7);
 }
-/* line 48, ../sass/modules/_animations.scss */
+/* line 56, ../sass/modules/_animations.scss */
 .event_group .event_single:hover .event_single_rotate {
   -moz-transition: all 0.5s ease-In;
   -webkit-transition: all 0.5s ease-In;

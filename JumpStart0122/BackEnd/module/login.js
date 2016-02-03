@@ -4,7 +4,7 @@ var md5 = require('../module/md5'),
 
 
 
-function checkDetail(doc,detail){
+function checkDetail(detail){
 	if(detail.acc!=null && detail.psw!=null){
 		
 	}

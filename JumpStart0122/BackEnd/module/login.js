@@ -20,3 +20,4 @@ function updateDetail(){ //update last_login_time , write session
 
 }
 
+exports.check = checkDetail;

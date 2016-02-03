@@ -138,11 +138,11 @@ $(document).ready(function() {
 	$('.contact_header').click(function(){
 		if(down){
 			$(this).parent().animate({'top':'50%'},1000);
-			$('.btn_up_and_down h3').html('down');
+			$('.btn_up_and_down h3 span').html('<i class="fa fa-angle-up"></i>');
 			down = false;
 		}else{
 			$(this).parent().animate({'top':'80%'},1000);
-			$('.btn_up_and_down h3').html('up');
+			$('.btn_up_and_down h3 span').html('<i class="fa fa-angle-down"></i>');
 			down = true;
 		}
 

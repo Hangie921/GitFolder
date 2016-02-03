@@ -28,11 +28,13 @@ div.slide.team_details, div.slide.personal_details {
 		min-height:50px;
 		color:$white;
 		float:left;
+		max-width: none;
 	}
 	span.input {
 		float:left;
 		clear:both;
 		margin:0;
+		max-width: initial;
 	}
 	span {
 		font-size:18px;
@@ -75,10 +77,11 @@ div.slide.team_details, div.slide.personal_details {
     margin-right: 30px;
 	}
 	span.responsibility {
-		width: 80%
+		width: 65%
 	}
 
 	button#del_member {
+		float:right;
 		margin:15px;
 		width:35px;
 		height:35px;
@@ -87,6 +90,7 @@ div.slide.team_details, div.slide.personal_details {
 		@include border-radius(50%);
 		text-indent: -9999px;
 		position:relative;
+		
 		&:after {
 			content:"";
 			width:22px;
@@ -94,9 +98,20 @@ div.slide.team_details, div.slide.personal_details {
 			background:#fff;
 			position:absolute;
 			left:5px;
-			top:50%;
+			top:47%;
 		}
 
+		&:hover{
+			background:#fff;
+
+			&:after {
+				background:$primary-color;
+			}
+		}
+	
+	}
+	button:focus {
+		outline:none;
 	}
 }
 
@@ -107,6 +122,7 @@ div.slide.team_details, div.slide.personal_details {
 	display:block;
 	border:none;
 	color:#fff;
+	float:right;
 	&:after {
 		width:35px;
 		height:35px;

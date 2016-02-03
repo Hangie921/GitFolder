@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
 	
-	initSlot();//initial the slot machine first so that fullpage can load the
-			   //'machine3	'
+	initSlot()	//initial the slot machine first so that fullpage can load the
+	
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
     	menu:'#header',
@@ -61,37 +61,25 @@ $(document).ready(function() {
 		    		$('.rocket').removeClass('rocket_ani'); 
 		    	}, 1000);
 		    }else if(index ==1){
-		    	machine3.futureActive = 7;
-				machine3.stop();
+		  //   	machine3.futureActive = 7;
+				// machine3.stop();
 		    }
 		},// end of the onLeave function
 		verticalCentered : true,
 		resize : false,
 		fitToSectionDelay:500,
-		fixedElements:'.backToTop',
+		fixedElements:'.backToTop,header',
 		loopBottom:false,
 		loopTop:false,
 		loopHorizontal:false,
-		recordHistory:false
+		recordHistory:false,
+		// responsiveWidth: 700,
+  //       responsiveHeight: 300
 
 	});
 
 
-    //The slot Machine animation initializing
-    function initSlot(){
-    	machine3 = $('#slot3').slotMachine({
-	    	active : 0,
-	    	delay : 14000,
-	    	auto : true
-    	});
-		$('#slotButton3').click(function(){
-				machine3.futureActive = 7;
-				machine3.stop();
-				setTimeout(function(){
-					$.fn.fullpage.moveTo(3);
-				}, 1800);
-		});
-    }
+    
 
 	//add and delete the member input field dynamically with the btn clicked
 	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member '><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
@@ -140,11 +128,26 @@ $(document).ready(function() {
 
 	});
 	
-	//the events section flip motion
-
-	
-	
-
 
 
 });
+//The slot Machine animation initializing
+function initSlot(){
+	machine3 = $('#slot3').slotMachine({
+    	active : 0,
+    	delay : 14000,
+    	auto : true,
+    	stopHidden : false,
+    	direction : 'down'
+	});
+	// machine3.stop();
+	// machine3.shuffle();
+
+	$('#slotButton3').click(function(){
+			machine3.futureActive = 7;
+			machine3.stop();
+			setTimeout(function(){
+				$.fn.fullpage.moveTo(3);
+			}, 1000);
+	});
+}

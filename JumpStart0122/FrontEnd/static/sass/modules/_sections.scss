@@ -635,13 +635,15 @@ div#sec_events{
 	// backdrop-filter: blur(10px);
 
 	h3 {
+		color:$secondary-color;
 		padding:30px 0 30px;
 	}
 	p {
-		font-size:20px;
+		font-size:18px;
 		line-height: 28px;
 	}
 	.front_face{
+		padding:10px;
 		background:#999 url(../img/stock.jpg) no-repeat;
 		background-blend-mode: multiply;
 		backdrop-filter: blur(10px);

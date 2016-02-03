@@ -1014,22 +1014,24 @@ div#sec_events {
 }
 /* line 637, ../sass/modules/_sections.scss */
 .event_single h3 {
+  color: #fbaf5d;
   padding: 30px 0 30px;
 }
-/* line 640, ../sass/modules/_sections.scss */
+/* line 641, ../sass/modules/_sections.scss */
 .event_single p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
 }
-/* line 644, ../sass/modules/_sections.scss */
+/* line 645, ../sass/modules/_sections.scss */
 .event_single .front_face {
+  padding: 10px;
   background: #999999 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
 
 /***CONTACT_US******/
-/* line 652, ../sass/modules/_sections.scss */
+/* line 654, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #f16b29;
@@ -1039,11 +1041,11 @@ div.contact_container {
   left: 0;
   top: 70%;
 }
-/* line 660, ../sass/modules/_sections.scss */
+/* line 662, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 663, ../sass/modules/_sections.scss */
+/* line 665, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway";

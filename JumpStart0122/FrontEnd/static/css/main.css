@@ -748,7 +748,7 @@ ul.partners li:hover {
   margin-right: 15px;
   display: inline-block;
   vertical-align: center;
-  background-color: #eeeeee;
+  background-color: #dedede;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -899,17 +899,22 @@ div.timeline ul li:last-child {
   color: #f16b29 !important;
   font-size: 24px;
   margin-top: 30px;
+  text-align: center;
 }
-/* line 514, ../sass/modules/_sections.scss */
+/* line 515, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single {
   margin: 0 auto;
   min-height: 300px;
 }
-/* line 517, ../sass/modules/_sections.scss */
+/* line 518, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type {
   background: url(../img/secondplace.png) no-repeat center 60px;
 }
 /* line 520, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single:first-of-type h4 {
+  font-size: 45px;
+}
+/* line 524, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(2) {
   background: url(../img/firstplace.png) no-repeat center -25px;
   background-size: 68% auto;
@@ -918,11 +923,15 @@ div.timeline ul li:last-child {
   -ms-background-size: 68% auto;
   background-size: 68% auto;
 }
-/* line 524, ../sass/modules/_sections.scss */
+/* line 528, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) {
   background: url(../img/thirdplace.png) no-repeat center 110px;
 }
-/* line 528, ../sass/modules/_sections.scss */
+/* line 530, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single:nth-of-type(3) h4 {
+  font-size: 45px;
+}
+/* line 535, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single h4 {
   display: block;
   text-align: center;
@@ -935,7 +944,7 @@ div.timeline ul li:last-child {
 }
 
 /**JUMP******/
-/* line 552, ../sass/modules/_sections.scss */
+/* line 559, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -960,7 +969,7 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 577, ../sass/modules/_sections.scss */
+/* line 584, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -970,7 +979,7 @@ div.timeline ul li:last-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 587, ../sass/modules/_sections.scss */
+/* line 594, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -983,32 +992,32 @@ div.timeline ul li:last-child {
 }
 
 /***FORMS*****/
-/* line 605, ../sass/modules/_sections.scss */
+/* line 612, ../sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
-/* line 608, ../sass/modules/_sections.scss */
+/* line 615, ../sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-/* line 612, ../sass/modules/_sections.scss */
+/* line 619, ../sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
-/* line 617, ../sass/modules/_sections.scss */
+/* line 624, ../sass/modules/_sections.scss */
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
-/* line 625, ../sass/modules/_sections.scss */
+/* line 632, ../sass/modules/_sections.scss */
 .event_single {
   position: relative;
   padding: 10px;
@@ -1024,32 +1033,33 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 643, ../sass/modules/_sections.scss */
+/* line 650, ../sass/modules/_sections.scss */
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
-/* line 649, ../sass/modules/_sections.scss */
+/* line 656, ../sass/modules/_sections.scss */
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
+  font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
-/* line 654, ../sass/modules/_sections.scss */
+/* line 662, ../sass/modules/_sections.scss */
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
-/* line 658, ../sass/modules/_sections.scss */
+/* line 666, ../sass/modules/_sections.scss */
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
-/* line 665, ../sass/modules/_sections.scss */
+/* line 673, ../sass/modules/_sections.scss */
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1060,14 +1070,14 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
-/* line 677, ../sass/modules/_sections.scss */
+/* line 685, ../sass/modules/_sections.scss */
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
-/* line 686, ../sass/modules/_sections.scss */
+/* line 694, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #f16b29;
@@ -1077,11 +1087,11 @@ div.contact_container {
   left: 0;
   top: 30%;
 }
-/* line 694, ../sass/modules/_sections.scss */
+/* line 702, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 697, ../sass/modules/_sections.scss */
+/* line 705, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1092,20 +1102,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-/* line 708, ../sass/modules/_sections.scss */
+/* line 716, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 710, ../sass/modules/_sections.scss */
+/* line 718, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-/* line 714, ../sass/modules/_sections.scss */
+/* line 722, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 721, ../sass/modules/_sections.scss */
+/* line 729, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1117,11 +1127,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 732, ../sass/modules/_sections.scss */
+/* line 740, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 737, ../sass/modules/_sections.scss */
+/* line 745, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1192,6 +1202,7 @@ div.contact_container input[type="submit"] {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  margin-left: 100px;
 }
 /* line 113, ../sass/base/_mixins.scss */
 .personal_details_group input[type=submit]:after {
@@ -1215,14 +1226,14 @@ div.contact_container input[type="submit"] {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 17, ../sass/modules/_forms.scss */
+/* line 18, ../sass/modules/_forms.scss */
 .personal_details_group .iagree {
   float: left;
   clear: both;
 }
 
 /***GROUP FORM*****/
-/* line 27, ../sass/modules/_forms.scss */
+/* line 28, ../sass/modules/_forms.scss */
 div.slide.team_details input.input__field--hoshi, div.slide.personal_details input.input__field--hoshi {
   min-height: 50px;
   color: white;
@@ -1233,29 +1244,29 @@ div.slide.team_details input.input__field--hoshi, div.slide.personal_details inp
   font-size: 18px;
   font-weight: normal;
 }
-/* line 37, ../sass/modules/_forms.scss */
+/* line 38, ../sass/modules/_forms.scss */
 div.slide.team_details span.input, div.slide.personal_details span.input {
   float: left;
   clear: both;
   margin: 0;
   max-width: initial;
 }
-/* line 44, ../sass/modules/_forms.scss */
+/* line 45, ../sass/modules/_forms.scss */
 div.slide.team_details span, div.slide.personal_details span {
   font-size: 14px;
   padding: 0;
   color: white;
 }
-/* line 49, ../sass/modules/_forms.scss */
+/* line 50, ../sass/modules/_forms.scss */
 div.slide.team_details label, div.slide.personal_details label {
   font-size: 14px;
 }
-/* line 53, ../sass/modules/_forms.scss */
+/* line 54, ../sass/modules/_forms.scss */
 div.slide.team_details .input__field--hoshi, div.slide.personal_details .input__field--hoshi {
   margin: 0;
   padding: 15px 15px 15px 0;
 }
-/* line 58, ../sass/modules/_forms.scss */
+/* line 59, ../sass/modules/_forms.scss */
 div.slide.team_details .input__label--hoshi::before, div.slide.team_details .input__label--hoshi::after, div.slide.personal_details .input__label--hoshi::before, div.slide.personal_details .input__label--hoshi::after {
   content: '';
   position: absolute;
@@ -1265,11 +1276,11 @@ div.slide.team_details .input__label--hoshi::before, div.slide.team_details .inp
   height: calc(100% - 10px);
   border-bottom: 1px solid #fff;
 }
-/* line 68, ../sass/modules/_forms.scss */
+/* line 69, ../sass/modules/_forms.scss */
 div.slide.team_details input[type=file], div.slide.personal_details input[type=file] {
   padding: 23px 0 30px 101px;
 }
-/* line 73, ../sass/modules/_forms.scss */
+/* line 74, ../sass/modules/_forms.scss */
 div.slide.team_details textarea, div.slide.personal_details textarea {
   background: transparent;
   color: #fff;
@@ -1277,16 +1288,16 @@ div.slide.team_details textarea, div.slide.personal_details textarea {
   width: 100%;
   min-height: 300px;
 }
-/* line 81, ../sass/modules/_forms.scss */
+/* line 82, ../sass/modules/_forms.scss */
 div.slide.team_details span.team_member, div.slide.personal_details span.team_member {
   width: 20%;
   margin-right: 30px;
 }
-/* line 85, ../sass/modules/_forms.scss */
+/* line 86, ../sass/modules/_forms.scss */
 div.slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
   width: 65%;
 }
-/* line 89, ../sass/modules/_forms.scss */
+/* line 90, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member, div.slide.personal_details button#del_member {
   float: right;
   margin: 15px;
@@ -1302,31 +1313,33 @@ div.slide.team_details button#del_member, div.slide.personal_details button#del_
   text-indent: -9999px;
   position: relative;
 }
-/* line 100, ../sass/modules/_forms.scss */
+/* line 101, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member:after, div.slide.personal_details button#del_member:after {
-  content: "";
-  width: 22px;
-  height: 3px;
+  content: "-";
+  width: 10px;
+  height: 2px;
   background: #fff;
+  margin: 0 auto;
   position: absolute;
-  left: 5px;
+  left: 11px;
   top: 47%;
 }
-/* line 110, ../sass/modules/_forms.scss */
+/* line 112, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member:hover, div.slide.personal_details button#del_member:hover {
   background: #fff;
 }
-/* line 113, ../sass/modules/_forms.scss */
+/* line 115, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member:hover:after, div.slide.personal_details button#del_member:hover:after {
   background: #f16b29;
 }
-/* line 119, ../sass/modules/_forms.scss */
+/* line 121, ../sass/modules/_forms.scss */
 div.slide.team_details button:focus, div.slide.personal_details button:focus {
   outline: none;
 }
 
-/* line 124, ../sass/modules/_forms.scss */
+/* line 126, ../sass/modules/_forms.scss */
 #add_member {
+  margin-right: 9px;
   font-size: 18px;
   background: transparent;
   display: block;
@@ -1334,11 +1347,13 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   color: #fff;
   float: right;
 }
-/* line 132, ../sass/modules/_forms.scss */
+/* line 134, ../sass/modules/_forms.scss */
 #add_member:after {
+  margin-left: 5px;
   width: 35px;
   height: 35px;
-  line-height: 35px;
+  line-height: 30px;
+  text-align: center;
   content: ' + ';
   border: 1px solid #fff;
   -moz-border-radius: 50%;
@@ -1348,15 +1363,20 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-radius: 50%;
   display: inline-block;
 }
+/* line 146, ../sass/modules/_forms.scss */
+#add_member:hover:after {
+  background: #fff;
+  color: #f16b29 !important;
+}
 
-/* line 143, ../sass/modules/_forms.scss */
+/* line 153, ../sass/modules/_forms.scss */
 .nav_group {
   position: absolute;
   right: 50px;
   bottom: 220px;
 }
 
-/* line 149, ../sass/modules/_forms.scss */
+/* line 159, ../sass/modules/_forms.scss */
 .next_btn, .prev_btn {
   font-size: 16px;
   float: left;
@@ -1374,7 +1394,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
-/* line 166, ../sass/modules/_forms.scss */
+/* line 176, ../sass/modules/_forms.scss */
 .next_btn span, .prev_btn span {
   position: absolute;
   right: 0;
@@ -1383,7 +1403,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   width: 50px;
   text-indent: -9999px;
 }
-/* line 175, ../sass/modules/_forms.scss */
+/* line 185, ../sass/modules/_forms.scss */
 .next_btn span:before, .prev_btn span:before {
   position: absolute;
   content: '';
@@ -1401,7 +1421,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   /* Chrome, Safari, Opera */
   transform: rotate(45deg);
 }
-/* line 190, ../sass/modules/_forms.scss */
+/* line 200, ../sass/modules/_forms.scss */
 .next_btn span:after, .prev_btn span:after {
   position: absolute;
   content: '';
@@ -1419,21 +1439,21 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   /* Chrome, Safari, Opera */
   transform: rotate(-45deg);
 }
-/* line 206, ../sass/modules/_forms.scss */
+/* line 216, ../sass/modules/_forms.scss */
 .next_btn:hover, .prev_btn:hover {
   margin-left: 15px;
 }
 
-/* line 213, ../sass/modules/_forms.scss */
+/* line 223, ../sass/modules/_forms.scss */
 .prev_btn {
   border-left: none;
   border-right: 1px solid #fff;
 }
-/* line 217, ../sass/modules/_forms.scss */
+/* line 227, ../sass/modules/_forms.scss */
 .prev_btn span {
   left: 0;
 }
-/* line 220, ../sass/modules/_forms.scss */
+/* line 230, ../sass/modules/_forms.scss */
 .prev_btn span:before {
   left: -21px;
   top: 8px;
@@ -1443,7 +1463,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   /* Chrome, Safari, Opera */
   transform: rotate(-45deg);
 }
-/* line 227, ../sass/modules/_forms.scss */
+/* line 237, ../sass/modules/_forms.scss */
 .prev_btn span:after {
   left: -48px;
   -ms-transform: rotate(45deg);

@@ -200,7 +200,7 @@ html
 												span.input__label-content.input__label-content--hoshi 負責項目
 									//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
 								button(id='add_member') 添加成員
-							.nav_group		
+							.nav_group
 								a(class='button prev_btn',href='#jumpnow') 上一步
 									span &nbsp;
 								a(class='button next_btn', href='#jumpnow/2') 下一步
@@ -258,8 +258,8 @@ html
 					.col-md-12.contact_header
 						.col-md-6.col-md-offset-3
 							h2 CONTACT US
-						.col-md-3.btn_up_and_down
-							h3 up
+								span 
+									i.fa.fa-angle-down
 					.col-md-12
 						form(action='/contact', enctype="multipart/form-data",method="post")
 							span.input.input--hoshi

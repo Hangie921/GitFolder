@@ -36,9 +36,29 @@ div#sec_home {
 	}
 
 	.slotMachine {
+		color:$secondary-color;
+		margin-top:-51px !important;
 		font-size:40px;
 		position:relative;
 		display: block;
+		width:290px;
+		margin-left: 122px !important;
+		opacity: 0.8;
+
+		&:before {
+	    content: '[';
+	    display: inline-block;
+	    margin-right: 15px;
+		}
+		&:after {
+	    content: ']';
+	    position:absolute;
+	    right:0;
+	    top:0;
+	    display: inline-block;
+	    margin-left: 15px;
+		}
+
 	}
 	span.machine-border {
 	display: block;
@@ -50,9 +70,7 @@ div#sec_home {
     margin-top: -6px;
 
 	}
-	#slot3{
-		margin-left: 107px;
-	}
+
 
 	h2#slotButton3 {
 		margin-top:40px;
@@ -342,41 +360,38 @@ ul.partners {
 	
 }
 div.timeline {
-	margin-top:30px;
+	margin-top:50px;
 	ul{ 
 		position:relative;
 		padding:0 0 25px;
 
 		
 		&:after {
-			content:"";
-			width:100%;
-			height:3px;
-			display: block;
-			background: rgba(241, 107, 41, 0.58);
-			position:absolute;
-			bottom:0px;
+			display: none;
+			
 		}
 		
 		li {
+			vertical-align: bottom;
 		    display: inline-block;
-		    margin-right: 2%;
+		    height:91px;
 		    line-height: 30px;
 		    min-width: 230px;
 		    position: relative;
-			width: 200px;
-			padding: 10px;
+			width: 25%;
+			padding: 20px 0px 20px 50px;
 			background: #FFFFFF;
 			bottom:0px;
 			-webkit-border-radius: 0px;
 			-moz-border-radius: 0px;
 			border-radius: 0px;
 			border: #ddd solid 1px;
-			-webkit-box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
-			-moz-box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
-			-ms-box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
-			-o-box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
-			box-shadow: 10px 10px 0px -5px rgba(220,220,220,1);
+			border-bottom:$secondary-color solid 3px;
+			-webkit-box-shadow: 3px 10px 0px -5px rgba(220,220,220,1);
+			-moz-box-shadow: 3px 10px 0px -5px rgba(220,220,220,1);
+			-ms-box-shadow: 3px 10px 0px -5px rgba(220,220,220,1);
+			-o-box-shadow: 3px 10px 0px -5px rgba(220,220,220,1);
+			box-shadow: 3px 10px 0px -5px rgba(220,220,220,1);
 			transition: all 0.5s;
 			-webkit-transition: all 0.25s;
 			-ms-transition: all 0.25s;
@@ -386,13 +401,34 @@ div.timeline {
 			&:hover {
 				position:relative;
 				bottom:15px;
-				-webkit-box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.6);
-				-moz-box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.6);
-				-ms-box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.6);
-				-o-box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.6);
-				box-shadow: 15px 15px 2px -3px rgba(220,220,220,0.6);
+				-webkit-box-shadow: 3px 15px 2px -3px rgba(220,220,220,0.6);
+				-moz-box-shadow: 3px 15px 2px -3px rgba(220,220,220,0.6);
+				-ms-box-shadow: 3px 15px 2px -3px rgba(220,220,220,0.6);
+				-o-box-shadow: 3px 15px 2px -3px rgba(220,220,220,0.6);
+				box-shadow: 3px 15px 2px -3px rgba(220,220,220,0.6);
 			}
 
+			&:first-child {
+				z-index:3;
+				padding-left:10px;
+			}
+			&:nth-child(2) {
+				z-index:2
+			}
+			&:nth-child(3) {
+				z-index:1
+			}
+
+			&:nth-child(4) {
+				padding-right:10px;
+				&:after {
+					display: none;
+				}
+				&:before {
+					display: none;
+				}
+			}
+			
 
 				h4 {
 					color:$primary-color;
@@ -427,26 +463,26 @@ div.timeline {
 					content: '';
 					position: absolute;
 					border-style: solid;
-					border-width: 22px 15px 0;
-					border-color: #FFFFFF transparent;
+					border-width: 45px 0 45px 45px;
+					border-color: transparent #FFFFFF;
 					display: block;
 					width: 0;
 					z-index: 1;
-					bottom: -22px;
-					left: 0px;
+					right: -45px;
+					top: -1px;
 				}
 
 				&:before {
 					content: '';
 					position: absolute;
 					border-style: solid;
-					border-width: 22px 15px 0;
-					border-color: #ddd transparent;
+					border-width: 45px 0 45px 45px;
+					border-color: transparent #ddd;
 					display: block;
 					width: 0;
 					z-index: 0;
-					bottom: -23px;
-					left: 0px;
+					right: -46px;
+					top: -1px;
 				}
 
 			}

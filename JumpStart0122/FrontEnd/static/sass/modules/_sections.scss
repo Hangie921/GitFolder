@@ -641,10 +641,10 @@ div#sec_events{
 		font-size:20px;
 		line-height: 28px;
 	}
-	.event_single_rotate{
+	.front_face{
 		background:#999 url(../img/stock.jpg) no-repeat;
-		// background-blend-mode: multiply;
-		// backdrop-filter: blur(10px);
+		background-blend-mode: multiply;
+		backdrop-filter: blur(10px);
 	}
 }
 

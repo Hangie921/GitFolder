@@ -1022,8 +1022,10 @@ div#sec_events {
   line-height: 28px;
 }
 /* line 644, ../sass/modules/_sections.scss */
-.event_single .event_single_rotate {
+.event_single .front_face {
   background: #999999 url(../img/stock.jpg) no-repeat;
+  background-blend-mode: multiply;
+  backdrop-filter: blur(10px);
 }
 
 /***CONTACT_US******/

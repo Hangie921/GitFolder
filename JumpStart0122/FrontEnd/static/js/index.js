@@ -4,7 +4,6 @@ $(document).ready(function() {
 	
 	initSlot();//initial the slot machine first so that fullpage can load the
 			   //'machine3	'
-
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
     	menu:'#header',
@@ -16,27 +15,23 @@ $(document).ready(function() {
     	//determin what to do after the loading of the each sections
 		afterLoad: function(anchorLink, index) { 
 			$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
+			$('#header').css({'opacity':'1'});
 			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
 		    	case 1:
-		    		$('#header').css({'background-color':'transparent','color':'#fff'});
-		    		$('#header ul li a').css({'color':'#fff'});
+		    		machine3.shuffle();
 		    		$('.backToTop').hide();
 		    		break;
 				case 2:
-					$('#header').css({'background-color':'#f16b29','color':'#fff'});
-					$('#header ul li a').css({'color':'#fff'});
+					$('#header').addClass('orange');
 					break;
 				case 3:
-					$('#header').css({'color':'#f16b29','background-color':'#fff'});
-					$('#header ul li a').css({'color':'#f16b29'});
+					$('#header').addClass('fff');
 					break;
 				case 4:
-					$('#header').css({'background-color':'#f16b29','color':'#fff'});
-					$('#header ul li a').css({'color':'#fff'});
+					$('#header').addClass('orange');
 					break;
 				case 5:
-					$('#header').css({'color':'#f16b29','background-color':'#fff'});
-					$('#header ul li a').css({'color':'#f16b29'});
+					$('#header').addClass('fff');
 					break;
 			}
 		},
@@ -58,9 +53,7 @@ $(document).ready(function() {
 		},
 		onLeave: function(index, nextIndex, direction) {
 			$('.backToTop').show();
-			$('#header').css({'background-color':'transparent'});
-		    if(direction == 'up')
-		    	$('#header ul li a').css({'color':'transparent'});
+			$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
 		    if(nextIndex == 2){
 		    	$('.rocket').addClass('rocket_ani');
 		    }else if (index == 2) {
@@ -71,8 +64,6 @@ $(document).ready(function() {
 		    	machine3.futureActive = 7;
 				machine3.stop();
 		    }
-
-
 		},// end of the onLeave function
 		verticalCentered : true,
 		resize : false,

@@ -92,3 +92,19 @@ ul.menu {
 .jumpnow_link a{
 		background:rgba(242,107,42,0.7);
 	}
+#header,#header ul li a {
+	transition:color .5s, opacity .5s;
+}
+#header.fff{
+	background-color: #fff;
+}
+#header.fff ul li a{
+	color: #333;
+}
+#header.orange{
+	background-color: #f16b29;
+}
+#header.orange ul li a{
+	color: #fff;
+}
+

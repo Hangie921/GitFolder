@@ -1599,3 +1599,28 @@ ul.menu li a:hover::after, ul.menu li a a:focus::after {
 .jumpnow_link a {
   background: rgba(242, 107, 42, 0.7);
 }
+
+/* line 95, ../sass/layouts/_header.scss */
+#header, #header ul li a {
+  transition: color .5s, opacity .5s;
+}
+
+/* line 98, ../sass/layouts/_header.scss */
+#header.fff {
+  background-color: #fff;
+}
+
+/* line 101, ../sass/layouts/_header.scss */
+#header.fff ul li a {
+  color: #333;
+}
+
+/* line 104, ../sass/layouts/_header.scss */
+#header.orange {
+  background-color: #f16b29;
+}
+
+/* line 107, ../sass/layouts/_header.scss */
+#header.orange ul li a {
+  color: #fff;
+}

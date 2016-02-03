@@ -946,7 +946,7 @@ div#sec_events {
   position: relative;
 }
 
-/* line 579, ../sass/modules/_sections.scss */
+/* line 581, ../sass/modules/_sections.scss */
 .event_single {
   padding: 10px;
   color: #fff;
@@ -961,16 +961,16 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 596, ../sass/modules/_sections.scss */
+/* line 598, ../sass/modules/_sections.scss */
 .event_single h3 {
   padding: 30px 0 30px;
 }
-/* line 599, ../sass/modules/_sections.scss */
+/* line 601, ../sass/modules/_sections.scss */
 .event_single p {
   font-size: 20px;
   line-height: 28px;
 }
-/* line 603, ../sass/modules/_sections.scss */
+/* line 605, ../sass/modules/_sections.scss */
 .event_single .event_single_rotate {
   background: #999999 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
@@ -978,7 +978,7 @@ div#sec_events {
 }
 
 /***CONTACT_US******/
-/* line 611, ../sass/modules/_sections.scss */
+/* line 613, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #f16b29;
@@ -988,11 +988,11 @@ div.contact_container {
   left: 0;
   top: 70%;
 }
-/* line 619, ../sass/modules/_sections.scss */
+/* line 621, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 622, ../sass/modules/_sections.scss */
+/* line 624, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway";

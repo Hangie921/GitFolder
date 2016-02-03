@@ -68,7 +68,7 @@ $(document).ready(function() {
 		verticalCentered : true,
 		resize : false,
 		fitToSectionDelay:500,
-		fixedElements:'.backToTop',
+		fixedElements:'.backToTop,header',
 		loopBottom:false,
 		loopTop:false,
 		loopHorizontal:false,

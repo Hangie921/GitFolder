@@ -1,6 +1,6 @@
 /* Sections */
 div.fp-section{
-	padding:10% 10% 0;
+	padding:8% 10% 0%;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-o-box-sizing:border-box;
@@ -513,18 +513,21 @@ div.timeline {
 
 	.prize-single {
 		margin:0 auto;
-		min-height:400px;
+		min-height:300px;
 		&:first-of-type {
-		background: url(../img/firstplace.png) no-repeat top center;
+		background: url(../img/secondplace.png) no-repeat center 60px;
 	 	}
 	 	&:nth-of-type(2) {
-		background: url(../img/secondplace.png) no-repeat center 30px;
+		background: url(../img/firstplace.png) no-repeat center -25px;
+		@include background-size(68% auto);
 	 	}
 	 	&:nth-of-type(3) {
-		background: url(../img/thirdplace.png) no-repeat center 78px;
+		background: url(../img/thirdplace.png) no-repeat center 110px;
 	 	}
 
 	 	h4 {
+	 		display: block;
+	 		text-align: center;
 	 		font-family: $english;
 			font-weight: 600;
 			font-size:50px;
@@ -612,12 +615,15 @@ div.timeline {
 }
 /*****Event Section**********/
 div#sec_events{
+	background:#fbfbfb;
+	padding-top:150px;
 	position: relative;
 }
 
 
 
 .event_single {
+	position:relative;
 	padding:10px;
 	color:#fff;
 	width:28%;
@@ -635,19 +641,45 @@ div#sec_events{
 	// backdrop-filter: blur(10px);
 
 	h3 {
+		color:$white;
+		padding:120px 0 30px;
+		font-family: $english;
+		font-weight: 600;
+	}
+	span {
 		color:$secondary-color;
-		padding:30px 0 30px;
+		margin-top:30px;
+		font-family: $english;
 	}
 	p {
 		font-size:18px;
 		line-height: 28px;
 	}
 	.front_face{
+
 		padding:10px;
-		background:#999 url(../img/stock.jpg) no-repeat;
+		background:#888 url(../img/stock.jpg) no-repeat;
 		background-blend-mode: multiply;
 		backdrop-filter: blur(10px);
+
+		:after {
+			content:"";
+			border:1px solid #fff;
+			width:95%;
+			height:95%;
+			display:block;
+			position:absolute;
+			top:7px;
+			left:7px;
+		}
+
 	}
+	.back_face {
+		padding:30px;
+		@extend .front_face;
+		background-color:#333 !important;
+	}
+
 }
 
 /***CONTACT_US******/
@@ -658,7 +690,7 @@ div.contact_container{
 	position: absolute;
 	padding:30px;
 	left:0;
-	top: 70%;
+	top: 30%;
 	& .contact_header{
 		cursor: pointer;
 	}
@@ -671,6 +703,46 @@ div.contact_container{
 		padding:10px;
 		margin:0 auto;
 		display: block;
+	}
+
+	.input {
+		margin:0;
+		input {
+			color:#fff;
+			font-weight:normal !important;
+		}
+		label {
+			color:#fff;
+		}
+
+
+	}
+
+	textarea{
+			width:100%;
+			border:1px solid #fff;
+			background:transparent;
+			margin-top:30px;
+			padding:5px 15px;
+			color:#fff;
+			font-size:18px;
+			height: 250px;
+			outline: none;
+		
+		&::-webkit-input-placeholder{
+			color:rgba(255,255,255,0.5);
+
+			}
+		}
+	input[type="submit"]{
+		border:1px solid #fff;
+		padding:5px 20px;
+		background-color:transparent;
+		color:#fff;
+		font-family: $english;
+		text-transform: uppercase;
+		float:right;
+		margin-top:15px;
 	}
 }
 

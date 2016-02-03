@@ -29,6 +29,15 @@
 	transform:$transform;	
 }
 
+@mixin background-size ($bg-size){
+	background-size:$bg-size;
+	-moz-background-size:$bg-size;
+	-webkit-background-size:$bg-size;
+	-ms-background-size:$bg-size;
+	background-size:$bg-size;
+}
+
+
 
 @mixin add-border ($size, $color, $position) {
 	@if $position == "all" {

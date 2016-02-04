@@ -158,10 +158,7 @@ div#sec_home {
 
 #sec_about {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f16b29+0,f16b29+59,f16b29+59,f16b29+63,e76423+63,e76423+63,e76423+85,d55516+85,d55516+100 */
-background: #f16b29; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #f16b29 0%, #f16b29 59%, #f16b29 59%, #f16b29 63%, #e76423 63%, #e76423 63%, #e76423 85%, #d55516 85%, #d55516 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #f16b29 0%,#f16b29 59%,#f16b29 59%,#f16b29 63%,#e76423 63%,#e76423 63%,#e76423 85%,#d55516 85%,#d55516 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #f16b29 0%,#f16b29 59%,#f16b29 59%,#f16b29 63%,#e76423 63%,#e76423 63%,#e76423 85%,#d55516 85%,#d55516 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background:$navy ; /* Old browsers */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16b29', endColorstr='#d55516',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 	p {

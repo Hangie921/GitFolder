@@ -11,7 +11,6 @@ $(document).ready(function() {
     			'jumpnow','events'
     	],
     	scrollingSpeed:1000,
-    	resize:true,
     	//determin what to do after the loading of the each sections
 		afterLoad: function(anchorLink, index) { 
 			$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
@@ -66,6 +65,11 @@ $(document).ready(function() {
 		    	$('.backToTop').fadeOut();
 		    }
 		},// end of the onLeave function
+		// afterRender: function(){
+		// 	$('.slim3').slimScroll({
+		// 		height:'auto'
+		// 	});
+		// },
 		verticalCentered : true,
 		resize : false,
 		fitToSectionDelay:500,
@@ -73,12 +77,16 @@ $(document).ready(function() {
 		loopBottom:false,
 		loopTop:false,
 		loopHorizontal:false,
-		recordHistory:false,
+		recordHistory:false
+		// paddingTop:'8%',
 		// responsiveWidth: 700,
   //       responsiveHeight: 300
+  		// scrollOverflow:true
 
 	});
-
+	
+	//slimscroll: scroll the content that overflow the height
+	
 
     
 

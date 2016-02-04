@@ -11,7 +11,6 @@ $(document).ready(function() {
     			'jumpnow','events'
     	],
     	scrollingSpeed:1000,
-    	resize:true,
     	//determin what to do after the loading of the each sections
 		afterLoad: function(anchorLink, index) { 
 			$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
@@ -72,7 +71,7 @@ $(document).ready(function() {
 		// 	});
 		// },
 		verticalCentered : true,
-		// resize : true,
+		resize : false,
 		fitToSectionDelay:500,
 		fixedElements:'.backToTop,header,.scrollDown',
 		loopBottom:false,

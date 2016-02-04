@@ -28,7 +28,7 @@ html
 			.scrollDown.scrollDownAni
 				a(href='#about')
 					span.fa.fa-angle-down
-			.section#sec_home.container(data-anchor='home')
+			.section#sec_home.container.section-padding(data-anchor='home')
 				header.container#header
 					.col-md-12
 						.col-md-2
@@ -60,16 +60,15 @@ html
 					h2#slotButton3 開始行動 
 						span &nbsp;
 	
-			.section#sec_about.container.primary_bg(data-anchor='about')
-				.top_animation.col-md-9.col-centered
+			.section#sec_about.container.primary_bg.section-padding(data-anchor='about')
+				.top_animation.col-md-12.col-centered
 					.rocket
 					.col-md-9.col-centered
 						p.en_para.white-text 
 							|Jumpstart, 是亞洲第一個跨國商業合作計畫, 致力於幫助當地企業與國際接軌，讓有前景理念的產品在世界舞台上綻放，創造更大的商機。		
 
 			.section#sec_competition.container(data-anchor='competition')
-				.slide#competition_info_slide
-					.slim
+				.slide#competition_info_slide.slide-padding
 						.col-md-5.col-centered
 							ul.competition-headings#competition_menu
 								li
@@ -107,7 +106,7 @@ html
 									
 
 
-				.slide.competition_topic.active#competition_topic_slide.relative-position
+				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
 					.col-md-5.col-centered
 						ul.competition-headings#competition_menu
 							li
@@ -121,7 +120,7 @@ html
 							|亞洲人才與創業孵化平台 - Ping!為推動創業風氣，與新加坡知名創投公司 - Venturecraft VC首度合作，VC將提供巨量的 User data，期望各方人才組隊報名，互相激盪，創造更多商業價值。
 						a.basic_btn(href='#jumpnow') 我要參加!
 					.col-md-12.col-centered.sponsors
-						.col-md-10.col-centered
+						.col-md-12.col-centered
 							ul.partners
 								li
 									a 螞蜂窩
@@ -140,8 +139,7 @@ html
 						
 					
 
-				.slide#competition_prize_slide
-					.slim1
+				.slide#competition_prize_slide.slide-padding
 						div.container
 							.col-md-5.col-centered
 								ul.competition-headings#competition_menu
@@ -165,7 +163,7 @@ html
 					
 
 
-			.section#sec_jumpnow(data-anchor='jumpnow')
+			.section#sec_jumpnow(data-anchor='jumpnow').section-padding
 				//- 這樣包我就可以一個form包兩個slide的input
 				form(action='/upload', enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
@@ -183,7 +181,6 @@ html
 						
 					.slide.team_details.relative-position
 						h2.hoshi
-						.slim3
 							.col-md-4.clearfix
 									span.input.input--hoshi
 										input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
@@ -237,7 +234,7 @@ html
 								span 我同意
 							input.col-centered(type='submit' value='我要提交計畫')
 
-			.section#sec_events(data-anchor='events')
+			.section#sec_events.section-padding(data-anchor='events')
 				.event_group.container
 					.event_single.col-md-4
 						.event_single_rotate

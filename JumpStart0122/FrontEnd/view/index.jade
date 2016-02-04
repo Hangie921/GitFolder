@@ -6,6 +6,7 @@ html
 		script(src="https://use.typekit.net/umx0psn.js")
 		script(type='text/javascript').
 			window.jQuery || document.write('<script src="../js/jquery-2.2.0.min.js">\x3C/script>')
+		script(type='text/javascript',src="../js/jquery.slimscroll.js")
 		script(src="../js/jquery_fullPage.js")
 		link(href="../css/jquery_fullPage.css", rel='stylesheet')
 		script(src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js")
@@ -68,40 +69,41 @@ html
 
 			.section#sec_competition.container(data-anchor='competition')
 				.slide#competition_info_slide
-					.col-md-5.col-centered
-						ul.competition-headings#competition_menu
-							li
-								a(href="#competition") 參賽資訊
-							li 
-								a.selected(href="#competition/1") 競賽主題
-							li 
-								a(href="#competition/2") 獎項
-					.col-md-12.info_list
-						ul
-							li 團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關專業背景，因獲選後需實作。
-							li 不得為主承辦單位之競爭者。
-							li 運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書(Business Plan)，以15頁為限。
-							li  選進入第二階段後，參加決賽的團隊，每隊只可派出一至兩名核心成員參加簡報，簡報時間為5~8分鐘。
-							li 參賽專案的產品、技術及相關專利歸屬參賽團隊(Ping需佔股份，詢問法律顧問)。
-					.col-md-12
-						.timeline
+					.slim
+						.col-md-5.col-centered
+							ul.competition-headings#competition_menu
+								li
+									a(href="#competition") 參賽資訊
+								li 
+									a.selected(href="#competition/1") 競賽主題
+								li 
+									a(href="#competition/2") 獎項
+						.col-md-12.info_list
 							ul
-								li 
-									h4 線上報名
-										span 五週
-									p 截止時間:  12AM 23/03/2016
-								li 
-									h4 決賽名單公布
-										span 一週
-									p 入選隊伍:  12AM 30/03/2016
-								li 
-									h4 決賽
-										span 一週
-									p 開始時間:  10 AM 06/04/2016
-								li 
-									h4 實作
-										span 四週
-									p 截止時間:  04/05/2016
+								li 團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關專業背景，因獲選後需實作。
+								li 不得為主承辦單位之競爭者。
+								li 運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書(Business Plan)，以15頁為限。
+								li  選進入第二階段後，參加決賽的團隊，每隊只可派出一至兩名核心成員參加簡報，簡報時間為5~8分鐘。
+								li 參賽專案的產品、技術及相關專利歸屬參賽團隊(Ping需佔股份，詢問法律顧問)。
+						.col-md-12
+							.timeline
+								ul
+									li 
+										h4 線上報名
+											span 五週
+										p 截止時間:  12AM 23/03/2016
+									li 
+										h4 決賽名單公布
+											span 一週
+										p 入選隊伍:  12AM 30/03/2016
+									li 
+										h4 決賽
+											span 一週
+										p 開始時間:  10 AM 06/04/2016
+									li 
+										h4 實作
+											span 四週
+										p 截止時間:  04/05/2016
 									
 
 
@@ -139,24 +141,25 @@ html
 					
 
 				.slide#competition_prize_slide
-					div.container
-						.col-md-5.col-centered
-							ul.competition-headings#competition_menu
-								li
-									a(href="#competition") 參賽資訊
-								li 
-									a.selected(href="#competition/1") 競賽主題
-								li 
-									a(href="#competition/2") 獎項
-						.col-md-12
-							.col-md-4.prize-single
-								h4 $90,000 
-							.col-md-4.prize-single
-								h4 $300,000
-							.col-md-4.prize-single
-								h4 $50,000
+					.slim1
+						div.container
+							.col-md-5.col-centered
+								ul.competition-headings#competition_menu
+									li
+										a(href="#competition") 參賽資訊
+									li 
+										a.selected(href="#competition/1") 競賽主題
+									li 
+										a(href="#competition/2") 獎項
 							.col-md-12
-								p *入選隊伍均可於新加坡設立境外公司
+								.col-md-4.prize-single
+									h4 $90,000 
+								.col-md-4.prize-single
+									h4 $300,000
+								.col-md-4.prize-single
+									h4 $50,000
+								.col-md-12
+									p *入選隊伍均可於新加坡設立境外公司
 
 
 					
@@ -180,36 +183,37 @@ html
 						
 					.slide.team_details.relative-position
 						h2.hoshi
-						.col-md-4.clearfix
-								span.input.input--hoshi
-									input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-											span.input__label-content.input__label-content--hoshi 隊伍名稱
-								span.input.input--hoshi 
-									|產品介紹		
-									textarea(name='product_brief')
-								span.input.input--hoshi
-									input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-											span.input__label-content.input__label-content--hoshi 上傳檔案	
-							.col-md-8
-								.team_detail_single.clearfix
-									span.input.input--hoshi.team_member
-										input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
+						.slim3
+							.col-md-4.clearfix
+									span.input.input--hoshi
+										input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-												span.input__label-content.input__label-content--hoshi 成員
-									span.input.input--hoshi.responsibility
-										input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_info')
+												span.input__label-content.input__label-content--hoshi 隊伍名稱
+									span.input.input--hoshi 
+										|產品介紹		
+										textarea(name='product_brief')
+									span.input.input--hoshi
+										input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
+										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+												span.input__label-content.input__label-content--hoshi 上傳檔案	
+								.col-md-8
+									.team_detail_single.clearfix
+										span.input.input--hoshi.team_member
+											input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
+											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+													span.input__label-content.input__label-content--hoshi 成員
+										span.input.input--hoshi.responsibility
+											input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_info')
 
-										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-												span.input__label-content.input__label-content--hoshi 負責項目
-									//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
-								button(id='add_member') 添加成員
-							.nav_group		
-								a(class='button prev_btn',href='#jumpnow') 上一步
-									span &nbsp;
-								a(class='button next_btn', href='#jumpnow/2') 下一步
-									span &nbsp;
+											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+													span.input__label-content.input__label-content--hoshi 負責項目
+										//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
+									button(id='add_member') 添加成員
+								.nav_group		
+									a(class='button prev_btn',href='#jumpnow') 上一步
+										span &nbsp;
+									a(class='button next_btn', href='#jumpnow/2') 下一步
+										span &nbsp;
 					.slide.personal_details.fp-auto-height
 						.col-md-6.personal_details_group.col-centered
 							span.input.input--hoshi

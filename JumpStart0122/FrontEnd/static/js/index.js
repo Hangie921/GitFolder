@@ -66,19 +66,28 @@ $(document).ready(function() {
 		    	$('.backToTop').fadeOut();
 		    }
 		},// end of the onLeave function
+		// afterRender: function(){
+		// 	$('.slim3').slimScroll({
+		// 		height:'auto'
+		// 	});
+		// },
 		verticalCentered : true,
-		resize : false,
+		// resize : true,
 		fitToSectionDelay:500,
 		fixedElements:'.backToTop,header,.scrollDown',
 		loopBottom:false,
 		loopTop:false,
 		loopHorizontal:false,
-		recordHistory:false,
+		recordHistory:false
+		// paddingTop:'8%',
 		// responsiveWidth: 700,
   //       responsiveHeight: 300
+  		// scrollOverflow:true
 
 	});
-
+	
+	//slimscroll: scroll the content that overflow the height
+	
 
     
 

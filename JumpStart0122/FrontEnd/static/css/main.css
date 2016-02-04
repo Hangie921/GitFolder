@@ -400,7 +400,7 @@ img.device {
   cursor: pointer;
   padding: 15px 80px;
   display: inline-block;
-  margin: 15px 30px;
+  margin: 15px 30px 15px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -536,6 +536,16 @@ img.device {
 .btn-4d:hover:before {
   left: 10%;
   opacity: 1;
+}
+
+/* line 143, ../sass/modules/_buttons.scss */
+.btn.navy {
+  background: #0e324b;
+  border-color: #0e324b;
+}
+/* line 146, ../sass/modules/_buttons.scss */
+.btn.navy:hover {
+  background: transparent;
 }
 
 /* Sections */

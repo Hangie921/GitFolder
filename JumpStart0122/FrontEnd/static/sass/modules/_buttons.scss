@@ -19,7 +19,7 @@
 	cursor: pointer;
 	padding: 15px 80px;
 	display: inline-block;
-	margin: 15px 30px;
+	margin: 15px 30px 15px 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -138,4 +138,12 @@
 .btn-4d:hover:before {
 	left: 10%;
 	opacity: 1;
+}
+
+.btn.navy {
+	background:$navy;
+	border-color:$navy;
+	&:hover {
+		background:transparent;
+	}
 }

@@ -21,7 +21,7 @@ var contact = {
 				"readed_flag" : false
 			}
 		},
-		"_id": null,
+		"_id": null
 
 };
 

@@ -6,7 +6,7 @@ html
 		script(src="https://use.typekit.net/umx0psn.js")
 		script(type='text/javascript').
 			window.jQuery || document.write('<script src="../js/jquery-2.2.0.min.js">\x3C/script>')
-		script(type='text/javascript',src="../js/jquery.slimscroll.js")
+		script(src="../js/jquery.validate.js")
 		script(src="../js/jquery_fullPage.js")
 		link(href="../css/jquery_fullPage.css", rel='stylesheet')
 		script(src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js")
@@ -209,7 +209,7 @@ html
 													span.input__label-content.input__label-content--hoshi 負責項目
 										//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
 									button(id='add_member') 添加成員
-								.nav_group		
+								.nav_group
 									a(class='button prev_btn',href='#jumpnow') 上一步
 										span &nbsp;
 									a(class='button next_btn', href='#jumpnow/2') 下一步
@@ -281,7 +281,7 @@ html
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 											span.input__label-content.input__label-content--hoshi 姓名
 								span.input.input--hoshi
-									input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
+									input#input-4.input__field.input__field--hoshi(type='email',name='user_email')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 											span.input__label-content.input__label-content--hoshi email
 								span.input.input--hoshi
@@ -289,7 +289,7 @@ html
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 											span.input__label-content.input__label-content--hoshi 標題
 							.col-md-8
-								textarea(placeholder='我有疑問...',name='user_msg')
+								textarea(placeholder='我有疑問...',name='user_msg',require)
 								//- input(type='submit' value='傳送給我們!')
 								button.contact_us_btn.btn.btn-7.btn-7h.icon-envelope contact us
 	

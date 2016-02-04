@@ -137,78 +137,62 @@ $(document).ready(function() {
 	//this part is for the submit btn feedback effect
 	//for the submit btn feedback animation
 	$('#reg_form').submit(function() {
-		var sub_btn = $('button.submit_btn');
-		var color = sub_btn.css('color');
-        var bg =sub_btn.css('background-color');
-        $(this).ajaxSubmit({
-            error: function(xhr) {
-            	console.log('xhr');
-        		console.log(xhr);
-        		sub_btn.addClass('btn-error');
-        		sub_btn.css({'color':bg});
-				setTimeout(function(){
-					sub_btn.removeClass('btn-error');
-				}, 1000);
-				setTimeout(function(){
-					sub_btn.css({'color':color});
-				}, 1100);
-            },
-            success: function(response) {
-            	console.log('res');
-                console.log(response);
-                sub_btn.addClass('btn-success');
-                sub_btn.css({'color':bg});
-				setTimeout(function(){
-					sub_btn.removeClass('btn-success').html('submit');
-				}, 1000);
-				setTimeout(function(){
-					sub_btn.css({'color':'#fff'});
-				}, 1100);
-            }
-    	});
+		var btn = $('button.submit_btn');
         //Very important line, it disable the page refresh.
-    	return false;
+    	return form_submit(btn,$(this));
     });
 
-    $('#contact_us_form').submit(function() {
-    	var contact_btn = $('button.contact_us_btn');
-		var color = contact_btn.css('color');
-        var bg =contact_btn.css('background-color');
-
-        $(this).ajaxSubmit({
-            error: function(xhr) {
-            	console.log('xhr');
-        		console.log(xhr);
-        		contact_btn.addClass('btn-error');
-        		contact_btn.css({'color':bg});
-				setTimeout(function(){
-					contact_btn.removeClass('btn-error');
-				}, 1000);
-				setTimeout(function(){
-					contact_btn.css({'color':color});
-				}, 1100);
-            },
-            success: function(response) {
-            	console.log('res');
-                console.log(response);
-                contact_btn.addClass('btn-success');
-                contact_btn.css({'color':bg});
-				setTimeout(function(){
-					contact_btn.removeClass('btn-success');
-				}, 1000);
-				setTimeout(function(){
-					contact_btn.css({'color':'#fff'});
-				}, 1100);
-            }
-    	});
-        //Very important line, it disable the page refresh.
-    	return false;
+    $('#contact_us_form').submit(function(){
+    	var btn = $('button.contact_us_btn');
+    	return form_submit(btn,$(this));
     });
-
-
-
 
 });//end of the document.ready
+
+function form_submit(btn,form){
+	var color = btn.css('color');
+    var bg = btn.css('background-color');
+    // var form = $('#contact_us_form');
+       form.ajaxSubmit({
+            error: function(xhr) {
+            	console.log('xhr');
+        		console.log(xhr);
+        		btn.addClass('btn-error');
+        		btn.css({'color':bg});
+				setTimeout(function(){
+					btn.removeClass('btn-error');
+				}, 1000);
+				setTimeout(function(){
+					btn.css({'color':color});
+				}, 1100);
+            },
+            success: function(response) {
+            	console.log('res');
+                console.log(response);
+                btn.addClass('btn-success');
+                btn.css({'color':bg});
+				setTimeout(function(){
+					btn.removeClass('btn-success');
+				}, 1000);
+				setTimeout(function(){
+					btn.css({'color':'#fff'});
+				}, 1100);
+            }
+    	});
+        //Very important line, it disable the page refresh.
+    	return false;
+}
+
+
+//The validattion function
+function sub_form_check(){
+
+}
+
+function contact_form_check(){
+
+}
+
 
 //The slot Machine animation initializing
 function initSlot(){

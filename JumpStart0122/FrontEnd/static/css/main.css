@@ -400,7 +400,7 @@ img.device {
   cursor: pointer;
   padding: 15px 80px;
   display: inline-block;
-  margin: 15px 30px;
+  margin: 15px 30px 15px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -538,8 +538,18 @@ img.device {
   opacity: 1;
 }
 
+/* line 143, ../sass/modules/_buttons.scss */
+.btn.navy {
+  background: #0e324b;
+  border-color: #0e324b;
+}
+/* line 146, ../sass/modules/_buttons.scss */
+.btn.navy:hover {
+  background: transparent;
+}
+
 /* Button 7 */
-/* line 144, ../sass/modules/_buttons.scss */
+/* line 152, ../sass/modules/_buttons.scss */
 .btn-7 {
   background: #17aa56;
   color: #fff;
@@ -549,13 +559,13 @@ img.device {
 }
 
 /* Button 7h */
-/* line 154, ../sass/modules/_buttons.scss */
+/* line 162, ../sass/modules/_buttons.scss */
 .btn-7h span {
   display: inline-block;
   width: 100%;
 }
 
-/* line 159, ../sass/modules/_buttons.scss */
+/* line 167, ../sass/modules/_buttons.scss */
 .btn-7h:before {
   position: absolute;
   left: 0;
@@ -565,19 +575,19 @@ img.device {
   color: #0a833d;
 }
 
-/* line 168, ../sass/modules/_buttons.scss */
+/* line 176, ../sass/modules/_buttons.scss */
 .icon-envelope:before {
   content: "\e000";
 }
 
 /* Success and error */
-/* line 176, ../sass/modules/_buttons.scss */
+/* line 184, ../sass/modules/_buttons.scss */
 .btn-success,
 .btn-error {
   color: transparent;
 }
 
-/* line 181, ../sass/modules/_buttons.scss */
+/* line 189, ../sass/modules/_buttons.scss */
 .btn-success:after,
 .btn-error:after {
   z-index: 1;
@@ -585,12 +595,12 @@ img.device {
   left: 40%;
 }
 
-/* line 187, ../sass/modules/_buttons.scss */
+/* line 195, ../sass/modules/_buttons.scss */
 .btn-success:before {
   content: "\e001";
 }
 
-/* line 191, ../sass/modules/_buttons.scss */
+/* line 199, ../sass/modules/_buttons.scss */
 .btn-success:after {
   content: "Success!";
   -webkit-animation: moveUp 0.5s;
@@ -599,13 +609,13 @@ img.device {
 }
 
 @-webkit-keyframes moveUp {
-  /* line 199, ../sass/modules/_buttons.scss */
+  /* line 207, ../sass/modules/_buttons.scss */
   0% {
     -webkit-transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 203, ../sass/modules/_buttons.scss */
+  /* line 211, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -613,13 +623,13 @@ img.device {
 }
 
 @-moz-keyframes moveUp {
-  /* line 210, ../sass/modules/_buttons.scss */
+  /* line 218, ../sass/modules/_buttons.scss */
   0% {
     -moz-transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 214, ../sass/modules/_buttons.scss */
+  /* line 222, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0);
@@ -627,20 +637,20 @@ img.device {
 }
 
 @keyframes moveUp {
-  /* line 221, ../sass/modules/_buttons.scss */
+  /* line 229, ../sass/modules/_buttons.scss */
   0% {
     transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 225, ../sass/modules/_buttons.scss */
+  /* line 233, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* line 231, ../sass/modules/_buttons.scss */
+/* line 239, ../sass/modules/_buttons.scss */
 .btn-error {
   -webkit-animation: shake 0.5s;
   -moz-animation: shake 0.5s;
@@ -649,62 +659,62 @@ img.device {
 
 /* From Dan Eden's animate.css: http://daneden.me/animate/ */
 @-webkit-keyframes shake {
-  /* line 239, ../sass/modules/_buttons.scss */
+  /* line 247, ../sass/modules/_buttons.scss */
   0%, 100% {
     -webkit-transform: translateX(0);
   }
 
-  /* line 240, ../sass/modules/_buttons.scss */
+  /* line 248, ../sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
   }
 
-  /* line 241, ../sass/modules/_buttons.scss */
+  /* line 249, ../sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
   }
 }
 
 @-moz-keyframes shake {
-  /* line 245, ../sass/modules/_buttons.scss */
+  /* line 253, ../sass/modules/_buttons.scss */
   0%, 100% {
     -moz-transform: translateX(0);
   }
 
-  /* line 246, ../sass/modules/_buttons.scss */
+  /* line 254, ../sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     -moz-transform: translateX(-10px);
   }
 
-  /* line 247, ../sass/modules/_buttons.scss */
+  /* line 255, ../sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     -moz-transform: translateX(10px);
   }
 }
 
 @keyframes shake {
-  /* line 251, ../sass/modules/_buttons.scss */
+  /* line 259, ../sass/modules/_buttons.scss */
   0%, 100% {
     transform: translateX(0);
   }
 
-  /* line 252, ../sass/modules/_buttons.scss */
+  /* line 260, ../sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
 
-  /* line 253, ../sass/modules/_buttons.scss */
+  /* line 261, ../sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
 }
 
-/* line 256, ../sass/modules/_buttons.scss */
+/* line 264, ../sass/modules/_buttons.scss */
 .btn-error:before {
   content: "\e002";
 }
 
-/* line 260, ../sass/modules/_buttons.scss */
+/* line 268, ../sass/modules/_buttons.scss */
 .btn-error:after {
   content: "Error!";
   -webkit-animation: scaleFromUp 0.5s;
@@ -713,13 +723,13 @@ img.device {
 }
 
 @-webkit-keyframes scaleFromUp {
-  /* line 268, ../sass/modules/_buttons.scss */
+  /* line 276, ../sass/modules/_buttons.scss */
   0% {
     -webkit-transform: scale(0);
     opacity: 0;
   }
 
-  /* line 272, ../sass/modules/_buttons.scss */
+  /* line 280, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -727,13 +737,13 @@ img.device {
 }
 
 @-moz-keyframes scaleFromUp {
-  /* line 279, ../sass/modules/_buttons.scss */
+  /* line 287, ../sass/modules/_buttons.scss */
   0% {
     -moz-transform: scale(0);
     opacity: 0;
   }
 
-  /* line 283, ../sass/modules/_buttons.scss */
+  /* line 291, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -moz-transform: scale(1);
@@ -741,13 +751,13 @@ img.device {
 }
 
 @keyframes scaleFromUp {
-  /* line 290, ../sass/modules/_buttons.scss */
+  /* line 298, ../sass/modules/_buttons.scss */
   0% {
     transform: scale(0);
     opacity: 0;
   }
 
-  /* line 294, ../sass/modules/_buttons.scss */
+  /* line 302, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     transform: scale(1);

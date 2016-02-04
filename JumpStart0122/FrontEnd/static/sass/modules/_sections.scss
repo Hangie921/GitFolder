@@ -12,7 +12,7 @@ div.fp-section{
 }
 
 div#sec_competition {
-	background-color:#fbfbfb
+	background-color:$gray;
 }
 /****HOME******/
 
@@ -171,7 +171,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16b29', end
 /********** Jump Now Section ********/
 
 div#sec_jumpnow {
-	background: $primary-color;
+	background: $navy;
 
 	p {
 		@include font-large;

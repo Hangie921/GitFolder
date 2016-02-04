@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 /*
 	SkyApp Bootstrap Sass Theme
 	Author: Janet Hsu
@@ -380,6 +381,163 @@ img.device {
   text-align: center !important;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot");
+  src: url("../fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../fonts/icomoon/icomoon.ttf") format("truetype"), url("../fonts/icomoon/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General button style (reset) */
+/* line 13, ../sass/modules/_buttons.scss */
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 15px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 33, ../sass/modules/_buttons.scss */
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+/* line 47, ../sass/modules/_buttons.scss */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 58, ../sass/modules/_buttons.scss */
+.icon-arrow-right:before {
+  content: "\e00d";
+}
+
+/* line 62, ../sass/modules/_buttons.scss */
+.icon-arrow-left:before {
+  content: "\e003";
+}
+
+/* Button 4 */
+/* line 68, ../sass/modules/_buttons.scss */
+.btn-4 {
+  border-radius: 50px;
+  border: 3px solid #fff;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* line 75, ../sass/modules/_buttons.scss */
+.btn-4:active {
+  border-color: #17954c;
+  color: #17954c;
+}
+
+/* line 80, ../sass/modules/_buttons.scss */
+.btn-4:hover {
+  background: #24b662;
+}
+
+/* line 84, ../sass/modules/_buttons.scss */
+.btn-4:before {
+  position: absolute;
+  height: 100%;
+  font-size: 125%;
+  line-height: 2.2;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 95, ../sass/modules/_buttons.scss */
+.btn-4:active:before {
+  color: #17954c;
+}
+
+/* Button 4a */
+/* line 100, ../sass/modules/_buttons.scss */
+.btn-4a:before {
+  left: 130%;
+  top: 0;
+}
+
+/* line 105, ../sass/modules/_buttons.scss */
+.btn-4a:hover:before {
+  left: 80%;
+}
+
+/* Button 4b */
+/* line 110, ../sass/modules/_buttons.scss */
+.btn-4b:before {
+  left: -50%;
+  top: 0;
+}
+
+/* line 115, ../sass/modules/_buttons.scss */
+.btn-4b:hover:before {
+  left: 10%;
+}
+
+/* Button 4c */
+/* line 120, ../sass/modules/_buttons.scss */
+.btn-4c:before {
+  left: 70%;
+  opacity: 0;
+  top: 0;
+}
+
+/* line 126, ../sass/modules/_buttons.scss */
+.btn-4c:hover:before {
+  left: 80%;
+  opacity: 1;
+}
+
+/* Button 4d */
+/* line 132, ../sass/modules/_buttons.scss */
+.btn-4d:before {
+  left: 30%;
+  opacity: 0;
+  top: 0;
+}
+
+/* line 138, ../sass/modules/_buttons.scss */
+.btn-4d:hover:before {
+  left: 10%;
+  opacity: 1;
+}
+
 /* Sections */
 /* line 2, ../sass/modules/_sections.scss */
 div.fp-section {
@@ -393,7 +551,7 @@ div.fp-section {
 
 /* line 14, ../sass/modules/_sections.scss */
 div#sec_competition {
-  background-color: #fbfbfb;
+  background-color: #e7e7e7;
 }
 
 /****HOME******/
@@ -557,7 +715,7 @@ div#sec_home {
 /********** Jump Now Section ********/
 /* line 173, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
-  background: #f16b29;
+  background: #0e324b;
 }
 /* line 176, ../sass/modules/_sections.scss */
 div#sec_jumpnow p {
@@ -1139,7 +1297,17 @@ div.contact_container input[type="submit"] {
   margin-top: 15px;
 }
 
-/* line 1, ../sass/modules/_components.scss */
+/**FONTS****/
+/* General Demo Style */
+@font-face {
+  font-family: 'codropsicons';
+  src: url("../fonts/codropsicons/codropsicons.eot");
+  src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 21, ../sass/modules/_components.scss */
 .backToTop {
   position: fixed;
   width: 50px;
@@ -1155,14 +1323,14 @@ div.contact_container input[type="submit"] {
   right: 30px;
   bottom: 30px;
 }
-/* line 13, ../sass/modules/_components.scss */
+/* line 33, ../sass/modules/_components.scss */
 .backToTop a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 20, ../sass/modules/_components.scss */
+/* line 40, ../sass/modules/_components.scss */
 .scrollDown {
   position: fixed;
   width: 50px;
@@ -1178,7 +1346,7 @@ div.contact_container input[type="submit"] {
   border-radius: 50%;
   border: 1px solid gainsboro;
 }
-/* line 31, ../sass/modules/_components.scss */
+/* line 51, ../sass/modules/_components.scss */
 .scrollDown a {
   display: block;
   width: 100%;
@@ -1813,7 +1981,7 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
 
 /* line 114, ../sass/layouts/_header.scss */
 #header.fff {
-  background-color: #fbfbfb;
+  background-color: transparent;
 }
 
 /* line 117, ../sass/layouts/_header.scss */

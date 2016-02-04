@@ -1474,13 +1474,13 @@ div.contact_container {
   position: absolute;
   padding: 30px;
   left: 0;
-  top: 85vh;
+  bottom: -250px;
 }
-/* line 703, ../sass/modules/_sections.scss */
+/* line 704, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 706, ../sass/modules/_sections.scss */
+/* line 707, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1491,20 +1491,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-/* line 717, ../sass/modules/_sections.scss */
+/* line 718, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 719, ../sass/modules/_sections.scss */
+/* line 720, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-/* line 723, ../sass/modules/_sections.scss */
+/* line 724, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 730, ../sass/modules/_sections.scss */
+/* line 731, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1516,11 +1516,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 741, ../sass/modules/_sections.scss */
+/* line 742, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 746, ../sass/modules/_sections.scss */
+/* line 747, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;

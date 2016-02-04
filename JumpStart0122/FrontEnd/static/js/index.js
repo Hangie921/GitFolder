@@ -123,11 +123,11 @@ $(document).ready(function() {
 	var down = true;
 	$('.contact_header').click(function(){
 		if(down){
-			$(this).parent().animate({'top':'45vh'},1000);
+			$(this).parent().animate({'bottom':'150px'},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
 			down = false;
 		}else{
-			$(this).parent().animate({'top':'85vh'},1000);
+			$(this).parent().animate({'bottom':'-250px'},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
 			down = true;
 		}
@@ -137,27 +137,74 @@ $(document).ready(function() {
 	//this part is for the submit btn feedback effect
 	//for the submit btn feedback animation
 	$('#reg_form').submit(function() {
+		var sub_btn = $('button.submit_btn');
+		var color = sub_btn.css('color');
+        var bg =sub_btn.css('background-color');
         $(this).ajaxSubmit({
             error: function(xhr) {
             	console.log('xhr');
         		console.log(xhr);
-        		$('button.submit_btn').addClass('btn-error');
+        		sub_btn.addClass('btn-error');
+        		sub_btn.css({'color':bg});
 				setTimeout(function(){
-					$('button.submit_btn').removeClass('btn-error');
+					sub_btn.removeClass('btn-error');
 				}, 1000);
+				setTimeout(function(){
+					sub_btn.css({'color':color});
+				}, 1100);
             },
             success: function(response) {
             	console.log('res');
                 console.log(response);
-                $('button.submit_btn').addClass('btn-success');
+                sub_btn.addClass('btn-success');
+                sub_btn.css({'color':bg});
 				setTimeout(function(){
-					$('button.submit_btn').removeClass('btn-success');
+					sub_btn.removeClass('btn-success').html('submit');
 				}, 1000);
+				setTimeout(function(){
+					sub_btn.css({'color':'#fff'});
+				}, 1100);
             }
     	});
         //Very important line, it disable the page refresh.
     	return false;
     });
+
+    $('#contact_us_form').submit(function() {
+    	var contact_btn = $('button.contact_us_btn');
+		var color = contact_btn.css('color');
+        var bg =contact_btn.css('background-color');
+
+        $(this).ajaxSubmit({
+            error: function(xhr) {
+            	console.log('xhr');
+        		console.log(xhr);
+        		contact_btn.addClass('btn-error');
+        		contact_btn.css({'color':bg});
+				setTimeout(function(){
+					contact_btn.removeClass('btn-error');
+				}, 1000);
+				setTimeout(function(){
+					contact_btn.css({'color':color});
+				}, 1100);
+            },
+            success: function(response) {
+            	console.log('res');
+                console.log(response);
+                contact_btn.addClass('btn-success');
+                contact_btn.css({'color':bg});
+				setTimeout(function(){
+					contact_btn.removeClass('btn-success');
+				}, 1000);
+				setTimeout(function(){
+					contact_btn.css({'color':'#fff'});
+				}, 1100);
+            }
+    	});
+        //Very important line, it disable the page refresh.
+    	return false;
+    });
+
 
 
 

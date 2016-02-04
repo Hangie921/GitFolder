@@ -235,7 +235,7 @@ html
 							label.iagree
 								input(type="checkbox" name='我同意' value="我同意") 
 								span 我同意
-							input.col-centered(type='submit' value='我要提交計畫')
+							//- input.col-centered(type='submit' value='我要提交計畫')
 							button.submit_btn.btn.btn-7.btn-7h.icon-envelope submit
 
 							
@@ -274,7 +274,7 @@ html
 								span 
 									i.fa.fa-angle-up
 					.col-md-12.contact_form
-						form(action='/contact', enctype="multipart/form-data",method="post")
+						form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
 							.col-md-4
 								span.input.input--hoshi
 									input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
@@ -290,7 +290,10 @@ html
 											span.input__label-content.input__label-content--hoshi 標題
 							.col-md-8
 								textarea(placeholder='我有疑問...',name='user_msg')
-								input(type='submit' value='傳送給我們!')
+								//- input(type='submit' value='傳送給我們!')
+								button.contact_us_btn.btn.btn-7.btn-7h.icon-envelope contact us
+	
+
 	//-classie.js is the function that runs the input effect
 	script(type='text/javascript',src='../js/classie.js').
 

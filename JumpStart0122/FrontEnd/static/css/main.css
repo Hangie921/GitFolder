@@ -538,6 +538,222 @@ img.device {
   opacity: 1;
 }
 
+/* Button 7 */
+/* line 144, ../sass/modules/_buttons.scss */
+.btn-7 {
+  background: #17aa56;
+  color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px #119e4d;
+  padding: 25px 60px 25px 90px;
+}
+
+/* Button 7h */
+/* line 154, ../sass/modules/_buttons.scss */
+.btn-7h span {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 159, ../sass/modules/_buttons.scss */
+.btn-7h:before {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  font-size: 160%;
+  line-height: 0.8;
+  color: #0a833d;
+}
+
+/* line 168, ../sass/modules/_buttons.scss */
+.icon-envelope:before {
+  content: "\e000";
+}
+
+/* Success and error */
+/* line 176, ../sass/modules/_buttons.scss */
+.btn-success,
+.btn-error {
+  color: transparent;
+}
+
+/* line 181, ../sass/modules/_buttons.scss */
+.btn-success:after,
+.btn-error:after {
+  z-index: 1;
+  color: #fff;
+  left: 40%;
+}
+
+/* line 187, ../sass/modules/_buttons.scss */
+.btn-success:before {
+  content: "\e001";
+}
+
+/* line 191, ../sass/modules/_buttons.scss */
+.btn-success:after {
+  content: "Success!";
+  -webkit-animation: moveUp 0.5s;
+  -moz-animation: moveUp 0.5s;
+  animation: moveUp 0.5s;
+}
+
+@-webkit-keyframes moveUp {
+  /* line 199, ../sass/modules/_buttons.scss */
+  0% {
+    -webkit-transform: translateY(50%);
+    opacity: 0;
+  }
+
+  /* line 203, ../sass/modules/_buttons.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes moveUp {
+  /* line 210, ../sass/modules/_buttons.scss */
+  0% {
+    -moz-transform: translateY(50%);
+    opacity: 0;
+  }
+
+  /* line 214, ../sass/modules/_buttons.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@keyframes moveUp {
+  /* line 221, ../sass/modules/_buttons.scss */
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  /* line 225, ../sass/modules/_buttons.scss */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* line 231, ../sass/modules/_buttons.scss */
+.btn-error {
+  -webkit-animation: shake 0.5s;
+  -moz-animation: shake 0.5s;
+  animation: shake 0.5s;
+}
+
+/* From Dan Eden's animate.css: http://daneden.me/animate/ */
+@-webkit-keyframes shake {
+  /* line 239, ../sass/modules/_buttons.scss */
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 240, ../sass/modules/_buttons.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  /* line 241, ../sass/modules/_buttons.scss */
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+  }
+}
+
+@-moz-keyframes shake {
+  /* line 245, ../sass/modules/_buttons.scss */
+  0%, 100% {
+    -moz-transform: translateX(0);
+  }
+
+  /* line 246, ../sass/modules/_buttons.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -moz-transform: translateX(-10px);
+  }
+
+  /* line 247, ../sass/modules/_buttons.scss */
+  20%, 40%, 60%, 80% {
+    -moz-transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  /* line 251, ../sass/modules/_buttons.scss */
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  /* line 252, ../sass/modules/_buttons.scss */
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  /* line 253, ../sass/modules/_buttons.scss */
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+/* line 256, ../sass/modules/_buttons.scss */
+.btn-error:before {
+  content: "\e002";
+}
+
+/* line 260, ../sass/modules/_buttons.scss */
+.btn-error:after {
+  content: "Error!";
+  -webkit-animation: scaleFromUp 0.5s;
+  -moz-animation: scaleFromUp 0.5s;
+  animation: scaleFromUp 0.5s;
+}
+
+@-webkit-keyframes scaleFromUp {
+  /* line 268, ../sass/modules/_buttons.scss */
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+
+  /* line 272, ../sass/modules/_buttons.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes scaleFromUp {
+  /* line 279, ../sass/modules/_buttons.scss */
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0;
+  }
+
+  /* line 283, ../sass/modules/_buttons.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes scaleFromUp {
+  /* line 290, ../sass/modules/_buttons.scss */
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  /* line 294, ../sass/modules/_buttons.scss */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* Sections */
 /* line 2, ../sass/modules/_sections.scss */
 div.fp-section {
@@ -1248,7 +1464,7 @@ div.contact_container {
   position: absolute;
   padding: 30px;
   left: 0;
-  top: 30%;
+  top: 85vh;
 }
 /* line 703, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {

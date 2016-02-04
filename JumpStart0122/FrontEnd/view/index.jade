@@ -16,6 +16,7 @@ html
 		link(href="../css/set2.css", rel='stylesheet')
 		link(href="../css/main.css", rel='stylesheet')
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js")
 		script(src="../js/index.js")
 		script(type='text/javascript'). 
 			try{Typekit.load({ async: true });}catch(e){}
@@ -60,6 +61,7 @@ html
 
 					a#slotButton3.btn.btn-4.btn-4a.icon-arrow-right 開始行動
 						span &nbsp;
+					
 	
 			.section#sec_about.container.primary_bg.section-padding(data-anchor='about')
 				.top_animation.col-md-12.col-centered
@@ -166,7 +168,7 @@ html
 
 			.section#sec_jumpnow(data-anchor='jumpnow').section-padding
 				//- 這樣包我就可以一個form包兩個slide的input
-				form(action='/upload', enctype="multipart/form-data",method="post")  
+				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
 						.col-md-5.laptop-img
 						.col-md-7.white-text
@@ -234,6 +236,10 @@ html
 								input(type="checkbox" name='我同意' value="我同意") 
 								span 我同意
 							input.col-centered(type='submit' value='我要提交計畫')
+							button.submit_btn.btn.btn-7.btn-7h.icon-envelope submit
+
+							
+
 
 			.section#sec_events.section-padding(data-anchor='events')
 				.event_group.container
@@ -266,7 +272,7 @@ html
 						.col-md-12
 							h2 CONTACT US 
 								span 
-									i.fa.fa-angle-down
+									i.fa.fa-angle-up
 					.col-md-12.contact_form
 						form(action='/contact', enctype="multipart/form-data",method="post")
 							.col-md-4
@@ -275,13 +281,13 @@ html
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 											span.input__label-content.input__label-content--hoshi 姓名
 								span.input.input--hoshi
-									input#input-4.input__field.input__field--hoshi(type='text',name='user_phone')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-											span.input__label-content.input__label-content--hoshi 電話
-								span.input.input--hoshi
 									input#input-4.input__field.input__field--hoshi(type='text',name='user_email')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-											span.input__label-content.input__label-content--hoshi Email
+											span.input__label-content.input__label-content--hoshi email
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='subject')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 標題
 							.col-md-8
 								textarea(placeholder='我有疑問...',name='user_msg')
 								input(type='submit' value='傳送給我們!')

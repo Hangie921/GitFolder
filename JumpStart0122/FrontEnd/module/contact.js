@@ -7,7 +7,7 @@ var contact = {
 		"contact_us" : {
 			"name" : "",
 			"email" : "",
-			"phone" : "",
+			"subject" : "",
 			"msg" : ""
 		},
 		"reg_time" : timestamp,
@@ -29,7 +29,7 @@ function to_object(req,res){
 	//add the member_brief coloumn dynamically 
 	contact.contact_us.name = req.body.user_name;
 	contact.contact_us.email = req.body.user_email;
-	contact.contact_us.phone = req.body.user_phone;
+	contact.contact_us.subject = req.body.subject;
 	contact.contact_us.msg = req.body.user_msg;
 	contact.reg_time = Date.now();
 	return contact;//team_info is already an object

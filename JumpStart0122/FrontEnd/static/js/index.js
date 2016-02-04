@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 	
-	initSlot()	//initial the slot machine first so that fullpage can load the
+	initSlot();	//initial the slot machine first so that fullpage can load the
 	
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
@@ -83,11 +83,8 @@ $(document).ready(function() {
   //       responsiveHeight: 300
   		// scrollOverflow:true
 
-	});
+	}); //end of the fullpageJS
 	
-	//slimscroll: scroll the content that overflow the height
-	
-
     
 
 	//add and delete the member input field dynamically with the btn clicked
@@ -126,20 +123,46 @@ $(document).ready(function() {
 	var down = true;
 	$('.contact_header').click(function(){
 		if(down){
-			$(this).parent().animate({'top':'25%'},1000);
-			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
+			$(this).parent().animate({'top':'45vh'},1000);
+			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
 			down = false;
 		}else{
-			$(this).parent().animate({'top':'70%'},1000);
-			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
+			$(this).parent().animate({'top':'85vh'},1000);
+			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
 			down = true;
 		}
 
 	});
-	
+
+	//this part is for the submit btn feedback effect
+	//for the submit btn feedback animation
+	$('#reg_form').submit(function() {
+        $(this).ajaxSubmit({
+            error: function(xhr) {
+            	console.log('xhr');
+        		console.log(xhr);
+        		$('button.submit_btn').addClass('btn-error');
+				setTimeout(function(){
+					$('button.submit_btn').removeClass('btn-error');
+				}, 1000);
+            },
+            success: function(response) {
+            	console.log('res');
+                console.log(response);
+                $('button.submit_btn').addClass('btn-success');
+				setTimeout(function(){
+					$('button.submit_btn').removeClass('btn-success');
+				}, 1000);
+            }
+    	});
+        //Very important line, it disable the page refresh.
+    	return false;
+    });
 
 
-});
+
+});//end of the document.ready
+
 //The slot Machine animation initializing
 function initSlot(){
 	machine3 = $('#slot3').slotMachine({

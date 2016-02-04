@@ -63,8 +63,7 @@ function to_object(req,res){   //pack all the info of the form into a object
 		//add the member of the team according to how many 'member_brief_name' field are there in the form
 	}
 
-	console.log("Start to log the member_brief object");
-	console.log(team_info.member_brief);
+	console.log("Member_brief object = "+team_info.member_brief);
 
 	team_info.contact.name = req.body.contact;
 	team_info.contact.email = req.body.email;
@@ -79,12 +78,8 @@ function file_handler(req,res,field_name,callback){ // upload the bp file if the
 	
 	var upload = multer({ storage: storage1 }).single(field_name); // declare a multer object
 	upload(req,res,function(err){
-		if(!err){
 			console.log(req.file);
 			callback(err,req,res);
-		}else{
-			console.log(err);
-		}
 	});
 
 }

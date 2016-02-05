@@ -85,10 +85,10 @@ function insertToCollection(app,mongoClient,req,res,doc,collection,callback){
 		db.collection(collection).insertOne(doc,function(err,result){
 			if(!err){
 				console.log("Insert doc into '" + collection + "' collection!");
-				res.send('success');
+				res.end('success');
 			}else{
 				console.log(err);
-				res.send('error');
+				res.end('error');
 			}
 		db.close();
 		});

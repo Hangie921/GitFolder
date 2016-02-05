@@ -1,9 +1,13 @@
 var multer= require("multer");
 //setting above
 
+var schema = function(){
+	var d = new Date();
+	var sec = d.getSeconds().toString().length == 1 ? ('0'+d.getSeconds()) : d.getSeconds();
+	var timestamp = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDay()+" "+d.getHours()+":"+d.getMinutes()+":"+ sec;
 
-var timestamp = null;
-var contact = {
+	return {
+		// "_id":Date.now(),
 		"contact_us" : {
 			"name" : "",
 			"email" : "",
@@ -13,25 +17,24 @@ var contact = {
 		"reg_time" : timestamp,
 		"readed" : {
 			"Randy" : {
-				"readed_time" : timestamp,
+				"readed_time" : null,
 				"readed_flag" : false
 			},
 			"Walter" : {
-				"readed_time" : timestamp,
+				"readed_time" : null,
 				"readed_flag" : false
 			}
-		},
-		"_id": null
-
-};
+		}
+	};
+}//end of the schema function
 
 function to_object(req,res){
+	var contact = schema();
 	//add the member_brief coloumn dynamically 
 	contact.contact_us.name = req.body.user_name;
 	contact.contact_us.email = req.body.user_email;
 	contact.contact_us.subject = req.body.subject;
 	contact.contact_us.msg = req.body.user_msg;
-	contact.reg_time = Date.now();
 	return contact;//team_info is already an object
 }
 

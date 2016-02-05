@@ -14,11 +14,11 @@ function route(app,mongoClient){
 				var doc = submit.to_object(req,res);
 				mongo_handler.handle(app,mongoClient,'insert',req,res,doc,'detail',function(req,res){
 					// res.render('show');
-					res.end("success");
+					res.end();
 				});
 			}else{
 				console.log(err);
-				res.end("error");
+				res.end();
 
 			}	
 		// req.file is the `upload` file

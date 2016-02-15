@@ -3,8 +3,10 @@ var multer= require("multer");
 
 var schema = function(){
 	var d = new Date();
-	var sec = d.getSeconds().toString().length == 1 ? ('0'+d.getSeconds()) : d.getSeconds();
-	var timestamp = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDay()+" "+d.getHours()+":"+d.getMinutes()+":"+ sec;
+	var sec = d.getSeconds().toString().length == 1?('0'+d.getSeconds()):d.getSeconds();
+	var min = d.getMinutes().toString().length == 1?('0'+d.getMinutes()):d.getMinutes();
+	var hour = d.getHours().toString().length == 1 ?('0'+d.getHours()):d.getHours();
+	var timestamp = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate()+" "+hour+":"+min+":"+ sec;
 
 	return {
 		// "_id":Date.now(),

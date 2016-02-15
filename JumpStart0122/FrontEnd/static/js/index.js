@@ -11,7 +11,6 @@ $(document).ready(function() {
     			'jumpnow','events'
     	],
     	scrollingSpeed:1000,
-    	//determin what to do after the loading of the each sections
 		afterLoad: function(anchorLink, index) { 
 			$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
 			$('#header').css({'opacity':'1'});
@@ -64,12 +63,7 @@ $(document).ready(function() {
 		    }else if(nextIndex == 1){
 		    	$('.backToTop').fadeOut();
 		    }
-		},// end of the onLeave function
-		// afterRender: function(){
-		// 	$('.slim3').slimScroll({
-		// 		height:'auto'
-		// 	});
-		// },
+		},
 		verticalCentered : true,
 		resize : false,
 		fitToSectionDelay:500,
@@ -83,10 +77,9 @@ $(document).ready(function() {
   //       responsiveHeight: 300
   		// scrollOverflow:true
 
-	}); //end of the fullpageJS
+	}); //end of the fullpageJS initial
 	
     
-
 	//add and delete the member input field dynamically with the btn clicked
 	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member '><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
 	var counter = 1;
@@ -134,25 +127,117 @@ $(document).ready(function() {
 
 	});
 
-	//this part is for the submit btn feedback effect
-	//for the submit btn feedback animation
+	
 	$('#reg_form').submit(function() {
 		var btn = $('button.submit_btn');
         //Very important line, it disable the page refresh.
-    	return form_submit(btn,$(this));
+        sub_form_check(btn,$(this));
+        return false;
     });
 
     $('#contact_us_form').submit(function(){
     	var btn = $('button.contact_us_btn');
-    	return form_submit(btn,$(this));
+    	contact_form_check(btn,$(this));
+    	return false
     });
 
 });//end of the document.ready
 
-function form_submit(btn,form){
+
+//The validation function
+function sub_form_check(btn,form){
+	$("#reg_form").validate({
+		debug: true,
+		success: 'valid',
+		rules: {
+			team_name:"required",
+			product_brief:{
+				minlength:3
+			},	
+			BP_file:{
+
+			},
+			member_brief_name:"required",
+			member_brief_info:"required",
+		    contact: {
+		    	required: true
+		    },
+		    phone: {
+		    	required: true
+		    },
+		    email:{
+		    	required: true,
+		    	email: true
+		    },
+		    address:{
+		    	required: true
+		    },
+		    agree:{ // agree checkbox
+		    	required:true
+		    }
+		},
+		messages:{
+
+		},
+		submitHandler: function(){
+			submit_to_db(btn,form);
+		},
+		invalidHandler: function(){ // ani feedback
+			var color = btn.css('color');
+    		var bg = btn.css('background-color');
+			btn.addClass('btn-error');
+    		btn.css({'color':bg});
+			setTimeout(function(){
+				btn.removeClass('btn-error');
+			}, 1000);
+			setTimeout(function(){
+				btn.css({'color':color});
+			}, 1100);
+		}
+
+	});
+}
+
+
+function contact_form_check(btn,form){
+	$('#contact_us_form').validate({
+		debug: true,
+		success: 'valid',
+		rules:{
+			user_name:"required",
+			user_email:{
+				required:true,
+				email:true
+			},
+			subject:"required",
+			user_msg:"required"
+		},
+		messages:{
+
+		},
+		submitHandler: function(){
+			submit_to_db(btn,form);
+		},
+		invalidHandler: function(){ //ani feedback
+			var color = btn.css('color');
+    		var bg = btn.css('background-color');
+			btn.addClass('btn-error');
+    		btn.css({'color':bg});
+			setTimeout(function(){
+				btn.removeClass('btn-error');
+			}, 1000);
+			setTimeout(function(){
+				btn.css({'color':color});
+			}, 1100);
+		}
+	});
+}
+
+function submit_to_db(btn,form){ 
+//submit to db with Ajax and animation feedback
+
 	var color = btn.css('color');
     var bg = btn.css('background-color');
-    // var form = $('#contact_us_form');
        form.ajaxSubmit({
             error: function(xhr) {
             	console.log('xhr');
@@ -177,20 +262,10 @@ function form_submit(btn,form){
 				setTimeout(function(){
 					btn.css({'color':'#fff'});
 				}, 1100);
+				form.resetForm();
             }
     	});
         //Very important line, it disable the page refresh.
-    	return false;
-}
-
-
-//The validattion function
-function sub_form_check(){
-
-}
-
-function contact_form_check(){
-
 }
 
 
@@ -203,8 +278,6 @@ function initSlot(){
     	stopHidden : false,
     	direction : 'down'
 	});
-	// machine3.stop();
-	// machine3.shuffle();
 
 	$('#slotButton3').click(function(){
 			machine3.futureActive = 7;

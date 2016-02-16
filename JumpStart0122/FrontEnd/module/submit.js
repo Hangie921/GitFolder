@@ -10,6 +10,7 @@ var multer = require('multer'),
 	    cb(null, Date.now()+config.server.upload_file_format)
 	  }
 	});
+var log = require('../../SDK/error_handler');
 //setting above
 
 
@@ -59,7 +60,7 @@ var schema = function(){
 }//end of the schema function
 
 
-function to_object(req,res){   //pack all the info of the form into a object
+function to_object(req,res,callback){   //pack all the info of the form into a object
 	var doc = schema();
 	team_info = doc.team_info;
 
@@ -67,7 +68,8 @@ function to_object(req,res){   //pack all the info of the form into a object
 	team_info.product_brief = req.body.product_brief;
 	
 	console.log(team_info.member_brief);
-	console.log("Start to input members to the member_brief field");
+	// console.log("Start to input members to the member_brief field");
+	log.debug("Start to input members to the member_brief field");
 
 	if(typeof req.body.member_brief_name === 'string'){
 		team_info.member_brief = {"name":req.body.member_brief_name,"info":req.body.member_brief_info };
@@ -80,7 +82,8 @@ function to_object(req,res){   //pack all the info of the form into a object
 		}
 	}
 
-	console.log("Member_brief object = " + team_info.member_brief);
+	// console.log("Member_brief object = " + team_info.member_brief);
+	log.debug("Member_brief object = " + team_info.member_brief);
 
 	team_info.contact.name = req.body.contact;
 	team_info.contact.email = req.body.email;
@@ -89,14 +92,22 @@ function to_object(req,res){   //pack all the info of the form into a object
 	team_info.bp_file.file_name = req.file == true ? req.file.filename:null;
 	team_info.bp_file.file_path = req.file == true ? req.file.path:null;
 	return doc;//doc is already an object
+
 }
 
 function file_handler(req,res,field_name,callback){ // upload the bp file if there is any
 	
 	var upload = multer({ storage: storage1 }).single(field_name); // declare a multer object
 	upload(req,res,function(err){
-			console.log(req.file);
-			callback(err,req,res);
+		if(err){
+			log.error('Unexpected error');
+			log.error(err);
+		}else{
+			// console.log('read file:'+req.file);
+			log.debug('read file'+ req.file);
+			callback(null,req,res);	
+		}
+		
 	});
 
 }

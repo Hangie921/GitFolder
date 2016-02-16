@@ -8,6 +8,7 @@ var express = require("express"),
 	fs = require('fs'),
 	http = require('http'),
 	path = require('path');
+	log = require('../SDK/error_handler');
 
 
 
@@ -15,9 +16,15 @@ function initApp(port,view_engine,dir_path){
 	app.set("views",path.join(dir_path, "view"));
 	app.set('view engine',view_engine);
 	app.use( express.static( path.join(dir_path, "static") ) );
-	var server = app.listen(port ,function(){  //initial the server 
+	var server = app.listen(port ,function(err){  //initial the server 
+			if(err){
+				// console.log(err);
+				log.error(err);
+				return;
+			}
 			server.address().port = port;
-			console.log("Express server listening on port %s ", port);
+			log.info("Express server listening on port " +port);
+			// console.log("Express server listening on port %s ", port);
 	});
 	return app;
 }

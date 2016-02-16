@@ -1,6 +1,5 @@
 {
 	"server":{
-		
 		"port":3000,
 		"view_engine": "jade",
 		"upload_path": "./upload",
@@ -14,4 +13,5 @@
 		"user_name": "",
 		"user_password": ""
 	}
+	
 }

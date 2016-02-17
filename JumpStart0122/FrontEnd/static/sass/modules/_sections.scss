@@ -5,6 +5,17 @@ div.fp-section{
 	-o-box-sizing:border-box;
 	-ms-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
+	position:relative;
+
+	&:after{
+		content:"";
+		width:1px;
+		height:100%;
+		position:absolute;
+		left:49%;
+		display: block;
+		background-color:$primary-color
+	}
 }
 div.section-padding{
 	padding:8% 10% 0%;
@@ -31,120 +42,90 @@ div#sec_home {
 }
 
 .sloganContainer {
-	margin-top:50px;
-	max-width:500px;
+	margin: 90px auto 0;
+    max-width: 294px;
 	overflow:hidden;
 	color:$white;
 	height:700px;
+	padding-top:100px;
+	background:url(../img/slogan.png) no-repeat center top;
+	background-size:100% auto;
 	h2 {
-		font-size:50px;
+		text-indent: -9999px;
+		padding:0;
+		margin:0;
 	}
 
 	.slotMachine {
-		color:$secondary-color;
-		margin-top:-51px !important;
-		font-size:40px;
-		position:relative;
-		display: block;
-		width:290px;
-		margin-left: 122px !important;
-		opacity: 0.8;
+			color:$white;
+			height:80px;
+		    margin: 0px 0 0 !important;
+		    clear: both;
+		    float: left;
+		    color: #fbaf5d;
+		    font-size: 40px;
+		    display: block;
+		    width: 100%;
+		    opacity: 0.8;
+			border:1px solid $primary-color;
+			text-align: center;
+			position:relative;
 
-		&:before {
-	    content: '[';
-	    display: inline-block;
-	    margin-right: 15px;
+			
+
+		.slot {
+			color:$white;
+			font-size:39px;
+			padding-bottom:20px;
 		}
-		&:after {
-	    content: ']';
-	    position:absolute;
-	    right:0;
-	    top:0;
-	    display: inline-block;
-	    margin-left: 15px;
-		}
+
+
+
+
+		
 
 	}
+
+	.slot-border {
+			position:relative;
+			overflow:visible;
+			&:after {
+				content:"";
+				width:1px;
+				display: block;
+				position:absolute;
+				background-color:$secondary-color;
+				height:30px;
+				bottom:60px;
+				left:0px;
+				width:30px;
+
+			}
+
+		}
 	span.machine-border {
 	display: block;
-    background: #fff;
-    height: 1px;
-    width: 250px;
-    float: right;
-    margin-right: 141px;
-    margin-top: -6px;
+    background: $primary-color;
+    height: 9999px;
+    width: 1px;
+    position: absolute;
+    margin: -113px auto 0;
+    left:49%;
 
 	}
 
 
-	h2#slotButton3 {
-		margin-top:40px;
-		width:170px;
-		padding:10px;
-		display: block;
-		font-size:33px;
-		border-top:1px solid #fff;
-		border-left:1px solid #fff;
-		border-bottom:1px solid #fff;
-		position:relative;
-		transition: all 0.5s ;
-		-ms-transition: all 0.25s ;
-		-o-transition: all 0.25s ;
-		-webkit-transition: all 0.25s ;
-		-moz-transition: all 0.25s ;
-		
-		span {
-			position:absolute;
-			right:0;
-			top:0;
-			height:58px;
-			width:50px;
-			text-indent: -9999px;
-		
-
-			&:before {
-				position:absolute;
-				content:'';
-				display: block;
-				background:transparent;
-				top:0px;
-				width:41px;
-				height:40px;
-				left: 30px;
- 				top:8px;
-				border-top:1px solid #fff;
-				-ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
-			}
-			&:after {
-				position:absolute;
-				content:'';
-				display: block;
-				background:transparent;
-				top:0px;
-				width:41px;
-				height:40px;
-				left: 57px;
-    			top: 36px;
-				border-top:1px solid #fff;
-				-ms-transform: rotate(-45deg); /* IE 9 */
-    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
-    transform: rotate(-45deg);
-			}
-		}
-		&:hover {
-			margin-left:15px;
-
-		}
-
+	#slotButton3 {
+		margin-top:30px;
 	}
 
 
 }
 
 /*ABOUT SECTIOIN***/
-
+#sec_about {
+	background-color:$navy;
+}
 .top_animation {
 	background: url(../img/clouds.png) no-repeat center;
     min-height: 460px;
@@ -159,11 +140,12 @@ div#sec_home {
 }
 
 #sec_about {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f16b29+0,f16b29+59,f16b29+59,f16b29+63,e76423+63,e76423+63,e76423+85,d55516+85,d55516+100 */
-background:$navy ; /* Old browsers */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16b29', endColorstr='#d55516',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 	p {
+		display: block;
+		margin-top:100px;
+		background-color:$navy;
+		@include orange-border;
 		padding-top:250px;
 		text-shadow: 2px 2px 10px rgba(242, 107, 42, 0.7);
 	}

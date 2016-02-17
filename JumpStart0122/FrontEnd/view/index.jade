@@ -23,12 +23,6 @@ html
 
 	body
 		#fullpage
-			.backToTop
-				a(href='#home') 
-					span.fa.fa-angle-top 
-			.scrollDown.scrollDownAni
-				a(href='#about')
-					span.fa.fa-angle-down
 			.section#sec_home.container.section-padding(data-anchor='home')
 				header.container#header
 					.col-md-12
@@ -45,22 +39,26 @@ html
 								li(data-menuanchor='events') 
 									a(href='#events') events
 				.sloganContainer
-					h2 當你擁有
-					h2 100,000,000+ 使用者
-					h2 你會 
-						.slotMachine#slot3 
-							span.slot 喝杯咖啡先
-							span.slot 滑個臉書再說
-							span.slot 繼續逛網拍
-							span.slot 跳起來轉三圈
-							span.slot 先吃個下午茶
-							span.slot 翹課打LOL
-							span.slot 準備創業計畫
-							span.slot 夜唱夜衝夜遊
-						//- span.machine-border &nbsp	
+					h2 
+						b 當你擁有
+					h2 
+						span 100,000,000位 
+					h2 使用者，你會 
 
-					a#slotButton3.btn.btn-4.btn-4a.navy.icon-arrow-right 開始行動
+					.slotMachine#slot3 
+						span.slot 喝杯咖啡先
+						span.slot 滑個臉書再說
+						span.slot 繼續逛網拍
+						span.slot 跳起來轉三圈
+						span.slot 先吃個下午茶
+						span.slot 翹課打LOL
+						span.slot 準備創業計畫
+						span.slot 夜唱夜衝夜遊
+					//- span.machine-border &nbsp	
+
+					a#slotButton3.btn.btn-4.btn-4a.orange.icon-arrow-right 開始行動
 						span &nbsp;
+					span.machine-border
 					
 	
 			.section#sec_about.container.primary_bg.section-padding(data-anchor='about')

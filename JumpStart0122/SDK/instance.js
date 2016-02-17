@@ -8,7 +8,7 @@ var express = require("express"),
 	fs = require('fs'),
 	http = require('http'),
 	path = require('path');
-	log = require('../SDK/error_handler');
+	log = require('../SDK/log_handler');
 
 
 

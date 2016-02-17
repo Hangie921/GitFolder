@@ -1,4 +1,0 @@
-[2016-02-16 23:47:31.534] [DEBUG] debug - Uploading the detail from contact form
-[2016-02-16 23:47:31.553] [DEBUG] debug - detail uploaded
-[2016-02-16 23:47:31.554] [DEBUG] debug - Start to insert to contact
-[2016-02-16 23:47:31.590] [DEBUG] debug - Insert doc into 'contact' collection!

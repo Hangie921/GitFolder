@@ -1,5 +1,5 @@
 var multer= require("multer");
-var log = require("../../SDK/error_handler");
+var log = require("../../SDK/log_handler");
 //setting above
 
 var schema = function(){
@@ -43,19 +43,17 @@ function to_object(req,res){
 
 function form_handle(req,res,callback){
 	// console.log('Uploading the detail');
-	log.debug("Uploading the detail from contact form");
+	log.info("Uploading the detail from contact form");
 	// pack the detail of the form into req.body
 	var upload = multer().single();
 	upload(req,res,function(err){
 
 		if(err){
-			// console.log(err);
 			log.error("Unexpected error while uploading the details")
 			log.error(err);
 		}else{
-			// console.log("detail uploaded");
-			log.debug("detail uploaded");
-
+			log.info("detail uploaded");
+			
 			callback(null,req,res);
 		}
 	});

@@ -69,3 +69,7 @@ clear:both;
 .basic_btn {
 	@include button;
 }
+
+.hide {
+	display:none
+}

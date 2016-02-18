@@ -4,10 +4,10 @@ var md5 = require('../module/md5'),
 
 
 
-function checkDetail(detail){
-	if(detail.acc!=null && detail.psw!=null){
-		
-	}
+function checkDetail(detail){ //check empty in the page
+	
+	
+
 	//call the mongle handler() 
 	//checkAcc
 	//checkPsw

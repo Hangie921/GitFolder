@@ -72,46 +72,8 @@ html
 	
 
 			.section#sec_competition.container(data-anchor='competition')
-				.slide#competition_info_slide.slide-padding
-					.slide-inner.clearfix
-						.col-md-12.clearfix
-							ul.competition-headings#competition_menu
-								li
-									a(href="#competition") 參賽資訊
-								li 
-									a.selected(href="#competition/1") 競賽主題
-								li 
-									a(href="#competition/2") 獎項
-						.col-md-12.info_list
-							ul
-								li 團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關專業背景，因獲選後需實作。
-								li 不得為主承辦單位之競爭者。
-								li 運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書(Business Plan)，以15頁為限。
-								li  選進入第二階段後，參加決賽的團隊，每隊只可派出一至兩名核心成員參加簡報，簡報時間為5~8分鐘。
-								li 參賽專案的產品、技術及相關專利歸屬參賽團隊(Ping需佔股份，詢問法律顧問)。
-						.col-md-12
-							.timeline
-								ul
-									li 
-										h4 線上報名
-											span 五週
-										p 截止時間:  12AM 23/03/2016
-									li 
-										h4 決賽名單公布
-											span 一週
-										p 入選隊伍:  12AM 30/03/2016
-									li 
-										h4 決賽
-											span 一週
-										p 開始時間:  10 AM 06/04/2016
-									li 
-										h4 實作
-											span 四週
-										p 截止時間:  04/05/2016
-									
-
-
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
+					.fp-controlArrow.fp-next.competition_topic_slide_arrow
 					.slide-inner.clearfix
 						.col-md-12.clearfix
 							ul.competition-headings#competition_menu
@@ -147,10 +109,51 @@ html
 										a Ping!
 									li 
 										a DSEE
-						
+
+
+				.slide#competition_info_slide.slide-padding
+					.fp-controlArrow.fp-next.competition_info_slide_arrow
+					.fp-controlArrow.fp-prev.competition_info_slide_arrow
+					.slide-inner.clearfix
+						.col-md-12.clearfix
+							ul.competition-headings#competition_menu
+								li
+									a(href="#competition") 參賽資訊
+								li 
+									a.selected(href="#competition/1") 競賽主題
+								li 
+									a(href="#competition/2") 獎項
+						.col-md-12.info_list
+							ul
+								li 團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關專業背景，因獲選後需實作。
+								li 不得為主承辦單位之競爭者。
+								li 運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書(Business Plan)，以15頁為限。
+								li  選進入第二階段後，參加決賽的團隊，每隊只可派出一至兩名核心成員參加簡報，簡報時間為5~8分鐘。
+								li 參賽專案的產品、技術及相關專利歸屬參賽團隊(Ping需佔股份，詢問法律顧問)。
+						.col-md-12
+							.timeline
+								ul
+									li 
+										h4 線上報名
+											span 五週
+										p 截止時間:  12AM 23/03/2016
+									li 
+										h4 決賽名單公布
+											span 一週
+										p 入選隊伍:  12AM 30/03/2016
+									li 
+										h4 決賽
+											span 一週
+										p 開始時間:  10 AM 06/04/2016
+									li 
+										h4 實作
+											span 四週
+										p 截止時間:  04/05/2016
+											
 					
 
 				.slide#competition_prize_slide.slide-padding
+					.fp-controlArrow.fp-prev.competition_prize_slide_arrow
 					.slide-inner.clearfix
 						.col-md-12.clearfix
 							ul.competition-headings#competition_menu
@@ -178,6 +181,7 @@ html
 				//- 這樣包我就可以一個form包兩個slide的input
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
+						.fp-controlArrow.fp-next.slide_jumpnow_part1_arrow
 						.col-md-5.jumpnow-des
 							h3 三個步驟馬上加入Jumpstart計畫!
 							ul.plan_list
@@ -192,6 +196,8 @@ html
 								
 						
 					.slide.team_details.relative-position
+						.fp-controlArrow.fp-next.slide_team_details_arrow
+						.fp-controlArrow.fp-prev.slide_team_details_arrow
 						h2.hoshi
 						.col-md-5.clearfix
 								span.input.input--hoshi
@@ -224,6 +230,7 @@ html
 								a(class='button next_btn', href='#jumpnow/2') 下一步
 									span &nbsp;
 					.slide.personal_details.fp-auto-height
+						.fp-controlArrow.fp-prev.slide_personal_details_arrow
 						.col-md-6.personal_details_group.col-centered
 							span.input.input--hoshi
 								input#input-4.input__field.input__field--hoshi(type='text',name='contact')

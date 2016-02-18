@@ -71,7 +71,8 @@ $(document).ready(function() {
 		loopBottom:false,
 		loopTop:false,
 		loopHorizontal:false,
-		recordHistory:false
+		recordHistory:false,
+		controlArrows:false
 		// paddingTop:'8%',
 		// responsiveWidth: 700,
   //       responsiveHeight: 300

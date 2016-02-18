@@ -10,7 +10,10 @@ var instance = require('../SDK/instance'),
 
 
 var app = instance.startApp(config.server.port,config.server.view_engine,path.dirname(process.argv[1])),
+	//the app has been set the port, the view engine and the dir.path
 	mongoClient = instance.startMongo(config.mongo.url,config.mongo.port,config.mongo.db);
+
+
 
 index.route(app,mongoClient);
 login.route(app,mongoClient);

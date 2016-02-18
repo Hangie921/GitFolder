@@ -191,11 +191,16 @@ ul.plan_list {
 }
 /*COMPETITION****/
 
+.jumpnow_part1 .slide-inner {
+	border:none;
+}
 
 .slide-inner {
+	position:relative;
 	width:75%;
 	margin:5% auto 0;
 	@include orange-border;
+	
 }
 
 div.competition_topic {
@@ -219,30 +224,37 @@ div.competition_topic {
 		color:$primary-color;
 		font-size: 26px;
 	}
+
+	.btn {
+		position:absolute;
+		bottom:-100px;
+		left:35%;
+		margin:0 auto;
+		display: block;
+		text-align: center;
+	}
+}
+
+.info_list, .competition_topic p {
 }
 
 div#sec_competition {
-	
+
 }
 
 ul.competition-headings {
 	text-align:left;
-	padding:0px 0 0px;
+	padding:0px 0 20px;
 
 	li {
 		display: inline-block;
 		vertical-align: top;
-		
-
-
-		
-
-
 	}
 	a {
-		color:$primary-color;
+		color:#999;
 		display: block;
-		padding:20px 30px;
+		padding:15px 30px;
+		letter-spacing: 10px;
 			&.selected {
 			
 
@@ -252,6 +264,83 @@ ul.competition-headings {
 	}
 }
 
+.slide_next.arrow {
+	background:transparent;
+	height: 45px;
+	display:block;
+    width: 45px;
+    border: 1px solid $primary-color;
+    text-indent: -9999px;
+    @include border-radius(50%);
+    @include transition(all 0.1s);
+    right:-25px;
+    top:45%;
+    position:absolute;
+    background:$gray;
+     &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: transparent;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+   left: 25%;
+    top: 31%;
+    border-top: 1px solid $primary-color;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    background: transparent;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    left: 25%;
+    top: 31%;
+    border-top: 1px solid $primary-color;
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    }
+
+    &:hover {
+    	background-color:$primary-color;
+    	&:before,&:after {
+    		border-color:$gray;
+    	}
+    }
+
+   &.slide_team_details_arrow{
+   	background:$navy !important;
+   }
+
+}
+
+.slide_prev.arrow {
+	@extend .slide_next.arrow;
+	left:-20px;
+	 &:before {
+  	left: 40%;
+    top: 31%;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    }
+    &:after {
+    left: 40%;
+    top: 31%;
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    }
+
+    
+}
 /**COMPETITION PARTNERS*******/
 div.competition_topic {
 	a.basic_btn {
@@ -390,7 +479,7 @@ div.timeline {
 		    display: inline-block;
 		    height:91px;
 		    line-height: 30px;
-		    min-width: 230px;
+		    min-width: 200px;
 		    position: relative;
 			width: 25%;
 			padding: 20px 0px 20px 50px;
@@ -446,7 +535,7 @@ div.timeline {
 				h4 {
 					color:$primary-color;
 					margin:0;
-					font-size:20px;
+					font-size:18px;
 
 					span {
 					margin-top:-4px;
@@ -464,7 +553,7 @@ div.timeline {
 
 				p {
 					clear:both;
-					font-size:14px;
+					font-size:12px;
 					margin:0;
 					color:#999;
 				}
@@ -634,7 +723,7 @@ div.timeline {
 /***FORMS*****/
 .team_details {
 	padding:20px;
-	@include orange-border;
+	
 }
 .team_details_single>span {
 	clear:none;
@@ -654,6 +743,12 @@ div#sec_events{
 	position: relative;
 }
 
+#sec_jumpnow {
+	.slide-inner {
+		width:initial;
+
+	}
+}
 
 
 .event_single {

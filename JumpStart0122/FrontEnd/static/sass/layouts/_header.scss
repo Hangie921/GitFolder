@@ -103,10 +103,13 @@ ul.menu {
 
 
 .jumpnow_link a{
-		background:rgba(242,107,42,0.7);
 		padding:0 10px;
 		display: block;
 		padding:0 10px;
+		border-radius: 20px;
+		border:1px solid $secondary-color;
+    	font-weight: 600 !important;
+    	color:$secondary-color !important;
 	}
 #header,#header ul li a {
 	transition:color .5s, opacity .5s;

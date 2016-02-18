@@ -2194,33 +2194,36 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
 
 /* line 105, ../sass/layouts/_header.scss */
 .jumpnow_link a {
-  background: rgba(242, 107, 42, 0.7);
   padding: 0 10px;
   display: block;
   padding: 0 10px;
+  border-radius: 20px;
+  border: 1px solid #fbaf5d;
+  font-weight: 600 !important;
+  color: #fbaf5d !important;
 }
 
-/* line 111, ../sass/layouts/_header.scss */
+/* line 114, ../sass/layouts/_header.scss */
 #header, #header ul li a {
   transition: color .5s, opacity .5s;
 }
 
-/* line 114, ../sass/layouts/_header.scss */
+/* line 117, ../sass/layouts/_header.scss */
 #header.fff {
   background-color: transparent;
 }
 
-/* line 117, ../sass/layouts/_header.scss */
+/* line 120, ../sass/layouts/_header.scss */
 #header.fff ul li a {
   color: #333;
 }
 
-/* line 120, ../sass/layouts/_header.scss */
+/* line 123, ../sass/layouts/_header.scss */
 #header.orange {
   background-color: transparent;
 }
 
-/* line 123, ../sass/layouts/_header.scss */
+/* line 126, ../sass/layouts/_header.scss */
 #header.orange ul li a {
   color: #fff;
 }

@@ -751,8 +751,27 @@ div#sec_competition {
   background-color: #e8e8e8;
 }
 
+/* line 30, ../sass/modules/_sections.scss */
+.arrow {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+  position: absolute;
+  top: 50px;
+}
+/* line 37, ../sass/modules/_sections.scss */
+.arrow.slide_next {
+  border-radius: 50%;
+}
+/* line 40, ../sass/modules/_sections.scss */
+.arrow.slide_prev {
+  border: 1px solid #000;
+  top: 100px;
+}
+
 /****HOME******/
-/* line 32, ../sass/modules/_sections.scss */
+/* line 47, ../sass/modules/_sections.scss */
 div#sec_home {
   background: url("../img/home_bg.jpg") no-repeat center;
   background-size: cover;
@@ -763,7 +782,7 @@ div#sec_home {
   position: relative;
 }
 
-/* line 44, ../sass/modules/_sections.scss */
+/* line 59, ../sass/modules/_sections.scss */
 .sloganContainer {
   margin: 90px auto 0;
   max-width: 294px;
@@ -774,13 +793,13 @@ div#sec_home {
   background: url(../img/slogan.png) no-repeat center top;
   background-size: 100% auto;
 }
-/* line 53, ../sass/modules/_sections.scss */
+/* line 68, ../sass/modules/_sections.scss */
 .sloganContainer h2 {
   text-indent: -9999px;
   padding: 0;
   margin: 0;
 }
-/* line 59, ../sass/modules/_sections.scss */
+/* line 74, ../sass/modules/_sections.scss */
 .sloganContainer .slotMachine {
   color: white;
   height: 80px;
@@ -796,18 +815,18 @@ div#sec_home {
   text-align: center;
   position: relative;
 }
-/* line 76, ../sass/modules/_sections.scss */
+/* line 91, ../sass/modules/_sections.scss */
 .sloganContainer .slotMachine .slot {
   color: white;
   font-size: 39px;
   padding-bottom: 20px;
 }
-/* line 89, ../sass/modules/_sections.scss */
+/* line 104, ../sass/modules/_sections.scss */
 .sloganContainer .slot-border {
   position: relative;
   overflow: visible;
 }
-/* line 92, ../sass/modules/_sections.scss */
+/* line 107, ../sass/modules/_sections.scss */
 .sloganContainer .slot-border:after {
   content: "";
   width: 1px;
@@ -819,7 +838,7 @@ div#sec_home {
   left: 0px;
   width: 30px;
 }
-/* line 106, ../sass/modules/_sections.scss */
+/* line 121, ../sass/modules/_sections.scss */
 .sloganContainer span.machine-border {
   display: block;
   background: #f16b29;
@@ -829,13 +848,13 @@ div#sec_home {
   margin: -113px auto 0;
   left: 49%;
 }
-/* line 118, ../sass/modules/_sections.scss */
+/* line 133, ../sass/modules/_sections.scss */
 .sloganContainer #slotButton3 {
   margin-top: 30px;
 }
 
 /*ABOUT SECTIOIN***/
-/* line 126, ../sass/modules/_sections.scss */
+/* line 141, ../sass/modules/_sections.scss */
 #sec_about {
   background: #0e324b url(../img/clouds-new.png) no-repeat 28% 20%;
   background-size: 120% auto;
@@ -845,12 +864,12 @@ div#sec_home {
   background-size: 120% auto;
 }
 
-/* line 130, ../sass/modules/_sections.scss */
+/* line 145, ../sass/modules/_sections.scss */
 .top_animation {
   min-height: 460px;
 }
 
-/* line 133, ../sass/modules/_sections.scss */
+/* line 148, ../sass/modules/_sections.scss */
 .rocket {
   position: absolute;
   width: 278px;
@@ -865,7 +884,7 @@ div#sec_home {
   top: 80%;
 }
 
-/* line 145, ../sass/modules/_sections.scss */
+/* line 160, ../sass/modules/_sections.scss */
 #sec_about p {
   display: block;
   margin-top: 100px;
@@ -875,22 +894,28 @@ div#sec_home {
 }
 
 /********** Jump Now Section ********/
-/* line 157, ../sass/modules/_sections.scss */
+
+/* line 173, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #0e324b;
 }
-/* line 160, ../sass/modules/_sections.scss */
+
 div#sec_jumpnow p {
   font-size: 26px;
   line-height: 40px;
 }
 
-/* line 168, ../sass/modules/_sections.scss */
+
 ul.plan_list {
   padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
-/* line 175, ../sass/modules/_sections.scss */
+
+ul.plan_list li {
+  font-size: 26px;
+  line-height: 40px;
+}
+
 ul.plan_list li:before {
   width: 30px;
   height: 30px;
@@ -908,13 +933,14 @@ ul.plan_list li:before {
 }
 
 /*COMPETITION****/
-/* line 195, ../sass/modules/_sections.scss */
+
 .slide-inner {
   width: 75%;
   margin: 5% auto 0;
   border: 1px solid #f16b29;
 }
 
+<<<<<<< HEAD
 /* line 202, ../sass/modules/_sections.scss */
 div.competition_topic h4 {
   text-align: right;
@@ -938,47 +964,78 @@ div.competition_topic h5 {
 }
 
 /* line 228, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 ul.competition-headings {
   text-align: left;
   padding: 0px 0 0px;
 }
+<<<<<<< HEAD
 /* line 232, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 ul.competition-headings li {
   display: inline-block;
   vertical-align: top;
 }
+<<<<<<< HEAD
 /* line 242, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 ul.competition-headings a {
   color: #f16b29;
   display: block;
   padding: 20px 30px;
 }
+<<<<<<< HEAD
 /* line 246, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 ul.competition-headings a.selected {
   background-color: #f16b29;
   color: white;
 }
 
 /**COMPETITION PARTNERS*******/
+<<<<<<< HEAD
 /* line 257, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.competition_topic a.basic_btn {
   margin-top: 5%;
   margin-left: 140px !important;
 }
 
+<<<<<<< HEAD
 /* line 262, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.sponsors {
   position: absolute;
   bottom: 150px;
   left: 0;
 }
 
+<<<<<<< HEAD
 /* line 269, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 ul.partners {
   padding: 0;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 273, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 ul.partners li {
   background-color: #eee;
   width: 100px;
@@ -1015,12 +1072,17 @@ ul.partners li {
   -moz-transition: all 0.1s;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 /* line 308, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 ul.partners li a {
   color: #f16b29;
   display: block;
   text-indent: -9999px;
 }
+<<<<<<< HEAD
 /* line 314, ../sass/modules/_sections.scss */
 ul.partners li:first-child {
   background-image: url(../img/螞蜂窩_logo.png);
@@ -1050,6 +1112,37 @@ ul.partners li:nth-child(7) {
   background-image: url(../img/DSEE_logo.png);
 }
 /* line 336, ../sass/modules/_sections.scss */
+=======
+
+/* line 308, ../sass/modules/_sections.scss */
+ul.partners li:first-child {
+  background-image: url(../img/螞蜂窩_logo.png);
+}
+/* line 312, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(2) {
+  background-image: url(../img/venture_craft_logo.png);
+}
+/* line 315, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(3) {
+  background-image: url(../img/365_logo.png);
+}
+/* line 318, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(4) {
+  background-image: url(../img/e27_logo.png);
+}
+/* line 321, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(5) {
+  background-image: url(../img/citytours_logo.png);
+}
+/* line 324, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(6) {
+  background-image: url(../img/ping_logo.png);
+}
+/* line 327, ../sass/modules/_sections.scss */
+ul.partners li:nth-child(7) {
+  background-image: url(../img/DSEE_logo.png);
+}
+>>>>>>> origin/master
 ul.partners li:hover {
   -moz-background-blend-mode: normal;
   -ms-background-blend-mode: normal;
@@ -1065,11 +1158,20 @@ ul.partners li:hover {
 }
 
 /**COMPETITION DETAILS**/
+<<<<<<< HEAD
 /* line 357, ../sass/modules/_sections.scss */
 .info_list ul {
   padding: 0;
 }
 /* line 362, ../sass/modules/_sections.scss */
+=======
+
+.info_list ul {
+  padding: 0;
+}
+/* line 356, ../sass/modules/_sections.scss */
+
+>>>>>>> origin/master
 .info_list ul li:before {
   content: "";
   width: 20px;
@@ -1089,12 +1191,23 @@ ul.partners li:hover {
 div.timeline {
   margin-top: 50px;
 }
+<<<<<<< HEAD
 /* line 378, ../sass/modules/_sections.scss */
+=======
+/* line 355, ../sass/modules/_sections.scss */
+
+>>>>>>> origin/master
 div.timeline ul {
   position: relative;
   padding: 0 0 25px;
 }
+<<<<<<< HEAD
 /* line 383, ../sass/modules/_sections.scss */
+=======
+
+
+/* line 360, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul:after {
   display: none;
 }
@@ -1125,7 +1238,11 @@ div.timeline ul li {
   -o-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
+<<<<<<< HEAD
 /* line 414, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.timeline ul li:hover {
   position: relative;
   bottom: 15px;
@@ -1135,7 +1252,11 @@ div.timeline ul li:hover {
   -o-box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
   box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
 }
+<<<<<<< HEAD
 /* line 424, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.timeline ul li:first-child {
   z-index: 3;
   padding-left: 10px;
@@ -1166,7 +1287,11 @@ div.timeline ul li h4 {
   margin: 0;
   font-size: 20px;
 }
+<<<<<<< HEAD
 /* line 451, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.timeline ul li h4 span {
   margin-top: -4px;
   font-size: 14px;
@@ -1179,14 +1304,22 @@ div.timeline ul li h4 span {
   padding: 0px 10px;
   color: #fff !important;
 }
+<<<<<<< HEAD
 /* line 465, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.timeline ul li p {
   clear: both;
   font-size: 14px;
   margin: 0;
   color: #999;
 }
+<<<<<<< HEAD
 /* line 475, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.timeline ul li:after {
   content: '';
   position: absolute;
@@ -1199,7 +1332,11 @@ div.timeline ul li:after {
   right: -45px;
   top: -1px;
 }
+<<<<<<< HEAD
 /* line 488, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.timeline ul li:before {
   content: '';
   position: absolute;
@@ -1212,13 +1349,22 @@ div.timeline ul li:before {
   right: -46px;
   top: -1px;
 }
+<<<<<<< HEAD
 /* line 503, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.timeline ul li:last-child {
   margin-right: 0px;
 }
 
 /* PRIZE**/
+<<<<<<< HEAD
 /* line 515, ../sass/modules/_sections.scss */
+=======
+
+/* line 492, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide {
   display: block;
 }
@@ -1229,21 +1375,38 @@ div.timeline ul li:last-child {
   margin-top: 30px;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 525, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 #competition_prize_slide .prize-single {
   margin: 0 auto;
   min-height: 300px;
 }
+<<<<<<< HEAD
 /* line 528, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type {
   background: url(../img/secondplace.png) no-repeat center 91px;
 }
 /* line 530, ../sass/modules/_sections.scss */
+=======
+
+/* line 505, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single:first-of-type {
+  background: url(../img/secondplace.png) no-repeat center 91px;
+}
+
+>>>>>>> origin/master
 #competition_prize_slide .prize-single:first-of-type h4 {
   font-size: 45px;
   color: #757575;
 }
+<<<<<<< HEAD
 /* line 535, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 #competition_prize_slide .prize-single:nth-of-type(2) {
   background: url(../img/firstplace.png) no-repeat center 5px;
   background-size: 68% auto;
@@ -1252,16 +1415,30 @@ div.timeline ul li:last-child {
   -ms-background-size: 68% auto;
   background-size: 68% auto;
 }
+<<<<<<< HEAD
 /* line 539, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) {
   background: url(../img/thirdplace.png) no-repeat center 138px;
 }
 /* line 541, ../sass/modules/_sections.scss */
+=======
+
+/* line 516, ../sass/modules/_sections.scss */
+#competition_prize_slide .prize-single:nth-of-type(3) {
+  background: url(../img/thirdplace.png) no-repeat center 138px;
+}
+/* line 518, ../sass/modules/_sections.scss */
+
+>>>>>>> origin/master
 #competition_prize_slide .prize-single:nth-of-type(3) h4 {
   font-size: 45px;
   color: #757575;
 }
+<<<<<<< HEAD
 /* line 547, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 #competition_prize_slide .prize-single h4 {
   display: block;
   text-align: center;
@@ -1274,7 +1451,11 @@ div.timeline ul li:last-child {
 }
 
 /**JUMP******/
+<<<<<<< HEAD
 /* line 571, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -1295,7 +1476,11 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
+<<<<<<< HEAD
 /* line 592, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -1305,7 +1490,11 @@ div.timeline ul li:last-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
+<<<<<<< HEAD
 /* line 602, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -1317,58 +1506,100 @@ div.timeline ul li:last-child {
   background: url(../img/download_btn.png) no-repeat center center;
 }
 
+<<<<<<< HEAD
 /* line 619, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .jumpnow-des {
   border: 1px solid #f16b29;
   padding: 20px;
 }
+<<<<<<< HEAD
 /* line 623, ../sass/modules/_sections.scss */
 .jumpnow-des h3 {
   color: #f16b29;
 }
 /* line 627, ../sass/modules/_sections.scss */
+=======
+
+/* line 600, ../sass/modules/_sections.scss */
+.jumpnow-des h3 {
+  color: #f16b29;
+}
+/* line 604, ../sass/modules/_sections.scss */
+
+>>>>>>> origin/master
 .jumpnow-des li {
   color: white;
 }
 
+<<<<<<< HEAD
 /* line 631, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .jumpnow-btn-set {
   margin-top: 20%;
 }
 
 /***FORMS*****/
+<<<<<<< HEAD
 /* line 635, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .team_details {
   padding: 20px;
   border: 1px solid #f16b29;
 }
 
+<<<<<<< HEAD
 /* line 639, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .team_details_single > span {
   clear: none;
 }
 
+<<<<<<< HEAD
 /* line 642, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
+<<<<<<< HEAD
 /* line 646, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
+<<<<<<< HEAD
 /* line 651, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 659, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .event_single {
   position: relative;
   padding: 10px;
@@ -1384,33 +1615,53 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
+<<<<<<< HEAD
 /* line 677, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
+<<<<<<< HEAD
 /* line 683, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
+<<<<<<< HEAD
 /* line 689, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
+<<<<<<< HEAD
 /* line 693, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
+<<<<<<< HEAD
 /* line 700, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1421,14 +1672,22 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
+<<<<<<< HEAD
 /* line 712, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
+<<<<<<< HEAD
 /* line 721, ../sass/modules/_sections.scss */
+=======
+
+>>>>>>> origin/master
 div.contact_container {
   width: 100%;
   background: #f16b29;
@@ -1438,11 +1697,21 @@ div.contact_container {
   left: 0;
   bottom: -250px;
 }
+<<<<<<< HEAD
 /* line 730, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
 /* line 733, ../sass/modules/_sections.scss */
+=======
+
+/* line 724, ../sass/modules/_sections.scss */
+div.contact_container .contact_header {
+  cursor: pointer;
+}
+/* line 727, ../sass/modules/_sections.scss */
+
+>>>>>>> origin/master
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1453,11 +1722,21 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
+<<<<<<< HEAD
 /* line 744, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
 /* line 746, ../sass/modules/_sections.scss */
+=======
+
+/* line 738, ../sass/modules/_sections.scss */
+div.contact_container .input {
+  margin: 0;
+}
+/* line 740, ../sass/modules/_sections.scss */
+
+>>>>>>> origin/master
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
@@ -1466,7 +1745,12 @@ div.contact_container .input input {
 div.contact_container .input label {
   color: #fff;
 }
+<<<<<<< HEAD
 /* line 757, ../sass/modules/_sections.scss */
+=======
+/* line 734, ../sass/modules/_sections.scss */
+
+>>>>>>> origin/master
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1478,11 +1762,21 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
+<<<<<<< HEAD
 /* line 768, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 /* line 773, ../sass/modules/_sections.scss */
+=======
+
+/* line 745, ../sass/modules/_sections.scss */
+div.contact_container textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 750, ../sass/modules/_sections.scss */
+
+>>>>>>> origin/master
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;

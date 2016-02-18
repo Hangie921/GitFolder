@@ -4,14 +4,15 @@ var md5 = require('../module/md5'),
 
 
 
-function checkDetail(detail){ //check empty in the page
-	
+
+function checkDetail(detail,detail_mongo){ //check empty in the page
 	
 
 	//call the mongle handler() 
 	//checkAcc
 	//checkPsw
 	//return status
+	return true;
 }
 
 

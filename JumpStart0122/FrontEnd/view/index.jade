@@ -73,14 +73,14 @@ html
 
 			.section#sec_competition.container(data-anchor='competition')
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
-					.fp-controlArrow.fp-next.competition_topic_slide_arrow
 					.slide-inner.clearfix
+						a.competition_topic_slide_arrow.slide_next.arrow(href="#competition/1") next
 						.col-md-12.clearfix
 							ul.competition-headings#competition_menu
-								li
-									a(href="#competition") 參賽資訊
 								li 
-									a.selected(href="#competition/1") 競賽主題
+									a.selected(href="#competition/") 競賽主題
+								li
+									a(href="#competition/1") 參賽資訊
 								li 
 									a(href="#competition/2") 獎項
 						.col-md-5
@@ -112,15 +112,15 @@ html
 
 
 				.slide#competition_info_slide.slide-padding
-					.fp-controlArrow.fp-next.competition_info_slide_arrow
-					.fp-controlArrow.fp-prev.competition_info_slide_arrow
 					.slide-inner.clearfix
+						a.competition_info_slide_arrow.slide_next.arrow(href="#competition/2") next
+						a.competition_info_slide_arrow.slide_prev.arrow(href="#competition") prev
 						.col-md-12.clearfix
 							ul.competition-headings#competition_menu
-								li
-									a(href="#competition") 參賽資訊
 								li 
-									a.selected(href="#competition/1") 競賽主題
+									a(href="#competition/") 競賽主題
+								li
+									a.selected(href="#competition/1") 參賽資訊
 								li 
 									a(href="#competition/2") 獎項
 						.col-md-12.info_list
@@ -153,16 +153,16 @@ html
 					
 
 				.slide#competition_prize_slide.slide-padding
-					.fp-controlArrow.fp-prev.competition_prize_slide_arrow
 					.slide-inner.clearfix
+						a.competition_prize_slide_arrow.slide_prev.arrow(href="#competition/1") prev
 						.col-md-12.clearfix
 							ul.competition-headings#competition_menu
+								li 
+									a(href="#competition") 競賽主題
 								li
-									a(href="#competition") 參賽資訊
+									a(href="#competition/1") 參賽資訊
 								li 
-									a.selected(href="#competition/1") 競賽主題
-								li 
-									a(href="#competition/2") 獎項
+									a.selected(href="#competition/2") 獎項
 							.col-md-12
 								.col-md-4.prize-single
 									h4 $90,000 
@@ -181,7 +181,7 @@ html
 				//- 這樣包我就可以一個form包兩個slide的input
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
-						.fp-controlArrow.fp-next.slide_jumpnow_part1_arrow
+						a.slide_next.arrow.slide_jumpnow_part1_arrow(href="#jumpnow/1") next
 						.col-md-5.jumpnow-des
 							h3 三個步驟馬上加入Jumpstart計畫!
 							ul.plan_list
@@ -196,8 +196,8 @@ html
 								
 						
 					.slide.team_details.relative-position
-						.fp-controlArrow.fp-next.slide_team_details_arrow
-						.fp-controlArrow.fp-prev.slide_team_details_arrow
+						a.slide_next.arrow.slide_team_details_arrow(href="#jumpnow/2") next
+						a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow") prev
 						h2.hoshi
 						.col-md-5.clearfix
 								span.input.input--hoshi
@@ -230,7 +230,7 @@ html
 								a(class='button next_btn', href='#jumpnow/2') 下一步
 									span &nbsp;
 					.slide.personal_details.fp-auto-height
-						.fp-controlArrow.fp-prev.slide_personal_details_arrow
+						a.slide_prev.arrow.slide_personal_details_arrow(href="#jumpnow/1") prev
 						.col-md-6.personal_details_group.col-centered
 							span.input.input--hoshi
 								input#input-4.input__field.input__field--hoshi(type='text',name='contact')

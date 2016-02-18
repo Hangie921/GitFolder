@@ -751,28 +751,8 @@ div#sec_competition {
   background-color: #e8e8e8;
 }
 
-/* line 30, ../sass/modules/_sections.scss */
-.arrow {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #f00;
-  position: absolute;
-  top: 50px;
-}
-/* line 37, ../sass/modules/_sections.scss */
-.arrow.slide_next {
-  border-radius: 50%;
-}
-/* line 40, ../sass/modules/_sections.scss */
-.arrow.slide_prev {
-  border: 1px solid #000;
-  top: 100px;
-  background-color: #000;
-}
-
 /****HOME******/
-/* line 48, ../sass/modules/_sections.scss */
+/* line 32, ../sass/modules/_sections.scss */
 div#sec_home {
   background: url("../img/home_bg.jpg") no-repeat center;
   background-size: cover;
@@ -783,7 +763,7 @@ div#sec_home {
   position: relative;
 }
 
-/* line 60, ../sass/modules/_sections.scss */
+/* line 44, ../sass/modules/_sections.scss */
 .sloganContainer {
   margin: 90px auto 0;
   max-width: 294px;
@@ -794,13 +774,13 @@ div#sec_home {
   background: url(../img/slogan.png) no-repeat center top;
   background-size: 100% auto;
 }
-/* line 69, ../sass/modules/_sections.scss */
+/* line 53, ../sass/modules/_sections.scss */
 .sloganContainer h2 {
   text-indent: -9999px;
   padding: 0;
   margin: 0;
 }
-/* line 75, ../sass/modules/_sections.scss */
+/* line 59, ../sass/modules/_sections.scss */
 .sloganContainer .slotMachine {
   color: white;
   height: 80px;
@@ -816,18 +796,18 @@ div#sec_home {
   text-align: center;
   position: relative;
 }
-/* line 92, ../sass/modules/_sections.scss */
+/* line 76, ../sass/modules/_sections.scss */
 .sloganContainer .slotMachine .slot {
   color: white;
   font-size: 39px;
   padding-bottom: 20px;
 }
-/* line 105, ../sass/modules/_sections.scss */
+/* line 89, ../sass/modules/_sections.scss */
 .sloganContainer .slot-border {
   position: relative;
   overflow: visible;
 }
-/* line 108, ../sass/modules/_sections.scss */
+/* line 92, ../sass/modules/_sections.scss */
 .sloganContainer .slot-border:after {
   content: "";
   width: 1px;
@@ -839,7 +819,7 @@ div#sec_home {
   left: 0px;
   width: 30px;
 }
-/* line 122, ../sass/modules/_sections.scss */
+/* line 106, ../sass/modules/_sections.scss */
 .sloganContainer span.machine-border {
   display: block;
   background: #f16b29;
@@ -849,13 +829,13 @@ div#sec_home {
   margin: -113px auto 0;
   left: 49%;
 }
-/* line 134, ../sass/modules/_sections.scss */
+/* line 118, ../sass/modules/_sections.scss */
 .sloganContainer #slotButton3 {
   margin-top: 30px;
 }
 
 /*ABOUT SECTIOIN***/
-/* line 142, ../sass/modules/_sections.scss */
+/* line 126, ../sass/modules/_sections.scss */
 #sec_about {
   background: #0e324b url(../img/clouds-new.png) no-repeat 28% 20%;
   background-size: 120% auto;
@@ -865,12 +845,12 @@ div#sec_home {
   background-size: 120% auto;
 }
 
-/* line 146, ../sass/modules/_sections.scss */
+/* line 130, ../sass/modules/_sections.scss */
 .top_animation {
   min-height: 460px;
 }
 
-/* line 149, ../sass/modules/_sections.scss */
+/* line 133, ../sass/modules/_sections.scss */
 .rocket {
   position: absolute;
   width: 278px;
@@ -885,7 +865,7 @@ div#sec_home {
   top: 80%;
 }
 
-/* line 161, ../sass/modules/_sections.scss */
+/* line 145, ../sass/modules/_sections.scss */
 #sec_about p {
   display: block;
   margin-top: 100px;
@@ -895,22 +875,22 @@ div#sec_home {
 }
 
 /********** Jump Now Section ********/
-/* line 173, ../sass/modules/_sections.scss */
+/* line 157, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #0e324b;
 }
-/* line 176, ../sass/modules/_sections.scss */
+/* line 160, ../sass/modules/_sections.scss */
 div#sec_jumpnow p {
   font-size: 26px;
   line-height: 40px;
 }
 
-/* line 184, ../sass/modules/_sections.scss */
+/* line 168, ../sass/modules/_sections.scss */
 ul.plan_list {
   padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
-/* line 191, ../sass/modules/_sections.scss */
+/* line 175, ../sass/modules/_sections.scss */
 ul.plan_list li:before {
   width: 30px;
   height: 30px;
@@ -928,17 +908,13 @@ ul.plan_list li:before {
 }
 
 /*COMPETITION****/
-/* line 211, ../sass/modules/_sections.scss */
+/* line 195, ../sass/modules/_sections.scss */
 .slide-inner {
   width: 75%;
   margin: 5% auto 0;
   border: 1px solid #f16b29;
 }
 
-<<<<<<< HEAD
-/* line 221, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 202, ../sass/modules/_sections.scss */
 div.competition_topic h4 {
   text-align: right;
@@ -962,107 +938,47 @@ div.competition_topic h5 {
 }
 
 /* line 228, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 ul.competition-headings {
   text-align: left;
   padding: 0px 0 0px;
 }
-<<<<<<< HEAD
-/* line 225, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 232, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 ul.competition-headings li {
   display: inline-block;
   vertical-align: top;
 }
-<<<<<<< HEAD
-/* line 235, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 242, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 ul.competition-headings a {
   color: #f16b29;
   display: block;
   padding: 20px 30px;
 }
-<<<<<<< HEAD
-/* line 239, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 246, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 ul.competition-headings a.selected {
   background-color: #f16b29;
   color: white;
 }
 
 /**COMPETITION PARTNERS*******/
-<<<<<<< HEAD
-/* line 250, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 257, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.competition_topic a.basic_btn {
   margin-top: 5%;
   margin-left: 140px !important;
 }
 
-<<<<<<< HEAD
-/* line 255, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 262, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.sponsors {
   position: absolute;
   bottom: 150px;
   left: 0;
 }
 
-<<<<<<< HEAD
-/* line 262, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 269, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 ul.partners {
   padding: 0;
   text-align: center;
 }
-<<<<<<< HEAD
-/* line 266, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 273, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 ul.partners li {
   background-color: #eee;
   width: 100px;
@@ -1099,24 +1015,12 @@ ul.partners li {
   -moz-transition: all 0.1s;
   opacity: 0.8;
 }
-<<<<<<< HEAD
-/* line 301, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 308, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 ul.partners li a {
   color: #f16b29;
   display: block;
   text-indent: -9999px;
 }
-<<<<<<< HEAD
-/* line 307, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 314, ../sass/modules/_sections.scss */
 ul.partners li:first-child {
   background-image: url(../img/螞蜂窩_logo.png);
@@ -1146,42 +1050,6 @@ ul.partners li:nth-child(7) {
   background-image: url(../img/DSEE_logo.png);
 }
 /* line 336, ../sass/modules/_sections.scss */
-=======
-
-/* line 308, ../sass/modules/_sections.scss */
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
-ul.partners li:first-child {
-  background-image: url(../img/螞蜂窩_logo.png);
-}
-/* line 311, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(2) {
-  background-image: url(../img/venture_craft_logo.png);
-}
-/* line 314, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(3) {
-  background-image: url(../img/365_logo.png);
-}
-/* line 317, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(4) {
-  background-image: url(../img/e27_logo.png);
-}
-/* line 320, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(5) {
-  background-image: url(../img/citytours_logo.png);
-}
-/* line 323, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(6) {
-  background-image: url(../img/ping_logo.png);
-}
-/* line 326, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(7) {
-  background-image: url(../img/DSEE_logo.png);
-}
-<<<<<<< HEAD
-/* line 329, ../sass/modules/_sections.scss */
-=======
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 ul.partners li:hover {
   -moz-background-blend-mode: normal;
   -ms-background-blend-mode: normal;
@@ -1197,28 +1065,11 @@ ul.partners li:hover {
 }
 
 /**COMPETITION DETAILS**/
-<<<<<<< HEAD
-/* line 350, ../sass/modules/_sections.scss */
-.info_list ul {
-  padding: 0;
-}
-/* line 355, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 357, ../sass/modules/_sections.scss */
 .info_list ul {
   padding: 0;
 }
 /* line 362, ../sass/modules/_sections.scss */
-=======
-
-.info_list ul {
-  padding: 0;
-}
-/* line 356, ../sass/modules/_sections.scss */
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .info_list ul li:before {
   content: "";
   width: 20px;
@@ -1234,47 +1085,20 @@ ul.partners li:hover {
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
-/* line 369, ../sass/modules/_sections.scss */
-div.timeline {
-  margin-top: 50px;
-}
-/* line 371, ../sass/modules/_sections.scss */
-=======
 /* line 376, ../sass/modules/_sections.scss */
 div.timeline {
   margin-top: 50px;
 }
-<<<<<<< HEAD
 /* line 378, ../sass/modules/_sections.scss */
-=======
-/* line 355, ../sass/modules/_sections.scss */
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul {
   position: relative;
   padding: 0 0 25px;
 }
-<<<<<<< HEAD
-/* line 376, ../sass/modules/_sections.scss */
-div.timeline ul:after {
-  display: none;
-}
-/* line 381, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 383, ../sass/modules/_sections.scss */
-=======
-
-
-/* line 360, ../sass/modules/_sections.scss */
->>>>>>> origin/master
 div.timeline ul:after {
   display: none;
 }
 /* line 388, ../sass/modules/_sections.scss */
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li {
   vertical-align: bottom;
   display: inline-block;
@@ -1301,15 +1125,7 @@ div.timeline ul li {
   -o-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
-<<<<<<< HEAD
-/* line 407, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 414, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li:hover {
   position: relative;
   bottom: 15px;
@@ -1319,42 +1135,11 @@ div.timeline ul li:hover {
   -o-box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
   box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
 }
-<<<<<<< HEAD
-/* line 417, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 424, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li:first-child {
   z-index: 3;
   padding-left: 10px;
 }
-<<<<<<< HEAD
-/* line 421, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(2) {
-  z-index: 2;
-}
-/* line 424, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(3) {
-  z-index: 1;
-}
-/* line 428, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4) {
-  padding-right: 10px;
-}
-/* line 430, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4):after {
-  display: none;
-}
-/* line 433, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4):before {
-  display: none;
-}
-/* line 439, ../sass/modules/_sections.scss */
-=======
 /* line 428, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(2) {
   z-index: 2;
@@ -1376,21 +1161,12 @@ div.timeline ul li:nth-child(4):before {
   display: none;
 }
 /* line 446, ../sass/modules/_sections.scss */
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li h4 {
   color: #f16b29;
   margin: 0;
   font-size: 20px;
 }
-<<<<<<< HEAD
-/* line 444, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 451, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li h4 span {
   margin-top: -4px;
   font-size: 14px;
@@ -1403,30 +1179,14 @@ div.timeline ul li h4 span {
   padding: 0px 10px;
   color: #fff !important;
 }
-<<<<<<< HEAD
-/* line 458, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 465, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li p {
   clear: both;
   font-size: 14px;
   margin: 0;
   color: #999;
 }
-<<<<<<< HEAD
-/* line 468, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 475, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li:after {
   content: '';
   position: absolute;
@@ -1439,15 +1199,7 @@ div.timeline ul li:after {
   right: -45px;
   top: -1px;
 }
-<<<<<<< HEAD
-/* line 481, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 488, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li:before {
   content: '';
   position: absolute;
@@ -1460,92 +1212,38 @@ div.timeline ul li:before {
   right: -46px;
   top: -1px;
 }
-<<<<<<< HEAD
-/* line 496, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 503, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.timeline ul li:last-child {
   margin-right: 0px;
 }
 
 /* PRIZE**/
-<<<<<<< HEAD
-/* line 508, ../sass/modules/_sections.scss */
-#competition_prize_slide {
-  display: block;
-}
-/* line 511, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 515, ../sass/modules/_sections.scss */
-=======
-
-/* line 492, ../sass/modules/_sections.scss */
->>>>>>> origin/master
 #competition_prize_slide {
   display: block;
 }
 /* line 518, ../sass/modules/_sections.scss */
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 #competition_prize_slide p {
   color: #f16b29 !important;
   font-size: 24px;
   margin-top: 30px;
   text-align: center;
 }
-<<<<<<< HEAD
-/* line 518, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 525, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 #competition_prize_slide .prize-single {
   margin: 0 auto;
   min-height: 300px;
 }
-<<<<<<< HEAD
-/* line 521, ../sass/modules/_sections.scss */
-#competition_prize_slide .prize-single:first-of-type {
-  background: url(../img/secondplace.png) no-repeat center 91px;
-}
-/* line 523, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 528, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type {
   background: url(../img/secondplace.png) no-repeat center 91px;
 }
 /* line 530, ../sass/modules/_sections.scss */
-=======
-
-/* line 505, ../sass/modules/_sections.scss */
-#competition_prize_slide .prize-single:first-of-type {
-  background: url(../img/secondplace.png) no-repeat center 91px;
-}
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 #competition_prize_slide .prize-single:first-of-type h4 {
   font-size: 45px;
   color: #757575;
 }
-<<<<<<< HEAD
-/* line 528, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 535, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 #competition_prize_slide .prize-single:nth-of-type(2) {
   background: url(../img/firstplace.png) no-repeat center 5px;
   background-size: 68% auto;
@@ -1554,42 +1252,16 @@ div.timeline ul li:last-child {
   -ms-background-size: 68% auto;
   background-size: 68% auto;
 }
-<<<<<<< HEAD
-/* line 532, ../sass/modules/_sections.scss */
-#competition_prize_slide .prize-single:nth-of-type(3) {
-  background: url(../img/thirdplace.png) no-repeat center 138px;
-}
-/* line 534, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 539, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) {
   background: url(../img/thirdplace.png) no-repeat center 138px;
 }
 /* line 541, ../sass/modules/_sections.scss */
-=======
-
-/* line 516, ../sass/modules/_sections.scss */
-#competition_prize_slide .prize-single:nth-of-type(3) {
-  background: url(../img/thirdplace.png) no-repeat center 138px;
-}
-/* line 518, ../sass/modules/_sections.scss */
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 #competition_prize_slide .prize-single:nth-of-type(3) h4 {
   font-size: 45px;
   color: #757575;
 }
-<<<<<<< HEAD
-/* line 540, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 547, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 #competition_prize_slide .prize-single h4 {
   display: block;
   text-align: center;
@@ -1602,15 +1274,7 @@ div.timeline ul li:last-child {
 }
 
 /**JUMP******/
-<<<<<<< HEAD
-/* line 564, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 571, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -1631,15 +1295,7 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-<<<<<<< HEAD
-/* line 585, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 592, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -1649,15 +1305,7 @@ div.timeline ul li:last-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-<<<<<<< HEAD
-/* line 595, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 602, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -1669,140 +1317,58 @@ div.timeline ul li:last-child {
   background: url(../img/download_btn.png) no-repeat center center;
 }
 
-<<<<<<< HEAD
-/* line 612, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 619, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .jumpnow-des {
   border: 1px solid #f16b29;
   padding: 20px;
 }
-<<<<<<< HEAD
-/* line 616, ../sass/modules/_sections.scss */
-.jumpnow-des h3 {
-  color: #f16b29;
-}
-/* line 620, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 623, ../sass/modules/_sections.scss */
 .jumpnow-des h3 {
   color: #f16b29;
 }
 /* line 627, ../sass/modules/_sections.scss */
-=======
-
-/* line 600, ../sass/modules/_sections.scss */
-.jumpnow-des h3 {
-  color: #f16b29;
-}
-/* line 604, ../sass/modules/_sections.scss */
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .jumpnow-des li {
   color: white;
 }
 
-<<<<<<< HEAD
-/* line 624, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 631, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .jumpnow-btn-set {
   margin-top: 20%;
 }
 
 /***FORMS*****/
-<<<<<<< HEAD
-/* line 628, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 635, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .team_details {
   padding: 20px;
   border: 1px solid #f16b29;
 }
 
-<<<<<<< HEAD
-/* line 632, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 639, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .team_details_single > span {
   clear: none;
 }
 
-<<<<<<< HEAD
-/* line 635, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 642, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-<<<<<<< HEAD
-/* line 639, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 646, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
-<<<<<<< HEAD
-/* line 644, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 651, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
-<<<<<<< HEAD
-/* line 652, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 659, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .event_single {
   position: relative;
   padding: 10px;
@@ -1818,73 +1384,33 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
-<<<<<<< HEAD
-/* line 670, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 677, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
-<<<<<<< HEAD
-/* line 676, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 683, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
-<<<<<<< HEAD
-/* line 682, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 689, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
-<<<<<<< HEAD
-/* line 686, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 693, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
-<<<<<<< HEAD
-/* line 693, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 700, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1895,30 +1421,14 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
-<<<<<<< HEAD
-/* line 705, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 712, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
-<<<<<<< HEAD
-/* line 714, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 721, ../sass/modules/_sections.scss */
-=======
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.contact_container {
   width: 100%;
   background: #f16b29;
@@ -1928,29 +1438,11 @@ div.contact_container {
   left: 0;
   bottom: -250px;
 }
-<<<<<<< HEAD
-/* line 723, ../sass/modules/_sections.scss */
-div.contact_container .contact_header {
-  cursor: pointer;
-}
-/* line 726, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 730, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
 /* line 733, ../sass/modules/_sections.scss */
-=======
-
-/* line 724, ../sass/modules/_sections.scss */
-div.contact_container .contact_header {
-  cursor: pointer;
-}
-/* line 727, ../sass/modules/_sections.scss */
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1961,51 +1453,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-<<<<<<< HEAD
-/* line 737, ../sass/modules/_sections.scss */
-div.contact_container .input {
-  margin: 0;
-}
-/* line 739, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 744, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
 /* line 746, ../sass/modules/_sections.scss */
-=======
-
-/* line 738, ../sass/modules/_sections.scss */
-div.contact_container .input {
-  margin: 0;
-}
-/* line 740, ../sass/modules/_sections.scss */
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-<<<<<<< HEAD
-/* line 743, ../sass/modules/_sections.scss */
-div.contact_container .input label {
-  color: #fff;
-}
-/* line 750, ../sass/modules/_sections.scss */
-=======
 /* line 750, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-<<<<<<< HEAD
 /* line 757, ../sass/modules/_sections.scss */
-=======
-/* line 734, ../sass/modules/_sections.scss */
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -2017,29 +1478,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-<<<<<<< HEAD
-/* line 761, ../sass/modules/_sections.scss */
-div.contact_container textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-/* line 766, ../sass/modules/_sections.scss */
-=======
-<<<<<<< HEAD
 /* line 768, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 /* line 773, ../sass/modules/_sections.scss */
-=======
-
-/* line 745, ../sass/modules/_sections.scss */
-div.contact_container textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-/* line 750, ../sass/modules/_sections.scss */
-
->>>>>>> origin/master
->>>>>>> 8f45b78c5a94b7d071c78682e07ed0d8b2d520b5
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;

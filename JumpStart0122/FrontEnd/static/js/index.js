@@ -130,7 +130,6 @@ $(document).ready(function() {
 	
 	$('#reg_form').submit(function() {
 		var btn = $('button.submit_btn');
-        //Very important line, it disable the page refresh.
         sub_form_check(btn,$(this));
         return false;
     });
@@ -235,7 +234,6 @@ function contact_form_check(btn,form){
 
 function submit_to_db(btn,form){ 
 //submit to db with Ajax and animation feedback
-
 	var color = btn.css('color');
     var bg = btn.css('background-color');
        form.ajaxSubmit({

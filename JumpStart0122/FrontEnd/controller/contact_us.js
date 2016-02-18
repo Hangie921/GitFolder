@@ -26,11 +26,9 @@ function route(app, mongoClient){
 						log.info("insert the contact info successfully");
 						return;
 					}
-					
 				});
 				res.send(true);
 			}	
-
 		});//end of the the file_handler callback
 
 	});

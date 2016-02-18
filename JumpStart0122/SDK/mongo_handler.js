@@ -11,7 +11,12 @@ function handle(mongoClient,crud,doc,collection,condition,callback){
 
 	if(crud === "find"){
 		findDetail(mongoClient,collection,query,condition,function(err,docArray){
-			result = docArray;
+			if(docArray !== null){
+				status = true;
+				result = docArray;
+			}else{
+				log.info("There are no match results in DB");
+			}
 		});
 
 	}else if(crud === "insert"){
@@ -72,23 +77,24 @@ function findDetail(mongoClient,collection,query,condition,callback){ //undone
 			limit: 0
 		};
 	}else{
-		for(var x in condition){ 
-			//undone
-		}
+		
 	}
 	//start to query the data and return the docArray to callback()
-	console.log("start to find in collection '" + collection + "'.");
+	log.info("start to find in collection '" + collection + "'.");
 	var docArray = null;
-	mongoClient.connect(mongoClient,function(err,db){
+	mongoClient.connect(mongoClient.url,function(err,db){
 		if(!err){
-			var cursor = db.collection(collection).find(query,projection);
+			log.info("connect mongo successfully");
+			var cursor = db.collection(collection).find(query,condition.projection);
 			if(cursor.toArray().length > 0){
 				docArray = cursor.toArray();
 			}else{
-				console.log('There is no result in DB');
+				return;
 			}
 		}else{
-			console.log(err);
+			log.error('error while connecting to the mongo client');
+			log.error(err);
+			return;
 		}
 		db.close();
 	});

@@ -199,6 +199,29 @@ ul.plan_list {
 }
 
 div.competition_topic {
+	h4 {
+		text-align: right;
+		font-size: 45px;
+		color:$primary-color;
+		font-family: $english;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 3px;
+
+		span {
+			display: block;
+			font-size:35px;
+			color:$secondary-color;
+		}
+	}
+
+	h5{
+		color:$primary-color;
+		font-size: 26px;
+	}
+}
+
+div#sec_competition {
 	
 }
 

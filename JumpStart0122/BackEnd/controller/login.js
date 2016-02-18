@@ -12,15 +12,24 @@ function route(app, mongoClient,callback){
 				return;
 			}else{
 				console.log(req.body);
-				if(login.check(req.body)){
-					res.render('index');			
-				}else{
-					res.send('error');
-				}
+				var query = {
+					"acc":req.body.acc,
+					"psw":req.body.psw
+				};
+
+				mongo_handler.handle(mongoClient,'find',null,'member',query,null,function(err,status,result){
+					if(login.check(req.body,result)){
+						//update the details
+						console.log(result);
+						res.render('index');			
+					}else{
+						res.send('error');
+					}
+				});
+
+				
 			}
 		});
-		//call the login module
-		
 	});
 }
  

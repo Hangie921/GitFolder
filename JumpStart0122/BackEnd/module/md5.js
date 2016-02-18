@@ -7,7 +7,7 @@ var encrypt = function (password, callback) {
     hash.update(password);
     var md5 = hash.digest('hex');
 
-    callback(md5); //return the md5 encoded string
+    callback(null,md5); //return the md5 encoded string
     
     }
 

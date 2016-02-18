@@ -3,7 +3,7 @@ var multer= require('multer'),
 	assert = require('assert'),
 	mongo_handler = require('../../SDK/mongo_handler'),
 	contact = require("../module/contact"),
-	log = require("../../SDK/error_handler");
+	log = require("../../SDK/log_handler");
 
 
 function route(app, mongoClient){	
@@ -16,15 +16,19 @@ function route(app, mongoClient){
 				res.end('error');
 			}else{
 				var doc = contact.to_object(req,res);
-				mongo_handler.handle(app,mongoClient,'insert',req,res,doc,'contact',function(err,req,res){
+				mongo_handler.handle(mongoClient,'insert',doc,'contact',null,function(err,status,result){
+					//the null is the condition varible
 					if(err){
 						log.error("Unexpect error below while inserting the contact info");
 						log.error(err);
-					}else{
-						res.end('success');
+						return;
+					}else if(status === true){
+						log.info("insert the contact info successfully");
+						return;
 					}
 					
 				});
+				res.send(true);
 			}	
 
 		});//end of the the file_handler callback

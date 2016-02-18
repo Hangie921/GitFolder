@@ -2,22 +2,21 @@ var instance = require('../SDK/instance'),
 	mongo = instance.startMongo(),
 	bodyParser = require('../FrontEnd/node_modules/body-parser'),
 	config = require('../FrontEnd/config/server_init'),
-	log = require("../SDK/error_handler");
+	log = require("../SDK/log_handler");
 
 
-function handle(app,mongoClient,crud,req,res,doc,collection,callback){
+function handle(mongoClient,crud,doc,collection,condition,callback){
 	var result = null;
+	var status = null;
+
 	if(crud === "find"){
-		var query;
-		var projection;
-		findDetail(app,mongoClient,query,projection,collection,function(docArray){
+		findDetail(mongoClient,collection,query,condition,function(err,docArray){
 			result = docArray;
 		});
 
 	}else if(crud === "insert"){
-		insertToCollection(app,mongoClient,req,res,doc,collection,callback);
-		// console.log("Insert success");
-		//change the rusult
+		status = insertToCollection(mongoClient,doc,collection);
+		callback(null,status,null);
 	}else if(crud === "update"){
 		update(req,res);
 		// console.log("update success");
@@ -27,13 +26,45 @@ function handle(app,mongoClient,crud,req,res,doc,collection,callback){
 		// console.log("delete success");
 		//change the rusult
 	}
-	
+	callback(null,status,result);
 	// return docArray;
 }
 
-function findDetail(app,mongoClient,collection,query,condition,callback){ //undone
-	//pack all the conditions in to a condition object
-	if(typeof condition !== Object){
+function insertToCollection(mongoClient,doc,collection){
+	//Assign a collection to insert docs
+	var status = false;
+	log.info('Start to insert to '+ collection);
+	mongoClient.connect(mongoClient.url,function(err,db){
+		if(err){
+			alert('Unexpected error happened,please retry it later.');
+			log.error("Unexpected error below while connecting to DB");
+			log.error(err);
+			return;
+		}else{
+			log.info("Connet to mongo successfully");
+			db.collection(collection).insertOne(doc,function(err){
+				if(err){
+					alert('Unexpected error happend, please retry it later');
+					log.error('error while inserting the info to '+collection);
+					log.error(err);
+					status = false;
+					// res.end('error');
+				}else{
+					log.info("Insert doc into '" + collection + "' collection!");
+					// res.end('success');
+					status = true;
+					log.info("Insert doc successfully");
+				}
+				db.close();
+				log.info("mongo connections closed");
+			});
+		}
+	});
+	return status;
+}
+
+function findDetail(mongoClient,collection,query,condition,callback){ //undone
+	if(typeof condition !== Object){ //if there is no condition,give it a default
 		condition = {
 			projcetion: {"_id":0},
 			sort: {},
@@ -45,7 +76,6 @@ function findDetail(app,mongoClient,collection,query,condition,callback){ //undo
 			//undone
 		}
 	}
-
 	//start to query the data and return the docArray to callback()
 	console.log("start to find in collection '" + collection + "'.");
 	var docArray = null;
@@ -63,36 +93,7 @@ function findDetail(app,mongoClient,collection,query,condition,callback){ //undo
 		db.close();
 	});
 
-	callback(docArray);
-}
-
-function insertToCollection(app,mongoClient,req,res,doc,collection,callback){
-	//Assign a collection to insert docs
-
-	log.debug('Start to insert to '+ collection);
-	mongoClient.connect(mongoClient.url,function(err,db){
-		if(err){
-			alert('Unexpected error happened,please retry it later.');
-			log.error("Unexpected error below while connecting to DB");
-			log.error(err);
-			return;
-		}else{
-			db.collection(collection).insertOne(doc,function(err,result){
-				if(err){
-					alert('Unexpected error happend, please retry it later');
-					log.error('error while inserting the info to '+collection);
-					log.error(err);
-					res.end('error');
-				}else{
-					log.debug("Insert doc into '" + collection + "' collection!");
-					res.end('success');
-					
-				}
-				db.close();
-			});
-		}
-	});
-	// callback(req,res);
+	callback(null,docArray);
 }
 
 exports.handle = handle;

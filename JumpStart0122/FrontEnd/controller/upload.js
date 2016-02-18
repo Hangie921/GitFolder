@@ -19,7 +19,7 @@ function route(app,mongoClient){
 				
 				var doc = submit.to_object(req,res);
 				
-				mongo_handler.handle(mongoClient,'insert',doc,'detail',null,function(err,status,result){
+				mongo_handler.handle(mongoClient,'insert',doc,'detail',null,null,function(err,status,result){
 					if(err!==null){// res.render('show');
 						log.error('Unexpected error below while inserting info to DB');
 						log.error(err.stack);

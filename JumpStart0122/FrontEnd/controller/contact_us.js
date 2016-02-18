@@ -16,7 +16,7 @@ function route(app, mongoClient){
 				res.end('error');
 			}else{
 				var doc = contact.to_object(req,res);
-				mongo_handler.handle(mongoClient,'insert',doc,'contact',null,function(err,status,result){
+				mongo_handler.handle(mongoClient,'insert',doc,'contact',null,null,function(err,status,result){
 					//the null is the condition varible
 					if(err){
 						log.error("Unexpect error below while inserting the contact info");

@@ -110,6 +110,15 @@ ul.menu {
 		border:1px solid $secondary-color;
     	font-weight: 600 !important;
     	color:$secondary-color !important;
+
+    	&:hover {
+    		background:$secondary-color;
+    		color:white !important;
+
+    		&:after {
+    			display: none;
+    		}
+    	}
 	}
 #header,#header ul li a {
 	transition:color .5s, opacity .5s;

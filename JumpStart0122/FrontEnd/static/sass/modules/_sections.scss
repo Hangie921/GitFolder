@@ -199,7 +199,7 @@ ul.plan_list {
 .slide-inner {
 	position:relative;
 	width:75%;
-	margin:5% auto 0;
+	margin:0 auto 0;
 	@include orange-border;
 	
 }
@@ -445,7 +445,7 @@ ul.partners {
 }
 .info_list{
 	ul {
-		padding:0;
+		padding:0 0 0 20px;
 
 		li {
 
@@ -712,6 +712,9 @@ div.timeline {
 
 	h3 {
 		color:$primary-color;
+		font-size: 32px;
+		text-transform: uppercase;
+		font-weight: 600;
 	}
 
 	li {
@@ -722,6 +725,13 @@ div.timeline {
 	margin-top:20%;
 }
 /***FORMS*****/
+
+#sec_jumpnow {
+	h2 {
+		color:$primary-color;
+		font-weight: bold;
+	}
+}
 .team_details {
 	padding:20px;
 	

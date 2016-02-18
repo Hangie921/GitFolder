@@ -64,13 +64,17 @@ html
 			.section#sec_about.container.primary_bg.section-padding(data-anchor='about')
 				.top_animation.col-md-12.col-centered
 					.rocket
-					.col-md-9.col-centered
+					.col-md-8.col-centered
 						p.en_para.white-text 
-							|Jumpstart, 是亞洲第一個跨國商業合作計畫, 致力於幫助當地企業與國際接軌，讓有前景理念的產品在世界舞台上綻放，創造更大的商機。		
+							|渴望更多機會在國際舞台嶄露才華嗎？現在，與世界接軌的鑰匙就掌握在你手上。亞洲人才與創業孵化平台 - Ping!為推動創業風氣，與新加坡知名創投公司 - Venturecraft VC共同打造Jmpstart計畫。
+
+							|Jumpstart，亞洲第一個跨國商業合作計畫，我們幫助當地企業、人才與國際接軌，將有前景的理念、產品於世界舞台綻放，創造更大的商機。我們將不定期提供巨量的OPEN DATA及多元題材，期望各方人才組隊報名，互相激盪，創造更多商業價值。
+	
 
 			.section#sec_competition.container(data-anchor='competition')
 				.slide#competition_info_slide.slide-padding
-						.col-md-5.col-centered
+					.slide-inner.clearfix
+						.col-md-12.clearfix
 							ul.competition-headings#competition_menu
 								li
 									a(href="#competition") 參賽資訊
@@ -108,48 +112,54 @@ html
 
 
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
-					.col-md-5.col-centered
-						ul.competition-headings#competition_menu
-							li
-								a(href="#competition") 參賽資訊
-							li 
-								a.selected(href="#competition/1") 競賽主題
-							li 
-								a(href="#competition/2") 獎項
-					.col-md-7.col-centered.clearfix
-						p 渴望更多在國際舞台嶄露才華的機會嗎？現在，與世界接軌的鑰匙就掌握在你手上。
-							|亞洲人才與創業孵化平台 - Ping!為推動創業風氣，與新加坡知名創投公司 - Venturecraft VC首度合作，VC將提供巨量的 User data，期望各方人才組隊報名，互相激盪，創造更多商業價值。
-						a.btn.btn-4.btn-4a.icon-arrow-right(href='#jumpnow') 我要參加!
-					.col-md-12.col-centered.sponsors
-						.col-md-12.col-centered
-							ul.partners
+					.slide-inner.clearfix
+						.col-md-12.clearfix
+							ul.competition-headings#competition_menu
 								li
-									a 螞蜂窩
+									a(href="#competition") 參賽資訊
 								li 
-									a venture craft
-								li
-									a 365
-								li
-									a e27
-								li
-									a city tour
-								li
-									a Ping!
+									a.selected(href="#competition/1") 競賽主題
 								li 
-									a DSEE
+									a(href="#competition/2") 獎項
+						.col-md-5
+							h4 |jumpstart with 100 million users			
+						.col-md-7.clearfix
+							p 
+								|現在我們開放自由行旅遊平台的100,000,000+筆活躍用戶資料，由你親手創造資料的價值！！只要你具有以下特質：一個有創意的旅遊business idea可馬上投入市場的計畫能立即結合自由行旅遊平台的產品。
+
+								|不要懷疑了，快點加入Jumpstart計畫，與你的夥伴一起綻放國際！ 
+
+							a.btn.btn-4.btn-4a.icon-arrow-right(href='#jumpnow') 我要參加!
+						.col-md-12.col-centered.sponsors
+							.col-md-12.col-centered
+								ul.partners
+									li
+										a 螞蜂窩
+									li 
+										a venture craft
+									li
+										a 365
+									li
+										a e27
+									li
+										a city tour
+									li
+										a Ping!
+									li 
+										a DSEE
 						
 					
 
 				.slide#competition_prize_slide.slide-padding
-						div.container
-							.col-md-5.col-centered
-								ul.competition-headings#competition_menu
-									li
-										a(href="#competition") 參賽資訊
-									li 
-										a.selected(href="#competition/1") 競賽主題
-									li 
-										a(href="#competition/2") 獎項
+					.slide-inner.clearfix
+						.col-md-12.clearfix
+							ul.competition-headings#competition_menu
+								li
+									a(href="#competition") 參賽資訊
+								li 
+									a.selected(href="#competition/1") 競賽主題
+								li 
+									a(href="#competition/2") 獎項
 							.col-md-12
 								.col-md-4.prize-single
 									h4 $90,000 
@@ -168,50 +178,51 @@ html
 				//- 這樣包我就可以一個form包兩個slide的input
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
-						.col-md-5.laptop-img
-						.col-md-7.white-text
+						.col-md-5.jumpnow-des
 							h3 三個步驟馬上加入Jumpstart計畫!
 							ul.plan_list
 								li 下載商業計劃書範本
 								li 填寫計畫書及相關資料
 								li 送出
+						.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
+							
 							a.bizplan_download 
-								|商業計劃書範本 <br/>
-							a.imready.basic_btn(href='#jumpnow/1') 我準備好了!
+								|下載商業計劃書範本 <br/>
+							a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
 								
 						
 					.slide.team_details.relative-position
 						h2.hoshi
-							.col-md-4.clearfix
-									span.input.input--hoshi
-										input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
+						.col-md-5.clearfix
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 隊伍名稱
+								span.input.input--hoshi 
+									|產品介紹		
+									textarea(name='product_brief')
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 上傳檔案	
+							.col-md-7
+								.team_detail_single.clearfix
+									span.input.input--hoshi.team_member
+										input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-												span.input__label-content.input__label-content--hoshi 隊伍名稱
-									span.input.input--hoshi 
-										|產品介紹		
-										textarea(name='product_brief')
-									span.input.input--hoshi
-										input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
-										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-												span.input__label-content.input__label-content--hoshi 上傳檔案	
-								.col-md-8
-									.team_detail_single.clearfix
-										span.input.input--hoshi.team_member
-											input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
-											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 成員
-										span.input.input--hoshi.responsibility
-											input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_info')
+												span.input__label-content.input__label-content--hoshi 成員
+									span.input.input--hoshi.responsibility
+										input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_info')
 
-											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 負責項目
-										//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
-									button(id='add_member') 添加成員
-								.nav_group
-									a(class='button prev_btn',href='#jumpnow') 上一步
-										span &nbsp;
-									a(class='button next_btn', href='#jumpnow/2') 下一步
-										span &nbsp;
+										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+												span.input__label-content.input__label-content--hoshi 負責項目
+									//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
+								button(id='add_member') 添加成員
+							.nav_group
+								a(class='button prev_btn',href='#jumpnow') 上一步
+									span &nbsp;
+								a(class='button next_btn', href='#jumpnow/2') 下一步
+									span &nbsp;
 					.slide.personal_details.fp-auto-height
 						.col-md-6.personal_details_group.col-centered
 							span.input.input--hoshi

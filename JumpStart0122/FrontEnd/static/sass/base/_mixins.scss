@@ -84,53 +84,7 @@
 
 
 @mixin button {
-	float:left;
-	position:relative;
-	margin-top:20px;
-	color:#fff;
-	background-color:$secondary-color;
-	min-width:300px;
-	font-size:18px;
-	height:60px;
-	cursor:pointer;
-	line-height:60px;
-	clear:both;
-	display:inline-block;
-	padding:0 20px;
-	border:0;
-	text-decoration:none !important;
-	-webkit-box-shadow: 10px 10px 0px -5px rgba(221,93,32,1);
-	-moz-box-shadow: 10px 10px 0px -5px rgba(221,93,32,1);
-	-ms-box-shadow: 10px 10px 0px -5px rgba(221,93,32,1);
-	-o-box-shadow: 10px 10px 0px -5px rgba(221,93,32,1);
-	box-shadow: 10px 10px 0px -5px rgba(221,93,32,1);
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
 
-	&:after {
-		content: "";
-		position:absolute;
-		display:block;
-		right:20px;
-		right: 12px;
-    	top: 12px;
-	    width: 36px;
-  		height: 36px;
-		background:url(../img/arrow-right.png) no-repeat center center;
-	}
-
-	&:hover {
-	color:#fff;
-	background-color:#555 !important;
-	-webkit-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-	-moz-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-	-ms-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-	-o-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-	box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-	}
 }
 
 @mixin orange-border {

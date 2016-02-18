@@ -82,3 +82,13 @@
 	50%{@include transform(scale(1.3,1.3));}
 	100%{@include transform(scale(1,1));}
 }
+
+div.timeLineAni:after{
+	@include animation(lineDown 3s 0s 1 linear forwards);
+	transition:all 1s;
+}
+
+@keyframes lineDown{
+	0%{height: 0%;}
+	100%{height: 100%;}
+}

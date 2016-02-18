@@ -1440,54 +1440,59 @@ div.timeline ul li:last-child {
   text-transform: uppercase;
   font-weight: 600;
 }
+/* line 720, ../sass/modules/_sections.scss */
 .jumpnow-des li {
   color: white;
 }
 
+/* line 724, ../sass/modules/_sections.scss */
 .jumpnow-btn-set {
   margin-top: 20%;
 }
 
 /***FORMS*****/
-
+/* line 730, ../sass/modules/_sections.scss */
 #sec_jumpnow h2 {
   color: #f16b29;
   font-weight: bold;
 }
 
+/* line 735, ../sass/modules/_sections.scss */
 .team_details {
   padding: 20px;
 }
 
-
+/* line 739, ../sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
+/* line 742, ../sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
+/* line 746, ../sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
-
+/* line 751, ../sass/modules/_sections.scss */
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
-
+/* line 758, ../sass/modules/_sections.scss */
 #sec_jumpnow .slide-inner {
   width: initial;
 }
 
-
+/* line 765, ../sass/modules/_sections.scss */
 .event_single {
   position: relative;
   padding: 10px;
@@ -1503,33 +1508,33 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
-
+/* line 783, ../sass/modules/_sections.scss */
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
-
+/* line 789, ../sass/modules/_sections.scss */
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
-
+/* line 795, ../sass/modules/_sections.scss */
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
-
+/* line 799, ../sass/modules/_sections.scss */
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
-
+/* line 806, ../sass/modules/_sections.scss */
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1540,14 +1545,14 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
-
+/* line 818, ../sass/modules/_sections.scss */
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
-
+/* line 827, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #f16b29;
@@ -1557,9 +1562,11 @@ div.contact_container {
   left: 0;
   bottom: -250px;
 }
+/* line 836, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
+/* line 839, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1570,22 +1577,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-
-/* line 849, ../sass/modules/_sections.scss */
+/* line 850, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
+/* line 852, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-
-/* line 855, ../sass/modules/_sections.scss */
+/* line 856, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 862, ../sass/modules/_sections.scss */
-
+/* line 863, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1597,12 +1602,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 873, ../sass/modules/_sections.scss */
+/* line 874, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 878, ../sass/modules/_sections.scss */
-
+/* line 879, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -2087,6 +2091,28 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
     transform: scale(1, 1);
+  }
+}
+
+/* line 86, ../sass/modules/_animations.scss */
+div.timeLineAni:after {
+  -moz-animation: lineDown 3s 0s 1 linear forwards;
+  -webkit-animation: lineDown 3s 0s 1 linear forwards;
+  -ms-animation: lineDown 3s 0s 1 linear forwards;
+  -o-animation: lineDown 3s 0s 1 linear forwards;
+  animation: lineDown 3s 0s 1 linear forwards;
+  transition: all 1s;
+}
+
+@keyframes lineDown {
+  /* line 92, ../sass/modules/_animations.scss */
+  0% {
+    height: 0%;
+  }
+
+  /* line 93, ../sass/modules/_animations.scss */
+  100% {
+    height: 100%;
   }
 }
 

@@ -156,7 +156,8 @@ div#sec_home {
 /********** Jump Now Section ********/
 
 div#sec_jumpnow {
-	background: $navy;
+	background: $navy url(../img/tiles.png);
+	@include background-size(20% auto);
 
 	p {
 		@include font-large;
@@ -266,6 +267,7 @@ ul.competition-headings {
 }
 
 .slide_next.arrow {
+	z-index:5;
 	background:transparent;
 	height: 45px;
 	display:block;
@@ -275,7 +277,7 @@ ul.competition-headings {
     @include border-radius(50%);
     @include transition(all 0.1s);
     right:-25px;
-    top:45%;
+    top:200px;
     position:absolute;
     background:$gray;
      &:before {
@@ -310,7 +312,7 @@ ul.competition-headings {
     }
 
     &:hover {
-    	background-color:$primary-color;
+    	background-color:$primary-color !important;
     	&:before,&:after {
     		border-color:$gray;
     	}
@@ -615,22 +617,27 @@ div.timeline {
 	.prize-single {
 		margin:0 auto;
 		min-height:300px;
+
 		&:first-of-type {
-		background: url(../img/secondplace.png) no-repeat center 91px;
+		background: url(../img/secondplace.png) no-repeat center 0;
+		@include background-size(100% auto);
 			h4{
 				font-size:45px;
-				color:#757575;
+				color:#2b4252;
 			}
 	 	}
 	 	&:nth-of-type(2) {
-		background: url(../img/firstplace.png) no-repeat center 5px;
-		@include background-size(68% auto);
+		background: url(../img/firstplace.png) no-repeat center 0;
+		@include background-size(100% auto);
+			color:$navy;
+		
 	 	}
 	 	&:nth-of-type(3) {
-		background: url(../img/thirdplace.png) no-repeat center 138px;
+		background: url(../img/thirdplace.png) no-repeat center 0;
+		@include background-size(100% auto);
 			h4{
 				font-size:45px;
-				color:#757575;
+				color:#2b4252;
 			}
 	 	}
 
@@ -642,7 +649,7 @@ div.timeline {
 			font-size:50px;
 			text-align: center;
 			display: block;
-			margin-top:320px;
+			margin-top:270px;
 	 	}
 	 	
 
@@ -661,18 +668,18 @@ div.timeline {
 	a.bizplan_download {
 	float:left;
 	position:relative;
-	margin-top:20px;
+	margin-top:70px;
 	background-color:$navy;
 	@include orange-border;
 	min-width:240px;
 	font-size:18px;
-	height:45px;
+	height:50px;
 	cursor:pointer;
-	line-height:45px;
 	clear:both;
+	line-height:8px;
 	display:inline-block;
-	padding:0 20px;
-
+	padding:20px 20px;
+	width:auto;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -706,9 +713,11 @@ div.timeline {
 	
 }
 
+
 .jumpnow-des {
 	@include orange-border;
 	padding:20px;
+	background:$navy;
 
 	h3 {
 		color:$primary-color;
@@ -724,6 +733,10 @@ div.timeline {
 .jumpnow-btn-set {
 	margin-top:20%;
 }
+
+.imready {
+	margin-top:10px;
+}
 /***FORMS*****/
 
 #sec_jumpnow {
@@ -738,14 +751,20 @@ div.timeline {
 
 	.slide-inner {
 		margin:0 auto;
+		background:$navy;
 		width: 95%;
 		padding:20px;
+		vertical-align: top;
+
+		&:first-child {
+			background:transparent;
+		}
 	}
 
 
 }
 .team_details {
-	padding:20px;
+	
 	
 }
 .team_details_single>span {
@@ -838,7 +857,7 @@ div.contact_container{
 	padding:30px;
 	left:0;
 	// top: 85vh;
-	bottom:-250px;
+	bottom:-391px;
 	& .contact_header{
 		cursor: pointer;
 	}

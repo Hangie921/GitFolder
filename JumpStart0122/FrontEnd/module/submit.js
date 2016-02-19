@@ -39,7 +39,6 @@ var schema = function(){
 			"contact" : {
 				"name" : "",
 				"email" : "",
-				"address" : "",
 				"phone" : ""
 			}
 		},
@@ -82,7 +81,6 @@ function to_object(req,res,callback){   //pack all the info of the form into a o
 
 	team_info.contact.name = req.body.contact;
 	team_info.contact.email = req.body.email;
-	team_info.contact.address = req.body.address;
 	team_info.contact.phone = req.body.phone;
 	team_info.bp_file.file_name = req.file == true ? req.file.filename:null;
 	team_info.bp_file.file_path = req.file == true ? req.file.path:null;

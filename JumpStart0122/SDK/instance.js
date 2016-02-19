@@ -24,7 +24,7 @@ function initApp(port,view_engine,dir_path){
 			}
 			server.address().port = port;
 			log.info("Express server listening on port " +port);
-			// console.log("Express server listening on port %s ", port);
+			console.log("Express server listening on port " +port);
 	});
 	return app;
 }

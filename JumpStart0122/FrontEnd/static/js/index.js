@@ -22,13 +22,14 @@ $(document).ready(function() {
 		    		break;
 				case 2:
 					$('#header').addClass('orange');
-					if(!$('.border_container').hasClass('straightAni')){
-						$('.border_container').addClass('straightAni');
+					if(!$('#sec_about .border_container').hasClass('straightAni')){ //border animation
+						$('#sec_about .border_container').addClass('straightAni');
 						$('#sec_about').addClass('timeLineAni');
 					}
 					break;
 				case 3:
 					$('#header').addClass('fff');
+					$('#competition_topic_slide').addClass('timeLineAni');
 					break;
 				case 4:
 					$('#header').addClass('orange');
@@ -44,12 +45,27 @@ $(document).ready(function() {
 				switch(slideIndex){
 					case 0:
 						$('#competition_menu li:nth-child(1) a').addClass('selected');
+						if(!$('#competition_topic_slide .border_container').hasClass('borderRightAni')){ //border animation
+							$('#competition_topic_slide .border_container').addClass('borderRightAni');
+						}
 					break;
 					case 1:
 						$('#competition_menu li:nth-child(2) a').addClass('selected');
+						if(!$('#competition_info_slide').hasClass('borderRightAni')){ //border animation
+							$('#competition_info_slide').addClass('borderRightAni');
+						}
 					break;
 					case 2:
 						$('#competition_menu li:nth-child(3) a').addClass('selected');
+						if(!$('#competition_prize_slide').hasClass('borderRightAni')){ //border animation
+							$('#competition_prize_slide').addClass('borderRightAni');
+						}
+					break;
+					case 3:
+						$('#competition_menu li:nth-child(4) a').addClass('selected');
+						if(!$('#competition_sponsor_slide').hasClass('borderRightAni')){ //border animation
+							$('#competition_sponsor_slide').addClass('borderRightAni');
+						}
 					break;
 				}
 			}

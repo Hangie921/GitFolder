@@ -2,14 +2,14 @@
   "appenders":[
     {
       "type":"file",
-      "filename": "./logs/info.log",
+      "filename": "../FrontEnd/logs/info.log",
       "maxLogSize": 20480,
       "backups": 3,
       "category": "info"
     },
     {
       "type":"file",
-      "filename":"./logs/debug.log",
+      "filename":"../FrontEnd/logs/debug.log",
       "maxLogSize": 20480,
       "backups": 3,
       "category": "debug"
@@ -19,7 +19,7 @@
           "level": "ERROR",
           "appender": {
             "type": "file",
-            "filename": "./logs/errors.log"
+            "filename": "../FrontEnd/logs/errors.log"
           }
     }
   ]

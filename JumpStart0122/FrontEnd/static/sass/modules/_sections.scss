@@ -730,7 +730,19 @@ div.timeline {
 	h2 {
 		color:$primary-color;
 		font-weight: bold;
+		width:95%;
+		margin:0 auto;
+		display: block;
+		padding-bottom:10px;
 	}
+
+	.slide-inner {
+		margin:0 auto;
+		width: 95%;
+		padding:20px;
+	}
+
+
 }
 .team_details {
 	padding:20px;
@@ -754,12 +766,6 @@ div#sec_events{
 	position: relative;
 }
 
-#sec_jumpnow {
-	.slide-inner {
-		width:initial;
-
-	}
-}
 
 
 .event_single {

@@ -4,7 +4,6 @@
 
 .personal_details_group {
 
-	@include orange-border;
 	padding:30px;
 	span.input {
 		display: block !important;
@@ -88,7 +87,7 @@ div.slide.team_details, div.slide.personal_details {
     margin-right: 30px;
 	}
 	span.responsibility {
-		width: 63%
+		width: 60%
 	}
 
 	button#del_member {
@@ -167,7 +166,7 @@ div.slide.team_details, div.slide.personal_details {
 	width:87px;
 	padding:10px;
 	display: block;
-	background:$navy;
+	background:$primary-color;
 	max-height:50px;
 	border-top:1px solid $primary-color;
 	border-left:1px solid $primary-color;
@@ -215,23 +214,22 @@ border-color: transparent transparent transparent $primary-color;
     height: 0;
     border-style: solid;
     border-width: 24px 0 24px 31px ;
-    border-color: transparent transparent transparent $navy;
+    border-color: transparent transparent transparent $primary-color;
 
   
   
   }
 
-	&:hover {
-		margin-left:15px;
+ 
 
-	}
-
+	
 }
 
 .prev_btn {
 	@extend .next_btn;
 	border-left:none;
 	border-right:1px solid $primary-color;
+	background:$navy;
 	
 
 		&:before {
@@ -249,6 +247,14 @@ border-color: transparent transparent transparent $primary-color;
 		}
 	
 	
+}
+
+button.submit_btn {
+	float:right;
+	max-width:initial;
+	padding:15px 40px;
+	width:329px;
+	background:$primary-color !important;
 }
 
 

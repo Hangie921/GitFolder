@@ -161,7 +161,9 @@
 	background:$primary-color;
 	border-color:$primary-color;
 	&:hover {
-		background:transparent;
+		background:#BB531F !important;
+		border-color:#BB531F !important;
+		color:white;
 	}
 }
 

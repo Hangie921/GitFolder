@@ -257,6 +257,12 @@ img.device {
   padding: 0;
 }
 
+/* line 82, ../sass/base/_base.scss */
+.zindex {
+  z-index: 3;
+  position: relative;
+}
+
 /* MODULES - Individual sit componets */
 /* List */
 /* line 4, ../sass/modules/_typography.scss */
@@ -1248,16 +1254,16 @@ div.timeline ul li:hover {
 }
 /* line 514, ../sass/modules/_sections.scss */
 div.timeline ul li:first-child {
-  z-index: 3;
+  z-index: 10;
   padding-left: 10px;
 }
 /* line 518, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(2) {
-  z-index: 2;
+  z-index: 9;
 }
 /* line 521, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(3) {
-  z-index: 1;
+  z-index: 8;
 }
 /* line 525, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(4) {
@@ -1306,7 +1312,7 @@ div.timeline ul li:after {
   border-color: transparent #e8e8e8;
   display: block;
   width: 0;
-  z-index: 1;
+  z-index: 5;
   right: -45px;
   top: -1px;
 }
@@ -1319,7 +1325,7 @@ div.timeline ul li:before {
   border-color: transparent #f16b29;
   display: block;
   width: 0;
-  z-index: 0;
+  z-index: 1;
   right: -46px;
   top: -1px;
 }
@@ -2251,27 +2257,27 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
   display: none;
 }
 
-/* line 123, ../sass/layouts/_header.scss */
+/* line 124, ../sass/layouts/_header.scss */
 #header, #header ul li a {
   transition: color .5s, opacity .5s;
 }
 
-/* line 126, ../sass/layouts/_header.scss */
+/* line 127, ../sass/layouts/_header.scss */
 #header.fff {
   background-color: transparent;
 }
 
-/* line 129, ../sass/layouts/_header.scss */
+/* line 130, ../sass/layouts/_header.scss */
 #header.fff ul li a {
   color: #333;
 }
 
-/* line 132, ../sass/layouts/_header.scss */
+/* line 133, ../sass/layouts/_header.scss */
 #header.orange {
   background-color: transparent;
 }
 
-/* line 135, ../sass/layouts/_header.scss */
+/* line 136, ../sass/layouts/_header.scss */
 #header.orange ul li a {
   color: #fff;
 }

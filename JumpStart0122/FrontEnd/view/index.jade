@@ -38,7 +38,7 @@ html
 									a(href='#jumpnow') jump now
 								li(data-menuanchor='events') 
 									a(href='#events') events
-				.sloganContainer
+				.sloganContainer.zindex
 					h2 
 						b 當你擁有
 					h2 
@@ -62,7 +62,7 @@ html
 					
 	
 			.section#sec_about.container.primary_bg.section-padding(data-anchor='about')
-				.top_animation.col-md-12.col-centered
+				.top_animation.col-md-12.col-centered.zindex
 					.rocket
 					.col-md-8.col-centered
 						p.en_para.white-text 
@@ -73,7 +73,7 @@ html
 
 			.section#sec_competition.container(data-anchor='competition')
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
-					.slide-inner.clearfix
+					.slide-inner.zindex.clearfix
 						a.competition_topic_slide_arrow.slide_next.arrow(href="#competition/1") next
 						.col-md-12.clearfix.no-pad
 							ul.competition-headings#competition_menu
@@ -122,7 +122,7 @@ html
 							a.navy.btn.btn-4.btn-4a.icon-arrow-right(href='#jumpnow') 我要參加!
 
 				.slide#competition_info_slide.slide-padding
-					.slide-inner.clearfix
+					.slide-inner.zindex.clearfix
 						a.competition_info_slide_arrow.slide_prev.arrow(href="#competition") prev
 						a.competition_info_slide_arrow.slide_next.arrow(href="#competition/2") next
 						
@@ -164,7 +164,7 @@ html
 					
 
 				.slide#competition_prize_slide.slide-padding
-					.slide-inner.clearfix
+					.slide-inner.zindex.clearfix
 						a.competition_prize_slide_arrow.slide_prev.arrow(href="#competition/1") prev
 						.col-md-12.clearfix.no-pad
 							ul.competition-headings#competition_menu
@@ -192,7 +192,7 @@ html
 				//- 這樣包我就可以一個form包兩個slide的input
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
-						.slide-inner.clearfix
+						.slide-inner.zindex.clearfix
 
 							.col-md-5.jumpnow-des
 								h3 三個步驟馬上加入 
@@ -211,7 +211,7 @@ html
 						
 					.slide.team_details
 						h2.hoshi 1. 填寫隊伍名稱
-						.slide-inner.relative-position.clearfix
+						.slide-inner.zindex.relative-position.clearfix
 
 							a.slide_next.arrow.slide_team_details_arrow(href="#jumpnow/2") next
 							a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow") prev
@@ -247,7 +247,7 @@ html
 									a(class='button next_btn', href='#jumpnow/2') 下一步
 					.slide.personal_details.fp-auto-height
 						h2.hoshi 2. 聯絡人資料
-						.slide-inner.clearfix
+						.slide-inner.zindex.clearfix
 							a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow/1") prev
 							.col-md-6.personal_details_group.col-centered
 								span.input.input--hoshi

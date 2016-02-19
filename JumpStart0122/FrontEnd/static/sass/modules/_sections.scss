@@ -25,7 +25,11 @@ div.slide-padding{
 }
 
 div#sec_competition {
-	background-color:$gray;
+	background:$gray url(../img/cloud-tiles.png) center center;
+
+	.slide-inner {
+		background:$gray;
+	}
 }
 /****HOME******/
 

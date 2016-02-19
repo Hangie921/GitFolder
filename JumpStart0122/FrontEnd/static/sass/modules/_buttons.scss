@@ -161,8 +161,8 @@
 	background:$primary-color;
 	border-color:$primary-color;
 	&:hover {
-		background:#BB531F !important;
-		border-color:#BB531F !important;
+		background:$dark-orange !important;
+		border-color:$dark-orange !important;
 		color:white;
 	}
 }

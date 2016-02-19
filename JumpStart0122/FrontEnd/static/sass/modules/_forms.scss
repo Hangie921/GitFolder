@@ -160,11 +160,12 @@ div.slide.team_details, div.slide.personal_details {
 	
 }
 .next_btn {
-	font-size:16px;
+	font-size:14px;
 	float:left;
 	margin-top:40px;
 	width:87px;
 	padding:10px;
+	text-align:center;
 	display: block;
 	background:$primary-color;
 	max-height:50px;
@@ -172,11 +173,7 @@ div.slide.team_details, div.slide.personal_details {
 	border-left:1px solid $primary-color;
 	border-bottom:1px solid $primary-color;
 	position:relative;
-	transition: all 0.5s ;
-	-ms-transition: all 0.25s ;
-	-o-transition: all 0.25s ;
-	-webkit-transition: all 0.25s ;
-	-moz-transition: all 0.25s ;
+	
 
 	
 	&:before, &:after {
@@ -220,6 +217,18 @@ border-color: transparent transparent transparent $primary-color;
   
   }
 
+
+  &:hover {
+  	background-color: $dark-orange;
+  	border-color:$dark-orange;
+  	color:white;
+  	
+  	&:after, &:before{
+		
+  		border-color:transparent transparent transparent $dark-orange;
+  	}
+  }
+
  
 
 	
@@ -246,7 +255,13 @@ border-color: transparent transparent transparent $primary-color;
 		
 		}
 	
-	
+	 
+  	&:after, &:before{
+		
+  		border-color:transparent $dark-orange transparent transparent $dark-orange;
+  	}
+  
+
 }
 
 button.submit_btn {

@@ -11,23 +11,15 @@ function route(app, mongoClient,callback){
 				console.log(err);
 				return;
 			}else{
-				console.log(req.body);
-				var query = {
-					"acc":req.body.acc,
-					"psw":req.body.psw
-				};
-
-				mongo_handler.handle(mongoClient,'find',null,'member',query,null,function(err,status,result){
+				mongo_handler.handle(mongoClient,'find',null,'member',req.body,null,function(err,status,result){
+					console.log(result.acc+" 11111");
+					console.log(status);
 					if(login.check(req.body,result)){
-						//update the details
-						console.log(result);
 						res.render('index');			
 					}else{
 						res.send('error');
 					}
 				});
-
-				
 			}
 		});
 	});

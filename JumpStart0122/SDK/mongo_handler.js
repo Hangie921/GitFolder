@@ -10,19 +10,21 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 	var status = null;
 
 	if(crud === "find"){
-		result = findDetail(mongoClient,collection,query,condition,function(err,docArray){
+		findDetail(mongoClient,collection,query,condition,function(err,doc){
 			if(err){
-				log.error('erroe while finding the details');
-				log.error(err);
+				console.log('error while finding the details');
+				console.log(err);
 			}else{
-				log.info('found the detail');
+				console.log('found the detail '+ doc);
 				status = true;	
-				return docArray;
+				result = doc;
+				callback(null,status,result);
 			}	
 		});
 
 	}else if(crud === "insert"){
 		status = insertToCollection(mongoClient,doc,collection);
+		callback(null,status,result);
 		
 	}else if(crud === "update"){
 		update(req,res);
@@ -33,8 +35,7 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 		// console.log("delete success");
 		//change the rusult
 	}
-	callback(null,status,result);
-	// return docArray;
+	
 }
 
 
@@ -42,7 +43,7 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 function findDetail(mongoClient,collection,query,condition,callback){ //undone
 	if(typeof condition !== Object){ //if there is no condition,give it a default
 		condition = {
-			projcetion: {"_id":0},
+			projection: {"_id":0,"psw":1,"acc":1,},
 			sort: {},
 			skip: 0,
 			limit: 0
@@ -50,27 +51,21 @@ function findDetail(mongoClient,collection,query,condition,callback){ //undone
 	}else{
 		
 	}
-	//start to query the data and return the docArray to callback()
-	log.info("start to find in collection '" + collection + "'.");
-	var docArray = null;
+	//start to query the data and return the doc to callback()
+	console.log("start to find in collection '" + collection + "'.");
 	mongoClient.connect(mongoClient.url,function(err,db){
 		if(!err){
-			log.info("connect mongo successfully");
+			console.log("connect mongo successfully");
 			var cursor = db.collection(collection).find(query,condition.projection);
-			if(cursor.toArray().length > 0){
-				docArray = cursor.toArray();
-			}else{
-				return;
-			}
+			cursor.forEach(function(doc){
+				callback(null,doc);
+			});
 		}else{
-			log.error('error while connecting to the mongo client');
-			log.error(err);
+			console.log('error while connecting to the mongo client');
+			console.log(err);
 			return;
 		}
-		db.close();
 	});
-
-	callback(null,docArray);
 }
 
 function insertToCollection(mongoClient,doc,collection){

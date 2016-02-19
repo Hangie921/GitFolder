@@ -7,10 +7,11 @@ var md5 = require('../module/md5'),
 
 function checkDetail(detail,detail_mongo){ //check empty in the page
 	if(detail.acc === detail_mongo.acc && detail.psw === detail_mongo.psw){
-		return true;
+		return true;	
 	}else{
 		return false;
 	}
+	
 }
 
 

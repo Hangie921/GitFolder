@@ -3,7 +3,8 @@
 var path = require("path");
 var log4js = require('log4js');
 var dir_path = path.dirname(path.dirname(process.argv[1]));
-log4js.configure(path.join(dir_path,"FrontEnd/config/log_handler_config.json"));
+console.log(dir_path);
+log4js.configure(path.join(dir_path,"FrontEnd","config","log_handler_config.json"));
 
 function logInfo(msg){
 	var logger = log4js.getLogger('info');

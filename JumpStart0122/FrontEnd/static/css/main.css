@@ -2118,17 +2118,18 @@ div.timeLineAni:after {
 }
 
 @keyframes lineDown {
-  /* line 92, ../sass/modules/_animations.scss */
+  /* line 91, ../sass/modules/_animations.scss */
   0% {
     height: 0%;
   }
 
-  /* line 93, ../sass/modules/_animations.scss */
+  /* line 92, ../sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
+@keyframes borderAni {}
 /* LAYOUTS- Page Layout Styles */
 /*NavBar*/
 /* line 1, ../sass/layouts/_header.scss */

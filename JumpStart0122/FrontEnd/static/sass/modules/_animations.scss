@@ -87,8 +87,13 @@ div.timeLineAni:after{
 	@include animation(lineDown 3s 0s 1 linear forwards);
 	transition:all 1s;
 }
-
 @keyframes lineDown{
 	0%{height: 0%;}
 	100%{height: 100%;}
+}
+div.straightAni:after{
+
+}
+@keyframes borderAni{
+	
 }

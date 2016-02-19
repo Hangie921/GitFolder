@@ -1,8 +1,8 @@
 //This is the log module that log basic info , debug and error information
 //to the file that is set in the error_handler_config.json
-
+var path = require("path");
 var log4js = require('log4js');
-log4js.configure("../FrontEnd/config/log_handler_config.json");
+log4js.configure(path.join(path.dirname(process.argv[1]),"config/log_handler_config.json"));
 
 function logInfo(msg){
 	var logger = log4js.getLogger('info');

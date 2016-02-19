@@ -22,6 +22,10 @@ $(document).ready(function() {
 		    		break;
 				case 2:
 					$('#header').addClass('orange');
+					if(!$('.border_container').hasClass('straightAni')){
+						$('.border_container').addClass('straightAni');
+						$('#sec_about').addClass('timeLineAni');
+					}
 					break;
 				case 3:
 					$('#header').addClass('fff');

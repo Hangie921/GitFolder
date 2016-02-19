@@ -91,9 +91,68 @@ div.timeLineAni:after{
 	0%{height: 0%;}
 	100%{height: 100%;}
 }
-div.straightAni:after{
 
+$borderPos:99%;
+$borderBottom:50%;
+$borderWidth:1%;
+$speed:.3s;
+
+
+div.straightAni{
+	& .border{
+	    background-color:#000;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	  }
+	& .border.top{
+	    width: $borderPos;
+	    height: $borderWidth;
+	    left: 50%;
+	    @include animation(borderTopAni $speed 0s 1 linear forwards);
+	}
+	& .border.bottom{
+	    width: 100%;
+	    height: $borderWidth;
+	    top: $borderPos;
+	  	&.b_right{
+		    width: 0%;
+		    left: 100%;
+		    @include animation(borderB_right $speed $speed*3 1 linear forwards);
+	    }
+	    &.b_left{
+		    width: 0%;
+		    left: 0;
+		    @include animation(borderB_left $speed $speed*3 1 linear forwards);
+	    }
+	}
+	  
+	& .border.left,.border.right{
+	    width:$borderWidth;
+	    height: 0;
+	    @include animation(borderSidesAni $speed*2 $speed 1 linear forwards);
+	}
+	  
+	& .border.right{
+	    left: $borderPos;
+	}
 }
-@keyframes borderAni{
-	
+@keyframes borderTopAni{
+  0%{left:50%;width:0;}
+  100%{left:0;width:$borderPos;}
+}
+
+@keyframes borderSidesAni{
+  0%{height: 0;}
+  100%{height: $borderPos;}
+}
+
+@keyframes borderB_left{
+  0%{width: 0;left: 0;}
+  100%{width: $borderBottom;left: 0;}
+  
+}
+@keyframes borderB_right{
+  0%{width: 0;left: 100%;}
+  100%{width: $borderBottom;}
 }

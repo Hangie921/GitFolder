@@ -147,7 +147,6 @@ $(document).ready(function() {
 		}
 
 	});
-
 	
 	$('#reg_form').submit(function() {
 		var btn = $('button.submit_btn');
@@ -155,19 +154,25 @@ $(document).ready(function() {
         return false;
     });
 
-    $('#contact_us_form').submit(function(){
-    	var btn = $('button.contact_us_btn');
-    	contact_form_check(btn,$(this));
-    	return false
-    });
+    $('#contact_us_form').validate({
+		debug: false,
+		success: 'valid',
+		rules:{
+			user_name:"required",
+			user_email:{
+				required:true,
+				email:true
+			},
+			subject:"required",
+			user_msg:"required"
+		},
+		messages:{
 
-});//end of the document.ready
+		}
+	});
 
-
-//The validation function
-function sub_form_check(btn,form){
 	$("#reg_form").validate({
-		debug: true,
+		debug: false,
 		success: 'valid',
 		rules: {
 			team_name:"required",
@@ -198,59 +203,47 @@ function sub_form_check(btn,form){
 		},
 		messages:{
 
-		},
-		submitHandler: function(){
-			submit_to_db(btn,form);
-		},
-		invalidHandler: function(){ // ani feedback
-			var color = btn.css('color');
-    		var bg = btn.css('background-color');
-			btn.addClass('btn-error');
-    		btn.css({'color':bg});
-			setTimeout(function(){
-				btn.removeClass('btn-error');
-			}, 1000);
-			setTimeout(function(){
-				btn.css({'color':color});
-			}, 1100);
 		}
 
 	});
-}
 
-
-function contact_form_check(btn,form){
-	$('#contact_us_form').validate({
-		debug: true,
-		success: 'valid',
-		rules:{
-			user_name:"required",
-			user_email:{
-				required:true,
-				email:true
-			},
-			subject:"required",
-			user_msg:"required"
-		},
-		messages:{
-
-		},
-		submitHandler: function(){
-			submit_to_db(btn,form);
-		},
-		invalidHandler: function(){ //ani feedback
-			var color = btn.css('color');
-    		var bg = btn.css('background-color');
-			btn.addClass('btn-error');
-    		btn.css({'color':bg});
-			setTimeout(function(){
-				btn.removeClass('btn-error');
-			}, 1000);
-			setTimeout(function(){
-				btn.css({'color':color});
-			}, 1100);
+    $('#contact_btn').click(function(){
+		var btn = $('a.contact_us_btn');
+		var contact_form = $('#contact_us_form')
+		if(contact_form.valid()){  
+            submit_to_db(btn,contact_form);
+		}
+		else{
+			btn_error(btn)
 		}
 	});
+
+	$('#reg_btn').click(function(){
+		var btn = $('a.submit_btn');
+		var reg_form = $('#reg_form')
+		if(reg_form.valid()){  
+            submit_to_db(btn,reg_form);
+		}
+		else{
+			btn_error(btn)
+		}
+
+	});
+
+});//end of the document.ready
+
+function btn_error(btn){
+	var color = btn.css('color');
+	var bg = btn.css('background-color');
+	btn.addClass('btn-error');
+	btn.css({'color':bg});
+	setTimeout(function(){
+		btn.removeClass('btn-error');
+	}, 1000);
+	setTimeout(function(){
+		btn.css({'color':color});
+	}, 1100);
+
 }
 
 function submit_to_db(btn,form){ 

@@ -34,6 +34,8 @@ function initMongo(url,port,db){  //return the mongoClient object when call the 
 	//set up the connection to the server
 	var mongoClient = new MongoClient();
 	mongoClient.url = "mongodb://"+url+":"+port+"/"+db;
+	log.info("Mongo server listening on port " +port);
+	console.log("Mongo server listening on port " +port);
 	return mongoClient;
 }
 

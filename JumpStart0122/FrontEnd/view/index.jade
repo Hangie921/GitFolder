@@ -7,17 +7,17 @@ html
 		script(type='text/javascript').
 			window.jQuery || document.write('<script src="../js/jquery-2.2.0.min.js">\x3C/script>')
 		script(src="../js/jquery.validate.js")
-		script(src="../js/jquery_fullPage.js")
-		link(href="../css/jquery_fullPage.css", rel='stylesheet')
+		script(src="../js/jquery_fullPage.js")		
 		script(src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js")
 		script(src="../js/jquery.slotmachine.min.js")
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js")
+		script(src="../js/index.js")
+		link(href="../css/jquery_fullPage.css", rel='stylesheet')
 		link(href="../css/bootstrap.css", rel='stylesheet')
 		link(href="../css/set1.css", rel='stylesheet')
 		link(href="../css/set2.css", rel='stylesheet')
 		link(href="../css/main.css", rel='stylesheet')
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
-		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js")
-		script(src="../js/index.js")
 		script(type='text/javascript'). 
 			try{Typekit.load({ async: true });}catch(e){}
 
@@ -117,7 +117,7 @@ html
 											|可馬上投入市場的計畫
 										li 
 											i.fa.fa-rocket
-											|能立即結合自由行旅遊平台的產品。
+											|能立即結合自由行旅遊平台的產品
 
 									|不要懷疑了，快點加入Jumpstart計畫，與你的夥伴一起綻放國際！ 
 
@@ -275,9 +275,9 @@ html
 									span.en_para Jumpstart
 									| 計畫!
 								ul.plan_list
-									li 下載商業計劃書範本
-									li 填寫計畫書及相關資料
-									li 送出
+									li 下載 商業計劃書範本
+									li 填寫 計畫書及相關資料
+									li 送出 JumpStart計畫！
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
 								
 								a.bizplan_download.btn.btn-4.btn-4a.orange
@@ -342,7 +342,7 @@ html
 									input#agree(type="checkbox" name='agree' value="我同意") 
 									span 我同意
 								//- input.col-centered(type='submit' value='我要提交計畫')
-							button.submit_btn.btn.btn-4.btn-4a 完成了，我要提交!
+							a#reg_btn.submit_btn.btn.btn-4.btn-4a 完成了，我要提交!
 
 							
 
@@ -397,7 +397,9 @@ html
 							.col-md-4
 								textarea(placeholder='我有疑問...',name='user_msg',require)
 								//- input(type='submit' value='傳送給我們!')
-								button.contact_us_btn.btn.orange.btn-4.btn-4a 提交
+								
+								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交
+								//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
 
 							.col-md-4.contact-details 
 								h3 Ping! Connect

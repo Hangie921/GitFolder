@@ -386,16 +386,24 @@ html
 									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-name')
 											span.input__label-content.input__label-content--hoshi 姓名
+											span.input__label-content.input__label-content--hoshi
 								span.input.input--hoshi
 									input#input-4-email.input__field.input__field--hoshi(type='email',name='user_email')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-email')
 											span.input__label-content.input__label-content--hoshi email
+											span.input__label-content.input__label-content--hoshi
 								span.input.input--hoshi
 									input#input-4-sub.input__field.input__field--hoshi(type='text',name='subject')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-sub')
 											span.input__label-content.input__label-content--hoshi 標題
+											span.input__label-content.input__label-content--hoshi
 							.col-md-4
-								textarea(placeholder='我有疑問...',name='user_msg',require)
+								textarea#textarea_mes(placeholder='我有疑問...',name='user_msg',require)
+								//- label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='textarea_mes')
+								//- 	span.input__label-content.input__label-content--hoshi 
+								//- 	span.input__label-content.input__label-content--hoshi
+								
+								
 								//- input(type='submit' value='傳送給我們!')
 								
 								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交

@@ -30,6 +30,9 @@ $(document).ready(function() {
 				case 3:
 					$('#header').addClass('fff');
 					$('#competition_topic_slide').addClass('timeLineAni');
+					if(!$('#competition_topic_slide').hasClass('borderRightAni')){ //border animation
+						$('#competition_topic_slide').addClass('borderRightAni');
+					}
 					break;
 				case 4:
 					$('#header').addClass('orange');
@@ -45,9 +48,7 @@ $(document).ready(function() {
 				switch(slideIndex){
 					case 0:
 						$('#competition_menu li:nth-child(1) a').addClass('selected');
-						if(!$('#competition_topic_slide .border_container').hasClass('borderRightAni')){ //border animation
-							$('#competition_topic_slide .border_container').addClass('borderRightAni');
-						}
+						
 					break;
 					case 1:
 						$('#competition_menu li:nth-child(2) a').addClass('selected');
@@ -302,7 +303,7 @@ function initSlot(){
 			machine3.futureActive = 7;
 			machine3.stop();
 			setTimeout(function(){
-				$.fn.fullpage.moveTo(3);
+				$.fn.fullpage.moveTo('competition');
 			}, 1000);
 	});
 }

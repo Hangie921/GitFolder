@@ -155,6 +155,14 @@ $(document).ready(function() {
     });
 
     $('#contact_us_form').validate({
+    	errorPlacement: function(error, element) {
+			// Append error within linked label
+			// $( element ).closest( "form" ).find( "label[for='" + element.attr( "id" ) + "']" ).parent().val(error)
+			// error.appendTo(element);
+			element.attr("placeholder",error.text());
+			element.parent().addClass('input--filled')
+		},
+
 		debug: false,
 		success: 'valid',
 		rules:{

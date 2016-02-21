@@ -1,5 +1,6 @@
 var instance = require('../SDK/instance'),
-	mongo = instance.startMongo(),
+	//modify by Randy 19.02.2016
+	// mongo = instance.startMongo(),
 	bodyParser = require('../FrontEnd/node_modules/body-parser'),
 	config = require('../FrontEnd/config/server_init'),
 	log = require("../SDK/log_handler");
@@ -74,7 +75,8 @@ function insertToCollection(mongoClient,doc,collection){
 	log.info('Start to insert to '+ collection);
 	mongoClient.connect(mongoClient.url,function(err,db){
 		if(err){
-			alert('Unexpected error happened,please retry it later.');
+			//modify by Randy 19.02.2016
+			console.log('Unexpected error happened,please retry it later.');
 			log.error("Unexpected error below while connecting to DB");
 			log.error(err);
 			return;
@@ -82,7 +84,10 @@ function insertToCollection(mongoClient,doc,collection){
 			log.info("Connet to mongo successfully");
 			db.collection(collection).insertOne(doc,function(err){
 				if(err){
-					alert('Unexpected error happend, please retry it later');
+					//modify by Randy 19.02.2016
+					console.log(collection);
+					console.log(err);
+					console.log('Unexpected error happend, please retry it later');
 					log.error('error while inserting the info to '+collection);
 					log.error(err);
 					status = false;

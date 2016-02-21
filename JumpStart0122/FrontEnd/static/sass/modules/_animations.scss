@@ -98,7 +98,9 @@ div.timeLineAni:after{
 $borderPos:99.5%;
 $borderBottom:50%;
 $borderBottomR:50%;
+$borderRight:50%;
 $borderWidth:0.5%;
+$maxWidth:1px;
 $speed:.3s;
 
 
@@ -119,7 +121,6 @@ div.straightAni{
 	    @include animation(borderTopAni $speed 0s 1 linear forwards);
 	}
 	& .border.bottom{
-	    width: 100%;
 	    height: $borderWidth;
 	    top: $borderPos;
 	  	&.b_right{
@@ -136,6 +137,7 @@ div.straightAni{
 	  
 	& .border.left,.border.right{
 	    width:$borderWidth;
+	    max-width:2px;
 	    height: 0;
 	    @include animation(borderSidesAni $speed*2 $speed 1 linear forwards);
 	}
@@ -151,7 +153,7 @@ div.straightAni{
 
 @keyframes borderSidesAni{
   0%{height: 0;}
-  100%{height: $borderPos;}
+  100%{height: 100%;}
 }
 
 @keyframes borderB_left{
@@ -161,5 +163,63 @@ div.straightAni{
 }
 @keyframes borderB_right{
   0%{width: 0;left: 100%;}
-  100%{width: $borderBottomR;left: 50%;}
+  100%{width: $borderBottomR;left: 49.5%;}
+}
+
+div.borderRightAni{
+	position: relative;
+	box-sizing:border-box;
+	border:1px none #f16b29;
+	height: inherit;
+	& .border{
+	    position: absolute;
+	    background-color:#f16b29;
+	    left: 0;
+    	top: 0;
+	}
+	& .border.top,.border.bottom{
+	    height: $borderWidth;
+	    width: 0;
+	    @include animation(borderTopBottomAni $speed*2 $speed 1 linear forwards);
+	}
+	& .border.bottom{
+    	top:$borderPos;
+	}
+	& .border.left{
+	    width: $borderWidth;
+	    height: 0;
+	    top: 50%;
+	    @include animation(borderLeftAni $speed 0s 1 linear forwards);
+  	}
+  	& .border.right.R_top{
+	    width:$borderWidth;
+	    left:$borderPos;
+	    @include animation(borderR_top $speed $speed*3 1 linear forwards);
+  	}
+  	& .border.right.R_bottom{
+	    width:$borderWidth;
+	    left:$borderPos;
+	    @include animation(borderR_bottom $speed $speed*3 1 linear forwards);
+  	}
+
+}
+
+@keyframes borderLeftAni{
+  0%{top:50%;height:0;max-width:$maxWidth;}
+  100%{top:0;height:$borderPos;max-width:$maxWidth;}
+}
+
+@keyframes borderTopBottomAni{
+  0%{width: 0;}
+  100%{width: $borderPos;}
+}
+
+@keyframes borderR_top{
+  0%{height: 0;top: 0;max-width:$maxWidth;}
+  100%{height: $borderRight;top: 0;max-width:$maxWidth;}
+  
+}
+@keyframes borderR_bottom{
+  0%{height: 0;top: 100%;max-width:$maxWidth;}
+  100%{height: $borderRight;top:50%;max-width:$maxWidth;}
 }

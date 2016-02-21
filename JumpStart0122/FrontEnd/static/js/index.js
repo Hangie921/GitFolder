@@ -22,13 +22,17 @@ $(document).ready(function() {
 		    		break;
 				case 2:
 					$('#header').addClass('orange');
-					if(!$('.border_container').hasClass('straightAni')){
-						$('.border_container').addClass('straightAni');
+					if(!$('#sec_about .border_container').hasClass('straightAni')){ //border animation
+						$('#sec_about .border_container').addClass('straightAni');
 						$('#sec_about').addClass('timeLineAni');
 					}
 					break;
 				case 3:
 					$('#header').addClass('fff');
+					$('#competition_topic_slide').addClass('timeLineAni');
+					if(!$('#competition_topic_slide').hasClass('borderRightAni')){ //border animation
+						$('#competition_topic_slide').addClass('borderRightAni');
+					}
 					break;
 				case 4:
 					$('#header').addClass('orange');
@@ -44,12 +48,25 @@ $(document).ready(function() {
 				switch(slideIndex){
 					case 0:
 						$('#competition_menu li:nth-child(1) a').addClass('selected');
+						
 					break;
 					case 1:
 						$('#competition_menu li:nth-child(2) a').addClass('selected');
+						if(!$('#competition_info_slide').hasClass('borderRightAni')){ //border animation
+							$('#competition_info_slide').addClass('borderRightAni');
+						}
 					break;
 					case 2:
 						$('#competition_menu li:nth-child(3) a').addClass('selected');
+						if(!$('#competition_prize_slide').hasClass('borderRightAni')){ //border animation
+							$('#competition_prize_slide').addClass('borderRightAni');
+						}
+					break;
+					case 3:
+						$('#competition_menu li:nth-child(4) a').addClass('selected');
+						if(!$('#competition_sponsor_slide').hasClass('borderRightAni')){ //border animation
+							$('#competition_sponsor_slide').addClass('borderRightAni');
+						}
 					break;
 				}
 			}
@@ -131,7 +148,6 @@ $(document).ready(function() {
 		}
 
 	});
-
 	
 	$('#reg_form').submit(function() {
 		var btn = $('button.submit_btn');
@@ -139,19 +155,34 @@ $(document).ready(function() {
         return false;
     });
 
-    $('#contact_us_form').submit(function(){
-    	var btn = $('button.contact_us_btn');
-    	contact_form_check(btn,$(this));
-    	return false
-    });
+    $('#contact_us_form').validate({
+    	errorPlacement: function(error, element) {
+			// Append error within linked label
+			$( element ).closest( "form" ).find( "label[for='" + element.attr( "id" ) + "']" ).find('span').next().empty().append('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;').append( error.text() );
+			if(element.is("textarea")){
+				element.empty().attr("placeholder",error.text())
+			}
+			// element.attr("placeholder",error.text()).parent().addClass('input--filled');
+		},
 
-});//end of the document.ready
+		debug: false,
+		success: 'valid',
+		rules:{
+			user_name:"required",
+			user_email:{
+				required:true,
+				email:true
+			},
+			subject:"required",
+			user_msg:"required"
+		},
+		messages:{
 
+		}
+	});
 
-//The validation function
-function sub_form_check(btn,form){
 	$("#reg_form").validate({
-		debug: true,
+		debug: false,
 		success: 'valid',
 		rules: {
 			team_name:"required",
@@ -182,59 +213,47 @@ function sub_form_check(btn,form){
 		},
 		messages:{
 
-		},
-		submitHandler: function(){
-			submit_to_db(btn,form);
-		},
-		invalidHandler: function(){ // ani feedback
-			var color = btn.css('color');
-    		var bg = btn.css('background-color');
-			btn.addClass('btn-error');
-    		btn.css({'color':bg});
-			setTimeout(function(){
-				btn.removeClass('btn-error');
-			}, 1000);
-			setTimeout(function(){
-				btn.css({'color':color});
-			}, 1100);
 		}
 
 	});
-}
 
-
-function contact_form_check(btn,form){
-	$('#contact_us_form').validate({
-		debug: true,
-		success: 'valid',
-		rules:{
-			user_name:"required",
-			user_email:{
-				required:true,
-				email:true
-			},
-			subject:"required",
-			user_msg:"required"
-		},
-		messages:{
-
-		},
-		submitHandler: function(){
-			submit_to_db(btn,form);
-		},
-		invalidHandler: function(){ //ani feedback
-			var color = btn.css('color');
-    		var bg = btn.css('background-color');
-			btn.addClass('btn-error');
-    		btn.css({'color':bg});
-			setTimeout(function(){
-				btn.removeClass('btn-error');
-			}, 1000);
-			setTimeout(function(){
-				btn.css({'color':color});
-			}, 1100);
+    $('#contact_btn').click(function(){
+		var btn = $('a.contact_us_btn');
+		var contact_form = $('#contact_us_form')
+		if(contact_form.valid()){  
+            submit_to_db(btn,contact_form);
+		}
+		else{
+			btn_error(btn)
 		}
 	});
+
+	$('#reg_btn').click(function(){
+		var btn = $('a.submit_btn');
+		var reg_form = $('#reg_form')
+		if(reg_form.valid()){  
+            submit_to_db(btn,reg_form);
+		}
+		else{
+			btn_error(btn)
+		}
+
+	});
+
+});//end of the document.ready
+
+function btn_error(btn){
+	var color = btn.css('color');
+	var bg = btn.css('background-color');
+	btn.addClass('btn-error');
+	btn.css({'color':bg});
+	setTimeout(function(){
+		btn.removeClass('btn-error');
+	}, 1000);
+	setTimeout(function(){
+		btn.css({'color':color});
+	}, 1100);
+
 }
 
 function submit_to_db(btn,form){ 
@@ -286,7 +305,7 @@ function initSlot(){
 			machine3.futureActive = 7;
 			machine3.stop();
 			setTimeout(function(){
-				$.fn.fullpage.moveTo(3);
+				$.fn.fullpage.moveTo('competition');
 			}, 1000);
 	});
 }

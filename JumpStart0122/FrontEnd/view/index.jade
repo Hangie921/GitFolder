@@ -7,17 +7,17 @@ html
 		script(type='text/javascript').
 			window.jQuery || document.write('<script src="../js/jquery-2.2.0.min.js">\x3C/script>')
 		script(src="../js/jquery.validate.js")
-		script(src="../js/jquery_fullPage.js")
-		link(href="../css/jquery_fullPage.css", rel='stylesheet')
+		script(src="../js/jquery_fullPage.js")		
 		script(src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js")
 		script(src="../js/jquery.slotmachine.min.js")
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js")
+		script(src="../js/index.js")
+		link(href="../css/jquery_fullPage.css", rel='stylesheet')
 		link(href="../css/bootstrap.css", rel='stylesheet')
 		link(href="../css/set1.css", rel='stylesheet')
 		link(href="../css/set2.css", rel='stylesheet')
 		link(href="../css/main.css", rel='stylesheet')
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
-		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js")
-		script(src="../js/index.js")
 		script(type='text/javascript'). 
 			try{Typekit.load({ async: true });}catch(e){}
 
@@ -27,7 +27,7 @@ html
 				header.container#header
 					.col-md-12
 						.col-md-2
-							a(class='navbar-brand' href='#home') JumpStart.
+							a(class='navbar-brand' href='/') JumpStart.
 						.main-menu#main_menu.col-md-10
 							ul.menu
 								li(data-menuanchor='about')
@@ -80,142 +80,166 @@ html
 			.section#sec_competition.container(data-anchor='competition')
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
 					.slide-inner.zindex.clearfix
-						a.competition_topic_slide_arrow.slide_next.arrow(href="#competition/1") next
-						.col-md-12.clearfix.no-pad
-							ul.competition-headings#competition_menu
-								li 
-									a.selected(href="#competition/") 競賽主題
-								li
-									a(href="#competition/1") 參賽資訊
-								li 
-									a(href="#competition/2") 獎項
-								li 
-									a(href="#competition/3") 承辦贊助
-						.col-md-5
-							h4 jumpstart 
-								span with 
-								|100 million 
-								span users			
-						.col-md-7.clearfix
-							h5 你有創業夢嗎？
-							h5 你想要一舉躍進國際市場嗎？
-
-							p 
-								|現在我們開放自由行旅遊平台的100,000,000+筆活躍用戶資料，由你親手創造資料的價值！！只要你具有以下特質：
-								ul 
+						.border_container
+							.border.top
+							.border.right.R_top
+							.border.right.R_bottom
+							.border.bottom
+							.border.left
+							a.competition_topic_slide_arrow.slide_next.arrow(href="#competition/1") next
+							.col-md-12.clearfix.no-pad
+								ul.competition-headings#competition_menu
 									li 
-										i.fa.fa-rocket
-										|一個有創意的旅遊business idea
+										a.selected(href="#competition/") 競賽主題
+									li
+										a(href="#competition/1") 參賽資訊
 									li 
-										i.fa.fa-rocket
-										|可馬上投入市場的計畫
+										a(href="#competition/2") 獎項
 									li 
-										i.fa.fa-rocket
-										|能立即結合自由行旅遊平台的產品。
+										a(href="#competition/3") 承辦贊助
+							.col-md-5
+								h4 jumpstart 
+									span with 
+									|100 million 
+									span users			
+							.col-md-7.clearfix
+								h5 你有創業夢嗎？
+								h5 你想要一舉躍進國際市場嗎？
 
-								|不要懷疑了，快點加入Jumpstart計畫，與你的夥伴一起綻放國際！ 
+								p 
+									|現在我們開放自由行旅遊平台的100,000,000+筆活躍用戶資料，由你親手創造資料的價值！！只要你具有以下特質：
+									ul 
+										li 
+											i.fa.fa-rocket
+											|一個有創意的旅遊business idea
+										li 
+											i.fa.fa-rocket
+											|可馬上投入市場的計畫
+										li 
+											i.fa.fa-rocket
+											|能立即結合自由行旅遊平台的產品
 
-						.col-md-12.col-centered.sponsors.clearfix.hide
+									|不要懷疑了，快點加入Jumpstart計畫，與你的夥伴一起綻放國際！ 
+
+							.col-md-12.col-centered.sponsors.clearfix.hide
+								.col-md-12.col-centered
+									ul.partners
+										li
+											a 螞蜂窩
+										li 
+											a venture craft
+										li
+											a 365
+										li
+											a e27
+										li
+											a city tour
+										li
+											a Ping!
+										li 
+											a DSEE
 							.col-md-12.col-centered
-								ul.partners
-									li
-										a 螞蜂窩
-									li 
-										a venture craft
-									li
-										a 365
-									li
-										a e27
-									li
-										a city tour
-									li
-										a Ping!
-									li 
-										a DSEE
-						.col-md-12.col-centered
-							a.navy.btn.btn-4.btn-4a.icon-arrow-right(href='#jumpnow') 我要參加!
+								a.navy.btn.btn-4.btn-4a.icon-arrow-right(href='#jumpnow') 我要參加!
 
 				.slide#competition_info_slide.slide-padding
 					.slide-inner.zindex.clearfix
-						a.competition_info_slide_arrow.slide_prev.arrow(href="#competition") prev
-						a.competition_info_slide_arrow.slide_next.arrow(href="#competition/2") next
-						
-						.col-md-12.clearfix.no-pad
-							ul.competition-headings#competition_menu
-								li 
-									a(href="#competition/") 競賽主題
-								li
-									a.selected(href="#competition/1") 參賽資訊
-								li 
-									a(href="#competition/2") 獎項
-								li 
-									a(href="#competition/3") 承辦贊助
-						.col-md-12.info_list
-							ul
-								li
-									i.fa.fa-rocket 
-									|團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關專業背景，因獲選後需實作。
-								li 
-									i.fa.fa-rocket 
-									|不得為主承辦單位之競爭者。
-								li 
-									i.fa.fa-rocket 
-									|運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書(Business Plan)，以15頁為限。
-								li  
-									i.fa.fa-rocket 
-									|選進入第二階段後，參加決賽的團隊，每隊只可派出一至兩名核心成員參加簡報，簡報時間為5~8分鐘。
-								li 
-									i.fa.fa-rocket 
-									|參賽專案的產品、技術及相關專利歸屬參賽團隊(Ping需佔股份，詢問法律顧問)。
-						.col-md-12
-							.timeline
+						.border_container
+							.border.top
+							.border.right.R_top
+							.border.right.R_bottom
+							.border.bottom
+							.border.left
+							a.competition_info_slide_arrow.slide_prev.arrow(href="#competition") prev
+							a.competition_info_slide_arrow.slide_next.arrow(href="#competition/2") next
+							
+							.col-md-12.clearfix.no-pad
+								ul.competition-headings#competition_menu
+									li 
+										a(href="#competition/") 競賽主題
+									li
+										a.selected(href="#competition/1") 參賽資訊
+									li 
+										a(href="#competition/2") 獎項
+									li 
+										a(href="#competition/3") 承辦贊助
+							.col-md-12.info_list
 								ul
+									li
+										i.fa.fa-rocket 
+										|團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關專業背景，因獲選後需實作。
 									li 
-										h4 線上報名
-											span 五週
-										p 截止時間:  12AM 23/03/2016
+										i.fa.fa-rocket 
+										|不得為主承辦單位之競爭者。
 									li 
-										h4 決賽名單公布
-											span 一週
-										p 入選隊伍:  12AM 30/03/2016
+										i.fa.fa-rocket 
+										|運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書(Business Plan)，以15頁為限。
+									li  
+										i.fa.fa-rocket 
+										|選進入第二階段後，參加決賽的團隊，每隊只可派出一至兩名核心成員參加簡報，簡報時間為5~8分鐘。
 									li 
-										h4 決賽
-											span 一週
-										p 開始時間:  10 AM 06/04/2016
-									li 
-										h4 實作
-											span 四週
-										p 截止時間:  04/05/2016
+										i.fa.fa-rocket 
+										|參賽專案的產品、技術及相關專利歸屬參賽團隊(Ping需佔股份，詢問法律顧問)。
+							.col-md-12
+								.timeline
+									ul
+										li 
+											h4 線上報名
+												span 五週
+											p 截止時間:  12AM 23/03/2016
+										li 
+											h4 決賽名單公布
+												span 一週
+											p 入選隊伍:  12AM 30/03/2016
+										li 
+											h4 決賽
+												span 一週
+											p 開始時間:  10 AM 06/04/2016
+										li 
+											h4 實作
+												span 四週
+											p 截止時間:  04/05/2016
 											
 					
 
 				.slide#competition_prize_slide.slide-padding
 					.slide-inner.zindex.clearfix
-						a.competition_info_slide_arrow.slide_prev.arrow(href="#competition") prev
-						a.competition_info_slide_arrow.slide_next.arrow(href="#competition/3") next
-						.col-md-12.clearfix.no-pad
-							ul.competition-headings#competition_menu
-								li 
-									a(href="#competition") 競賽主題
-								li
-									a(href="#competition/1") 參賽資訊
-								li 
-									a.selected(href="#competition/2") 獎項
-								li 
-									a(href="#competition/3") 承辦贊助
-							.col-md-12
-								.col-md-4.prize-single
-									h4 $90,000 
-								.col-md-4.prize-single
-									h4 $300,000
-								.col-md-4.prize-single
-									h4 $50,000
+						.border_container
+							.border.top
+							.border.right.R_top
+							.border.right.R_bottom
+							.border.bottom
+							.border.left
+							a.competition_info_slide_arrow.slide_prev.arrow(href="#competition/1") prev
+							a.competition_info_slide_arrow.slide_next.arrow(href="#competition/3") next
+							.col-md-12.clearfix.no-pad
+								ul.competition-headings#competition_menu
+									li 
+										a(href="#competition") 競賽主題
+									li
+										a(href="#competition/1") 參賽資訊
+									li 
+										a.selected(href="#competition/2") 獎項
+									li 
+										a(href="#competition/3") 承辦贊助
 								.col-md-12
-									p *入選隊伍均可於新加坡設立境外公司
+									.col-md-4.prize-single
+										h4 $90,000 
+									.col-md-4.prize-single
+										h4 $300,000
+									.col-md-4.prize-single
+										h4 $50,000
+									.col-md-12
+										p *入選隊伍均可於新加坡設立境外公司
 
-				.slide#competition_prize_slide.slide-padding
-						.slide-inner.zindex.clearfix
-							a.competition_prize_slide_arrow.slide_prev.arrow(href="#competition/1") prev
+				.slide#competition_sponsor_slide.slide-padding
+					.slide-inner.zindex.clearfix
+						.border_container
+							.border.top
+							.border.right.R_top
+							.border.right.R_bottom
+							.border.bottom
+							.border.left
+							a.competition_prize_slide_arrow.slide_prev.arrow(href="#competition/2") prev
 							.col-md-12.clearfix.no-pad
 								ul.competition-headings#competition_menu
 									li 
@@ -251,9 +275,9 @@ html
 									span.en_para Jumpstart
 									| 計畫!
 								ul.plan_list
-									li 下載商業計劃書範本
-									li 填寫計畫書及相關資料
-									li 送出
+									li 下載 商業計劃書範本
+									li 填寫 計畫書及相關資料
+									li 送出 JumpStart計畫！
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
 								
 								a.bizplan_download.btn.btn-4.btn-4a.orange
@@ -318,7 +342,7 @@ html
 									input#agree(type="checkbox" name='agree' value="我同意") 
 									span 我同意
 								//- input.col-centered(type='submit' value='我要提交計畫')
-							button.submit_btn.btn.btn-4.btn-4a 完成了，我要提交!
+							a#reg_btn.submit_btn.btn.btn-4.btn-4a 完成了，我要提交!
 
 							
 
@@ -359,21 +383,31 @@ html
 						form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
 							.col-md-4
 								span.input.input--hoshi
-									input#input-4.input__field.input__field--hoshi(type='text',name='user_name')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-name')
 											span.input__label-content.input__label-content--hoshi 姓名
+											span.input__label-content.input__label-content--hoshi
 								span.input.input--hoshi
-									input#input-4.input__field.input__field--hoshi(type='email',name='user_email')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									input#input-4-email.input__field.input__field--hoshi(type='email',name='user_email')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-email')
 											span.input__label-content.input__label-content--hoshi email
+											span.input__label-content.input__label-content--hoshi
 								span.input.input--hoshi
-									input#input-4.input__field.input__field--hoshi(type='text',name='subject')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+									input#input-4-sub.input__field.input__field--hoshi(type='text',name='subject')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-sub')
 											span.input__label-content.input__label-content--hoshi 標題
+											span.input__label-content.input__label-content--hoshi
 							.col-md-4
-								textarea(placeholder='我有疑問...',name='user_msg',require)
+								textarea#textarea_mes(placeholder='我有疑問...',name='user_msg',require)
+								//- label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='textarea_mes')
+								//- 	span.input__label-content.input__label-content--hoshi 
+								//- 	span.input__label-content.input__label-content--hoshi
+								
+								
 								//- input(type='submit' value='傳送給我們!')
-								button.contact_us_btn.btn.orange.btn-4.btn-4a 提交
+								
+								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交
+								//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
 
 							.col-md-4.contact-details 
 								h3 Ping! Connect

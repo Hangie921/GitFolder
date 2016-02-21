@@ -16,6 +16,7 @@ function route(app, mongoClient){
 				res.end('error');
 			}else{
 				var doc = contact.to_object(req,res);
+				console.log(doc);
 				mongo_handler.handle(mongoClient,'insert',doc,'contact',null,null,function(err,status,result){
 					//the null is the condition varible
 					if(err){

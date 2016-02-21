@@ -382,48 +382,38 @@ div.competition_topic {
 		margin-left:140px !important;
 	}
 }
-div.sponsors {
-	position:absolute;
-	bottom:150px;
-	left:0;
 
+div.sponsor-group {
+		padding-top:30px;
+	h3 {
+		color:$primary-color;
+		font-weight: bold;
+		letter-spacing: 3px;
+	}
 
+	ul.sponsor-list {
+		li {
+			display: inline-block;
+			background:black;
+			width:150px;
+			height:80px;
+			margin-right:50px;
+
+			&:first-child {
+				background: url(../img/ping_logo.png) no-repeat center center;
+				@include background-size(100% auto);
+			}
+			&:nth-child(2){
+				background: url(../img/venture_craft_logo.png) no-repeat center center;
+				@include background-size(100% auto);
+			}
+		}
+	}
 }
-ul.partners {
-	padding:0;
-	text-align:center;
 
-	li {
-		background-color:#eee;
-		width:100px;
-		height:100px;
-		display: inline-block;
-		margin:0 15px 15px 0;
-		padding:10px;
-		cursor: pointer;
-		vertical-align: top;
-		@include border-radius(50%);
-    	background-repeat: no-repeat;
-    	background-position: center center;
-    	-moz-background-size: 85% auto;
-    	-ms-background-size: 85% auto;
-    	-webkit-background-size: 85% auto;
-    	-o-background-size: 85% auto;
-    	-moz-background-blend-mode: multiply;
-    	-ms-background-blend-mode: overlay;
-    	-webkit-background-blend-mode: multiply;
-    	-o-background-blend-mode: multiply;
-    	background-blend-mode: multiply;
-    	-webkit-filter: grayscale(1); 
-		-moz-filter: grayscale(1);
-		filter: gray; 
-		filter: grayscale(1);
-		transition: all 0.1s;
-		-ms-transition: all 0.1s;
-		-o-transition: all 0.1s;
-		-webkit-transition: all 0.1s;
-		-moz-transition: all 0.1s;
-		opacity: 0.8;
+
+	.hello li {
+		
 
 
 
@@ -470,7 +460,7 @@ ul.partners {
 			background-color:white;
 		}
 	}
-}
+
 
 /**COMPETITION DETAILS**/
 #competition_info_slide {

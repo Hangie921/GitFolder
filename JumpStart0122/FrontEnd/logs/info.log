@@ -2,6 +2,7 @@
 [2016-02-19 14:25:57.515] [INFO] info - Express server listening on port 3000
 [2016-02-19 14:25:57.515] [INFO] info - Express server listening on port 3000
 [2016-02-19 14:35:20.163] [INFO] info - Express server listening on port 3000
+<<<<<<< Updated upstream
 [2016-02-20 11:24:05.776] [INFO] info - Mongo server listening on port 27017
 [2016-02-20 11:24:05.781] [INFO] info - Express server listening on port 3000
 [2016-02-20 11:24:50.317] [INFO] info - /contact route accepted
@@ -23,3 +24,6 @@
 [2016-02-20 11:26:25.321] [INFO] info - Insert doc into 'detail' collection!
 [2016-02-20 11:26:25.321] [INFO] info - Insert doc successfully
 [2016-02-20 11:26:25.323] [INFO] info - mongo connections closed
+=======
+[2016-02-21 17:09:54.883] [INFO] info - Express server listening on port 3000
+>>>>>>> Stashed changes

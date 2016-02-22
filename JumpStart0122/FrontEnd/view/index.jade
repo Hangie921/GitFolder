@@ -33,7 +33,7 @@ html
 								li(data-menuanchor='about')
 									a(href='#about') about
 								li(data-menuanchor='competition')
-									a(href='#competition') competition
+									a(href='#competition/1') competition
 								li.jumpnow_link(data-menuanchor='jumpnow') 
 									a(href='#jumpnow') jump now
 								li(data-menuanchor='events') 
@@ -85,8 +85,6 @@ html
 							.border.right.R_bottom
 							.border.bottom
 							.border.left
-							.horizon_line
-							.straight_line
 							a.competition_topic_slide_arrow.slide_next.arrow(href="#competition/1") next
 							.col-md-12.clearfix.no-pad
 								ul.competition-headings#competition_menu
@@ -103,7 +101,7 @@ html
 									span with 
 									|100 million 
 									span users			
-							.col-md-7.clearfix.zindex
+							.col-md-7.clearfix
 								h5 你有創業夢嗎？
 								h5 你想要一舉躍進國際市場嗎？
 
@@ -306,39 +304,39 @@ html
 								.border.right.R_bottom
 								.border.bottom
 								.border.left
-
-								a.slide_next.arrow.slide_team_details_arrow(href="#jumpnow/2") next
-								a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow") prev
-								
-								.col-md-11.clearfix
-								.col-md-5.clearfix
-										span.input.input--hoshi
-											input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
+							a.slide_next.arrow.slide_team_details_arrow(href="#jumpnow/2") next
+							a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow") prev
+							
+							.col-md-11.clearfix
+							.col-md-5.clearfix
+									span.input.input--hoshi
+										input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
+										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+												span.input__label-content.input__label-content--hoshi 隊伍名稱
+									span.input.input--hoshi 
+										|產品介紹	 
+										span.reminder 請在兩百字以內介紹你精彩的產品!	
+										textarea(name='product_brief')
+									span.input.input--hoshi
+										input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
+										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+												span.input__label-content.input__label-content--hoshi 上傳檔案	
+								.col-md-7
+									.team_detail_single.clearfix
+										span.input.input--hoshi.team_member
+											input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 隊伍名稱
-										span.input.input--hoshi 
-											|產品介紹		
-											textarea(name='product_brief',row='10')
-										span.input.input--hoshi
-											input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
-											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 上傳檔案	
-									.col-md-7
-										.team_detail_single.clearfix
-											span.input.input--hoshi.team_member
-												input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
-												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-														span.input__label-content.input__label-content--hoshi 成員
-											span.input.input--hoshi.responsibility
-												input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_info')
+													span.input__label-content.input__label-content--hoshi 成員
+										span.input.input--hoshi.responsibility
+											input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_info')
 
-												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-														span.input__label-content.input__label-content--hoshi 負責項目
-											//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
-										button(id='add_member') 添加成員
-									.nav_group
-										a(class='button prev_btn',href='#jumpnow') 上一步
-										a(class='button next_btn', href='#jumpnow/2') 下一步
+											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+													span.input__label-content.input__label-content--hoshi 負責項目
+										//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
+									button(id='add_member') 添加成員
+								.nav_group
+									a(class='button prev_btn',href='#jumpnow') 上一步
+									a(class='button next_btn', href='#jumpnow/2') 下一步
 					.slide.personal_details.fp-auto-height
 						h2.hoshi 2. 聯絡人資料
 						.slide-inner.zindex.clearfix
@@ -349,27 +347,25 @@ html
 								.border.bottom
 								.border.left
 
-
-								a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow/1") prev
-								.col-md-6.personal_details_group
-									span.input.input--hoshi
-										input#input-4.input__field.input__field--hoshi(type='text',name='contact')
-										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-												span.input__label-content.input__label-content--hoshi 姓名
-									span.input.input--hoshi
-										input#input-4.input__field.input__field--hoshi(type='text',name='phone')
-										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-												span.input__label-content.input__label-content--hoshi 電話
-									span.input.input--hoshi
-										input#input-4.input__field.input__field--hoshi(type='text',name='email')
-										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-												span.input__label-content.input__label-content--hoshi Email
-									label.iagree
-										input#agree(type="checkbox" name='agree' value="我同意") 
-										span 我同意
-									//- input.col-centered(type='submit' value='我要提交計畫')
-								a#reg_btn.submit_btn.btn.btn-4.btn-4a 完成了，我要提交!
-
+							a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow/1") prev
+							.col-md-6.personal_details_group
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='contact')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 姓名
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='phone')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi 電話
+								span.input.input--hoshi
+									input#input-4.input__field.input__field--hoshi(type='text',name='email')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+											span.input__label-content.input__label-content--hoshi Email
+								label.iagree
+									input#agree(type="checkbox" name='agree' value="我同意") 
+									span 我同意
+								//- input.col-centered(type='submit' value='我要提交計畫')
+							a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange  完成了，我要提交!
 
 							
 

@@ -1734,12 +1734,22 @@ button.contact_us_btn {
     padding: 3%;
   }
 
-  /* line 1016, ../sass/modules/_sections.scss */
+  /* line 1014, ../sass/modules/_sections.scss */
+  a.btn {
+    width: 100%;
+  }
+
+  /* line 1017, ../sass/modules/_sections.scss */
+  a.bizplan_download {
+    margin: 0 0 15px 0 !important;
+  }
+
+  /* line 1023, ../sass/modules/_sections.scss */
   .fp-slidesContainer {
     margin-top: 14%;
   }
 
-  /* line 1019, ../sass/modules/_sections.scss */
+  /* line 1026, ../sass/modules/_sections.scss */
   .slide-inner {
     width: 97%;
   }

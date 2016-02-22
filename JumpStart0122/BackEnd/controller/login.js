@@ -20,13 +20,30 @@ function route(app, mongoClient,callback){
 				mongo_handler.handle(mongoClient,'find',null,'member',req.body,condition,function(err,status,result){
 					console.log(result.acc+" 11111");
 					console.log(status);
-					if(login.check(req.body,result)){
-						res.render('index',{
-							acc:result.acc,
-							psw:result.psw
-						});			
+					if(!login.check(req.body,result)){
+						res.send('error,please enter the correct account and passwords.');
 					}else{
-						res.send('error');
+						console.log('psw checked');
+						var query = {};
+						condition = {
+							projection:{"_id":0},
+							sort:{},
+							skip:0,
+							limit:0
+						};
+						mongo_handler.handle(mongoClient,'find',null,'detail',query,condition,function(err,status,result){
+							if(err){
+								console.log('error while loading the docs from detail collection');
+								console.log(err);
+							}else if( result === null){
+								res.send(error);
+							}else{
+								console.log(result);
+								console.log("send the doc to jade");
+								res.render('index',{results:results});
+							}
+
+						});
 					}
 				});
 			}

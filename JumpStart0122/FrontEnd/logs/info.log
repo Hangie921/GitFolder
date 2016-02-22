@@ -1,12 +1,77 @@
-[2016-02-21 23:11:28.488] [INFO] info - Mongo server listening on port 27017
-[2016-02-21 23:11:28.493] [INFO] info - Express server listening on port 3000
-<<<<<<< HEAD
-<<<<<<< HEAD
-[2016-02-22 11:58:08.572] [INFO] info - Mongo server listening on port 27017
-[2016-02-22 11:58:08.577] [INFO] info - Express server listening on port 3000
-=======
-[2016-02-22 12:00:24.382] [INFO] info - Mongo server listening on port 27017
-[2016-02-22 12:00:24.387] [INFO] info - Express server listening on port 5000
->>>>>>> origin/master
-=======
->>>>>>> parent of 89d8e30... responsive layout
+[2016-02-22 15:57:08.577] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 15:57:08.581] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:01:36.631] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:01:36.636] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:17:22.648] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:17:22.654] [INFO] info - Express server listening on port 3000
+[2016-02-22 16:18:06.344] [INFO] info - /upload route accepted
+[2016-02-22 16:18:06.344] [INFO] info - Start uploading the file to server.
+[2016-02-22 16:18:06.374] [INFO] info - file uploaded.
+[2016-02-22 16:18:06.375] [INFO] info - file uploaded
+[2016-02-22 16:18:06.375] [INFO] info - Start uploading the user info.
+[2016-02-22 16:18:06.375] [INFO] info - Start to input members to the member_brief field
+[2016-02-22 16:18:06.376] [INFO] info - Start to insert to detail
+[2016-02-22 16:18:06.441] [INFO] info - Connet to mongo successfully
+[2016-02-22 16:18:06.529] [INFO] info - Insert doc into 'detail' collection!
+[2016-02-22 16:18:06.529] [INFO] info - Insert doc successfully
+[2016-02-22 16:18:06.532] [INFO] info - mongo connections closed
+[2016-02-22 16:19:14.061] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:19:14.066] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:22:24.320] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:22:24.324] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:24:06.276] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:24:06.281] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:26:02.910] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:26:02.916] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:26:37.796] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:26:37.802] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:33:56.884] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:33:56.888] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:36:00.764] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:36:00.771] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:36:16.855] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:36:16.860] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:37:06.942] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:37:06.947] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:41:08.499] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:41:08.504] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:43:50.281] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:43:50.286] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:45:50.224] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:45:50.229] [INFO] info - Express server listening on port 5000
+[2016-02-22 16:47:11.740] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 16:47:11.746] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:08:16.186] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:08:16.192] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:13:34.377] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:13:34.383] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:14:54.225] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:14:54.230] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:17:14.683] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:17:14.688] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:22:02.766] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:22:02.772] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:34:00.488] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:34:00.496] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:35:27.750] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:35:27.755] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:35:50.966] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:35:50.971] [INFO] info - Express server listening on port 5000
+[2016-02-22 18:36:39.107] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 18:36:39.113] [INFO] info - Express server listening on port 5000
+[2016-02-22 22:33:01.774] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 22:33:01.780] [INFO] info - Express server listening on port 5000
+[2016-02-22 22:35:52.740] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 22:35:52.745] [INFO] info - Express server listening on port 5000
+[2016-02-22 22:37:11.918] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 22:37:11.923] [INFO] info - Express server listening on port 3000
+[2016-02-22 22:41:44.532] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 22:41:44.537] [INFO] info - Express server listening on port 5000
+[2016-02-22 22:42:57.385] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 22:42:57.390] [INFO] info - Express server listening on port 5000
+[2016-02-22 22:43:28.733] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 22:43:28.746] [INFO] info - Express server listening on port 5000
+[2016-02-22 22:50:20.940] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 22:50:20.945] [INFO] info - Express server listening on port 5000
+[2016-02-22 22:56:08.296] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 22:56:08.302] [INFO] info - Express server listening on port 5000

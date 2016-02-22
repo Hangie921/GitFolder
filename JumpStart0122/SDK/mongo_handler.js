@@ -59,7 +59,15 @@ function findDetail(mongoClient,collection,query,condition,callback){ //undone
 			console.log("connect mongo successfully");
 			var cursor = db.collection(collection).find(query,condition.projection);
 			cursor.forEach(function(doc){
-				callback(null,doc);
+				if(doc){
+					callback(err,doc);
+				}else{
+					console.log('find nothing');
+					console.log('db closed');
+					db.close();
+					return false;
+				}
+				
 			});
 		}else{
 			console.log('error while connecting to the mongo client');

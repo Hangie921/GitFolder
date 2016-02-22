@@ -1116,49 +1116,25 @@ div.competition_topic a.basic_btn {
   margin-left: 140px !important;
 }
 
-<<<<<<< Updated upstream
-/* line 385, ../sass/modules/_sections.scss */
-div.sponsors {
-  position: absolute;
-  bottom: 150px;
-  left: 0;
-}
-
-/* line 392, ../sass/modules/_sections.scss */
-ul.partners {
-  padding: 0;
-  text-align: center;
-}
-/* line 396, ../sass/modules/_sections.scss */
-ul.partners li {
-  background-color: #eee;
-  width: 100px;
-  height: 100px;
-=======
-/* line 380, ../sass/modules/_sections.scss */
+/* line 386, ../sass/modules/_sections.scss */
 div.sponsor-group {
   padding-top: 30px;
 }
-/* line 382, ../sass/modules/_sections.scss */
+/* line 388, ../sass/modules/_sections.scss */
 div.sponsor-group h3 {
   color: #f16b29;
   font-weight: bold;
   letter-spacing: 3px;
 }
-/* line 389, ../sass/modules/_sections.scss */
+/* line 395, ../sass/modules/_sections.scss */
 div.sponsor-group ul.sponsor-list li {
->>>>>>> Stashed changes
   display: inline-block;
   background: black;
   width: 150px;
   height: 80px;
   margin-right: 50px;
 }
-<<<<<<< Updated upstream
-/* line 431, ../sass/modules/_sections.scss */
-ul.partners li a {
-=======
-/* line 396, ../sass/modules/_sections.scss */
+/* line 402, ../sass/modules/_sections.scss */
 div.sponsor-group ul.sponsor-list li:first-child {
   background: url(../img/ping_logo.png) no-repeat center center;
   background-size: 100% auto;
@@ -1167,7 +1143,7 @@ div.sponsor-group ul.sponsor-list li:first-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 400, ../sass/modules/_sections.scss */
+/* line 406, ../sass/modules/_sections.scss */
 div.sponsor-group ul.sponsor-list li:nth-child(2) {
   background: url(../img/venture_craft_logo.png) no-repeat center center;
   background-size: 100% auto;
@@ -1177,76 +1153,42 @@ div.sponsor-group ul.sponsor-list li:nth-child(2) {
   background-size: 100% auto;
 }
 
-/* line 415, ../sass/modules/_sections.scss */
+/* line 421, ../sass/modules/_sections.scss */
 .hello li a {
->>>>>>> Stashed changes
   color: #f16b29;
   display: block;
   text-indent: -9999px;
 }
-<<<<<<< Updated upstream
-/* line 437, ../sass/modules/_sections.scss */
-ul.partners li:first-child {
-  background-image: url(../img/螞蜂窩_logo.png);
-}
-/* line 441, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(2) {
-  background-image: url(../img/venture_craft_logo.png);
-}
-/* line 444, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(3) {
-  background-image: url(../img/365_logo.png);
-}
-/* line 447, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(4) {
-  background-image: url(../img/e27_logo.png);
-}
-/* line 450, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(5) {
-  background-image: url(../img/citytours_logo.png);
-}
-/* line 453, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(6) {
-  background-image: url(../img/ping_logo.png);
-}
-/* line 456, ../sass/modules/_sections.scss */
-ul.partners li:nth-child(7) {
-  background-image: url(../img/DSEE_logo.png);
-}
-/* line 459, ../sass/modules/_sections.scss */
-ul.partners li:hover {
-=======
-/* line 421, ../sass/modules/_sections.scss */
+/* line 427, ../sass/modules/_sections.scss */
 .hello li:first-child {
   background-image: url(../img/螞蜂窩_logo.png);
 }
-/* line 425, ../sass/modules/_sections.scss */
+/* line 431, ../sass/modules/_sections.scss */
 .hello li:nth-child(2) {
   background-image: url(../img/venture_craft_logo.png);
 }
-/* line 428, ../sass/modules/_sections.scss */
+/* line 434, ../sass/modules/_sections.scss */
 .hello li:nth-child(3) {
   background-image: url(../img/365_logo.png);
 }
-/* line 431, ../sass/modules/_sections.scss */
+/* line 437, ../sass/modules/_sections.scss */
 .hello li:nth-child(4) {
   background-image: url(../img/e27_logo.png);
 }
-/* line 434, ../sass/modules/_sections.scss */
+/* line 440, ../sass/modules/_sections.scss */
 .hello li:nth-child(5) {
   background-image: url(../img/citytours_logo.png);
 }
-/* line 437, ../sass/modules/_sections.scss */
+/* line 443, ../sass/modules/_sections.scss */
 .hello li:nth-child(6) {
   background-image: url(../img/ping_logo.png);
 }
-/* line 440, ../sass/modules/_sections.scss */
+/* line 446, ../sass/modules/_sections.scss */
 .hello li:nth-child(7) {
   background-image: url(../img/DSEE_logo.png);
 }
-/* line 443, ../sass/modules/_sections.scss */
+/* line 449, ../sass/modules/_sections.scss */
 .hello li:hover {
->>>>>>> Stashed changes
   -moz-background-blend-mode: normal;
   -ms-background-blend-mode: normal;
   -webkit-background-blend-mode: normal;
@@ -1261,53 +1203,29 @@ ul.partners li:hover {
 }
 
 /**COMPETITION DETAILS**/
-<<<<<<< Updated upstream
-/* line 480, ../sass/modules/_sections.scss */
+/* line 470, ../sass/modules/_sections.scss */
 .info_list ul {
   padding: 0 0 0 40px;
 }
-/* line 483, ../sass/modules/_sections.scss */
-=======
-/* line 464, ../sass/modules/_sections.scss */
-.info_list ul {
-  padding: 0 0 0 40px;
-}
-/* line 467, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 473, ../sass/modules/_sections.scss */
 .info_list ul li {
   padding-left: 20px;
 }
 
-<<<<<<< Updated upstream
-/* line 490, ../sass/modules/_sections.scss */
+/* line 480, ../sass/modules/_sections.scss */
 div.timeline {
   margin-top: 50px;
 }
-/* line 492, ../sass/modules/_sections.scss */
-=======
-/* line 474, ../sass/modules/_sections.scss */
-div.timeline {
-  margin-top: 50px;
-}
-/* line 476, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 482, ../sass/modules/_sections.scss */
 div.timeline ul {
   position: relative;
   padding: 0 0 25px;
 }
-<<<<<<< Updated upstream
-/* line 497, ../sass/modules/_sections.scss */
+/* line 487, ../sass/modules/_sections.scss */
 div.timeline ul:after {
   display: none;
 }
-/* line 502, ../sass/modules/_sections.scss */
-=======
-/* line 481, ../sass/modules/_sections.scss */
-div.timeline ul:after {
-  display: none;
-}
-/* line 486, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 492, ../sass/modules/_sections.scss */
 div.timeline ul li {
   vertical-align: bottom;
   display: inline-block;
@@ -1334,11 +1252,7 @@ div.timeline ul li {
   -o-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
-<<<<<<< Updated upstream
-/* line 528, ../sass/modules/_sections.scss */
-=======
-/* line 512, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 518, ../sass/modules/_sections.scss */
 div.timeline ul li:hover {
   position: relative;
   bottom: 15px;
@@ -1348,70 +1262,38 @@ div.timeline ul li:hover {
   -o-box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
   box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
 }
-<<<<<<< Updated upstream
-/* line 538, ../sass/modules/_sections.scss */
-=======
-/* line 522, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 528, ../sass/modules/_sections.scss */
 div.timeline ul li:first-child {
   z-index: 10;
   padding-left: 10px;
 }
-<<<<<<< Updated upstream
-/* line 542, ../sass/modules/_sections.scss */
+/* line 532, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(2) {
   z-index: 9;
-}
-/* line 545, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(3) {
-  z-index: 8;
-}
-/* line 549, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4) {
-  padding-right: 10px;
-}
-/* line 551, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4):after {
-  display: none;
-}
-/* line 554, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4):before {
-  display: none;
-}
-/* line 560, ../sass/modules/_sections.scss */
-=======
-/* line 526, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(2) {
-  z-index: 9;
-}
-/* line 529, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(3) {
-  z-index: 8;
-}
-/* line 533, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4) {
-  padding-right: 10px;
 }
 /* line 535, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4):after {
-  display: none;
+div.timeline ul li:nth-child(3) {
+  z-index: 8;
 }
-/* line 538, ../sass/modules/_sections.scss */
-div.timeline ul li:nth-child(4):before {
+/* line 539, ../sass/modules/_sections.scss */
+div.timeline ul li:nth-child(4) {
+  padding-right: 10px;
+}
+/* line 541, ../sass/modules/_sections.scss */
+div.timeline ul li:nth-child(4):after {
   display: none;
 }
 /* line 544, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+div.timeline ul li:nth-child(4):before {
+  display: none;
+}
+/* line 550, ../sass/modules/_sections.scss */
 div.timeline ul li h4 {
   color: #f16b29;
   margin: 0;
   font-size: 18px;
 }
-<<<<<<< Updated upstream
-/* line 565, ../sass/modules/_sections.scss */
-=======
-/* line 549, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 555, ../sass/modules/_sections.scss */
 div.timeline ul li h4 span {
   margin-top: -4px;
   font-size: 14px;
@@ -1424,22 +1306,14 @@ div.timeline ul li h4 span {
   padding: 0px 10px;
   color: #fff !important;
 }
-<<<<<<< Updated upstream
-/* line 579, ../sass/modules/_sections.scss */
-=======
-/* line 563, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 569, ../sass/modules/_sections.scss */
 div.timeline ul li p {
   clear: both;
   font-size: 12px;
   margin: 0;
   color: #999;
 }
-<<<<<<< Updated upstream
-/* line 589, ../sass/modules/_sections.scss */
-=======
-/* line 573, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 579, ../sass/modules/_sections.scss */
 div.timeline ul li:after {
   content: '';
   position: absolute;
@@ -1452,11 +1326,7 @@ div.timeline ul li:after {
   right: -45px;
   top: -1px;
 }
-<<<<<<< Updated upstream
-/* line 602, ../sass/modules/_sections.scss */
-=======
-/* line 586, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 592, ../sass/modules/_sections.scss */
 div.timeline ul li:before {
   content: '';
   position: absolute;
@@ -1469,41 +1339,25 @@ div.timeline ul li:before {
   right: -46px;
   top: -1px;
 }
-<<<<<<< Updated upstream
-/* line 617, ../sass/modules/_sections.scss */
-=======
-/* line 601, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 607, ../sass/modules/_sections.scss */
 div.timeline ul li:last-child {
   margin-right: 0px;
 }
 
 /* PRIZE**/
-<<<<<<< Updated upstream
-/* line 631, ../sass/modules/_sections.scss */
-=======
-/* line 615, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 621, ../sass/modules/_sections.scss */
 #competition_prize_slide p {
   color: #f16b29 !important;
   font-size: 24px;
   margin-top: 30px;
   text-align: center;
 }
-<<<<<<< Updated upstream
-/* line 638, ../sass/modules/_sections.scss */
-=======
-/* line 622, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 628, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single {
   margin: 0 auto;
   min-height: 300px;
 }
-<<<<<<< Updated upstream
-/* line 642, ../sass/modules/_sections.scss */
-=======
-/* line 626, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 632, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type {
   background: url(../img/secondplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1512,20 +1366,12 @@ div.timeline ul li:last-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
-<<<<<<< Updated upstream
-/* line 645, ../sass/modules/_sections.scss */
-=======
-/* line 629, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 635, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type h4 {
   font-size: 45px;
   color: #2b4252;
 }
-<<<<<<< Updated upstream
-/* line 650, ../sass/modules/_sections.scss */
-=======
-/* line 634, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 640, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(2) {
   background: url(../img/firstplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1535,11 +1381,7 @@ div.timeline ul li:last-child {
   background-size: 100% auto;
   color: #0e324b;
 }
-<<<<<<< Updated upstream
-/* line 656, ../sass/modules/_sections.scss */
-=======
-/* line 640, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 646, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) {
   background: url(../img/thirdplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1548,20 +1390,12 @@ div.timeline ul li:last-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
-<<<<<<< Updated upstream
-/* line 659, ../sass/modules/_sections.scss */
-=======
-/* line 643, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 649, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) h4 {
   font-size: 45px;
   color: #2b4252;
 }
-<<<<<<< Updated upstream
-/* line 665, ../sass/modules/_sections.scss */
-=======
-/* line 649, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 655, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single h4 {
   display: block;
   text-align: center;
@@ -1574,11 +1408,7 @@ div.timeline ul li:last-child {
 }
 
 /**JUMP******/
-<<<<<<< Updated upstream
-/* line 689, ../sass/modules/_sections.scss */
-=======
-/* line 673, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 679, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -1600,11 +1430,7 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-<<<<<<< Updated upstream
-/* line 710, ../sass/modules/_sections.scss */
-=======
-/* line 694, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 700, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -1614,11 +1440,7 @@ div.timeline ul li:last-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-<<<<<<< Updated upstream
-/* line 720, ../sass/modules/_sections.scss */
-=======
-/* line 704, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 710, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -1630,60 +1452,36 @@ div.timeline ul li:last-child {
   background: url(../img/download_btn.png) no-repeat center center;
 }
 
-<<<<<<< Updated upstream
-/* line 738, ../sass/modules/_sections.scss */
-=======
-/* line 722, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 728, ../sass/modules/_sections.scss */
 .jumpnow-des {
   border: 1px none #f16b29;
   padding: 20px;
   background: #0e324b;
 }
-<<<<<<< Updated upstream
-/* line 743, ../sass/modules/_sections.scss */
-=======
-/* line 727, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 733, ../sass/modules/_sections.scss */
 .jumpnow-des h3 {
   color: #f16b29;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 600;
 }
-<<<<<<< Updated upstream
-/* line 750, ../sass/modules/_sections.scss */
-=======
-/* line 734, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 740, ../sass/modules/_sections.scss */
 .jumpnow-des li {
   color: white;
 }
 
-<<<<<<< Updated upstream
-/* line 754, ../sass/modules/_sections.scss */
-=======
-/* line 738, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 744, ../sass/modules/_sections.scss */
 .jumpnow-btn-set {
   margin-top: 20%;
 }
 
-<<<<<<< Updated upstream
-/* line 758, ../sass/modules/_sections.scss */
-=======
-/* line 742, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 748, ../sass/modules/_sections.scss */
 .imready {
   margin-top: 10px;
 }
 
 /***FORMS*****/
-<<<<<<< Updated upstream
-/* line 764, ../sass/modules/_sections.scss */
-=======
-/* line 748, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 754, ../sass/modules/_sections.scss */
 #sec_jumpnow h2 {
   color: #f16b29;
   font-weight: bold;
@@ -1692,11 +1490,7 @@ div.timeline ul li:last-child {
   display: block;
   padding-bottom: 10px;
 }
-<<<<<<< Updated upstream
-/* line 773, ../sass/modules/_sections.scss */
-=======
-/* line 757, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 763, ../sass/modules/_sections.scss */
 #sec_jumpnow .slide-inner {
   margin: 0 auto;
   background: #0e324b;
@@ -1704,61 +1498,37 @@ div.timeline ul li:last-child {
   padding: 20px;
   vertical-align: top;
 }
-<<<<<<< Updated upstream
-/* line 780, ../sass/modules/_sections.scss */
-=======
-/* line 764, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 770, ../sass/modules/_sections.scss */
 #sec_jumpnow .slide-inner:first-child {
   background: transparent;
 }
 
-<<<<<<< Updated upstream
-/* line 791, ../sass/modules/_sections.scss */
-=======
-/* line 775, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 781, ../sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
-<<<<<<< Updated upstream
-/* line 794, ../sass/modules/_sections.scss */
-=======
-/* line 778, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 784, ../sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-<<<<<<< Updated upstream
-/* line 798, ../sass/modules/_sections.scss */
-=======
-/* line 782, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 788, ../sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
-<<<<<<< Updated upstream
-/* line 803, ../sass/modules/_sections.scss */
-=======
-/* line 787, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 793, ../sass/modules/_sections.scss */
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
-<<<<<<< Updated upstream
-/* line 811, ../sass/modules/_sections.scss */
-=======
-/* line 795, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 801, ../sass/modules/_sections.scss */
 .event_single {
   position: relative;
   padding: 10px;
@@ -1774,53 +1544,33 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
-<<<<<<< Updated upstream
-/* line 829, ../sass/modules/_sections.scss */
-=======
-/* line 813, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 819, ../sass/modules/_sections.scss */
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
-<<<<<<< Updated upstream
-/* line 835, ../sass/modules/_sections.scss */
-=======
-/* line 819, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 825, ../sass/modules/_sections.scss */
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
-<<<<<<< Updated upstream
-/* line 841, ../sass/modules/_sections.scss */
-=======
-/* line 825, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 831, ../sass/modules/_sections.scss */
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
-<<<<<<< Updated upstream
-/* line 845, ../sass/modules/_sections.scss */
-=======
-/* line 829, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 835, ../sass/modules/_sections.scss */
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
-<<<<<<< Updated upstream
-/* line 852, ../sass/modules/_sections.scss */
-=======
-/* line 836, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 842, ../sass/modules/_sections.scss */
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1831,22 +1581,14 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
-<<<<<<< Updated upstream
-/* line 864, ../sass/modules/_sections.scss */
-=======
-/* line 848, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 854, ../sass/modules/_sections.scss */
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
-<<<<<<< Updated upstream
-/* line 873, ../sass/modules/_sections.scss */
-=======
-/* line 857, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 863, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #313131;
@@ -1856,19 +1598,11 @@ div.contact_container {
   left: 0;
   bottom: -380px;
 }
-<<<<<<< Updated upstream
-/* line 882, ../sass/modules/_sections.scss */
+/* line 872, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 885, ../sass/modules/_sections.scss */
-=======
-/* line 866, ../sass/modules/_sections.scss */
-div.contact_container .contact_header {
-  cursor: pointer;
-}
-/* line 869, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 875, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1879,36 +1613,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-<<<<<<< Updated upstream
-/* line 896, ../sass/modules/_sections.scss */
+/* line 886, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 898, ../sass/modules/_sections.scss */
-=======
-/* line 880, ../sass/modules/_sections.scss */
-div.contact_container .input {
-  margin: 0;
-}
-/* line 882, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 888, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-<<<<<<< Updated upstream
-/* line 902, ../sass/modules/_sections.scss */
+/* line 892, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 909, ../sass/modules/_sections.scss */
-=======
-/* line 886, ../sass/modules/_sections.scss */
-div.contact_container .input label {
-  color: #fff;
-}
-/* line 893, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 899, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1920,19 +1638,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-<<<<<<< Updated upstream
-/* line 920, ../sass/modules/_sections.scss */
+/* line 910, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 925, ../sass/modules/_sections.scss */
-=======
-/* line 904, ../sass/modules/_sections.scss */
-div.contact_container textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-/* line 909, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 915, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1944,68 +1654,40 @@ div.contact_container input[type="submit"] {
   margin-top: 15px;
 }
 
-<<<<<<< Updated upstream
-/* line 937, ../sass/modules/_sections.scss */
-=======
-/* line 921, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 927, ../sass/modules/_sections.scss */
 .contact-details {
   font-family: "raleway", "文鼎黑體";
   text-align: left;
   color: #fff;
 }
-<<<<<<< Updated upstream
-/* line 942, ../sass/modules/_sections.scss */
-=======
-/* line 926, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 932, ../sass/modules/_sections.scss */
 .contact-details h3 {
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-<<<<<<< Updated upstream
-/* line 949, ../sass/modules/_sections.scss */
+/* line 939, ../sass/modules/_sections.scss */
 .contact-details ul {
   padding: 0;
 }
-/* line 952, ../sass/modules/_sections.scss */
-=======
-/* line 933, ../sass/modules/_sections.scss */
-.contact-details ul {
-  padding: 0;
-}
-/* line 936, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 942, ../sass/modules/_sections.scss */
 .contact-details ul li {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
-<<<<<<< Updated upstream
-/* line 956, ../sass/modules/_sections.scss */
-=======
-/* line 940, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 946, ../sass/modules/_sections.scss */
 .contact-details ul li h4 {
   font-weight: bold;
   color: #f16b29;
 }
-<<<<<<< Updated upstream
-/* line 961, ../sass/modules/_sections.scss */
-=======
-/* line 945, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 951, ../sass/modules/_sections.scss */
 .contact-details ul li i {
   display: inline-block;
   margin-right: 10px;
 }
 
-<<<<<<< Updated upstream
-/* line 970, ../sass/modules/_sections.scss */
-=======
-/* line 954, ../sass/modules/_sections.scss */
->>>>>>> Stashed changes
+/* line 960, ../sass/modules/_sections.scss */
 button.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
@@ -2558,7 +2240,7 @@ div.straightAni .border {
 /* line 117, ../sass/modules/_animations.scss */
 div.straightAni .border.top {
   width: 99.5%;
-  height: 0.5%;
+  height: 1px;
   left: 50%;
   -moz-animation: borderTopAni 0.3s 0s 1 linear forwards;
   -webkit-animation: borderTopAni 0.3s 0s 1 linear forwards;
@@ -2568,7 +2250,7 @@ div.straightAni .border.top {
 }
 /* line 123, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom {
-  height: 0.5%;
+  height: 1px;
   top: 99.5%;
 }
 /* line 126, ../sass/modules/_animations.scss */
@@ -2593,7 +2275,7 @@ div.straightAni .border.bottom.b_left {
 }
 /* line 138, ../sass/modules/_animations.scss */
 div.straightAni .border.left, div.straightAni .border.right {
-  width: 0.5%;
+  width: 1px;
   max-width: 2px;
   height: 0;
   -moz-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
@@ -2677,7 +2359,7 @@ div.borderRightAni .border {
 }
 /* line 180, ../sass/modules/_animations.scss */
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
-  height: 0.5%;
+  height: 1px;
   width: 0;
   -moz-animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
   -webkit-animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
@@ -2691,7 +2373,7 @@ div.borderRightAni .border.bottom {
 }
 /* line 188, ../sass/modules/_animations.scss */
 div.borderRightAni .border.left {
-  width: 0.5%;
+  width: 1px;
   height: 0;
   top: 50%;
   -moz-animation: borderLeftAni 0.3s 0s 1 linear forwards;
@@ -2702,7 +2384,7 @@ div.borderRightAni .border.left {
 }
 /* line 194, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_top {
-  width: 0.5%;
+  width: 1px;
   left: 99.5%;
   -moz-animation: borderR_top 0.3s 0.9s 1 linear forwards;
   -webkit-animation: borderR_top 0.3s 0.9s 1 linear forwards;
@@ -2712,7 +2394,7 @@ div.borderRightAni .border.right.R_top {
 }
 /* line 199, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_bottom {
-  width: 0.5%;
+  width: 1px;
   left: 99.5%;
   -moz-animation: borderR_bottom 0.3s 0.9s 1 linear forwards;
   -webkit-animation: borderR_bottom 0.3s 0.9s 1 linear forwards;

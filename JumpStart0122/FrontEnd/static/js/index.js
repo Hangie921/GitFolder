@@ -69,6 +69,24 @@ $(document).ready(function() {
 						}
 					break;
 				}
+			}else if (anchorLink == 'jumpnow'){
+				switch(slideIndex){
+					case 0:
+						if(!$('.jumpnow-des .border_container').hasClass('borderRightAni')){
+							$('.jumpnow-des .border_container').addClass('borderRightAni');
+						}
+					break;
+					case 1:
+						if(!$('.team_details .slide-inner .border_container').hasClass('borderRightAni')){
+							$('.team_details .slide-inner .border_container').addClass('borderRightAni');
+						}
+					break;
+					case 2:
+						if(!$('.personal-details .slide-inner .border_container').hasClass('borderRightAni')){
+							$('.personal-details .slide-inner .border_container').addClass('borderRightAni');
+						}
+					break;
+				}
 			}
 		},
 		onLeave: function(index, nextIndex, direction) {
@@ -94,10 +112,6 @@ $(document).ready(function() {
 		loopHorizontal:false,
 		recordHistory:false,
 		controlArrows:false
-		// paddingTop:'8%',
-		// responsiveWidth: 700,
-  //       responsiveHeight: 300
-  		// scrollOverflow:true
 
 	}); //end of the fullpageJS initial
 	

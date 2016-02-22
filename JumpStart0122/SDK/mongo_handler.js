@@ -53,7 +53,7 @@ function findDetail(mongoClient,collection,query,condition,callback){ //undone
 		
 	}
 	//start to query the data and return the doc to callback()
-	console.log("start to find in collection '" + collection + "'.");
+	console.log("start to find docs in collection '" + collection + "'.");
 	mongoClient.connect(mongoClient.url,function(err,db){
 		if(!err){
 			console.log("connect mongo successfully");

@@ -114,8 +114,8 @@ $maxWidth:1px;
 $speed:.3s;
 
 .border_container{
-	position: relative;
 	height: 100%;
+	position: relative;
 }
 .border{
 	position: absolute;
@@ -125,7 +125,8 @@ div.straightAni{
 	position: relative;
 	// overflow: hidden;
 	box-sizing:border-box;
-	height: 100%;	
+	height: 100%;
+
 	& .border{
 	    background-color:#f16b29;
 	    position: absolute;
@@ -189,6 +190,31 @@ div.borderRightAni{
 	box-sizing:border-box;
 	// border:1px none #f16b29;
 	height: 100%;
+	& .border_container{
+		height: 100%;
+		& .straight_line{
+			width: 1px;
+			height: 0px;
+			top: -50px;
+			background-color:$primary-color;
+			left:50%;
+			position: absolute;
+			z-index: -10;
+			@include animation(straightLineAni $speed 0s 1 linear forwards);
+		}
+		& .horizon_line{
+			height: 1px;
+			width:0px;
+			background-color:$primary-color;
+			display:block;
+			top: 50%;
+			position: absolute;
+			z-index: -10;
+			left: 99.5%;
+			@include animation(horiLineAni $speed $speed*4 1 linear forwards);
+		}
+	}
+
 	& .border{
 	    position: absolute;
 	    background-color:#f16b29;
@@ -220,6 +246,14 @@ div.borderRightAni{
 	    @include animation(borderR_bottom $speed $speed*3 1 linear forwards);
   	}
 
+}
+@keyframes horiLineAni{
+	0%{width: 0px;}
+	100%{width: 100px;}
+}
+@keyframes straightLineAni{
+	0%{height: 0px;}
+	100%{height: 50px;}	
 }
 
 @keyframes borderLeftAni{

@@ -1493,38 +1493,39 @@ div.timeline ul li:last-child {
   width: 95%;
   padding: 20px;
   vertical-align: top;
+  height: 100%;
 }
-/* line 771, ../sass/modules/_sections.scss */
+/* line 772, ../sass/modules/_sections.scss */
 #sec_jumpnow .slide-inner:first-child {
   background: transparent;
 }
 
-/* line 782, ../sass/modules/_sections.scss */
+/* line 783, ../sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
-/* line 785, ../sass/modules/_sections.scss */
+/* line 786, ../sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-/* line 789, ../sass/modules/_sections.scss */
+/* line 790, ../sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
-/* line 794, ../sass/modules/_sections.scss */
+/* line 795, ../sass/modules/_sections.scss */
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
-/* line 802, ../sass/modules/_sections.scss */
+/* line 803, ../sass/modules/_sections.scss */
 .event_single {
   position: relative;
   padding: 10px;
@@ -1540,33 +1541,33 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 820, ../sass/modules/_sections.scss */
+/* line 821, ../sass/modules/_sections.scss */
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
-/* line 826, ../sass/modules/_sections.scss */
+/* line 827, ../sass/modules/_sections.scss */
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
-/* line 832, ../sass/modules/_sections.scss */
+/* line 833, ../sass/modules/_sections.scss */
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
-/* line 836, ../sass/modules/_sections.scss */
+/* line 837, ../sass/modules/_sections.scss */
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
-/* line 843, ../sass/modules/_sections.scss */
+/* line 844, ../sass/modules/_sections.scss */
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1577,14 +1578,14 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
-/* line 855, ../sass/modules/_sections.scss */
+/* line 856, ../sass/modules/_sections.scss */
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
-/* line 864, ../sass/modules/_sections.scss */
+/* line 865, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #313131;
@@ -1594,11 +1595,11 @@ div.contact_container {
   left: 0;
   bottom: -380px;
 }
-/* line 873, ../sass/modules/_sections.scss */
+/* line 874, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 876, ../sass/modules/_sections.scss */
+/* line 877, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1609,20 +1610,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-/* line 887, ../sass/modules/_sections.scss */
+/* line 888, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 889, ../sass/modules/_sections.scss */
+/* line 890, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-/* line 893, ../sass/modules/_sections.scss */
+/* line 894, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 900, ../sass/modules/_sections.scss */
+/* line 901, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1634,11 +1635,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 911, ../sass/modules/_sections.scss */
+/* line 912, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 916, ../sass/modules/_sections.scss */
+/* line 917, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1650,40 +1651,40 @@ div.contact_container input[type="submit"] {
   margin-top: 15px;
 }
 
-/* line 928, ../sass/modules/_sections.scss */
+/* line 929, ../sass/modules/_sections.scss */
 .contact-details {
   font-family: "raleway", "文鼎黑體";
   text-align: left;
   color: #fff;
 }
-/* line 933, ../sass/modules/_sections.scss */
+/* line 934, ../sass/modules/_sections.scss */
 .contact-details h3 {
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 940, ../sass/modules/_sections.scss */
+/* line 941, ../sass/modules/_sections.scss */
 .contact-details ul {
   padding: 0;
 }
-/* line 943, ../sass/modules/_sections.scss */
+/* line 944, ../sass/modules/_sections.scss */
 .contact-details ul li {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
-/* line 947, ../sass/modules/_sections.scss */
+/* line 948, ../sass/modules/_sections.scss */
 .contact-details ul li h4 {
   font-weight: bold;
   color: #f16b29;
 }
-/* line 952, ../sass/modules/_sections.scss */
+/* line 953, ../sass/modules/_sections.scss */
 .contact-details ul li i {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 961, ../sass/modules/_sections.scss */
+/* line 962, ../sass/modules/_sections.scss */
 button.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
@@ -2233,8 +2234,8 @@ div.timeLineAni:after {
 
 /* line 116, ../sass/modules/_animations.scss */
 .border_container {
-  position: relative;
   height: 100%;
+  position: relative;
 }
 
 /* line 120, ../sass/modules/_animations.scss */
@@ -2248,14 +2249,14 @@ div.straightAni {
   box-sizing: border-box;
   height: 100%;
 }
-/* line 129, ../sass/modules/_animations.scss */
+/* line 130, ../sass/modules/_animations.scss */
 div.straightAni .border {
   background-color: #f16b29;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 135, ../sass/modules/_animations.scss */
+/* line 136, ../sass/modules/_animations.scss */
 div.straightAni .border.top {
   width: 99.5%;
   height: 1px;
@@ -2266,12 +2267,12 @@ div.straightAni .border.top {
   -o-animation: borderTopAni 0.3s 0s 1 linear forwards;
   animation: borderTopAni 0.3s 0s 1 linear forwards;
 }
-/* line 141, ../sass/modules/_animations.scss */
+/* line 142, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom {
   height: 1px;
   top: 99.5%;
 }
-/* line 144, ../sass/modules/_animations.scss */
+/* line 145, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_right {
   width: 0%;
   left: 100%;
@@ -2281,7 +2282,7 @@ div.straightAni .border.bottom.b_right {
   -o-animation: borderB_right 0.3s 0.9s 1 linear forwards;
   animation: borderB_right 0.3s 0.9s 1 linear forwards;
 }
-/* line 149, ../sass/modules/_animations.scss */
+/* line 150, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_left {
   width: 0%;
   left: 0;
@@ -2291,7 +2292,7 @@ div.straightAni .border.bottom.b_left {
   -o-animation: borderB_left 0.3s 0.9s 1 linear forwards;
   animation: borderB_left 0.3s 0.9s 1 linear forwards;
 }
-/* line 156, ../sass/modules/_animations.scss */
+/* line 157, ../sass/modules/_animations.scss */
 div.straightAni .border.left, div.straightAni .border.right {
   width: 1px;
   max-width: 2px;
@@ -2302,19 +2303,19 @@ div.straightAni .border.left, div.straightAni .border.right {
   -o-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
   animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 163, ../sass/modules/_animations.scss */
+/* line 164, ../sass/modules/_animations.scss */
 div.straightAni .border.right {
   left: 99.5%;
 }
 
 @keyframes borderTopAni {
-  /* line 168, ../sass/modules/_animations.scss */
+  /* line 169, ../sass/modules/_animations.scss */
   0% {
     left: 50%;
     width: 0;
   }
 
-  /* line 169, ../sass/modules/_animations.scss */
+  /* line 170, ../sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 99.5%;
@@ -2322,25 +2323,25 @@ div.straightAni .border.right {
 }
 
 @keyframes borderSidesAni {
-  /* line 173, ../sass/modules/_animations.scss */
+  /* line 174, ../sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 174, ../sass/modules/_animations.scss */
+  /* line 175, ../sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
 @keyframes borderB_left {
-  /* line 178, ../sass/modules/_animations.scss */
+  /* line 179, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 0;
   }
 
-  /* line 179, ../sass/modules/_animations.scss */
+  /* line 180, ../sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 0;
@@ -2348,33 +2349,68 @@ div.straightAni .border.right {
 }
 
 @keyframes borderB_right {
-  /* line 183, ../sass/modules/_animations.scss */
+  /* line 184, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 100%;
   }
 
-  /* line 184, ../sass/modules/_animations.scss */
+  /* line 185, ../sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 49.5%;
   }
 }
 
-/* line 187, ../sass/modules/_animations.scss */
+/* line 188, ../sass/modules/_animations.scss */
 div.borderRightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 192, ../sass/modules/_animations.scss */
+/* line 193, ../sass/modules/_animations.scss */
+div.borderRightAni .border_container {
+  height: 100%;
+}
+/* line 195, ../sass/modules/_animations.scss */
+div.borderRightAni .border_container .straight_line {
+  width: 1px;
+  height: 0px;
+  top: -50px;
+  background-color: #f16b29;
+  left: 50%;
+  position: absolute;
+  z-index: -10;
+  -moz-animation: straightLineAni 0.3s 0s 1 linear forwards;
+  -webkit-animation: straightLineAni 0.3s 0s 1 linear forwards;
+  -ms-animation: straightLineAni 0.3s 0s 1 linear forwards;
+  -o-animation: straightLineAni 0.3s 0s 1 linear forwards;
+  animation: straightLineAni 0.3s 0s 1 linear forwards;
+}
+/* line 205, ../sass/modules/_animations.scss */
+div.borderRightAni .border_container .horizon_line {
+  height: 1px;
+  width: 0px;
+  background-color: #f16b29;
+  display: block;
+  top: 50%;
+  position: absolute;
+  z-index: -10;
+  left: 99.5%;
+  -moz-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+  -webkit-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+  -ms-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+  -o-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+  animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+}
+/* line 218, ../sass/modules/_animations.scss */
 div.borderRightAni .border {
   position: absolute;
   background-color: #f16b29;
   left: 0;
   top: 0;
 }
-/* line 198, ../sass/modules/_animations.scss */
+/* line 224, ../sass/modules/_animations.scss */
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   height: 1px;
   width: 0;
@@ -2384,11 +2420,11 @@ div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   -o-animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
   animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 203, ../sass/modules/_animations.scss */
+/* line 229, ../sass/modules/_animations.scss */
 div.borderRightAni .border.bottom {
   top: 99.5%;
 }
-/* line 206, ../sass/modules/_animations.scss */
+/* line 232, ../sass/modules/_animations.scss */
 div.borderRightAni .border.left {
   width: 1px;
   height: 0;
@@ -2399,7 +2435,7 @@ div.borderRightAni .border.left {
   -o-animation: borderLeftAni 0.3s 0s 1 linear forwards;
   animation: borderLeftAni 0.3s 0s 1 linear forwards;
 }
-/* line 212, ../sass/modules/_animations.scss */
+/* line 238, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_top {
   width: 1px;
   left: 99.5%;
@@ -2409,7 +2445,7 @@ div.borderRightAni .border.right.R_top {
   -o-animation: borderR_top 0.3s 0.9s 1 linear forwards;
   animation: borderR_top 0.3s 0.9s 1 linear forwards;
 }
-/* line 217, ../sass/modules/_animations.scss */
+/* line 243, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_bottom {
   width: 1px;
   left: 99.5%;
@@ -2420,15 +2456,39 @@ div.borderRightAni .border.right.R_bottom {
   animation: borderR_bottom 0.3s 0.9s 1 linear forwards;
 }
 
+@keyframes horiLineAni {
+  /* line 251, ../sass/modules/_animations.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 252, ../sass/modules/_animations.scss */
+  100% {
+    width: 100px;
+  }
+}
+
+@keyframes straightLineAni {
+  /* line 255, ../sass/modules/_animations.scss */
+  0% {
+    height: 0px;
+  }
+
+  /* line 256, ../sass/modules/_animations.scss */
+  100% {
+    height: 50px;
+  }
+}
+
 @keyframes borderLeftAni {
-  /* line 226, ../sass/modules/_animations.scss */
+  /* line 260, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
-  /* line 227, ../sass/modules/_animations.scss */
+  /* line 261, ../sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 99.5%;
@@ -2437,26 +2497,26 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderTopBottomAni {
-  /* line 231, ../sass/modules/_animations.scss */
+  /* line 265, ../sass/modules/_animations.scss */
   0% {
     width: 0;
   }
 
-  /* line 232, ../sass/modules/_animations.scss */
+  /* line 266, ../sass/modules/_animations.scss */
   100% {
     width: 99.5%;
   }
 }
 
 @keyframes borderR_top {
-  /* line 236, ../sass/modules/_animations.scss */
+  /* line 270, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
-  /* line 237, ../sass/modules/_animations.scss */
+  /* line 271, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 0;
@@ -2465,14 +2525,14 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderR_bottom {
-  /* line 241, ../sass/modules/_animations.scss */
+  /* line 275, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
-  /* line 242, ../sass/modules/_animations.scss */
+  /* line 276, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 50%;

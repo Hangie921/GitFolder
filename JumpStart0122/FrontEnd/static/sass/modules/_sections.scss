@@ -10,8 +10,9 @@ div.fp-section{
 	&:after{
 		content:"";
 		width:1px;
+		height:100%;
 		position:absolute;
-		left:50%;
+		left:49%;
 		display: block;
 		background-color:$primary-color
 	}
@@ -148,17 +149,10 @@ div#sec_home {
  
 	p {
 		display: block;
-		// margin-top:100px;
-		// background-color:$navy;
-		// @include orange-border;
-		// padding:50px 30px;
-	}
-
-	.border_container{
-		margin-top: 100px;
-		padding: 50px 30px;
-		background-color: $navy; 
-		position: relative;
+		margin-top:100px;
+		background-color:$navy;
+		@include orange-border;
+		padding:50px 30px;
 	}
 }
 

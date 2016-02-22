@@ -41,6 +41,7 @@ a:hover {
   padding-top: 0;
 }
 
+<<<<<<< HEAD
 /* line 23, ../sass/base/_normalize.scss */
 .fp-slidesContainer {
   margin-top: 4%;
@@ -52,17 +53,28 @@ a:hover {
 }
 
 /* line 29, ../sass/base/_normalize.scss */
+=======
+/* line 26, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .fp-tableCell {
   vertical-align: top !important;
   height: initial !important;
 }
 
+<<<<<<< HEAD
 /* line 34, ../sass/base/_normalize.scss */
+=======
+/* line 31, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .fp-section.fp-table, .fp-slide.fp-table {
   height: auto;
 }
 
+<<<<<<< HEAD
 /* line 38, ../sass/base/_normalize.scss */
+=======
+/* line 35, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
   background: transparent;
   height: 45px;
@@ -81,7 +93,11 @@ a:hover {
   left: 12%;
   background: #e8e8e8;
 }
+<<<<<<< HEAD
 /* line 47, ../sass/base/_normalize.scss */
+=======
+/* line 44, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .fp-controlArrow.fp-prev:before, .fp-controlArrow.fp-next:before {
   position: absolute;
   content: '';
@@ -97,7 +113,11 @@ a:hover {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+<<<<<<< HEAD
 /* line 62, ../sass/base/_normalize.scss */
+=======
+/* line 59, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .fp-controlArrow.fp-prev:after, .fp-controlArrow.fp-next:after {
   position: absolute;
   content: '';
@@ -113,7 +133,11 @@ a:hover {
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+<<<<<<< HEAD
 /* line 79, ../sass/base/_normalize.scss */
+=======
+/* line 76, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .fp-controlArrow.fp-prev:hover, .fp-controlArrow.fp-next:hover {
   background: #fbaf5d;
   color: white !important;
@@ -125,12 +149,20 @@ a:hover {
   box-shadow: -3px 14px 0px -2px rgba(220, 220, 220, 0.7);
 }
 
+<<<<<<< HEAD
 /* line 93, ../sass/base/_normalize.scss */
+=======
+/* line 90, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .fp-controlArrow.fp-next {
   right: 0;
   left: initial;
 }
+<<<<<<< HEAD
 /* line 100, ../sass/base/_normalize.scss */
+=======
+/* line 97, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .fp-controlArrow.fp-next:hover {
   -webkit-box-shadow: 0px -14px 0px -2px rgba(220, 220, 220, 0.7);
   -moz-box-shadow: 0px -14px 0px -2px rgba(220, 220, 220, 0.7);
@@ -140,30 +172,50 @@ a:hover {
 }
 
 /*the setting about the slotMachine*/
+<<<<<<< HEAD
 /* line 112, ../sass/base/_normalize.scss */
+=======
+/* line 109, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .slotMachine {
   height: 45px;
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* line 116, ../sass/base/_normalize.scss */
+=======
+/* line 113, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
 }
 
+<<<<<<< HEAD
 /* line 121, ../sass/base/_normalize.scss */
+=======
+/* line 118, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 #slot3 .slot {
   display: block;
   padding-left: 20px;
 }
 
+<<<<<<< HEAD
 /* line 127, ../sass/base/_normalize.scss */
+=======
+/* line 124, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 #slotButton3 {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* line 131, ../sass/base/_normalize.scss */
+=======
+/* line 128, ../sass/base/_normalize.scss */
+>>>>>>> origin/master
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -263,11 +315,14 @@ img.device {
 }
 
 /* line 82, ../sass/base/_base.scss */
+<<<<<<< HEAD
 .xs-no-pad {
   padding: 0;
 }
 
 /* line 86, ../sass/base/_base.scss */
+=======
+>>>>>>> origin/master
 .zindex {
   z-index: 3;
   position: relative;
@@ -413,7 +468,11 @@ img.device {
 }
 
 /* Button 4 */
+<<<<<<< HEAD
 /* line 76, ../sass/modules/_buttons.scss */
+=======
+/* line 73, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4 {
   clear: both;
   float: left;
@@ -426,18 +485,30 @@ img.device {
   min-width: 200px;
 }
 
+<<<<<<< HEAD
 /* line 88, ../sass/modules/_buttons.scss */
+=======
+/* line 85, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4:active {
   border-color: #17954c;
   color: #17954c;
 }
 
+<<<<<<< HEAD
 /* line 93, ../sass/modules/_buttons.scss */
+=======
+/* line 90, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4:hover {
   background: #24b662;
 }
 
+<<<<<<< HEAD
 /* line 97, ../sass/modules/_buttons.scss */
+=======
+/* line 94, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4:before {
   position: absolute;
   height: 100%;
@@ -449,79 +520,131 @@ img.device {
   transition: all 0.3s;
 }
 
+<<<<<<< HEAD
 /* line 108, ../sass/modules/_buttons.scss */
+=======
+/* line 105, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4:active:before {
   color: #17954c;
 }
 
 /* Button 4a */
+<<<<<<< HEAD
 /* line 113, ../sass/modules/_buttons.scss */
+=======
+/* line 110, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4a:before {
   left: 130%;
   top: 0;
 }
 
+<<<<<<< HEAD
 /* line 118, ../sass/modules/_buttons.scss */
+=======
+/* line 115, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4a:hover:before {
   left: 80%;
 }
 
 /* Button 4b */
+<<<<<<< HEAD
 /* line 123, ../sass/modules/_buttons.scss */
+=======
+/* line 120, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4b:before {
   left: -50%;
   top: 0;
 }
 
+<<<<<<< HEAD
 /* line 128, ../sass/modules/_buttons.scss */
+=======
+/* line 125, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4b:hover:before {
   left: 10%;
 }
 
 /* Button 4c */
+<<<<<<< HEAD
 /* line 133, ../sass/modules/_buttons.scss */
+=======
+/* line 130, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4c:before {
   left: 70%;
   opacity: 0;
   top: 0;
 }
 
+<<<<<<< HEAD
 /* line 139, ../sass/modules/_buttons.scss */
+=======
+/* line 136, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4c:hover:before {
   left: 80%;
   opacity: 1;
 }
 
 /* Button 4d */
+<<<<<<< HEAD
 /* line 145, ../sass/modules/_buttons.scss */
+=======
+/* line 142, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4d:before {
   left: 30%;
   opacity: 0;
   top: 0;
 }
 
+<<<<<<< HEAD
 /* line 151, ../sass/modules/_buttons.scss */
+=======
+/* line 148, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-4d:hover:before {
   left: 10%;
   opacity: 1;
 }
 
+<<<<<<< HEAD
 /* line 156, ../sass/modules/_buttons.scss */
+=======
+/* line 153, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn.navy {
   background: #0e324b;
   border-color: #0e324b;
 }
+<<<<<<< HEAD
 /* line 159, ../sass/modules/_buttons.scss */
+=======
+/* line 156, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn.navy:hover {
   background: transparent;
 }
 
+<<<<<<< HEAD
 /* line 164, ../sass/modules/_buttons.scss */
+=======
+/* line 161, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn.orange {
   background: #f16b29;
   border-color: #f16b29;
 }
+<<<<<<< HEAD
 /* line 167, ../sass/modules/_buttons.scss */
+=======
+/* line 164, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn.orange:hover {
   background: #bb531f !important;
   border-color: #bb531f !important;
@@ -529,7 +652,11 @@ img.device {
 }
 
 /* Button 7 */
+<<<<<<< HEAD
 /* line 175, ../sass/modules/_buttons.scss */
+=======
+/* line 172, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-7 {
   background: #17aa56;
   color: #fff;
@@ -539,13 +666,21 @@ img.device {
 }
 
 /* Button 7h */
+<<<<<<< HEAD
 /* line 185, ../sass/modules/_buttons.scss */
+=======
+/* line 182, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-7h span {
   display: inline-block;
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* line 190, ../sass/modules/_buttons.scss */
+=======
+/* line 187, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-7h:before {
   position: absolute;
   left: 0;
@@ -555,19 +690,31 @@ img.device {
   color: #0a833d;
 }
 
+<<<<<<< HEAD
 /* line 199, ../sass/modules/_buttons.scss */
+=======
+/* line 196, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .icon-envelope:before {
   content: "\e000";
 }
 
 /* Success and error */
+<<<<<<< HEAD
 /* line 207, ../sass/modules/_buttons.scss */
+=======
+/* line 204, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-success,
 .btn-error {
   color: transparent;
 }
 
+<<<<<<< HEAD
 /* line 212, ../sass/modules/_buttons.scss */
+=======
+/* line 209, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-success:after,
 .btn-error:after {
   z-index: 1;
@@ -575,12 +722,20 @@ img.device {
   left: 40%;
 }
 
+<<<<<<< HEAD
 /* line 218, ../sass/modules/_buttons.scss */
+=======
+/* line 215, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-success:before {
   content: "\e001";
 }
 
+<<<<<<< HEAD
 /* line 222, ../sass/modules/_buttons.scss */
+=======
+/* line 219, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-success:after {
   content: "Success!";
   -webkit-animation: moveUp 0.5s;
@@ -589,13 +744,21 @@ img.device {
 }
 
 @-webkit-keyframes moveUp {
+<<<<<<< HEAD
   /* line 230, ../sass/modules/_buttons.scss */
+=======
+  /* line 227, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0% {
     -webkit-transform: translateY(50%);
     opacity: 0;
   }
 
+<<<<<<< HEAD
   /* line 234, ../sass/modules/_buttons.scss */
+=======
+  /* line 231, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -603,13 +766,21 @@ img.device {
 }
 
 @-moz-keyframes moveUp {
+<<<<<<< HEAD
   /* line 241, ../sass/modules/_buttons.scss */
+=======
+  /* line 238, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0% {
     -moz-transform: translateY(50%);
     opacity: 0;
   }
 
+<<<<<<< HEAD
   /* line 245, ../sass/modules/_buttons.scss */
+=======
+  /* line 242, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   100% {
     opacity: 1;
     -moz-transform: translateY(0);
@@ -617,20 +788,32 @@ img.device {
 }
 
 @keyframes moveUp {
+<<<<<<< HEAD
   /* line 252, ../sass/modules/_buttons.scss */
+=======
+  /* line 249, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0% {
     transform: translateY(50%);
     opacity: 0;
   }
 
+<<<<<<< HEAD
   /* line 256, ../sass/modules/_buttons.scss */
+=======
+  /* line 253, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+<<<<<<< HEAD
 /* line 262, ../sass/modules/_buttons.scss */
+=======
+/* line 259, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-error {
   -webkit-animation: shake 0.5s;
   -moz-animation: shake 0.5s;
@@ -639,62 +822,106 @@ img.device {
 
 /* From Dan Eden's animate.css: http://daneden.me/animate/ */
 @-webkit-keyframes shake {
+<<<<<<< HEAD
   /* line 270, ../sass/modules/_buttons.scss */
+=======
+  /* line 267, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0%, 100% {
     -webkit-transform: translateX(0);
   }
 
+<<<<<<< HEAD
   /* line 271, ../sass/modules/_buttons.scss */
+=======
+  /* line 268, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
   }
 
+<<<<<<< HEAD
   /* line 272, ../sass/modules/_buttons.scss */
+=======
+  /* line 269, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
   }
 }
 
 @-moz-keyframes shake {
+<<<<<<< HEAD
   /* line 276, ../sass/modules/_buttons.scss */
+=======
+  /* line 273, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0%, 100% {
     -moz-transform: translateX(0);
   }
 
+<<<<<<< HEAD
   /* line 277, ../sass/modules/_buttons.scss */
+=======
+  /* line 274, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   10%, 30%, 50%, 70%, 90% {
     -moz-transform: translateX(-10px);
   }
 
+<<<<<<< HEAD
   /* line 278, ../sass/modules/_buttons.scss */
+=======
+  /* line 275, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   20%, 40%, 60%, 80% {
     -moz-transform: translateX(10px);
   }
 }
 
 @keyframes shake {
+<<<<<<< HEAD
   /* line 282, ../sass/modules/_buttons.scss */
+=======
+  /* line 279, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0%, 100% {
     transform: translateX(0);
   }
 
+<<<<<<< HEAD
   /* line 283, ../sass/modules/_buttons.scss */
+=======
+  /* line 280, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
 
+<<<<<<< HEAD
   /* line 284, ../sass/modules/_buttons.scss */
+=======
+  /* line 281, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
 }
 
+<<<<<<< HEAD
 /* line 287, ../sass/modules/_buttons.scss */
+=======
+/* line 284, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-error:before {
   content: "\e002";
 }
 
+<<<<<<< HEAD
 /* line 291, ../sass/modules/_buttons.scss */
+=======
+/* line 288, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
 .btn-error:after {
   content: "Error!";
   -webkit-animation: scaleFromUp 0.5s;
@@ -703,13 +930,21 @@ img.device {
 }
 
 @-webkit-keyframes scaleFromUp {
+<<<<<<< HEAD
   /* line 299, ../sass/modules/_buttons.scss */
+=======
+  /* line 296, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0% {
     -webkit-transform: scale(0);
     opacity: 0;
   }
 
+<<<<<<< HEAD
   /* line 303, ../sass/modules/_buttons.scss */
+=======
+  /* line 300, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -717,13 +952,21 @@ img.device {
 }
 
 @-moz-keyframes scaleFromUp {
+<<<<<<< HEAD
   /* line 310, ../sass/modules/_buttons.scss */
+=======
+  /* line 307, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0% {
     -moz-transform: scale(0);
     opacity: 0;
   }
 
+<<<<<<< HEAD
   /* line 314, ../sass/modules/_buttons.scss */
+=======
+  /* line 311, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   100% {
     opacity: 1;
     -moz-transform: scale(1);
@@ -731,13 +974,21 @@ img.device {
 }
 
 @keyframes scaleFromUp {
+<<<<<<< HEAD
   /* line 321, ../sass/modules/_buttons.scss */
+=======
+  /* line 318, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   0% {
     transform: scale(0);
     opacity: 0;
   }
 
+<<<<<<< HEAD
   /* line 325, ../sass/modules/_buttons.scss */
+=======
+  /* line 322, ../sass/modules/_buttons.scss */
+>>>>>>> origin/master
   100% {
     opacity: 1;
     transform: scale(1);
@@ -771,7 +1022,7 @@ div.section-padding {
 
 /* line 22, ../sass/modules/_sections.scss */
 div.slide-padding {
-  padding: 1.2% 0% 0% 0%;
+  padding: 2.2% 0% 0% 0%;
 }
 
 /* line 26, ../sass/modules/_sections.scss */
@@ -888,21 +1139,30 @@ div#sec_home {
   position: absolute;
   width: 278px;
   height: 221px;
+  transform: rotateZ(10deg);
   background: url(../img/rocket-new.png) no-repeat center center;
   background-size: 75% auto;
   -moz-background-size: 75% auto;
   -webkit-background-size: 75% auto;
   -ms-background-size: 75% auto;
   background-size: 75% auto;
-  left: -20%;
-  top: 80%;
+  left: -10%;
+  top: 50%;
 }
 
+<<<<<<< HEAD
 /* line 149, ../sass/modules/_sections.scss */
 #sec_about p {
   display: block;
 }
 /* line 157, ../sass/modules/_sections.scss */
+=======
+/* line 150, ../sass/modules/_sections.scss */
+#sec_about p {
+  display: block;
+}
+/* line 158, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #sec_about .border_container {
   margin-top: 100px;
   padding: 50px 30px;
@@ -911,7 +1171,11 @@ div#sec_home {
 }
 
 /********** Jump Now Section ********/
+<<<<<<< HEAD
 /* line 168, ../sass/modules/_sections.scss */
+=======
+/* line 169, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div#sec_jumpnow {
   background: #0e324b url(../img/tiles.png);
   background-size: 20% auto;
@@ -920,22 +1184,38 @@ div#sec_jumpnow {
   -ms-background-size: 20% auto;
   background-size: 20% auto;
 }
+<<<<<<< HEAD
 /* line 172, ../sass/modules/_sections.scss */
+=======
+/* line 173, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div#sec_jumpnow p {
   font-size: 26px;
   line-height: 40px;
 }
 
+<<<<<<< HEAD
 /* line 180, ../sass/modules/_sections.scss */
+=======
+/* line 181, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.plan_list {
   padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
+<<<<<<< HEAD
 /* line 184, ../sass/modules/_sections.scss */
 ul.plan_list li {
   line-height: 35px;
 }
 /* line 189, ../sass/modules/_sections.scss */
+=======
+/* line 185, ../sass/modules/_sections.scss */
+ul.plan_list li {
+  line-height: 35px;
+}
+/* line 190, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.plan_list li:before {
   width: 25px;
   height: 25px;
@@ -956,12 +1236,20 @@ ul.plan_list li:before {
 }
 
 /*COMPETITION****/
+<<<<<<< HEAD
 /* line 211, ../sass/modules/_sections.scss */
+=======
+/* line 212, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow_part1 .slide-inner {
   border: none;
 }
 
+<<<<<<< HEAD
 /* line 215, ../sass/modules/_sections.scss */
+=======
+/* line 216, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .slide-inner {
   position: relative;
   width: 75%;
@@ -969,7 +1257,11 @@ ul.plan_list li:before {
   border: 1px none #f16b29;
 }
 
+<<<<<<< HEAD
 /* line 224, ../sass/modules/_sections.scss */
+=======
+/* line 225, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.competition_topic h4 {
   text-align: right;
   font-size: 45px;
@@ -979,18 +1271,30 @@ div.competition_topic h4 {
   font-weight: 600;
   letter-spacing: 3px;
 }
+<<<<<<< HEAD
 /* line 233, ../sass/modules/_sections.scss */
+=======
+/* line 234, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.competition_topic h4 span {
   display: block;
   font-size: 35px;
   color: #fbaf5d;
 }
+<<<<<<< HEAD
 /* line 240, ../sass/modules/_sections.scss */
+=======
+/* line 241, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.competition_topic h5 {
   color: #f16b29;
   font-size: 26px;
 }
+<<<<<<< HEAD
 /* line 245, ../sass/modules/_sections.scss */
+=======
+/* line 246, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.competition_topic .btn {
   position: absolute;
   bottom: -100px;
@@ -1000,41 +1304,69 @@ div.competition_topic .btn {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* line 259, ../sass/modules/_sections.scss */
 div#sec_competition ul {
   padding: 0;
 }
 /* line 266, ../sass/modules/_sections.scss */
+=======
+/* line 260, ../sass/modules/_sections.scss */
+div#sec_competition ul {
+  padding: 0;
+}
+/* line 267, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div#sec_competition ul li i:before {
   display: inline-block;
   margin-right: 10px;
   color: #fbaf5d;
 }
 
+<<<<<<< HEAD
 /* line 276, ../sass/modules/_sections.scss */
+=======
+/* line 277, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.competition-headings {
   text-align: left;
   padding: 0px 0 20px;
 }
+<<<<<<< HEAD
 /* line 280, ../sass/modules/_sections.scss */
+=======
+/* line 281, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.competition-headings li {
   display: inline-block;
   vertical-align: top;
 }
+<<<<<<< HEAD
 /* line 284, ../sass/modules/_sections.scss */
+=======
+/* line 285, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.competition-headings a {
   color: #999;
   display: block;
   padding: 15px 30px;
   letter-spacing: 10px;
 }
+<<<<<<< HEAD
 /* line 289, ../sass/modules/_sections.scss */
+=======
+/* line 290, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 ul.competition-headings a.selected {
   background-color: #f16b29;
   color: white;
 }
 
+<<<<<<< HEAD
 /* line 300, ../sass/modules/_sections.scss */
+=======
+/* line 301, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .slide_next.arrow, .slide_prev.arrow {
   z-index: 5;
   background: transparent;
@@ -1058,7 +1390,11 @@ ul.competition-headings a.selected {
   position: absolute;
   background: #e8e8e8;
 }
+<<<<<<< HEAD
 /* line 314, ../sass/modules/_sections.scss */
+=======
+/* line 315, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .slide_next.arrow:before, .slide_prev.arrow:before {
   position: absolute;
   content: '';
@@ -1074,7 +1410,11 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+<<<<<<< HEAD
 /* line 329, ../sass/modules/_sections.scss */
+=======
+/* line 330, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .slide_next.arrow:after, .slide_prev.arrow:after {
   position: absolute;
   content: '';
@@ -1090,6 +1430,7 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+<<<<<<< HEAD
 /* line 345, ../sass/modules/_sections.scss */
 .slide_next.arrow:hover, .slide_prev.arrow:hover {
   background-color: #f16b29 !important;
@@ -1099,15 +1440,34 @@ ul.competition-headings a.selected {
   border-color: #e8e8e8;
 }
 /* line 352, ../sass/modules/_sections.scss */
+=======
+/* line 346, ../sass/modules/_sections.scss */
+.slide_next.arrow:hover, .slide_prev.arrow:hover {
+  background-color: #f16b29 !important;
+}
+/* line 348, ../sass/modules/_sections.scss */
+.slide_next.arrow:hover:before, .slide_prev.arrow:hover:before, .slide_next.arrow:hover:after, .slide_prev.arrow:hover:after {
+  border-color: #e8e8e8;
+}
+/* line 353, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .slide_next.arrow.slide_team_details_arrow, .slide_team_details_arrow.slide_prev.arrow {
   background: #0e324b !important;
 }
 
+<<<<<<< HEAD
 /* line 358, ../sass/modules/_sections.scss */
 .slide_prev.arrow {
   left: -20px;
 }
 /* line 361, ../sass/modules/_sections.scss */
+=======
+/* line 359, ../sass/modules/_sections.scss */
+.slide_prev.arrow {
+  left: -20px;
+}
+/* line 362, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .slide_prev.arrow:before {
   left: 40%;
   top: 31%;
@@ -1115,7 +1475,11 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+<<<<<<< HEAD
 /* line 368, ../sass/modules/_sections.scss */
+=======
+/* line 369, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .slide_prev.arrow:after {
   left: 40%;
   top: 31%;
@@ -1125,23 +1489,39 @@ ul.competition-headings a.selected {
 }
 
 /**COMPETITION PARTNERS*******/
+<<<<<<< HEAD
 /* line 380, ../sass/modules/_sections.scss */
+=======
+/* line 381, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.competition_topic a.basic_btn {
   margin-top: 5%;
   margin-left: 140px !important;
 }
 
+<<<<<<< HEAD
 /* line 386, ../sass/modules/_sections.scss */
 div.sponsor-group {
   padding-top: 30px;
 }
 /* line 388, ../sass/modules/_sections.scss */
+=======
+/* line 387, ../sass/modules/_sections.scss */
+div.sponsor-group {
+  padding-top: 30px;
+}
+/* line 389, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.sponsor-group h3 {
   color: #f16b29;
   font-weight: bold;
   letter-spacing: 3px;
 }
+<<<<<<< HEAD
 /* line 395, ../sass/modules/_sections.scss */
+=======
+/* line 396, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.sponsor-group ul.sponsor-list li {
   display: inline-block;
   background: black;
@@ -1149,7 +1529,11 @@ div.sponsor-group ul.sponsor-list li {
   height: 80px;
   margin-right: 50px;
 }
+<<<<<<< HEAD
 /* line 402, ../sass/modules/_sections.scss */
+=======
+/* line 403, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.sponsor-group ul.sponsor-list li:first-child {
   background: url(../img/ping_logo.png) no-repeat center center;
   background-size: 100% auto;
@@ -1158,7 +1542,11 @@ div.sponsor-group ul.sponsor-list li:first-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
+<<<<<<< HEAD
 /* line 406, ../sass/modules/_sections.scss */
+=======
+/* line 407, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.sponsor-group ul.sponsor-list li:nth-child(2) {
   background: url(../img/venture_craft_logo.png) no-repeat center center;
   background-size: 100% auto;
@@ -1168,12 +1556,17 @@ div.sponsor-group ul.sponsor-list li:nth-child(2) {
   background-size: 100% auto;
 }
 
+<<<<<<< HEAD
 /* line 421, ../sass/modules/_sections.scss */
+=======
+/* line 422, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .hello li a {
   color: #f16b29;
   display: block;
   text-indent: -9999px;
 }
+<<<<<<< HEAD
 /* line 427, ../sass/modules/_sections.scss */
 .hello li:first-child {
   background-image: url(../img/螞蜂窩_logo.png);
@@ -1203,6 +1596,37 @@ div.sponsor-group ul.sponsor-list li:nth-child(2) {
   background-image: url(../img/DSEE_logo.png);
 }
 /* line 449, ../sass/modules/_sections.scss */
+=======
+/* line 428, ../sass/modules/_sections.scss */
+.hello li:first-child {
+  background-image: url(../img/螞蜂窩_logo.png);
+}
+/* line 432, ../sass/modules/_sections.scss */
+.hello li:nth-child(2) {
+  background-image: url(../img/venture_craft_logo.png);
+}
+/* line 435, ../sass/modules/_sections.scss */
+.hello li:nth-child(3) {
+  background-image: url(../img/365_logo.png);
+}
+/* line 438, ../sass/modules/_sections.scss */
+.hello li:nth-child(4) {
+  background-image: url(../img/e27_logo.png);
+}
+/* line 441, ../sass/modules/_sections.scss */
+.hello li:nth-child(5) {
+  background-image: url(../img/citytours_logo.png);
+}
+/* line 444, ../sass/modules/_sections.scss */
+.hello li:nth-child(6) {
+  background-image: url(../img/ping_logo.png);
+}
+/* line 447, ../sass/modules/_sections.scss */
+.hello li:nth-child(7) {
+  background-image: url(../img/DSEE_logo.png);
+}
+/* line 450, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .hello li:hover {
   -moz-background-blend-mode: normal;
   -ms-background-blend-mode: normal;
@@ -1218,29 +1642,53 @@ div.sponsor-group ul.sponsor-list li:nth-child(2) {
 }
 
 /**COMPETITION DETAILS**/
+<<<<<<< HEAD
 /* line 470, ../sass/modules/_sections.scss */
 .info_list ul {
   padding: 0 0 0 40px;
 }
 /* line 473, ../sass/modules/_sections.scss */
+=======
+/* line 471, ../sass/modules/_sections.scss */
+.info_list ul {
+  padding: 0 0 0 40px;
+}
+/* line 474, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .info_list ul li {
   padding-left: 20px;
 }
 
+<<<<<<< HEAD
 /* line 480, ../sass/modules/_sections.scss */
 div.timeline {
   margin-top: 50px;
 }
 /* line 482, ../sass/modules/_sections.scss */
+=======
+/* line 481, ../sass/modules/_sections.scss */
+div.timeline {
+  margin-top: 50px;
+}
+/* line 483, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul {
   position: relative;
   padding: 0 0 25px;
 }
+<<<<<<< HEAD
 /* line 487, ../sass/modules/_sections.scss */
 div.timeline ul:after {
   display: none;
 }
 /* line 492, ../sass/modules/_sections.scss */
+=======
+/* line 488, ../sass/modules/_sections.scss */
+div.timeline ul:after {
+  display: none;
+}
+/* line 493, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li {
   vertical-align: bottom;
   display: inline-block;
@@ -1267,7 +1715,11 @@ div.timeline ul li {
   -o-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
+<<<<<<< HEAD
 /* line 518, ../sass/modules/_sections.scss */
+=======
+/* line 519, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li:hover {
   position: relative;
   bottom: 15px;
@@ -1277,11 +1729,16 @@ div.timeline ul li:hover {
   -o-box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
   box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
 }
+<<<<<<< HEAD
 /* line 528, ../sass/modules/_sections.scss */
+=======
+/* line 529, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li:first-child {
   z-index: 10;
   padding-left: 10px;
 }
+<<<<<<< HEAD
 /* line 532, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(2) {
   z-index: 9;
@@ -1303,12 +1760,39 @@ div.timeline ul li:nth-child(4):before {
   display: none;
 }
 /* line 550, ../sass/modules/_sections.scss */
+=======
+/* line 533, ../sass/modules/_sections.scss */
+div.timeline ul li:nth-child(2) {
+  z-index: 9;
+}
+/* line 536, ../sass/modules/_sections.scss */
+div.timeline ul li:nth-child(3) {
+  z-index: 8;
+}
+/* line 540, ../sass/modules/_sections.scss */
+div.timeline ul li:nth-child(4) {
+  padding-right: 10px;
+}
+/* line 542, ../sass/modules/_sections.scss */
+div.timeline ul li:nth-child(4):after {
+  display: none;
+}
+/* line 545, ../sass/modules/_sections.scss */
+div.timeline ul li:nth-child(4):before {
+  display: none;
+}
+/* line 551, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li h4 {
   color: #f16b29;
   margin: 0;
   font-size: 18px;
 }
+<<<<<<< HEAD
 /* line 555, ../sass/modules/_sections.scss */
+=======
+/* line 556, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li h4 span {
   margin-top: -4px;
   font-size: 14px;
@@ -1321,14 +1805,22 @@ div.timeline ul li h4 span {
   padding: 0px 10px;
   color: #fff !important;
 }
+<<<<<<< HEAD
 /* line 569, ../sass/modules/_sections.scss */
+=======
+/* line 570, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li p {
   clear: both;
   font-size: 12px;
   margin: 0;
   color: #999;
 }
+<<<<<<< HEAD
 /* line 579, ../sass/modules/_sections.scss */
+=======
+/* line 580, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li:after {
   content: '';
   position: absolute;
@@ -1341,7 +1833,11 @@ div.timeline ul li:after {
   right: -45px;
   top: -1px;
 }
+<<<<<<< HEAD
 /* line 592, ../sass/modules/_sections.scss */
+=======
+/* line 593, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li:before {
   content: '';
   position: absolute;
@@ -1354,25 +1850,41 @@ div.timeline ul li:before {
   right: -46px;
   top: -1px;
 }
+<<<<<<< HEAD
 /* line 607, ../sass/modules/_sections.scss */
+=======
+/* line 608, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.timeline ul li:last-child {
   margin-right: 0px;
 }
 
 /* PRIZE**/
+<<<<<<< HEAD
 /* line 621, ../sass/modules/_sections.scss */
+=======
+/* line 622, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide p {
   color: #f16b29 !important;
   font-size: 24px;
   margin-top: 30px;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 628, ../sass/modules/_sections.scss */
+=======
+/* line 629, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide .prize-single {
   margin: 0 auto;
   min-height: 300px;
 }
+<<<<<<< HEAD
 /* line 632, ../sass/modules/_sections.scss */
+=======
+/* line 633, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide .prize-single:first-of-type {
   background: url(../img/secondplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1381,12 +1893,20 @@ div.timeline ul li:last-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
+<<<<<<< HEAD
 /* line 635, ../sass/modules/_sections.scss */
+=======
+/* line 636, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide .prize-single:first-of-type h4 {
   font-size: 45px;
   color: #2b4252;
 }
+<<<<<<< HEAD
 /* line 640, ../sass/modules/_sections.scss */
+=======
+/* line 641, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide .prize-single:nth-of-type(2) {
   background: url(../img/firstplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1396,7 +1916,11 @@ div.timeline ul li:last-child {
   background-size: 100% auto;
   color: #0e324b;
 }
+<<<<<<< HEAD
 /* line 646, ../sass/modules/_sections.scss */
+=======
+/* line 647, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide .prize-single:nth-of-type(3) {
   background: url(../img/thirdplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1405,12 +1929,20 @@ div.timeline ul li:last-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
+<<<<<<< HEAD
 /* line 649, ../sass/modules/_sections.scss */
+=======
+/* line 650, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide .prize-single:nth-of-type(3) h4 {
   font-size: 45px;
   color: #2b4252;
 }
+<<<<<<< HEAD
 /* line 655, ../sass/modules/_sections.scss */
+=======
+/* line 656, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #competition_prize_slide .prize-single h4 {
   display: block;
   text-align: center;
@@ -1423,7 +1955,11 @@ div.timeline ul li:last-child {
 }
 
 /**JUMP******/
+<<<<<<< HEAD
 /* line 679, ../sass/modules/_sections.scss */
+=======
+/* line 680, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -1446,7 +1982,11 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
+<<<<<<< HEAD
 /* line 704, ../sass/modules/_sections.scss */
+=======
+/* line 701, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -1456,7 +1996,11 @@ div.timeline ul li:last-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
+<<<<<<< HEAD
 /* line 714, ../sass/modules/_sections.scss */
+=======
+/* line 711, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -1468,36 +2012,60 @@ div.timeline ul li:last-child {
   background: url(../img/download_btn.png) no-repeat center center;
 }
 
+<<<<<<< HEAD
 /* line 732, ../sass/modules/_sections.scss */
+=======
+/* line 729, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow-des {
   border: 1px none #f16b29;
   padding: 20px;
   background: #0e324b;
 }
+<<<<<<< HEAD
 /* line 737, ../sass/modules/_sections.scss */
+=======
+/* line 734, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow-des h3 {
   color: #f16b29;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 600;
 }
+<<<<<<< HEAD
 /* line 744, ../sass/modules/_sections.scss */
+=======
+/* line 741, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow-des li {
   color: white;
 }
 
+<<<<<<< HEAD
 /* line 748, ../sass/modules/_sections.scss */
+=======
+/* line 745, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .jumpnow-btn-set {
   margin-top: 20%;
 }
 
+<<<<<<< HEAD
 /* line 752, ../sass/modules/_sections.scss */
+=======
+/* line 749, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .imready {
   margin-top: 10px;
 }
 
 /***FORMS*****/
+<<<<<<< HEAD
 /* line 758, ../sass/modules/_sections.scss */
+=======
+/* line 755, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #sec_jumpnow h2 {
   color: #f16b29;
   font-weight: bold;
@@ -1506,45 +2074,74 @@ div.timeline ul li:last-child {
   display: block;
   padding-bottom: 10px;
 }
+<<<<<<< HEAD
 /* line 767, ../sass/modules/_sections.scss */
+=======
+/* line 764, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #sec_jumpnow .slide-inner {
   margin: 0 auto;
   background: #0e324b;
   width: 95%;
   padding: 20px;
   vertical-align: top;
+  height: 100%;
 }
+<<<<<<< HEAD
 /* line 774, ../sass/modules/_sections.scss */
+=======
+/* line 772, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 #sec_jumpnow .slide-inner:first-child {
   background: transparent;
 }
 
+<<<<<<< HEAD
 /* line 785, ../sass/modules/_sections.scss */
+=======
+/* line 783, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .team_details_single > span {
   clear: none;
 }
 
+<<<<<<< HEAD
 /* line 788, ../sass/modules/_sections.scss */
+=======
+/* line 786, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
+<<<<<<< HEAD
 /* line 792, ../sass/modules/_sections.scss */
+=======
+/* line 790, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
+<<<<<<< HEAD
 /* line 797, ../sass/modules/_sections.scss */
+=======
+/* line 795, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 805, ../sass/modules/_sections.scss */
+=======
+/* line 803, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .event_single {
   position: relative;
   padding: 10px;
@@ -1560,33 +2157,53 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
+<<<<<<< HEAD
 /* line 823, ../sass/modules/_sections.scss */
+=======
+/* line 821, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
+<<<<<<< HEAD
 /* line 829, ../sass/modules/_sections.scss */
+=======
+/* line 827, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
+<<<<<<< HEAD
 /* line 835, ../sass/modules/_sections.scss */
+=======
+/* line 833, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
+<<<<<<< HEAD
 /* line 839, ../sass/modules/_sections.scss */
+=======
+/* line 837, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
+<<<<<<< HEAD
 /* line 846, ../sass/modules/_sections.scss */
+=======
+/* line 844, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1597,14 +2214,22 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
+<<<<<<< HEAD
 /* line 858, ../sass/modules/_sections.scss */
+=======
+/* line 856, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
+<<<<<<< HEAD
 /* line 867, ../sass/modules/_sections.scss */
+=======
+/* line 865, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.contact_container {
   width: 100%;
   background: #313131;
@@ -1614,11 +2239,19 @@ div.contact_container {
   left: 0;
   bottom: -380px;
 }
+<<<<<<< HEAD
 /* line 876, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
 /* line 879, ../sass/modules/_sections.scss */
+=======
+/* line 874, ../sass/modules/_sections.scss */
+div.contact_container .contact_header {
+  cursor: pointer;
+}
+/* line 877, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1629,20 +2262,36 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
+<<<<<<< HEAD
 /* line 890, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
 /* line 892, ../sass/modules/_sections.scss */
+=======
+/* line 888, ../sass/modules/_sections.scss */
+div.contact_container .input {
+  margin: 0;
+}
+/* line 890, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
+<<<<<<< HEAD
 /* line 896, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
 /* line 903, ../sass/modules/_sections.scss */
+=======
+/* line 894, ../sass/modules/_sections.scss */
+div.contact_container .input label {
+  color: #fff;
+}
+/* line 901, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1654,11 +2303,19 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
+<<<<<<< HEAD
 /* line 914, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 /* line 919, ../sass/modules/_sections.scss */
+=======
+/* line 912, ../sass/modules/_sections.scss */
+div.contact_container textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 917, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1670,40 +2327,68 @@ div.contact_container input[type="submit"] {
   margin-top: 15px;
 }
 
+<<<<<<< HEAD
 /* line 931, ../sass/modules/_sections.scss */
+=======
+/* line 929, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .contact-details {
   font-family: "raleway", "文鼎黑體";
   text-align: left;
   color: #fff;
 }
+<<<<<<< HEAD
 /* line 936, ../sass/modules/_sections.scss */
+=======
+/* line 934, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .contact-details h3 {
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+<<<<<<< HEAD
 /* line 943, ../sass/modules/_sections.scss */
 .contact-details ul {
   padding: 0;
 }
 /* line 946, ../sass/modules/_sections.scss */
+=======
+/* line 941, ../sass/modules/_sections.scss */
+.contact-details ul {
+  padding: 0;
+}
+/* line 944, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .contact-details ul li {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 /* line 950, ../sass/modules/_sections.scss */
+=======
+/* line 948, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .contact-details ul li h4 {
   font-weight: bold;
   color: #f16b29;
 }
+<<<<<<< HEAD
 /* line 955, ../sass/modules/_sections.scss */
+=======
+/* line 953, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 .contact-details ul li i {
   display: inline-block;
   margin-right: 10px;
 }
 
+<<<<<<< HEAD
 /* line 964, ../sass/modules/_sections.scss */
+=======
+/* line 962, ../sass/modules/_sections.scss */
+>>>>>>> origin/master
 button.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
@@ -1877,16 +2562,28 @@ div.slide.team_details textarea, div.slide.personal_details textarea {
   line-height: 18px;
   padding: 10px;
 }
+<<<<<<< HEAD
 /* line 86, ../sass/modules/_forms.scss */
+=======
+/* line 85, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 div.slide.team_details span.team_member, div.slide.personal_details span.team_member {
   width: 20%;
   margin-right: 30px;
 }
+<<<<<<< HEAD
 /* line 90, ../sass/modules/_forms.scss */
 div.slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
   width: 60%;
 }
 /* line 94, ../sass/modules/_forms.scss */
+=======
+/* line 89, ../sass/modules/_forms.scss */
+div.slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
+  width: 60%;
+}
+/* line 93, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 div.slide.team_details button#del_member, div.slide.personal_details button#del_member {
   float: right;
   margin: 15px;
@@ -1902,7 +2599,11 @@ div.slide.team_details button#del_member, div.slide.personal_details button#del_
   text-indent: -9999px;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 105, ../sass/modules/_forms.scss */
+=======
+/* line 104, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 div.slide.team_details button#del_member:after, div.slide.personal_details button#del_member:after {
   content: "-";
   width: 10px;
@@ -1913,6 +2614,7 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   left: 9px;
   top: 47%;
 }
+<<<<<<< HEAD
 /* line 116, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member:hover, div.slide.personal_details button#del_member:hover {
   background: #fff;
@@ -1922,11 +2624,26 @@ div.slide.team_details button#del_member:hover:after, div.slide.personal_details
   background: #f16b29;
 }
 /* line 125, ../sass/modules/_forms.scss */
+=======
+/* line 115, ../sass/modules/_forms.scss */
+div.slide.team_details button#del_member:hover, div.slide.personal_details button#del_member:hover {
+  background: #fff;
+}
+/* line 118, ../sass/modules/_forms.scss */
+div.slide.team_details button#del_member:hover:after, div.slide.personal_details button#del_member:hover:after {
+  background: #f16b29;
+}
+/* line 124, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 div.slide.team_details button:focus, div.slide.personal_details button:focus {
   outline: none;
 }
 
+<<<<<<< HEAD
 /* line 132, ../sass/modules/_forms.scss */
+=======
+/* line 129, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 #add_member {
   margin-right: 9px;
   font-size: 14px;
@@ -1936,7 +2653,11 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   color: #fff;
   float: right;
 }
+<<<<<<< HEAD
 /* line 140, ../sass/modules/_forms.scss */
+=======
+/* line 137, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 #add_member:after {
   margin-left: 5px;
   width: 35px;
@@ -1952,20 +2673,32 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-radius: 50%;
   display: inline-block;
 }
+<<<<<<< HEAD
 /* line 152, ../sass/modules/_forms.scss */
+=======
+/* line 149, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 #add_member:hover:after {
   background: #fff;
   color: #f16b29 !important;
 }
 
+<<<<<<< HEAD
 /* line 159, ../sass/modules/_forms.scss */
+=======
+/* line 156, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .nav_group {
   position: absolute;
   right: 50px;
   bottom: -28px;
 }
 
+<<<<<<< HEAD
 /* line 165, ../sass/modules/_forms.scss */
+=======
+/* line 162, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .next_btn, .prev_btn {
   font-size: 14px;
   float: left;
@@ -1983,7 +2716,11 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   /* Stroke */
   /* Fill */
 }
+<<<<<<< HEAD
 /* line 182, ../sass/modules/_forms.scss */
+=======
+/* line 179, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .next_btn:before, .prev_btn:before, .next_btn:after, .prev_btn:after {
   content: "";
   position: absolute;
@@ -1993,7 +2730,11 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-color: transparent;
   border-bottom: 0;
 }
+<<<<<<< HEAD
 /* line 193, ../sass/modules/_forms.scss */
+=======
+/* line 190, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .next_btn:before, .prev_btn:before {
   /* If 1px darken stroke slightly */
   right: -33px;
@@ -2004,7 +2745,11 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-width: 25px 0 25px 33px;
   border-color: transparent transparent transparent #f16b29;
 }
+<<<<<<< HEAD
 /* line 209, ../sass/modules/_forms.scss */
+=======
+/* line 206, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .next_btn:after, .prev_btn:after {
   right: -31px;
   top: 0;
@@ -2014,44 +2759,73 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-width: 24px 0 24px 31px;
   border-color: transparent transparent transparent #f16b29;
 }
+<<<<<<< HEAD
 /* line 224, ../sass/modules/_forms.scss */
+=======
+/* line 221, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .next_btn:hover, .prev_btn:hover {
   background-color: #bb531f;
   border-color: #bb531f;
   color: white;
 }
+<<<<<<< HEAD
 /* line 229, ../sass/modules/_forms.scss */
+=======
+/* line 226, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .next_btn:hover:after, .prev_btn:hover:after, .next_btn:hover:before, .prev_btn:hover:before {
   border-color: transparent transparent transparent #bb531f;
 }
 
+<<<<<<< HEAD
 /* line 240, ../sass/modules/_forms.scss */
+=======
+/* line 237, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .prev_btn {
   border-left: none;
   border-right: 1px solid #f16b29;
   background: #0e324b;
 }
+<<<<<<< HEAD
 /* line 247, ../sass/modules/_forms.scss */
+=======
+/* line 244, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .prev_btn:before {
   left: -33px;
   top: -1px;
   border-width: 25px 33px 25px 0;
   border-color: transparent #f16b29 transparent transparent;
 }
+<<<<<<< HEAD
 /* line 253, ../sass/modules/_forms.scss */
+=======
+/* line 250, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .prev_btn:after {
   left: -31px;
   top: 0;
   border-width: 24px 31px 24px 0;
   border-color: transparent #0e324b transparent transparent;
 }
+<<<<<<< HEAD
 /* line 262, ../sass/modules/_forms.scss */
+=======
+/* line 259, ../sass/modules/_forms.scss */
+>>>>>>> origin/master
 .prev_btn:after, .prev_btn:before {
   border-color: transparent #bb531f transparent transparent #bb531f;
 }
 
+<<<<<<< HEAD
 /* line 270, ../sass/modules/_forms.scss */
 a#reg_btn {
+=======
+/* line 267, ../sass/modules/_forms.scss */
+button.submit_btn {
+>>>>>>> origin/master
   float: right;
   max-width: initial;
   width: 329px;
@@ -2068,111 +2842,193 @@ span > span.reminder {
 }
 
 /* line 2, ../sass/modules/_animations.scss */
+<<<<<<< HEAD
+=======
+#sec_about p {
+  opacity: 0;
+  transition: opacity 3s 1s;
+}
+
+/* line 6, ../sass/modules/_animations.scss */
+#sec_about .straightAni p {
+  opacity: 1;
+}
+
+/* line 10, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 .rocket_ani {
-  -moz-animation: moveTo 10s 0s linear 1 forwards;
-  -webkit-animation: moveTo 10s 0s linear 1 forwards;
-  -ms-animation: moveTo 10s 0s linear 1 forwards;
-  -o-animation: moveTo 10s 0s linear 1 forwards;
-  animation: moveTo 10s 0s linear 1 forwards;
+  -moz-animation: moveTo 12s 0s linear 1 forwards;
+  -webkit-animation: moveTo 12s 0s linear 1 forwards;
+  -ms-animation: moveTo 12s 0s linear 1 forwards;
+  -o-animation: moveTo 12s 0s linear 1 forwards;
+  animation: moveTo 12s 0s linear 1 forwards;
 }
 
 @keyframes moveTo {
+<<<<<<< HEAD
   /* line 7, ../sass/modules/_animations.scss */
-  0% {
-    top: 80%;
-    left: -20%;
-  }
-
-  /* line 8, ../sass/modules/_animations.scss */
-  0.0001% {
-    top: 79%;
-    left: -20%;
-  }
-
-  /* line 9, ../sass/modules/_animations.scss */
-  1% {
-    top: 80%;
-    left: -20%;
-  }
-
-  /* line 10, ../sass/modules/_animations.scss */
-  2% {
-    top: 79%;
-    left: -20%;
-  }
-
-  /* line 11, ../sass/modules/_animations.scss */
-  3% {
-    top: 80%;
-    left: -20%;
-  }
-
-  /* line 12, ../sass/modules/_animations.scss */
-  4% {
-    top: 79%;
-    left: -20%;
-  }
-
-  /* line 13, ../sass/modules/_animations.scss */
-  5% {
-    top: 80%;
-    left: -20%;
-  }
-
-  /* line 14, ../sass/modules/_animations.scss */
-  6% {
-    top: 79%;
-    left: -20%;
-  }
-
+=======
   /* line 15, ../sass/modules/_animations.scss */
-  7% {
-    top: 80%;
-    left: -20%;
+>>>>>>> origin/master
+  0% {
+    top: 50%;
+    left: -10%;
   }
 
+<<<<<<< HEAD
+  /* line 8, ../sass/modules/_animations.scss */
+=======
   /* line 16, ../sass/modules/_animations.scss */
-  8% {
-    top: 79%;
-    left: -20%;
+>>>>>>> origin/master
+  0.0001% {
+    top: 49%;
+    left: -10%;
   }
 
+<<<<<<< HEAD
+  /* line 9, ../sass/modules/_animations.scss */
+=======
   /* line 17, ../sass/modules/_animations.scss */
-  9% {
-    top: 80%;
-    left: -20%;
+>>>>>>> origin/master
+  1% {
+    top: 50%;
+    left: -10%;
   }
 
+<<<<<<< HEAD
+  /* line 10, ../sass/modules/_animations.scss */
+=======
   /* line 18, ../sass/modules/_animations.scss */
-  10% {
-    top: 79%;
-    left: -20%;
+>>>>>>> origin/master
+  2% {
+    top: 49%;
+    left: -10%;
   }
 
+<<<<<<< HEAD
+  /* line 11, ../sass/modules/_animations.scss */
+=======
   /* line 19, ../sass/modules/_animations.scss */
-  11% {
-    top: 80%;
-    left: -20%;
+>>>>>>> origin/master
+  3% {
+    top: 50%;
+    left: -10%;
   }
 
+<<<<<<< HEAD
+  /* line 12, ../sass/modules/_animations.scss */
+=======
   /* line 20, ../sass/modules/_animations.scss */
-  20% {
-    top: 5%;
-    left: 30%;
+>>>>>>> origin/master
+  4% {
+    top: 49%;
+    left: -10%;
   }
 
+<<<<<<< HEAD
+  /* line 13, ../sass/modules/_animations.scss */
+=======
   /* line 21, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
+  5% {
+    top: 50%;
+    left: -10%;
+  }
+
+<<<<<<< HEAD
+  /* line 14, ../sass/modules/_animations.scss */
+=======
+  /* line 22, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
+  6% {
+    top: 49%;
+    left: -10%;
+  }
+
+<<<<<<< HEAD
+  /* line 15, ../sass/modules/_animations.scss */
+=======
+  /* line 23, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
+  7% {
+    top: 50%;
+    left: -10%;
+  }
+
+<<<<<<< HEAD
+  /* line 16, ../sass/modules/_animations.scss */
+=======
+  /* line 24, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
+  8% {
+    top: 49%;
+    left: -10%;
+  }
+
+<<<<<<< HEAD
+  /* line 17, ../sass/modules/_animations.scss */
+=======
+  /* line 25, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
+  9% {
+    top: 50%;
+    left: -10%;
+  }
+
+<<<<<<< HEAD
+  /* line 18, ../sass/modules/_animations.scss */
+=======
+  /* line 26, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
+  10% {
+    top: 49%;
+    left: -10%;
+  }
+
+<<<<<<< HEAD
+  /* line 19, ../sass/modules/_animations.scss */
+=======
+  /* line 27, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
+  11% {
+    top: 50%;
+    left: -10%;
+  }
+
+<<<<<<< HEAD
+  /* line 20, ../sass/modules/_animations.scss */
+=======
+  /* line 28, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
+  20% {
+    top: 1%;
+    left: 80%;
+  }
+
+<<<<<<< HEAD
+  /* line 21, ../sass/modules/_animations.scss */
+=======
+  /* line 29, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
-    top: 5%;
-    left: 30%;
+    top: 1%;
+    left: 80%;
   }
 }
 
+<<<<<<< HEAD
 /* line 27, ../sass/modules/_animations.scss */
 .event_group {
   perspective: 1000px;
 }
 /* line 31, ../sass/modules/_animations.scss */
+=======
+/* line 37, ../sass/modules/_animations.scss */
+.event_group {
+  perspective: 1000px;
+}
+/* line 41, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 .event_group .event_single .event_single_rotate {
   transform-style: preserve-3d;
   position: relative;
@@ -2183,7 +3039,11 @@ span > span.reminder {
   -o-transition: all 0.5s ease-Out;
   transition: all 0.5s ease-Out;
 }
+<<<<<<< HEAD
 /* line 37, ../sass/modules/_animations.scss */
+=======
+/* line 47, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 .event_group .event_single .event_single_rotate div {
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -2196,13 +3056,21 @@ span > span.reminder {
   left: 0;
   top: 0;
 }
+<<<<<<< HEAD
 /* line 49, ../sass/modules/_animations.scss */
+=======
+/* line 59, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 .event_group .event_single .event_single_rotate .front_face, .event_group .event_single .event_single_rotate .back_face {
   background: #999999 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   z-index: 2;
 }
+<<<<<<< HEAD
 /* line 55, ../sass/modules/_animations.scss */
+=======
+/* line 65, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 .event_group .event_single .event_single_rotate .back_face {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -2212,7 +3080,11 @@ span > span.reminder {
   background: #999999 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
 }
+<<<<<<< HEAD
 /* line 64, ../sass/modules/_animations.scss */
+=======
+/* line 74, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 .event_group .event_single:nth-child(1):hover .event_single_rotate, .event_group .event_single:nth-child(2):hover .event_single_rotate {
   -moz-transition: all 0.5s ease-In;
   -webkit-transition: all 0.5s ease-In;
@@ -2226,7 +3098,11 @@ span > span.reminder {
   transform: rotateY(180deg);
 }
 
+<<<<<<< HEAD
 /* line 76, ../sass/modules/_animations.scss */
+=======
+/* line 86, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 .scrollDownAni {
   -moz-animation: shakeArrow 2s 0s infinite linear;
   -webkit-animation: shakeArrow 2s 0s infinite linear;
@@ -2236,7 +3112,11 @@ span > span.reminder {
 }
 
 @keyframes shakeArrow {
+<<<<<<< HEAD
   /* line 81, ../sass/modules/_animations.scss */
+=======
+  /* line 91, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     -moz-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
@@ -2245,7 +3125,11 @@ span > span.reminder {
     transform: scale(1, 1);
   }
 
+<<<<<<< HEAD
   /* line 82, ../sass/modules/_animations.scss */
+=======
+  /* line 92, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   50% {
     -moz-transform: scale(1.3, 1.3);
     -webkit-transform: scale(1.3, 1.3);
@@ -2254,7 +3138,11 @@ span > span.reminder {
     transform: scale(1.3, 1.3);
   }
 
+<<<<<<< HEAD
   /* line 83, ../sass/modules/_animations.scss */
+=======
+  /* line 93, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     -moz-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
@@ -2264,56 +3152,104 @@ span > span.reminder {
   }
 }
 
+<<<<<<< HEAD
 /* line 86, ../sass/modules/_animations.scss */
+=======
+/* line 96, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.timeLineAni:after {
   -moz-animation: lineDown 2s 0s 1 linear forwards;
   -webkit-animation: lineDown 2s 0s 1 linear forwards;
   -ms-animation: lineDown 2s 0s 1 linear forwards;
   -o-animation: lineDown 2s 0s 1 linear forwards;
   animation: lineDown 2s 0s 1 linear forwards;
-  transition: all 1s;
 }
 
 @keyframes lineDown {
+<<<<<<< HEAD
   /* line 91, ../sass/modules/_animations.scss */
+=======
+  /* line 101, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     height: 0%;
   }
 
+<<<<<<< HEAD
   /* line 92, ../sass/modules/_animations.scss */
   15% {
     height: 30%;
   }
 
   /* line 93, ../sass/modules/_animations.scss */
+=======
+  /* line 102, ../sass/modules/_animations.scss */
+  30% {
+    height: 30%;
+  }
+
+  /* line 103, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   50% {
     height: 50%;
   }
 
+<<<<<<< HEAD
   /* line 94, ../sass/modules/_animations.scss */
+=======
+  /* line 104, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   80% {
     height: 80%;
   }
 
+<<<<<<< HEAD
   /* line 95, ../sass/modules/_animations.scss */
+=======
+  /* line 105, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     height: 100%;
   }
 }
 
+<<<<<<< HEAD
 /* line 107, ../sass/modules/_animations.scss */
+=======
+/* line 116, ../sass/modules/_animations.scss */
+.border_container {
+  height: 100%;
+  position: relative;
+}
+
+/* line 120, ../sass/modules/_animations.scss */
+.border {
+  position: absolute;
+}
+
+/* line 124, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.straightAni {
   position: relative;
   box-sizing: border-box;
+  height: 100%;
 }
+<<<<<<< HEAD
 /* line 111, ../sass/modules/_animations.scss */
+=======
+/* line 130, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.straightAni .border {
   background-color: #f16b29;
   position: absolute;
   left: 0;
   top: 0;
 }
+<<<<<<< HEAD
 /* line 117, ../sass/modules/_animations.scss */
+=======
+/* line 136, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.straightAni .border.top {
   width: 99.5%;
   height: 1px;
@@ -2324,12 +3260,20 @@ div.straightAni .border.top {
   -o-animation: borderTopAni 0.3s 0s 1 linear forwards;
   animation: borderTopAni 0.3s 0s 1 linear forwards;
 }
+<<<<<<< HEAD
 /* line 123, ../sass/modules/_animations.scss */
+=======
+/* line 142, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.straightAni .border.bottom {
   height: 1px;
   top: 99.5%;
 }
+<<<<<<< HEAD
 /* line 126, ../sass/modules/_animations.scss */
+=======
+/* line 145, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.straightAni .border.bottom.b_right {
   width: 0%;
   left: 100%;
@@ -2339,7 +3283,11 @@ div.straightAni .border.bottom.b_right {
   -o-animation: borderB_right 0.3s 0.9s 1 linear forwards;
   animation: borderB_right 0.3s 0.9s 1 linear forwards;
 }
+<<<<<<< HEAD
 /* line 131, ../sass/modules/_animations.scss */
+=======
+/* line 150, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.straightAni .border.bottom.b_left {
   width: 0%;
   left: 0;
@@ -2349,7 +3297,11 @@ div.straightAni .border.bottom.b_left {
   -o-animation: borderB_left 0.3s 0.9s 1 linear forwards;
   animation: borderB_left 0.3s 0.9s 1 linear forwards;
 }
+<<<<<<< HEAD
 /* line 138, ../sass/modules/_animations.scss */
+=======
+/* line 157, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.straightAni .border.left, div.straightAni .border.right {
   width: 1px;
   max-width: 2px;
@@ -2360,19 +3312,31 @@ div.straightAni .border.left, div.straightAni .border.right {
   -o-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
   animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
 }
+<<<<<<< HEAD
 /* line 145, ../sass/modules/_animations.scss */
+=======
+/* line 164, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.straightAni .border.right {
   left: 99.5%;
 }
 
 @keyframes borderTopAni {
+<<<<<<< HEAD
   /* line 150, ../sass/modules/_animations.scss */
+=======
+  /* line 169, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     left: 50%;
     width: 0;
   }
 
+<<<<<<< HEAD
   /* line 151, ../sass/modules/_animations.scss */
+=======
+  /* line 170, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     left: 0;
     width: 99.5%;
@@ -2380,25 +3344,41 @@ div.straightAni .border.right {
 }
 
 @keyframes borderSidesAni {
+<<<<<<< HEAD
   /* line 155, ../sass/modules/_animations.scss */
+=======
+  /* line 174, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     height: 0;
   }
 
+<<<<<<< HEAD
   /* line 156, ../sass/modules/_animations.scss */
+=======
+  /* line 175, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     height: 100%;
   }
 }
 
 @keyframes borderB_left {
+<<<<<<< HEAD
   /* line 160, ../sass/modules/_animations.scss */
+=======
+  /* line 179, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     width: 0;
     left: 0;
   }
 
+<<<<<<< HEAD
   /* line 161, ../sass/modules/_animations.scss */
+=======
+  /* line 180, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     width: 50%;
     left: 0;
@@ -2406,34 +3386,88 @@ div.straightAni .border.right {
 }
 
 @keyframes borderB_right {
+<<<<<<< HEAD
   /* line 165, ../sass/modules/_animations.scss */
+=======
+  /* line 184, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     width: 0;
     left: 100%;
   }
 
+<<<<<<< HEAD
   /* line 166, ../sass/modules/_animations.scss */
+=======
+  /* line 185, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     width: 50%;
     left: 49.5%;
   }
 }
 
+<<<<<<< HEAD
 /* line 169, ../sass/modules/_animations.scss */
+=======
+/* line 188, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.borderRightAni {
   position: relative;
   box-sizing: border-box;
-  border: 1px none #f16b29;
-  height: inherit;
+  height: 100%;
 }
+<<<<<<< HEAD
 /* line 174, ../sass/modules/_animations.scss */
+=======
+/* line 193, ../sass/modules/_animations.scss */
+div.borderRightAni .border_container {
+  height: 100%;
+}
+/* line 195, ../sass/modules/_animations.scss */
+div.borderRightAni .border_container .straight_line {
+  width: 1px;
+  height: 0px;
+  top: -50px;
+  background-color: #f16b29;
+  left: 50%;
+  position: absolute;
+  z-index: -10;
+  -moz-animation: straightLineAni 0.3s 0s 1 linear forwards;
+  -webkit-animation: straightLineAni 0.3s 0s 1 linear forwards;
+  -ms-animation: straightLineAni 0.3s 0s 1 linear forwards;
+  -o-animation: straightLineAni 0.3s 0s 1 linear forwards;
+  animation: straightLineAni 0.3s 0s 1 linear forwards;
+}
+/* line 205, ../sass/modules/_animations.scss */
+div.borderRightAni .border_container .horizon_line {
+  height: 1px;
+  width: 0px;
+  background-color: #f16b29;
+  display: block;
+  top: 50%;
+  position: absolute;
+  z-index: -10;
+  left: 99.5%;
+  -moz-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+  -webkit-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+  -ms-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+  -o-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+  animation: horiLineAni 0.3s 1.2s 1 linear forwards;
+}
+/* line 218, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.borderRightAni .border {
   position: absolute;
   background-color: #f16b29;
   left: 0;
   top: 0;
 }
+<<<<<<< HEAD
 /* line 180, ../sass/modules/_animations.scss */
+=======
+/* line 224, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   height: 1px;
   width: 0;
@@ -2443,11 +3477,19 @@ div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   -o-animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
   animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
 }
+<<<<<<< HEAD
 /* line 185, ../sass/modules/_animations.scss */
 div.borderRightAni .border.bottom {
   top: 99.5%;
 }
 /* line 188, ../sass/modules/_animations.scss */
+=======
+/* line 229, ../sass/modules/_animations.scss */
+div.borderRightAni .border.bottom {
+  top: 99.5%;
+}
+/* line 232, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.borderRightAni .border.left {
   width: 1px;
   height: 0;
@@ -2458,7 +3500,11 @@ div.borderRightAni .border.left {
   -o-animation: borderLeftAni 0.3s 0s 1 linear forwards;
   animation: borderLeftAni 0.3s 0s 1 linear forwards;
 }
+<<<<<<< HEAD
 /* line 194, ../sass/modules/_animations.scss */
+=======
+/* line 238, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.borderRightAni .border.right.R_top {
   width: 1px;
   left: 99.5%;
@@ -2468,7 +3514,11 @@ div.borderRightAni .border.right.R_top {
   -o-animation: borderR_top 0.3s 0.9s 1 linear forwards;
   animation: borderR_top 0.3s 0.9s 1 linear forwards;
 }
+<<<<<<< HEAD
 /* line 199, ../sass/modules/_animations.scss */
+=======
+/* line 243, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
 div.borderRightAni .border.right.R_bottom {
   width: 1px;
   left: 99.5%;
@@ -2479,15 +3529,47 @@ div.borderRightAni .border.right.R_bottom {
   animation: borderR_bottom 0.3s 0.9s 1 linear forwards;
 }
 
+@keyframes horiLineAni {
+  /* line 251, ../sass/modules/_animations.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 252, ../sass/modules/_animations.scss */
+  100% {
+    width: 100px;
+  }
+}
+
+@keyframes straightLineAni {
+  /* line 255, ../sass/modules/_animations.scss */
+  0% {
+    height: 0px;
+  }
+
+  /* line 256, ../sass/modules/_animations.scss */
+  100% {
+    height: 50px;
+  }
+}
+
 @keyframes borderLeftAni {
+<<<<<<< HEAD
   /* line 208, ../sass/modules/_animations.scss */
+=======
+  /* line 260, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
+<<<<<<< HEAD
   /* line 209, ../sass/modules/_animations.scss */
+=======
+  /* line 261, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     top: 0;
     height: 99.5%;
@@ -2496,26 +3578,42 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderTopBottomAni {
+<<<<<<< HEAD
   /* line 213, ../sass/modules/_animations.scss */
+=======
+  /* line 265, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     width: 0;
   }
 
+<<<<<<< HEAD
   /* line 214, ../sass/modules/_animations.scss */
+=======
+  /* line 266, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     width: 99.5%;
   }
 }
 
 @keyframes borderR_top {
+<<<<<<< HEAD
   /* line 218, ../sass/modules/_animations.scss */
+=======
+  /* line 270, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
+<<<<<<< HEAD
   /* line 219, ../sass/modules/_animations.scss */
+=======
+  /* line 271, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     height: 50%;
     top: 0;
@@ -2524,14 +3622,22 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderR_bottom {
+<<<<<<< HEAD
   /* line 223, ../sass/modules/_animations.scss */
+=======
+  /* line 275, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
+<<<<<<< HEAD
   /* line 224, ../sass/modules/_animations.scss */
+=======
+  /* line 276, ../sass/modules/_animations.scss */
+>>>>>>> origin/master
   100% {
     height: 50%;
     top: 50%;

@@ -1,4 +1,9 @@
 [2016-02-21 23:11:28.488] [INFO] info - Mongo server listening on port 27017
 [2016-02-21 23:11:28.493] [INFO] info - Express server listening on port 3000
+<<<<<<< HEAD
 [2016-02-22 11:58:08.572] [INFO] info - Mongo server listening on port 27017
 [2016-02-22 11:58:08.577] [INFO] info - Express server listening on port 3000
+=======
+[2016-02-22 12:00:24.382] [INFO] info - Mongo server listening on port 27017
+[2016-02-22 12:00:24.387] [INFO] info - Express server listening on port 5000
+>>>>>>> origin/master

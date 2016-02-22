@@ -4,6 +4,9 @@ $(document).ready(function() {
 	
 	initSlot();	//initial the slot machine first so that fullpage can load the
 	
+	//initail the .team_details height so it won't move after loading
+	
+
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
     	menu:'#header',
@@ -16,9 +19,8 @@ $(document).ready(function() {
 			$('#header').css({'opacity':'1'});
 			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
 		    	case 1:
+		    		$('#competition_menu li:nth-child(1) a').addClass('selected');
 		    		machine3.shuffle();
-		    		$('.scrollDown').fadeIn();
-		    		$('.backToTop').fadeOut();
 		    		break;
 				case 2:
 					$('#header').addClass('orange');
@@ -36,71 +38,77 @@ $(document).ready(function() {
 					break;
 				case 4:
 					$('#header').addClass('orange');
+					if(!$('.jumpnow-des .border_container').hasClass('borderRightAni')){
+						$('.jumpnow-des .border_container').addClass('borderRightAni');
+					}
 					break;
 				case 5:
 					$('#header').addClass('fff');
 					break;
 			}
 		},
+		onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+			var leavingSlide = $(this);
+			if(nextSlideIndex == 1){
+				var height = $('.team_details .slide-inner').height();
+				$('.team_details .slide-inner').height(height);	
+			}
+		},
 		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-			if(anchorLink == 'competition'){
+			if(anchorLink == 'competition'){	
 				$('#competition_menu li a').removeClass('selected');
 				switch(slideIndex){
 					case 0:
 						$('#competition_menu li:nth-child(1) a').addClass('selected');
-						
 					break;
 					case 1:
 						$('#competition_menu li:nth-child(2) a').addClass('selected');
-						if(!$('#competition_info_slide').hasClass('borderRightAni')){ //border animation
-							$('#competition_info_slide').addClass('borderRightAni');
+						var height = $('#competition_info_slide .slide-inner').height();
+						$('#competition_info_slide .border_container').height(height);
+						if(!$('#competition_info_slide .border_container').hasClass('borderRightAni')){ //border animation
+							$('#competition_info_slide .border_container').addClass('borderRightAni');
 						}
 					break;
 					case 2:
 						$('#competition_menu li:nth-child(3) a').addClass('selected');
-						if(!$('#competition_prize_slide').hasClass('borderRightAni')){ //border animation
-							$('#competition_prize_slide').addClass('borderRightAni');
+						if(!$('#competition_prize_slide .border_container').hasClass('borderRightAni')){ //border animation
+							$('#competition_prize_slide .border_container').addClass('borderRightAni');
 						}
 					break;
 					case 3:
 						$('#competition_menu li:nth-child(4) a').addClass('selected');
-						if(!$('#competition_sponsor_slide').hasClass('borderRightAni')){ //border animation
-							$('#competition_sponsor_slide').addClass('borderRightAni');
+						if(!$('#competition_sponsor_slide .border_container').hasClass('borderRightAni')){ //border animation
+							$('#competition_sponsor_slide .border_container').addClass('borderRightAni');
 						}
 					break;
 				}
-			}else if (anchorLink == 'jumpnow'){
+			}else if (anchorLink === 'jumpnow'){
 				switch(slideIndex){
-					case 0:
-						if(!$('.jumpnow-des .border_container').hasClass('borderRightAni')){
-							$('.jumpnow-des .border_container').addClass('borderRightAni');
-						}
-					break;
 					case 1:
+						var height = $('.team_details .slide-inner').height();
+						$('.team_details .slide-inner').height(height);
 						if(!$('.team_details .slide-inner .border_container').hasClass('borderRightAni')){
 							$('.team_details .slide-inner .border_container').addClass('borderRightAni');
 						}
+						
 					break;
 					case 2:
-						if(!$('.personal-details .slide-inner .border_container').hasClass('borderRightAni')){
-							$('.personal-details .slide-inner .border_container').addClass('borderRightAni');
+						var height = $('.personal_details .slide-inner').height();
+						$('.personal_details .slide-inner').height(height);
+						if(!$('.personal_details .slide-inner .border_container').hasClass('borderRightAni')){
+							$('.personal_details .slide-inner .border_container').addClass('borderRightAni');
 						}
+						
 					break;
 				}
 			}
 		},
 		onLeave: function(index, nextIndex, direction) {
-			$('.backToTop').fadeIn();
-			$('.scrollDown').fadeOut();
 			$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
 		    if(nextIndex == 2){
-		    	$('.rocket').addClass('rocket_ani');
+		    	if(!$('.rocket').hasClass('rocket_ani'))
+		    		$('.rocket').addClass('rocket_ani');
 		    }else if (index == 2) {
-		    	setTimeout(function(){
-		    		$('.rocket').removeClass('rocket_ani'); 
-		    	}, 1000);
-		    }else if(nextIndex == 1){
-		    	$('.backToTop').fadeOut();
 		    }
 		},
 		verticalCentered : true,
@@ -111,7 +119,8 @@ $(document).ready(function() {
 		loopTop:false,
 		loopHorizontal:false,
 		recordHistory:false,
-		controlArrows:false
+		controlArrows:false,
+		responsiveWidth:468
 
 	}); //end of the fullpageJS initial
 	
@@ -152,11 +161,11 @@ $(document).ready(function() {
 	var down = true;
 	$('.contact_header').click(function(){
 		if(down){
-			$(this).parent().animate({'bottom':'150px'},1000);
+			$(this).parent().animate({'bottom':'0px'},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
 			down = false;
 		}else{
-			$(this).parent().animate({'bottom':'-250px'},1000);
+			$(this).parent().animate({'bottom':'-380px'},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
 			down = true;
 		}

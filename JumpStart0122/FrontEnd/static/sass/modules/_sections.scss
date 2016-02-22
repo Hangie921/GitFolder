@@ -20,7 +20,7 @@ div.section-padding{
 	padding:8% 10% 0%;
 }
 div.slide-padding{
-	padding:1.2% 0% 0% 0%;
+	padding:2.2% 0% 0% 0%;
 }
 
 div#sec_competition {
@@ -138,10 +138,11 @@ div#sec_home {
 	position:absolute;
 	width: 278px;
     height: 221px;
+    transform:rotateZ(10deg);
 	background: url(../img/rocket-new.png) no-repeat center center;
 	@include background-size(75% auto);
-	left: -20%;
-	top: 80%;
+	left: -10%;
+	top: 50%;
 }
 
 #sec_about {
@@ -770,6 +771,7 @@ div.timeline {
 		width: 95%;
 		padding:20px;
 		vertical-align: top;
+		height: 100%;
 
 		&:first-child {
 			background:transparent;

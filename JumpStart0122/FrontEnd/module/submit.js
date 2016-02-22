@@ -54,7 +54,6 @@ var schema = function(){
 				"readed_flag" : false
 			}
 		}
-		// "_id": Date.now()
 	};
 }//end of the schema function
 

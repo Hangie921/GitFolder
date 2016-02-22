@@ -108,6 +108,7 @@ div.straightAni{
 	position: relative;
 	// overflow: hidden;
 	box-sizing:border-box;
+	height: 100%;	
 	& .border{
 	    background-color:#f16b29;
 	    position: absolute;
@@ -170,7 +171,7 @@ div.borderRightAni{
 	position: relative;
 	box-sizing:border-box;
 	border:1px none #f16b29;
-	height: inherit;
+	height: 100%;
 	& .border{
 	    position: absolute;
 	    background-color:#f16b29;

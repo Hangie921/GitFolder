@@ -79,7 +79,8 @@ div.slide.team_details, div.slide.personal_details {
 		border:1px solid #fff;
 		width:100%;
 		min-height: 250px;
-		padding:0 10px;
+		line-height: 18px;
+		padding: 10px;
 			}
 
 	span.team_member {
@@ -125,6 +126,8 @@ div.slide.team_details, div.slide.personal_details {
 		outline:none;
 	}
 }
+
+
 
 #add_member {
 	margin-right: 9px;
@@ -264,12 +267,19 @@ border-color: transparent transparent transparent $primary-color;
 
 }
 
-button.submit_btn {
+a#reg_btn {
 	float:right;
 	max-width:initial;
-	padding:15px 40px;
 	width:329px;
-	background:$primary-color !important;
+	background:$primary-color ;
+}
+
+ span>span.reminder {
+ 	margin-left:10px;
+ 	display: inline-block;
+	color: #88A4B7!important;
+	font-size:12px !important;
+	opacity:0.8;
 }
 
 

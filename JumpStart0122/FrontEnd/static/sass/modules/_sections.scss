@@ -681,6 +681,10 @@ div.timeline {
 	position:relative;
 	margin-top:70px;
 	background-color:$navy;
+	border:1px solid $primary-color !important
+
+
+	;
 	@include orange-border;
 	min-width:240px;
 	font-size:18px;
@@ -964,4 +968,54 @@ button.contact_us_btn {
     	float: none;
 	}
 
+
+/********************* TABLET******************/
+
+
+/******************MOBILE************************/
+
+@media screen and (max-width: 468px) {
+	
+	header#header {
+		padding:0 3% !important;
+		margin:0 auto;
+	
+	a.navbar-brand {
+		font-size:28px ;
+		width:initial;
+		height:initial;
+		margin:10px 0;
+		}
+		.main-menu {
+			position: initial;
+			clear:both;
+
+			li {
+				margin:0;
+				text-align: left;
+
+				a {
+					padding:0 12% 0 0;
+					margin:0;
+				}
+			}
+		}
+	}
+
+	div.section-padding{
+		padding:1%;
+	}
+	#sec_about .border_container {
+		padding:3%;
+	}
+	
+
+
+.fp-slidesContainer {
+    margin-top: 14%;
+}
+	.slide-inner {
+		width:97%;
+	}
+}
 

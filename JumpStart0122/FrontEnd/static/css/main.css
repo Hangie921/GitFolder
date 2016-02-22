@@ -875,8 +875,8 @@ div#sec_home {
   -webkit-background-size: 75% auto;
   -ms-background-size: 75% auto;
   background-size: 75% auto;
-  left: -20%;
-  top: 80%;
+  left: -10%;
+  top: 50%;
 }
 
 /* line 150, ../sass/modules/_sections.scss */
@@ -2202,7 +2202,6 @@ div.timeLineAni:after {
   -ms-animation: lineDown 2s 0s 1 linear forwards;
   -o-animation: lineDown 2s 0s 1 linear forwards;
   animation: lineDown 2s 0s 1 linear forwards;
-  transition: all 1s;
 }
 
 @keyframes lineDown {
@@ -2212,7 +2211,7 @@ div.timeLineAni:after {
   }
 
   /* line 102, ../sass/modules/_animations.scss */
-  15% {
+  30% {
     height: 30%;
   }
 
@@ -2232,20 +2231,31 @@ div.timeLineAni:after {
   }
 }
 
-/* line 117, ../sass/modules/_animations.scss */
+/* line 116, ../sass/modules/_animations.scss */
+.border_container {
+  position: relative;
+  height: 100%;
+}
+
+/* line 120, ../sass/modules/_animations.scss */
+.border {
+  position: absolute;
+}
+
+/* line 124, ../sass/modules/_animations.scss */
 div.straightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 122, ../sass/modules/_animations.scss */
+/* line 129, ../sass/modules/_animations.scss */
 div.straightAni .border {
   background-color: #f16b29;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 128, ../sass/modules/_animations.scss */
+/* line 135, ../sass/modules/_animations.scss */
 div.straightAni .border.top {
   width: 99.5%;
   height: 1px;
@@ -2256,12 +2266,12 @@ div.straightAni .border.top {
   -o-animation: borderTopAni 0.3s 0s 1 linear forwards;
   animation: borderTopAni 0.3s 0s 1 linear forwards;
 }
-/* line 134, ../sass/modules/_animations.scss */
+/* line 141, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom {
   height: 1px;
   top: 99.5%;
 }
-/* line 137, ../sass/modules/_animations.scss */
+/* line 144, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_right {
   width: 0%;
   left: 100%;
@@ -2271,7 +2281,7 @@ div.straightAni .border.bottom.b_right {
   -o-animation: borderB_right 0.3s 0.9s 1 linear forwards;
   animation: borderB_right 0.3s 0.9s 1 linear forwards;
 }
-/* line 142, ../sass/modules/_animations.scss */
+/* line 149, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_left {
   width: 0%;
   left: 0;
@@ -2281,7 +2291,7 @@ div.straightAni .border.bottom.b_left {
   -o-animation: borderB_left 0.3s 0.9s 1 linear forwards;
   animation: borderB_left 0.3s 0.9s 1 linear forwards;
 }
-/* line 149, ../sass/modules/_animations.scss */
+/* line 156, ../sass/modules/_animations.scss */
 div.straightAni .border.left, div.straightAni .border.right {
   width: 1px;
   max-width: 2px;
@@ -2292,19 +2302,19 @@ div.straightAni .border.left, div.straightAni .border.right {
   -o-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
   animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 156, ../sass/modules/_animations.scss */
+/* line 163, ../sass/modules/_animations.scss */
 div.straightAni .border.right {
   left: 99.5%;
 }
 
 @keyframes borderTopAni {
-  /* line 161, ../sass/modules/_animations.scss */
+  /* line 168, ../sass/modules/_animations.scss */
   0% {
     left: 50%;
     width: 0;
   }
 
-  /* line 162, ../sass/modules/_animations.scss */
+  /* line 169, ../sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 99.5%;
@@ -2312,25 +2322,25 @@ div.straightAni .border.right {
 }
 
 @keyframes borderSidesAni {
-  /* line 166, ../sass/modules/_animations.scss */
+  /* line 173, ../sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 167, ../sass/modules/_animations.scss */
+  /* line 174, ../sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
 @keyframes borderB_left {
-  /* line 171, ../sass/modules/_animations.scss */
+  /* line 178, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 0;
   }
 
-  /* line 172, ../sass/modules/_animations.scss */
+  /* line 179, ../sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 0;
@@ -2338,34 +2348,33 @@ div.straightAni .border.right {
 }
 
 @keyframes borderB_right {
-  /* line 176, ../sass/modules/_animations.scss */
+  /* line 183, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 100%;
   }
 
-  /* line 177, ../sass/modules/_animations.scss */
+  /* line 184, ../sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 49.5%;
   }
 }
 
-/* line 180, ../sass/modules/_animations.scss */
+/* line 187, ../sass/modules/_animations.scss */
 div.borderRightAni {
   position: relative;
   box-sizing: border-box;
-  border: 1px none #f16b29;
   height: 100%;
 }
-/* line 185, ../sass/modules/_animations.scss */
+/* line 192, ../sass/modules/_animations.scss */
 div.borderRightAni .border {
   position: absolute;
   background-color: #f16b29;
   left: 0;
   top: 0;
 }
-/* line 191, ../sass/modules/_animations.scss */
+/* line 198, ../sass/modules/_animations.scss */
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   height: 1px;
   width: 0;
@@ -2375,11 +2384,11 @@ div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   -o-animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
   animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 196, ../sass/modules/_animations.scss */
+/* line 203, ../sass/modules/_animations.scss */
 div.borderRightAni .border.bottom {
   top: 99.5%;
 }
-/* line 199, ../sass/modules/_animations.scss */
+/* line 206, ../sass/modules/_animations.scss */
 div.borderRightAni .border.left {
   width: 1px;
   height: 0;
@@ -2390,7 +2399,7 @@ div.borderRightAni .border.left {
   -o-animation: borderLeftAni 0.3s 0s 1 linear forwards;
   animation: borderLeftAni 0.3s 0s 1 linear forwards;
 }
-/* line 205, ../sass/modules/_animations.scss */
+/* line 212, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_top {
   width: 1px;
   left: 99.5%;
@@ -2400,7 +2409,7 @@ div.borderRightAni .border.right.R_top {
   -o-animation: borderR_top 0.3s 0.9s 1 linear forwards;
   animation: borderR_top 0.3s 0.9s 1 linear forwards;
 }
-/* line 210, ../sass/modules/_animations.scss */
+/* line 217, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_bottom {
   width: 1px;
   left: 99.5%;
@@ -2412,14 +2421,14 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderLeftAni {
-  /* line 219, ../sass/modules/_animations.scss */
+  /* line 226, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
-  /* line 220, ../sass/modules/_animations.scss */
+  /* line 227, ../sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 99.5%;
@@ -2428,26 +2437,26 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderTopBottomAni {
-  /* line 224, ../sass/modules/_animations.scss */
+  /* line 231, ../sass/modules/_animations.scss */
   0% {
     width: 0;
   }
 
-  /* line 225, ../sass/modules/_animations.scss */
+  /* line 232, ../sass/modules/_animations.scss */
   100% {
     width: 99.5%;
   }
 }
 
 @keyframes borderR_top {
-  /* line 229, ../sass/modules/_animations.scss */
+  /* line 236, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
-  /* line 230, ../sass/modules/_animations.scss */
+  /* line 237, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 0;
@@ -2456,14 +2465,14 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderR_bottom {
-  /* line 234, ../sass/modules/_animations.scss */
+  /* line 241, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
-  /* line 235, ../sass/modules/_animations.scss */
+  /* line 242, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 50%;

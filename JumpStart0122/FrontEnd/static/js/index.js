@@ -4,6 +4,9 @@ $(document).ready(function() {
 	
 	initSlot();	//initial the slot machine first so that fullpage can load the
 	
+	//initail the .team_details height so it won't move after loading
+	
+
 	//initial the fullpage with the rocket animation
     $('#fullpage').fullpage({
     	menu:'#header',
@@ -16,6 +19,7 @@ $(document).ready(function() {
 			$('#header').css({'opacity':'1'});
 			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
 		    	case 1:
+		    		$('#competition_menu li:nth-child(1) a').addClass('selected');
 		    		machine3.shuffle();
 		    		$('.scrollDown').fadeIn();
 		    		$('.backToTop').fadeOut();
@@ -36,10 +40,20 @@ $(document).ready(function() {
 					break;
 				case 4:
 					$('#header').addClass('orange');
+					if(!$('.jumpnow-des .border_container').hasClass('borderRightAni')){
+						$('.jumpnow-des .border_container').addClass('borderRightAni');
+					}
 					break;
 				case 5:
 					$('#header').addClass('fff');
 					break;
+			}
+		},
+		onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+			var leavingSlide = $(this);
+			if(nextSlideIndex == 1){
+				var height = $('.team_details .slide-inner').height();
+				$('.team_details .slide-inner').height(height);	
 			}
 		},
 		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
@@ -48,7 +62,6 @@ $(document).ready(function() {
 				switch(slideIndex){
 					case 0:
 						$('#competition_menu li:nth-child(1) a').addClass('selected');
-						
 					break;
 					case 1:
 						$('#competition_menu li:nth-child(2) a').addClass('selected');
@@ -69,21 +82,12 @@ $(document).ready(function() {
 						}
 					break;
 				}
-			}else if (anchorLink == 'jumpnow'){
+			}else if (anchorLink === 'jumpnow'){
 				switch(slideIndex){
-					case 0:
-						if(!$('.jumpnow-des .border_container').hasClass('borderRightAni')){
-							$('.jumpnow-des .border_container').addClass('borderRightAni');
-						}
-					break;
 					case 1:
-						var height = $('.team_details .slide-inner').height();
-
 						if(!$('.team_details .slide-inner .border_container').hasClass('borderRightAni')){
 							$('.team_details .slide-inner .border_container').addClass('borderRightAni');
 						}
-
-						$('.team_details .slide-inner').height(height);
 					break;
 					case 2:
 						var height = $('.personal_details .slide-inner').height();
@@ -100,11 +104,9 @@ $(document).ready(function() {
 			$('.scrollDown').fadeOut();
 			$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
 		    if(nextIndex == 2){
-		    	$('.rocket').addClass('rocket_ani');
+		    	if(!$('.rocket').hasClass('rocket_ani'))
+		    		$('.rocket').addClass('rocket_ani');
 		    }else if (index == 2) {
-		    	setTimeout(function(){
-		    		$('.rocket').removeClass('rocket_ani'); 
-		    	}, 1000);
 		    }else if(nextIndex == 1){
 		    	$('.backToTop').fadeOut();
 		    }

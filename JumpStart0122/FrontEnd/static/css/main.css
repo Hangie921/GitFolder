@@ -11,53 +11,48 @@
 /*Setting*/
 /* Showcase Area */
 /* Mixins */
-/* line 1, ../sass/base/_normalize.scss */
+/* line 1, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
-/* line 5, ../sass/base/_normalize.scss */
+/* line 5, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 h3 {
   font-size: 30px;
 }
 
-/* line 9, ../sass/base/_normalize.scss */
+/* line 9, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 a {
   cursor: pointer;
 }
 
-/* line 12, ../sass/base/_normalize.scss */
+/* line 12, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 16, ../sass/base/_normalize.scss */
+/* line 16, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .page-header {
   margin-top: 30px;
 }
 
-/* line 20, ../sass/base/_normalize.scss */
+/* line 20, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .no-pad-top {
   padding-top: 0;
 }
 
-/* line 23, ../sass/base/_normalize.scss */
-.fp-slidesContainer {
-  margin-top: 4%;
-}
-
-/* line 26, ../sass/base/_normalize.scss */
+/* line 26, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .fp-tableCell {
   vertical-align: top !important;
   height: initial !important;
 }
 
-/* line 31, ../sass/base/_normalize.scss */
+/* line 31, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .fp-section.fp-table, .fp-slide.fp-table {
   height: auto;
 }
 
-/* line 35, ../sass/base/_normalize.scss */
+/* line 35, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
   background: transparent;
   height: 45px;
@@ -76,7 +71,7 @@ a:hover {
   left: 12%;
   background: #e8e8e8;
 }
-/* line 44, ../sass/base/_normalize.scss */
+/* line 44, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .fp-controlArrow.fp-prev:before, .fp-controlArrow.fp-next:before {
   position: absolute;
   content: '';
@@ -92,7 +87,7 @@ a:hover {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 59, ../sass/base/_normalize.scss */
+/* line 59, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .fp-controlArrow.fp-prev:after, .fp-controlArrow.fp-next:after {
   position: absolute;
   content: '';
@@ -108,7 +103,7 @@ a:hover {
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-/* line 76, ../sass/base/_normalize.scss */
+/* line 76, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .fp-controlArrow.fp-prev:hover, .fp-controlArrow.fp-next:hover {
   background: #fbaf5d;
   color: white !important;
@@ -120,12 +115,12 @@ a:hover {
   box-shadow: -3px 14px 0px -2px rgba(220, 220, 220, 0.7);
 }
 
-/* line 90, ../sass/base/_normalize.scss */
+/* line 90, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .fp-controlArrow.fp-next {
   right: 0;
   left: initial;
 }
-/* line 97, ../sass/base/_normalize.scss */
+/* line 97, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .fp-controlArrow.fp-next:hover {
   -webkit-box-shadow: 0px -14px 0px -2px rgba(220, 220, 220, 0.7);
   -moz-box-shadow: 0px -14px 0px -2px rgba(220, 220, 220, 0.7);
@@ -135,30 +130,30 @@ a:hover {
 }
 
 /*the setting about the slotMachine*/
-/* line 109, ../sass/base/_normalize.scss */
+/* line 109, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .slotMachine {
   height: 45px;
   margin-bottom: 10px;
 }
 
-/* line 113, ../sass/base/_normalize.scss */
+/* line 113, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 #slot3 {
   margin-left: 152px;
   margin-top: -62px;
 }
 
-/* line 118, ../sass/base/_normalize.scss */
+/* line 118, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 #slot3 .slot {
   display: block;
   padding-left: 20px;
 }
 
-/* line 124, ../sass/base/_normalize.scss */
+/* line 124, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 #slotButton3 {
   cursor: pointer;
 }
 
-/* line 128, ../sass/base/_normalize.scss */
+/* line 128, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_normalize.scss */
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -168,7 +163,7 @@ a:hover {
   clear: both;
 }
 
-/* line 1, ../sass/base/_base.scss */
+/* line 1, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 body {
   font-family: "文鼎黑體", Sans-serif;
   font-size: 18px;
@@ -176,17 +171,17 @@ body {
   color: #333333;
 }
 
-/* line 10, ../sass/base/_base.scss */
+/* line 10, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 a {
   color: #fff;
 }
 
-/* line 14, ../sass/base/_base.scss */
+/* line 14, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 ul, li {
   list-style: none;
 }
 
-/* line 18, ../sass/base/_base.scss */
+/* line 18, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 input, textarea, button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -195,51 +190,51 @@ input, textarea, button {
   border-radius: 0px;
 }
 
-/* line 22, ../sass/base/_base.scss */
+/* line 22, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 img.device {
   width: 100%;
 }
 
 /*BACKGROUND COLOUR***/
-/* line 29, ../sass/base/_base.scss */
+/* line 29, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .primary_bg {
   background-color: #f16b29;
 }
 
 /*POSITIONS****/
-/* line 35, ../sass/base/_base.scss */
+/* line 35, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .relative-position {
   position: relative;
 }
 
 /*FONTS****/
-/* line 41, ../sass/base/_base.scss */
+/* line 41, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .en_para {
   font-family: "raleway", "文鼎黑體";
 }
 
-/* line 44, ../sass/base/_base.scss */
+/* line 44, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .cn_para {
   font-family: "heisei-kaku-gothic-std";
 }
 
-/* line 48, ../sass/base/_base.scss */
+/* line 48, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .primary-text {
   color: #f16b29;
 }
 
-/* line 51, ../sass/base/_base.scss */
+/* line 51, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .white-text {
   color: #ffffff;
 }
 
 /**COLUMNS SETTINGS***/
-/* line 58, ../sass/base/_base.scss */
+/* line 58, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .container {
   min-width: 100%;
 }
 
-/* line 61, ../sass/base/_base.scss */
+/* line 61, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .col-centered {
   float: none;
   margin: 0 auto;
@@ -247,17 +242,17 @@ img.device {
 }
 
 /****BUTTONS********/
-/* line 73, ../sass/base/_base.scss */
+/* line 73, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 78, ../sass/base/_base.scss */
+/* line 78, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .no-pad {
   padding: 0;
 }
 
-/* line 82, ../sass/base/_base.scss */
+/* line 82, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/base/_base.scss */
 .zindex {
   z-index: 3;
   position: relative;
@@ -265,64 +260,64 @@ img.device {
 
 /* MODULES - Individual sit componets */
 /* List */
-/* line 4, ../sass/modules/_typography.scss */
+/* line 4, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_typography.scss */
 .list, .list-feature {
   margin-bottom: 30px;
 }
 
-/* line 8, ../sass/modules/_typography.scss */
+/* line 8, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_typography.scss */
 .list-feature {
   margin: 0;
   padding: 0;
   width: 80%;
 }
-/* line 14, ../sass/modules/_typography.scss */
+/* line 14, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_typography.scss */
 .list-feature li {
   line-height: 2.2em;
   border-bottom: 1px solid #cccccc;
 }
-/* line 19, ../sass/modules/_typography.scss */
+/* line 19, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_typography.scss */
 .list-feature li:last-child {
   border: 0;
 }
 
 /* Blocks */
-/* line 3, ../sass/modules/_blocks.scss */
+/* line 3, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
 .block, .block-primary, .block-secondary, .block-light, .block-dark {
   padding: 15px;
   margin-bottom: 15px;
 }
-/* line 7, ../sass/modules/_blocks.scss */
+/* line 7, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
 .block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
   margin-top: 0;
   padding-top: 0;
 }
 
-/* line 14, ../sass/modules/_blocks.scss */
+/* line 14, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
 .block-primary {
   background: #f16b29;
   color: #fff;
 }
 
-/* line 19, ../sass/modules/_blocks.scss */
+/* line 19, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
 .block-secondary {
   background: #fbaf5d;
   color: #fff;
 }
 
-/* line 24, ../sass/modules/_blocks.scss */
+/* line 24, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
 .block-light {
   background: #e4eef2;
   color: #666;
 }
 
-/* line 29, ../sass/modules/_blocks.scss */
+/* line 29, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
 .block-dark {
   background: #333333;
   color: #fff;
 }
 
-/* line 34, ../sass/modules/_blocks.scss */
+/* line 34, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_blocks.scss */
 .block-center {
   text-align: center !important;
 }
@@ -336,7 +331,7 @@ img.device {
 }
 
 /* General button style (reset) */
-/* line 13, ../sass/modules/_buttons.scss */
+/* line 13, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn {
   border: none;
   font-family: inherit;
@@ -359,7 +354,7 @@ img.device {
   text-align: center;
 }
 
-/* line 38, ../sass/modules/_buttons.scss */
+/* line 38, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn:after {
   content: '';
   position: absolute;
@@ -370,7 +365,7 @@ img.device {
 }
 
 /* Pseudo elements for icons */
-/* line 52, ../sass/modules/_buttons.scss */
+/* line 52, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn:before,
 .icon-heart:after,
 .icon-star:after,
@@ -387,18 +382,18 @@ img.device {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 63, ../sass/modules/_buttons.scss */
+/* line 63, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .icon-arrow-right:before {
   content: "\e00d";
 }
 
-/* line 67, ../sass/modules/_buttons.scss */
+/* line 67, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .icon-arrow-left:before {
   content: "\e003";
 }
 
 /* Button 4 */
-/* line 73, ../sass/modules/_buttons.scss */
+/* line 73, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4 {
   clear: both;
   float: left;
@@ -411,18 +406,18 @@ img.device {
   min-width: 200px;
 }
 
-/* line 85, ../sass/modules/_buttons.scss */
+/* line 85, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4:active {
   border-color: #17954c;
   color: #17954c;
 }
 
-/* line 90, ../sass/modules/_buttons.scss */
+/* line 90, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4:hover {
   background: #24b662;
 }
 
-/* line 94, ../sass/modules/_buttons.scss */
+/* line 94, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4:before {
   position: absolute;
   height: 100%;
@@ -434,79 +429,79 @@ img.device {
   transition: all 0.3s;
 }
 
-/* line 105, ../sass/modules/_buttons.scss */
+/* line 105, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4:active:before {
   color: #17954c;
 }
 
 /* Button 4a */
-/* line 110, ../sass/modules/_buttons.scss */
+/* line 110, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4a:before {
   left: 130%;
   top: 0;
 }
 
-/* line 115, ../sass/modules/_buttons.scss */
+/* line 115, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4a:hover:before {
   left: 80%;
 }
 
 /* Button 4b */
-/* line 120, ../sass/modules/_buttons.scss */
+/* line 120, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4b:before {
   left: -50%;
   top: 0;
 }
 
-/* line 125, ../sass/modules/_buttons.scss */
+/* line 125, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4b:hover:before {
   left: 10%;
 }
 
 /* Button 4c */
-/* line 130, ../sass/modules/_buttons.scss */
+/* line 130, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4c:before {
   left: 70%;
   opacity: 0;
   top: 0;
 }
 
-/* line 136, ../sass/modules/_buttons.scss */
+/* line 136, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4c:hover:before {
   left: 80%;
   opacity: 1;
 }
 
 /* Button 4d */
-/* line 142, ../sass/modules/_buttons.scss */
+/* line 142, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4d:before {
   left: 30%;
   opacity: 0;
   top: 0;
 }
 
-/* line 148, ../sass/modules/_buttons.scss */
+/* line 148, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-4d:hover:before {
   left: 10%;
   opacity: 1;
 }
 
-/* line 153, ../sass/modules/_buttons.scss */
+/* line 153, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn.navy {
   background: #0e324b;
   border-color: #0e324b;
 }
-/* line 156, ../sass/modules/_buttons.scss */
+/* line 156, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn.navy:hover {
   background: transparent;
 }
 
-/* line 161, ../sass/modules/_buttons.scss */
+/* line 161, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn.orange {
   background: #f16b29;
   border-color: #f16b29;
 }
-/* line 164, ../sass/modules/_buttons.scss */
+/* line 164, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn.orange:hover {
   background: #bb531f !important;
   border-color: #bb531f !important;
@@ -514,7 +509,7 @@ img.device {
 }
 
 /* Button 7 */
-/* line 172, ../sass/modules/_buttons.scss */
+/* line 172, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-7 {
   background: #17aa56;
   color: #fff;
@@ -524,13 +519,13 @@ img.device {
 }
 
 /* Button 7h */
-/* line 182, ../sass/modules/_buttons.scss */
+/* line 182, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-7h span {
   display: inline-block;
   width: 100%;
 }
 
-/* line 187, ../sass/modules/_buttons.scss */
+/* line 187, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-7h:before {
   position: absolute;
   left: 0;
@@ -540,19 +535,19 @@ img.device {
   color: #0a833d;
 }
 
-/* line 196, ../sass/modules/_buttons.scss */
+/* line 196, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .icon-envelope:before {
   content: "\e000";
 }
 
 /* Success and error */
-/* line 204, ../sass/modules/_buttons.scss */
+/* line 204, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-success,
 .btn-error {
   color: transparent;
 }
 
-/* line 209, ../sass/modules/_buttons.scss */
+/* line 209, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-success:after,
 .btn-error:after {
   z-index: 1;
@@ -560,12 +555,12 @@ img.device {
   left: 40%;
 }
 
-/* line 215, ../sass/modules/_buttons.scss */
+/* line 215, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-success:before {
   content: "\e001";
 }
 
-/* line 219, ../sass/modules/_buttons.scss */
+/* line 219, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-success:after {
   content: "Success!";
   -webkit-animation: moveUp 0.5s;
@@ -574,13 +569,13 @@ img.device {
 }
 
 @-webkit-keyframes moveUp {
-  /* line 227, ../sass/modules/_buttons.scss */
+  /* line 227, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0% {
     -webkit-transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 231, ../sass/modules/_buttons.scss */
+  /* line 231, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -588,13 +583,13 @@ img.device {
 }
 
 @-moz-keyframes moveUp {
-  /* line 238, ../sass/modules/_buttons.scss */
+  /* line 238, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0% {
     -moz-transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 242, ../sass/modules/_buttons.scss */
+  /* line 242, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0);
@@ -602,20 +597,20 @@ img.device {
 }
 
 @keyframes moveUp {
-  /* line 249, ../sass/modules/_buttons.scss */
+  /* line 249, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0% {
     transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 253, ../sass/modules/_buttons.scss */
+  /* line 253, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* line 259, ../sass/modules/_buttons.scss */
+/* line 259, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-error {
   -webkit-animation: shake 0.5s;
   -moz-animation: shake 0.5s;
@@ -624,62 +619,62 @@ img.device {
 
 /* From Dan Eden's animate.css: http://daneden.me/animate/ */
 @-webkit-keyframes shake {
-  /* line 267, ../sass/modules/_buttons.scss */
+  /* line 267, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0%, 100% {
     -webkit-transform: translateX(0);
   }
 
-  /* line 268, ../sass/modules/_buttons.scss */
+  /* line 268, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
   }
 
-  /* line 269, ../sass/modules/_buttons.scss */
+  /* line 269, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
   }
 }
 
 @-moz-keyframes shake {
-  /* line 273, ../sass/modules/_buttons.scss */
+  /* line 273, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0%, 100% {
     -moz-transform: translateX(0);
   }
 
-  /* line 274, ../sass/modules/_buttons.scss */
+  /* line 274, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     -moz-transform: translateX(-10px);
   }
 
-  /* line 275, ../sass/modules/_buttons.scss */
+  /* line 275, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     -moz-transform: translateX(10px);
   }
 }
 
 @keyframes shake {
-  /* line 279, ../sass/modules/_buttons.scss */
+  /* line 279, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0%, 100% {
     transform: translateX(0);
   }
 
-  /* line 280, ../sass/modules/_buttons.scss */
+  /* line 280, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
 
-  /* line 281, ../sass/modules/_buttons.scss */
+  /* line 281, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
 }
 
-/* line 284, ../sass/modules/_buttons.scss */
+/* line 284, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-error:before {
   content: "\e002";
 }
 
-/* line 288, ../sass/modules/_buttons.scss */
+/* line 288, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
 .btn-error:after {
   content: "Error!";
   -webkit-animation: scaleFromUp 0.5s;
@@ -688,13 +683,13 @@ img.device {
 }
 
 @-webkit-keyframes scaleFromUp {
-  /* line 296, ../sass/modules/_buttons.scss */
+  /* line 296, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0% {
     -webkit-transform: scale(0);
     opacity: 0;
   }
 
-  /* line 300, ../sass/modules/_buttons.scss */
+  /* line 300, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -702,13 +697,13 @@ img.device {
 }
 
 @-moz-keyframes scaleFromUp {
-  /* line 307, ../sass/modules/_buttons.scss */
+  /* line 307, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0% {
     -moz-transform: scale(0);
     opacity: 0;
   }
 
-  /* line 311, ../sass/modules/_buttons.scss */
+  /* line 311, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -moz-transform: scale(1);
@@ -716,13 +711,13 @@ img.device {
 }
 
 @keyframes scaleFromUp {
-  /* line 318, ../sass/modules/_buttons.scss */
+  /* line 318, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   0% {
     transform: scale(0);
     opacity: 0;
   }
 
-  /* line 322, ../sass/modules/_buttons.scss */
+  /* line 322, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     transform: scale(1);
@@ -730,7 +725,7 @@ img.device {
 }
 
 /* Sections */
-/* line 2, ../sass/modules/_sections.scss */
+/* line 2, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.fp-section {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -739,7 +734,7 @@ div.fp-section {
   -webkit-box-sizing: border-box;
   position: relative;
 }
-/* line 10, ../sass/modules/_sections.scss */
+/* line 10, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.fp-section:after {
   content: "";
   width: 1px;
@@ -749,27 +744,27 @@ div.fp-section:after {
   background-color: #f16b29;
 }
 
-/* line 19, ../sass/modules/_sections.scss */
+/* line 19, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.section-padding {
   padding: 8% 10% 0%;
 }
 
-/* line 22, ../sass/modules/_sections.scss */
+/* line 22, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.slide-padding {
   padding: 1.2% 0% 0% 0%;
 }
 
-/* line 26, ../sass/modules/_sections.scss */
+/* line 26, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div#sec_competition {
   background: #e8e8e8 url(../img/cloud-tiles.png) center center;
 }
-/* line 29, ../sass/modules/_sections.scss */
+/* line 29, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div#sec_competition .slide-inner {
   background: #e8e8e8;
 }
 
 /****HOME******/
-/* line 35, ../sass/modules/_sections.scss */
+/* line 35, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div#sec_home {
   background: url("../img/home_bg.jpg") no-repeat center;
   background-size: cover;
@@ -780,7 +775,7 @@ div#sec_home {
   position: relative;
 }
 
-/* line 47, ../sass/modules/_sections.scss */
+/* line 47, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .sloganContainer {
   margin: 90px auto 0;
   max-width: 294px;
@@ -791,13 +786,13 @@ div#sec_home {
   background: url(../img/slogan.png) no-repeat center top;
   background-size: 100% auto;
 }
-/* line 56, ../sass/modules/_sections.scss */
+/* line 56, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .sloganContainer h2 {
   text-indent: -9999px;
   padding: 0;
   margin: 0;
 }
-/* line 62, ../sass/modules/_sections.scss */
+/* line 62, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .sloganContainer .slotMachine {
   color: white;
   height: 80px;
@@ -813,19 +808,19 @@ div#sec_home {
   text-align: center;
   position: relative;
 }
-/* line 79, ../sass/modules/_sections.scss */
+/* line 79, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .sloganContainer .slotMachine .slot {
   color: white;
   font-size: 39px;
   height: 80px;
   line-height: 80px;
 }
-/* line 93, ../sass/modules/_sections.scss */
+/* line 93, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .sloganContainer .slot-border {
   position: relative;
   overflow: visible;
 }
-/* line 96, ../sass/modules/_sections.scss */
+/* line 96, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .sloganContainer .slot-border:after {
   content: "";
   width: 1px;
@@ -837,7 +832,7 @@ div#sec_home {
   left: 0px;
   width: 30px;
 }
-/* line 110, ../sass/modules/_sections.scss */
+/* line 110, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .sloganContainer span.machine-border {
   display: block;
   background: #f16b29;
@@ -847,13 +842,13 @@ div#sec_home {
   margin: -113px auto 0;
   left: 49%;
 }
-/* line 122, ../sass/modules/_sections.scss */
+/* line 122, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .sloganContainer #slotButton3 {
   margin-top: 30px;
 }
 
 /*ABOUT SECTIOIN***/
-/* line 130, ../sass/modules/_sections.scss */
+/* line 130, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #sec_about {
   background: #0e324b url(../img/clouds-new.png) no-repeat 28% 20%;
   background-size: 120% auto;
@@ -863,12 +858,12 @@ div#sec_home {
   background-size: 120% auto;
 }
 
-/* line 134, ../sass/modules/_sections.scss */
+/* line 134, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .top_animation {
   min-height: 460px;
 }
 
-/* line 137, ../sass/modules/_sections.scss */
+/* line 137, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .rocket {
   position: absolute;
   width: 278px;
@@ -883,11 +878,11 @@ div#sec_home {
   top: 80%;
 }
 
-/* line 149, ../sass/modules/_sections.scss */
+/* line 149, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #sec_about p {
   display: block;
 }
-/* line 157, ../sass/modules/_sections.scss */
+/* line 157, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #sec_about .border_container {
   margin-top: 100px;
   padding: 50px 30px;
@@ -896,7 +891,7 @@ div#sec_home {
 }
 
 /********** Jump Now Section ********/
-/* line 168, ../sass/modules/_sections.scss */
+/* line 168, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div#sec_jumpnow {
   background: #0e324b url(../img/tiles.png);
   background-size: 20% auto;
@@ -905,22 +900,22 @@ div#sec_jumpnow {
   -ms-background-size: 20% auto;
   background-size: 20% auto;
 }
-/* line 172, ../sass/modules/_sections.scss */
+/* line 172, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div#sec_jumpnow p {
   font-size: 26px;
   line-height: 40px;
 }
 
-/* line 180, ../sass/modules/_sections.scss */
+/* line 180, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 ul.plan_list {
   padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
-/* line 184, ../sass/modules/_sections.scss */
+/* line 184, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 ul.plan_list li {
   line-height: 35px;
 }
-/* line 189, ../sass/modules/_sections.scss */
+/* line 189, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 ul.plan_list li:before {
   width: 25px;
   height: 25px;
@@ -941,12 +936,12 @@ ul.plan_list li:before {
 }
 
 /*COMPETITION****/
-/* line 211, ../sass/modules/_sections.scss */
+/* line 211, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .jumpnow_part1 .slide-inner {
   border: none;
 }
 
-/* line 215, ../sass/modules/_sections.scss */
+/* line 215, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide-inner {
   position: relative;
   width: 75%;
@@ -954,7 +949,7 @@ ul.plan_list li:before {
   border: 1px none #f16b29;
 }
 
-/* line 224, ../sass/modules/_sections.scss */
+/* line 224, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.competition_topic h4 {
   text-align: right;
   font-size: 45px;
@@ -964,18 +959,18 @@ div.competition_topic h4 {
   font-weight: 600;
   letter-spacing: 3px;
 }
-/* line 233, ../sass/modules/_sections.scss */
+/* line 233, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.competition_topic h4 span {
   display: block;
   font-size: 35px;
   color: #fbaf5d;
 }
-/* line 240, ../sass/modules/_sections.scss */
+/* line 240, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.competition_topic h5 {
   color: #f16b29;
   font-size: 26px;
 }
-/* line 245, ../sass/modules/_sections.scss */
+/* line 245, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.competition_topic .btn {
   position: absolute;
   bottom: -100px;
@@ -985,41 +980,41 @@ div.competition_topic .btn {
   text-align: center;
 }
 
-/* line 259, ../sass/modules/_sections.scss */
+/* line 259, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div#sec_competition ul {
   padding: 0;
 }
-/* line 266, ../sass/modules/_sections.scss */
+/* line 266, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div#sec_competition ul li i:before {
   display: inline-block;
   margin-right: 10px;
   color: #fbaf5d;
 }
 
-/* line 276, ../sass/modules/_sections.scss */
+/* line 276, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 ul.competition-headings {
   text-align: left;
   padding: 0px 0 20px;
 }
-/* line 280, ../sass/modules/_sections.scss */
+/* line 280, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 ul.competition-headings li {
   display: inline-block;
   vertical-align: top;
 }
-/* line 284, ../sass/modules/_sections.scss */
+/* line 284, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 ul.competition-headings a {
   color: #999;
   display: block;
   padding: 15px 30px;
   letter-spacing: 10px;
 }
-/* line 289, ../sass/modules/_sections.scss */
+/* line 289, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 ul.competition-headings a.selected {
   background-color: #f16b29;
   color: white;
 }
 
-/* line 300, ../sass/modules/_sections.scss */
+/* line 300, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_next.arrow, .slide_prev.arrow {
   z-index: 5;
   background: transparent;
@@ -1043,7 +1038,7 @@ ul.competition-headings a.selected {
   position: absolute;
   background: #e8e8e8;
 }
-/* line 314, ../sass/modules/_sections.scss */
+/* line 314, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_next.arrow:before, .slide_prev.arrow:before {
   position: absolute;
   content: '';
@@ -1059,7 +1054,7 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 329, ../sass/modules/_sections.scss */
+/* line 329, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_next.arrow:after, .slide_prev.arrow:after {
   position: absolute;
   content: '';
@@ -1075,24 +1070,24 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-/* line 345, ../sass/modules/_sections.scss */
+/* line 345, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_next.arrow:hover, .slide_prev.arrow:hover {
   background-color: #f16b29 !important;
 }
-/* line 347, ../sass/modules/_sections.scss */
+/* line 347, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_next.arrow:hover:before, .slide_prev.arrow:hover:before, .slide_next.arrow:hover:after, .slide_prev.arrow:hover:after {
   border-color: #e8e8e8;
 }
-/* line 352, ../sass/modules/_sections.scss */
+/* line 352, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_next.arrow.slide_team_details_arrow, .slide_team_details_arrow.slide_prev.arrow {
   background: #0e324b !important;
 }
 
-/* line 358, ../sass/modules/_sections.scss */
+/* line 358, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_prev.arrow {
   left: -20px;
 }
-/* line 361, ../sass/modules/_sections.scss */
+/* line 361, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_prev.arrow:before {
   left: 40%;
   top: 31%;
@@ -1100,7 +1095,7 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 368, ../sass/modules/_sections.scss */
+/* line 368, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .slide_prev.arrow:after {
   left: 40%;
   top: 31%;
@@ -1110,23 +1105,23 @@ ul.competition-headings a.selected {
 }
 
 /**COMPETITION PARTNERS*******/
-/* line 380, ../sass/modules/_sections.scss */
+/* line 380, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.competition_topic a.basic_btn {
   margin-top: 5%;
   margin-left: 140px !important;
 }
 
-/* line 386, ../sass/modules/_sections.scss */
+/* line 386, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.sponsor-group {
   padding-top: 30px;
 }
-/* line 388, ../sass/modules/_sections.scss */
+/* line 388, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.sponsor-group h3 {
   color: #f16b29;
   font-weight: bold;
   letter-spacing: 3px;
 }
-/* line 395, ../sass/modules/_sections.scss */
+/* line 395, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.sponsor-group ul.sponsor-list li {
   display: inline-block;
   background: black;
@@ -1134,7 +1129,7 @@ div.sponsor-group ul.sponsor-list li {
   height: 80px;
   margin-right: 50px;
 }
-/* line 402, ../sass/modules/_sections.scss */
+/* line 402, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.sponsor-group ul.sponsor-list li:first-child {
   background: url(../img/ping_logo.png) no-repeat center center;
   background-size: 100% auto;
@@ -1143,7 +1138,7 @@ div.sponsor-group ul.sponsor-list li:first-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 406, ../sass/modules/_sections.scss */
+/* line 406, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.sponsor-group ul.sponsor-list li:nth-child(2) {
   background: url(../img/venture_craft_logo.png) no-repeat center center;
   background-size: 100% auto;
@@ -1153,41 +1148,41 @@ div.sponsor-group ul.sponsor-list li:nth-child(2) {
   background-size: 100% auto;
 }
 
-/* line 421, ../sass/modules/_sections.scss */
+/* line 421, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li a {
   color: #f16b29;
   display: block;
   text-indent: -9999px;
 }
-/* line 427, ../sass/modules/_sections.scss */
+/* line 427, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li:first-child {
   background-image: url(../img/螞蜂窩_logo.png);
 }
-/* line 431, ../sass/modules/_sections.scss */
+/* line 431, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li:nth-child(2) {
   background-image: url(../img/venture_craft_logo.png);
 }
-/* line 434, ../sass/modules/_sections.scss */
+/* line 434, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li:nth-child(3) {
   background-image: url(../img/365_logo.png);
 }
-/* line 437, ../sass/modules/_sections.scss */
+/* line 437, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li:nth-child(4) {
   background-image: url(../img/e27_logo.png);
 }
-/* line 440, ../sass/modules/_sections.scss */
+/* line 440, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li:nth-child(5) {
   background-image: url(../img/citytours_logo.png);
 }
-/* line 443, ../sass/modules/_sections.scss */
+/* line 443, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li:nth-child(6) {
   background-image: url(../img/ping_logo.png);
 }
-/* line 446, ../sass/modules/_sections.scss */
+/* line 446, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li:nth-child(7) {
   background-image: url(../img/DSEE_logo.png);
 }
-/* line 449, ../sass/modules/_sections.scss */
+/* line 449, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .hello li:hover {
   -moz-background-blend-mode: normal;
   -ms-background-blend-mode: normal;
@@ -1203,29 +1198,29 @@ div.sponsor-group ul.sponsor-list li:nth-child(2) {
 }
 
 /**COMPETITION DETAILS**/
-/* line 470, ../sass/modules/_sections.scss */
+/* line 470, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .info_list ul {
   padding: 0 0 0 40px;
 }
-/* line 473, ../sass/modules/_sections.scss */
+/* line 473, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .info_list ul li {
   padding-left: 20px;
 }
 
-/* line 480, ../sass/modules/_sections.scss */
+/* line 480, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline {
   margin-top: 50px;
 }
-/* line 482, ../sass/modules/_sections.scss */
+/* line 482, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul {
   position: relative;
   padding: 0 0 25px;
 }
-/* line 487, ../sass/modules/_sections.scss */
+/* line 487, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul:after {
   display: none;
 }
-/* line 492, ../sass/modules/_sections.scss */
+/* line 492, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li {
   vertical-align: bottom;
   display: inline-block;
@@ -1252,7 +1247,7 @@ div.timeline ul li {
   -o-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
-/* line 518, ../sass/modules/_sections.scss */
+/* line 518, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:hover {
   position: relative;
   bottom: 15px;
@@ -1262,38 +1257,38 @@ div.timeline ul li:hover {
   -o-box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
   box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
 }
-/* line 528, ../sass/modules/_sections.scss */
+/* line 528, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:first-child {
   z-index: 10;
   padding-left: 10px;
 }
-/* line 532, ../sass/modules/_sections.scss */
+/* line 532, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:nth-child(2) {
   z-index: 9;
 }
-/* line 535, ../sass/modules/_sections.scss */
+/* line 535, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:nth-child(3) {
   z-index: 8;
 }
-/* line 539, ../sass/modules/_sections.scss */
+/* line 539, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:nth-child(4) {
   padding-right: 10px;
 }
-/* line 541, ../sass/modules/_sections.scss */
+/* line 541, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:nth-child(4):after {
   display: none;
 }
-/* line 544, ../sass/modules/_sections.scss */
+/* line 544, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:nth-child(4):before {
   display: none;
 }
-/* line 550, ../sass/modules/_sections.scss */
+/* line 550, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li h4 {
   color: #f16b29;
   margin: 0;
   font-size: 18px;
 }
-/* line 555, ../sass/modules/_sections.scss */
+/* line 555, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li h4 span {
   margin-top: -4px;
   font-size: 14px;
@@ -1306,14 +1301,14 @@ div.timeline ul li h4 span {
   padding: 0px 10px;
   color: #fff !important;
 }
-/* line 569, ../sass/modules/_sections.scss */
+/* line 569, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li p {
   clear: both;
   font-size: 12px;
   margin: 0;
   color: #999;
 }
-/* line 579, ../sass/modules/_sections.scss */
+/* line 579, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:after {
   content: '';
   position: absolute;
@@ -1326,7 +1321,7 @@ div.timeline ul li:after {
   right: -45px;
   top: -1px;
 }
-/* line 592, ../sass/modules/_sections.scss */
+/* line 592, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:before {
   content: '';
   position: absolute;
@@ -1339,25 +1334,25 @@ div.timeline ul li:before {
   right: -46px;
   top: -1px;
 }
-/* line 607, ../sass/modules/_sections.scss */
+/* line 607, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.timeline ul li:last-child {
   margin-right: 0px;
 }
 
 /* PRIZE**/
-/* line 621, ../sass/modules/_sections.scss */
+/* line 621, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #competition_prize_slide p {
   color: #f16b29 !important;
   font-size: 24px;
   margin-top: 30px;
   text-align: center;
 }
-/* line 628, ../sass/modules/_sections.scss */
+/* line 628, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #competition_prize_slide .prize-single {
   margin: 0 auto;
   min-height: 300px;
 }
-/* line 632, ../sass/modules/_sections.scss */
+/* line 632, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type {
   background: url(../img/secondplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1366,12 +1361,12 @@ div.timeline ul li:last-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 635, ../sass/modules/_sections.scss */
+/* line 635, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:first-of-type h4 {
   font-size: 45px;
   color: #2b4252;
 }
-/* line 640, ../sass/modules/_sections.scss */
+/* line 640, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(2) {
   background: url(../img/firstplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1381,7 +1376,7 @@ div.timeline ul li:last-child {
   background-size: 100% auto;
   color: #0e324b;
 }
-/* line 646, ../sass/modules/_sections.scss */
+/* line 646, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) {
   background: url(../img/thirdplace.png) no-repeat center 0;
   background-size: 100% auto;
@@ -1390,12 +1385,12 @@ div.timeline ul li:last-child {
   -ms-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 649, ../sass/modules/_sections.scss */
+/* line 649, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #competition_prize_slide .prize-single:nth-of-type(3) h4 {
   font-size: 45px;
   color: #2b4252;
 }
-/* line 655, ../sass/modules/_sections.scss */
+/* line 655, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #competition_prize_slide .prize-single h4 {
   display: block;
   text-align: center;
@@ -1408,7 +1403,7 @@ div.timeline ul li:last-child {
 }
 
 /**JUMP******/
-/* line 679, ../sass/modules/_sections.scss */
+/* line 679, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -1430,7 +1425,7 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 700, ../sass/modules/_sections.scss */
+/* line 700, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:hover {
   color: #fff;
   background-color: #555 !important;
@@ -1440,7 +1435,7 @@ div.timeline ul li:last-child {
   -o-box-shadow: 0px 0px 0px -5px #dd5d20;
   box-shadow: 0px 0px 0px -5px #dd5d20;
 }
-/* line 710, ../sass/modules/_sections.scss */
+/* line 710, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -1452,36 +1447,36 @@ div.timeline ul li:last-child {
   background: url(../img/download_btn.png) no-repeat center center;
 }
 
-/* line 728, ../sass/modules/_sections.scss */
+/* line 728, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .jumpnow-des {
   border: 1px none #f16b29;
   padding: 20px;
   background: #0e324b;
 }
-/* line 733, ../sass/modules/_sections.scss */
+/* line 733, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .jumpnow-des h3 {
   color: #f16b29;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 740, ../sass/modules/_sections.scss */
+/* line 740, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .jumpnow-des li {
   color: white;
 }
 
-/* line 744, ../sass/modules/_sections.scss */
+/* line 744, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .jumpnow-btn-set {
   margin-top: 20%;
 }
 
-/* line 748, ../sass/modules/_sections.scss */
+/* line 748, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .imready {
   margin-top: 10px;
 }
 
 /***FORMS*****/
-/* line 754, ../sass/modules/_sections.scss */
+/* line 754, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #sec_jumpnow h2 {
   color: #f16b29;
   font-weight: bold;
@@ -1490,7 +1485,7 @@ div.timeline ul li:last-child {
   display: block;
   padding-bottom: 10px;
 }
-/* line 763, ../sass/modules/_sections.scss */
+/* line 763, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #sec_jumpnow .slide-inner {
   margin: 0 auto;
   background: #0e324b;
@@ -1498,37 +1493,37 @@ div.timeline ul li:last-child {
   padding: 20px;
   vertical-align: top;
 }
-/* line 770, ../sass/modules/_sections.scss */
+/* line 770, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 #sec_jumpnow .slide-inner:first-child {
   background: transparent;
 }
 
-/* line 781, ../sass/modules/_sections.scss */
+/* line 781, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
-/* line 784, ../sass/modules/_sections.scss */
+/* line 784, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-/* line 788, ../sass/modules/_sections.scss */
+/* line 788, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
 /*****Event Section**********/
-/* line 793, ../sass/modules/_sections.scss */
+/* line 793, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
-/* line 801, ../sass/modules/_sections.scss */
+/* line 801, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .event_single {
   position: relative;
   padding: 10px;
@@ -1544,33 +1539,33 @@ div#sec_events {
   -o-background-size: 100% auto;
   background-size: 100% auto;
 }
-/* line 819, ../sass/modules/_sections.scss */
+/* line 819, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .event_single h3 {
   color: white;
   padding: 120px 0 30px;
   font-family: "raleway", "文鼎黑體";
   font-weight: 600;
 }
-/* line 825, ../sass/modules/_sections.scss */
+/* line 825, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .event_single span {
   color: #fbaf5d;
   margin-top: 30px;
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
-/* line 831, ../sass/modules/_sections.scss */
+/* line 831, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .event_single p {
   font-size: 18px;
   line-height: 28px;
 }
-/* line 835, ../sass/modules/_sections.scss */
+/* line 835, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
-/* line 842, ../sass/modules/_sections.scss */
+/* line 842, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1581,14 +1576,14 @@ div#sec_events {
   top: 7px;
   left: 7px;
 }
-/* line 854, ../sass/modules/_sections.scss */
+/* line 854, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .event_single .back_face {
   padding: 30px;
   background-color: #333 !important;
 }
 
 /***CONTACT_US******/
-/* line 863, ../sass/modules/_sections.scss */
+/* line 863, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #313131;
@@ -1598,11 +1593,11 @@ div.contact_container {
   left: 0;
   bottom: -380px;
 }
-/* line 872, ../sass/modules/_sections.scss */
+/* line 872, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 875, ../sass/modules/_sections.scss */
+/* line 875, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1613,20 +1608,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-/* line 886, ../sass/modules/_sections.scss */
+/* line 886, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 888, ../sass/modules/_sections.scss */
+/* line 888, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-/* line 892, ../sass/modules/_sections.scss */
+/* line 892, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 899, ../sass/modules/_sections.scss */
+/* line 899, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1638,11 +1633,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 910, ../sass/modules/_sections.scss */
+/* line 910, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 915, ../sass/modules/_sections.scss */
+/* line 915, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1654,40 +1649,40 @@ div.contact_container input[type="submit"] {
   margin-top: 15px;
 }
 
-/* line 927, ../sass/modules/_sections.scss */
+/* line 927, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .contact-details {
   font-family: "raleway", "文鼎黑體";
   text-align: left;
   color: #fff;
 }
-/* line 932, ../sass/modules/_sections.scss */
+/* line 932, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .contact-details h3 {
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 939, ../sass/modules/_sections.scss */
+/* line 939, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .contact-details ul {
   padding: 0;
 }
-/* line 942, ../sass/modules/_sections.scss */
+/* line 942, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .contact-details ul li {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
-/* line 946, ../sass/modules/_sections.scss */
+/* line 946, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .contact-details ul li h4 {
   font-weight: bold;
   color: #f16b29;
 }
-/* line 951, ../sass/modules/_sections.scss */
+/* line 951, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 .contact-details ul li i {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 960, ../sass/modules/_sections.scss */
+/* line 960, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_sections.scss */
 button.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
@@ -1705,7 +1700,7 @@ button.contact_us_btn {
   font-style: normal;
 }
 
-/* line 22, ../sass/modules/_components.scss */
+/* line 22, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_components.scss */
 .scrollDown {
   position: fixed;
   width: 50px;
@@ -1721,7 +1716,7 @@ button.contact_us_btn {
   border-radius: 50%;
   border: 1px solid gainsboro;
 }
-/* line 33, ../sass/modules/_components.scss */
+/* line 33, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_components.scss */
 .scrollDown a {
   display: block;
   width: 100%;
@@ -1731,29 +1726,29 @@ button.contact_us_btn {
 
 /* Searchbox */
 /*****PERSONAL DESTAILS********/
-/* line 5, ../sass/modules/_forms.scss */
+/* line 5, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .personal_details_group {
   padding: 30px;
 }
-/* line 8, ../sass/modules/_forms.scss */
+/* line 8, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .personal_details_group span.input {
   display: block !important;
   margin: 0 auto !important;
   float: none !important;
   width: 100%;
 }
-/* line 15, ../sass/modules/_forms.scss */
+/* line 15, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .personal_details_group input[type=submit] {
   margin-left: 100px;
 }
-/* line 20, ../sass/modules/_forms.scss */
+/* line 20, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .personal_details_group .iagree {
   float: left;
   clear: both;
 }
 
 /***GROUP FORM*****/
-/* line 30, ../sass/modules/_forms.scss */
+/* line 30, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details input.input__field--hoshi, div.slide.personal_details input.input__field--hoshi {
   min-height: 50px;
   color: white;
@@ -1764,29 +1759,29 @@ div.slide.team_details input.input__field--hoshi, div.slide.personal_details inp
   font-size: 18px;
   font-weight: normal;
 }
-/* line 40, ../sass/modules/_forms.scss */
+/* line 40, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details span.input, div.slide.personal_details span.input {
   float: left;
   clear: both;
   margin: 0;
   max-width: initial;
 }
-/* line 47, ../sass/modules/_forms.scss */
+/* line 47, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details span, div.slide.personal_details span {
   font-size: 14px;
   padding: 0;
   color: white;
 }
-/* line 52, ../sass/modules/_forms.scss */
+/* line 52, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details label, div.slide.personal_details label {
   font-size: 14px;
 }
-/* line 56, ../sass/modules/_forms.scss */
+/* line 56, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details .input__field--hoshi, div.slide.personal_details .input__field--hoshi {
   margin: 0;
   padding: 15px 15px 15px 0;
 }
-/* line 61, ../sass/modules/_forms.scss */
+/* line 61, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details .input__label--hoshi::before, div.slide.team_details .input__label--hoshi::after, div.slide.personal_details .input__label--hoshi::before, div.slide.personal_details .input__label--hoshi::after {
   content: '';
   position: absolute;
@@ -1796,11 +1791,11 @@ div.slide.team_details .input__label--hoshi::before, div.slide.team_details .inp
   height: calc(100% - 10px);
   border-bottom: 1px solid #fff;
 }
-/* line 71, ../sass/modules/_forms.scss */
+/* line 71, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details input[type=file], div.slide.personal_details input[type=file] {
   padding: 23px 0 30px 101px;
 }
-/* line 76, ../sass/modules/_forms.scss */
+/* line 76, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details textarea, div.slide.personal_details textarea {
   background: transparent;
   color: #fff;
@@ -1809,16 +1804,16 @@ div.slide.team_details textarea, div.slide.personal_details textarea {
   min-height: 250px;
   padding: 0 10px;
 }
-/* line 85, ../sass/modules/_forms.scss */
+/* line 85, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details span.team_member, div.slide.personal_details span.team_member {
   width: 20%;
   margin-right: 30px;
 }
-/* line 89, ../sass/modules/_forms.scss */
+/* line 89, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
   width: 60%;
 }
-/* line 93, ../sass/modules/_forms.scss */
+/* line 93, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details button#del_member, div.slide.personal_details button#del_member {
   float: right;
   margin: 15px;
@@ -1834,7 +1829,7 @@ div.slide.team_details button#del_member, div.slide.personal_details button#del_
   text-indent: -9999px;
   position: relative;
 }
-/* line 104, ../sass/modules/_forms.scss */
+/* line 104, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details button#del_member:after, div.slide.personal_details button#del_member:after {
   content: "-";
   width: 10px;
@@ -1845,20 +1840,20 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   left: 9px;
   top: 47%;
 }
-/* line 115, ../sass/modules/_forms.scss */
+/* line 115, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details button#del_member:hover, div.slide.personal_details button#del_member:hover {
   background: #fff;
 }
-/* line 118, ../sass/modules/_forms.scss */
+/* line 118, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details button#del_member:hover:after, div.slide.personal_details button#del_member:hover:after {
   background: #f16b29;
 }
-/* line 124, ../sass/modules/_forms.scss */
+/* line 124, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 div.slide.team_details button:focus, div.slide.personal_details button:focus {
   outline: none;
 }
 
-/* line 129, ../sass/modules/_forms.scss */
+/* line 129, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 #add_member {
   margin-right: 9px;
   font-size: 14px;
@@ -1868,7 +1863,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   color: #fff;
   float: right;
 }
-/* line 137, ../sass/modules/_forms.scss */
+/* line 137, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 #add_member:after {
   margin-left: 5px;
   width: 35px;
@@ -1884,20 +1879,20 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-radius: 50%;
   display: inline-block;
 }
-/* line 149, ../sass/modules/_forms.scss */
+/* line 149, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 #add_member:hover:after {
   background: #fff;
   color: #f16b29 !important;
 }
 
-/* line 156, ../sass/modules/_forms.scss */
+/* line 156, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .nav_group {
   position: absolute;
   right: 50px;
   bottom: -28px;
 }
 
-/* line 162, ../sass/modules/_forms.scss */
+/* line 162, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .next_btn, .prev_btn {
   font-size: 14px;
   float: left;
@@ -1915,7 +1910,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   /* Stroke */
   /* Fill */
 }
-/* line 179, ../sass/modules/_forms.scss */
+/* line 179, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .next_btn:before, .prev_btn:before, .next_btn:after, .prev_btn:after {
   content: "";
   position: absolute;
@@ -1925,7 +1920,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-color: transparent;
   border-bottom: 0;
 }
-/* line 190, ../sass/modules/_forms.scss */
+/* line 190, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .next_btn:before, .prev_btn:before {
   /* If 1px darken stroke slightly */
   right: -33px;
@@ -1936,7 +1931,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-width: 25px 0 25px 33px;
   border-color: transparent transparent transparent #f16b29;
 }
-/* line 206, ../sass/modules/_forms.scss */
+/* line 206, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .next_btn:after, .prev_btn:after {
   right: -31px;
   top: 0;
@@ -1946,43 +1941,43 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-width: 24px 0 24px 31px;
   border-color: transparent transparent transparent #f16b29;
 }
-/* line 221, ../sass/modules/_forms.scss */
+/* line 221, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .next_btn:hover, .prev_btn:hover {
   background-color: #bb531f;
   border-color: #bb531f;
   color: white;
 }
-/* line 226, ../sass/modules/_forms.scss */
+/* line 226, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .next_btn:hover:after, .prev_btn:hover:after, .next_btn:hover:before, .prev_btn:hover:before {
   border-color: transparent transparent transparent #bb531f;
 }
 
-/* line 237, ../sass/modules/_forms.scss */
+/* line 237, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .prev_btn {
   border-left: none;
   border-right: 1px solid #f16b29;
   background: #0e324b;
 }
-/* line 244, ../sass/modules/_forms.scss */
+/* line 244, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .prev_btn:before {
   left: -33px;
   top: -1px;
   border-width: 25px 33px 25px 0;
   border-color: transparent #f16b29 transparent transparent;
 }
-/* line 250, ../sass/modules/_forms.scss */
+/* line 250, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .prev_btn:after {
   left: -31px;
   top: 0;
   border-width: 24px 31px 24px 0;
   border-color: transparent #0e324b transparent transparent;
 }
-/* line 259, ../sass/modules/_forms.scss */
+/* line 259, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 .prev_btn:after, .prev_btn:before {
   border-color: transparent #bb531f transparent transparent #bb531f;
 }
 
-/* line 267, ../sass/modules/_forms.scss */
+/* line 267, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_forms.scss */
 button.submit_btn {
   float: right;
   max-width: initial;
@@ -1991,7 +1986,7 @@ button.submit_btn {
   background: #f16b29 !important;
 }
 
-/* line 2, ../sass/modules/_animations.scss */
+/* line 2, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 .rocket_ani {
   -moz-animation: moveTo 10s 0s linear 1 forwards;
   -webkit-animation: moveTo 10s 0s linear 1 forwards;
@@ -2001,102 +1996,102 @@ button.submit_btn {
 }
 
 @keyframes moveTo {
-  /* line 7, ../sass/modules/_animations.scss */
+  /* line 7, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     top: 80%;
     left: -20%;
   }
 
-  /* line 8, ../sass/modules/_animations.scss */
+  /* line 8, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0.0001% {
     top: 79%;
     left: -20%;
   }
 
-  /* line 9, ../sass/modules/_animations.scss */
+  /* line 9, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   1% {
     top: 80%;
     left: -20%;
   }
 
-  /* line 10, ../sass/modules/_animations.scss */
+  /* line 10, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   2% {
     top: 79%;
     left: -20%;
   }
 
-  /* line 11, ../sass/modules/_animations.scss */
+  /* line 11, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   3% {
     top: 80%;
     left: -20%;
   }
 
-  /* line 12, ../sass/modules/_animations.scss */
+  /* line 12, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   4% {
     top: 79%;
     left: -20%;
   }
 
-  /* line 13, ../sass/modules/_animations.scss */
+  /* line 13, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   5% {
     top: 80%;
     left: -20%;
   }
 
-  /* line 14, ../sass/modules/_animations.scss */
+  /* line 14, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   6% {
     top: 79%;
     left: -20%;
   }
 
-  /* line 15, ../sass/modules/_animations.scss */
+  /* line 15, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   7% {
     top: 80%;
     left: -20%;
   }
 
-  /* line 16, ../sass/modules/_animations.scss */
+  /* line 16, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   8% {
     top: 79%;
     left: -20%;
   }
 
-  /* line 17, ../sass/modules/_animations.scss */
+  /* line 17, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   9% {
     top: 80%;
     left: -20%;
   }
 
-  /* line 18, ../sass/modules/_animations.scss */
+  /* line 18, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   10% {
     top: 79%;
     left: -20%;
   }
 
-  /* line 19, ../sass/modules/_animations.scss */
+  /* line 19, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   11% {
     top: 80%;
     left: -20%;
   }
 
-  /* line 20, ../sass/modules/_animations.scss */
+  /* line 20, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   20% {
     top: 5%;
     left: 30%;
   }
 
-  /* line 21, ../sass/modules/_animations.scss */
+  /* line 21, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     top: 5%;
     left: 30%;
   }
 }
 
-/* line 27, ../sass/modules/_animations.scss */
+/* line 27, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 .event_group {
   perspective: 1000px;
 }
-/* line 31, ../sass/modules/_animations.scss */
+/* line 31, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate {
   transform-style: preserve-3d;
   position: relative;
@@ -2107,7 +2102,7 @@ button.submit_btn {
   -o-transition: all 0.5s ease-Out;
   transition: all 0.5s ease-Out;
 }
-/* line 37, ../sass/modules/_animations.scss */
+/* line 37, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate div {
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -2120,13 +2115,13 @@ button.submit_btn {
   left: 0;
   top: 0;
 }
-/* line 49, ../sass/modules/_animations.scss */
+/* line 49, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .front_face, .event_group .event_single .event_single_rotate .back_face {
   background: #999999 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
   z-index: 2;
 }
-/* line 55, ../sass/modules/_animations.scss */
+/* line 55, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 .event_group .event_single .event_single_rotate .back_face {
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -2136,7 +2131,7 @@ button.submit_btn {
   background: #999999 url(../img/stock.jpg) no-repeat;
   background-blend-mode: multiply;
 }
-/* line 64, ../sass/modules/_animations.scss */
+/* line 64, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 .event_group .event_single:nth-child(1):hover .event_single_rotate, .event_group .event_single:nth-child(2):hover .event_single_rotate {
   -moz-transition: all 0.5s ease-In;
   -webkit-transition: all 0.5s ease-In;
@@ -2150,7 +2145,7 @@ button.submit_btn {
   transform: rotateY(180deg);
 }
 
-/* line 76, ../sass/modules/_animations.scss */
+/* line 76, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 .scrollDownAni {
   -moz-animation: shakeArrow 2s 0s infinite linear;
   -webkit-animation: shakeArrow 2s 0s infinite linear;
@@ -2160,7 +2155,7 @@ button.submit_btn {
 }
 
 @keyframes shakeArrow {
-  /* line 81, ../sass/modules/_animations.scss */
+  /* line 81, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     -moz-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
@@ -2169,7 +2164,7 @@ button.submit_btn {
     transform: scale(1, 1);
   }
 
-  /* line 82, ../sass/modules/_animations.scss */
+  /* line 82, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   50% {
     -moz-transform: scale(1.3, 1.3);
     -webkit-transform: scale(1.3, 1.3);
@@ -2178,7 +2173,7 @@ button.submit_btn {
     transform: scale(1.3, 1.3);
   }
 
-  /* line 83, ../sass/modules/_animations.scss */
+  /* line 83, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     -moz-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
@@ -2188,7 +2183,7 @@ button.submit_btn {
   }
 }
 
-/* line 86, ../sass/modules/_animations.scss */
+/* line 86, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.timeLineAni:after {
   -moz-animation: lineDown 2s 0s 1 linear forwards;
   -webkit-animation: lineDown 2s 0s 1 linear forwards;
@@ -2199,45 +2194,45 @@ div.timeLineAni:after {
 }
 
 @keyframes lineDown {
-  /* line 91, ../sass/modules/_animations.scss */
+  /* line 91, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     height: 0%;
   }
 
-  /* line 92, ../sass/modules/_animations.scss */
+  /* line 92, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   15% {
     height: 30%;
   }
 
-  /* line 93, ../sass/modules/_animations.scss */
+  /* line 93, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   50% {
     height: 50%;
   }
 
-  /* line 94, ../sass/modules/_animations.scss */
+  /* line 94, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   80% {
     height: 80%;
   }
 
-  /* line 95, ../sass/modules/_animations.scss */
+  /* line 95, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
-/* line 107, ../sass/modules/_animations.scss */
+/* line 107, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.straightAni {
   position: relative;
   box-sizing: border-box;
 }
-/* line 111, ../sass/modules/_animations.scss */
+/* line 111, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.straightAni .border {
   background-color: #f16b29;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 117, ../sass/modules/_animations.scss */
+/* line 117, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.straightAni .border.top {
   width: 99.5%;
   height: 1px;
@@ -2248,12 +2243,12 @@ div.straightAni .border.top {
   -o-animation: borderTopAni 0.3s 0s 1 linear forwards;
   animation: borderTopAni 0.3s 0s 1 linear forwards;
 }
-/* line 123, ../sass/modules/_animations.scss */
+/* line 123, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.straightAni .border.bottom {
   height: 1px;
   top: 99.5%;
 }
-/* line 126, ../sass/modules/_animations.scss */
+/* line 126, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_right {
   width: 0%;
   left: 100%;
@@ -2263,7 +2258,7 @@ div.straightAni .border.bottom.b_right {
   -o-animation: borderB_right 0.3s 0.9s 1 linear forwards;
   animation: borderB_right 0.3s 0.9s 1 linear forwards;
 }
-/* line 131, ../sass/modules/_animations.scss */
+/* line 131, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_left {
   width: 0%;
   left: 0;
@@ -2273,7 +2268,7 @@ div.straightAni .border.bottom.b_left {
   -o-animation: borderB_left 0.3s 0.9s 1 linear forwards;
   animation: borderB_left 0.3s 0.9s 1 linear forwards;
 }
-/* line 138, ../sass/modules/_animations.scss */
+/* line 138, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.straightAni .border.left, div.straightAni .border.right {
   width: 1px;
   max-width: 2px;
@@ -2284,19 +2279,19 @@ div.straightAni .border.left, div.straightAni .border.right {
   -o-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
   animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 145, ../sass/modules/_animations.scss */
+/* line 145, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.straightAni .border.right {
   left: 99.5%;
 }
 
 @keyframes borderTopAni {
-  /* line 150, ../sass/modules/_animations.scss */
+  /* line 150, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     left: 50%;
     width: 0;
   }
 
-  /* line 151, ../sass/modules/_animations.scss */
+  /* line 151, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 99.5%;
@@ -2304,25 +2299,25 @@ div.straightAni .border.right {
 }
 
 @keyframes borderSidesAni {
-  /* line 155, ../sass/modules/_animations.scss */
+  /* line 155, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 156, ../sass/modules/_animations.scss */
+  /* line 156, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
 @keyframes borderB_left {
-  /* line 160, ../sass/modules/_animations.scss */
+  /* line 160, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 0;
   }
 
-  /* line 161, ../sass/modules/_animations.scss */
+  /* line 161, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 0;
@@ -2330,34 +2325,34 @@ div.straightAni .border.right {
 }
 
 @keyframes borderB_right {
-  /* line 165, ../sass/modules/_animations.scss */
+  /* line 165, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 100%;
   }
 
-  /* line 166, ../sass/modules/_animations.scss */
+  /* line 166, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 49.5%;
   }
 }
 
-/* line 169, ../sass/modules/_animations.scss */
+/* line 169, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.borderRightAni {
   position: relative;
   box-sizing: border-box;
   border: 1px none #f16b29;
   height: inherit;
 }
-/* line 174, ../sass/modules/_animations.scss */
+/* line 174, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.borderRightAni .border {
   position: absolute;
   background-color: #f16b29;
   left: 0;
   top: 0;
 }
-/* line 180, ../sass/modules/_animations.scss */
+/* line 180, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   height: 1px;
   width: 0;
@@ -2367,11 +2362,11 @@ div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   -o-animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
   animation: borderTopBottomAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 185, ../sass/modules/_animations.scss */
+/* line 185, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.borderRightAni .border.bottom {
   top: 99.5%;
 }
-/* line 188, ../sass/modules/_animations.scss */
+/* line 188, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.borderRightAni .border.left {
   width: 1px;
   height: 0;
@@ -2382,7 +2377,7 @@ div.borderRightAni .border.left {
   -o-animation: borderLeftAni 0.3s 0s 1 linear forwards;
   animation: borderLeftAni 0.3s 0s 1 linear forwards;
 }
-/* line 194, ../sass/modules/_animations.scss */
+/* line 194, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_top {
   width: 1px;
   left: 99.5%;
@@ -2392,7 +2387,7 @@ div.borderRightAni .border.right.R_top {
   -o-animation: borderR_top 0.3s 0.9s 1 linear forwards;
   animation: borderR_top 0.3s 0.9s 1 linear forwards;
 }
-/* line 199, ../sass/modules/_animations.scss */
+/* line 199, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_bottom {
   width: 1px;
   left: 99.5%;
@@ -2404,14 +2399,14 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderLeftAni {
-  /* line 208, ../sass/modules/_animations.scss */
+  /* line 208, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
-  /* line 209, ../sass/modules/_animations.scss */
+  /* line 209, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 99.5%;
@@ -2420,26 +2415,26 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderTopBottomAni {
-  /* line 213, ../sass/modules/_animations.scss */
+  /* line 213, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     width: 0;
   }
 
-  /* line 214, ../sass/modules/_animations.scss */
+  /* line 214, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     width: 99.5%;
   }
 }
 
 @keyframes borderR_top {
-  /* line 218, ../sass/modules/_animations.scss */
+  /* line 218, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
-  /* line 219, ../sass/modules/_animations.scss */
+  /* line 219, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 0;
@@ -2448,14 +2443,14 @@ div.borderRightAni .border.right.R_bottom {
 }
 
 @keyframes borderR_bottom {
-  /* line 223, ../sass/modules/_animations.scss */
+  /* line 223, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
-  /* line 224, ../sass/modules/_animations.scss */
+  /* line 224, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 50%;
@@ -2465,7 +2460,7 @@ div.borderRightAni .border.right.R_bottom {
 
 /* LAYOUTS- Page Layout Styles */
 /*NavBar*/
-/* line 1, ../sass/layouts/_header.scss */
+/* line 1, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 header {
   position: fixed !important;
   top: 0;
@@ -2475,12 +2470,12 @@ header {
   margin: 20px auto;
   padding: 0 10% !important;
 }
-/* line 9, ../sass/layouts/_header.scss */
+/* line 9, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 header div {
   float: left;
   padding: 0 !important;
 }
-/* line 13, ../sass/layouts/_header.scss */
+/* line 13, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 header a.navbar-brand {
   font-family: "fatfrank", sen-serif;
   color: #f16b29;
@@ -2491,7 +2486,7 @@ header a.navbar-brand {
   font-size: 35px;
   margin: 20px 0;
 }
-/* line 25, ../sass/layouts/_header.scss */
+/* line 25, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 header a {
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
@@ -2500,7 +2495,7 @@ header a {
   transition: all 1s;
 }
 
-/* line 31, ../sass/layouts/_header.scss */
+/* line 31, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 div.main-menu {
   float: right;
   position: absolute;
@@ -2508,21 +2503,21 @@ div.main-menu {
   right: 0;
 }
 
-/* line 38, ../sass/layouts/_header.scss */
+/* line 38, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 ul.menu {
   margin: 0;
   float: right;
   display: block;
   padding: 0;
 }
-/* line 43, ../sass/layouts/_header.scss */
+/* line 43, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 ul.menu li {
   float: left;
   margin: 13px 0px;
   text-transform: uppercase;
   text-align: right;
 }
-/* line 49, ../sass/layouts/_header.scss */
+/* line 49, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 ul.menu li a {
   position: relative;
   display: inline-block;
@@ -2537,7 +2532,7 @@ ul.menu li a {
   font-family: "raleway", "文鼎黑體";
   font-size: 14px;
 }
-/* line 64, ../sass/layouts/_header.scss */
+/* line 64, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 ul.menu li a:after {
   position: absolute;
   top: 100%;
@@ -2554,7 +2549,7 @@ ul.menu li a:after {
   -moz-transform: translateY(10px);
   transform: translateY(10px);
 }
-/* line 81, ../sass/layouts/_header.scss */
+/* line 81, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 ul.menu li a:hover::after, ul.menu li a a:focus::after {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -2562,7 +2557,7 @@ ul.menu li a:hover::after, ul.menu li a a:focus::after {
   transform: translateY(0px);
   color: white;
 }
-/* line 91, ../sass/layouts/_header.scss */
+/* line 91, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 ul.menu li a:hover::after, ul.menu li a:focus::after {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -2571,7 +2566,7 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
   color: white;
 }
 
-/* line 105, ../sass/layouts/_header.scss */
+/* line 105, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 .jumpnow_link a {
   padding: 0 10px;
   display: block;
@@ -2581,37 +2576,37 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
   font-weight: 600 !important;
   color: #fbaf5d !important;
 }
-/* line 114, ../sass/layouts/_header.scss */
+/* line 114, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 .jumpnow_link a:hover {
   background: #fbaf5d;
   color: white !important;
 }
-/* line 118, ../sass/layouts/_header.scss */
+/* line 118, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 .jumpnow_link a:hover:after {
   display: none;
 }
 
-/* line 124, ../sass/layouts/_header.scss */
+/* line 124, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 #header, #header ul li a {
   transition: color .5s, opacity .5s;
 }
 
-/* line 127, ../sass/layouts/_header.scss */
+/* line 127, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 #header.fff {
   background-color: transparent;
 }
 
-/* line 130, ../sass/layouts/_header.scss */
+/* line 130, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 #header.fff ul li a {
   color: #333;
 }
 
-/* line 133, ../sass/layouts/_header.scss */
+/* line 133, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 #header.orange {
   background-color: transparent;
 }
 
-/* line 136, ../sass/layouts/_header.scss */
+/* line 136, /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/layouts/_header.scss */
 #header.orange ul li a {
   color: #fff;
 }

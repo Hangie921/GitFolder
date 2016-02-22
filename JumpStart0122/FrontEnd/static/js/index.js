@@ -105,10 +105,11 @@ $(document).ready(function() {
 		},
 		onLeave: function(index, nextIndex, direction) {
 			$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
-		    if(nextIndex == 2){
+		    if(nextIndex == 2 && $(window).width()>468){
 		    	if(!$('.rocket').hasClass('rocket_ani'))
 		    		$('.rocket').addClass('rocket_ani');
-		    }else if (index == 2) {
+		    }else{
+		    	$('.rocket').hide();
 		    }
 		},
 		verticalCentered : true,

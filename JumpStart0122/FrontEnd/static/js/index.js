@@ -77,14 +77,20 @@ $(document).ready(function() {
 						}
 					break;
 					case 1:
+						var height = $('.team_details .slide-inner').height();
+
 						if(!$('.team_details .slide-inner .border_container').hasClass('borderRightAni')){
 							$('.team_details .slide-inner .border_container').addClass('borderRightAni');
 						}
+
+						$('.team_details .slide-inner').height(height);
 					break;
 					case 2:
-						if(!$('.personal-details .slide-inner .border_container').hasClass('borderRightAni')){
-							$('.personal-details .slide-inner .border_container').addClass('borderRightAni');
+						var height = $('.personal_details .slide-inner').height();
+						if(!$('.personal_details .slide-inner .border_container').hasClass('borderRightAni')){
+							$('.personal_details .slide-inner .border_container').addClass('borderRightAni');
 						}
+						$('.personal_details .slide-inner').height(height);
 					break;
 				}
 			}

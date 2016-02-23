@@ -39,7 +39,7 @@ function route(app, mongoClient){
 								res.send('mongo find nothing');
 							}else{
 								var docArray = cursor.toArray();
-								console.log(docArray[1]);
+								console.log(docArray);
 								console.log("send the doc to jade");
 								res.render('index',{results:docArray});
 								res.end();

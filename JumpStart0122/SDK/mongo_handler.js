@@ -11,16 +11,16 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 	var status = null;
 
 	if(crud === "find"){
-		findDetail(mongoClient,collection,query,condition,function(err,doc){
+		findDetail(mongoClient,collection,query,condition,function(err,cursor){
 			if(err){
 				console.log('error while finding the details');
 				console.log(err);
 				staus = false
 				throw err;
 			}else{
-				console.log('found the detail cursor '+ doc);
-				status = true;	
-				result = doc;
+				console.log('found the detail cursor '+ cursor);
+				status = cursor===null?false:true;
+				result = cursor===null?'err_code':cursor;
 				callback(null,status,result);
 			}	
 		});
@@ -60,20 +60,7 @@ function findDetail(mongoClient,collection,query,condition,callback){ //undone
 		if(!err){
 			console.log("connect mongo successfully");
 			var cursor = db.collection(collection).find(query,condition.projection);
-			console.log("findDetail() return cursor");
 			callback(null,cursor);
-				// cursor.forEach(function(doc){
-				// 	if(doc){
-				// 		console.log("findDetail() return doc");
-				// 		callback(null,doc);
-				// 	}else{
-				// 		console.log('find nothing');
-				// 		console.log('db closed');
-				// 		db.close();
-				// 		return false;
-				// 	}
-					
-				// });
 		}else{
 			console.log('error while connecting to the mongo client');
 			console.log(err);

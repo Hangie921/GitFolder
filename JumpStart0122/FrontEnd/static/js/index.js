@@ -21,7 +21,6 @@ $(document).ready(function() {
 	
 
 	//initial the fullpage with the rocket animation
-    if($(window).innerWidth > 480){
     	$('#fullpage').fullpage({
 	    	menu:'#header',
 	    	anchors:['home','about','competition',
@@ -148,7 +147,7 @@ $(document).ready(function() {
 			responsiveWidth:480
 
 		}); //end of the fullpageJS initial
-    }//end of the width inner if
+ 
 	
     
 	//add and delete the member input field dynamically with the btn clicked

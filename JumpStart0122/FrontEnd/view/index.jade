@@ -23,7 +23,7 @@ html
 
 	body
 		#fullpage
-			.section#sec_home.container.section-padding(data-anchor='home').timeLineAni
+			.section#sec_home.container.section-padding(data-anchor='home')
 				header.container#header
 					.navbar-header.col-md-12
 						button.navbar-toggle.collapsed(type="button", data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
@@ -130,7 +130,7 @@ html
 								h5 你想要一舉躍進國際市場嗎？
 
 								p 
-									|現在我們開放自由行旅遊平台的100,000,000+筆活躍用戶資料，由你親手創造資料的價值！！只要你具有以下特質：
+									|現在，我們開放自由行旅遊平台的100,000,000+筆活躍用戶資料，由你親手創造資料的價值！！只要你具有以下特質：
 									ul 
 										li 
 											i.fa.fa-rocket
@@ -189,6 +189,7 @@ html
 								ul
 									li
 										i.fa.fa-rocket 
+<<<<<<< HEAD
 										|因獲選後需實作，團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關背景。
 									li 
 										i.fa.fa-rocket 
@@ -196,6 +197,21 @@ html
 									li 
 										i.fa.fa-rocket 
 										|參加決賽的團隊，每隊至多派出一至兩名成員參加簡報，以5~8分鐘為限。
+=======
+										|團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關專業背景，因獲選後需實作。
+									//- li 
+									//- 	i.fa.fa-rocket 
+									//- 	|不得為主承辦單位之競爭者。
+									li 
+										i.fa.fa-rocket 
+										|運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書(限PDF)，以15頁為限。
+									li  
+										i.fa.fa-rocket 
+										|參加決賽的團隊，每隊至多派出一至兩名成員參加簡報，以5~8分鐘為限。
+									li 
+										i.fa.fa-rocket 
+										|參賽專案的產品、技術及相關專利歸屬參賽團隊，Ping需佔部分股份。
+>>>>>>> origin/master
 							.col-md-12
 								.timeline
 									ul
@@ -306,13 +322,13 @@ html
 										span.en_para Jumpstart
 										| 計畫!
 									ul.plan_list
-										li 下載 商業計劃書範本
-										li 填寫 計畫書及相關資料
-										li 送出 JumpStart計畫！
+										li 下載  商業計劃書範本
+										li 填寫  計畫書及報名資料
+										li 送出  JumpStart計畫！
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
 								
 								a.bizplan_download.btn.btn-4.btn-4a.orange
-									|下載商業計劃書範本 <br/>
+									|下載 商業計劃書範本 <br/>
 								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
 									
 						
@@ -341,7 +357,8 @@ html
 										span.input.input--hoshi
 											input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 上傳檔案	
+													span.input__label-content.input__label-content--hoshi 上傳檔案
+													span.reminder 限PDF!
 									.col-md-7
 										.team_detail_single.clearfix
 											span.input.input--hoshi.team_member
@@ -429,17 +446,17 @@ html
 									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-name')
 											span.input__label-content.input__label-content--hoshi 姓名
-											span.input__label-content.input__label-content--hoshi
+											span.input__label-content.input__label-content--hoshi.reminder
 								span.input.input--hoshi
 									input#input-4-email.input__field.input__field--hoshi(type='email',name='user_email')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-email')
-											span.input__label-content.input__label-content--hoshi email
-											span.input__label-content.input__label-content--hoshi
+											span.input__label-content.input__label-content--hoshi Email
+											span.input__label-content.input__label-content--hoshi.reminder
 								span.input.input--hoshi
 									input#input-4-sub.input__field.input__field--hoshi(type='text',name='subject')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-sub')
 											span.input__label-content.input__label-content--hoshi 標題
-											span.input__label-content.input__label-content--hoshi
+											span.input__label-content.input__label-content--hoshi.reminder
 							.col-md-4
 								textarea#textarea_mes(placeholder='我有疑問...',name='user_msg',require)
 								//- label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='textarea_mes')

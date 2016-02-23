@@ -14,7 +14,6 @@ var app = instance.startApp(config.server.port,config.server.view_engine,path.di
 	mongoClient = instance.startMongo(config.mongo.url,config.mongo.port,config.mongo.db);
 
 
-
 index.route(app,mongoClient);
 login.route(app,mongoClient);
 logout.route(app,mongoClient);

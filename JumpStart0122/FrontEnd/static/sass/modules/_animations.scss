@@ -1,3 +1,12 @@
+//
+#sec_home.timeLineAni:after{
+	@include animation(grow 1s 0s linear 1 forwards);
+}
+@keyframes grow{
+	0%{top:60%;height: 0%;}
+	100%{top:60%;height: 20%;}
+}
+
 // section about animation
 #sec_about p{
 	opacity:0;

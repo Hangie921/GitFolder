@@ -38,9 +38,11 @@ function route(app, mongoClient){
 								console.log('mongo return nothing');
 								res.send('mongo find nothing');
 							}else{
-								console.log(result);
+								console.log('result: '+ result);
 								console.log("send the doc to jade");
-								res.render('index',{results:result});
+								// console.log(JSON.parse(JSON.stringify(result)));
+								res.render('index',{results:JSON.parse(JSON.stringify(result))});
+								// res.render('index',{results:result});
 								res.end();
 							}
 

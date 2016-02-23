@@ -1,4 +1,15 @@
 // this is the js that contain and execute the all Front-End related js
+var width ;
+
+
+function resize(){
+	width = $(window).innerWidth;
+	$.fn.fullpage.reBuild();
+}
+
+$(window).resize(function(){
+	resize();
+});
 
 $(document).ready(function() {
 	
@@ -328,6 +339,10 @@ function initSlot(){
 	$('#slotButton3').click(function(){
 			machine3.futureActive = 7;
 			machine3.stop();
+			if(!$('#sec_home .border_container').hasClass('straightAni')){ //border animation
+				$('#sec_home .border_container').addClass('straightAni');
+				$('#sec_home').addClass('timeLineAni');
+			}
 			setTimeout(function(){
 				$.fn.fullpage.moveTo('competition');
 			}, 1000);

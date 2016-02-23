@@ -25,19 +25,27 @@ html
 		#fullpage
 			.section#sec_home.container.section-padding(data-anchor='home')
 				header.container#header
-					.col-md-12
+					.navbar-header.col-md-12
+						button.navbar-toggle.collapsed(type="button", data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+							span.sr-only toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+
 						.col-md-2
 							a(class='navbar-brand' href='/') JumpStart.
-						.main-menu#main_menu.col-md-10
-							ul.menu
-								li(data-menuanchor='about')
-									a(href='#about') about
-								li(data-menuanchor='competition')
-									a(href='#competition') competition
-								li.jumpnow_link(data-menuanchor='jumpnow') 
-									a(href='#jumpnow') jump now
-								li(data-menuanchor='events') 
-									a(href='#events') events
+						#bs-example-navbar-collapse-1.collapse.navbar-collapse
+							#main_menu.col-md-10.main-menu
+								ul.menu.nav.navbar-nav
+									li(data-menuanchor='about')
+										a(href='#about') about
+									li(data-menuanchor='competition')
+										a(href='#competition/1') competition
+									li.jumpnow_link(data-menuanchor='jumpnow') 
+										a(href='#jumpnow') jump now
+									li(data-menuanchor='events') 
+										a(href='#events') events
+			
 				.sloganContainer.zindex
 					h2 
 						b 當你擁有
@@ -169,19 +177,14 @@ html
 								ul
 									li
 										i.fa.fa-rocket 
-										|團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關專業背景，因獲選後需實作。
-									//- li 
-									//- 	i.fa.fa-rocket 
-									//- 	|不得為主承辦單位之競爭者。
+										|因獲選後需實作，團隊成員以5人為限，需含程式開發、資料分析、設計、商業等相關背景。
 									li 
 										i.fa.fa-rocket 
-										|運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書(限PDF)，以15頁為限。
-									li  
+										|運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書，以15頁為限
+									li 
 										i.fa.fa-rocket 
 										|參加決賽的團隊，每隊至多派出一至兩名成員參加簡報，以5~8分鐘為限。
-									li 
-										i.fa.fa-rocket 
-										|參賽專案的產品、技術及相關專利歸屬參賽團隊，Ping需佔部分股份。
+							
 							.col-md-12
 								.timeline
 									ul
@@ -262,6 +265,9 @@ html
 									.col-md-10
 										ul.sponsor-list
 											li 
+												span 最新！長榮證實 	公告裁撤總部
+													| 今內部公佈欄發布消息，確認取消管理
+
 											li 
 								.col-md-12.clearfix.sponsor-group
 									.col-md-2

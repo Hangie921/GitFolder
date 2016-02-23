@@ -68,6 +68,7 @@
 			.front_face{
 				background:#999 url(../img/stock.jpg) no-repeat;
 				background-blend-mode: multiply;
+				@include background-size(cover);
 				// background-color:rgba(0,0,0,.5);
 				z-index:2;
 			}

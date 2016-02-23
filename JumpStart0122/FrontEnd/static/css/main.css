@@ -2205,13 +2205,13 @@ button.submit_btn {
 @keyframes grow {
   /* line 6, ../sass/modules/_animations.scss */
   0% {
-    top: 60%;
+    top: 55%;
     height: 0%;
   }
 
   /* line 7, ../sass/modules/_animations.scss */
   100% {
-    top: 60%;
+    top: 55%;
     height: 20%;
   }
 }
@@ -2460,31 +2460,31 @@ div.timeLineAni:after {
   }
 }
 
-/* line 124, ../sass/modules/_animations.scss */
+/* line 126, ../sass/modules/_animations.scss */
 .border_container {
   height: 100%;
   position: relative;
 }
 
-/* line 128, ../sass/modules/_animations.scss */
+/* line 130, ../sass/modules/_animations.scss */
 .border {
   position: absolute;
 }
 
-/* line 132, ../sass/modules/_animations.scss */
+/* line 134, ../sass/modules/_animations.scss */
 div.straightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 138, ../sass/modules/_animations.scss */
+/* line 140, ../sass/modules/_animations.scss */
 div.straightAni .border {
   background-color: #f16b29;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 144, ../sass/modules/_animations.scss */
+/* line 146, ../sass/modules/_animations.scss */
 div.straightAni .border.top {
   width: 99.5%;
   height: 1px;
@@ -2495,12 +2495,12 @@ div.straightAni .border.top {
   -o-animation: borderTopAni 0.3s 0s 1 linear forwards;
   animation: borderTopAni 0.3s 0s 1 linear forwards;
 }
-/* line 150, ../sass/modules/_animations.scss */
+/* line 152, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom {
   height: 1px;
   top: 99.5%;
 }
-/* line 153, ../sass/modules/_animations.scss */
+/* line 155, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_right {
   width: 0%;
   left: 100%;
@@ -2510,7 +2510,7 @@ div.straightAni .border.bottom.b_right {
   -o-animation: borderB_right 0.3s 0.9s 1 linear forwards;
   animation: borderB_right 0.3s 0.9s 1 linear forwards;
 }
-/* line 158, ../sass/modules/_animations.scss */
+/* line 160, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_left {
   width: 0%;
   left: 0;
@@ -2520,7 +2520,7 @@ div.straightAni .border.bottom.b_left {
   -o-animation: borderB_left 0.3s 0.9s 1 linear forwards;
   animation: borderB_left 0.3s 0.9s 1 linear forwards;
 }
-/* line 165, ../sass/modules/_animations.scss */
+/* line 167, ../sass/modules/_animations.scss */
 div.straightAni .border.left, div.straightAni .border.right {
   width: 1px;
   max-width: 2px;
@@ -2531,19 +2531,19 @@ div.straightAni .border.left, div.straightAni .border.right {
   -o-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
   animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 172, ../sass/modules/_animations.scss */
+/* line 174, ../sass/modules/_animations.scss */
 div.straightAni .border.right {
   left: 99.5%;
 }
 
 @keyframes borderTopAni {
-  /* line 177, ../sass/modules/_animations.scss */
+  /* line 179, ../sass/modules/_animations.scss */
   0% {
     left: 50%;
     width: 0;
   }
 
-  /* line 178, ../sass/modules/_animations.scss */
+  /* line 180, ../sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 99.5%;
@@ -2551,25 +2551,25 @@ div.straightAni .border.right {
 }
 
 @keyframes borderSidesAni {
-  /* line 182, ../sass/modules/_animations.scss */
+  /* line 184, ../sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 183, ../sass/modules/_animations.scss */
+  /* line 185, ../sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
 @keyframes borderB_left {
-  /* line 187, ../sass/modules/_animations.scss */
+  /* line 189, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 0;
   }
 
-  /* line 188, ../sass/modules/_animations.scss */
+  /* line 190, ../sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 0;
@@ -2577,34 +2577,34 @@ div.straightAni .border.right {
 }
 
 @keyframes borderB_right {
-  /* line 192, ../sass/modules/_animations.scss */
+  /* line 194, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 100%;
   }
 
-  /* line 193, ../sass/modules/_animations.scss */
+  /* line 195, ../sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 49.5%;
   }
 }
 
-/* line 196, ../sass/modules/_animations.scss */
+/* line 198, ../sass/modules/_animations.scss */
 div.borderRightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 201, ../sass/modules/_animations.scss */
+/* line 203, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container {
   height: 100%;
 }
-/* line 203, ../sass/modules/_animations.scss */
+/* line 205, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .straight_line {
   width: 1px;
   height: 0px;
-  top: -50px;
+  top: -120px;
   background-color: #f16b29;
   left: 50%;
   position: absolute;
@@ -2615,7 +2615,7 @@ div.borderRightAni.border_container .straight_line {
   -o-animation: straightLineAni 0.3s 0s 1 linear forwards;
   animation: straightLineAni 0.3s 0s 1 linear forwards;
 }
-/* line 213, ../sass/modules/_animations.scss */
+/* line 215, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .horizon_line {
   height: 1px;
   width: 0px;
@@ -2631,7 +2631,7 @@ div.borderRightAni.border_container .horizon_line {
   -o-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
   animation: horiLineAni 0.3s 1.2s 1 linear forwards;
 }
-/* line 224, ../sass/modules/_animations.scss */
+/* line 226, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .horizon_line_left {
   height: 1px;
   width: 0px;
@@ -2640,18 +2640,18 @@ div.borderRightAni.border_container .horizon_line_left {
   top: 222.5px;
   position: absolute;
   z-index: -10;
-  left: -100px;
+  left: -180px;
   -moz-animation: horiLineAni 0.3s 0s 1 linear forwards;
   -webkit-animation: horiLineAni 0.3s 0s 1 linear forwards;
   -ms-animation: horiLineAni 0.3s 0s 1 linear forwards;
   -o-animation: horiLineAni 0.3s 0s 1 linear forwards;
   animation: horiLineAni 0.3s 0s 1 linear forwards;
 }
-/* line 236, ../sass/modules/_animations.scss */
+/* line 238, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container {
   height: 100%;
 }
-/* line 238, ../sass/modules/_animations.scss */
+/* line 240, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container .straight_line {
   width: 1px;
   height: 0px;
@@ -2666,7 +2666,7 @@ div.borderRightAni .border_container .straight_line {
   -o-animation: straightLineAni 0.3s 0s 1 linear forwards;
   animation: straightLineAni 0.3s 0s 1 linear forwards;
 }
-/* line 248, ../sass/modules/_animations.scss */
+/* line 250, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container .horizon_line {
   height: 1px;
   width: 0px;
@@ -2682,14 +2682,14 @@ div.borderRightAni .border_container .horizon_line {
   -o-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
   animation: horiLineAni 0.3s 1.5s 1 linear forwards;
 }
-/* line 261, ../sass/modules/_animations.scss */
+/* line 263, ../sass/modules/_animations.scss */
 div.borderRightAni .border {
   position: absolute;
   background-color: #f16b29;
   left: 0;
   top: 0;
 }
-/* line 267, ../sass/modules/_animations.scss */
+/* line 269, ../sass/modules/_animations.scss */
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   height: 1px;
   width: 0;
@@ -2699,11 +2699,11 @@ div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   -o-animation: borderTopBottomAni 0.6s 0.6s 1 linear forwards;
   animation: borderTopBottomAni 0.6s 0.6s 1 linear forwards;
 }
-/* line 272, ../sass/modules/_animations.scss */
+/* line 274, ../sass/modules/_animations.scss */
 div.borderRightAni .border.bottom {
   top: 99.5%;
 }
-/* line 275, ../sass/modules/_animations.scss */
+/* line 277, ../sass/modules/_animations.scss */
 div.borderRightAni .border.left {
   width: 1px;
   height: 0;
@@ -2714,7 +2714,7 @@ div.borderRightAni .border.left {
   -o-animation: borderLeftAni 0.3s 0.3s 1 linear forwards;
   animation: borderLeftAni 0.3s 0.3s 1 linear forwards;
 }
-/* line 281, ../sass/modules/_animations.scss */
+/* line 283, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_top {
   width: 1px;
   left: 99.5%;
@@ -2724,7 +2724,7 @@ div.borderRightAni .border.right.R_top {
   -o-animation: borderR_top 0.3s 1.2s 1 linear forwards;
   animation: borderR_top 0.3s 1.2s 1 linear forwards;
 }
-/* line 286, ../sass/modules/_animations.scss */
+/* line 288, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_bottom {
   width: 1px;
   left: 99.5%;
@@ -2734,7 +2734,7 @@ div.borderRightAni .border.right.R_bottom {
   -o-animation: borderR_bottom 0.3s 1.2s 1 linear forwards;
   animation: borderR_bottom 0.3s 1.2s 1 linear forwards;
 }
-/* line 292, ../sass/modules/_animations.scss */
+/* line 294, ../sass/modules/_animations.scss */
 div.borderRightAni .horizon_line_left#jumpnow_team_details {
   -moz-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
   -webkit-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
@@ -2743,11 +2743,11 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
 }
 
-/* line 297, ../sass/modules/_animations.scss */
+/* line 299, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni {
   position: relative;
 }
-/* line 299, ../sass/modules/_animations.scss */
+/* line 301, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .horizon_line {
   background-color: #f16b29;
   z-index: 1;
@@ -2764,13 +2764,13 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes leftLineForTeamDetail {
-  /* line 311, ../sass/modules/_animations.scss */
+  /* line 313, ../sass/modules/_animations.scss */
   0% {
     left: -40px;
     width: 0;
   }
 
-  /* line 312, ../sass/modules/_animations.scss */
+  /* line 314, ../sass/modules/_animations.scss */
   100% {
     left: -40px;
     width: 40px;
@@ -2778,38 +2778,38 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes horiLineAni {
-  /* line 315, ../sass/modules/_animations.scss */
+  /* line 317, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 316, ../sass/modules/_animations.scss */
+  /* line 318, ../sass/modules/_animations.scss */
   100% {
-    width: 100px;
+    width: 180px;
   }
 }
 
 @keyframes straightLineAni {
-  /* line 319, ../sass/modules/_animations.scss */
+  /* line 321, ../sass/modules/_animations.scss */
   0% {
     height: 0px;
   }
 
-  /* line 320, ../sass/modules/_animations.scss */
+  /* line 322, ../sass/modules/_animations.scss */
   100% {
-    height: 50px;
+    height: 120px;
   }
 }
 
 @keyframes borderLeftAni {
-  /* line 324, ../sass/modules/_animations.scss */
+  /* line 326, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
-  /* line 325, ../sass/modules/_animations.scss */
+  /* line 327, ../sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 99.5%;
@@ -2818,26 +2818,26 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes borderTopBottomAni {
-  /* line 329, ../sass/modules/_animations.scss */
+  /* line 331, ../sass/modules/_animations.scss */
   0% {
     width: 0;
   }
 
-  /* line 330, ../sass/modules/_animations.scss */
+  /* line 332, ../sass/modules/_animations.scss */
   100% {
     width: 99.5%;
   }
 }
 
 @keyframes borderR_top {
-  /* line 334, ../sass/modules/_animations.scss */
+  /* line 336, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
-  /* line 335, ../sass/modules/_animations.scss */
+  /* line 337, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 0;
@@ -2846,14 +2846,14 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes borderR_bottom {
-  /* line 339, ../sass/modules/_animations.scss */
+  /* line 341, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
-  /* line 340, ../sass/modules/_animations.scss */
+  /* line 342, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 50%;

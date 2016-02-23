@@ -3,8 +3,8 @@
 	@include animation(grow 1s 0s linear 1 forwards);
 }
 @keyframes grow{
-	0%{top:60%;height: 0%;}
-	100%{top:60%;height: 20%;}
+	0%{top:55%;height: 0%;}
+	100%{top:55%;height: 20%;}
 }
 
 // section about animation
@@ -120,6 +120,8 @@ $borderRight:50%;
 $borderWidth:1px;
 $maxWidth:1px;
 $speed:.3s;
+$horizonWidth:180px;
+$straightHeight:120px;
 
 .border_container{
 	height: 100%;
@@ -203,7 +205,7 @@ div.borderRightAni{
 		& .straight_line{
 			width: 1px;
 			height: 0px;
-			top: -50px;
+			top: ($straightHeight)*-1;
 			background-color:$primary-color;
 			left:50%;
 			position: absolute;
@@ -229,7 +231,7 @@ div.borderRightAni{
 			top: 222.5px;
 			position: absolute;
 			z-index: -10;
-			left: -100px;
+			left: ($horizonWidth)*-1;
 			@include animation(horiLineAni $speed 0s 1 linear forwards);
 		}
 	}
@@ -313,11 +315,11 @@ div.borderRightAni{
 }
 @keyframes horiLineAni{
 	0%{width: 0px;}
-	100%{width: 100px;}
+	100%{width: $horizonWidth;}
 }
 @keyframes straightLineAni{
 	0%{height: 0px;}
-	100%{height: 50px;}	
+	100%{height: $straightHeight;}	
 }
 
 @keyframes borderLeftAni{

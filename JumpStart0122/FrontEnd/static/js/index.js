@@ -4,11 +4,13 @@ var width ;
 
 function resize(){
 	width = $(window).innerWidth;
+	height = $(window).innerHeight;
 	$.fn.fullpage.reBuild();
 }
 
 $(window).resize(function(){
 	resize();
+	console.log('resize');
 });
 
 $(document).ready(function() {
@@ -43,8 +45,10 @@ $(document).ready(function() {
 				case 3:
 					$('#header').addClass('fff');
 					$('#competition_topic_slide').addClass('timeLineAni');
-					if(!$('#competition_topic_slide').hasClass('borderRightAni')){ //border animation
-						$('#competition_topic_slide').addClass('borderRightAni');
+					var height = $('#competition_topic_slide .slide-inner').height();
+						$('#competition_topic_slide .border_container').height(height);
+					if(!$('#competition_topic_slide .border_container').hasClass('borderRightAni')){ //border animation
+						$('#competition_topic_slide .border_container').addClass('borderRightAni');
 					}
 					break;
 				case 4:

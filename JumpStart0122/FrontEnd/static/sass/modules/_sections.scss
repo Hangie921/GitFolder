@@ -216,7 +216,6 @@ ul.plan_list {
 
 .slide-inner {
 	position:relative;
-	width:75%;
 	margin:0 auto 0;
 	@include orange-border;
 	
@@ -913,7 +912,7 @@ div#sec_events{
 	text-align: center;
 	// background:#999 url(../img/stock.jpg) no-repeat;
 	// background-blend-mode: multiply;
-	@include background-size (100% auto);
+	@include background-size (cover);
 	// backdrop-filter: blur(10px);
 
 
@@ -937,7 +936,7 @@ div#sec_events{
 
 		padding:10px;
 		background:#888 url(../img/stock.jpg) no-repeat;
-		@include background-size (100% auto);
+		@include background-size (cover);
 		background-blend-mode: multiply;
 		backdrop-filter: blur(10px);
 

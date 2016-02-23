@@ -42,7 +42,6 @@
 
 
 // for the rotate animation
-
 .event_group{  
 	perspective:1000px;
 	.event_single{
@@ -199,7 +198,7 @@ div.borderRightAni{
 	box-sizing:border-box;
 	// border:1px none #f16b29;
 	height: 100%;
-	& .border_container{
+	&.border_container{
 		height: 100%;
 		& .straight_line{
 			width: 1px;
@@ -222,6 +221,41 @@ div.borderRightAni{
 			left: 99.5%;
 			@include animation(horiLineAni $speed $speed*4 1 linear forwards);
 		}
+		& .horizon_line_left{
+			height: 1px;
+			width: 0px;
+			background-color:$primary-color;
+			display:block;
+			top: 50%;
+			position: absolute;
+			z-index: -10;
+			left: -100px;
+			@include animation(horiLineAni $speed 0s 1 linear forwards);
+		}
+	}
+	& .border_container{
+		height: 100%;
+		& .straight_line{
+			width: 1px;
+			height: 0px;
+			top: -50px;
+			background-color:$primary-color;
+			left:50%;
+			position: absolute;
+			z-index: -10;
+			@include animation(straightLineAni $speed 0s 1 linear forwards);
+		}
+		& .horizon_line{
+			height: 1px;
+			width:0px;
+			background-color:$primary-color;
+			display:block;
+			top: 50%;
+			position: absolute;
+			z-index: -10;
+			left: 99.5%;
+			@include animation(horiLineAni $speed $speed*5 1 linear forwards);
+		}
 	}
 
 	& .border{
@@ -233,7 +267,7 @@ div.borderRightAni{
 	& .border.top,.border.bottom{
 	    height: $borderWidth;
 	    width: 0;
-	    @include animation(borderTopBottomAni $speed*2 $speed 1 linear forwards);
+	    @include animation(borderTopBottomAni $speed*2 $speed*2 1 linear forwards);
 	}
 	& .border.bottom{
     	top:$borderPos;
@@ -242,17 +276,17 @@ div.borderRightAni{
 	    width: $borderWidth;
 	    height: 0;
 	    top: 50%;
-	    @include animation(borderLeftAni $speed 0s 1 linear forwards);
+	    @include animation(borderLeftAni $speed $speed 1 linear forwards);
   	}
   	& .border.right.R_top{
 	    width:$borderWidth;
 	    left:$borderPos;
-	    @include animation(borderR_top $speed $speed*3 1 linear forwards);
+	    @include animation(borderR_top $speed $speed*4 1 linear forwards);
   	}
   	& .border.right.R_bottom{
 	    width:$borderWidth;
 	    left:$borderPos;
-	    @include animation(borderR_bottom $speed $speed*3 1 linear forwards);
+	    @include animation(borderR_bottom $speed $speed*4 1 linear forwards);
   	}
 
 }

@@ -82,12 +82,16 @@ $(document).ready(function() {
 					break;
 					case 2:
 						$('#competition_menu li:nth-child(3) a').addClass('selected');
+						var height = $('#competition_prize_slide .slide-inner').height();
+						$('#competition_prize_slide .border_container').height(height);
 						if(!$('#competition_prize_slide .border_container').hasClass('borderRightAni')){ //border animation
 							$('#competition_prize_slide .border_container').addClass('borderRightAni');
 						}
 					break;
 					case 3:
 						$('#competition_menu li:nth-child(4) a').addClass('selected');
+						var height = $('#competition_sponsor_slide .slide-inner').height();
+						$('#competition_sponsor_slide .border_container').height(height);
 						if(!$('#competition_sponsor_slide .border_container').hasClass('borderRightAni')){ //border animation
 							$('#competition_sponsor_slide .border_container').addClass('borderRightAni');
 						}

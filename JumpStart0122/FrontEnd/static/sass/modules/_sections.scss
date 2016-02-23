@@ -28,6 +28,7 @@ div#sec_competition {
 
 	.slide-inner {
 		background:$gray;
+		min-height: 380px;
 	}
 }
 /****HOME******/
@@ -388,8 +389,9 @@ div.sponsor-group {
 	margin-top:30px;
 		
 	h3 {
-		color:$dark-color;
+		color:$primary-color;
 		font-weight: bold;
+		font-size:20px;
 		border-bottom:1px solid gainsboro;
 		letter-spacing: 3px;
 		padding-bottom:10px;
@@ -554,10 +556,12 @@ div.sponsor-group {
 .info_list{
 	ul {
 		padding:0 0 0 40px;
+		margin-top:30px;
 
 		li {
 			float:left;
 			width:30%;
+
 			margin-left:1%;
 			padding-left:20px;
 
@@ -574,7 +578,7 @@ div.sponsor-group {
 }
 div.timeline {
 	position: relative;
-    margin-top: 50px;
+    margin-top: 25px;
     top: 40px;
 	ul{ 
 		position:relative;
@@ -717,34 +721,34 @@ div.timeline {
 	
 	p {
 	 		color:$primary-color !important;
-	 		font-size:24px;
-	 		margin-top:30px;
+	 		font-size:18px;
+	 		margin-top:20px;
 	 		text-align:center
 	 	}
 
 	.prize-single {
 		margin:0 auto;
-		min-height:300px;
+		min-height:100px;
 
 		&:first-of-type {
 		background: url(../img/secondplace.png) no-repeat center 0;
-		@include background-size(100% auto);
+		@include background-size(60% auto);
 			h4{
-				font-size:45px;
+				font-size:34px;
 				color:#2b4252;
 			}
 	 	}
 	 	&:nth-of-type(2) {
 		background: url(../img/firstplace.png) no-repeat center 0;
-		@include background-size(100% auto);
+		@include background-size(60% auto);
 			color:$navy;
 		
 	 	}
 	 	&:nth-of-type(3) {
 		background: url(../img/thirdplace.png) no-repeat center 0;
-		@include background-size(100% auto);
+		@include background-size(60% auto);
 			h4{
-				font-size:45px;
+				font-size:34px;
 				color:#2b4252;
 			}
 	 	}
@@ -754,10 +758,10 @@ div.timeline {
 	 		text-align: center;
 	 		font-family: $english;
 			font-weight: 600;
-			font-size:50px;
+			font-size:45px;
 			text-align: center;
 			display: block;
-			margin-top:350px;
+			margin-top:210px;
 	 	}
 	 	
 
@@ -904,19 +908,14 @@ div#sec_events{
 	position:relative;
 	padding:10px;
 	color:#fff;
-	width:28%;
-	margin-right: 5%;
 	min-height: 300px;
 	display: block;
 	text-align: center;
 	// background:#999 url(../img/stock.jpg) no-repeat;
 	// background-blend-mode: multiply;
-	-webkit-background-size:100% auto;
-	-ms-background-size:100% auto;
-	-moz-background-size:100% auto;
-	-o-background-size:100% auto;
-	background-size:100% auto;
+	@include background-size (100% auto);
 	// backdrop-filter: blur(10px);
+
 
 	h3 {
 		color:$white;
@@ -938,6 +937,7 @@ div#sec_events{
 
 		padding:10px;
 		background:#888 url(../img/stock.jpg) no-repeat;
+		@include background-size (100% auto);
 		background-blend-mode: multiply;
 		backdrop-filter: blur(10px);
 
@@ -1136,5 +1136,83 @@ button.contact_us_btn {
 		    	line-height: 20px;
 		    }
 	}
-}
+
+	.info_list ul li{
+		width:100%;
+		float:left;
+		margin-bottom:10px;
+		.fa {
+			height:10%;
+		}
+	}
+	div.timeline {
+		ul {
+			li {
+				width:100%;
+				padding:20px;
+
+				&:before {
+
+					    border-width: 19px 50px 0px 45px;
+					    border-color: #f16b29 transparent ;
+					    right: 37%;
+					    top:  90px;
+				} 
+				&:after {
+
+			        border-width: 19px 49px 0px 44px;
+				    border-color: #e8e8e8 transparent;
+				    right: 37.4%;
+				    top: 89px;
+
+
+				} 
+			}
+		}
+	}
+	#competition_prize_slide  {
+
+		.prize-single {
+
+			min-height: 180px;
+			h4 {
+				margin-top:20px;
+			}
+
+		&:first-of-type {
+		@include background-size(50% auto);
+			h4{
+				font-size:34px;
+				color:#2b4252;
+			}
+	 	}
+	 	&:nth-of-type(2) {
+		@include background-size(50% auto);
+			color:$navy;
+		
+	 	}
+	 	&:nth-of-type(3) {
+	
+		@include background-size(50% auto);
+		
+	 	
+
+			}
+
+
+
+		}
+
+	}
+	div.competition_topic  {
+		h4 {
+			text-align: left;
+		}
+	}
+																
+
+
+
+
+																}
 

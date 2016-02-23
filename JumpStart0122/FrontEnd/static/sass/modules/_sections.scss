@@ -385,41 +385,63 @@ div.competition_topic {
 }
 
 div.sponsor-group {
-		padding-top:30px;
+	margin-top:30px;
+		
 	h3 {
-		color:$primary-color;
+		color:$dark-color;
 		font-weight: bold;
+		border-bottom:1px solid gainsboro;
 		letter-spacing: 3px;
+		padding-bottom:10px;
 	}
 
-	ul.sponsor-list {
+	
 		li {
+			position:relative;
 			cursor: pointer;
 			display: inline-block;
 			background:black;
-			width:200px;
+			width:100%;
 			height:80px;
 			margin-right:50px;
 			vertical-align: top;
+			
 
 			&:first-child {
 				background: url(../img/ping_logo.png) no-repeat center center;
 				@include background-size(100% auto);
 			}
-			&:nth-child(2){
-				background: url(../img/venture_craft_logo.png) no-repeat center center;
-				@include background-size(100% auto);
+			
+			.gotosite {
+				background:$dark-color;
+				@include border-radius(20px);
+				text-align: center;
+				padding:5px 0;
+				font-size:12px;
+				display: block;
+				margin:0 auto;
+				width:100px;
+				@include transition(all .25s);
+
+				&:hover {
+					background-color:gainsboro;
+					color:white;
+				}
 			}
 
 			span {
 				opacity: 0;
+				position:absolute;
+				top:0;
+				left:-10%;
+				width:120%;
 				display: block;
 				background-color:rgba(232,232,232,0.9);
+				@include transition(all .25s);
 				color:#999;
 				font-size:14px;
-				line-height: 18px;
+				line-height: 20px;
 				padding:10px;
-				@include transition(all .25s);
 				box-shadow: 0px 0px 0px 0px gainsboro;
 				-moz-box-shadow: 0px 0px 0px 0px gainsboro;
 				-ms-box-shadow: 0px 0px 0px 0px gainsboro;
@@ -428,7 +450,9 @@ div.sponsor-group {
 			}
 
 			&:hover {
+				z-index: 5;
 				span {
+					border:1px solid gainsboro;
 					opacity:1;
 					box-shadow: 3px 10px 0px -5px gainsboro;
 					-moz-box-shadow: 3px 10px 0px -5px gainsboro;
@@ -438,8 +462,38 @@ div.sponsor-group {
 
 				}
 			}
+			
+			
 		}
-	}
+	ul.sponsor-list.second li {
+				width:25%;
+				&:first-child{
+				background: url(../img/venture_craft_logo.png) no-repeat center center;
+				@include background-size(100% auto);
+				}
+				&:nth-child(2){
+				background: url(../img/螞蜂窩_logo.png) no-repeat center center;
+				@include background-size(100% auto);
+				}
+				&:nth-child(3){
+				background: url(../img/citytours_logo.png) no-repeat center center;
+				@include background-size(100% auto);
+				}
+				&:nth-child(4){
+				background: url(../img/365_logo.png) no-repeat left center;
+				@include background-size(150% auto);
+				height:110px;
+				}
+				&:nth-child(5){
+				background: url(../img/DSEE_logo.png) no-repeat center center;
+				@include background-size(100% auto);
+				}
+				&:nth-child(6){
+				background: url(../img/e27_logo.png) no-repeat center center;
+				@include background-size(100% auto);
+				}
+
+			}
 }
 
 

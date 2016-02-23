@@ -21,132 +21,134 @@ $(document).ready(function() {
 	
 
 	//initial the fullpage with the rocket animation
-    $('#fullpage').fullpage({
-    	menu:'#header',
-    	anchors:['home','about','competition',
-    			'jumpnow','events'
-    	],
-    	scrollingSpeed:1000,
-		afterLoad: function(anchorLink, index) { 
-			$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
-			$('#header').css({'opacity':'1'});
-			 switch(index){ //this is the function that chnages the bgcolor and color of the #header
-		    	case 1:
-		    		$('#competition_menu li:nth-child(1) a').addClass('selected');
-		    		machine3.shuffle();
-		    		break;
-				case 2:
-					$('#header').addClass('orange');
-					if(!$('#sec_about .border_container').hasClass('straightAni')){ //border animation
-						$('#sec_about .border_container').addClass('straightAni');
-						$('#sec_about').addClass('timeLineAni');
-					}
-					break;
-				case 3:
-					$('#header').addClass('fff');
-					$('#competition_topic_slide').addClass('timeLineAni');
-					var height = $('#competition_topic_slide .slide-inner').height();
-						$('#competition_topic_slide .border_container').height(height);
-					if(!$('#competition_topic_slide .border_container').hasClass('borderRightAni')){ //border animation
-						$('#competition_topic_slide .border_container').addClass('borderRightAni');
-					}
-					break;
-				case 4:
-					$('#header').addClass('orange');
-					if(!$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').hasClass('borderRightAni')){
-						$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').addClass('borderRightAni');
-					}
-					if(!$('#border_btn').hasClass('borderRightAni')){
-						$('#border_btn').addClass('borderRightAni');
-					}
-
-					break;
-				case 5:
-					$('#header').addClass('fff');
-					break;
-			}
-		},
-		onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-			var leavingSlide = $(this);
-			if(nextSlideIndex == 1){
-				var height = $('.team_details .slide-inner').height();
-				$('.team_details .slide-inner').height(height);	
-			}
-		},
-		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-			if(anchorLink == 'competition'){	
-				$('#competition_menu li a').removeClass('selected');
-				switch(slideIndex){
-					case 0:
-						$('#competition_menu li:nth-child(1) a').addClass('selected');
-					break;
-					case 1:
-						$('#competition_menu li:nth-child(2) a').addClass('selected');
-						var height = $('#competition_info_slide .slide-inner').height();
-						$('#competition_info_slide .border_container').height(height);
-						if(!$('#competition_info_slide .border_container').hasClass('borderRightAni')){ //border animation
-							$('#competition_info_slide .border_container').addClass('borderRightAni');
-						}
-					break;
+    // if($(window).innerWidth > 468){
+    	$('#fullpage').fullpage({
+	    	menu:'#header',
+	    	anchors:['home','about','competition',
+	    			'jumpnow','events'
+	    	],
+	    	scrollingSpeed:1000,
+			afterLoad: function(anchorLink, index) { 
+				$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
+				$('#header').css({'opacity':'1'});
+				 switch(index){ //this is the function that chnages the bgcolor and color of the #header
+			    	case 1:
+			    		$('#competition_menu li:nth-child(1) a').addClass('selected');
+			    		machine3.shuffle();
+			    		break;
 					case 2:
-						$('#competition_menu li:nth-child(3) a').addClass('selected');
-						var height = $('#competition_prize_slide .slide-inner').height();
-						$('#competition_prize_slide .border_container').height(height);
-						if(!$('#competition_prize_slide .border_container').hasClass('borderRightAni')){ //border animation
-							$('#competition_prize_slide .border_container').addClass('borderRightAni');
+						$('#header').addClass('orange');
+						if(!$('#sec_about .border_container').hasClass('straightAni')){ //border animation
+							$('#sec_about .border_container').addClass('straightAni');
+							$('#sec_about').addClass('timeLineAni');
 						}
-					break;
+						break;
 					case 3:
-						$('#competition_menu li:nth-child(4) a').addClass('selected');
-						var height = $('#competition_sponsor_slide .slide-inner').height();
-						$('#competition_sponsor_slide .border_container').height(height);
-						if(!$('#competition_sponsor_slide .border_container').hasClass('borderRightAni')){ //border animation
-							$('#competition_sponsor_slide .border_container').addClass('borderRightAni');
+						$('#header').addClass('fff');
+						$('#competition_topic_slide').addClass('timeLineAni');
+						var height = $('#competition_topic_slide .slide-inner').height();
+							$('#competition_topic_slide .border_container').height(height);
+						if(!$('#competition_topic_slide .border_container').hasClass('borderRightAni')){ //border animation
+							$('#competition_topic_slide .border_container').addClass('borderRightAni');
 						}
-					break;
-				}
-			}else if (anchorLink === 'jumpnow'){
-				switch(slideIndex){
-					case 1:
-						var height = $('.team_details .slide-inner').height();
-						$('.team_details .slide-inner').height(height);
-						if(!$('.team_details .slide-inner .border_container').hasClass('borderRightAni')){
-							$('.team_details .slide-inner .border_container').addClass('borderRightAni');
+						break;
+					case 4:
+						$('#header').addClass('orange');
+						if(!$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').hasClass('borderRightAni')){
+							$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').addClass('borderRightAni');
 						}
-					
-					break;
-					case 2:
-						var height = $('.personal_details .slide-inner').height();
-						$('.personal_details .slide-inner').height(height);
-						if(!$('.personal_details .slide-inner .border_container').hasClass('borderRightAni')){
-							$('.personal_details .slide-inner .border_container').addClass('borderRightAni');
+						if(!$('#border_btn').hasClass('borderRightAni')){
+							$('#border_btn').addClass('borderRightAni');
 						}
-						
-					break;
-				}
-			}
-		},
-		onLeave: function(index, nextIndex, direction) {
-			$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
-		    if(nextIndex == 2 && $(window).width()>468){
-		    	if(!$('.rocket').hasClass('rocket_ani'))
-		    		$('.rocket').addClass('rocket_ani');
-		    }else{
-		    	$('.rocket').hide();
-		    }
-		},
-		verticalCentered : true,
-		resize : false,
-		fitToSectionDelay:500,
-		fixedElements:'.backToTop,header,.scrollDown',
-		loopBottom:false,
-		loopTop:false,
-		loopHorizontal:false,
-		recordHistory:false,
-		controlArrows:false,
-		responsiveWidth:468
 
-	}); //end of the fullpageJS initial
+						break;
+					case 5:
+						$('#header').addClass('fff');
+						break;
+				}
+			},
+			onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+				var leavingSlide = $(this);
+				if(nextSlideIndex == 1){
+					var height = $('.team_details .slide-inner').height();
+					$('.team_details .slide-inner').height(height);	
+				}
+			},
+			afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+				if(anchorLink == 'competition'){	
+					$('#competition_menu li a').removeClass('selected');
+					switch(slideIndex){
+						case 0:
+							$('#competition_menu li:nth-child(1) a').addClass('selected');
+						break;
+						case 1:
+							$('#competition_menu li:nth-child(2) a').addClass('selected');
+							var height = $('#competition_info_slide .slide-inner').height();
+							$('#competition_info_slide .border_container').height(height);
+							if(!$('#competition_info_slide .border_container').hasClass('borderRightAni')){ //border animation
+								$('#competition_info_slide .border_container').addClass('borderRightAni');
+							}
+						break;
+						case 2:
+							$('#competition_menu li:nth-child(3) a').addClass('selected');
+							var height = $('#competition_prize_slide .slide-inner').height();
+							$('#competition_prize_slide .border_container').height(height);
+							if(!$('#competition_prize_slide .border_container').hasClass('borderRightAni')){ //border animation
+								$('#competition_prize_slide .border_container').addClass('borderRightAni');
+							}
+						break;
+						case 3:
+							$('#competition_menu li:nth-child(4) a').addClass('selected');
+							var height = $('#competition_sponsor_slide .slide-inner').height();
+							$('#competition_sponsor_slide .border_container').height(height);
+							if(!$('#competition_sponsor_slide .border_container').hasClass('borderRightAni')){ //border animation
+								$('#competition_sponsor_slide .border_container').addClass('borderRightAni');
+							}
+						break;
+					}
+				}else if (anchorLink === 'jumpnow'){
+					switch(slideIndex){
+						case 1:
+							var height = $('.team_details .slide-inner').height();
+							$('.team_details .slide-inner').height(height);
+							if(!$('.team_details .slide-inner .border_container').hasClass('borderRightAni')){
+								$('.team_details .slide-inner .border_container').addClass('borderRightAni');
+							}
+						
+						break;
+						case 2:
+							var height = $('.personal_details .slide-inner').height();
+							$('.personal_details .slide-inner').height(height);
+							if(!$('.personal_details .slide-inner .border_container').hasClass('borderRightAni')){
+								$('.personal_details .slide-inner .border_container').addClass('borderRightAni');
+							}
+							
+						break;
+					}
+				}
+			},
+			onLeave: function(index, nextIndex, direction) {
+				$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
+			    if(nextIndex == 2 && $(window).width()>468){
+			    	if(!$('.rocket').hasClass('rocket_ani'))
+			    		$('.rocket').addClass('rocket_ani');
+			    }else{
+			    	$('.rocket').hide();
+			    }
+			},
+			verticalCentered : true,
+			resize : false,
+			fitToSectionDelay:500,
+			fixedElements:'.backToTop,header,.scrollDown',
+			loopBottom:false,
+			loopTop:false,
+			loopHorizontal:false,
+			recordHistory:false,
+			controlArrows:false,
+			responsiveWidth:480
+
+		}); //end of the fullpageJS initial
+    // }//end of the width inner if
 	
     
 	//add and delete the member input field dynamically with the btn clicked
@@ -356,7 +358,7 @@ function initSlot(){
 				$('#sec_home').addClass('timeLineAni');
 			}
 			setTimeout(function(){
-				$.fn.fullpage.moveTo('competition');
+				$.fn.fullpage.moveTo('about');
 			}, 1000);
 	});
 }

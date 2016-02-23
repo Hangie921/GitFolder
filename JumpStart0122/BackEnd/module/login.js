@@ -5,13 +5,17 @@ var md5 = require('../module/md5'),
 
 
 
-function checkDetail(detail,detail_mongo){ //check empty in the page
-	if(detail.acc === detail_mongo.acc && detail.psw === detail_mongo.psw){
-		return true;	
-	}else{
-		return false;
-	}
-	
+function checkDetail(detail,cursor){ //check empty in the page
+	var result = cursor.limit(1).forEach(function(doc){
+		if(detail.acc === doc.acc && detail.psw === doc.psw){
+			return true;	
+		}else{
+			return false;
+		}	
+	});
+	setTimeout(function(result){
+		return result;
+	}, 1000);
 }
 
 

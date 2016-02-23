@@ -49,9 +49,13 @@ $(document).ready(function() {
 					break;
 				case 4:
 					$('#header').addClass('orange');
-					if(!$('.jumpnow-des .border_container').hasClass('borderRightAni')){
-						$('.jumpnow-des .border_container').addClass('borderRightAni');
+					if(!$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').hasClass('borderRightAni')){
+						$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').addClass('borderRightAni');
 					}
+					if(!$('#border_btn').hasClass('borderRightAni')){
+						$('#border_btn').addClass('borderRightAni');
+					}
+
 					break;
 				case 5:
 					$('#header').addClass('fff');
@@ -105,7 +109,7 @@ $(document).ready(function() {
 						if(!$('.team_details .slide-inner .border_container').hasClass('borderRightAni')){
 							$('.team_details .slide-inner .border_container').addClass('borderRightAni');
 						}
-						
+					
 					break;
 					case 2:
 						var height = $('.personal_details .slide-inner').height();

@@ -286,7 +286,6 @@ html
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
 						.slide-inner.zindex.clearfix
-
 							.col-md-5.jumpnow-des
 								.border_container
 									.border.top
@@ -302,7 +301,8 @@ html
 										li 填寫  計畫書及報名資料
 										li 送出  JumpStart計畫！
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
-								
+								.border_container#border_btn
+									.border.horizon_line
 								a.bizplan_download.btn.btn-4.btn-4a.orange
 									|下載 商業計劃書範本 <br/>
 								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
@@ -318,6 +318,7 @@ html
 								.border.bottom
 								.border.left
 								.border.horizon_line
+								.border.horizon_line_left#jumpnow_team_details
 								a.slide_next.arrow.slide_team_details_arrow(href="#jumpnow/2") next
 								a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow") prev
 								

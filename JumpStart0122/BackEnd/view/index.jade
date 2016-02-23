@@ -5,9 +5,7 @@ body
 	h1 BackEnd index
 	
 	h2 hello
-	
-
-	table
+	table(border='1')
 		tr
 			th 隊伍名稱
 			th 產品介紹
@@ -16,7 +14,24 @@ body
 			th 聯絡人電話
 			th 聯絡人email
 			th 計畫連結
-		tr
-			th= results
+			th 註冊時間
+		each result in results
+			tr
+				td #{result.team_info.team_name}
+				td #{result.team_info.product_brief}
+				td 
+					ul
+						li #{result.team_info.member_brief.member_0}
+						li #{result.team_info.member_brief.member_1}
+						li #{result.team_info.member_brief.member_2}
+				td #{result.team_info.contact.name}
+				td #{result.team_info.contact.phone}
+				td #{result.team_info.contact.email}
+				td test
+				td #{result.reg_time}
+
+	h3 
+		a(href='/logout') logout
+
 
 

@@ -44,9 +44,13 @@ $(document).ready(function() {
 						break;
 					case 3:
 						$('#header').addClass('fff');
-						$('#competition_topic_slide').addClass('timeLineAni');
 						var height = $('#competition_topic_slide .slide-inner').height();
 							$('#competition_topic_slide .border_container').height(height);
+
+						if(!$('#competition_topic_slide').hasClass('timeLineAni')){ //border animation
+							$('#competition_topic_slide').addClass('timeLineAni');
+						}
+							
 						if(!$('#competition_topic_slide .border_container').hasClass('borderRightAni')){ //border animation
 							$('#competition_topic_slide .border_container').addClass('borderRightAni');
 						}
@@ -55,6 +59,9 @@ $(document).ready(function() {
 						$('#header').addClass('orange');
 						if(!$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').hasClass('borderRightAni')){
 							$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').addClass('borderRightAni');
+						}
+						if(!$('#sec_jumpnow').hasClass('timeLineAni')){
+							$('#sec_jumpnow').addClass('timeLineAni');
 						}
 						if(!$('#border_btn').hasClass('borderRightAni')){
 							$('#border_btn').addClass('borderRightAni');

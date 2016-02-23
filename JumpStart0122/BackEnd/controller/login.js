@@ -17,8 +17,8 @@ function route(app, mongoClient){
 						skip: 0,
 						limit: 0
 					};
-				mongo_handler.handle(mongoClient,'find',null,'member',req.body,condition,function(err,status,cursor){
-					if(login.check(req.body,cursor)==false){
+				mongo_handler.handle(mongoClient,'find',null,'member',req.body,condition,function(err,status,result){
+					if(login.check(req.body,result)==false){
 						res.send('error,please enter the correct account and passwords.');
 					}else{
 						console.log('psw checked');
@@ -30,18 +30,17 @@ function route(app, mongoClient){
 							skip:0,
 							limit:0
 						};
-						mongo_handler.handle(mongoClient,'find',null,'detail',query,condition,function(err,status,cursor){
+						mongo_handler.handle(mongoClient,'find',null,'detail',query,condition,function(err,status,result){
 							if(err){
 								console.log('error while loading the docs from detail collection');
 								console.log(err);
-							}else if(cursor === null){
+							}else if(status === false){
 								console.log('mongo return nothing');
 								res.send('mongo find nothing');
 							}else{
-								var docArray = cursor.toArray();
-								console.log(docArray);
+								console.log(result);
 								console.log("send the doc to jade");
-								res.render('index',{results:docArray});
+								res.render('index',{results:result});
 								res.end();
 							}
 

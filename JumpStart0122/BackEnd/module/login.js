@@ -5,17 +5,16 @@ var md5 = require('../module/md5'),
 
 
 
-function checkDetail(detail,cursor){ //check empty in the page
-	var result = cursor.limit(1).forEach(function(doc){
-		if(detail.acc === doc.acc && detail.psw === doc.psw){
+function checkDetail(detail,doc){ //check empty in the page
+	console.log(doc[2]);
+	for(var i=0;i<doc.length;i++){
+		console.log(doc[i]);
+	}
+		if(detail.acc === doc[0].acc && detail.psw === doc[0].psw){
 			return true;	
 		}else{
 			return false;
 		}	
-	});
-	setTimeout(function(result){
-		return result;
-	}, 1000);
 }
 
 

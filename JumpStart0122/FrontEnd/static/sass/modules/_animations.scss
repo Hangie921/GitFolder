@@ -11,7 +11,7 @@
 // section about animation
 #sec_about p{
 	opacity:0;
-	transition: opacity 3s 1s;
+	transition: opacity 3s 1.5s;
 }
 #sec_about .straightAni p{
 	opacity:1;
@@ -115,6 +115,11 @@ div.timeLineAni:after{
 	100%{top:0;height: 100%;}
 }
 
+#sec_about.borderRightAni::after{
+	@include animation(lineDown 1.5s 0s 1 linear forwards);
+}
+
+
 $borderPos:99.5%;
 $borderBottom:50%;
 $borderBottomR:50%;
@@ -123,7 +128,7 @@ $borderWidth:1px;
 $maxWidth:1px;
 $speed:.3s;
 $horizonWidth:180px;
-$straightHeight:120px;
+$straightHeight:180px;
 
 .border_container{
 	height: 100%;
@@ -213,6 +218,16 @@ div.borderRightAni{
 			position: absolute;
 			z-index: -10;
 			@include animation(straightLineAni $speed 0s 1 linear forwards);
+		}
+		& .straight_line_down{
+			width: 1px;
+			height: 0;
+			background-color:$primary-color;
+			top:100%;
+			left:50%;
+			position: absolute;
+			z-index: -10;
+			@include animation(straightLineAni $speed $speed*4 1 linear forwards);
 		}
 		& .horizon_line{
 			height: 1px;

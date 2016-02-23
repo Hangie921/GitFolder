@@ -11,16 +11,21 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 	var status = null;
 
 	if(crud === "find"){
-		findDetail(mongoClient,collection,query,condition,function(err,cursor){
+		findDetail(mongoClient,collection,query,condition,function(err,docs){
 			if(err){
 				console.log('error while finding the details');
 				console.log(err);
 				staus = false
 				throw err;
 			}else{
-				console.log('found the detail cursor '+ cursor);
-				status = cursor===null?false:true;
-				result = cursor===null?'err_code':cursor;
+				console.log('found the detail '+ docs);
+				if(docs){
+					status = true;
+					result = docs;
+				}else{
+					status = false;
+					result = 'error';
+				}
 				callback(null,status,result);
 			}	
 		});
@@ -43,7 +48,8 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 
 
 
-function findDetail(mongoClient,collection,query,condition,callback){ //undone
+function findDetail(mongoClient,collection,query,condition,callback){ 
+// this function shall return an docArray
 	if(typeof condition !== Object){ //if there is no condition,give it a default
 		condition = {
 			projection: {"_id":0},
@@ -60,7 +66,10 @@ function findDetail(mongoClient,collection,query,condition,callback){ //undone
 		if(!err){
 			console.log("connect mongo successfully");
 			var cursor = db.collection(collection).find(query,condition.projection);
-			callback(null,cursor);
+			cursor.toArray(function(err,docs){
+				callback(null,docs);
+			});
+			
 		}else{
 			console.log('error while connecting to the mongo client');
 			console.log(err);

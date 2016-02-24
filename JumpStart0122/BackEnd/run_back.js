@@ -6,7 +6,8 @@ var instance = require('../SDK/instance'),
 	login = require('../BackEnd/controller/login'),
 	logout = require('../BackEnd/controller/logout'),
 	config = require('../BackEnd/config/back_server_init.json'),
-	mongo_handler = ('../SDK/mongo_handler.js');
+	mongo_handler = require('../SDK/mongo_handler'),
+	encrypt = require('../BackEnd/module/encrypt');
 
 
 
@@ -16,7 +17,17 @@ var app = instance.startApp(config.server.port,config.server.view_engine,path.di
 
 
 	//start to insert the default account in mongo
+	var query = {"acc":config.backend_default_account.acc,"psw":encrypt.md5(config.backend_default_account.psw)};
 
+	// mongo_handler.handle(mongoClient,'upsert',null,'member',query,null,function(err,status){
+	// 	if(err){
+	// 		console.log('err while upserting the default account to db');
+	// 		console.log(err);
+	// 	}else{
+	// 		console.log(status);
+	// 		console.log("U have the default account 'admin' in your 'member' collection");
+	// 	}
+	// });
 
 index.route(app,mongoClient);
 login.route(app,mongoClient);

@@ -1,10 +1,10 @@
 // this is the js that contain and execute the all Front-End related js
-var width ;
-
+var ww;
+var wh;
 
 function resize(){
-	width = $(window).innerWidth;
-	height = $(window).innerHeight;
+	ww = window.innerWidth;
+	wh = window.innerHeight;
 	$.fn.fullpage.reBuild();
 }
 
@@ -14,7 +14,9 @@ $(window).resize(function(){
 });
 
 $(document).ready(function() {
-	
+	ww = window.innerWidth;
+	wh = window.innerHeight;
+
 	initSlot();	//initial the slot machine first so that fullpage can load the
 	
 	//initail the .team_details height so it won't move after loading
@@ -200,18 +202,34 @@ $(document).ready(function() {
 
 	//the contact form ani,to show or hide the contact form
 	var down = true;
-	$('.contact_header').click(function(){
-		if(down){
-			$(this).parent().animate({'bottom':'0px'},1000);
-			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
-			down = false;
-		}else{
-			$(this).parent().animate({'bottom':'-380px'},1000);
-			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
-			down = true;
-		}
+	if(ww>990){
+		$('.contact_container').css('top','80%');
+		$('.contact_header').click(function(){
+			if(down){
+				$(this).parent().animate({'top':'25%'},1000);
+				$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
+				down = false;
+			}else{
+				$(this).parent().animate({'top':'80%'},1000);
+				$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
+				down = true;
+			}
+		});
+	}else if(ww <= 990 && ww > 768){
 
-	});
+		$('.contact_header').click(function(){
+			if(down){
+				$(this).parent().animate({'bottom':'0px'},1000);
+				$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
+				down = false;
+			}else{
+				$(this).parent().animate({'bottom':'-380px'},1000);
+				$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
+				down = true;
+			}
+		});
+	}
+	
 	
 	$('#reg_form').submit(function() {
 		var btn = $('button.submit_btn');
@@ -305,6 +323,9 @@ $(document).ready(function() {
 	});
 
 });//end of the document.ready
+
+//===================================================================
+
 
 function btn_error(btn){
 	var color = btn.css('color');

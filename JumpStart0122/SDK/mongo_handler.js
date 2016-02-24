@@ -35,10 +35,16 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 		callback(null,status,result);
 		
 	}else if(crud === "update"){
-		update(req,res);
-		// console.log("update success");
-		//change the rusult
-	}else if(crud === "deleteInfo"){
+		updateCollection(mongoClient,collection,query,doc,false,function(status){
+			callback(null,status)
+		});
+		
+	}else if(crud == "upsert"){
+		updateCollection(mongoClient,collection,query,doc,true,function(status){
+			callback(null,status)
+		});
+	}
+	else if(crud === "deleteInfo"){
 		deleteInfo();
 		// console.log("delete success");
 		//change the rusult
@@ -46,6 +52,33 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 	
 }
 
+function updateCollection(mongoClient,collection,query,newDoc,upsert,callback){
+	console.log(query);
+	console.log(newDoc);
+	console.log(upsert);
+
+	mongoClient.connect(mongoClient.url,function(err,db){
+		if(err){
+			console.log('Unexpected error happened,please retry it later.');
+			log.error("Unexpected error below while connecting to DB");
+			log.error(err);
+			return;
+		}else{
+			console.log('Connect to mongo successfully');
+			db.collection(collection).update(query,newDoc,{"upsert":upsert},function(err,status){
+				if(err){
+					console.log('err while upserting the db');
+					throw err;
+				}else{
+					console.log(status);
+					callback(null,status);
+					db.close();
+				}
+			});
+		}
+	});
+
+}
 
 
 function findDetail(mongoClient,collection,query,condition,callback){ 

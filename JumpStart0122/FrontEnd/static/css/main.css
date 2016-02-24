@@ -1755,7 +1755,7 @@ div.contact_container {
   position: absolute;
   padding: 30px;
   left: 0;
-  bottom: -380px;
+  top: 80%;
 }
 /* line 987, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {

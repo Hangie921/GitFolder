@@ -1769,23 +1769,24 @@ div.contact_container h2 {
   border: 1px solid white;
   width: 300px;
   padding: 10px;
+  font-size: 27px;
   margin: 0 auto;
   display: block;
 }
-/* line 1001, ../sass/modules/_sections.scss */
+/* line 1002, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 1003, ../sass/modules/_sections.scss */
+/* line 1004, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-/* line 1007, ../sass/modules/_sections.scss */
+/* line 1008, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 1014, ../sass/modules/_sections.scss */
+/* line 1015, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1797,11 +1798,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 1025, ../sass/modules/_sections.scss */
+/* line 1026, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 1030, ../sass/modules/_sections.scss */
+/* line 1031, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1813,40 +1814,40 @@ div.contact_container input[type="submit"] {
   margin-top: 15px;
 }
 
-/* line 1042, ../sass/modules/_sections.scss */
+/* line 1045, ../sass/modules/_sections.scss */
 .contact-details {
   font-family: "raleway", "文鼎黑體";
   text-align: left;
   color: #fff;
 }
-/* line 1047, ../sass/modules/_sections.scss */
+/* line 1050, ../sass/modules/_sections.scss */
 .contact-details h3 {
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 1054, ../sass/modules/_sections.scss */
+/* line 1057, ../sass/modules/_sections.scss */
 .contact-details ul {
   padding: 0;
 }
-/* line 1057, ../sass/modules/_sections.scss */
+/* line 1060, ../sass/modules/_sections.scss */
 .contact-details ul li {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
-/* line 1061, ../sass/modules/_sections.scss */
+/* line 1064, ../sass/modules/_sections.scss */
 .contact-details ul li h4 {
   font-weight: bold;
   color: #f16b29;
 }
-/* line 1066, ../sass/modules/_sections.scss */
+/* line 1069, ../sass/modules/_sections.scss */
 .contact-details ul li i {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 1075, ../sass/modules/_sections.scss */
+/* line 1078, ../sass/modules/_sections.scss */
 button.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
@@ -3097,14 +3098,26 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
 /******************MOBILE************************/
 @media screen and (max-width: 480px) {
   /* line 8, ../sass/modules/_responsive.scss */
+  body {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: initial;
+  }
+
+  /* line 15, ../sass/modules/_responsive.scss */
+  .no-pad-m {
+    padding: 0 !important;
+  }
+
+  /* line 19, ../sass/modules/_responsive.scss */
   .section {
     height: auto !important;
     padding-bottom: 30px !important;
   }
 
   /*****MOBILE MENU************/
-  /* line 13, ../sass/modules/_responsive.scss */
-  .menu-mobile, .menu-bg, .menu-burger {
+  /* line 24, ../sass/modules/_responsive.scss */
+  .menu-mobile, .menu-burger {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -3112,27 +3125,10 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     text-align: center;
     border-radius: 100%;
     right: 25px;
-    top: 25px;
+    top: 12px;
   }
 
-  /* line 23, ../sass/modules/_responsive.scss */
-  .menu-bg {
-    background: #663399;
-    pointer-events: none;
-    transition: .3s;
-    right: 50px;
-    top: 50px;
-    transform: translate3d(50%, -50%, 0);
-    transform-origin: center center;
-  }
-  /* line 32, ../sass/modules/_responsive.scss */
-  .menu-bg.fs {
-    transform: translate3d(50%, -50%, 0);
-    width: 300vw;
-    height: 300vw;
-  }
-
-  /* line 38, ../sass/modules/_responsive.scss */
+  /* line 37, ../sass/modules/_responsive.scss */
   .menu-burger {
     color: white;
     padding-top: 11px;
@@ -3141,12 +3137,8 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     transition: .4s;
     transform-origin: center;
   }
-  /* line 46, ../sass/modules/_responsive.scss */
-  .menu-burger.fs {
-    transform: rotate(-180deg) translateY(10px);
-  }
 
-  /* line 50, ../sass/modules/_responsive.scss */
+  /* line 48, ../sass/modules/_responsive.scss */
   .menu-items-mobile {
     font-weight: bold;
     font-size: 40px;
@@ -3156,97 +3148,133 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     opacity: 0;
     transition: .4s;
     margin-top: 100px;
-    transform: translateY(-200%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
     pointer-events: none;
   }
-  /* line 62, ../sass/modules/_responsive.scss */
-  .menu-items-mobile div {
+  /* line 64, ../sass/modules/_responsive.scss */
+  .menu-items-mobile li {
+    text-align: center;
     transition: 1s;
     opacity: 0;
     margin-top: 0px;
+    padding-top: 10%;
+    display: block;
+    width: 100%;
   }
-  /* line 67, ../sass/modules/_responsive.scss */
+  /* line 73, ../sass/modules/_responsive.scss */
+  .menu-items-mobile li a {
+    font-size: 30px !important;
+    font-weight: bold !important;
+  }
+  /* line 78, ../sass/modules/_responsive.scss */
   .menu-items-mobile.fs {
-    transform: translateY(0);
     pointer-events: auto;
     opacity: 1;
-    background: #f16b29;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
+    background: #0e324b;
+    width: 100%;
+    margin-top: 0;
+    left: 0px;
+    top: 50px;
+    position: fixed;
   }
-  /* line 77, ../sass/modules/_responsive.scss */
-  .menu-items-mobile.fs div {
+  /* line 90, ../sass/modules/_responsive.scss */
+  .menu-items-mobile.fs li {
     opacity: 1;
-    margin-top: 75px;
   }
 
-  /* line 84, ../sass/modules/_responsive.scss */
-  header#header {
-    padding: 0 3% !important;
-    margin: 0 auto;
+  /* line 97, ../sass/modules/_responsive.scss */
+  ul.menu {
+    min-width: initial;
+    float: none;
   }
-  /* line 88, ../sass/modules/_responsive.scss */
+  /* line 100, ../sass/modules/_responsive.scss */
+  ul.menu li {
+    padding: 14% 0 0 0;
+    text-align: center;
+    margin: 0 !important;
+  }
+
+  /* line 108, ../sass/modules/_responsive.scss */
+  .jumpnow_link a {
+    padding: 15px !important;
+  }
+
+  /* line 113, ../sass/modules/_responsive.scss */
+  .menu-items-mobile li {
+    width: 100%;
+    display: block;
+    padding-left: 30px;
+    text-align: center;
+  }
+  /* line 120, ../sass/modules/_responsive.scss */
+  .menu-items-mobile li a {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 127, ../sass/modules/_responsive.scss */
+  header#header {
+    background: #0e324b;
+    height: 50px;
+    padding: 10px 10%;
+    margin: 0;
+  }
+  /* line 134, ../sass/modules/_responsive.scss */
   header#header a.navbar-brand {
     font-size: 28px;
     width: initial;
     height: initial;
-    margin: 10px 0;
-  }
-  /* line 94, ../sass/modules/_responsive.scss */
-  header#header .main-menu {
-    position: initial;
-    clear: both;
-  }
-  /* line 98, ../sass/modules/_responsive.scss */
-  header#header .main-menu li {
-    margin: 0;
-    text-align: left;
-  }
-  /* line 102, ../sass/modules/_responsive.scss */
-  header#header .main-menu li a {
-    padding: 0 12% 0 0;
-    margin: 0;
+    margin: 15px 0;
   }
 
-  /* line 111, ../sass/modules/_responsive.scss */
+  /* line 144, ../sass/modules/_responsive.scss */
   div.section-padding {
     padding: 1%;
   }
 
-  /* line 114, ../sass/modules/_responsive.scss */
+  /* line 147, ../sass/modules/_responsive.scss */
   #sec_about .border_container {
     padding: 3%;
   }
 
-  /* line 118, ../sass/modules/_responsive.scss */
+  /* line 151, ../sass/modules/_responsive.scss */
   a.btn {
     width: 100%;
   }
 
-  /* line 121, ../sass/modules/_responsive.scss */
+  /* line 154, ../sass/modules/_responsive.scss */
   a.bizplan_download {
     margin: 0 0 15px 0 !important;
   }
 
-  /* line 128, ../sass/modules/_responsive.scss */
+  /* line 161, ../sass/modules/_responsive.scss */
+  .sloganContainer {
+    min-height: 600px;
+    height: initial;
+  }
+
+  /* line 167, ../sass/modules/_responsive.scss */
   .fp-slidesContainer {
     margin-top: 14%;
   }
 
-  /* line 131, ../sass/modules/_responsive.scss */
+  /* line 170, ../sass/modules/_responsive.scss */
   .slide-inner {
     width: 97%;
   }
 
-  /* line 137, ../sass/modules/_responsive.scss */
+  /* line 176, ../sass/modules/_responsive.scss */
   .competition-headings li {
     vertical-align: middle;
     width: 25%;
   }
-  /* line 141, ../sass/modules/_responsive.scss */
+  /* line 180, ../sass/modules/_responsive.scss */
   .competition-headings li a {
     text-align: center;
     padding: 10px;
@@ -3254,30 +3282,30 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     line-height: 20px;
   }
 
-  /* line 149, ../sass/modules/_responsive.scss */
+  /* line 188, ../sass/modules/_responsive.scss */
   .info_list ul li {
     width: 100%;
     float: left;
     margin-bottom: 10px;
   }
-  /* line 153, ../sass/modules/_responsive.scss */
+  /* line 192, ../sass/modules/_responsive.scss */
   .info_list ul li .fa {
     height: 10%;
   }
 
-  /* line 159, ../sass/modules/_responsive.scss */
+  /* line 198, ../sass/modules/_responsive.scss */
   div.timeline ul li {
     width: 100%;
     padding: 20px;
   }
-  /* line 163, ../sass/modules/_responsive.scss */
+  /* line 202, ../sass/modules/_responsive.scss */
   div.timeline ul li:before {
     border-width: 19px 50px 0px 45px;
     border-color: #f16b29 transparent;
     right: 37%;
     top: 90px;
   }
-  /* line 170, ../sass/modules/_responsive.scss */
+  /* line 209, ../sass/modules/_responsive.scss */
   div.timeline ul li:after {
     border-width: 19px 49px 0px 44px;
     border-color: #e8e8e8 transparent;
@@ -3285,15 +3313,15 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     top: 89px;
   }
 
-  /* line 184, ../sass/modules/_responsive.scss */
+  /* line 223, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 180px;
   }
-  /* line 187, ../sass/modules/_responsive.scss */
+  /* line 226, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single h4 {
     margin-top: 20px;
   }
-  /* line 191, ../sass/modules/_responsive.scss */
+  /* line 230, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3301,12 +3329,12 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-  /* line 193, ../sass/modules/_responsive.scss */
+  /* line 232, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-  /* line 198, ../sass/modules/_responsive.scss */
+  /* line 237, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3315,7 +3343,7 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     background-size: 50% auto;
     color: #0e324b;
   }
-  /* line 203, ../sass/modules/_responsive.scss */
+  /* line 242, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3324,27 +3352,91 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     background-size: 50% auto;
   }
 
-  /* line 217, ../sass/modules/_responsive.scss */
+  /* line 256, ../sass/modules/_responsive.scss */
   div.competition_topic h4 {
     text-align: left;
   }
 
   /***Mobile Height control***/
-  /* line 223, ../sass/modules/_responsive.scss */
+  /* line 262, ../sass/modules/_responsive.scss */
   .fp-slides, .fp-slidesContainer, .border_container {
     height: auto !important;
   }
 
   /****COMPETITION*********/
-  /* line 230, ../sass/modules/_responsive.scss */
+  /* line 269, ../sass/modules/_responsive.scss */
   div.competition_topic .btn {
     margin-top: 30px;
     position: initial;
   }
 
-  /* line 234, ../sass/modules/_responsive.scss */
+  /* line 273, ../sass/modules/_responsive.scss */
   div.timeline {
     position: initial;
     margin: 0;
+  }
+
+  /**SPONSORSS*****/
+  /* line 279, ../sass/modules/_responsive.scss */
+  div.sponsor-group li span {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -12vw;
+    width: 100vw;
+  }
+
+  /*Jumpnow*****/
+  /* line 289, ../sass/modules/_responsive.scss */
+  div.nav_group {
+    right: 26%;
+  }
+
+  /* line 293, ../sass/modules/_responsive.scss */
+  .team_details .slider-inner {
+    padding-bottom: 30px;
+  }
+
+  /* line 298, ../sass/modules/_responsive.scss */
+  .slide.team_details .team_detail_single, div.slide.personal_details .team_detail_single {
+    border: 1px solid #f16b29;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  /* line 304, ../sass/modules/_responsive.scss */
+  .slide.team_details span.team_member, div.slide.personal_details span.team_member {
+    width: 100% !important;
+  }
+  /* line 308, ../sass/modules/_responsive.scss */
+  .slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
+    width: 100% !important;
+  }
+
+  /* line 317, ../sass/modules/_responsive.scss */
+  div.slide.team_details span.input {
+    width: 100%;
+  }
+  /* line 321, ../sass/modules/_responsive.scss */
+  div.slide.team_details button#del_member {
+    position: absolute !important;
+    background: #0e324b;
+    right: -15px;
+    top: -3px;
+  }
+  /* line 328, ../sass/modules/_responsive.scss */
+  div.slide.team_details #add_member {
+    margin: 0;
+  }
+
+  /* line 333, ../sass/modules/_responsive.scss */
+  #reg_btn {
+    margin: 30px auto 0;
+    position: initial;
+  }
+
+  /***CONTACT******/
+  /* line 344, ../sass/modules/_responsive.scss */
+  div.contact_container span.input {
+    width: 100%;
   }
 }

@@ -4,6 +4,17 @@
 /******************MOBILE************************/
 
 @media screen and (max-width: 480px) {
+	
+	body {
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: initial;
+	}
+	
+
+	.no-pad-m  {
+		padding:0 !important;
+	}
 
 	.section {
 		height:auto !important;
@@ -18,22 +29,10 @@
   text-align:center;
   border-radius: 100%;
   right:25px;
-  top:25px;
+  top:12px;
 }
 .menu-bg {
-  @extend .menu-mobile;
-  background: #663399;
-  pointer-events: none;
-  transition: .3s; 
-  right:50px;
-  top:50px;
-  transform:translate3d(50%,-50%,0); 
-  transform-origin: center center;
-  &.fs{
-    transform:translate3d(50%,-50%,0);  
-    width:300vw; 
-    height:300vw;
-  }
+ 
 }
 .menu-burger {
   @extend .menu-mobile;
@@ -44,8 +43,7 @@
   transition: .4s;
   transform-origin: center;
   &.fs {
-    transform: rotate(-180deg) translateY(10px);
-  }
+   }
 }
 .menu-items-mobile{
   
@@ -57,54 +55,89 @@
   opacity:0;
   transition: .4s;
   margin-top:100px;
-  transform: translateY(-200%);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:50px;
+  left:0;
   pointer-events:none;
-  div {
+  li {
+  	text-align: center;
     transition: 1s;
     opacity: 0;
     margin-top: 0px;
+    padding-top: 10%;
+    display: block;
+    width: 100%;
+
+    a {
+    	font-size:30px !important;
+    	font-weight:bold !important;
+    }
   }
   &.fs {
-    transform: translateY(0);
     pointer-events:auto;
     opacity: 1;
-    background:$primary-color;
+ 
   width:100%;
   height:100%;
-  left:0;
-  top:0;
-  position:absolute;
-    div{
+      background: $navy;
+    width: 100%;
+    margin-top:0;
+    left: 0px;
+    top: 50px;
+  position:fixed;
+    li{
       opacity: 1;
-      margin-top: 75px;
+    
     }
   }
 }
+
+ul.menu {
+	min-width: initial;
+    float: none;
+	li {
+		padding:14% 0 0 0;
+	text-align:center;
+	margin:0 !important;
+	}
+}
+
+
+.jumpnow_link a {
+	padding:15px !important;
+}
+.menu-items-mobile {
+
+	li {
+		width:100%;
+		display:block;
+		padding-left:30px;
+		text-align: center;
+
+
+		a {
+			padding:0;
+			margin:0;
+		}
+	}
+}
 	
 	header#header {
-		padding:0 3% !important;
-		margin:0 auto;
+		background:$navy ;
+		height:50px;
+		padding:10px 10% ;
+		margin:0;
+	
 	
 	a.navbar-brand {
 		font-size:28px ;
 		width:initial;
 		height:initial;
-		margin:10px 0;
+		margin:15px 0;
 		}
-		.main-menu {
-			position: initial;
-			clear:both;
-
-			li {
-				margin:0;
-				text-align: left;
-
-				a {
-					padding:0 12% 0 0;
-					margin:0;
-				}
-			}
-		}
+		
 	}
 
 
@@ -124,6 +157,12 @@
 	}
 	
 
+
+.sloganContainer {
+
+    min-height: 600px;
+    height: initial;
+}
 
 .fp-slidesContainer {
     margin-top: 14%;
@@ -235,7 +274,81 @@ div.timeline {
    position:initial;
    margin:0;
 }
-																
+
+/**SPONSORSS*****/
+div.sponsor-group li span {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -12vw;
+    width: 100vw;
+}
+
+/*Jumpnow*****/
+
+div.nav_group {
+	right: 26%;
+}
+
+.team_details .slider-inner {
+	 padding-bottom:$mob-sec-pad;
+}
+
+.slide.team_details, div.slide.personal_details{
+	.team_detail_single {
+		border:1px solid $primary-color;
+		margin-bottom:10px;
+		padding:10px;
+	}
+
+	span.team_member {
+	width:100% !important;
+
+	}
+	span.responsibility {
+	width:100% !important;
+
+	}
+
+}
+
+div.slide.team_details{
+
+	span.input {
+		width:100%;
+	}
+
+	button#del_member {
+ 
+	    position: absolute !important;
+	    background:$navy;
+	    right: -15px;
+	    top: -3px;
+	}
+	#add_member {
+    margin:0;
+	}
+}
+
+#reg_btn {
+	margin:$mob-sec-pad auto 0;
+	position:initial;
+
+}
+
+
+/***CONTACT******/
+
+div.contact_container {
+	
+	span.input {
+		width:100%;
+	}
+}
+
+
+						
+
 
 
 

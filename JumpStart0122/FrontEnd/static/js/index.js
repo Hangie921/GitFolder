@@ -5,7 +5,6 @@ var wh;
 function resize(){
 	ww = window.innerWidth;
 	wh = window.innerHeight;
-	$.fn.fullpage.reBuild();
 }
 
 $(window).resize(function(){
@@ -13,12 +12,15 @@ $(window).resize(function(){
 	console.log('resize');
 });
 
+
 $(document).ready(function() {
 	ww = window.innerWidth;
 	wh = window.innerHeight;
 
 	initSlot();	//initial the slot machine first so that fullpage can load the
 	
+
+
 	//initail the .team_details height so it won't move after loading
 	
 
@@ -30,6 +32,7 @@ $(document).ready(function() {
 	    	],
 	    	scrollingSpeed:1000,
 			afterLoad: function(anchorLink, index) { 
+				removeHash();
 				$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
 				$('#header').css({'opacity':'1'});
 				 switch(index){ //this is the function that chnages the bgcolor and color of the #header
@@ -83,6 +86,7 @@ $(document).ready(function() {
 				}
 			},
 			afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+				removeHash();
 				if(anchorLink == 'competition'){	
 					$('#competition_menu li a').removeClass('selected');
 					switch(slideIndex){
@@ -157,6 +161,7 @@ $(document).ready(function() {
 
 
 		}); //end of the fullpageJS initial
+		$.fn.fullpage.setLockAnchors(false);
 
 		//menu hamburger
  
@@ -397,6 +402,10 @@ function submit_to_db(btn,form){
         //Very important line, it disable the page refresh.
 }
 
+
+function removeHash(){
+	// location.hash='';
+}
 
 //The slot Machine animation initializing
 function initSlot(){

@@ -14,8 +14,9 @@
 		"user_name": "",
 		"user_password": ""
 	},
-	"backend_account":{
-		
+	"backend_default_account":{
+		"acc":"admin",
+		"psw":"passw0rd"
 	}
 
 }

@@ -2859,31 +2859,33 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 /* line 316, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni {
   position: relative;
+  z-index: -5;
+  left: -25.3%;
 }
-/* line 318, ../sass/modules/_animations.scss */
+/* line 320, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .horizon_line {
   background-color: #f16b29;
   z-index: 1;
   height: 1px;
   width: 0;
   position: absolute;
-  left: 288px;
+  left: 0px;
   top: 180px;
-  -moz-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
-  -webkit-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
-  -ms-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
-  -o-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
-  animation: horiLineAni 0.3s 1.5s 1 linear forwards;
+  -moz-animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
+  -webkit-animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
+  -ms-animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
+  -o-animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
+  animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
 }
 
 @keyframes leftLineForTeamDetail {
-  /* line 330, ../sass/modules/_animations.scss */
+  /* line 332, ../sass/modules/_animations.scss */
   0% {
     left: -40px;
     width: 0;
   }
 
-  /* line 331, ../sass/modules/_animations.scss */
+  /* line 333, ../sass/modules/_animations.scss */
   100% {
     left: -40px;
     width: 40px;
@@ -2891,38 +2893,50 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes horiLineAni {
-  /* line 334, ../sass/modules/_animations.scss */
+  /* line 336, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 335, ../sass/modules/_animations.scss */
+  /* line 337, ../sass/modules/_animations.scss */
   100% {
     width: 120px;
   }
 }
 
+@keyframes horiLineBtn {
+  /* line 340, ../sass/modules/_animations.scss */
+  0% {
+    width: 0px;
+  }
+
+  /* line 341, ../sass/modules/_animations.scss */
+  100% {
+    width: 900px;
+  }
+}
+
 @keyframes straightLineAni {
-  /* line 338, ../sass/modules/_animations.scss */
+  /* line 344, ../sass/modules/_animations.scss */
   0% {
     height: 0px;
   }
 
-  /* line 339, ../sass/modules/_animations.scss */
+  /* line 345, ../sass/modules/_animations.scss */
   100% {
     height: 180px;
   }
 }
 
 @keyframes borderLeftAni {
-  /* line 343, ../sass/modules/_animations.scss */
+  /* line 349, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
-  /* line 344, ../sass/modules/_animations.scss */
+  /* line 350, ../sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 99.5%;
@@ -2931,26 +2945,26 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes borderTopBottomAni {
-  /* line 348, ../sass/modules/_animations.scss */
+  /* line 354, ../sass/modules/_animations.scss */
   0% {
     width: 0;
   }
 
-  /* line 349, ../sass/modules/_animations.scss */
+  /* line 355, ../sass/modules/_animations.scss */
   100% {
     width: 99.5%;
   }
 }
 
 @keyframes borderR_top {
-  /* line 353, ../sass/modules/_animations.scss */
+  /* line 359, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
-  /* line 354, ../sass/modules/_animations.scss */
+  /* line 360, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 0;
@@ -2959,14 +2973,14 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes borderR_bottom {
-  /* line 358, ../sass/modules/_animations.scss */
+  /* line 364, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
-  /* line 359, ../sass/modules/_animations.scss */
+  /* line 365, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 50%;

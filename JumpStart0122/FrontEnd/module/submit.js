@@ -68,7 +68,7 @@ function to_object(req,res,callback){   //pack all the info of the form into a o
 	log.info("Start to input members to the member_brief field");
 
 	if(typeof req.body.member_brief_name === 'string'){
-		team_info.member_brief = {"name":req.body.member_brief_name,"info":req.body.member_brief_info };
+		team_info.member_brief["member_0"] = {"name":req.body.member_brief_name,"info":req.body.member_brief_info };
 	}else{
 		for(var i =0; i<req.body.member_brief_name.length;i++){
 			var name = "member_" + i;
@@ -81,8 +81,9 @@ function to_object(req,res,callback){   //pack all the info of the form into a o
 	team_info.contact.name = req.body.contact;
 	team_info.contact.email = req.body.email;
 	team_info.contact.phone = req.body.phone;
-	team_info.bp_file.file_name = req.file == true ? req.file.filename:null;
-	team_info.bp_file.file_path = req.file == true ? req.file.path:null;
+	console.log(req.file);
+	team_info.bp_file.file_name = req.file != undefined ? req.file.filename:null;
+	team_info.bp_file.file_path = req.file != undefined ? req.file.path:null;
 	return doc;//doc is already an object
 }
 

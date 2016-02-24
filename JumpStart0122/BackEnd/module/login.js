@@ -1,15 +1,13 @@
-var md5 = require('../module/md5'),
+var encrypt = require('../module/encrypt'),
 	multer = require('multer'),
 	form = multer();
 
 
 
 
-function checkDetail(detail,doc){ //check empty in the page
-	console.log(doc[2]);
-	for(var i=0;i<doc.length;i++){
-		console.log(doc[i]);
-	}
+function checkDetail(detail,doc){ /*check if empty in the page*/
+	console.log(encrypt.md5(detail.psw));
+
 		if(detail.acc === doc[0].acc && detail.psw === doc[0].psw){
 			return true;	
 		}else{

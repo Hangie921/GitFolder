@@ -5,7 +5,10 @@
 
 @media screen and (max-width: 480px) {
 
-
+	.section {
+		height:auto !important;
+		padding-bottom:30px !important;
+	}
 	/*****MOBILE MENU************/
 	.menu-mobile {
   position: fixed;
@@ -217,9 +220,21 @@
 	}
 
 	/***Mobile Height control***/
-	.fp-slides, .fp-slidesContainer {
+	.fp-slides, .fp-slidesContainer,.border_container  {
 		height: auto !important;
 	}
+
+
+
+/****COMPETITION*********/
+div.competition_topic .btn {
+	margin-top:30px;
+     position:initial;
+   }
+div.timeline {
+   position:initial;
+   margin:0;
+}
 																
 
 

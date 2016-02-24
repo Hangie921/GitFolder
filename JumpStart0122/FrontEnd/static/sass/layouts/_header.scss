@@ -37,20 +37,21 @@ div.main-menu {
 
 ul.menu {
 	margin:0;
-	float:right;
-	display:block;
 	padding:0;
+	min-width:600px;
+	float:right;
 	li{
 	float:left;
-    margin: 13px 0px;
+    margin: 13px 5%;
     text-transform: uppercase;
     text-align: right;
+    vertical-align: top;
+    background-color:transparent;
 	
 		a {
 			position: relative;
 			display: inline-block;
-			margin: 0 0 0 68px;
-
+			padding:0;
 			outline: none;
 			color: #fff;
 			text-decoration: none;
@@ -78,15 +79,20 @@ ul.menu {
 				transform: translateY(10px);
 			}
 
+			&:hover {
+				background:transparent !important;
+			}
+
 			&:hover::after,a:focus::after {
-				opacity: 1;
-				-webkit-transform: translateY(0px);
-				-moz-transform: translateY(0px);
-				transform: translateY(0px);
-				color:$white;
+				display: none;
+				
 			}
 			
+			&:active {
+				background-color:transparent !important;
+			}
 		}
+
 
 		& a:hover::after,& a:focus::after {
 				
@@ -97,27 +103,36 @@ ul.menu {
 				color:$white;
 			
 			}
+
+
 	}
 	
 }
 
-
+.jumpnow_link{
+	margin-top:5px !important;
+}
 .jumpnow_link a{
 		padding:0 10px;
 		display: block;
-		padding:0 10px;
+		padding:5px 10px !important;
 		border-radius: 20px;
 		border:1px solid $secondary-color;
     	font-weight: 600 !important;
+
     	color:$secondary-color !important;
 
     	&:hover {
     		background:$secondary-color;
     		color:white !important;
 
+
     		&:after {
-    			display: none;
+    			display: none !important;
     			
+    		}
+    		&:before {
+    			display:none !important;
     		}
     	}
 	}

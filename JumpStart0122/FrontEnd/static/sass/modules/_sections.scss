@@ -79,9 +79,11 @@ div#sec_home {
 
 		.slot {
 			color:$white;
-			font-size:39px;
+			font-size:35px;
+			letter-spacing: 2px;
 			height: 80px;
 			line-height:80px;
+			padding:0;
 		}
 
 
@@ -200,7 +202,7 @@ ul.plan_list {
 			text-align:center;
 			font-size:60%;
 			vertical-align: middle;
-			line-height: 25px;
+			line-height: 24px;
 			border-radius:50%;
 			content: counter(my-badass-counter);
 			counter-increment: my-badass-counter;
@@ -722,7 +724,13 @@ div.timeline {
 	 		color:$primary-color !important;
 	 		font-size:18px;
 	 		margin-top:20px;
-	 		text-align:center
+	 		text-align:center;
+
+	 		small {
+	 			line-height: 18px;
+	 			font-size:12px;
+	 			color:#999;
+	 		}
 	 	}
 
 	.prize-single {
@@ -780,26 +788,31 @@ div.timeline {
 	float:left;
 	position:relative;
 	margin-top:70px;
-	background-color:$navy;
-	border:1px solid $primary-color !important
-
-
-	;
+	background:$navy;
+	border:1px solid $primary-color !important;
 	@include orange-border;
 	min-width:240px;
 	font-size:18px;
 	height:50px;
 	cursor:pointer;
 	clear:both;
-	line-height:8px;
+	line-height:50px;
 	display:inline-block;
-	padding:20px 20px;
+	padding:0 20px;
 	width:auto;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+
+		:after {
+		content:"";
+		display: inline-block;
+		position:absolute;
+		width:20px;
+		height:20px;
+		}
 
 		&:hover {
 		color:#fff;
@@ -831,8 +844,8 @@ div.timeline {
 
 .jumpnow-des {
 	@include orange-border;
-	padding:20px;
 	background:$navy;
+	@include box-sizing(border-box);
 
 	h3 {
 		color:$primary-color;
@@ -859,6 +872,7 @@ div.timeline {
 		color:$primary-color;
 		font-weight: bold;
 		width:95%;
+		font-size:20px;
 		margin:0 auto;
 		display: block;
 		padding-bottom:10px;
@@ -1066,152 +1080,5 @@ button.contact_us_btn {
 	}
 
 
-/********************* TABLET******************/
 
-
-/******************MOBILE************************/
-
-@media screen and (max-width: 480px) {
-	
-	header#header {
-		padding:0 3% !important;
-		margin:0 auto;
-	
-	a.navbar-brand {
-		font-size:28px ;
-		width:initial;
-		height:initial;
-		margin:10px 0;
-		}
-		.main-menu {
-			position: initial;
-			clear:both;
-
-			li {
-				margin:0;
-				text-align: left;
-
-				a {
-					padding:0 12% 0 0;
-					margin:0;
-				}
-			}
-		}
-	}
-
-	div.section-padding{
-		padding:1%;
-	}
-	#sec_about .border_container {
-		padding:3%;
-	}
-
-	a.btn {
-		width:100%;
-	}
-	a.bizplan_download {
-		margin:0 0 15px 0 !important;
-	}
-	
-
-
-.fp-slidesContainer {
-    margin-top: 14%;
-}
-	.slide-inner {
-		width:97%;
-	}
-
-
-
-	.competition-headings li{
-			vertical-align: middle;
-			width: 25%;
-
-		    a {
-		    	text-align: center;
-		    	padding:10px;
-		    	letter-spacing: 4px;
-		    	line-height: 20px;
-		    }
-	}
-
-	.info_list ul li{
-		width:100%;
-		float:left;
-		margin-bottom:10px;
-		.fa {
-			height:10%;
-		}
-	}
-	div.timeline {
-		ul {
-			li {
-				width:100%;
-				padding:20px;
-
-				&:before {
-
-					    border-width: 19px 50px 0px 45px;
-					    border-color: #f16b29 transparent ;
-					    right: 37%;
-					    top:  90px;
-				} 
-				&:after {
-
-			        border-width: 19px 49px 0px 44px;
-				    border-color: #e8e8e8 transparent;
-				    right: 37.4%;
-				    top: 89px;
-
-
-				} 
-			}
-		}
-	}
-	#competition_prize_slide  {
-
-		.prize-single {
-
-			min-height: 180px;
-			h4 {
-				margin-top:20px;
-			}
-
-		&:first-of-type {
-		@include background-size(50% auto);
-			h4{
-				font-size:34px;
-				color:#2b4252;
-			}
-	 	}
-	 	&:nth-of-type(2) {
-		@include background-size(50% auto);
-			color:$navy;
-		
-	 	}
-	 	&:nth-of-type(3) {
-	
-		@include background-size(50% auto);
-		
-	 	
-
-			}
-
-
-
-		}
-
-	}
-	div.competition_topic  {
-		h4 {
-			text-align: left;
-		}
-	}
-																
-
-
-
-
-																}
 

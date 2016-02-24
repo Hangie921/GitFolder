@@ -2,6 +2,7 @@ body {
 	font-family:$base-font-family;
 	font-size:$base-font-size;
 	line-height:1.7em;
+	letter-spacing:1px;
 	color:$base-font-color;
 	
 
@@ -76,10 +77,14 @@ clear:both;
 
 
 .no-pad {
-	padding:0;
+	padding:0 !important;
 }
 
 .zindex {
 	z-index:3;
 	position:relative
+}
+
+.add-border-pad {
+	padding:20px;
 }

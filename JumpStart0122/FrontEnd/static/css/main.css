@@ -2472,31 +2472,31 @@ div.timeLineAni:after {
   animation: lineDown 1.5s 0s 1 linear forwards;
 }
 
-/* line 133, ../sass/modules/_animations.scss */
+/* line 134, ../sass/modules/_animations.scss */
 .border_container {
   height: 100%;
   position: relative;
 }
 
-/* line 137, ../sass/modules/_animations.scss */
+/* line 138, ../sass/modules/_animations.scss */
 .border {
   position: absolute;
 }
 
-/* line 141, ../sass/modules/_animations.scss */
+/* line 142, ../sass/modules/_animations.scss */
 div.straightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 147, ../sass/modules/_animations.scss */
+/* line 148, ../sass/modules/_animations.scss */
 div.straightAni .border {
   background-color: #f16b29;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 153, ../sass/modules/_animations.scss */
+/* line 154, ../sass/modules/_animations.scss */
 div.straightAni .border.top {
   width: 99.5%;
   height: 1px;
@@ -2507,12 +2507,12 @@ div.straightAni .border.top {
   -o-animation: borderTopAni 0.3s 0s 1 linear forwards;
   animation: borderTopAni 0.3s 0s 1 linear forwards;
 }
-/* line 159, ../sass/modules/_animations.scss */
+/* line 160, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom {
   height: 1px;
   top: 99.5%;
 }
-/* line 162, ../sass/modules/_animations.scss */
+/* line 163, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_right {
   width: 0%;
   left: 100%;
@@ -2522,7 +2522,7 @@ div.straightAni .border.bottom.b_right {
   -o-animation: borderB_right 0.3s 0.9s 1 linear forwards;
   animation: borderB_right 0.3s 0.9s 1 linear forwards;
 }
-/* line 167, ../sass/modules/_animations.scss */
+/* line 168, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_left {
   width: 0%;
   left: 0;
@@ -2532,7 +2532,7 @@ div.straightAni .border.bottom.b_left {
   -o-animation: borderB_left 0.3s 0.9s 1 linear forwards;
   animation: borderB_left 0.3s 0.9s 1 linear forwards;
 }
-/* line 174, ../sass/modules/_animations.scss */
+/* line 175, ../sass/modules/_animations.scss */
 div.straightAni .border.left, div.straightAni .border.right {
   width: 1px;
   max-width: 2px;
@@ -2543,19 +2543,19 @@ div.straightAni .border.left, div.straightAni .border.right {
   -o-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
   animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 181, ../sass/modules/_animations.scss */
+/* line 182, ../sass/modules/_animations.scss */
 div.straightAni .border.right {
   left: 99.5%;
 }
 
 @keyframes borderTopAni {
-  /* line 186, ../sass/modules/_animations.scss */
+  /* line 187, ../sass/modules/_animations.scss */
   0% {
     left: 50%;
     width: 0;
   }
 
-  /* line 187, ../sass/modules/_animations.scss */
+  /* line 188, ../sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 99.5%;
@@ -2563,25 +2563,25 @@ div.straightAni .border.right {
 }
 
 @keyframes borderSidesAni {
-  /* line 191, ../sass/modules/_animations.scss */
+  /* line 192, ../sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 192, ../sass/modules/_animations.scss */
+  /* line 193, ../sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
 @keyframes borderB_left {
-  /* line 196, ../sass/modules/_animations.scss */
+  /* line 197, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 0;
   }
 
-  /* line 197, ../sass/modules/_animations.scss */
+  /* line 198, ../sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 0;
@@ -2589,30 +2589,30 @@ div.straightAni .border.right {
 }
 
 @keyframes borderB_right {
-  /* line 201, ../sass/modules/_animations.scss */
+  /* line 202, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 100%;
   }
 
-  /* line 202, ../sass/modules/_animations.scss */
+  /* line 203, ../sass/modules/_animations.scss */
   100% {
     width: 50%;
     left: 49.5%;
   }
 }
 
-/* line 205, ../sass/modules/_animations.scss */
+/* line 206, ../sass/modules/_animations.scss */
 div.borderRightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 210, ../sass/modules/_animations.scss */
+/* line 211, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container {
   height: 100%;
 }
-/* line 212, ../sass/modules/_animations.scss */
+/* line 213, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .straight_line {
   width: 1px;
   height: 0px;
@@ -2627,7 +2627,7 @@ div.borderRightAni.border_container .straight_line {
   -o-animation: straightLineAni 0.3s 0s 1 linear forwards;
   animation: straightLineAni 0.3s 0s 1 linear forwards;
 }
-/* line 222, ../sass/modules/_animations.scss */
+/* line 223, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .straight_line_down {
   width: 1px;
   height: 0;
@@ -2642,7 +2642,7 @@ div.borderRightAni.border_container .straight_line_down {
   -o-animation: straightLineAni 0.3s 1.2s 1 linear forwards;
   animation: straightLineAni 0.3s 1.2s 1 linear forwards;
 }
-/* line 232, ../sass/modules/_animations.scss */
+/* line 233, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .horizon_line {
   height: 1px;
   width: 0px;
@@ -2658,7 +2658,7 @@ div.borderRightAni.border_container .horizon_line {
   -o-animation: horiLineAni 0.3s 1.2s 1 linear forwards;
   animation: horiLineAni 0.3s 1.2s 1 linear forwards;
 }
-/* line 243, ../sass/modules/_animations.scss */
+/* line 244, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .horizon_line_left {
   height: 1px;
   width: 0px;
@@ -2674,11 +2674,11 @@ div.borderRightAni.border_container .horizon_line_left {
   -o-animation: horiLineAni 0.3s 0s 1 linear forwards;
   animation: horiLineAni 0.3s 0s 1 linear forwards;
 }
-/* line 255, ../sass/modules/_animations.scss */
+/* line 256, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container {
   height: 100%;
 }
-/* line 257, ../sass/modules/_animations.scss */
+/* line 258, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container .straight_line {
   width: 1px;
   height: 0px;
@@ -2693,7 +2693,7 @@ div.borderRightAni .border_container .straight_line {
   -o-animation: straightLineAni 0.3s 0s 1 linear forwards;
   animation: straightLineAni 0.3s 0s 1 linear forwards;
 }
-/* line 267, ../sass/modules/_animations.scss */
+/* line 268, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container .horizon_line {
   height: 1px;
   width: 0px;
@@ -2709,14 +2709,14 @@ div.borderRightAni .border_container .horizon_line {
   -o-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
   animation: horiLineAni 0.3s 1.5s 1 linear forwards;
 }
-/* line 280, ../sass/modules/_animations.scss */
+/* line 281, ../sass/modules/_animations.scss */
 div.borderRightAni .border {
   position: absolute;
   background-color: #f16b29;
   left: 0;
   top: 0;
 }
-/* line 286, ../sass/modules/_animations.scss */
+/* line 287, ../sass/modules/_animations.scss */
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   height: 1px;
   width: 0;
@@ -2726,11 +2726,11 @@ div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   -o-animation: borderTopBottomAni 0.6s 0.6s 1 linear forwards;
   animation: borderTopBottomAni 0.6s 0.6s 1 linear forwards;
 }
-/* line 291, ../sass/modules/_animations.scss */
+/* line 292, ../sass/modules/_animations.scss */
 div.borderRightAni .border.bottom {
   top: 99.5%;
 }
-/* line 294, ../sass/modules/_animations.scss */
+/* line 295, ../sass/modules/_animations.scss */
 div.borderRightAni .border.left {
   width: 1px;
   height: 0;
@@ -2741,7 +2741,7 @@ div.borderRightAni .border.left {
   -o-animation: borderLeftAni 0.3s 0.3s 1 linear forwards;
   animation: borderLeftAni 0.3s 0.3s 1 linear forwards;
 }
-/* line 300, ../sass/modules/_animations.scss */
+/* line 301, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_top {
   width: 1px;
   left: 99.5%;
@@ -2751,7 +2751,7 @@ div.borderRightAni .border.right.R_top {
   -o-animation: borderR_top 0.3s 1.2s 1 linear forwards;
   animation: borderR_top 0.3s 1.2s 1 linear forwards;
 }
-/* line 305, ../sass/modules/_animations.scss */
+/* line 306, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_bottom {
   width: 1px;
   left: 99.5%;
@@ -2761,7 +2761,7 @@ div.borderRightAni .border.right.R_bottom {
   -o-animation: borderR_bottom 0.3s 1.2s 1 linear forwards;
   animation: borderR_bottom 0.3s 1.2s 1 linear forwards;
 }
-/* line 311, ../sass/modules/_animations.scss */
+/* line 312, ../sass/modules/_animations.scss */
 div.borderRightAni .horizon_line_left#jumpnow_team_details {
   -moz-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
   -webkit-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
@@ -2770,13 +2770,13 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
 }
 
-/* line 316, ../sass/modules/_animations.scss */
+/* line 317, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni {
   position: relative;
   z-index: -5;
   left: -25.3%;
 }
-/* line 320, ../sass/modules/_animations.scss */
+/* line 321, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .horizon_line {
   background-color: #f16b29;
   z-index: 1;
@@ -2784,22 +2784,31 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   width: 0;
   position: absolute;
   left: 0px;
-  top: 180px;
-  -moz-animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
-  -webkit-animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
-  -ms-animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
-  -o-animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
-  animation: horiLineBtn 0.3s 1.5s 1 linear forwards;
+  top: 175px;
+  -moz-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
+  -webkit-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
+  -ms-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
+  -o-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
+  animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
+}
+
+/* line 334, ../sass/modules/_animations.scss */
+div.borderRightAni #jumpnow_part1_line {
+  -moz-animation: horiLineJumpnowFirst 0.3s 1.2s 1 linear forwards;
+  -webkit-animation: horiLineJumpnowFirst 0.3s 1.2s 1 linear forwards;
+  -ms-animation: horiLineJumpnowFirst 0.3s 1.2s 1 linear forwards;
+  -o-animation: horiLineJumpnowFirst 0.3s 1.2s 1 linear forwards;
+  animation: horiLineJumpnowFirst 0.3s 1.2s 1 linear forwards;
 }
 
 @keyframes leftLineForTeamDetail {
-  /* line 332, ../sass/modules/_animations.scss */
+  /* line 339, ../sass/modules/_animations.scss */
   0% {
     left: -40px;
     width: 0;
   }
 
-  /* line 333, ../sass/modules/_animations.scss */
+  /* line 340, ../sass/modules/_animations.scss */
   100% {
     left: -40px;
     width: 40px;
@@ -2807,50 +2816,64 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes horiLineAni {
-  /* line 336, ../sass/modules/_animations.scss */
+  /* line 343, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 337, ../sass/modules/_animations.scss */
+  /* line 344, ../sass/modules/_animations.scss */
   100% {
     width: 120px;
   }
 }
 
+@keyframes horiLineJumpnowFirst {
+  /* line 347, ../sass/modules/_animations.scss */
+  0% {
+    left: 120.04163%;
+    width: 0px;
+  }
+
+  /* line 348, ../sass/modules/_animations.scss */
+  100% {
+    left: 99.5%;
+    width: 20.54163%;
+  }
+}
+
 @keyframes horiLineBtn {
-  /* line 340, ../sass/modules/_animations.scss */
+  /* line 351, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 341, ../sass/modules/_animations.scss */
+  /* line 352, ../sass/modules/_animations.scss */
   100% {
     width: 900px;
   }
 }
 
 @keyframes straightLineAni {
-  /* line 344, ../sass/modules/_animations.scss */
+  /* line 355, ../sass/modules/_animations.scss */
   0% {
     height: 0px;
   }
 
-  /* line 345, ../sass/modules/_animations.scss */
+  /* line 356, ../sass/modules/_animations.scss */
   100% {
     height: 180px;
   }
 }
 
 @keyframes borderLeftAni {
-  /* line 349, ../sass/modules/_animations.scss */
+  /* line 360, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
-  /* line 350, ../sass/modules/_animations.scss */
+  /* line 361, ../sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 99.5%;
@@ -2859,26 +2882,26 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes borderTopBottomAni {
-  /* line 354, ../sass/modules/_animations.scss */
+  /* line 365, ../sass/modules/_animations.scss */
   0% {
     width: 0;
   }
 
-  /* line 355, ../sass/modules/_animations.scss */
+  /* line 366, ../sass/modules/_animations.scss */
   100% {
     width: 99.5%;
   }
 }
 
 @keyframes borderR_top {
-  /* line 359, ../sass/modules/_animations.scss */
+  /* line 370, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
-  /* line 360, ../sass/modules/_animations.scss */
+  /* line 371, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 0;
@@ -2887,14 +2910,14 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 @keyframes borderR_bottom {
-  /* line 364, ../sass/modules/_animations.scss */
+  /* line 375, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
-  /* line 365, ../sass/modules/_animations.scss */
+  /* line 376, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 50%;

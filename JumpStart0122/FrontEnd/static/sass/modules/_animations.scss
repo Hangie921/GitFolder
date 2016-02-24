@@ -129,6 +129,7 @@ $maxWidth:1px;
 $speed:.3s;
 $horizonWidth:180px;
 $straightHeight:180px;
+$horizonWidthForJumpFirst:20.541631%;
 
 .border_container{
 	height: 100%;
@@ -324,8 +325,14 @@ div.borderRightAni{
 		width: 0;
 		position: absolute;
 		left: 0px;
-		top: 180px;
-		@include animation(horiLineBtn $speed $speed*5 1 linear forwards);
+		top: 175px;
+		@include animation(horiLineBtn 0.5s $speed*5 1 linear forwards);
+	}
+}
+
+div.borderRightAni{
+	& #jumpnow_part1_line{
+		@include animation(horiLineJumpnowFirst $speed $speed*4 1 linear forwards);
 	}
 }
 @keyframes leftLineForTeamDetail{
@@ -335,6 +342,10 @@ div.borderRightAni{
 @keyframes horiLineAni{
 	0%{width: 0px;}
 	100%{width: 120px;}
+}
+@keyframes horiLineJumpnowFirst{
+	0%{left:(99.5%+$horizonWidthForJumpFirst);width:0px;}
+	100%{left:99.5%;width: $horizonWidthForJumpFirst;}
 }
 @keyframes horiLineBtn{
 	0%{width:0px;}

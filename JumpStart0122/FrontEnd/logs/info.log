@@ -66,3 +66,5 @@
 [2016-02-23 21:18:43.278] [INFO] info - Express server listening on port 5000
 [2016-02-23 21:18:54.230] [INFO] info - Mongo server listening on port 27017
 [2016-02-23 21:18:54.235] [INFO] info - Express server listening on port 5000
+[2016-02-23 22:37:11.026] [INFO] info - Mongo server listening on port 27017
+[2016-02-23 22:37:11.035] [INFO] info - Express server listening on port 3000

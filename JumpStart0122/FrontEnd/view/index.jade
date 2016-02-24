@@ -26,26 +26,33 @@ html
 			.section#sec_home.container.section-padding(data-anchor='home')
 				header.container#header
 					.navbar-header.col-md-12
-						button.navbar-toggle.collapsed(type="button", data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
-							span.sr-only toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-
+						
 						.col-md-2
 							a(class='navbar-brand' href='/') JumpStart.
-						#bs-example-navbar-collapse-1.collapse.navbar-collapse
-							#main_menu.col-md-10.main-menu
-								ul.menu.nav.navbar-nav
-									li(data-menuanchor='about')
-										a(href='#about') about
-									li(data-menuanchor='competition')
-										a(href='#competition') competition
-									li.jumpnow_link(data-menuanchor='jumpnow') 
-										a(href='#jumpnow') jump now
-									li(data-menuanchor='events') 
-										a(href='#events') events
-			
+						#main_menu.col-md-10.main-menu
+							.menu-bg.hidden-md.hidden.lg
+							.menu-burger.hidden-md.hidden-lg ☰
+							ul.menu.hidden-xs.hidden-sm
+								li(data-menuanchor='about')
+									a(href='#about') about
+								li(data-menuanchor='competition')
+									a(href='#competition') competition
+								li.jumpnow_link(data-menuanchor='jumpnow') 
+									a(href='#jumpnow') jump now
+								li(data-menuanchor='events') 
+									a(href='#events') events
+							ul.menu.menu-items-mobile.hidden-md.hidden-lg
+								li(data-menuanchor='about')
+									a(href='#about') about
+								li(data-menuanchor='competition')
+									a(href='#competition') competition
+								li.jumpnow_link(data-menuanchor='jumpnow') 
+									a(href='#jumpnow') jump now
+								li(data-menuanchor='events') 
+									a(href='#events') events
+
+
+
 				.sloganContainer.zindex
 					h2 
 						b 當你擁有
@@ -321,8 +328,8 @@ html
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
 								.border_container#border_btn
 									.border.horizon_line
-								a.bizplan_download.btn.btn-4.btn-4a.orange
-									|商業計劃書範本 <br/>
+								a.bizplan_download.btn.btn-4.btn-4a.orange 商業計劃書範本 
+										i.fa.fa-cloud-download
 								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
 									
 						
@@ -354,7 +361,7 @@ html
 											input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 													span.input__label-content.input__label-content--hoshi 上傳檔案
-													span.reminder 限PDF!
+														span.reminder 限PDF!
 									.col-md-7
 										.team_detail_single.clearfix
 											span.input.input--hoshi.team_member
@@ -396,9 +403,10 @@ html
 												span.input__label-content.input__label-content--hoshi Email
 									label.iagree
 										input#agree(type="checkbox" name='agree' value="我同意") 
-										span 我同意
+										span   我同意
 									//- input.col-centered(type='submit' value='我要提交計畫')
-								a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange  完成了，我要提交!
+								.col-md-6.relative-position.clearfix
+									a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange  完成了，我要提交!
 
 							
 

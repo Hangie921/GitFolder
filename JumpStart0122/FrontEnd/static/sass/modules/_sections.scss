@@ -79,9 +79,11 @@ div#sec_home {
 
 		.slot {
 			color:$white;
-			font-size:39px;
+			font-size:35px;
+			letter-spacing: 2px;
 			height: 80px;
 			line-height:80px;
+			padding:0;
 		}
 
 
@@ -788,32 +790,29 @@ div.timeline {
 	margin-top:70px;
 	background:$navy;
 	border:1px solid $primary-color !important;
-	:after {
-		content:"";
-		display: inline-block;
-		position:absolute;
-		width:20px;
-		height:20px;
-		background: url(../img/download_btn.png) no-repeat left center;
-	}
-
-
-	;
 	@include orange-border;
 	min-width:240px;
 	font-size:18px;
 	height:50px;
 	cursor:pointer;
 	clear:both;
-	line-height:8px;
+	line-height:50px;
 	display:inline-block;
-	padding:20px 20px;
+	padding:0 20px;
 	width:auto;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+
+		:after {
+		content:"";
+		display: inline-block;
+		position:absolute;
+		width:20px;
+		height:20px;
+		}
 
 		&:hover {
 		color:#fff;
@@ -1081,154 +1080,5 @@ button.contact_us_btn {
 	}
 
 
-/********************* TABLET******************/
 
-
-/******************MOBILE************************/
-
-@media screen and (max-width: 480px) {
-	
-	header#header {
-		padding:0 3% !important;
-		margin:0 auto;
-	
-	a.navbar-brand {
-		font-size:28px ;
-		width:initial;
-		height:initial;
-		margin:10px 0;
-		}
-		.main-menu {
-			position: initial;
-			clear:both;
-
-			li {
-				margin:0;
-				text-align: left;
-
-				a {
-					padding:0 12% 0 0;
-					margin:0;
-				}
-			}
-		}
-	}
-
-
-	div.section-padding{
-		padding:1%;
-	}
-	#sec_about .border_container {
-		padding:3%;
-	}
-
-	a.btn {
-		width:100%;
-	}
-	a.bizplan_download {
-		margin:0 0 15px 0 !important;
-
-	}
-	
-
-
-.fp-slidesContainer {
-    margin-top: 14%;
-}
-	.slide-inner {
-		width:97%;
-	}
-
-
-
-	.competition-headings li{
-			vertical-align: middle;
-			width: 25%;
-
-		    a {
-		    	text-align: center;
-		    	padding:10px;
-		    	letter-spacing: 4px;
-		    	line-height: 20px;
-		    }
-	}
-
-	.info_list ul li{
-		width:100%;
-		float:left;
-		margin-bottom:10px;
-		.fa {
-			height:10%;
-		}
-	}
-	div.timeline {
-		ul {
-			li {
-				width:100%;
-				padding:20px;
-
-				&:before {
-
-					    border-width: 19px 50px 0px 45px;
-					    border-color: #f16b29 transparent ;
-					    right: 37%;
-					    top:  90px;
-				} 
-				&:after {
-
-			        border-width: 19px 49px 0px 44px;
-				    border-color: #e8e8e8 transparent;
-				    right: 37.4%;
-				    top: 89px;
-
-
-				} 
-			}
-		}
-	}
-	#competition_prize_slide  {
-
-		.prize-single {
-
-			min-height: 180px;
-			h4 {
-				margin-top:20px;
-			}
-
-		&:first-of-type {
-		@include background-size(50% auto);
-			h4{
-				font-size:34px;
-				color:#2b4252;
-			}
-	 	}
-	 	&:nth-of-type(2) {
-		@include background-size(50% auto);
-			color:$navy;
-		
-	 	}
-	 	&:nth-of-type(3) {
-	
-		@include background-size(50% auto);
-		
-	 	
-
-			}
-
-
-
-		}
-
-	}
-	div.competition_topic  {
-		h4 {
-			text-align: left;
-		}
-	}
-																
-
-
-
-
-																}
 

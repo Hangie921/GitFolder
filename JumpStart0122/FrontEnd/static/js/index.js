@@ -154,7 +154,15 @@ $(document).ready(function() {
 			responsiveWidth:480
 
 		}); //end of the fullpageJS initial
+
+		//menu hamburger
  
+ 		$('.menu-burger, .menu-items-mobile').on('click', function() {
+ 		 $('.menu-bg, .menu-items-mobile, .menu-burger').toggleClass('fs');
+  		$('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+		});
+
+		// menu hamburger ends
 	
     
 	//add and delete the member input field dynamically with the btn clicked
@@ -368,3 +376,4 @@ function initSlot(){
 			}, 1000);
 	});
 }
+

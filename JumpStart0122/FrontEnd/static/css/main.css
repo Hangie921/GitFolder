@@ -3076,10 +3076,11 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
   /* line 8, ../sass/modules/_responsive.scss */
   .section {
     height: auto !important;
+    padding-bottom: 30px !important;
   }
 
   /*****MOBILE MENU************/
-  /* line 12, ../sass/modules/_responsive.scss */
+  /* line 13, ../sass/modules/_responsive.scss */
   .menu-mobile, .menu-bg, .menu-burger {
     position: fixed;
     width: 50px;
@@ -3091,7 +3092,7 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     top: 25px;
   }
 
-  /* line 22, ../sass/modules/_responsive.scss */
+  /* line 23, ../sass/modules/_responsive.scss */
   .menu-bg {
     background: #663399;
     pointer-events: none;
@@ -3101,14 +3102,14 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     transform: translate3d(50%, -50%, 0);
     transform-origin: center center;
   }
-  /* line 31, ../sass/modules/_responsive.scss */
+  /* line 32, ../sass/modules/_responsive.scss */
   .menu-bg.fs {
     transform: translate3d(50%, -50%, 0);
     width: 300vw;
     height: 300vw;
   }
 
-  /* line 37, ../sass/modules/_responsive.scss */
+  /* line 38, ../sass/modules/_responsive.scss */
   .menu-burger {
     color: white;
     padding-top: 11px;
@@ -3117,12 +3118,12 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     transition: .4s;
     transform-origin: center;
   }
-  /* line 45, ../sass/modules/_responsive.scss */
+  /* line 46, ../sass/modules/_responsive.scss */
   .menu-burger.fs {
     transform: rotate(-180deg) translateY(10px);
   }
 
-  /* line 49, ../sass/modules/_responsive.scss */
+  /* line 50, ../sass/modules/_responsive.scss */
   .menu-items-mobile {
     font-weight: bold;
     font-size: 40px;
@@ -3135,13 +3136,13 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     transform: translateY(-200%);
     pointer-events: none;
   }
-  /* line 61, ../sass/modules/_responsive.scss */
+  /* line 62, ../sass/modules/_responsive.scss */
   .menu-items-mobile div {
     transition: 1s;
     opacity: 0;
     margin-top: 0px;
   }
-  /* line 66, ../sass/modules/_responsive.scss */
+  /* line 67, ../sass/modules/_responsive.scss */
   .menu-items-mobile.fs {
     transform: translateY(0);
     pointer-events: auto;
@@ -3153,76 +3154,76 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     top: 0;
     position: absolute;
   }
-  /* line 76, ../sass/modules/_responsive.scss */
+  /* line 77, ../sass/modules/_responsive.scss */
   .menu-items-mobile.fs div {
     opacity: 1;
     margin-top: 75px;
   }
 
-  /* line 83, ../sass/modules/_responsive.scss */
+  /* line 84, ../sass/modules/_responsive.scss */
   header#header {
     padding: 0 3% !important;
     margin: 0 auto;
   }
-  /* line 87, ../sass/modules/_responsive.scss */
+  /* line 88, ../sass/modules/_responsive.scss */
   header#header a.navbar-brand {
     font-size: 28px;
     width: initial;
     height: initial;
     margin: 10px 0;
   }
-  /* line 93, ../sass/modules/_responsive.scss */
+  /* line 94, ../sass/modules/_responsive.scss */
   header#header .main-menu {
     position: initial;
     clear: both;
   }
-  /* line 97, ../sass/modules/_responsive.scss */
+  /* line 98, ../sass/modules/_responsive.scss */
   header#header .main-menu li {
     margin: 0;
     text-align: left;
   }
-  /* line 101, ../sass/modules/_responsive.scss */
+  /* line 102, ../sass/modules/_responsive.scss */
   header#header .main-menu li a {
     padding: 0 12% 0 0;
     margin: 0;
   }
 
-  /* line 110, ../sass/modules/_responsive.scss */
+  /* line 111, ../sass/modules/_responsive.scss */
   div.section-padding {
     padding: 1%;
   }
 
-  /* line 113, ../sass/modules/_responsive.scss */
+  /* line 114, ../sass/modules/_responsive.scss */
   #sec_about .border_container {
     padding: 3%;
   }
 
-  /* line 117, ../sass/modules/_responsive.scss */
+  /* line 118, ../sass/modules/_responsive.scss */
   a.btn {
     width: 100%;
   }
 
-  /* line 120, ../sass/modules/_responsive.scss */
+  /* line 121, ../sass/modules/_responsive.scss */
   a.bizplan_download {
     margin: 0 0 15px 0 !important;
   }
 
-  /* line 127, ../sass/modules/_responsive.scss */
+  /* line 128, ../sass/modules/_responsive.scss */
   .fp-slidesContainer {
     margin-top: 14%;
   }
 
-  /* line 130, ../sass/modules/_responsive.scss */
+  /* line 131, ../sass/modules/_responsive.scss */
   .slide-inner {
     width: 97%;
   }
 
-  /* line 136, ../sass/modules/_responsive.scss */
+  /* line 137, ../sass/modules/_responsive.scss */
   .competition-headings li {
     vertical-align: middle;
     width: 25%;
   }
-  /* line 140, ../sass/modules/_responsive.scss */
+  /* line 141, ../sass/modules/_responsive.scss */
   .competition-headings li a {
     text-align: center;
     padding: 10px;
@@ -3230,30 +3231,30 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     line-height: 20px;
   }
 
-  /* line 148, ../sass/modules/_responsive.scss */
+  /* line 149, ../sass/modules/_responsive.scss */
   .info_list ul li {
     width: 100%;
     float: left;
     margin-bottom: 10px;
   }
-  /* line 152, ../sass/modules/_responsive.scss */
+  /* line 153, ../sass/modules/_responsive.scss */
   .info_list ul li .fa {
     height: 10%;
   }
 
-  /* line 158, ../sass/modules/_responsive.scss */
+  /* line 159, ../sass/modules/_responsive.scss */
   div.timeline ul li {
     width: 100%;
     padding: 20px;
   }
-  /* line 162, ../sass/modules/_responsive.scss */
+  /* line 163, ../sass/modules/_responsive.scss */
   div.timeline ul li:before {
     border-width: 19px 50px 0px 45px;
     border-color: #f16b29 transparent;
     right: 37%;
     top: 90px;
   }
-  /* line 169, ../sass/modules/_responsive.scss */
+  /* line 170, ../sass/modules/_responsive.scss */
   div.timeline ul li:after {
     border-width: 19px 49px 0px 44px;
     border-color: #e8e8e8 transparent;
@@ -3261,15 +3262,15 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     top: 89px;
   }
 
-  /* line 183, ../sass/modules/_responsive.scss */
+  /* line 184, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 180px;
   }
-  /* line 186, ../sass/modules/_responsive.scss */
+  /* line 187, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single h4 {
     margin-top: 20px;
   }
-  /* line 190, ../sass/modules/_responsive.scss */
+  /* line 191, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3277,12 +3278,12 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-  /* line 192, ../sass/modules/_responsive.scss */
+  /* line 193, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-  /* line 197, ../sass/modules/_responsive.scss */
+  /* line 198, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3291,7 +3292,7 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     background-size: 50% auto;
     color: #0e324b;
   }
-  /* line 202, ../sass/modules/_responsive.scss */
+  /* line 203, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3300,14 +3301,27 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
     background-size: 50% auto;
   }
 
-  /* line 216, ../sass/modules/_responsive.scss */
+  /* line 217, ../sass/modules/_responsive.scss */
   div.competition_topic h4 {
     text-align: left;
   }
 
   /***Mobile Height control***/
-  /* line 222, ../sass/modules/_responsive.scss */
-  .fp-slides, .fp-slidesContainer {
+  /* line 223, ../sass/modules/_responsive.scss */
+  .fp-slides, .fp-slidesContainer, .border_container {
     height: auto !important;
+  }
+
+  /****COMPETITION*********/
+  /* line 230, ../sass/modules/_responsive.scss */
+  div.competition_topic .btn {
+    margin-top: 30px;
+    position: initial;
+  }
+
+  /* line 234, ../sass/modules/_responsive.scss */
+  div.timeline {
+    position: initial;
+    margin: 0;
   }
 }

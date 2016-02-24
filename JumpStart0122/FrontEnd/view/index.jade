@@ -232,7 +232,7 @@ html
 									.col-md-4.col-sm-4.prize-single
 										h4 $50,000
 									.col-md-12
-										p *入選隊伍均可於新加坡設立境外公司入 <br/>
+										p *入選隊伍均可於新加坡設立境外公司 <br/>
 											small
 												＊評審小組與主辦單位得視競賽情形作成從缺、或獎金增額之決議。<br/>
 											small
@@ -357,10 +357,16 @@ html
 											input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 													span.input__label-content.input__label-content--hoshi 隊伍名稱
+													span.input__label-content.input__label-content--hoshi.reminder
 										span.input.input--hoshi 
 											|產品介紹	 
 											span.reminder 請在兩百字以內介紹你精彩的產品!	
-											textarea(name='product_brief')
+											span#counter_container
+											|還剩下
+											span#counter 200
+											|字 
+												
+											textarea(name='product_brief')#product_brief
 										span.input.input--hoshi
 											input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
@@ -372,12 +378,14 @@ html
 												input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
 												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 														span.input__label-content.input__label-content--hoshi 成員
+														span.input__label-content.input__label-content--hoshi.reminder
 											span.input.input--hoshi.responsibility
 												input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_info')
 
 												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 														span.input__label-content.input__label-content--hoshi 負責項目
-											//- button(class='button',id='del_member') 刪除成員  //只有一個成員的時候應該不用刪除成員這選項吧ＸＤ
+														span.input__label-content.input__label-content--hoshi.reminder
+											
 										button(id='add_member') 添加成員
 									.nav_group
 										a(class='button prev_btn',href='#jumpnow') 上一步
@@ -397,14 +405,17 @@ html
 										input#input-4.input__field.input__field--hoshi(type='text',name='contact')
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 												span.input__label-content.input__label-content--hoshi 姓名
+												span.input__label-content.input__label-content--hoshi.reminder
 									span.input.input--hoshi
 										input#input-4.input__field.input__field--hoshi(type='text',name='phone')
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 												span.input__label-content.input__label-content--hoshi 電話
+												span.input__label-content.input__label-content--hoshi.reminder
 									span.input.input--hoshi
 										input#input-4.input__field.input__field--hoshi(type='text',name='email')
 										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 												span.input__label-content.input__label-content--hoshi Email
+												span.input__label-content.input__label-content--hoshi.reminder
 									label.iagree
 										input#agree(type="checkbox" name='agree' value="我同意") 
 										span   我同意

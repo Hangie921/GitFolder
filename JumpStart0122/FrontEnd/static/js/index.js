@@ -169,7 +169,7 @@ $(document).ready(function() {
 	
     
 	//add and delete the member input field dynamically with the btn clicked
-	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member '><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span></label></span><button id='del_member' class='button del_btn'>刪除成員</button></div>";
+	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span></div>";
 	var counter = 1;
 	$('#add_member').click(function(event){
 			event.preventDefault();
@@ -263,13 +263,30 @@ $(document).ready(function() {
 		}
 	});
 
+
+    //to empty the error msg
+    $("#reg_form input").focus(function(){
+    	$(this).next().children().next().empty();
+    });
+
 	$("#reg_form").validate({
+		errorPlacement: function(error, element) {
+			// Append error within linked label
+			$( element ).closest("form").find("input[name$="+element.attr("name")+"]").next().children().next().empty().append(error.text());
+			if(element.is("textarea")){
+				element.empty().attr("placeholder",error.text())
+			}
+			// element.attr("placeholder",error.text()).parent().addClass('input--filled');
+
+			
+		},
 		debug: false,
 		success: 'valid',
 		rules: {
 			team_name:"required",
 			product_brief:{
-				minlength:3
+				minlength:3,
+				required:true
 			},	
 			BP_file:{
 
@@ -320,6 +337,11 @@ $(document).ready(function() {
 			btn_error(btn)
 		}
 
+	});
+
+	/*==========This is the product_brief textarea Counter*/
+	$('#product_brief').keyup(function(){
+		$('#counter').html((200-$(this).val().length));
 	});
 
 });//end of the document.ready

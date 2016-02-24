@@ -95,7 +95,7 @@ html
 			.section#sec_competition.container.no-pad(data-anchor='competition').fp-auto-height
 
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad-m
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -106,7 +106,7 @@ html
 							.border.straight_line_down
 							.border.horizon_line
 							a.competition_topic_slide_arrow.slide_next.arrow(href="#competition/1") next
-							.col-md-12.clearfix.no-pad
+							.col-md-12.clearfix.no-pad-m
 								ul.competition-headings#competition_menu
 									li 
 										a.selected(href="#competition/") 競賽主題
@@ -145,7 +145,7 @@ html
 								a.navy.btn.btn-4.btn-4a.icon-arrow-right(href='#jumpnow') 我要參加!
 
 				.slide#competition_info_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad-m
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -157,7 +157,7 @@ html
 							a.competition_info_slide_arrow.slide_prev.arrow(href="#competition") prev
 							a.competition_info_slide_arrow.slide_next.arrow(href="#competition/2") next
 							
-							.col-md-12.clearfix.no-pad
+							.col-md-12.clearfix.no-pad-m
 								ul.competition-headings#competition_menu
 									li 
 										a(href="#competition/") 競賽主題
@@ -202,7 +202,7 @@ html
 					
 
 				.slide#competition_prize_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad-m
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -238,7 +238,7 @@ html
 												＊主辦單位保有修改、終止、變更活動內容細節之權利，且不另行通知。
 
 				.slide#competition_sponsor_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad-m
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -365,7 +365,7 @@ html
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 													span.input__label-content.input__label-content--hoshi 上傳檔案
 														span.reminder 限PDF!
-									.col-md-7
+									.col-md-7.clearfix
 										.team_detail_single.clearfix
 											span.input.input--hoshi.team_member
 												input#input-4.input__field.input__field--hoshi(type='text' ,name='member_brief_name')
@@ -441,14 +441,14 @@ html
 								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
 
 				.contact_container
-					.col-md-12.contact_header
-						.col-md-12
+					.col-md-12.contact_header.no-pad
+						.col-md-12.no-pad
 							h2 GET IN CONTACT
 								span 
 									i.fa.fa-angle-up
 					.col-md-12.contact_form
 						form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
-							.col-md-4
+							.col-md-4.no-pad-m
 								span.input.input--hoshi
 									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-name')
@@ -464,7 +464,7 @@ html
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-sub')
 											span.input__label-content.input__label-content--hoshi 標題
 											span.input__label-content.input__label-content--hoshi.reminder
-							.col-md-4
+							.col-md-4.no-pad-m
 								textarea#textarea_mes(placeholder='我有疑問...',name='user_msg',require)
 								//- label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='textarea_mes')
 								//- 	span.input__label-content.input__label-content--hoshi 
@@ -476,7 +476,7 @@ html
 								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交
 								//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
 
-							.col-md-4.contact-details 
+							.col-md-4.contact-details.no-pad-m
 								h3 Ping! Connect
 								ul
 									li

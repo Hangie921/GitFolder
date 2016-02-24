@@ -5,6 +5,10 @@
 
 @media screen and (max-width: 480px) {
 
+	.no-pad-m  {
+		padding:0 !important;
+	}
+
 	.section {
 		height:auto !important;
 		padding-bottom:30px !important;
@@ -235,7 +239,88 @@ div.timeline {
    position:initial;
    margin:0;
 }
-																
+
+/**SPONSORSS*****/
+div.sponsor-group li span {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -12vw;
+    width: 100vw;
+}
+
+/*Jumpnow*****/
+
+div.nav_group {
+	right: 26%;
+}
+
+.team_details .slider-inner {
+	 padding-bottom:$mob-sec-pad;
+}
+
+.slide.team_details, div.slide.personal_details{
+	.team_detail_single {
+		border:1px solid $primary-color;
+		margin-bottom:10px;
+		padding:10px;
+	}
+
+	span.team_member {
+	width:100% !important;
+
+	}
+	span.responsibility {
+	width:100% !important;
+
+	}
+
+}
+
+div.slide.team_details{
+
+	span.input {
+		width:100%;
+	}
+
+	button#del_member {
+ 
+	    position: absolute !important;
+	    background:$navy;
+	    right: -15px;
+	    top: -3px;
+	}
+	#add_member {
+    margin:0;
+	}
+}
+
+#reg_btn {
+	margin:$mob-sec-pad auto 0;
+	position:initial;
+
+}
+
+.slide_next.arrow {
+	position:fixed;
+	top:50%;
+	left:5px;
+}
+.slide_prev.arrow {
+	@extend .slide-next.arrow;
+}
+/***CONTACT******/
+
+div.contact_container {
+	bottom: -620px;
+	span.input {
+		width:100%;
+	}
+}
+
+
+						
+
 
 
 

@@ -5,7 +5,9 @@
 
 @media screen and (max-width: 480px) {
 
-
+	.section {
+		height:auto !important;
+	}
 	/*****MOBILE MENU************/
 	.menu-mobile {
   position: fixed;

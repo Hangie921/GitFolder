@@ -1890,30 +1890,41 @@ button.contact_us_btn {
 }
 
 /* Searchbox */
+/************For the error message .reminder****************/
+/* line 4, ../sass/modules/_forms.scss */
+.input__label .input__label-content.reminder {
+  left: 70px;
+}
+
+/* line 8, ../sass/modules/_forms.scss */
+.team_member .input__label .input__label-content.reminder {
+  left: 35px;
+}
+
 /*****PERSONAL DESTAILS********/
-/* line 5, ../sass/modules/_forms.scss */
+/* line 14, ../sass/modules/_forms.scss */
 .personal_details_group {
   padding: 30px;
 }
-/* line 8, ../sass/modules/_forms.scss */
+/* line 17, ../sass/modules/_forms.scss */
 .personal_details_group span.input {
   display: block !important;
   margin: 0 auto !important;
   float: none !important;
   width: 100%;
 }
-/* line 15, ../sass/modules/_forms.scss */
+/* line 24, ../sass/modules/_forms.scss */
 .personal_details_group input[type=submit] {
   margin-left: 100px;
 }
-/* line 20, ../sass/modules/_forms.scss */
+/* line 29, ../sass/modules/_forms.scss */
 .personal_details_group .iagree {
   float: left;
   clear: both;
 }
 
 /***GROUP FORM*****/
-/* line 30, ../sass/modules/_forms.scss */
+/* line 39, ../sass/modules/_forms.scss */
 div.slide.team_details input.input__field--hoshi, div.slide.personal_details input.input__field--hoshi {
   font-family: "raleway", "Lantinghei TC", "Microsoft JhengHei", sans-serif;
   min-height: 50px;
@@ -1926,29 +1937,29 @@ div.slide.team_details input.input__field--hoshi, div.slide.personal_details inp
   font-size: 18px;
   font-weight: normal;
 }
-/* line 42, ../sass/modules/_forms.scss */
+/* line 51, ../sass/modules/_forms.scss */
 div.slide.team_details span.input, div.slide.personal_details span.input {
   float: left;
   clear: both;
   margin: 0;
   max-width: initial;
 }
-/* line 49, ../sass/modules/_forms.scss */
+/* line 58, ../sass/modules/_forms.scss */
 div.slide.team_details span, div.slide.personal_details span {
   font-size: 14px;
   padding: 0;
   color: white;
 }
-/* line 54, ../sass/modules/_forms.scss */
+/* line 63, ../sass/modules/_forms.scss */
 div.slide.team_details label, div.slide.personal_details label {
   font-size: 14px;
 }
-/* line 58, ../sass/modules/_forms.scss */
+/* line 67, ../sass/modules/_forms.scss */
 div.slide.team_details .input__field--hoshi, div.slide.personal_details .input__field--hoshi {
   margin: 0;
   padding: 15px 15px 15px 0;
 }
-/* line 63, ../sass/modules/_forms.scss */
+/* line 72, ../sass/modules/_forms.scss */
 div.slide.team_details .input__label--hoshi::before, div.slide.team_details .input__label--hoshi::after, div.slide.personal_details .input__label--hoshi::before, div.slide.personal_details .input__label--hoshi::after {
   content: '';
   position: absolute;
@@ -1958,7 +1969,7 @@ div.slide.team_details .input__label--hoshi::before, div.slide.team_details .inp
   height: calc(100% - 10px);
   border-bottom: 1px solid #fff;
 }
-/* line 73, ../sass/modules/_forms.scss */
+/* line 82, ../sass/modules/_forms.scss */
 div.slide.team_details #input-4-error, div.slide.personal_details #input-4-error {
   position: absolute;
   right: 0;
@@ -1969,11 +1980,11 @@ div.slide.team_details #input-4-error, div.slide.personal_details #input-4-error
   color: green;
   font-weight: normal;
 }
-/* line 84, ../sass/modules/_forms.scss */
+/* line 93, ../sass/modules/_forms.scss */
 div.slide.team_details input[type=file], div.slide.personal_details input[type=file] {
   padding: 23px 0 30px 101px;
 }
-/* line 89, ../sass/modules/_forms.scss */
+/* line 98, ../sass/modules/_forms.scss */
 div.slide.team_details textarea, div.slide.personal_details textarea {
   background: transparent;
   color: #fbaf5d;
@@ -1984,23 +1995,23 @@ div.slide.team_details textarea, div.slide.personal_details textarea {
   padding: 10 10px;
   letter-spacing: 1px;
 }
-/* line 100, ../sass/modules/_forms.scss */
+/* line 109, ../sass/modules/_forms.scss */
 div.slide.team_details span.team_member, div.slide.personal_details span.team_member {
   width: 20%;
   margin-right: 30px;
 }
-/* line 104, ../sass/modules/_forms.scss */
+/* line 113, ../sass/modules/_forms.scss */
 div.slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
   width: 60%;
 }
-/* line 108, ../sass/modules/_forms.scss */
+/* line 117, ../sass/modules/_forms.scss */
 div.slide.team_details .reminder, div.slide.personal_details .reminder {
   font-size: 11px;
   color: #FFCB94;
   display: inline-block;
   margin-left: 5px;
 }
-/* line 115, ../sass/modules/_forms.scss */
+/* line 124, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member, div.slide.personal_details button#del_member {
   float: right;
   margin: 15px;
@@ -2016,7 +2027,7 @@ div.slide.team_details button#del_member, div.slide.personal_details button#del_
   text-indent: -9999px;
   position: relative;
 }
-/* line 126, ../sass/modules/_forms.scss */
+/* line 135, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member:after, div.slide.personal_details button#del_member:after {
   content: "-";
   width: 10px;
@@ -2027,20 +2038,20 @@ div.slide.team_details button#del_member:after, div.slide.personal_details butto
   left: 9px;
   top: 47%;
 }
-/* line 137, ../sass/modules/_forms.scss */
+/* line 146, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member:hover, div.slide.personal_details button#del_member:hover {
   background: #fff;
 }
-/* line 140, ../sass/modules/_forms.scss */
+/* line 149, ../sass/modules/_forms.scss */
 div.slide.team_details button#del_member:hover:after, div.slide.personal_details button#del_member:hover:after {
   background: #f16b29;
 }
-/* line 146, ../sass/modules/_forms.scss */
+/* line 155, ../sass/modules/_forms.scss */
 div.slide.team_details button:focus, div.slide.personal_details button:focus {
   outline: none;
 }
 
-/* line 151, ../sass/modules/_forms.scss */
+/* line 160, ../sass/modules/_forms.scss */
 #add_member {
   margin-right: 9px;
   font-size: 14px;
@@ -2050,7 +2061,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   color: #fff;
   float: right;
 }
-/* line 159, ../sass/modules/_forms.scss */
+/* line 168, ../sass/modules/_forms.scss */
 #add_member:after {
   margin-left: 5px;
   width: 32px;
@@ -2069,20 +2080,20 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   top: 7px;
   position: relative;
 }
-/* line 174, ../sass/modules/_forms.scss */
+/* line 183, ../sass/modules/_forms.scss */
 #add_member:hover:after {
   background: #fff;
   color: #f16b29 !important;
 }
 
-/* line 181, ../sass/modules/_forms.scss */
+/* line 190, ../sass/modules/_forms.scss */
 .nav_group {
   position: absolute;
   right: 50px;
   bottom: -24px;
 }
 
-/* line 187, ../sass/modules/_forms.scss */
+/* line 196, ../sass/modules/_forms.scss */
 .next_btn, .prev_btn {
   font-size: 14px;
   float: left;
@@ -2100,7 +2111,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   /* Stroke */
   /* Fill */
 }
-/* line 204, ../sass/modules/_forms.scss */
+/* line 213, ../sass/modules/_forms.scss */
 .next_btn:before, .prev_btn:before, .next_btn:after, .prev_btn:after {
   content: "";
   position: absolute;
@@ -2110,7 +2121,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-color: transparent;
   border-bottom: 0;
 }
-/* line 215, ../sass/modules/_forms.scss */
+/* line 224, ../sass/modules/_forms.scss */
 .next_btn:before, .prev_btn:before {
   /* If 1px darken stroke slightly */
   right: -33px;
@@ -2121,7 +2132,7 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-width: 25px 0 25px 33px;
   border-color: transparent transparent transparent #f16b29;
 }
-/* line 231, ../sass/modules/_forms.scss */
+/* line 240, ../sass/modules/_forms.scss */
 .next_btn:after, .prev_btn:after {
   right: -31px;
   top: 0;
@@ -2131,47 +2142,47 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
   border-width: 24px 0 24px 31px;
   border-color: transparent transparent transparent #f16b29;
 }
-/* line 246, ../sass/modules/_forms.scss */
+/* line 255, ../sass/modules/_forms.scss */
 .next_btn:hover, .prev_btn:hover {
   background-color: #bb531f;
   border-color: #bb531f;
   color: white;
 }
-/* line 251, ../sass/modules/_forms.scss */
+/* line 260, ../sass/modules/_forms.scss */
 .next_btn:hover:after, .prev_btn:hover:after, .next_btn:hover:before, .prev_btn:hover:before {
   border-color: transparent transparent transparent #bb531f;
 }
 
-/* line 262, ../sass/modules/_forms.scss */
+/* line 271, ../sass/modules/_forms.scss */
 .prev_btn {
   border-left: none;
   border-right: 1px solid #f16b29;
   background: #0e324b;
 }
-/* line 269, ../sass/modules/_forms.scss */
+/* line 278, ../sass/modules/_forms.scss */
 .prev_btn:before {
   left: -33px;
   top: -1px;
   border-width: 25px 33px 25px 0;
   border-color: transparent #f16b29 transparent transparent;
 }
-/* line 275, ../sass/modules/_forms.scss */
+/* line 284, ../sass/modules/_forms.scss */
 .prev_btn:after {
   left: -31px;
   top: 0;
   border-width: 24px 31px 24px 0;
   border-color: transparent #0e324b transparent transparent;
 }
-/* line 284, ../sass/modules/_forms.scss */
+/* line 293, ../sass/modules/_forms.scss */
 .prev_btn:after, .prev_btn:before {
   border-color: transparent #bb531f transparent transparent #bb531f;
 }
-/* line 289, ../sass/modules/_forms.scss */
+/* line 298, ../sass/modules/_forms.scss */
 .prev_btn:hover:after {
   border-color: transparent #bb531f transparent transparent;
 }
 
-/* line 296, ../sass/modules/_forms.scss */
+/* line 305, ../sass/modules/_forms.scss */
 button.submit_btn {
   float: right;
   max-width: initial;
@@ -2180,7 +2191,7 @@ button.submit_btn {
   background: #f16b29 !important;
 }
 
-/* line 305, ../sass/modules/_forms.scss */
+/* line 314, ../sass/modules/_forms.scss */
 #reg_btn {
   margin: 0 20px;
   position: absolute;

@@ -17,7 +17,10 @@ function route(app, mongoClient){
 						skip: 0,
 						limit: 0
 					};
-				mongo_handler.handle(mongoClient,'find',null,'member',req.body,condition,function(err,status,result){
+				var query = {
+					acc:req.body.acc
+				};
+				mongo_handler.handle(mongoClient,'find',null,'member',query,condition,function(err,status,result){
 					if(login.check(req.body,result)==false){
 						res.send('error,please enter the correct account and passwords.');
 					}else{

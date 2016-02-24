@@ -6,9 +6,7 @@ var encrypt = require('../module/encrypt'),
 
 
 function checkDetail(detail,doc){ /*check if empty in the page*/
-	console.log(encrypt.md5(detail.psw));
-
-		if(detail.acc === doc[0].acc && detail.psw === doc[0].psw){
+		if(detail.acc == doc[0].acc && encrypt.md5(detail.psw) === doc[0].psw){
 			return true;	
 		}else{
 			return false;

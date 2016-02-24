@@ -151,7 +151,8 @@ $(document).ready(function() {
 			loopHorizontal:false,
 			recordHistory:false,
 			controlArrows:false,
-			responsiveWidth:480
+			responsiveWidth:990
+
 
 		}); //end of the fullpageJS initial
 

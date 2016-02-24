@@ -14,7 +14,9 @@ var app = instance.startApp(config.server.port,config.server.view_engine,path.di
 	//the app has been set the port, the view engine and the dir.path
 	mongoClient = instance.startMongo(config.mongo.url,config.mongo.port,config.mongo.db);
 
-	mongoClient.
+
+	//start to insert the default account in mongo
+
 
 index.route(app,mongoClient);
 login.route(app,mongoClient);

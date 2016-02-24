@@ -10,13 +10,15 @@
 		"url": "localhost",
 		"port": "27017",
 		"db":"jumpstart",
+		"enroll_collection":"enroll",
+		"member_collection":"member",
 		"auth": "",
 		"user_name": "",
 		"user_password": ""
 	},
 	"backend_default_account":{
 		"acc":"admin",
-		"psw":"passw0rd"
+		"psw":"admin"
 	}
 
 }

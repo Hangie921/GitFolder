@@ -84,9 +84,9 @@ html
 								|Jumpstart，亞洲第一個跨國商業合作計畫，我們幫助當地企業、人才與國際接軌，將有前景的理念、產品於世界舞台綻放，創造更大的商機。我們將不定期提供巨量的OPEN DATA及多元題材，期望各方人才組隊報名，互相激盪，創造更多商業價值。
 	
 
-			.section#sec_competition.container(data-anchor='competition')
+			.section#sec_competition.container.no-pad(data-anchor='competition')
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -136,7 +136,7 @@ html
 								a.navy.btn.btn-4.btn-4a.icon-arrow-right(href='#jumpnow') 我要參加!
 
 				.slide#competition_info_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -193,7 +193,7 @@ html
 					
 
 				.slide#competition_prize_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -222,10 +222,14 @@ html
 									.col-md-4.col-sm-4.prize-single
 										h4 $50,000
 									.col-md-12
-										p *入選隊伍均可於新加坡設立境外公司
+										p *入選隊伍均可於新加坡設立境外公司入 <br/>
+											small
+												＊評審小組與主辦單位得視競賽情形作成從缺、或獎金增額之決議。<br/>
+											small
+												＊主辦單位保有修改、終止、變更活動內容細節之權利，且不另行通知。
 
 				.slide#competition_sponsor_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -294,8 +298,8 @@ html
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1
 						.slide-inner.zindex.clearfix
-							.col-md-5.jumpnow-des
-								.border_container
+							.col-md-5.jumpnow-des.no-pad
+								.border_container.add-border-pad
 									.border.top
 									.border.right.R_top
 									.border.right.R_bottom
@@ -305,21 +309,27 @@ html
 										span.en_para Jumpstart
 										| 計畫!
 									ul.plan_list
-										li 下載  商業計劃書範本
-										li 填寫  計畫書及報名資料
-										li 送出  JumpStart計畫！
+										li 
+											b 下載   
+											| 商業計劃書範本
+										li 
+											b 填寫   
+											| 計畫書及報名資料
+										li 
+											b 送出 
+											| JumpStart計畫！
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
 								.border_container#border_btn
 									.border.horizon_line
 								a.bizplan_download.btn.btn-4.btn-4a.orange
-									|下載 商業計劃書範本 <br/>
+									|商業計劃書範本 <br/>
 								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
 									
 						
 					.slide.team_details
 						h2.hoshi 1. 填寫隊伍名稱
-						.slide-inner.zindex.relative-position.clearfix
-							.border_container
+						.slide-inner.zindex.relative-position.clearfix.no-pad
+							.border_container.add-border-pad
 								.border.top
 								.border.right.R_top
 								.border.right.R_bottom
@@ -363,8 +373,8 @@ html
 										a(class='button next_btn', href='#jumpnow/2') 下一步
 					.slide.personal_details.fp-auto-height
 						h2.hoshi 2. 聯絡人資料
-						.slide-inner.zindex.clearfix
-							.border_container
+						.slide-inner.zindex.clearfix.no-pad
+							.border_container.add-border-pad
 								.border.top
 								.border.right.R_top
 								.border.right.R_bottom

@@ -911,6 +911,7 @@ div#sec_events{
 
 }
 
+
 /***CONTACT_US******/
 div.contact_container{
 	width: 100%;
@@ -919,7 +920,7 @@ div.contact_container{
 	position: absolute;
 	padding:30px;
 	left:0;
-	top: 80%;
+	// top: 90%;
 	// bottom:-380px;
 	& .contact_header{
 		cursor: pointer;

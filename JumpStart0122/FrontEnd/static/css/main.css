@@ -1667,7 +1667,7 @@ div#sec_events {
 }
 
 /***CONTACT_US******/
-/* line 915, ../sass/modules/_sections.scss */
+/* line 916, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #313131;
@@ -1675,13 +1675,12 @@ div.contact_container {
   position: absolute;
   padding: 30px;
   left: 0;
-  top: 80%;
 }
-/* line 924, ../sass/modules/_sections.scss */
+/* line 925, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 927, ../sass/modules/_sections.scss */
+/* line 928, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1693,20 +1692,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-/* line 939, ../sass/modules/_sections.scss */
+/* line 940, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 941, ../sass/modules/_sections.scss */
+/* line 942, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fff;
   font-weight: normal !important;
 }
-/* line 945, ../sass/modules/_sections.scss */
+/* line 946, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 952, ../sass/modules/_sections.scss */
+/* line 953, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1718,11 +1717,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 963, ../sass/modules/_sections.scss */
+/* line 964, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 968, ../sass/modules/_sections.scss */
+/* line 969, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1733,52 +1732,52 @@ div.contact_container input[type="submit"] {
   float: right;
   margin-top: 15px;
 }
-/* line 978, ../sass/modules/_sections.scss */
+/* line 979, ../sass/modules/_sections.scss */
 div.contact_container .reminder {
   color: #fbaf5d;
 }
 
-/* line 985, ../sass/modules/_sections.scss */
+/* line 986, ../sass/modules/_sections.scss */
 .contact-details {
   font-family: "raleway", "文鼎黑體";
   text-align: left;
   color: #fff;
 }
-/* line 990, ../sass/modules/_sections.scss */
+/* line 991, ../sass/modules/_sections.scss */
 .contact-details h3 {
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 997, ../sass/modules/_sections.scss */
+/* line 998, ../sass/modules/_sections.scss */
 .contact-details ul {
   padding: 0;
 }
-/* line 1000, ../sass/modules/_sections.scss */
+/* line 1001, ../sass/modules/_sections.scss */
 .contact-details ul li {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
-/* line 1004, ../sass/modules/_sections.scss */
+/* line 1005, ../sass/modules/_sections.scss */
 .contact-details ul li h4 {
   font-weight: bold;
   color: #f16b29;
 }
-/* line 1009, ../sass/modules/_sections.scss */
+/* line 1010, ../sass/modules/_sections.scss */
 .contact-details ul li i {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 1019, ../sass/modules/_sections.scss */
+/* line 1020, ../sass/modules/_sections.scss */
 a.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
   display: block;
   float: none;
 }
-/* line 1024, ../sass/modules/_sections.scss */
+/* line 1025, ../sass/modules/_sections.scss */
 a.contact_us_btn.btn-error:after {
   left: 10%;
 }
@@ -2238,7 +2237,7 @@ button.submit_btn {
 }
 
 /* line 20, ../sass/modules/_animations.scss */
-.rocket_ani {
+.timeLineAni .rocket {
   -moz-animation: moveTo 12s 0s linear 1 forwards;
   -webkit-animation: moveTo 12s 0s linear 1 forwards;
   -ms-animation: moveTo 12s 0s linear 1 forwards;

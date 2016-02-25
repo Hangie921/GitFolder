@@ -17,7 +17,7 @@
 	opacity:1;
 }
 
-.rocket_ani{
+.timeLineAni .rocket{
 	@include animation(moveTo 12s 0s linear 1 forwards);
 }
 

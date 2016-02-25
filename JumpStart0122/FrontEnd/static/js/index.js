@@ -148,12 +148,6 @@ $(document).ready(function() {
 			},
 			onLeave: function(index, nextIndex, direction) {
 				$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
-			    if(nextIndex == 2 && $(window).width() >= 768){
-			    	if(!$('.rocket').hasClass('rocket_ani'))
-			    		$('.rocket').addClass('rocket_ani');
-			    }else{
-			    	$('.rocket').hide();
-			    }
 			},
 			afterRender:function(){
 				 var info_height = $('#competition_info_slide .slide-inner').height();
@@ -223,34 +217,21 @@ $(document).ready(function() {
 
 	//the contact form ani,to show or hide the contact form
 	var down = true;
-	if(ww>990){
-		$('.contact_container').css('top','80%');
-		$('.contact_header').click(function(){
-			if(down){
-				$(this).parent().animate({'top':'25%'},1000);
-				$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
-				down = false;
-			}else{
-				$(this).parent().animate({'top':'80%'},1000);
-				$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
-				down = true;
-			}
-		});
-	}else if(ww <= 990 && ww > 768){
-
-		$('.contact_header').click(function(){
-			if(down){
-				$(this).parent().animate({'bottom':'0px'},1000);
-				$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
-				down = false;
-			}else{
-				$(this).parent().animate({'bottom':'-380px'},1000);
-				$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
-				down = true;
-			}
-		});
-	}
+	var contact_height = $('.contact_container').height();
+	$('.contact_container').css('bottom',contact_height*-0.9);
+	$('.contact_header').click(function(){
+		if(down){
+			$(this).parent().animate({'bottom':'0px'},1000);
+			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
+			down = false;
+		}else{
+			$(this).parent().animate({'bottom':contact_height*-0.9},1000);
+			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
+			down = true;
+		}
+	});
 	
+
 	
 	$('#reg_form').submit(function() {
 		var btn = $('button.submit_btn');
@@ -289,17 +270,104 @@ $(document).ready(function() {
     $("#reg_form input").focus(function(){
     	$(this).next().children().next().empty();
     });
+    $("#contact_us_form input").focus(function(){
+    	$(this).next().children().next().empty();
+    });
 
+
+/********to validate the previous part of the reg_form*/
+
+   var err_msg=['恩?隊伍名稱？','你做什麼產品？','隊友名稱呢?','隊友走哪路？','產品介紹呢？(.pdf)'];
+   //to validate the team_details input field 
+   	$("#sec_jumpnow a.next_btn").click(function(){
+  
+   		var $member_name = $("#sec_jumpnow input[name$='member_brief_name']");// may be string or array
+   		var $member_info = $("#sec_jumpnow input[name$='member_brief_info']");// may be string or array
+
+   		//*start to validate the left part*//
+   		var input_counter = 0; // this counter is for the .team_other
+		if($(".team_other:nth-of-type(1) input").val()==''){
+			input_counter++;
+			$(".team_other:nth-of-type(1) input").attr('placeholder',err_msg[0]);
+		}
+		if($(".team_other:nth-of-type(2) textarea").val()==''){
+			input_counter++;
+			$(".team_other:nth-of-type(2) textarea").attr('placeholder',err_msg[1]);
+		}
+   		if(input_counter === 0){ //means none is empty;
+   			input_counter = true;
+   		}else{
+   			input_counter = false;
+   		}
+		
+		
+		/*****THIS IS THE FILE PART*****/   		
+		if($("input[type$='file']").val()!==''){
+			var file_counter = true;
+		}else{
+			var file_counter = false;
+			$(".file-upload-input").empty().append(err_msg[4]);
+		}
+
+   		/*start to validate the member part*/
+   		var name_counter = 0;
+   		var info_counter = 0;
+   		// alert($member_name.length);
+
+		$member_name.each(function(){
+			name_counter = checkVal($(this),name_counter);
+		});
+		$member_info.each(function(){
+			info_counter = checkVal2($(this),info_counter);
+		})
+
+		if(name_counter > 0 || info_counter > 0){//means none is empty
+			name_counter = false;
+		}else{
+			name_counter = true;
+		}
+		
+
+   		if(input_counter && name_counter && file_counter){      // two groups of counter must be true to next slide
+   			$.fn.fullpage.moveTo('jumpnow',2);
+   		}else{
+   			btn_error($(this));
+   		}
+   	});
+
+   	function checkVal(element,counter){ // if any of val() is empty, counter will >0
+   		if(element.val()==''){
+   			counter++;
+   			element.attr('placeholder',err_msg[2]);
+   		}
+   		return counter;
+   	}
+   	function checkVal2(element,counter){ // if any of val() is empty, counter will >0
+   		if(element.val()==''){
+   			counter++;
+   			element.attr('placeholder',err_msg[3]);
+   		}
+   		return counter;
+   	}
+
+
+
+    /*to validate the reg_form*/
 	$("#reg_form").validate({
 		errorPlacement: function(error, element) {
 			// Append error within linked label
-			$( element ).closest("form").find("input[name$="+element.attr("name")+"]").next().children().next().empty().append(error.text());
-			if(element.is("textarea")){
-				element.empty().attr("placeholder",error.text())
+			if(element.attr("name")!=="BP_file"){
+				$(element).closest("form").find("input[name$="+element.attr("name")+"]").next().children().next().empty().append(error.text());
+				if(element.is("textarea")){
+					element.empty().attr("placeholder",error.text())
+				}else if(element.attr("id")=='agree'){
+					$(element).next().next().empty().append(error.text());
+				}	
+			}else{
+				$(element).next().empty().append(error.text());
 			}
-			// element.attr("placeholder",error.text()).parent().addClass('input--filled');
-
 			
+			// element.attr("placeholder",error.text()).parent().addClass('input--filled');	
 		},
 		debug: false,
 		success: 'valid',
@@ -310,7 +378,8 @@ $(document).ready(function() {
 				required:true
 			},	
 			BP_file:{
-
+				required:true,
+				extension:"pdf"
 			},
 			member_brief_name:"required",
 			member_brief_info:"required",
@@ -324,17 +393,10 @@ $(document).ready(function() {
 		    	required: true,
 		    	email: true
 		    },
-		    address:{
-		    	required: true
-		    },
 		    agree:{ // agree checkbox
 		    	required:true
 		    }
-		},
-		messages:{
-
 		}
-
 	});
 
     $('#contact_btn').click(function(){
@@ -357,7 +419,6 @@ $(document).ready(function() {
 		else{
 			btn_error(btn)
 		}
-
 	});
 
 	/*==========This is the product_brief textarea Counter*/
@@ -365,20 +426,14 @@ $(document).ready(function() {
 		$('#counter').html((200-$(this).val().length));
 	});
 
-
-
 	/**active the customfile function**/
 	$("#file").customFile();
 
 });//end of the document.ready
 
 
-//=====================For the input File===========================
-
-//Reference: 
-//http://www.onextrapixel.com/2012/12/10/how-to-create-a-custom-file-input-with-jquery-css3-and-php/
-;
-(function($) {
+//=====================For the input File===========================*//
+;(function($) {
   // Browser supports HTML5 multiple file?
   var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
     isIE = /msie/i.test(navigator.userAgent);
@@ -390,7 +445,7 @@ $(document).ready(function() {
       var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
         $wrap = $('<div class="file-upload-wrapper">'),
         // $input = $('<input type="text" class="file-upload-input" />'),
-        $input = $("<span class='file-upload-input'></span>"),
+        $input = $("<span class='file-upload-input'>限定.pdf</span>"),
         // Button that will be used in non-IE browsers
         $button = $('<button type="button" class="file-upload-button">上傳商業計劃書</button>'),
         // Hack for IE
@@ -510,10 +565,7 @@ $(document).ready(function() {
   }
 
 }(jQuery));
-
-
-
-//===================================================================
+//==============END OF THE CUSTOMIZED FILE INPUT=====================================================
 
 function btn_error(btn){
 	var color = btn.css('color');

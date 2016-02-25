@@ -7,6 +7,7 @@ html
 		script(type='text/javascript').
 			window.jQuery || document.write('<script src="../js/jquery-2.2.0.min.js">\x3C/script>')
 		script(src="../js/jquery.validate.js")
+		script(src='../js/additional-method.js')
 		script(src="../js/jquery_fullPage.js")
 		script(src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js")
 		script(src="../js/jquery.slotmachine.min.js")
@@ -29,7 +30,7 @@ html
 					.navbar-header.col-md-12
 						
 						.col-md-2
-							a(class='navbar-brand' href='/') JumpStart.
+							a(class='navbar-brand' href='#home') JumpStart.
 						#main_menu.col-md-10.main-menu
 							.menu-bg.hidden-md.hidden.lg
 							.menu-burger.hidden-md.hidden-lg ☰
@@ -367,12 +368,12 @@ html
 								
 								.col-md-11.clearfix
 								.col-md-5.clearfix
-										span.input.input--hoshi
+										span.input.input--hoshi.team_other
 											input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 													span.input__label-content.input__label-content--hoshi 隊伍名稱
 													span.input__label-content.input__label-content--hoshi.reminder
-										span.input.input--hoshi 
+										span.input.input--hoshi.team_other 
 											|產品介紹	 
 											
 											span#counter_container.reminder 
@@ -383,8 +384,9 @@ html
 											textarea(name='product_brief')#product_brief
 										span.input
 											.custom-file-upload.clearfix
-												input#file.input__field(type='file',name='BP_file',multiple)
-												label.input__label(for='file')
+													input#file.input__field(type='file',name='BP_file',multiple)
+													span.input__label-content.input__label-content--hoshi.reminder
+													label.input__label(for='file')
 														
 									.col-md-7.clearfix
 										.team_detail_single.clearfix
@@ -403,7 +405,7 @@ html
 										button(id='add_member') 添加成員
 									.nav_group
 										a(class='button prev_btn',href='#jumpnow') 上一步
-										a(class='button next_btn', href='#jumpnow/2') 下一步
+										a(class='button next_btn', href='javascript:void(0);') 下一步
 					.slide.personal_details.fp-auto-height
 						h2.hoshi 2. 聯絡人資料
 						.slide-inner.zindex.clearfix.no-pad
@@ -433,11 +435,11 @@ html
 									label.iagree
 										input#agree(type="checkbox" name='agree' value="我同意") 
 										span   我同意
-									//- input.col-centered(type='submit' value='我要提交計畫')
+										span.input__label-content.input__label-content--hoshi.reminder
 									a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange
 										|完成了，我要提交!
 								.nav_group
-										a(class='button prev_btn',href='#jumpnow') 上一步
+										a(class='button prev_btn',href='#jumpnow/1') 上一步
 										
 							
 

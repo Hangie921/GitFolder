@@ -374,10 +374,11 @@ html
 												
 											textarea(name='product_brief')#product_brief
 										span.input.input--hoshi
-											input#input-4.input__field.input__field--hoshi(type='file',name='BP_file')
-											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 上傳檔案
-														span.reminder 限PDF!
+											.custom-file-upload
+												input#file.input__field.input__field--hoshi(type='file',name='BP_file',multiple)
+												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='file')
+														span.input__label-content.input__label-content--hoshi 上傳檔案
+															span.reminder 限PDF!
 									.col-md-7.clearfix
 										.team_detail_single.clearfix
 											span.input.input--hoshi.team_member

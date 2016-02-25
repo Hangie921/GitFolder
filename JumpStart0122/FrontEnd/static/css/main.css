@@ -2156,6 +2156,80 @@ button.submit_btn {
   right: 0px;
 }
 
+/****FOR CUSTOMIZED FILE INPUT********/
+/* line 326, ../sass/modules/_forms.scss */
+.custom-file-upload-hidden {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+/* line 332, ../sass/modules/_forms.scss */
+.custom-file-upload {
+  display: block;
+  width: auto;
+  font-size: 16px;
+  margin-top: 30px;
+}
+/* line 338, ../sass/modules/_forms.scss */
+.custom-file-upload label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* line 344, ../sass/modules/_forms.scss */
+.file-upload-wrapper {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+/* line 349, ../sass/modules/_forms.scss */
+.file-upload-input {
+  width: 200px;
+  color: #fff;
+  font-size: 16px;
+  padding: 11px 17px;
+  border: none;
+  background-color: #f16b29;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  float: left;
+  /* IE 9 Fix */
+}
+/* line 358, ../sass/modules/_forms.scss */
+.file-upload-input:hover, .file-upload-input:focus {
+  background-color: #ef5a11;
+  outline: none;
+}
+
+/* line 363, ../sass/modules/_forms.scss */
+.file-upload-button {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 11px 20px;
+  border: none;
+  margin-left: -1px;
+  background-color: #d9510e;
+  float: left;
+  /* IE 9 Fix */
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 375, ../sass/modules/_forms.scss */
+.file-upload-button:hover {
+  background-color: #a93f0b;
+}
+
 /* line 2, ../sass/modules/_animations.scss */
 #sec_home.timeLineAni:after {
   top: 60%;

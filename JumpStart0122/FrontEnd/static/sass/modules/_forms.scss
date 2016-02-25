@@ -167,10 +167,10 @@ div.slide.team_details, div.slide.personal_details {
 	float:right;
 		&:after {
 			margin-left:5px;
-			width:32px;
-			height:32px;
-			font-size:29px;
-			line-height: 32px;
+			    width: 30px;
+   			 height: 30px;
+    		font-size: 29px;
+    		line-height: 30px;
 			text-align: center;
 			content:' + ';
 			border:1px solid #fff;
@@ -316,6 +316,11 @@ button.submit_btn {
     position:absolute;
    bottom: -271px;
     right: 0px;
+	&.btn-error:after {
+		left:10%;
+	}
 
 }
+
+
 

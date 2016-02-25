@@ -386,7 +386,7 @@ div.competition_topic {
 	}
 }
 
-div.sponsor-group {
+div.sponsor-group, div.sponsor-list {
 	margin-top:30px;
 		
 	h3 {
@@ -404,19 +404,21 @@ div.sponsor-group {
 			position:relative;
 			cursor: pointer;
 			display: inline-block;
-			background:black;
 			width:100%;
-			height:80px;
-			padding:20px;
-			vertical-align: top;
+			height:auto;
+
 			
+			vertical-align: top;
 
-			&:first-child {
-				background: url(../img/ping_logo.png) no-repeat center center;
-				@include background-size(90% auto);
-
-
+			img {
+				    width: 70%;
+				    display: block;
+    				padding: 10px;
+    				margin:0 auto;
+				
+				@include box-sizing(border-box);
 			}
+
 			
 			.gotosite {
 				background:$dark-color;
@@ -438,16 +440,17 @@ div.sponsor-group {
 			span {
 				opacity: 0;
 				position:absolute;
-				top:0;
-				left:0;
-				width:100%;
+				top: 99%;
+    			width: 100%;
+    			left: 0;
+    			border-top: none !Important;
 				display: block;
-				background-color:rgba(232,232,232,0.9);
+				background-color:rgba(232,232,232,1);
 				@include transition(all .25s);
 				color:#999;
 				font-size:14px;
 				line-height: 20px;
-				padding:10px;
+				padding:10px 10px;
 				box-shadow: 0px 0px 0px 0px gainsboro;
 				-moz-box-shadow: 0px 0px 0px 0px gainsboro;
 				-ms-box-shadow: 0px 0px 0px 0px gainsboro;
@@ -473,33 +476,12 @@ div.sponsor-group {
 			
 		}
 	ul.sponsor-list.second li {
-				width:32%;
-				margin:0 1% 1% 0;
+				width:27%;
+				margin:0 2% 2% 0;
+				position:relative;
 
-				&:first-child{
-				background: url(../img/venture_craft_logo.png) no-repeat center center;
-				@include background-size(90% auto);
-				}
-				&:nth-child(2){
-				background: url(../img/螞蜂窩_logo.png) no-repeat center center;
-				@include background-size(90% auto);
-				}
-				&:nth-child(3){
-				background: url(../img/citytours_logo.png) no-repeat center -5px;
-				@include background-size(90% auto);
-				}
-				&:nth-child(4){
-				background: url(../img/365_logo.png) no-repeat center center;
-				@include background-size(90% auto);
-				}
-				&:nth-child(5){
-				background: url(../img/DSEE_logo.png) no-repeat center center;
-				@include background-size(90% auto);
-				}
-				&:nth-child(6){
-				background: url(../img/e27_logo.png) no-repeat center center;
-				@include background-size(90% auto);
-				}
+				
+
 
 			}
 }
@@ -1003,6 +985,9 @@ div.contact_container{
 		float:right;
 		margin-top:15px;
 	}
+	.reminder {
+		color:$secondary-color;
+	}
 }
 
 
@@ -1037,6 +1022,7 @@ div.contact_container{
 			}
 		}
 	}
+
 
 	
 }

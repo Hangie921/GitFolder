@@ -306,15 +306,15 @@ html
 			.section#sec_jumpnow(data-anchor='jumpnow').section-padding.fp-auto-height
 				//- 這樣包我就可以一個form包兩個slide的input
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
-					.slide.jumpnow_part1
+					.slide.jumpnow_part1.zindex
 						.slide-inner.zindex.clearfix
 							.col-md-5.jumpnow-des.no-pad
 								.border_container.add-border-pad
 									.border.top
-									.border.right.R_top
-									.border.right.R_bottom
+									.border.right
 									.border.bottom
-									.border.left
+									.border.L_top
+									.border.L_bottom
 									.border.horizon_line#jumpnow_part1_line
 									h3 三個步驟馬上加入 
 										span.en_para Jumpstart

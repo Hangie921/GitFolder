@@ -32,7 +32,6 @@ $(document).ready(function() {
 	    	],
 	    	scrollingSpeed:1000,
 			afterLoad: function(anchorLink, index) { 
-				removeHash();
 				$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
 				$('#header').css({'opacity':'1'});
 				 switch(index){ //this is the function that chnages the bgcolor and color of the #header
@@ -79,14 +78,21 @@ $(document).ready(function() {
 				}
 			},
 			onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-				var leavingSlide = $(this);
-				if(nextSlideIndex == 1){
+				if(anchorLink =='jumpnow' && slideIndex == 0 && index == 4){
+					if(!$('#sec_jumpnow.timeLineAni').hasClass('opacity')){
+						$('#sec_jumpnow.timeLineAni').addClass('opacity');
+					}
+				}else if(nextSlideIndex == 0){
+					if($('#sec_jumpnow.timeLineAni').hasClass('opacity')){
+					   $('#sec_jumpnow.timeLineAni').removeClass('opacity');
+					}
+
+				}else if(nextSlideIndex == 1){
 					var height = $('.team_details .slide-inner').height();
 					$('.team_details .slide-inner').height(height);	
 				}
 			},
 			afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-				removeHash();
 				if(anchorLink == 'competition'){	
 					$('#competition_menu li a').removeClass('selected');
 					switch(slideIndex){
@@ -120,6 +126,8 @@ $(document).ready(function() {
 					}
 				}else if (anchorLink === 'jumpnow'){
 					switch(slideIndex){
+						case 0:
+						break;
 						case 1:
 							var height = $('.team_details .slide-inner').height();
 							$('.team_details .slide-inner').height(height);
@@ -141,7 +149,7 @@ $(document).ready(function() {
 			},
 			onLeave: function(index, nextIndex, direction) {
 				$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
-			    if(nextIndex == 2 && $(window).width()>468){
+			    if(nextIndex == 2 && $(window).width() >= 768){
 			    	if(!$('.rocket').hasClass('rocket_ani'))
 			    		$('.rocket').addClass('rocket_ani');
 			    }else{
@@ -402,10 +410,6 @@ function submit_to_db(btn,form){
         //Very important line, it disable the page refresh.
 }
 
-
-function removeHash(){
-	// location.hash='';
-}
 
 //The slot Machine animation initializing
 function initSlot(){

@@ -102,6 +102,7 @@ div.slide.team_details, div.slide.personal_details {
 		line-height: 20px;
 		padding:10 10px;
 		letter-spacing: 1px;
+		outline:none;
 			}
 
 	span.team_member {
@@ -137,7 +138,7 @@ div.slide.team_details, div.slide.personal_details {
 			background:#fff;
 			margin:0 auto;
 			position:absolute;
-			left:0;
+			left:9px;
 			top:47%;
 		}
 

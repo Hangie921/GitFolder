@@ -156,6 +156,10 @@ div#sec_home {
 		// background-color:$navy;
 		// @include orange-border;
 		// padding:50px 30px;
+
+		& a:hover {
+			color:$secondary-color !important;
+		}
 	}
 
 	.border_container{
@@ -940,7 +944,7 @@ div.contact_container{
 	.input {
 		margin:0;
 		input {
-			color:#fff;
+			color:$secondary-color;
 			font-weight:normal !important;
 		}
 		label {
@@ -975,6 +979,7 @@ div.contact_container{
 		text-transform: uppercase;
 		float:right;
 		margin-top:15px;
+
 	}
 	.reminder {
 		color:$secondary-color;
@@ -1024,7 +1029,7 @@ a.contact_us_btn {
     	float: none;
     	&.btn-error:after {
 		left:10%;
-	}
+		}
 	}
 
 

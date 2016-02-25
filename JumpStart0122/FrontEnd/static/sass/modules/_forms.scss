@@ -84,6 +84,10 @@ div.slide.team_details, div.slide.personal_details {
     font-weight: normal;
 	}
 
+	.input__label--hoshi::before, .input__label--hoshi::after {
+		left:-1px;
+	}
+
 	input[type=file] {
 	padding:23px 0 30px 101px;
 
@@ -133,7 +137,7 @@ div.slide.team_details, div.slide.personal_details {
 			background:#fff;
 			margin:0 auto;
 			position:absolute;
-			left:9px;
+			left:0;
 			top:47%;
 		}
 

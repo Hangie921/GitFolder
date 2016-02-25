@@ -322,10 +322,6 @@ button.submit_btn {
 
 }
 
-
-<<<<<<< HEAD
-
-=======
 /****FOR CUSTOMIZED FILE INPUT********/
 $file-upload-size: 200px;
 
@@ -354,32 +350,32 @@ $file-upload-size: 200px;
 }
 .file-upload-input {
     width: $file-upload-size;
-    color: #fff;
+    color: $navy;
     font-size: 16px;
     padding: 11px 17px; 
-    border: none;
-    background-color: $primary-color; 
+    border: 1px solid #fff;
+    background-color: transparent; 
     @include transition(all 0.2s ease-in); 
     float: left; /* IE 9 Fix */
     &:hover, &:focus { 
-        background-color: darken($primary-color, 5);
+        background-color: darken(white, 30);
         outline: none; 
     }
 }
 .file-upload-button {
     cursor: pointer; 
     display: inline-block; 
-    color: #fff;
+    color: $navy;
     font-size: 16px;
     text-transform: uppercase;
     padding: 11px 20px; 
     border: none;
     margin-left: -1px;  
-    background-color: darken($primary-color, 10); 
+    background-color: white; 
     float: left; /* IE 9 Fix */
     @include transition(all 0.2s ease-in);
     &:hover {
-        background-color: darken($primary-color, 20);
+        background-color: darken(white, 30);
     }
 }
->>>>>>> origin/master
+

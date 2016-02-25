@@ -368,17 +368,16 @@ html
 											|產品介紹	 
 											span.reminder 請在兩百字以內介紹你精彩的產品!	
 											span#counter_container
-											|還剩下
-											span#counter 200
-											|字 
+												|還剩下
+												span#counter 200
+												|字 
 												
 											textarea(name='product_brief')#product_brief
-										span.input.input--hoshi
+										span.input
 											.custom-file-upload
-												input#file.input__field.input__field--hoshi(type='file',name='BP_file',multiple)
-												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='file')
-														span.input__label-content.input__label-content--hoshi 上傳檔案
-															span.reminder 限PDF!
+												input#file.input__field(type='file',name='BP_file',multiple)
+												label.input__label(for='file')
+														
 									.col-md-7.clearfix
 										.team_detail_single.clearfix
 											span.input.input--hoshi.team_member

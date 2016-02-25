@@ -157,7 +157,8 @@
 	background:$navy;
 	border-color:$navy;
 	&:hover {
-		background:transparent;
+		color:white;
+		background-color:darken($navy, 10);
 	}
 }
 
@@ -167,6 +168,16 @@
 	&:hover {
 		background:$dark-orange !important;
 		border-color:$dark-orange !important;
+		color:white;
+	}
+}
+
+.btn.sec-orange {
+	background:$secondary-color;
+	border-color:$secondary-color;
+	&:hover {
+		background:darken($secondary-color, 20) !important;
+		border-color:darken($secondary-color, 20) !important;
 		color:white;
 	}
 }

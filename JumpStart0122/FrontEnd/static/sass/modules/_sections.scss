@@ -353,7 +353,7 @@ ul.competition-headings {
     }
 
    &.slide_team_details_arrow{
-   	background:$navy !important;
+   	background:$navy ;
    }
 
 }
@@ -735,8 +735,6 @@ div.timeline {
 	float:left;
 	position:relative;
 	margin-top:70px;
-	background:$navy;
-	border:1px solid $primary-color !important;
 	@include orange-border;
 	min-width:240px;
 	font-size:18px;
@@ -761,15 +759,7 @@ div.timeline {
 		height:20px;
 		}
 
-		&:hover {
-		color:#fff;
-		background-color:#555 !important;
-		-webkit-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-		-moz-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-		-ms-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-		-o-box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-		box-shadow: 0px 0px 0px -5px rgba(221,93,32,1);
-		}
+		
 
 		&:after {
 		content: "";
@@ -1031,7 +1021,12 @@ a.contact_us_btn {
     	text-align: center;
     	display: block;
     	float: none;
+    	&.btn-error:after {
+		left:10%;
 	}
+	}
+
+
 
 
 

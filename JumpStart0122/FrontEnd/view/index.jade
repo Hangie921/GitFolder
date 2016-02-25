@@ -345,7 +345,7 @@ html
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
 								.border_container#border_btn
 									.border.horizon_line
-								a.bizplan_download.btn.btn-4.btn-4a.orange 商業計劃書範本 
+								a.bizplan_download.btn.btn-4.btn-4a.sec-orange 商業計劃書範本 
 										i.fa.fa-cloud-download
 								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
 									
@@ -373,15 +373,15 @@ html
 													span.input__label-content.input__label-content--hoshi.reminder
 										span.input.input--hoshi 
 											|產品介紹	 
-											span.reminder 請在兩百字以內介紹你精彩的產品!	
-											span#counter_container
+											
+											span#counter_container.reminder 
 												|還剩下
-												span#counter 200
+												span#counter.reminder  200
 												|字 
 												
 											textarea(name='product_brief')#product_brief
 										span.input
-											.custom-file-upload
+											.custom-file-upload.clearfix
 												input#file.input__field(type='file',name='BP_file',multiple)
 												label.input__label(for='file')
 														

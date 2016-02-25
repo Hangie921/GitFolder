@@ -70,13 +70,7 @@ div.slide.team_details, div.slide.personal_details {
 		
 	}
 	.input__label--hoshi::before, .input__label--hoshi::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 10px);
-    border-bottom: 1px solid #fff;
+ 
 	}
 
 	#input-4-error {
@@ -236,6 +230,11 @@ border-color: transparent transparent transparent $primary-color;
 
   }
 
+  	&:hover {
+		background:$primary-color;
+	}
+  
+
   /* Fill */
   &:after {
 
@@ -349,8 +348,8 @@ $file-upload-size: 200px;
     //border: 1px solid #ccc;
 }
 .file-upload-input {
-    width: $file-upload-size;
-    height: 25px;
+    width: 50%;
+    height: 52px;
     display: block;
     color: $navy;
     font-size: 16px;

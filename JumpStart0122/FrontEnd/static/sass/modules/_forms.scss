@@ -350,6 +350,8 @@ $file-upload-size: 200px;
 }
 .file-upload-input {
     width: $file-upload-size;
+    height: 25px;
+    display: block;
     color: $navy;
     font-size: 16px;
     padding: 11px 17px; 

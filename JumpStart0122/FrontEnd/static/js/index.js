@@ -388,7 +388,8 @@ $(document).ready(function() {
 
       var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
         $wrap = $('<div class="file-upload-wrapper">'),
-        $input = $('<input type="text" class="file-upload-input" />'),
+        // $input = $('<input type="text" class="file-upload-input" />'),
+        $input = $("<span class='file-upload-input'></span>"),
         // Button that will be used in non-IE browsers
         $button = $('<button type="button" class="file-upload-button">上傳商業計劃書</button>'),
         // Hack for IE
@@ -432,7 +433,7 @@ $(document).ready(function() {
           filename = $file.val().split('\\').pop();
         }
 
-        $input.val(filename) // Set the value
+        $input.html(filename) // Set the value
           .attr('title', filename) // Show filename in title tootlip
           .focus(); // Regain focus
 

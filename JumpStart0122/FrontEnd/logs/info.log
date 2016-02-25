@@ -11,3 +11,14 @@
 [2016-02-25 13:09:13.761] [INFO] info - Insert doc into 'detail' collection!
 [2016-02-25 13:09:13.762] [INFO] info - Insert doc successfully
 [2016-02-25 13:09:13.762] [INFO] info - mongo connections closed
+[2016-02-25 14:08:54.648] [INFO] info - /upload route accepted
+[2016-02-25 14:08:54.650] [INFO] info - Start uploading the file to server.
+[2016-02-25 14:08:54.677] [INFO] info - file uploaded.
+[2016-02-25 14:08:54.677] [INFO] info - file uploaded
+[2016-02-25 14:08:54.677] [INFO] info - Start uploading the user info.
+[2016-02-25 14:08:54.678] [INFO] info - Start to input members to the member_brief field
+[2016-02-25 14:08:54.689] [INFO] info - Start to insert to detail
+[2016-02-25 14:08:54.736] [INFO] info - Connet to mongo successfully
+[2016-02-25 14:08:54.743] [INFO] info - Insert doc into 'detail' collection!
+[2016-02-25 14:08:54.743] [INFO] info - Insert doc successfully
+[2016-02-25 14:08:54.744] [INFO] info - mongo connections closed

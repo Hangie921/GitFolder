@@ -2191,6 +2191,8 @@ button.submit_btn {
 /* line 351, ../sass/modules/_forms.scss */
 .file-upload-input {
   width: 200px;
+  height: 25px;
+  display: block;
   color: #0e324b;
   font-size: 16px;
   padding: 11px 17px;
@@ -2204,13 +2206,13 @@ button.submit_btn {
   float: left;
   /* IE 9 Fix */
 }
-/* line 360, ../sass/modules/_forms.scss */
+/* line 362, ../sass/modules/_forms.scss */
 .file-upload-input:hover, .file-upload-input:focus {
   background-color: #b3b3b3;
   outline: none;
 }
 
-/* line 365, ../sass/modules/_forms.scss */
+/* line 367, ../sass/modules/_forms.scss */
 .file-upload-button {
   cursor: pointer;
   display: inline-block;
@@ -2229,7 +2231,7 @@ button.submit_btn {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 377, ../sass/modules/_forms.scss */
+/* line 379, ../sass/modules/_forms.scss */
 .file-upload-button:hover {
   background-color: #b3b3b3;
 }

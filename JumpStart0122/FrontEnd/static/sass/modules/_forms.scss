@@ -302,7 +302,7 @@ border-color: transparent transparent transparent $primary-color;
 }
 
 button.submit_btn {
-	float:right;
+	float:left;
 	max-width:initial;
 	padding:15px 40px;
 	width:329px;
@@ -311,9 +311,7 @@ button.submit_btn {
 
 
 #reg_btn {
-    margin: 0 20px;
-    position:absolute;
-   bottom: -271px;
+    margin: 30px 0 0;
     right: 0px;
 	&.btn-error:after {
 		left:10%;
@@ -367,6 +365,7 @@ $file-upload-size: 200px;
     cursor: pointer; 
     display: inline-block; 
     color: $navy;
+    width:50%;
     font-size: 16px;
     text-transform: uppercase;
     padding: 11px 20px; 

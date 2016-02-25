@@ -456,75 +456,89 @@ img.device {
   left: 80%;
 }
 
+/*BUTTON 4a down arror */
+/* Button 4a */
+/* line 125, ../sass/modules/_buttons.scss */
+.btn-4a.icon-arrow-down2:before {
+  left: 80%;
+  top: 100%;
+}
+
+/* line 130, ../sass/modules/_buttons.scss */
+.btn-4a.icon-arrow-down2:hover:before {
+  left: 80%;
+  top: 0;
+}
+
 /* Button 4b */
-/* line 123, ../sass/modules/_buttons.scss */
+/* line 136, ../sass/modules/_buttons.scss */
 .btn-4b:before {
   left: -50%;
   top: 0;
 }
 
-/* line 128, ../sass/modules/_buttons.scss */
+/* line 141, ../sass/modules/_buttons.scss */
 .btn-4b:hover:before {
   left: 10%;
 }
 
 /* Button 4c */
-/* line 133, ../sass/modules/_buttons.scss */
+/* line 146, ../sass/modules/_buttons.scss */
 .btn-4c:before {
   left: 70%;
   opacity: 0;
   top: 0;
 }
 
-/* line 139, ../sass/modules/_buttons.scss */
+/* line 152, ../sass/modules/_buttons.scss */
 .btn-4c:hover:before {
   left: 80%;
   opacity: 1;
 }
 
 /* Button 4d */
-/* line 145, ../sass/modules/_buttons.scss */
+/* line 158, ../sass/modules/_buttons.scss */
 .btn-4d:before {
   left: 30%;
   opacity: 0;
   top: 0;
 }
 
-/* line 151, ../sass/modules/_buttons.scss */
+/* line 164, ../sass/modules/_buttons.scss */
 .btn-4d:hover:before {
   left: 10%;
   opacity: 1;
 }
 
-/* line 156, ../sass/modules/_buttons.scss */
+/* line 169, ../sass/modules/_buttons.scss */
 .btn.navy {
   background: #0e324b;
   border-color: #0e324b;
 }
-/* line 159, ../sass/modules/_buttons.scss */
+/* line 172, ../sass/modules/_buttons.scss */
 .btn.navy:hover {
   color: white;
   background-color: #061520;
 }
 
-/* line 165, ../sass/modules/_buttons.scss */
+/* line 178, ../sass/modules/_buttons.scss */
 .btn.orange {
   background: #f16b29;
   border-color: #f16b29;
 }
-/* line 168, ../sass/modules/_buttons.scss */
+/* line 181, ../sass/modules/_buttons.scss */
 .btn.orange:hover {
   background: #bb531f !important;
   border-color: #bb531f !important;
   color: white;
 }
 
-/* line 175, ../sass/modules/_buttons.scss */
+/* line 188, ../sass/modules/_buttons.scss */
 .btn.sec-orange {
   background: #fbaf5d;
   border-color: #fbaf5d;
 }
-/* line 178, ../sass/modules/_buttons.scss */
+/* line 191, ../sass/modules/_buttons.scss */
 .btn.sec-orange:hover {
   background: #ec7d06 !important;
   border-color: #ec7d06 !important;
@@ -532,7 +546,7 @@ img.device {
 }
 
 /* Button 7 */
-/* line 186, ../sass/modules/_buttons.scss */
+/* line 199, ../sass/modules/_buttons.scss */
 .btn-7 {
   background: #17aa56;
   color: #fff;
@@ -542,13 +556,13 @@ img.device {
 }
 
 /* Button 7h */
-/* line 196, ../sass/modules/_buttons.scss */
+/* line 209, ../sass/modules/_buttons.scss */
 .btn-7h span {
   display: inline-block;
   width: 100%;
 }
 
-/* line 201, ../sass/modules/_buttons.scss */
+/* line 214, ../sass/modules/_buttons.scss */
 .btn-7h:before {
   position: absolute;
   left: 0;
@@ -558,19 +572,19 @@ img.device {
   color: #0a833d;
 }
 
-/* line 210, ../sass/modules/_buttons.scss */
+/* line 223, ../sass/modules/_buttons.scss */
 .icon-envelope:before {
   content: "\e000";
 }
 
 /* Success and error */
-/* line 218, ../sass/modules/_buttons.scss */
+/* line 231, ../sass/modules/_buttons.scss */
 .btn-success,
 .btn-error {
   color: transparent;
 }
 
-/* line 223, ../sass/modules/_buttons.scss */
+/* line 236, ../sass/modules/_buttons.scss */
 .btn-success:after,
 .btn-error:after {
   z-index: 1;
@@ -578,12 +592,12 @@ img.device {
   left: 40%;
 }
 
-/* line 229, ../sass/modules/_buttons.scss */
+/* line 242, ../sass/modules/_buttons.scss */
 .btn-success:before {
   content: "\e001";
 }
 
-/* line 233, ../sass/modules/_buttons.scss */
+/* line 246, ../sass/modules/_buttons.scss */
 .btn-success:after {
   content: "Success!";
   -webkit-animation: moveUp 0.5s;
@@ -592,13 +606,13 @@ img.device {
 }
 
 @-webkit-keyframes moveUp {
-  /* line 241, ../sass/modules/_buttons.scss */
+  /* line 254, ../sass/modules/_buttons.scss */
   0% {
     -webkit-transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 245, ../sass/modules/_buttons.scss */
+  /* line 258, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -606,13 +620,13 @@ img.device {
 }
 
 @-moz-keyframes moveUp {
-  /* line 252, ../sass/modules/_buttons.scss */
+  /* line 265, ../sass/modules/_buttons.scss */
   0% {
     -moz-transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 256, ../sass/modules/_buttons.scss */
+  /* line 269, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0);
@@ -620,20 +634,20 @@ img.device {
 }
 
 @keyframes moveUp {
-  /* line 263, ../sass/modules/_buttons.scss */
+  /* line 276, ../sass/modules/_buttons.scss */
   0% {
     transform: translateY(50%);
     opacity: 0;
   }
 
-  /* line 267, ../sass/modules/_buttons.scss */
+  /* line 280, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* line 273, ../sass/modules/_buttons.scss */
+/* line 286, ../sass/modules/_buttons.scss */
 .btn-error {
   -webkit-animation: shake 0.5s;
   -moz-animation: shake 0.5s;
@@ -642,62 +656,62 @@ img.device {
 
 /* From Dan Eden's animate.css: http://daneden.me/animate/ */
 @-webkit-keyframes shake {
-  /* line 281, ../sass/modules/_buttons.scss */
+  /* line 294, ../sass/modules/_buttons.scss */
   0%, 100% {
     -webkit-transform: translateX(0);
   }
 
-  /* line 282, ../sass/modules/_buttons.scss */
+  /* line 295, ../sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px);
   }
 
-  /* line 283, ../sass/modules/_buttons.scss */
+  /* line 296, ../sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px);
   }
 }
 
 @-moz-keyframes shake {
-  /* line 287, ../sass/modules/_buttons.scss */
+  /* line 300, ../sass/modules/_buttons.scss */
   0%, 100% {
     -moz-transform: translateX(0);
   }
 
-  /* line 288, ../sass/modules/_buttons.scss */
+  /* line 301, ../sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     -moz-transform: translateX(-10px);
   }
 
-  /* line 289, ../sass/modules/_buttons.scss */
+  /* line 302, ../sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     -moz-transform: translateX(10px);
   }
 }
 
 @keyframes shake {
-  /* line 293, ../sass/modules/_buttons.scss */
+  /* line 306, ../sass/modules/_buttons.scss */
   0%, 100% {
     transform: translateX(0);
   }
 
-  /* line 294, ../sass/modules/_buttons.scss */
+  /* line 307, ../sass/modules/_buttons.scss */
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px);
   }
 
-  /* line 295, ../sass/modules/_buttons.scss */
+  /* line 308, ../sass/modules/_buttons.scss */
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
 }
 
-/* line 298, ../sass/modules/_buttons.scss */
+/* line 311, ../sass/modules/_buttons.scss */
 .btn-error:before {
   content: "\e002";
 }
 
-/* line 302, ../sass/modules/_buttons.scss */
+/* line 315, ../sass/modules/_buttons.scss */
 .btn-error:after {
   content: "Error!";
   -webkit-animation: scaleFromUp 0.5s;
@@ -706,13 +720,13 @@ img.device {
 }
 
 @-webkit-keyframes scaleFromUp {
-  /* line 310, ../sass/modules/_buttons.scss */
+  /* line 323, ../sass/modules/_buttons.scss */
   0% {
     -webkit-transform: scale(0);
     opacity: 0;
   }
 
-  /* line 314, ../sass/modules/_buttons.scss */
+  /* line 327, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -720,13 +734,13 @@ img.device {
 }
 
 @-moz-keyframes scaleFromUp {
-  /* line 321, ../sass/modules/_buttons.scss */
+  /* line 334, ../sass/modules/_buttons.scss */
   0% {
     -moz-transform: scale(0);
     opacity: 0;
   }
 
-  /* line 325, ../sass/modules/_buttons.scss */
+  /* line 338, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     -moz-transform: scale(1);
@@ -734,13 +748,13 @@ img.device {
 }
 
 @keyframes scaleFromUp {
-  /* line 332, ../sass/modules/_buttons.scss */
+  /* line 345, ../sass/modules/_buttons.scss */
   0% {
     transform: scale(0);
     opacity: 0;
   }
 
-  /* line 336, ../sass/modules/_buttons.scss */
+  /* line 349, ../sass/modules/_buttons.scss */
   100% {
     opacity: 1;
     transform: scale(1);
@@ -836,7 +850,7 @@ div#sec_home {
 .sloganContainer .slotMachine .slot {
   color: white;
   font-size: 35px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   height: 80px;
   line-height: 80px;
   padding: 0;
@@ -998,12 +1012,12 @@ div.competition_topic h5 {
 }
 /* line 248, ../sass/modules/_sections.scss */
 div.competition_topic .btn {
-  position: absolute;
-  bottom: -100px;
-  left: 35%;
-  margin: 0 auto;
-  display: block;
+  margin: 30px auto 0;
   text-align: center;
+  display: block;
+  float: none;
+  position: relative;
+  z-index: 5;
 }
 
 /* line 262, ../sass/modules/_sections.scss */
@@ -1242,7 +1256,7 @@ div.sponsor-group li:hover span, div.sponsor-list li:hover span {
 }
 /* line 478, ../sass/modules/_sections.scss */
 div.sponsor-group ul.sponsor-list.second li, div.sponsor-list ul.sponsor-list.second li {
-  width: 27%;
+  width: 31%;
   margin: 0 2% 2% 0;
   position: relative;
 }
@@ -3108,7 +3122,7 @@ ul.menu li a:after {
   left: 0;
   width: 100%;
   height: 4px;
-  background: rgba(255, 255, 255, 0.7);
+  background: #f16b29;
   content: '';
   opacity: 0;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -3159,33 +3173,34 @@ ul.menu li a:hover::after, ul.menu li a:focus::after, ul.menu li.active a:after 
 /* line 148, ../sass/layouts/_header.scss */
 .jumpnow_link a:hover:after {
   display: none !important;
+  background-color: transparent;
 }
-/* line 152, ../sass/layouts/_header.scss */
+/* line 153, ../sass/layouts/_header.scss */
 .jumpnow_link a:hover:before {
   display: none !important;
 }
 
-/* line 157, ../sass/layouts/_header.scss */
+/* line 158, ../sass/layouts/_header.scss */
 #header, #header ul li a {
   transition: color .5s, opacity .5s;
 }
 
-/* line 160, ../sass/layouts/_header.scss */
+/* line 161, ../sass/layouts/_header.scss */
 #header.fff {
   background-color: transparent;
 }
 
-/* line 163, ../sass/layouts/_header.scss */
+/* line 164, ../sass/layouts/_header.scss */
 #header.fff ul li a {
   color: #333;
 }
 
-/* line 166, ../sass/layouts/_header.scss */
+/* line 167, ../sass/layouts/_header.scss */
 #header.orange {
   background-color: transparent;
 }
 
-/* line 169, ../sass/layouts/_header.scss */
+/* line 170, ../sass/layouts/_header.scss */
 #header.orange ul li a {
   color: #fff;
 }

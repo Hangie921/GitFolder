@@ -86,7 +86,7 @@ ul.menu {
 				left: 0;
 				width: 100%;
 				height: 4px;
-				background: rgba(255,255,255,0.7);
+				background: $primary-color;
 				content: '';
 				opacity: 0;
 				-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -116,7 +116,7 @@ ul.menu {
 				-webkit-transform: translateY(0px);
 				-moz-transform: translateY(0px);
 				transform: translateY(0px);
-				color:$white;
+				color:white;
 			
 			}
 
@@ -147,6 +147,7 @@ ul.menu {
 
     		&:after {
     			display: none !important;
+    			background-color:transparent;
     			
     		}
     		&:before {

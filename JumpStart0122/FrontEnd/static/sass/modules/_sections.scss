@@ -80,7 +80,7 @@ div#sec_home {
 		.slot {
 			color:$white;
 			font-size:35px;
-			letter-spacing: 2px;
+			letter-spacing: 5px;
 			height: 80px;
 			line-height:80px;
 			padding:0;
@@ -246,12 +246,12 @@ div.competition_topic {
 	}
 
 	.btn {
-		position:absolute;
-		bottom:-100px;
-		left:35%;
-		margin:0 auto;
-		display: block;
-		text-align: center;
+	 margin: 30px auto 0;
+    text-align: center;
+    display: block;
+    float: none;
+    position:relative;
+    z-index: 5;
 	}
 }
 
@@ -476,7 +476,7 @@ div.sponsor-group, div.sponsor-list {
 			
 		}
 	ul.sponsor-list.second li {
-				width:27%;
+				width:31%;
 				margin:0 2% 2% 0;
 				position:relative;
 

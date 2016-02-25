@@ -48,9 +48,6 @@ $(document).ready(function() {
 						break;
 					case 3:
 						$('#header').addClass('fff');
-						var height = $('#competition_topic_slide .slide-inner').height();
-							$('#competition_topic_slide .border_container').height(height);
-
 						if(!$('#competition_topic_slide').hasClass('timeLineAni')){ //border animation
 							$('#competition_topic_slide').addClass('timeLineAni');
 						}
@@ -93,8 +90,7 @@ $(document).ready(function() {
 					break;
 					case 'competition':
 						if(nextSlideIndex == 1 && slideIndex ==0){
-							var height = $('.team_details .slide-inner').height();
-							$('.team_details .slide-inner').height(height);
+							
 						}
 					break;
 				}
@@ -108,8 +104,6 @@ $(document).ready(function() {
 						break;
 						case 1:
 							$('#competition_menu li:nth-child(2) a').addClass('selected');
-							var height = $('#competition_info_slide .slide-inner').height();
-							$('#competition_info_slide .border_container').height(height);
 							if(!$('#competition_info_slide .border_container').hasClass('borderRightAni')){ //border animation
 								$('#competition_info_slide .border_container').addClass('borderRightAni');
 							}
@@ -124,8 +118,7 @@ $(document).ready(function() {
 						break;
 						case 3:
 							$('#competition_menu li:nth-child(4) a').addClass('selected');
-							var height = $('#competition_sponsor_slide .slide-inner').height();
-							$('#competition_sponsor_slide .border_container').height(height);
+							
 							if(!$('#competition_sponsor_slide .border_container').hasClass('borderRightAni')){ //border animation
 								$('#competition_sponsor_slide .border_container').addClass('borderRightAni');
 							}
@@ -144,8 +137,7 @@ $(document).ready(function() {
 						
 						break;
 						case 2:
-							var height = $('.personal_details .slide-inner').height();
-							$('.personal_details .slide-inner').height(height);
+							
 							if(!$('.personal_details .slide-inner .border_container').hasClass('borderRightAni')){
 								$('.personal_details .slide-inner .border_container').addClass('borderRightAni');
 							}
@@ -162,6 +154,15 @@ $(document).ready(function() {
 			    }else{
 			    	$('.rocket').hide();
 			    }
+			},
+			afterRender:function(){
+				 var info_height = $('#competition_info_slide .slide-inner').height();
+				$('#competition_info_slide .slide-inner .border_container').height(info_height);
+				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
+				// $('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
+				$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
+				var height = $('#competition_sponsor_slide .slide-inner').height();
+				$('#competition_sponsor_slide .border_container').height(height);
 			},
 			verticalCentered : true,
 			resize : false,

@@ -18,6 +18,7 @@ html
 		link(href="../css/set2.css", rel='stylesheet')
 		link(href="../css/main.css", rel='stylesheet')
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+			
 		script(type='text/javascript'). 
 			try{Typekit.load({ async: true });}catch(e){}
 
@@ -96,7 +97,7 @@ html
 			.section#sec_competition.container.no-pad(data-anchor='competition').fp-auto-height
 
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad-m
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -146,7 +147,7 @@ html
 								a.navy.btn.btn-4.btn-4a.icon-arrow-right(href='#jumpnow') 我要參加!
 
 				.slide#competition_info_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad-m
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -203,7 +204,7 @@ html
 					
 
 				.slide#competition_prize_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad-m
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -225,12 +226,15 @@ html
 									li 
 										a(href="#competition/3") 承辦贊助
 								.col-md-12
-									.col-md-4.col-sm-4.prize-single
-										h4 $90,000 
-									.col-md-4.col-sm-4.prize-single
-										h4 $300,000
-									.col-md-4.col-sm-4.prize-single
-										h4 $50,000
+									.col-md-4.col-sm-4
+										.prize-single
+										h4 NTD$90,000 
+									.col-md-4.col-sm-4
+										.prize-single
+										h4 NTD$300,000
+									.col-md-4.col-sm-4
+										.prize-single
+										h4 NTD$50,000
 									.col-md-12
 										p *入選隊伍均可於新加坡設立境外公司 <br/>
 											small
@@ -239,7 +243,7 @@ html
 												＊主辦單位保有修改、終止、變更活動內容細節之權利，且不另行通知。
 
 				.slide#competition_sponsor_slide.slide-padding
-					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad-m
+					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
 							.border.top
 							.border.right.R_top
@@ -265,7 +269,7 @@ html
 											li 
 												span 
 													|來自新加坡的專業集團，打造出連續成功創業的佳績。Ping!，一個專業孵化平台，透過嚴格篩選talent，進而培養並激發各種可能，讓你與國際公司共同打造產品，提升自身能力及經驗。更進一步幫助平台內團隊相互砥礪，孵化、成長、綻放國際。
-													a.gotosite(href="#") 	前往官網
+													a.gotosite(href="http://ping.com.sg", target="_blank") 	前往官網
  
 									.col-md-9.clearfix
 										h3 贊助單位
@@ -274,27 +278,29 @@ html
 												li 
 													span
 														|Venturecraft，一間創投公司，致力於幫助各階段的新創公司開發產品、進入市場，提高國際競爭力。 我們與Singapore-MIT Alliance for Research And Technology (SMART) Innovation Centre、新加坡政府共同建立與國際接軌的橋樑。
-														a.gotosite(href="#") 	前往官網
+														a.gotosite(href="http://www.venturecraft.vc" ,target="_blank") 	前往官網
 												li 
 													span
 														|東亞最大的自由行社交網絡，背包客能分享彼此的旅遊經歷。隨著超過2100萬的評分和評論，即Mafengwo旅遊指南下載超過3.82億次，Mafengwo更貼近使用者提供酒店，機票，旅遊線路，簽證，保險信息...等便捷服務。
-														a.gotosite(href="#") 	前往官網
+														a.gotosite(href="http://www.mafengwo.cn", target="_blank") 	前往官網
 												li 
-													span
-														|SixThreeFive提供簡便的整合性服務，協助貴公司尋找最適合的資助並提供成熟的管理經驗，透過專業人士的協助讓你的公司運作得更加效率。
-														a.gotosite(href="#") 	前往官網
-												li
 													span
 														|Cityours是亞洲觀光旅遊的領導者，將最好的旅遊經驗及景點帶給我們重視的每一位旅客。不管是觀光體驗還是得天獨厚的便利交通，我們都有自信滿足每一位旅客的需求。
-														a.gotosite(href="#") 	前往官網
-												li 
+														
+														a.gotosite(href="https://www.citytours.sg" ,target="_blank") 	前往官網
+												li
 													span
-														|我們給每個start-up一個成功的機會！隨著E27你將會被引領到一個擁有眾多資源的community，在裡面你可以接觸導師、合作夥伴、投資者、同事和客戶。現在，運用裡面所有的資源，打造屬於你的數十億美元的公司！
-														a.gotosite(href="#") 	前往官網
+														|SixThreeFive提供簡便的整合性服務，協助貴公司尋找最適合的資助並提供成熟的管理經驗，透過專業人士的協助讓你的公司運作得更加效率。
+														a.gotosite(href="https://static.wixstatic.com/media/1e4f62_65f2102dbf7341cb9730a213d2fd0b40.png/v1/fill/w_202,h_180,al_c,lg_1/1e4f62_65f2102dbf7341cb9730a213d2fd0b40.png" ,target="_blank") 	前往官網
 												li 
 													span
 														|國際企業發展局(IE Singapore)為新加坡組織機關，致力於促進新加坡企業開展海外經濟合作，協助新加坡企業國際化。我們的願景是發展一個Globally Competitive Companies(GCCS)的商業中心，領先全球國際貿易。
-														a.gotosite(href="#") 	前往官網
+														
+														a.gotosite(href="http://www.iesingapore.gov.sg" ,target="_blank") 	前往官網
+												li 
+													span
+														|我們給每個start-up一個成功的機會！隨著E27你將會被引領到一個擁有眾多資源的community，在裡面你可以接觸導師、合作夥伴、投資者、同事和客戶。現在，運用裡面所有的資源，打造屬於你的數十億美元的公司！
+														a.gotosite(href="https://e27.co", target="_blank") 	前往官網
 
 
 											

@@ -1,4 +1,8 @@
+#ignore the main.css because of the comment
+main.css
 
+#ignore the .log
 *.log
 
-*.log.*
+#ignore the .scssc
+*.scssc

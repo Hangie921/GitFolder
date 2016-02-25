@@ -1805,7 +1805,7 @@ div.contact_container input[type="submit"] {
 }
 
 /* line 1043, ../sass/modules/_sections.scss */
-button.contact_us_btn {
+a.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
   display: block;
@@ -2021,10 +2021,10 @@ div.slide.team_details button:focus, div.slide.personal_details button:focus {
 /* line 168, ../sass/modules/_forms.scss */
 #add_member:after {
   margin-left: 5px;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   font-size: 29px;
-  line-height: 32px;
+  line-height: 30px;
   text-align: center;
   content: ' + ';
   border: 1px solid #fff;
@@ -2155,9 +2155,13 @@ button.submit_btn {
   bottom: -271px;
   right: 0px;
 }
+/* line 319, ../sass/modules/_forms.scss */
+#reg_btn.btn-error:after {
+  left: 10%;
+}
 
 /****FOR CUSTOMIZED FILE INPUT********/
-/* line 326, ../sass/modules/_forms.scss */
+/* line 328, ../sass/modules/_forms.scss */
 .custom-file-upload-hidden {
   display: none;
   visibility: hidden;
@@ -2165,33 +2169,33 @@ button.submit_btn {
   left: -9999px;
 }
 
-/* line 332, ../sass/modules/_forms.scss */
+/* line 334, ../sass/modules/_forms.scss */
 .custom-file-upload {
   display: block;
   width: auto;
   font-size: 16px;
   margin-top: 30px;
 }
-/* line 338, ../sass/modules/_forms.scss */
+/* line 340, ../sass/modules/_forms.scss */
 .custom-file-upload label {
   display: block;
   margin-bottom: 5px;
 }
 
-/* line 344, ../sass/modules/_forms.scss */
+/* line 346, ../sass/modules/_forms.scss */
 .file-upload-wrapper {
   position: relative;
   margin-bottom: 5px;
 }
 
-/* line 349, ../sass/modules/_forms.scss */
+/* line 351, ../sass/modules/_forms.scss */
 .file-upload-input {
   width: 200px;
-  color: #fff;
+  color: #0e324b;
   font-size: 16px;
   padding: 11px 17px;
-  border: none;
-  background-color: #f16b29;
+  border: 1px solid #fff;
+  background-color: transparent;
   -moz-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
@@ -2200,23 +2204,23 @@ button.submit_btn {
   float: left;
   /* IE 9 Fix */
 }
-/* line 358, ../sass/modules/_forms.scss */
+/* line 360, ../sass/modules/_forms.scss */
 .file-upload-input:hover, .file-upload-input:focus {
-  background-color: #ef5a11;
+  background-color: #b3b3b3;
   outline: none;
 }
 
-/* line 363, ../sass/modules/_forms.scss */
+/* line 365, ../sass/modules/_forms.scss */
 .file-upload-button {
   cursor: pointer;
   display: inline-block;
-  color: #fff;
+  color: #0e324b;
   font-size: 16px;
   text-transform: uppercase;
   padding: 11px 20px;
   border: none;
   margin-left: -1px;
-  background-color: #d9510e;
+  background-color: white;
   float: left;
   /* IE 9 Fix */
   -moz-transition: all 0.2s ease-in;
@@ -2225,9 +2229,9 @@ button.submit_btn {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 375, ../sass/modules/_forms.scss */
+/* line 377, ../sass/modules/_forms.scss */
 .file-upload-button:hover {
-  background-color: #a93f0b;
+  background-color: #b3b3b3;
 }
 
 /* line 2, ../sass/modules/_animations.scss */
@@ -3116,6 +3120,19 @@ ul.menu li {
   background-color: transparent;
 }
 /* line 51, ../sass/layouts/_header.scss */
+ul.menu li.active a {
+  font-weight: 600;
+}
+/* line 57, ../sass/layouts/_header.scss */
+ul.menu li.jumpnow_link.active a {
+  background: #fbaf5d;
+  color: #fff !important;
+}
+/* line 62, ../sass/layouts/_header.scss */
+ul.menu li.jumpnow_link.active a:after {
+  opacity: 0 !important;
+}
+/* line 69, ../sass/layouts/_header.scss */
 ul.menu li a {
   position: relative;
   display: inline-block;
@@ -3130,7 +3147,7 @@ ul.menu li a {
   font-family: "raleway", "文鼎黑體";
   font-size: 14px;
 }
-/* line 65, ../sass/layouts/_header.scss */
+/* line 83, ../sass/layouts/_header.scss */
 ul.menu li a:after {
   position: absolute;
   top: 100%;
@@ -3147,33 +3164,30 @@ ul.menu li a:after {
   -moz-transform: translateY(10px);
   transform: translateY(10px);
 }
-/* line 82, ../sass/layouts/_header.scss */
+/* line 100, ../sass/layouts/_header.scss */
 ul.menu li a:hover {
+  font-weight: 600;
   background: transparent !important;
 }
-/* line 86, ../sass/layouts/_header.scss */
+/* line 105, ../sass/layouts/_header.scss */
 ul.menu li a:hover::after, ul.menu li a a:focus::after {
   display: none;
 }
-/* line 91, ../sass/layouts/_header.scss */
-ul.menu li a:active {
-  background-color: transparent !important;
-}
-/* line 97, ../sass/layouts/_header.scss */
-ul.menu li a:hover::after, ul.menu li a:focus::after {
-  opacity: 1;
+/* line 113, ../sass/layouts/_header.scss */
+ul.menu li a:hover::after, ul.menu li a:focus::after, ul.menu li.active a:after {
+  opacity: 1 !important;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   transform: translateY(0px);
   color: white;
 }
 
-/* line 112, ../sass/layouts/_header.scss */
+/* line 130, ../sass/layouts/_header.scss */
 .jumpnow_link {
   margin-top: 5px !important;
 }
 
-/* line 115, ../sass/layouts/_header.scss */
+/* line 133, ../sass/layouts/_header.scss */
 .jumpnow_link a {
   padding: 0 10px;
   display: block;
@@ -3183,41 +3197,41 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
   font-weight: 600 !important;
   color: #fbaf5d !important;
 }
-/* line 125, ../sass/layouts/_header.scss */
+/* line 143, ../sass/layouts/_header.scss */
 .jumpnow_link a:hover {
   background: #fbaf5d;
   color: white !important;
 }
-/* line 130, ../sass/layouts/_header.scss */
+/* line 148, ../sass/layouts/_header.scss */
 .jumpnow_link a:hover:after {
   display: none !important;
 }
-/* line 134, ../sass/layouts/_header.scss */
+/* line 152, ../sass/layouts/_header.scss */
 .jumpnow_link a:hover:before {
   display: none !important;
 }
 
-/* line 139, ../sass/layouts/_header.scss */
+/* line 157, ../sass/layouts/_header.scss */
 #header, #header ul li a {
   transition: color .5s, opacity .5s;
 }
 
-/* line 142, ../sass/layouts/_header.scss */
+/* line 160, ../sass/layouts/_header.scss */
 #header.fff {
   background-color: transparent;
 }
 
-/* line 145, ../sass/layouts/_header.scss */
+/* line 163, ../sass/layouts/_header.scss */
 #header.fff ul li a {
   color: #333;
 }
 
-/* line 148, ../sass/layouts/_header.scss */
+/* line 166, ../sass/layouts/_header.scss */
 #header.orange {
   background-color: transparent;
 }
 
-/* line 151, ../sass/layouts/_header.scss */
+/* line 169, ../sass/layouts/_header.scss */
 #header.orange ul li a {
   color: #fff;
 }
@@ -3492,20 +3506,20 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
   }
 
   /****COMPETITION*********/
-  /* line 269, ../sass/modules/_responsive.scss */
+  /* line 272, ../sass/modules/_responsive.scss */
   div.competition_topic .btn {
     margin-top: 30px;
     position: initial;
   }
 
-  /* line 273, ../sass/modules/_responsive.scss */
+  /* line 276, ../sass/modules/_responsive.scss */
   div.timeline {
     position: initial;
     margin: 0;
   }
 
   /**SPONSORSS*****/
-  /* line 279, ../sass/modules/_responsive.scss */
+  /* line 282, ../sass/modules/_responsive.scss */
   div.sponsor-group li span {
     opacity: 0;
     position: absolute;
@@ -3515,55 +3529,59 @@ ul.menu li a:hover::after, ul.menu li a:focus::after {
   }
 
   /*Jumpnow*****/
-  /* line 289, ../sass/modules/_responsive.scss */
+  /* line 292, ../sass/modules/_responsive.scss */
   div.nav_group {
     right: 26%;
   }
 
-  /* line 293, ../sass/modules/_responsive.scss */
+  /* line 296, ../sass/modules/_responsive.scss */
   .team_details .slider-inner {
     padding-bottom: 30px;
   }
 
-  /* line 298, ../sass/modules/_responsive.scss */
+  /* line 301, ../sass/modules/_responsive.scss */
   .slide.team_details .team_detail_single, div.slide.personal_details .team_detail_single {
     border: 1px solid #f16b29;
     margin-bottom: 10px;
     padding: 10px;
   }
-  /* line 304, ../sass/modules/_responsive.scss */
+  /* line 307, ../sass/modules/_responsive.scss */
   .slide.team_details span.team_member, div.slide.personal_details span.team_member {
     width: 100% !important;
   }
-  /* line 308, ../sass/modules/_responsive.scss */
+  /* line 311, ../sass/modules/_responsive.scss */
   .slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
     width: 100% !important;
   }
 
-  /* line 317, ../sass/modules/_responsive.scss */
+  /* line 320, ../sass/modules/_responsive.scss */
   div.slide.team_details span.input {
     width: 100%;
   }
-  /* line 321, ../sass/modules/_responsive.scss */
+  /* line 324, ../sass/modules/_responsive.scss */
   div.slide.team_details button#del_member {
     position: absolute !important;
     background: #0e324b;
     right: -15px;
     top: -3px;
   }
-  /* line 328, ../sass/modules/_responsive.scss */
+  /* line 331, ../sass/modules/_responsive.scss */
   div.slide.team_details #add_member {
     margin: 0;
   }
 
-  /* line 333, ../sass/modules/_responsive.scss */
+  /* line 336, ../sass/modules/_responsive.scss */
   #reg_btn {
     margin: 30px auto 0;
     position: initial;
   }
 
   /***CONTACT******/
-  /* line 344, ../sass/modules/_responsive.scss */
+  /* line 345, ../sass/modules/_responsive.scss */
+  div.contact_container {
+    position: initial;
+  }
+  /* line 347, ../sass/modules/_responsive.scss */
   div.contact_container span.input {
     width: 100%;
   }

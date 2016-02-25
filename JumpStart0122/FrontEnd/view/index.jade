@@ -107,7 +107,7 @@ html
 							.border.straight_line
 							.border.straight_line_down
 							.border.horizon_line
-							a.competition_topic_slide_arrow.slide_next.arrow(href="#competition/1") next
+							a.competition_topic_slide_arrow.slide_next.arrow.hidden-xs(href="#competition/1") next
 							.col-md-12.clearfix.no-pad-m
 								ul.competition-headings#competition_menu
 									li 
@@ -156,8 +156,8 @@ html
 							.border.left
 							.border.horizon_line
 							.border.horizon_line_left
-							a.competition_info_slide_arrow.slide_prev.arrow(href="#competition") prev
-							a.competition_info_slide_arrow.slide_next.arrow(href="#competition/2") next
+							a.competition_info_slide_arrow.slide_prev.arrow.hidden-xs(href="#competition") prev
+							a.competition_info_slide_arrow.slide_next.arrow.hidden-xs(href="#competition/2") next
 							
 							.col-md-12.clearfix.no-pad-m
 								ul.competition-headings#competition_menu
@@ -213,8 +213,8 @@ html
 							.border.left
 							.border.horizon_line
 							.border.horizon_line_left
-							a.competition_info_slide_arrow.slide_prev.arrow(href="#competition/1") prev
-							a.competition_info_slide_arrow.slide_next.arrow(href="#competition/3") next
+							a.competition_info_slide_arrow.slide_prev.arrow.hidden-xs(href="#competition/1") prev
+							a.competition_info_slide_arrow.slide_next.arrow.hidden-xs(href="#competition/3") next
 							.col-md-12.clearfix.no-pad
 								ul.competition-headings#competition_menu
 									li 
@@ -251,7 +251,7 @@ html
 							.border.bottom
 							.border.left
 							.border.horizon_line_left
-							a.competition_prize_slide_arrow.slide_prev.arrow(href="#competition/2") prev
+							a.competition_prize_slide_arrow.slide_prev.arrow.hidden-xs(href="#competition/2") prev
 							.col-md-12.clearfix.no-pad
 								ul.competition-headings#competition_menu
 									li 
@@ -354,8 +354,8 @@ html
 								.border.left
 								.border.horizon_line
 								.border.horizon_line_left#jumpnow_team_details
-								a.slide_next.arrow.slide_team_details_arrow(href="#jumpnow/2") next
-								a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow") prev
+								a.slide_next.arrow.slide_team_details_arrow.hidden-xs(href="#jumpnow/2") next
+								a.slide_prev.arrow.slide_team_details_arrow.hidden-xs(href="#jumpnow") prev
 								
 								.col-md-11.clearfix
 								.col-md-5.clearfix
@@ -368,17 +368,16 @@ html
 											|產品介紹	 
 											span.reminder 請在兩百字以內介紹你精彩的產品!	
 											span#counter_container
-											|還剩下
-											span#counter 200
-											|字 
+												|還剩下
+												span#counter 200
+												|字 
 												
 											textarea(name='product_brief')#product_brief
-										span.input.input--hoshi
+										span.input
 											.custom-file-upload
-												input#file.input__field.input__field--hoshi(type='file',name='BP_file',multiple)
-												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='file')
-														span.input__label-content.input__label-content--hoshi 上傳檔案
-															span.reminder 限PDF!
+												input#file.input__field(type='file',name='BP_file',multiple)
+												label.input__label(for='file')
+														
 									.col-md-7.clearfix
 										.team_detail_single.clearfix
 											span.input.input--hoshi.team_member
@@ -406,7 +405,7 @@ html
 								.border.right.R_bottom
 								.border.bottom
 								.border.left
-								a.slide_prev.arrow.slide_team_details_arrow(href="#jumpnow/1") prev
+								a.slide_prev.arrow.slide_team_details_arrow.hidden-xs(href="#jumpnow/1") prev
 								.col-md-6.personal_details_group
 									span.input.input--hoshi
 										input#input-4.input__field.input__field--hoshi(type='text',name='contact')
@@ -428,7 +427,8 @@ html
 										span   我同意
 									//- input.col-centered(type='submit' value='我要提交計畫')
 								.col-md-6.relative-position.clearfix
-									a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange  完成了，我要提交!
+									a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange
+										|完成了，我要提交!
 
 							
 

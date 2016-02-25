@@ -167,10 +167,10 @@ div.slide.team_details, div.slide.personal_details {
 	float:right;
 		&:after {
 			margin-left:5px;
-			width:32px;
-			height:32px;
-			font-size:29px;
-			line-height: 32px;
+			    width: 30px;
+   			 height: 30px;
+    		font-size: 29px;
+    		line-height: 30px;
 			text-align: center;
 			content:' + ';
 			border:1px solid #fff;
@@ -316,9 +316,11 @@ button.submit_btn {
     position:absolute;
    bottom: -271px;
     right: 0px;
+	&.btn-error:after {
+		left:10%;
+	}
 
 }
-
 
 /****FOR CUSTOMIZED FILE INPUT********/
 $file-upload-size: 200px;
@@ -348,31 +350,32 @@ $file-upload-size: 200px;
 }
 .file-upload-input {
     width: $file-upload-size;
-    color: #fff;
+    color: $navy;
     font-size: 16px;
     padding: 11px 17px; 
-    border: none;
-    background-color: $primary-color; 
+    border: 1px solid #fff;
+    background-color: transparent; 
     @include transition(all 0.2s ease-in); 
     float: left; /* IE 9 Fix */
     &:hover, &:focus { 
-        background-color: darken($primary-color, 5);
+        background-color: darken(white, 30);
         outline: none; 
     }
 }
 .file-upload-button {
     cursor: pointer; 
     display: inline-block; 
-    color: #fff;
+    color: $navy;
     font-size: 16px;
     text-transform: uppercase;
     padding: 11px 20px; 
     border: none;
     margin-left: -1px;  
-    background-color: darken($primary-color, 10); 
+    background-color: white; 
     float: left; /* IE 9 Fix */
     @include transition(all 0.2s ease-in);
     &:hover {
-        background-color: darken($primary-color, 20);
+        background-color: darken(white, 30);
     }
 }
+

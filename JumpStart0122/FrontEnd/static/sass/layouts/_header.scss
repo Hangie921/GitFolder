@@ -47,6 +47,24 @@ ul.menu {
     text-align: right;
     vertical-align: top;
     background-color:transparent;
+
+    &.active a {
+    	font-weight: 600;
+    }
+
+    &.jumpnow_link {
+
+		&.active a  {
+
+			background:$secondary-color;
+			color:#fff !important;
+
+			&:after{
+				opacity: 0 !important;
+			}
+    	}
+
+    }
 	
 		a {
 			position: relative;
@@ -80,6 +98,7 @@ ul.menu {
 			}
 
 			&:hover {
+				font-weight: 600;
 				background:transparent !important;
 			}
 
@@ -88,21 +107,20 @@ ul.menu {
 				
 			}
 			
-			&:active {
-				background-color:transparent !important;
-			}
-		}
+					}
 
 
-		& a:hover::after,& a:focus::after {
+		&  a:hover::after,& a:focus::after, &.active a:after {
 				
-				opacity: 1;
+				opacity: 1 !important;
 				-webkit-transform: translateY(0px);
 				-moz-transform: translateY(0px);
 				transform: translateY(0px);
 				color:$white;
 			
 			}
+
+
 
 
 	}

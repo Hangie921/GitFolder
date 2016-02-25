@@ -390,9 +390,9 @@ $(document).ready(function() {
         $wrap = $('<div class="file-upload-wrapper">'),
         $input = $('<input type="text" class="file-upload-input" />'),
         // Button that will be used in non-IE browsers
-        $button = $('<button type="button" class="file-upload-button">Select a File</button>'),
+        $button = $('<button type="button" class="file-upload-button">上傳商業計劃書</button>'),
         // Hack for IE
-        $label = $('<label class="file-upload-button" for="' + $file[0].id + '">Select a File</label>');
+        $label = $('<label class="file-upload-button" for="' + $file[0].id + '">上傳商業計劃書</label>');
 
       // Hide by shifting to the left so we
       // can still trigger events

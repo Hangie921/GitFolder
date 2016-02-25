@@ -277,7 +277,7 @@ $(document).ready(function() {
 
 /********to validate the previous part of the reg_form*/
 
-   var err_msg=['恩?隊伍名稱？','你做什麼產品？','隊友名稱呢?','隊友走哪路？','產品介紹呢？(.pdf)'];
+   var err_msg=['恩?隊伍名稱？','你做什麼產品？','隊友名稱呢?','隊友走哪路？','說好的BP呢？(.pdf)'];
    //to validate the team_details input field 
    	$("#sec_jumpnow a.next_btn").click(function(){
   
@@ -396,6 +396,10 @@ $(document).ready(function() {
 		    agree:{ // agree checkbox
 		    	required:true
 		    }
+		},
+		
+		messages:{
+
 		}
 	});
 

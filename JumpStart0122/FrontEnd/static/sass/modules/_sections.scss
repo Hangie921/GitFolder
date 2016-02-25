@@ -393,26 +393,29 @@ div.sponsor-group {
 		color:$primary-color;
 		font-weight: bold;
 		font-size:20px;
-		border-bottom:1px solid gainsboro;
 		letter-spacing: 3px;
 		padding-bottom:10px;
 	}
 
 	
 		li {
+			@include background-size(90% auto);
+			border:1px solid gainsboro;
 			position:relative;
 			cursor: pointer;
 			display: inline-block;
 			background:black;
 			width:100%;
 			height:80px;
-			margin-right:50px;
+			padding:20px;
 			vertical-align: top;
 			
 
 			&:first-child {
 				background: url(../img/ping_logo.png) no-repeat center center;
-				@include background-size(100% auto);
+				@include background-size(90% auto);
+
+
 			}
 			
 			.gotosite {
@@ -422,7 +425,7 @@ div.sponsor-group {
 				padding:5px 0;
 				font-size:12px;
 				display: block;
-				margin:0 auto;
+				margin:10px auto 0;
 				width:100px;
 				@include transition(all .25s);
 
@@ -436,8 +439,8 @@ div.sponsor-group {
 				opacity: 0;
 				position:absolute;
 				top:0;
-				left:-10%;
-				width:120%;
+				left:0;
+				width:100%;
 				display: block;
 				background-color:rgba(232,232,232,0.9);
 				@include transition(all .25s);
@@ -465,89 +468,42 @@ div.sponsor-group {
 
 				}
 			}
+
 			
 			
 		}
 	ul.sponsor-list.second li {
-				width:25%;
+				width:32%;
+				margin:0 1% 1% 0;
+
 				&:first-child{
 				background: url(../img/venture_craft_logo.png) no-repeat center center;
-				@include background-size(100% auto);
+				@include background-size(90% auto);
 				}
 				&:nth-child(2){
 				background: url(../img/螞蜂窩_logo.png) no-repeat center center;
-				@include background-size(100% auto);
+				@include background-size(90% auto);
 				}
 				&:nth-child(3){
-				background: url(../img/citytours_logo.png) no-repeat center center;
-				@include background-size(100% auto);
+				background: url(../img/citytours_logo.png) no-repeat center -5px;
+				@include background-size(90% auto);
 				}
 				&:nth-child(4){
-				background: url(../img/365_logo.png) no-repeat left center;
-				@include background-size(150% auto);
-				height:110px;
+				background: url(../img/365_logo.png) no-repeat center center;
+				@include background-size(90% auto);
 				}
 				&:nth-child(5){
 				background: url(../img/DSEE_logo.png) no-repeat center center;
-				@include background-size(100% auto);
+				@include background-size(90% auto);
 				}
 				&:nth-child(6){
 				background: url(../img/e27_logo.png) no-repeat center center;
-				@include background-size(100% auto);
+				@include background-size(90% auto);
 				}
 
 			}
 }
 
-
-	.hello li {
-		
-
-
-
-		
-		a{	
-			color:$primary-color;
-			display: block;
-			text-indent: -9999px;
-		}
-
-		&:first-child {
-			background-image:url(../img/螞蜂窩_logo.png);
-
-		}
-		&:nth-child(2){
-			background-image: url(../img/venture_craft_logo.png);
-		}
-		&:nth-child(3){
-			background-image: url(../img/365_logo.png);
-		}
-		&:nth-child(4){
-			background-image: url(../img/e27_logo.png);
-		}
-		&:nth-child(5){
-			background-image: url(../img/citytours_logo.png);
-		}
-		&:nth-child(6){
-			background-image: url(../img/ping_logo.png);
-		}
-		&:nth-child(7){
-			background-image: url(../img/DSEE_logo.png);
-		}
-		&:hover {
-			-moz-background-blend-mode: normal;
-	    	-ms-background-blend-mode: normal;
-	    	-webkit-background-blend-mode: normal;
-	    	-o-background-blend-mode: normal;
-	    	background-blend-mode: normal;
-	    	-webkit-filter: grayscale(0); 
-			-moz-filter: grayscale(0);
-			filter: gray; 
-			filter: grayscale(0);
-			opacity: 0.8;
-			background-color:white;
-		}
-	}
 
 
 /**COMPETITION DETAILS**/
@@ -561,7 +517,7 @@ div.sponsor-group {
 
 		li {
 			float:left;
-			width:30%;
+			
 
 			margin-left:1%;
 			padding-left:20px;
@@ -723,8 +679,9 @@ div.timeline {
 	p {
 	 		color:$primary-color !important;
 	 		font-size:18px;
-	 		margin-top:20px;
+	 		margin-top:30px;
 	 		text-align:center;
+	 		clear: both;
 
 	 		small {
 	 			line-height: 18px;
@@ -733,46 +690,54 @@ div.timeline {
 	 		}
 	 	}
 
-	.prize-single {
-		margin:0 auto;
-		min-height:100px;
+	.col-md-4 .prize-single {
+		margin:30px auto 0;
+		min-height:180px;
 
-		&:first-of-type {
-		background: url(../img/secondplace.png) no-repeat center 0;
-		@include background-size(60% auto);
-			h4{
-				font-size:34px;
-				color:#2b4252;
-			}
-	 	}
-	 	&:nth-of-type(2) {
-		background: url(../img/firstplace.png) no-repeat center 0;
-		@include background-size(60% auto);
-			color:$navy;
 		
 	 	}
-	 	&:nth-of-type(3) {
-		background: url(../img/thirdplace.png) no-repeat center 0;
-		@include background-size(60% auto);
-			h4{
-				font-size:34px;
-				color:#2b4252;
+
+	& .col-md-4:first-of-type .prize-single{
+		background: url(../img/secondplace.png) no-repeat center bottom;
+		@include background-size(200px auto);
+			
+	 	}
+	 	& .col-md-4:nth-of-type(2)  {
+
+		 	h4 {
+		 		border:1px solid $primary-color;
+		 		padding:10px;
+				font-size:36px !important;
 			}
+		
+
+		 	.prize-single{
+
+			background: url(../img/firstplace.png) no-repeat center bottom;
+			@include background-size(200px auto);
+			color:$navy;
+
+		 		}
 	 	}
 
+	 	& .col-md-4:nth-of-type(3) .prize-single{
+		background: url(../img/thirdplace.png) no-repeat center bottom;
+		@include background-size(200px auto);
+			
+		}
 	 	h4 {
 	 		display: block;
 	 		text-align: center;
 	 		font-family: $english;
 			font-weight: 600;
-			font-size:45px;
+			font-size:22px;
 			text-align: center;
 			display: block;
-			margin-top:210px;
+			margin-top:15px;
 	 	}
 	 	
 
-	}
+	
 
 
 

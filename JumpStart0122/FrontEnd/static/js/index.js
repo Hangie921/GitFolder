@@ -78,18 +78,25 @@ $(document).ready(function() {
 				}
 			},
 			onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-				if(anchorLink =='jumpnow' && slideIndex == 0 && index == 4){
-					if(!$('#sec_jumpnow.timeLineAni').hasClass('opacity')){
-						$('#sec_jumpnow.timeLineAni').addClass('opacity');
-					}
-				}else if(nextSlideIndex == 0){
-					if($('#sec_jumpnow.timeLineAni').hasClass('opacity')){
-					   $('#sec_jumpnow.timeLineAni').removeClass('opacity');
-					}
-
-				}else if(nextSlideIndex == 1){
-					var height = $('.team_details .slide-inner').height();
-					$('.team_details .slide-inner').height(height);	
+				// alert('anchorLink:'+anchorLink+',index:'+index+',slideIndex:'+slideIndex+',nextSlideIndex:'+nextSlideIndex);
+				switch(anchorLink){
+					case 'jumpnow':
+						if(slideIndex == 0 && index == 4){
+							if(!$('#sec_jumpnow.timeLineAni').hasClass('opacity')){
+								$('#sec_jumpnow.timeLineAni').addClass('opacity');
+							}
+						}else if(nextSlideIndex == 0){
+							if($('#sec_jumpnow.timeLineAni').hasClass('opacity')){
+							   $('#sec_jumpnow.timeLineAni').removeClass('opacity');
+							}
+						}
+					break;
+					case 'competition':
+						if(nextSlideIndex == 1 && slideIndex ==0){
+							var height = $('.team_details .slide-inner').height();
+							$('.team_details .slide-inner').height(height);
+						}
+					break;
 				}
 			},
 			afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
@@ -501,9 +508,6 @@ $(document).ready(function() {
   }
 
 }(jQuery));
-
-
-
 
 
 

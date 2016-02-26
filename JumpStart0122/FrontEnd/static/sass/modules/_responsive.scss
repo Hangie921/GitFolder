@@ -1,26 +1,11 @@
+
+
+
+
 /********************* TABLET******************/
+@media screen and (max-width: 990px) {
 
-
-/******************MOBILE************************/
-
-@media screen and (max-width: 480px) {
-	
-	body {
-		font-size: 16px;
-		line-height: 22px;
-		letter-spacing: initial;
-	}
-	
-
-	.no-pad-m  {
-		padding:0 !important;
-	}
-
-	.section {
-		height:auto !important;
-		padding-bottom:30px !important;
-	}
-	/*****MOBILE MENU************/
+/*****MOBILE MENU************/
 	.menu-mobile {
   position: fixed;
   width: 50px;
@@ -124,6 +109,30 @@ ul.menu {
 	}
 }
 	
+
+
+
+
+}/******************MOBILE************************/
+
+@media screen and (max-width: 480px) {
+	
+	body {
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: initial;
+	}
+	
+
+	.no-pad-m  {
+		padding:0 !important;
+	}
+
+	.section {
+		height:auto !important;
+		padding-bottom:30px !important;
+	}
+
 	header#header {
 		background:$navy ;
 		height:50px;

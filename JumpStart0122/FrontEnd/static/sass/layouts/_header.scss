@@ -52,19 +52,7 @@ ul.menu {
     	font-weight: 600;
     }
 
-    &.jumpnow_link {
-
-		&.active a  {
-
-			background:$secondary-color;
-			color:#fff !important;
-
-			&:after{
-				opacity: 0 !important;
-			}
-    	}
-
-    }
+    
 	
 		a {
 			position: relative;
@@ -126,34 +114,13 @@ ul.menu {
 
 
 .jumpnow_link a{
-		padding:0 10px;
 		display: block;
-		padding:0px 10px !important;
-		border-radius: 20px;
-		border:1px solid $secondary-color;
     	font-weight: 600 !important;
 
     	color:$secondary-color !important;
 
-    	&:hover::after,a:focus::after {
-				display: none;
-				
-			}
-
-    	&:hover {
-    		background:$secondary-color;
-    		color:white !important;
-
-
-    		&:after {
-    			display: none !important;
-    			background-color:transparent;
-    			
-    		}
-    		&:before {
-    			display:none !important;
-    		}
-    	}
+    	
+    	
 	}
 #header,#header ul li a {
 	transition:color .5s, opacity .5s;

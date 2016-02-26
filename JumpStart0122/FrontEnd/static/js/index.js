@@ -352,7 +352,7 @@ $(document).ready(function() {
 
 
     /*to validate the reg_form*/
-	var validator = $("#reg_form").validate({
+	$("#reg_form").validate({
 		errorPlacement: function(error, element) {
 			// Append error within linked label
 			if(element.attr("name")!=="BP_file"){
@@ -385,7 +385,8 @@ $(document).ready(function() {
 		    	required: true
 		    },
 		    phone: {
-		    	required: true
+		    	required: true,
+		    	number:true
 		    },
 		    email:{
 		    	required: true,
@@ -395,33 +396,49 @@ $(document).ready(function() {
 		    	required:true
 		    }
 		}
-		// ,messages:{
-		// 	team_name:"隊伍名稱咧？",
-		// 	product_brief:{
-		// 		minlength:"話太少了吧？",
-		// 		required:"你做什麼產品？"
-		// 	},	
-		// 	BP_file:{
-		// 		required:"說好的BP呢？",
-		// 		extension:"就說要pdf"
-		// 	},
-		// 	member_brief_name:"你的隊友呢？！",
-		// 	member_brief_info:"隊友走哪路？",
-		//     contact: {
-		//     	required: "怎麼稱呼？"
-		//     },
-		//     phone: {
-		//     	required: "請給我你的電話>///<"
-		//     },
-		//     email:{
-		//     	required: "這超重要",
-		//     	email: "格式錯誤了吧"
-		//     },
-		//     agree:{ // agree checkbox
-		//     	required:"拜託按他"
-		//     }
-		// }
+		,messages:{
+			team_name:"隊伍名稱咧？",
+			product_brief:{
+				minlength:"話太少了吧？",
+				required:"你做什麼產品？"
+			},	
+			BP_file:{
+				required:"說好的BP呢？",
+				extension:"就說要pdf"
+			},
+			member_brief_name:"你的隊友呢？！",
+			member_brief_info:"隊友走哪路？",
+		    contact: {
+		    	required: "怎麼稱呼？"
+		    },
+		    phone: {
+		    	required: "請給我你的電話>///<"
+		    },
+		    email:{
+		    	required: "這超重要",
+		    	email: "格式錯誤了吧"
+		    },
+		    agree:{ // agree checkbox
+		    	required:"拜託按他"
+		    }
+		}
 	});
+
+	$('#reg_btn').click(function(){
+		var span = $(".file-upload-input").attr("title");
+		var btn = $('a.submit_btn');
+		var reg_form = $('#reg_form');
+		if(reg_form.valid()){  
+            submit_to_db(btn,reg_form);
+            $("#sec_jumpnow input").attr("placeholder","");
+            $(".file-upload-input").empty().append("限定.pdf");
+            $('#counter').html('200');
+		}else{
+			btn_error(btn);
+			$('.file-upload-input').empty().append(span);
+		}
+	});
+
 
     $('#contact_btn').click(function(){
 		var btn = $('a.contact_us_btn');
@@ -430,29 +447,21 @@ $(document).ready(function() {
             submit_to_db(btn,contact_form);
 		}
 		else{
-			btn_error(btn)
+			btn_error(btn);
 		}
 	});
 
-	$('#reg_btn').click(function(){
-		var btn = $('a.submit_btn');
-		var reg_form = $('#reg_form')
-		console.log($("input[type$='file']").val());
-		if(reg_form.valid()){  
-            submit_to_db(btn,reg_form);
-            $("#sec_jumpnow input").attr("placeholder","");
-            $(".file-upload-input").empty().append("限定.pdf");
-		}
-		else{
-			btn_error(btn)
-		}
-	});
+	
 
-	// var contact_info = $("#sec_jumpnow input[name$='contact'], input[name$='phone'],input[name$='email'], input[name$='agree']")
+	// var contact_info = $("#sec_jumpnow input[name$='contact'], #sec_jumpnow input[name$='phone'],#sec_jumpnow input[name$='email'], #sec_jumpnow input[name$='agree']");
 	// contact_info.addClass("ignore");
  //   	$("#sec_jumpnow a.next_btn").click(function(){
-	// 	var reg_form = $('#reg_form')
-
+	// 	var reg_form = $('#reg_form');
+	// 	console.log("team_name:"+$("input[name$='team_name']").val());
+	// 	console.log("product_brief:"+$("textarea[name$='product_brief']").val());
+	// 	console.log("BP_file:"+$("input[name$='BP_file']").val());
+	// 	console.log("member_brief_name:"+$("input[name$='member_brief_name']").val());
+	// 	console.log("member_brief_info:"+$("input[name$='member_brief_info']").val());
 	// 	if(reg_form.valid()){ 
  //        	$.fn.fullpage.moveTo('jumpnow',2);
  //        	contact_info.removeClass("ignore");
@@ -462,7 +471,7 @@ $(document).ready(function() {
 	// 	}
  //   	});
 
-	/*==========This is the product_brief textarea Counter*/
+	/*==========This is the product_brief textarea Counter==========*/
 	$('#product_brief').keyup(function(){
 		$('#counter').html((200-$(this).val().length));
 	});
@@ -486,7 +495,7 @@ $(document).ready(function() {
       var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
         $wrap = $('<div class="file-upload-wrapper">'),
         // $input = $('<input type="text" class="file-upload-input" />'),
-        $input = $("<span class='file-upload-input'>限定.pdf</span>"),
+        $input = $("<span class='file-upload-input'>限定上傳PDF</span>"),
         // Button that will be used in non-IE browsers
         $button = $('<button type="button" class="file-upload-button">上傳商業計劃書</button>'),
         // Hack for IE

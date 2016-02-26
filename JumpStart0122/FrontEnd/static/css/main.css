@@ -389,7 +389,7 @@ img.device {
 
 /* line 63, ../sass/modules/_buttons.scss */
 .icon-arrow-right:before {
-  content: "\e00d";
+  content: "\e902";
 }
 
 /* line 67, ../sass/modules/_buttons.scss */
@@ -418,13 +418,13 @@ img.device {
 
 /* line 88, ../sass/modules/_buttons.scss */
 .btn-4:active {
-  border-color: #17954c;
-  color: #17954c;
+  border-color: white;
+  color: white;
 }
 
 /* line 93, ../sass/modules/_buttons.scss */
 .btn-4:hover {
-  background: #24b662;
+  background: #f16b29;
 }
 
 /* line 97, ../sass/modules/_buttons.scss */
@@ -441,7 +441,7 @@ img.device {
 
 /* line 108, ../sass/modules/_buttons.scss */
 .btn-4:active:before {
-  color: #17954c;
+  color: white;
 }
 
 /* Button 4a */
@@ -548,10 +548,10 @@ img.device {
 /* Button 7 */
 /* line 199, ../sass/modules/_buttons.scss */
 .btn-7 {
-  background: #17aa56;
+  background: white;
   color: #fff;
   border-radius: 7px;
-  box-shadow: 0 5px #119e4d;
+  box-shadow: 0 5px white;
   padding: 25px 60px 25px 90px;
 }
 
@@ -594,7 +594,7 @@ img.device {
 
 /* line 242, ../sass/modules/_buttons.scss */
 .btn-success:before {
-  content: "\e001";
+  content: "\e904";
 }
 
 /* line 246, ../sass/modules/_buttons.scss */
@@ -708,7 +708,7 @@ img.device {
 
 /* line 311, ../sass/modules/_buttons.scss */
 .btn-error:before {
-  content: "\e002";
+  content: "\e901";
 }
 
 /* line 315, ../sass/modules/_buttons.scss */
@@ -1671,6 +1671,7 @@ div#sec_events {
 }
 
 /***CONTACT_US******/
+/* line 920, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #313131;
@@ -1679,10 +1680,11 @@ div.contact_container {
   padding: 30px;
   left: 0;
 }
-
+/* line 929, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
+/* line 932, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1694,20 +1696,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-
-/* line 940, ../sass/modules/_sections.scss */
+/* line 944, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-
+/* line 946, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fbaf5d;
   font-weight: normal !important;
 }
-/* line 946, ../sass/modules/_sections.scss */
+/* line 950, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
+/* line 957, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1719,10 +1721,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 964, ../sass/modules/_sections.scss */
+/* line 968, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
+/* line 973, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1733,48 +1736,57 @@ div.contact_container input[type="submit"] {
   float: right;
   margin-top: 15px;
 }
-
+/* line 984, ../sass/modules/_sections.scss */
 div.contact_container .reminder {
   color: #fbaf5d;
 }
 
+/* line 991, ../sass/modules/_sections.scss */
 .contact-details {
   font-family: "raleway", "文鼎黑體";
   text-align: left;
   color: #fff;
 }
+/* line 996, ../sass/modules/_sections.scss */
 .contact-details h3 {
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 998, ../sass/modules/_sections.scss */
+/* line 1003, ../sass/modules/_sections.scss */
 .contact-details ul {
   padding: 0;
 }
+/* line 1006, ../sass/modules/_sections.scss */
 .contact-details ul li {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
+/* line 1010, ../sass/modules/_sections.scss */
 .contact-details ul li h4 {
   font-weight: bold;
   color: #f16b29;
 }
+/* line 1015, ../sass/modules/_sections.scss */
 .contact-details ul li i {
   display: inline-block;
   margin-right: 10px;
 }
 
-
+/* line 1025, ../sass/modules/_sections.scss */
 a.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
   display: block;
   float: none;
 }
-
+/* line 1030, ../sass/modules/_sections.scss */
 a.contact_us_btn.btn-error:after {
+  left: 10%;
+}
+/* line 1033, ../sass/modules/_sections.scss */
+a.contact_us_btn.btn-success:after {
   left: 10%;
 }
 
@@ -2122,9 +2134,13 @@ button.submit_btn {
 #reg_btn.btn-error:after {
   left: 10%;
 }
+/* line 324, ../sass/modules/_forms.scss */
+#reg_btn.btn-success:after {
+  left: 10%;
+}
 
 /****FOR CUSTOMIZED FILE INPUT********/
-/* line 330, ../sass/modules/_forms.scss */
+/* line 333, ../sass/modules/_forms.scss */
 .custom-file-upload-hidden {
   display: none;
   visibility: hidden;
@@ -2132,33 +2148,35 @@ button.submit_btn {
   left: -9999px;
 }
 
-/* line 336, ../sass/modules/_forms.scss */
+/* line 339, ../sass/modules/_forms.scss */
 .custom-file-upload {
   display: block;
   width: auto;
   font-size: 16px;
   margin-top: 30px;
 }
-/* line 342, ../sass/modules/_forms.scss */
+/* line 345, ../sass/modules/_forms.scss */
 .custom-file-upload label {
   display: block;
   margin-bottom: 5px;
 }
 
-/* line 348, ../sass/modules/_forms.scss */
+/* line 351, ../sass/modules/_forms.scss */
 .file-upload-wrapper {
   position: relative;
   margin-bottom: 5px;
 }
 
-/* line 353, ../sass/modules/_forms.scss */
+/* line 356, ../sass/modules/_forms.scss */
 .file-upload-input {
   width: 50%;
+  line-height: 52px;
+  text-align: center;
+  font-size: 13px;
   height: 52px;
   display: block;
   color: #0e324b;
-  font-size: 16px;
-  padding: 11px 17px;
+  padding: 10px;
   border: 1px solid #fff;
   background-color: transparent;
   -moz-transition: all 0.2s ease-in;
@@ -2169,13 +2187,13 @@ button.submit_btn {
   float: left;
   /* IE 9 Fix */
 }
-/* line 364, ../sass/modules/_forms.scss */
+/* line 369, ../sass/modules/_forms.scss */
 .file-upload-input:hover, .file-upload-input:focus {
   background-color: #b3b3b3;
   outline: none;
 }
 
-/* line 369, ../sass/modules/_forms.scss */
+/* line 374, ../sass/modules/_forms.scss */
 .file-upload-button {
   cursor: pointer;
   display: inline-block;
@@ -2195,9 +2213,14 @@ button.submit_btn {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 382, ../sass/modules/_forms.scss */
+/* line 387, ../sass/modules/_forms.scss */
 .file-upload-button:hover {
   background-color: #b3b3b3;
+}
+
+/* line 394, ../sass/modules/_forms.scss */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: transparent !important;
 }
 
 /* line 2, ../sass/modules/_animations.scss */
@@ -3149,13 +3172,8 @@ ul.menu li a:after {
 /* line 100, ../sass/layouts/_header.scss */
 ul.menu li a:hover {
   font-weight: 600;
-  background: transparent !important;
 }
-/* line 105, ../sass/layouts/_header.scss */
-ul.menu li a:hover::after, ul.menu li a a:focus::after {
-  display: none;
-}
-/* line 113, ../sass/layouts/_header.scss */
+/* line 110, ../sass/layouts/_header.scss */
 ul.menu li a:hover::after, ul.menu li a:focus::after, ul.menu li.active a:after {
   opacity: 1 !important;
   -webkit-transform: translateY(0px);
@@ -3164,20 +3182,19 @@ ul.menu li a:hover::after, ul.menu li a:focus::after, ul.menu li.active a:after 
   color: white;
 }
 
-/* line 130, ../sass/layouts/_header.scss */
-.jumpnow_link {
-  margin-top: 5px !important;
-}
-
-/* line 133, ../sass/layouts/_header.scss */
+/* line 128, ../sass/layouts/_header.scss */
 .jumpnow_link a {
   padding: 0 10px;
   display: block;
-  padding: 5px 10px !important;
+  padding: 0px 10px !important;
   border-radius: 20px;
   border: 1px solid #fbaf5d;
   font-weight: 600 !important;
   color: #fbaf5d !important;
+}
+/* line 138, ../sass/layouts/_header.scss */
+.jumpnow_link a:hover::after, .jumpnow_link a a:focus::after {
+  display: none;
 }
 /* line 143, ../sass/layouts/_header.scss */
 .jumpnow_link a:hover {

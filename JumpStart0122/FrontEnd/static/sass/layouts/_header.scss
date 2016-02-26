@@ -99,13 +99,10 @@ ul.menu {
 
 			&:hover {
 				font-weight: 600;
-				background:transparent !important;
+			
 			}
 
-			&:hover::after,a:focus::after {
-				display: none;
-				
-			}
+			
 			
 					}
 
@@ -127,18 +124,21 @@ ul.menu {
 	
 }
 
-.jumpnow_link{
-	margin-top:5px !important;
-}
+
 .jumpnow_link a{
 		padding:0 10px;
 		display: block;
-		padding:5px 10px !important;
+		padding:0px 10px !important;
 		border-radius: 20px;
 		border:1px solid $secondary-color;
     	font-weight: 600 !important;
 
     	color:$secondary-color !important;
+
+    	&:hover::after,a:focus::after {
+				display: none;
+				
+			}
 
     	&:hover {
     		background:$secondary-color;

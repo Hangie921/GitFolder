@@ -61,7 +61,7 @@
 	-webkit-font-smoothing: antialiased;
 }
 .icon-arrow-right:before {
-	content: "\e00d";
+	content: "\e902";
 }
 
 .icon-arrow-left:before {
@@ -86,12 +86,12 @@
 }
 
 .btn-4:active {
-	border-color: #17954c;
-	color: #17954c;
+	border-color: white;
+	color: white;
 }
 
 .btn-4:hover {
-	background: #24b662;
+	background: $primary-color;
 }
 
 .btn-4:before {
@@ -106,7 +106,7 @@
 }
 
 .btn-4:active:before {
-	color: #17954c;
+	color: white;
 }
 
 /* Button 4a */
@@ -197,10 +197,10 @@
 
 /* Button 7 */
 .btn-7 {
-	background: #17aa56;
+	background: white;
 	color: #fff;
 	border-radius: 7px;
-	box-shadow: 0 5px #119e4d;
+	box-shadow: 0 5px white;
 	padding: 25px 60px 25px 90px;
 }
 
@@ -240,7 +240,7 @@
 }
 
 .btn-success:before {
-	content: "\e001";
+	content: "\e904";
 }
 
 .btn-success:after {
@@ -309,7 +309,7 @@
 }
 
 .btn-error:before {
-	content: "\e002";
+	content: "\e901";
 }
 
 .btn-error:after {
@@ -351,6 +351,7 @@
 		transform: scale(1);
 	}
 }
+
 
 
 

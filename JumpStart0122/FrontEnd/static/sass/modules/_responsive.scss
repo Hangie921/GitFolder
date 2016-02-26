@@ -5,6 +5,19 @@
 /********************* TABLET******************/
 @media screen and (max-width: 990px) {
 
+/****COMPETITION***********/
+.competition-headings li{
+			vertical-align: middle;
+			width: 25%;
+
+		    a {
+		    	text-align: center;
+		    	padding:10px;
+		    	letter-spacing: 4px;
+		    	line-height: 20px;
+		    }
+	}
+
 /*****MOBILE MENU************/
 	.menu-mobile {
   position: fixed;
@@ -182,17 +195,7 @@ ul.menu {
 
 
 
-	.competition-headings li{
-			vertical-align: middle;
-			width: 25%;
-
-		    a {
-		    	text-align: center;
-		    	padding:10px;
-		    	letter-spacing: 4px;
-		    	line-height: 20px;
-		    }
-	}
+	
 
 	.info_list ul li{
 		width:100%;
@@ -207,20 +210,17 @@ ul.menu {
 			li {
 				width:100%;
 				padding:20px;
+				&:hover {
+					margin:0 !important;
+				}
 
 				&:before {
 
-					    border-width: 19px 50px 0px 45px;
-					    border-color: #f16b29 transparent ;
-					    right: 37%;
-					    top:  90px;
+					  display: none;
 				} 
 				&:after {
 
-			        border-width: 19px 49px 0px 44px;
-				    border-color: #e8e8e8 transparent;
-				    right: 37.4%;
-				    top: 89px;
+			        display:none
 
 
 				} 
@@ -295,6 +295,26 @@ div.sponsor-group li span {
     left: -12vw;
     width: 100vw;
 }
+
+ul.sponsor-list li {
+
+	&:hover span{
+		display:none;
+	}
+
+	
+
+
+	
+
+}
+
+div.sponsor-group ul.sponsor-list.second li {
+	width:100%;
+	margin:0 2% 2% 0;
+	position:relative;
+
+			}
 
 /*Jumpnow*****/
 

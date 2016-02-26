@@ -190,7 +190,7 @@ $(document).ready(function() {
 			event.preventDefault();
 			$(this).before(DOM);
 			$(this).prev().children().children("input[name$='member_brief_info']").focus(function(e){
-				focused($(this),e); // add the focus listener
+				focused(e); // add the focus listener
 			});
 			$(this).prev().children('.del_btn').click(function(event){
 				event.preventDefault();
@@ -489,7 +489,7 @@ $(document).ready(function() {
 
 	//******DISABLE THE TAB BUTTON WHEN FOCUS THE LAST INPUT******//
 	$("#sec_jumpnow input[name$='member_brief_info']").focus(function(e){
-		focused($(this),e);
+		focused(e);
 	});
 
 
@@ -499,16 +499,16 @@ $(document).ready(function() {
 
 
 //To check if $(this) is the last input of the jumpnow_part1
-function focused(ele,evt){
+function focused(evt){
 	var target = evt.target;
-	if($(target).parent().parent().is(":last-of-type")){
-		$(target).keydown(function(e){
-			if(e.which==9){
-				e.preventDefault();
-			}
-		});
-	}
-	console.log(ele.attr("name") + " input focused");
+	var target_name = evt.target.nodeName;
+	$(target).keydown(function(e){
+		if(e.which==9 && $(e.target).parent().parent().is(":last-of-type")){
+			e.preventDefault();
+		}else{
+			$(this).unbind("keydown");
+		}
+	});
 }
 
 

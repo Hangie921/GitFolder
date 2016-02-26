@@ -40,9 +40,10 @@ ul.menu {
 	padding:0;
 	min-width:600px;
 	float:right;
+	text-align:right;
 	li{
-	float:left;
-    margin: 13px 5%;
+	display:inline-block;
+    margin: 13px 0 0 5%;
     text-transform: uppercase;
     text-align: right;
     vertical-align: top;
@@ -95,7 +96,7 @@ ul.menu {
 					}
 
 
-		&  a:hover::after,& a:focus::after, &.active a:after {
+		&  a:hover::after, &.active a:after {
 				
 				opacity: 1 !important;
 				-webkit-transform: translateY(0px);
@@ -113,15 +114,6 @@ ul.menu {
 }
 
 
-.jumpnow_link a{
-		display: block;
-    	font-weight: 600 !important;
-
-    	color:$secondary-color !important;
-
-    	
-    	
-	}
 #header,#header ul li a {
 	transition:color .5s, opacity .5s;
 }

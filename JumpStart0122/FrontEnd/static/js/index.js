@@ -248,7 +248,6 @@ $(document).ready(function() {
 			}
 			// element.attr("placeholder",error.text()).parent().addClass('input--filled');
 		},
-
 		debug: false,
 		success: 'valid',
 		rules:{
@@ -353,7 +352,7 @@ $(document).ready(function() {
 
 
     /*to validate the reg_form*/
-	$("#reg_form").validate({
+	var validator = $("#reg_form").validate({
 		errorPlacement: function(error, element) {
 			// Append error within linked label
 			if(element.attr("name")!=="BP_file"){
@@ -366,7 +365,6 @@ $(document).ready(function() {
 			}else{
 				$(element).next().empty().append(error.text());
 			}
-			
 			// element.attr("placeholder",error.text()).parent().addClass('input--filled');	
 		},
 		debug: false,
@@ -419,6 +417,8 @@ $(document).ready(function() {
 		var reg_form = $('#reg_form')
 		if(reg_form.valid()){  
             submit_to_db(btn,reg_form);
+            $("#sec_jumpnow input").attr("placeholder","");
+            $(".file-upload-input").empty().append("限定.pdf");
 		}
 		else{
 			btn_error(btn)

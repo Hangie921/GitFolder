@@ -5,6 +5,11 @@
 /********************* TABLET******************/
 @media screen and (max-width: 990px) {
 
+/****HEADER******/
+.header {
+	margin:0 auto;
+}
+
 /****COMPETITION***********/
 .competition-headings li{
 			vertical-align: middle;
@@ -222,7 +227,7 @@ ul.menu {
 				} 
 				&:after {
 
-			        display:none
+			        display:none;
 
 
 				} 

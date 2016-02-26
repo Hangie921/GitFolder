@@ -888,13 +888,14 @@ div#sec_events{
 		font-family: $english;
 	}
 	p {
-		font-size:18px;
-		line-height: 28px;
+	font-size: 14px;
+    line-height: 20px;
+    text-align: left;
 	}
 	.front_face{
 
 		padding:10px;
-		background:#888 url(../img/stock.jpg) no-repeat;
+		background:#888 url(../img/ninebot-bg.jpg) no-repeat;
 		@include background-size (cover);
 		background-blend-mode: multiply;
 		backdrop-filter: blur(10px);

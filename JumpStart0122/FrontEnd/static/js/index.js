@@ -189,6 +189,9 @@ $(document).ready(function() {
 	$('#add_member').click(function(event){
 			event.preventDefault();
 			$(this).before(DOM);
+			$(this).prev().children().children("input[name$='member_brief_info']").focus(function(e){
+				focused(e); // add the focus listener
+			});
 			$(this).prev().children('.del_btn').click(function(event){
 				event.preventDefault();
 				$(this).parent().remove();
@@ -212,8 +215,9 @@ $(document).ready(function() {
 			if(counter==5){
 				$(this).hide();
 			}
-	}); //end of the #add_member clicked
 
+	}); //end of the #add_member clicked
+	
 
 	//the contact form ani,to show or hide the contact form
 	var down = true;
@@ -272,6 +276,8 @@ $(document).ready(function() {
     $("#contact_us_form input").focus(function(){
     	$(this).next().children().next().empty();
     });
+
+    
 
 
 /********to validate the previous part of the reg_form*/
@@ -479,7 +485,32 @@ $(document).ready(function() {
 	/**active the customfile function**/
 	$("#file").customFile();
 
+
+
+	//******DISABLE THE TAB BUTTON WHEN FOCUS THE LAST INPUT******//
+	$("#sec_jumpnow input[name$='member_brief_info']").focus(function(e){
+		focused(e);
+	});
+
+
 });//end of the document.ready
+
+
+
+
+//To check if $(this) is the last input of the jumpnow_part1
+function focused(evt){
+	var target = evt.target;
+	var target_name = evt.target.nodeName;
+	$(target).keydown(function(e){
+		if(e.which==9 && $(e.target).parent().parent().is(":last-of-type")){
+			e.preventDefault();
+		}else{
+			$(this).unbind("keydown");
+		}
+	});
+}
+
 
 
 //=====================For the input File===========================*//

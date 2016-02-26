@@ -328,11 +328,10 @@ html
 					
 
 
-			.section#sec_jumpnow(data-anchor='jumpnow').section-padding.fp-auto-height
-				//- 這樣包我就可以一個form包兩個slide的input
+			.section#sec_jumpnow(data-anchor='jumpnow').fp-auto-height.section-padding.no-pad
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
-					.slide.jumpnow_part1.zindex
-						.slide-inner.zindex.clearfix
+					.slide.jumpnow_part1.zindex.slide-padding
+						.slide-inner.zindex.clearfix.col-md-9.col-centered
 							.col-md-5.jumpnow-des.no-pad
 								.border_container.add-border-pad
 									.border.top
@@ -362,9 +361,10 @@ html
 								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
 									
 						
-					.slide.team_details
-						h2.hoshi 1. 填寫隊伍資訊
-						.slide-inner.zindex.relative-position.clearfix.no-pad
+					.slide.team_details.slide-padding
+						.col-md-10.col-centered
+							h2.hoshi 1. 填寫隊伍資訊
+						.slide-inner.zindex.relative-position.clearfix.no-pad.col-md-9.col-centered
 							.border_container.add-border-pad
 								.border.top
 								.border.right.R_top
@@ -416,9 +416,10 @@ html
 									.nav_group
 										a(class='button prev_btn',href='#jumpnow') 上一步
 										a(class='button next_btn', href='javascript:void(0);') 下一步
-					.slide.personal_details.fp-auto-height
-						h2.hoshi 2. 聯絡人資料
-						.slide-inner.zindex.clearfix.no-pad
+					.slide.personal_details.fp-auto-height.jumpnow-slide-padding.slide-padding
+						.col-md-10.col-centered
+							h2.hoshi 2. 聯絡人資料
+						.slide-inner.zindex.clearfix.no-pad.col-md-9.col-centered
 							.border_container.add-border-pad
 								.border.top
 								.border.right.R_top

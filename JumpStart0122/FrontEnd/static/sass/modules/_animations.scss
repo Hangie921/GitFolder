@@ -120,7 +120,7 @@ $borderWidth:1px;
 $maxWidth:1px;
 $speed:.3s;
 $horizonWidth:180px;
-$straightHeight:300px;
+$straightHeight:450px;
 $horizonWidthForJumpFirst:20.541631%;
 
 .border_container{
@@ -211,7 +211,7 @@ div.borderRightAni{
 			left:50%;
 			position: absolute;
 			z-index: -10;
-			@include animation(straightLineAni $speed 0s 1 linear forwards);
+			@include animation(straightLineAni $speed*3 0s 1 linear forwards);
 		}
 		& .straight_line_down{
 			width: 1px;
@@ -231,8 +231,8 @@ div.borderRightAni{
 			top: 222.5px;
 			position: absolute;
 			z-index: -10;
-			left: 99.5%;
-			@include animation(horiLineAni $speed $speed*4 1 linear forwards);
+			left: 100%;
+			@include animation(horiLineAni $speed $speed*5 1 linear forwards);
 		}
 		& .horizon_line_left{
 			height: 1px;
@@ -319,7 +319,7 @@ div.borderRightAni{
 		height: 1px;
 		width: 0;
 		position: absolute;
-		left: 0px;
+		left: -1px;
 		top: 175px;
 		@include animation(horiLineBtn 0.5s $speed*5 1 linear forwards);
 	}
@@ -340,7 +340,7 @@ div.borderRightAni{
 /********keyframes for the button*****/
 @keyframes horiLineBtn{
 	0%{width:0px;}
-	100%{width:700px;}
+	100%{width:900px;}
 }
 
 
@@ -413,7 +413,7 @@ div.borderRightAni{
 }
 @keyframes horiLineAni{
 	0%{width: 0px;}
-	100%{width: 120px;}
+	100%{width: 400px;}
 }
 @keyframes horiLineJumpnowFirst{
 	0%{left:(99.5%+$horizonWidthForJumpFirst);width:0px;}

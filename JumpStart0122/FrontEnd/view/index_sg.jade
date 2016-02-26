@@ -23,7 +23,7 @@ html
 		script(type='text/javascript'). 
 			try{Typekit.load({ async: true });}catch(e){}
 
-	body
+	body.sg
 		#fullpage
 			.section#sec_home.container.section-padding(data-anchor='home')
 				header.container#header
@@ -38,18 +38,20 @@ html
 								li(data-menuanchor='about')
 									a(href='#about') about
 								li(data-menuanchor='competition')
-									a(href='#competition') competition
+									a(href='#competition') What We Do
+								//- li.jumpnow_link(data-menuanchor='jumpnow') 
+								//- 	a(href='#jumpnow') 
+								//- 		i.fa.fa-rocket 
+								//- 		| Connect
 								li.jumpnow_link(data-menuanchor='jumpnow') 
 									a(href='#jumpnow') 
-										i.fa.fa-rocket 
-										| jump now
-
+										| Connect
 								li(data-menuanchor='events') 
-									a(href='#events') events
+									a(href='#events') Industries
 							.menu-items-mobile
 								ul.menu.hidden-md.hidden-lg
 									li(data-menuanchor='about')
-										a(href='#about') about
+										a(href='#about') about us
 									li(data-menuanchor='competition')
 										a(href='#competition') competition
 									li(data-menuanchor='events') 
@@ -57,31 +59,29 @@ html
 									li.jumpnow_link(data-menuanchor='jumpnow') 
 										a(href='#jumpnow') jump now
 
-
-
 				.sloganContainer.zindex
 					h2 
-						b 當你擁有
+						b Your
 					h2 
-						span 100,000,000位 
-					h2 使用者，你會 
+						span Corporate Innovation 
+					h2 Outpost
 
 					.slotMachine#slot3 
-						span.slot 喝杯咖啡先
-						span.slot 滑個臉書再說
-						span.slot 繼續逛網拍
-						span.slot 跳起來轉三圈
-						span.slot 先吃個下午茶
-						span.slot 翹課打LOL
-						span.slot 夜唱夜衝夜遊
-						span.slot 準備創業計畫
+						span.slot STAY AHEAD
+						span.slot INNOVATE
+						span.slot TRENDING
+						span.slot DISRUPT
+						span.slot TRANSFORM
+						span.slot OPPORTUNITIES
+						//- span.slot 夜唱夜衝夜遊
+						//- span.slot 準備創業計畫
 					//- span.machine-border &nbsp	
 
-					a#slotButton3.btn.btn-4.btn-4a.orange.icon-arrow-down2 開始行動
+					a#slotButton3.btn.btn-4.btn-4a.orange.icon-arrow-down2 CONNECT
 					//- span.machine-border
 					
 	
-			.section#sec_about.container.primary_bg.section-padding.no-pad(data-anchor='about')
+			.section#sec_about.container.primary_bg.section-padding(data-anchor='about')
 				.top_animation.col-md-12.col-centered.zindex.xs-no-pad
 					.rocket
 					.col-md-8.col-centered
@@ -92,15 +92,57 @@ html
 							.border.bottom.b_left
 							.border.left
 							p.white-text
-								|渴望更多在國際舞台嶄露才華的機會嗎？現在，與世界接軌的鑰匙就掌握在你手上！亞洲人才與創業孵化平台 - 
-								a.primary-text(href="http://ping.com.sg", target="_blank") 
-									|Ping! 
-								|為推動創業風氣，與新加坡知名創投公司 - 
-								a.primary-text(href="http://venturecraft.vc", target="_blank") 
-									|Venturecraft VC 
-								|共同打造 Jumpstart 計畫！ <br/><br/>
+								|We are Asia’s first centralized Corporate Innovation Outpost. Our platform is open to global corporations expanding into Asia to tap into the regional innovation clusters to seek out potential threats and opportunities in disruptive technologies. </br></br>
+								|Leveraging the regional start-up, industry and academic ecosystems, we help to convert enterprising ideas by local start-ups and entrepreneurs into new or improved products, processes or business models for our partnering companies.
 
-								|Jumpstart，亞洲第一個跨國商業合作計畫，我們幫助當地企業、人才與國際接軌，將有前景的理念、產品於世界舞台綻放，創造更大的商機。我們將不定期提供巨量的 OPEN DATA 及多元題材，期望各方人才組隊報名，互相激盪，創造更多商業價值。我們期待你的加入！
+								//- |Venturecraft builds Asia’s first centralized corporate innovation outpost, where we bring together local startup
+								//- |/entrepreneurs and international companies, providing a platform where ideas are turned into collaboration |opportunities. 
+
+								//- |By tapping into regional technological, industrial and academic ecosystems, we seek ideas and JUMPSTART |providing funds and tools to venture build, from prototyping to go to market.
+								//- |Jumpstart offers job and collaboration opportunities with international companies to local start-ups and |entrepreneurs with enterprising ideas that could be converted into new or improved products, processes or |business models for the partnering companies.<br/>
+								//- |Key Concepts
+
+								//- |Corporate Innovation Outpost, based in Asia.
+								
+								//- |Bullish on trends and disruptive technologies, Jumpstart funds and builds great ideas into products for use with |our partnering companies.
+
+								//- |partnership that brings global companies
+								//- |and localized companies together
+								
+								//- |jointly seeking at ideas to keep ahead of the trends  (to stay ahead of curve)
+								
+								//- |Venturecraft collates resources
+								//- |funds  from (share holders) and tools(PING!)  
+								//- |building blocks that turn great ideas into prototypes, and eventually finetuning for immediate use with our |partners.
+								
+								//- |When you have a great idea, drop us a note. We don't close the challenges until they are solved.
+								//- |Happening  24/7.
+								
+								
+								//- |other big words IS likes:
+								
+								//- |power of localization
+								//- |mindshare
+
+								
+								//- |渴望更多機會在國際舞台嶄露才華嗎？現在，與世界接軌的鑰匙就掌握在你手上。亞洲人才與創業孵化平台 - 
+								//- a.primary-text(href="http://ping.com.sg", target="_blank") 
+								//- 	|Ping! 
+								//- |為推動創業風氣，與新加坡知名創投公司 - 
+								//- a.primary-text(href="http://venturecraft.vc", target="_blank") 
+								//- 	|Venturecraft 
+								//- |VC共同打造Jumpstart計畫。 <br/><br/>
+
+								//- |Jumpstart，亞洲第一個跨國商業合作計畫，我們幫助當地企業、人才與國際接軌，將有前景的理念、產品於世界舞台綻放，創造更大的商機。我們將不定期提供巨量的OPEN DATA及多元題材，期望各方人才組隊報名，互相激盪，創造更多商業價值。
+								//- |渴望更多機會在國際舞台嶄露才華嗎？現在，與世界接軌的鑰匙就掌握在你手上。亞洲人才與創業孵化平台 - 
+								//- a.primary-text(href="http://ping.com.sg", target="_blank") 
+								//- 	|Ping! 
+								//- |為推動創業風氣，與新加坡知名創投公司 - 
+								//- a.primary-text(href="http://venturecraft.vc", target="_blank") 
+								//- 	|Venturecraft 
+								//- |VC共同打造Jumpstart計畫。 <br/><br/>
+
+								//- |Jumpstart，亞洲第一個跨國商業合作計畫，我們幫助當地企業、人才與國際接軌，將有前景的理念、產品於世界舞台綻放，創造更大的商機。我們將不定期提供巨量的OPEN DATA及多元題材，期望各方人才組隊報名，互相激盪，創造更多商業價值。
 	
 
 
@@ -116,45 +158,62 @@ html
 							.border.left
 							.border.straight_line
 							.border.straight_line_down
-							.border.horizon_line
-							a.competition_topic_slide_arrow.slide_next.arrow.hidden-xs(href="#competition/1") next
+							//- .border.horizon_line
+							//- a.competition_topic_slide_arrow.slide_next.arrow.hidden-xs(href="#competition/1") next
 							.col-md-12.clearfix.no-pad
 								ul.competition-headings#competition_menu
 									li 
-										a.selected(href="#competition/") 競賽主題
-									li
-										a(href="#competition/1") 參賽資訊
-									li 
-										a(href="#competition/2") 獎項
-									li 
-										a(href="#competition/3") 承辦贊助
+										a.selected(href="#competition/") What we do
+									//- li
+									//- 	a(href="#competition/1") Organizer
+									//- li 
+									//- 	a(href="#competition/2") 獎項
+									//- li 
+									//- 	a(href="#competition/3") 承辦贊助
 							.col-md-12
 								.col-md-5.col-sm-5
-									h4 jumpstart 
-										span with 
-										|100 million 
-										span users			
+									h4 RE-IMAGINING 
+										span CORPORATE 
+										//- |100 million 
+										//- span users
+									h4 INNOVATION		
 								.col-md-7.col-sm-7.clearfix
-									h5 你有創業夢嗎？
-									h5 你想要一舉躍進國際市場嗎？
-
+									h5 5 key functions for our partnering corporations:
+									
 									p 
-										|現在，我們開放自由行旅遊平台的100,000,000+筆活躍用戶資料，由你親手創造資料的價值！！只要你具有以下特質：
+										//- |現在，我們開放自由行旅遊平台的100,000,000+筆活躍用戶資料，由你親手創造資料的價值！！只要你具有以下特質：
 										ul 
 											li 
 												i.fa.fa-rocket
-												|一個有創意的旅遊business idea
+												b SENSE
+												span <br/>
+												|&nbsp&nbsp&nbsp&nbsp Emerging trends
 											li 
 												i.fa.fa-rocket
-												|可馬上投入市場的計畫
+												b RESPOND
+												span <br/>
+												|&nbsp&nbsp&nbsp&nbsp Scout for disruptive technologies
 											li 
 												i.fa.fa-rocket
-												|能立即結合自由行旅遊平台的產品
+												b BUILD A TEAM
+												span <br/>
+												|&nbsp&nbsp&nbsp&nbsp Tap into local talent communities
+											li 
+												i.fa.fa-rocket
+												b INNOVATE
+												span <br/>
+												|&nbsp&nbsp&nbsp&nbsp Serve as an innovation base for global companies
+											li 
+												i.fa.fa-rocket
+												b PROMOTE
+												span <br/>
+												|&nbsp&nbsp&nbsp&nbsp Serve as a regional business development hub
 
-										|不要懷疑了，快點加入Jumpstart計畫，與你的夥伴一起綻放國際！ 
+
+										//- |不要懷疑了，快點加入Jumpstart計畫，與你的夥伴一起綻放國際！ 
 
 							
-					a.navy.btn.btn-4.btn-4a.icon-arrow-down2(href='#jumpnow') 我要參加!
+					//- a.navy.btn.btn-4.btn-4a.icon-arrow-down2(href='#jumpnow') CREATE INFOGRAPHICS
 								
 
 				.slide#competition_info_slide.slide-padding
@@ -165,56 +224,67 @@ html
 							.border.right.R_bottom
 							.border.bottom
 							.border.left
-							.border.horizon_line
+							//- .border.horizon_line
 							.border.horizon_line_left
 							a.competition_info_slide_arrow.slide_prev.arrow.hidden-xs(href="#competition") prev
-							a.competition_info_slide_arrow.slide_next.arrow.hidden-xs(href="#competition/2") next
+							//- a.competition_info_slide_arrow.slide_next.arrow.hidden-xs(href="#competition/2") next
 							
 							.col-md-12.clearfix.no-pad-m
 								ul.competition-headings#competition_menu
 									li 
 										a(href="#competition/") 競賽主題
-									li
-										a.selected(href="#competition/1") 參賽資訊
-									li 
-										a(href="#competition/2") 獎項
-									li 
-										a(href="#competition/3") 承辦贊助
-							.col-md-12.info_list
-								ul
-									li
-										i.fa.fa-rocket 
-										|因獲選後需實作，團隊成員以
-										b.primary-text 5人為限
-										|，需含程式開發、資料分析、設計、商業等相關背景。
-									li 
-										i.fa.fa-rocket 
-										|運用主辦單位所提供之API、Open Data、工具，設計出可執行之商業計畫書，
-										b.primary-text 以15頁為限。
-									li 
-										i.fa.fa-rocket 
-										|參加決賽的團隊，每隊至多派出一至兩名成員參加簡報，
-										b.primary-text 以5~8分鐘為限。
-							
-							.col-md-12
-								.timeline
-									ul
-										li 
-											h4 線上報名
-												span 五週
-											p 截止時間:  12AM 23/03/2016
-										li 
-											h4 決賽名單公布
-												span 一週
-											p 公佈時間:  12AM 30/03/2016
-										li 
-											h4 決賽
-												span 一週
-											p 開始時間:  10 AM 06/04/2016
-										li 
-											h4 實作
-												span 四週
-											p 截止時間:  04/05/2016
+									//- li
+									//- 	a.selected(href="#competition/1") 承辦贊助
+									//- li 
+									//- 	a(href="#competition/2") 獎項
+									//- li 
+									//- 	a(href="#competition/3") 承辦贊助
+							.col-md-12.clearfix.sponsor-group
+									.col-md-3
+										h3 主辦單位
+										ul.sponsor-list.col-md-12.col-sm-3.clearfix
+											li 
+												img(src="../img/ping_logo.png")
+												span 
+													|來自新加坡的專業集團，打造出連續成功創業的佳績。Ping!，一個專業孵化平台，透過嚴格篩選talent，進而培養並激發各種可能，讓你與國際公司共同打造產品，提升自身能力及經驗。更進一步幫助平台內團隊相互砥礪，孵化、成長、綻放國際。
+													a.gotosite(href="http://ping.com.sg", target="_blank") 	前往官網
+ 
+									.col-md-9.clearfix
+										h3 贊助單位
+										.col-md-12.no-pad
+											ul.sponsor-list.second
+												li 
+													img(src="../img/venture_craft_logo.png")
+													span
+														|Venturecraft，一間創投公司，致力於幫助各階段的新創公司開發產品、進入市場，提高國際競爭力。 我們與Singapore-MIT Alliance for Research And Technology (SMART) Innovation Centre、新加坡政府共同建立與國際接軌的橋樑。
+														a.gotosite(href="http://www.venturecraft.vc" ,target="_blank") 	前往官網
+												li 
+													img(src="../img/螞蜂窩_logo.png")
+													span
+														|東亞最大的自由行社交網絡，背包客能分享彼此的旅遊經歷。隨著超過2100萬的評分和評論，即Mafengwo旅遊指南下載超過3.82億次，Mafengwo更貼近使用者提供酒店，機票，旅遊線路，簽證，保險信息...等便捷服務。
+														a.gotosite(href="http://www.mafengwo.cn", target="_blank") 	前往官網
+												li 
+													img(src="img/DSEE_logo.png")
+													span
+														|國際企業發展局(IE Singapore)為新加坡組織機關，致力於促進新加坡企業開展海外經濟合作，協助新加坡企業國際化。我們的願景是發展一個Globally Competitive Companies(GCCS)的商業中心，領先全球國際貿易。
+														
+														a.gotosite(href="http://www.iesingapore.gov.sg" ,target="_blank") 	前往官網
+												//- li
+												//- 	img(src="../img/365_logo.png")
+												//- 	span
+												//- 		|SixThreeFive提供簡便的整合性服務，協助貴公司尋找最適合的資助並提供成熟的管理經驗，透過專業人士的協助讓你的公司運作得更加效率。
+												//- 		a.gotosite(href="https://static.wixstatic.com/media/1e4f62_65f2102dbf7341cb9730a213d2fd0b40.png/v1/fill/w_202,h_180,al_c,lg_1/1e4f62_65f2102dbf7341cb9730a213d2fd0b40.png" ,target="_blank") 	前往官網
+												//- li 
+												//- 	img(src="img/DSEE_logo.png")
+												//- 	span
+												//- 		|國際企業發展局(IE Singapore)為新加坡組織機關，致力於促進新加坡企業開展海外經濟合作，協助新加坡企業國際化。我們的願景是發展一個Globally Competitive Companies(GCCS)的商業中心，領先全球國際貿易。
+														
+												//- 		a.gotosite(href="http://www.iesingapore.gov.sg" ,target="_blank") 	前往官網
+												//- li 
+												//- 	img(src="../img/e27_logo.png")
+												//- 	span
+												//- 		|我們給每個start-up一個成功的機會！隨著E27你將會被引領到一個擁有眾多資源的community，在裡面你可以接觸導師、合作夥伴、投資者、同事和客戶。現在，運用裡面所有的資源，打造屬於你的數十億美元的公司！
+												//- 		a.gotosite(href="https://e27.co", target="_blank") 	前往官網
 											
 					
 
@@ -241,18 +311,12 @@ html
 									li 
 										a(href="#competition/3") 承辦贊助
 								.col-md-12
-									.col-md-4.col-sm-4.xs-hidden
+									.col-md-4.col-sm-4
 										.prize-single
 										h4 NTD$90,000 
-									.col-md-4.col-sm-4.xs-hidden
+									.col-md-4.col-sm-4
 										.prize-single
 										h4 NTD$300,000
-									.col-md-4.col-sm-4.xs-only
-										.prize-single
-										h4 NTD$300,000
-									.col-md-4.col-sm-4.xs-only
-										.prize-single
-										h4 NTD$90,000 
 									.col-md-4.col-sm-4
 										.prize-single
 										h4 NTD$50,000
@@ -337,10 +401,11 @@ html
 					
 
 
-			.section#sec_jumpnow(data-anchor='jumpnow').fp-auto-height.section-padding.no-pad
+			.section#sec_jumpnow(data-anchor='jumpnow').section-padding.fp-auto-height
+				//- 這樣包我就可以一個form包兩個slide的input
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
-					.slide.jumpnow_part1.zindex.slide-padding
-						.slide-inner.zindex.clearfix.col-md-9.col-centered
+					.slide.jumpnow_part1.zindex
+						.slide-inner.zindex.clearfix
 							.col-md-5.jumpnow-des.no-pad
 								.border_container.add-border-pad
 									.border.top
@@ -349,31 +414,30 @@ html
 									.border.L_top
 									.border.L_bottom
 									.border.horizon_line#jumpnow_part1_line
-									h3 三個步驟馬上加入 
-										span.en_para Jumpstart
-										| 計畫!
+									h3 Connect with us if you are looking for:
+										//- span.en_para Jumpstart
+										//- | 計畫!
 									ul.plan_list
 										li 
-											b 下載   
-											| 商業計劃書範本
+											b Disruptive   
+											| industry trends
 										li 
-											b 填寫   
-											| 計畫書及報名資料
+											b New   
+											| product offerings
 										li 
-											b 送出 
-											| JumpStart計畫！
+											b Local 
+											| market adaptation
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
 								.border_container#border_btn
-									.border.horizon_line
-								a.bizplan_download.btn.btn-4.btn-4a.sec-orange 商業計劃書範本 
+									//- .border.horizon_line
+								a.bizplan_download.btn.btn-4.btn-4a.sec-orange Download PDF 
 										i.fa.fa-cloud-download
-								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
+								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='mailto:hello@jumpstarter.asia"') Connect
 									
 						
-					.slide.team_details.slide-padding
-						.col-md-10.col-centered
-							h2.hoshi 1. 填寫隊伍資訊
-						.slide-inner.zindex.relative-position.clearfix.no-pad.col-md-9.col-centered
+					.slide.team_details
+						h2.hoshi 1. 填寫隊伍資訊
+						.slide-inner.zindex.relative-position.clearfix.no-pad
 							.border_container.add-border-pad
 								.border.top
 								.border.right.R_top
@@ -425,10 +489,9 @@ html
 									.nav_group
 										a(class='button prev_btn',href='#jumpnow') 上一步
 										a(class='button next_btn', href='javascript:void(0);') 下一步
-					.slide.personal_details.fp-auto-height.jumpnow-slide-padding.slide-padding
-						.col-md-10.col-centered
-							h2.hoshi 2. 聯絡人資料
-						.slide-inner.zindex.clearfix.no-pad.col-md-9.col-centered
+					.slide.personal_details.fp-auto-height
+						h2.hoshi 2. 聯絡人資料
+						.slide-inner.zindex.clearfix.no-pad
 							.border_container.add-border-pad
 								.border.top
 								.border.right.R_top
@@ -471,39 +534,29 @@ html
 					.event_single.col-md-4.col-sm-4
 						.event_single_rotate
 							.front_face
-								h3 Ninebot
-								span 8月 2016
+								h3 E-TOURISM
+								span Challenge 1
 								
 							.back_face
-								p.description
-									a.primary-text(href="http://www.ninebot.com", target="_blank") 
-										|Ninebot
-									|，最大的機器人移動設備製造商，正在打造一個機器人平台讓你們開發更多的創新產品。</br>
-									|而
-									a.primary-text(href="http://www.ninebot.com", target="_blank") 
-										|Ninebot 
-									| 更在2015收購
-									a.primary-text(href="http://www.segway.com", target="_blank") 
-										|Segway
-									|，並在未來打造家用機器人。</br></br>
-									|讓我們期待下次的挑戰吧！
+
+								p.description 
+								|WTraveling in the Digital Age
+
 					.event_single.col-md-4.col-sm-4
 						.event_single_rotate
 							.front_face
-								h3 美圖秀秀
-								span 2月 2017
+								h3 ROBOTICS
+								span Challenge 2
 								
 							.back_face
 								p.description 
-									|愛美是人的天性，拜APP所賜，輕鬆修圖創造了"顏值"經濟。</br>
-									a.primary-text(href="http://xiuxiu.meitu.com", target="_blank") 美圖秀秀
-									|更是翹楚，一個擁有9億行動用戶的修圖APP，擠身成為全球前十大行動應用開發商。</br></br>
-									|如此龐大的用戶量能帶給我們什麼驚喜呢？
+								|Building an automated future
+
 					.event_single.col-md-4.col-sm-4
 						.event_single_rotate
 							.front_face
 								h3 COMING SOON!
-								
+								span MEDTECH, IOT, SMARTCITY SOLUTIONS
 							.back_face
 								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
 
@@ -519,7 +572,7 @@ html
 								span.input.input--hoshi
 									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-name')
-											span.input__label-content.input__label-content--hoshi 姓名
+											span.input__label-content.input__label-content--hoshi Name
 											span.input__label-content.input__label-content--hoshi.reminder
 								span.input.input--hoshi
 									input#input-4-email.input__field.input__field--hoshi(type='email',name='user_email')
@@ -529,10 +582,10 @@ html
 								span.input.input--hoshi
 									input#input-4-sub.input__field.input__field--hoshi(type='text',name='subject')
 									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-sub')
-											span.input__label-content.input__label-content--hoshi 標題
+											span.input__label-content.input__label-content--hoshi Subject
 											span.input__label-content.input__label-content--hoshi.reminder
 							.col-md-4.no-pad-m
-								textarea#textarea_mes(placeholder='我有疑問...',name='user_msg',require)
+								textarea#textarea_mes(placeholder='Message...',name='user_msg',require)
 								//- label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='textarea_mes')
 								//- 	span.input__label-content.input__label-content--hoshi 
 								//- 	span.input__label-content.input__label-content--hoshi
@@ -544,16 +597,8 @@ html
 								//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
 
 							.col-md-4.contact-details.no-pad-m
-								h3 Ping! Connect
+								h3 Venturecraft Pte Ltd
 								ul
-									li
-										h4 TAIWAN <br/>
-										i.fa.fa-map-marker
-										|台灣台北市中山區南京東路二段137號14樓 <br/>
-										i.fa.fa-phone 
-										|+886 2 7745 8486+65 6805 4339 <br/>
-										i.fa.fa-envelope
-										|hello@ping.com.sg
 									li
 										h4 SINGAPORE ( HQ ) <br/>
 										i.fa.fa-map-marker
@@ -562,7 +607,16 @@ html
 										i.fa.fa-phone 
 										|+65 6805 4339 <br/>
 										i.fa.fa-envelope
+										|hello@venturecraft.vc
+									li
+										h4 TAIWAN <br/>
+										i.fa.fa-map-marker
+										|台灣台北市中山區南京東路二段137號14樓 <br/>
+										i.fa.fa-phone 
+										|+886 2 7745 8486 <br/>
+										i.fa.fa-envelope
 										|hello@ping.com.sg
+									
 	
 
 	//-classie.js is the function that runs the input effect

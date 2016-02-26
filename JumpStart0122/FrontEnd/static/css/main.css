@@ -3572,26 +3572,51 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     display: none;
   }
 
-  /* line 387, ../sass/modules/_responsive.scss */
-  div#sec_home.straighAni div {
-    height: 80%;
+  /* line 388, ../sass/modules/_responsive.scss */
+  div.straightAni .border.top {
+    -moz-animation: none;
+    -webkit-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
     animation: none;
+    left: 0;
   }
-
   /* line 393, ../sass/modules/_responsive.scss */
-  div#sec_about.straightAni .border {
-    animation: none;
+  div.straightAni .border.bottom.b_right {
+    display: none;
   }
   /* line 396, ../sass/modules/_responsive.scss */
-  div#sec_about.straightAni .border.top {
+  div.straightAni .border.bottom.b_left {
+    left: 0;
+    -moz-animation: none;
+    -webkit-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
     width: 100%;
   }
-  /* line 399, ../sass/modules/_responsive.scss */
-  div#sec_about.straightAni .border.left, div#sec_about.straightAni .border.right {
+  /* line 402, ../sass/modules/_responsive.scss */
+  div.straightAni .border.left, div.straightAni .border.right {
+    -moz-animation: none;
+    -webkit-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
     height: 100%;
   }
-  /* line 402, ../sass/modules/_responsive.scss */
-  div#sec_about.straightAni .border.bottom {
-    width: 50%;
+
+  /* line 407, ../sass/modules/_responsive.scss */
+  div.timeLineAni::after {
+    -moz-animation: none;
+    -webkit-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+    height: 100%;
+  }
+
+  /* line 411, ../sass/modules/_responsive.scss */
+  #sec_about p {
+    opacity: 1;
   }
 }

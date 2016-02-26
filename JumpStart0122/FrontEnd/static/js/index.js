@@ -150,13 +150,16 @@ $(document).ready(function() {
 				$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
 			},
 			afterRender:function(){
-				 var info_height = $('#competition_info_slide .slide-inner').height();
-				$('#competition_info_slide .slide-inner .border_container').height(info_height);
-				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
-				$('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
-				$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
-				var height = $('#competition_sponsor_slide .slide-inner').height();
-				$('#competition_sponsor_slide .border_container').height(height);
+				if(ww>=990){
+					var info_height = $('#competition_info_slide .slide-inner').height();
+					$('#competition_info_slide .slide-inner .border_container').height(info_height);
+					$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
+					$('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
+					$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
+					var height = $('#competition_sponsor_slide .slide-inner').height();
+					$('#competition_sponsor_slide .border_container').height(height);	
+				}
+				
 			},
 			verticalCentered : true,
 			resize : false,

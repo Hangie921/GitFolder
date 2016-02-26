@@ -384,25 +384,33 @@ div.contact_container {
 .rocket{
 	display:none;
 }
-div#sec_home.straighAni div{
-	height: 80%;
-	animation:none;
-}
-
-div#sec_about.straightAni{
-	& .border{
-		animation:none;
-	}
+div.straightAni{
 	& .border.top{
-		width: 100%;
-	}
-	& .border.left,& .border.right{
-		height: 100%;
+		@include animation(none);
+		left: 0;
 	}
 	& .border.bottom{
-		width: 50%;
+		&.b_right{
+			display: none;
+		}
+		&.b_left{
+			left: 0;	
+			@include animation(none);
+			width: 100%;
+		}
 	}
-}			
+	& .border.left,& .border.right{
+		@include animation(none);
+		height: 100%;
+	}
+}	
+div.timeLineAni::after{
+	@include animation(none);
+	height: 100%;
+}
+#sec_about p{
+	opacity:1;
+}
 
 
 

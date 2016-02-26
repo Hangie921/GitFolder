@@ -276,7 +276,7 @@ $(document).ready(function() {
 
 /********to validate the previous part of the reg_form*/
 
-   var err_msg=['恩?隊伍名稱？','你做什麼產品？','隊友名稱呢?','隊友走哪路？','說好的BP呢？(.pdf)'];
+   var err_msg=['恩?隊伍名稱？','你做什麼產品？','隊友名稱呢?','隊友走哪路？','產品介紹呢？(.pdf)'];
    //to validate the team_details input field 
    	$("#sec_jumpnow a.next_btn").click(function(){
   
@@ -394,11 +394,33 @@ $(document).ready(function() {
 		    agree:{ // agree checkbox
 		    	required:true
 		    }
-		},
-		
-		messages:{
-
 		}
+		// ,messages:{
+		// 	team_name:"隊伍名稱咧？",
+		// 	product_brief:{
+		// 		minlength:"話太少了吧？",
+		// 		required:"你做什麼產品？"
+		// 	},	
+		// 	BP_file:{
+		// 		required:"說好的BP呢？",
+		// 		extension:"就說要pdf"
+		// 	},
+		// 	member_brief_name:"你的隊友呢？！",
+		// 	member_brief_info:"隊友走哪路？",
+		//     contact: {
+		//     	required: "怎麼稱呼？"
+		//     },
+		//     phone: {
+		//     	required: "請給我你的電話>///<"
+		//     },
+		//     email:{
+		//     	required: "這超重要",
+		//     	email: "格式錯誤了吧"
+		//     },
+		//     agree:{ // agree checkbox
+		//     	required:"拜託按他"
+		//     }
+		// }
 	});
 
     $('#contact_btn').click(function(){
@@ -415,6 +437,7 @@ $(document).ready(function() {
 	$('#reg_btn').click(function(){
 		var btn = $('a.submit_btn');
 		var reg_form = $('#reg_form')
+		console.log($("input[type$='file']").val());
 		if(reg_form.valid()){  
             submit_to_db(btn,reg_form);
             $("#sec_jumpnow input").attr("placeholder","");
@@ -424,6 +447,20 @@ $(document).ready(function() {
 			btn_error(btn)
 		}
 	});
+
+	// var contact_info = $("#sec_jumpnow input[name$='contact'], input[name$='phone'],input[name$='email'], input[name$='agree']")
+	// contact_info.addClass("ignore");
+ //   	$("#sec_jumpnow a.next_btn").click(function(){
+	// 	var reg_form = $('#reg_form')
+
+	// 	if(reg_form.valid()){ 
+ //        	$.fn.fullpage.moveTo('jumpnow',2);
+ //        	contact_info.removeClass("ignore");
+	// 	}
+	// 	else{
+	// 		btn_error($(this))
+	// 	}
+ //   	});
 
 	/*==========This is the product_brief textarea Counter*/
 	$('#product_brief').keyup(function(){

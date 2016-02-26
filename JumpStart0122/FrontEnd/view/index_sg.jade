@@ -414,8 +414,8 @@ html
 									.border.L_top
 									.border.L_bottom
 									.border.horizon_line#jumpnow_part1_line
-									h3 Connect with us if you are looking for:
-										//- span.en_para Jumpstart
+									h3 Connect with us 
+										span.en_para if you are looking for:
 										//- | 計畫!
 									ul.plan_list
 										li 
@@ -432,7 +432,9 @@ html
 									//- .border.horizon_line
 								a.bizplan_download.btn.btn-4.btn-4a.sec-orange Download PDF 
 										i.fa.fa-cloud-download
-								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='mailto:hello@jumpstarter.asia"') Connect
+								//- a(href="mailto:zzz22741@gmail.com?https://pod51038.outlook.com/owa/#viewmodel=IMailComposeViewModelFactory" target="_blank") randy@ping.com.sg
+								a#connect_btn.imready.btn.btn-4.btn-4a.orange.icon-arrow-down2 Connect
+								//- a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='mailto:hello@jumpstarter.asia') Connect
 									
 						
 					.slide.team_details
@@ -560,7 +562,7 @@ html
 							.back_face
 								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
 
-				.contact_container
+				.contact_container(data-anchor='contact')
 					.col-md-12.contact_header.no-pad
 						.col-md-12.no-pad
 							h2 GET IN CONTACT

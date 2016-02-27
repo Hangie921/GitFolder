@@ -2465,7 +2465,7 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   height: 1px;
   width: 0;
   position: absolute;
-  left: -1px;
+  left: 3px;
   top: 175px;
   -moz-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
   -webkit-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
@@ -2492,7 +2492,7 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
     width: 0px;
   }
   100% {
-    width: 900px;
+    width: 150px;
   }
 }
 div.borderRightAni #jumpnow_part1_line {

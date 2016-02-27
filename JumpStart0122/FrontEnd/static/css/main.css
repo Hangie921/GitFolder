@@ -2465,13 +2465,27 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   height: 1px;
   width: 0;
   position: absolute;
-  left: 3px;
+  left: 2px;
   top: 175px;
   -moz-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
   -webkit-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
   -ms-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
   -o-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
   animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
+}
+#border_btn.borderRightAni .sg {
+  background-color: #f16b29;
+  z-index: 1;
+  height: 1px;
+  width: 0;
+  position: absolute;
+  left: 2px;
+  top: 175px;
+  -moz-animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
+  -webkit-animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
+  -ms-animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
+  -o-animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
+  animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
 }
 #border_btn.borderRightAni .right.R_bottom {
   background-color: #f16b29;
@@ -2488,6 +2502,14 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 
 /********keyframes for the button*****/
 @keyframes horiLineBtn {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 900px;
+  }
+}
+@keyframes horiLineBtn_sg {
   0% {
     width: 0px;
   }

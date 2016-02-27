@@ -516,6 +516,7 @@ html
 									i.fa.fa-angle-up
 					.col-md-12.contact_form
 						form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
+							input(type="hidden" name="country" value="tw")
 							.col-md-4.no-pad-m
 								span.input.input--hoshi
 									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')

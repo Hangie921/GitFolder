@@ -25,7 +25,7 @@ html
 
 	body.sg
 		#fullpage
-			.section#sec_home.container.section-padding(data-anchor='home')
+			.section#sec_home.sec_home_bg.sg_bg.container.section-padding(data-anchor='home')
 				header.container#header
 					.navbar-header.col-md-12
 						
@@ -59,7 +59,7 @@ html
 									li.jumpnow_link(data-menuanchor='jumpnow') 
 										a(href='#jumpnow') jump now
 
-				.sloganContainer.zindex
+				.sloganContainer.sloganContainer_bg_sg.zindex
 					h2 
 						b Your
 					h2 
@@ -536,31 +536,36 @@ html
 					.event_single.col-md-4.col-sm-4
 						.event_single_rotate
 							.front_face
-								h3 E-TOURISM
-								span Challenge 1
+								.event_sg_tourism
+									h3 E-TOURISM
+									span Challenge 1
 								
 							.back_face
-
-								p.description 
-								|WTraveling in the Digital Age
+								.event_sg_tourism
+									p.description 
+									|WTraveling in the Digital Age
 
 					.event_single.col-md-4.col-sm-4
 						.event_single_rotate
 							.front_face
-								h3 ROBOTICS
-								span Challenge 2
+								.event_sg_robotic
+									h3 ROBOTICS
+									span Challenge 2
 								
 							.back_face
-								p.description 
-								|Building an automated future
+								.event_sg_robotic
+									p.description 
+									|Building an automated future
 
 					.event_single.col-md-4.col-sm-4
 						.event_single_rotate
 							.front_face
-								h3 COMING SOON!
-								span MEDTECH, IOT, SMARTCITY SOLUTIONS
+								.event_sg_comingsoon
+									h3 COMING SOON!
+									span MEDTECH, IOT, SMARTCITY SOLUTIONS
 							.back_face
-								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+								.event_sg_comingsoon
+									p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
 
 				.contact_container(data-anchor='contact')
 					.col-md-12.contact_header.no-pad

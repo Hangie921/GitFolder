@@ -199,6 +199,10 @@ img.device {
   color: #ffffff;
 }
 
+.font-fatfrank {
+  font-family: "fatfrank", sen-serif;
+}
+
 /**COLUMNS SETTINGS***/
 .container {
   min-width: 100%;

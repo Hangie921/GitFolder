@@ -1,2 +1,22 @@
 [2016-02-26 09:57:51.552] [INFO] info - Mongo server listening on port 27017
 [2016-02-26 09:57:51.556] [INFO] info - Express server listening on port 3000
+[2016-02-26 21:53:58.464] [INFO] info - Mongo server listening on port 27017
+[2016-02-26 21:53:58.469] [INFO] info - Express server listening on port 3000
+[2016-02-26 22:07:47.325] [INFO] info - /contact route accepted
+[2016-02-26 22:07:47.327] [INFO] info - Uploading the detail from contact form
+[2016-02-26 22:07:47.350] [INFO] info - detail uploaded
+[2016-02-26 22:07:47.372] [INFO] info - Start to insert to contact
+[2016-02-26 22:07:47.476] [INFO] info - Connet to mongo successfully
+[2016-02-26 22:07:47.494] [INFO] info - Insert doc into 'contact' collection!
+[2016-02-26 22:07:47.495] [INFO] info - Insert doc successfully
+[2016-02-26 22:07:47.498] [INFO] info - mongo connections closed
+[2016-02-26 22:08:19.319] [INFO] info - Mongo server listening on port 27017
+[2016-02-26 22:08:19.324] [INFO] info - Express server listening on port 3000
+[2016-02-26 22:08:58.159] [INFO] info - /contact route accepted
+[2016-02-26 22:08:58.160] [INFO] info - Uploading the detail from contact form
+[2016-02-26 22:08:58.179] [INFO] info - detail uploaded
+[2016-02-26 22:08:58.205] [INFO] info - Start to insert to contact
+[2016-02-26 22:08:58.255] [INFO] info - Connet to mongo successfully
+[2016-02-26 22:08:58.262] [INFO] info - Insert doc into 'contact' collection!
+[2016-02-26 22:08:58.262] [INFO] info - Insert doc successfully
+[2016-02-26 22:08:58.263] [INFO] info - mongo connections closed

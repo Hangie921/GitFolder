@@ -365,7 +365,7 @@ html
 							.col-md-5.col-md-offset-2.white-text.jumpnow-btn-set.clearfix
 								.border_container#border_btn
 									.border.horizon_line
-								a.bizplan_download.btn.btn-4.btn-4a.sec-orange 商業計劃書範本 
+								a.bizplan_download.btn.btn-4.btn-4a.sec-orange(href='../file/BP_example.docx') 商業計劃書範本 
 										i.fa.fa-cloud-download
 								a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='#jumpnow/1') 我準備好了!
 									
@@ -539,7 +539,7 @@ html
 								
 								
 								//- input(type='submit' value='傳送給我們!')
-								
+								input(type='hidden',value='tw',name='country')
 								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交
 								//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
 
@@ -563,6 +563,7 @@ html
 										|+65 6805 4339 <br/>
 										i.fa.fa-envelope
 										|hello@ping.com.sg
+							
 	
 
 	//-classie.js is the function that runs the input effect

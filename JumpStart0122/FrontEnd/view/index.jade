@@ -25,7 +25,7 @@ html
 
 	body
 		#fullpage
-			.section#sec_home.container.section-padding(data-anchor='home')
+			.section#sec_home.sec_home_bg.container.section-padding(data-anchor='home')
 				header.container#header
 					.navbar-header.col-md-12
 						
@@ -502,7 +502,8 @@ html
 					.event_single.col-md-4.col-sm-4
 						.event_single_rotate
 							.front_face
-								h3 COMING SOON!
+								.event_tw_comingsoon
+									h3 COMING SOON!
 								
 							.back_face
 								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
@@ -515,6 +516,7 @@ html
 									i.fa.fa-angle-up
 					.col-md-12.contact_form
 						form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
+							input(type="hidden" name="country" value="tw")
 							.col-md-4.no-pad-m
 								span.input.input--hoshi
 									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')

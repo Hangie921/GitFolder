@@ -231,11 +231,17 @@ $(document).ready(function() {
 			$(this).parent().animate({'bottom':'0px'},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
 			down = false;
+			// alert('if '+ down)
 		}else{
 			$(this).parent().animate({'bottom':contact_height*-0.9},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
 			down = true;
 		}
+	});
+	//for SG connect btn
+	$('#connect_btn').click(function(){
+		$.fn.fullpage.moveTo(5);
+		$(".contact_header").trigger("click");
 	});
 	
 

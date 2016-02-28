@@ -35,8 +35,7 @@ div#sec_competition {
 	}
 }
 /****HOME******/
-
-div#sec_home {
+.sec_home_bg{
 	background:url('../img/home_bg.jpg') no-repeat center;
 	background-size:cover;
 	-moz-background-size:cover;
@@ -44,9 +43,33 @@ div#sec_home {
 	-o-background-size:cover;
 	-webkit-background-size:cover;
 	position: relative;
-
-
 }
+
+// div#sec_home {
+	// background:url('../img/home_bg.jpg') no-repeat center;
+	// background-size:cover;
+	// -moz-background-size:cover;
+	// -ms-background-size:cover;
+	// -o-background-size:cover;
+	// -webkit-background-size:cover;
+	// position: relative;
+	
+// }
+//########### SG Home BG Start ###########//
+.sg_bg {
+	// @extend .sec_home_bg;
+	// background:#000 url('../img/home_bg_sg_2.jpg') no-repeat center;
+	background: url('../img/home_bg_sg_5.jpg') no-repeat center;
+	background-blend-mode: multiply;
+	background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	position: relative;
+	
+}
+//########### SG Home BG End ###########//
 
 .sloganContainer {
 	margin: 90px auto 0;
@@ -62,6 +85,7 @@ div#sec_home {
 		padding:0;
 		margin:0;
 	}
+	
 
 	.slotMachine {
 			color:$white;
@@ -131,6 +155,14 @@ div#sec_home {
 
 
 }
+//########### SG Home Slogan Start ###########//
+.sloganContainer_sg_bg{
+	// @extend .sloganContainer;
+	background:url(../img/slogan_sg.png) no-repeat center top;
+	background-size:100% auto;
+
+}
+//########### SG Home Slogan End ###########//
 
 /*ABOUT SECTIOIN***/
 #sec_about {
@@ -163,6 +195,12 @@ div#sec_home {
 		& a:hover {
 			color:$secondary-color !important;
 		}
+
+		span {
+			// display: block;
+			color:$primary-color;
+			font-weight: bold;
+		}
 	}
 
 	.border_container{
@@ -171,6 +209,8 @@ div#sec_home {
 		background-color: $navy; 
 		position: relative;
 	}
+
+	
 }
 
 
@@ -909,12 +949,78 @@ div#sec_events{
 			top:7px;
 			left:7px;
 		}
+		//########### SG Events Start ###########//
+		.event_sg_tourism{
+		  background: #666 url(../img/industrial_tourism_sg.jpg) no-repeat;
+		  background-blend-mode: multiply;
+		  background-size: cover;
+		  -moz-background-size: cover;
+		  -webkit-background-size: cover;
+		  -ms-background-size: cover;
+		  background-size: cover;
+		  z-index: 2;
+		}
+		.event_sg_ecommerce{
+		  background: #666 url(../img/industrial_ecommerce_2_sg.jpg) no-repeat;
+		  background-blend-mode: multiply;
+		  background-size: cover;
+		  -moz-background-size: cover;
+		  -webkit-background-size: cover;
+		  -ms-background-size: cover;
+		  background-size: cover;
+		  z-index: 2;
+		}
+		.event_sg_medical{
+		  background: #666 url(../img/industrial_medical_1_sg.jpg) no-repeat;
+		  background-blend-mode: multiply;
+		  background-size: cover;
+		  -moz-background-size: cover;
+		  -webkit-background-size: cover;
+		  -ms-background-size: cover;
+		  background-size: cover;
+		  z-index: 2;
+		}
+		.event_sg_robotic{
+		  background: #666 url(../img/industrial_robotic_sg.jpg) no-repeat;
+		  background-blend-mode: multiply;
+		  background-size: cover;
+		  -moz-background-size: cover;
+		  -webkit-background-size: cover;
+		  -ms-background-size: cover;
+		  background-size: cover;
+		  z-index: 2;
+		}
+		.event_sg_smartcity{
+		  background: #666 url(../img/industrial_smartcity_1_sg.jpg) no-repeat;
+		  background-blend-mode: multiply;
+		  background-size: cover;
+		  -moz-background-size: cover;
+		  -webkit-background-size: cover;
+		  -ms-background-size: cover;
+		  background-size: cover;
+		  z-index: 2;
+		}
+		.event_sg_comingsoon{
+		  background: #666 url(../img/event_comingsoon_1.jpg) no-repeat;
+		  background-blend-mode: multiply;
+		  background-size: cover;
+		  -moz-background-size: cover;
+		  -webkit-background-size: cover;
+		  -ms-background-size: cover;
+		  background-size: cover;
+		  z-index: 2;
+		}
+		//########### SG Events End ###########//
+		.event_tw_comingsoon{
+		  @extend .event_sg_comingsoon
+		}
+
 
 	}
 	.back_face {
 		padding:30px;
 		@extend .front_face;
-		background-color:#333 !important;
+		background-color:#222 !important;
 	}
 
 }

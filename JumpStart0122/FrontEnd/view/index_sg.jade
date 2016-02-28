@@ -587,7 +587,7 @@ html
 									i.fa.fa-angle-up
 					.col-md-12.contact_form
 						form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
-							input(type="hidden" name="country" value="sg")
+							//- input(type="hidden" name="country" value="sg")
 							.col-md-4.no-pad-m
 								span.input.input--hoshi
 									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
@@ -612,13 +612,8 @@ html
 								
 								
 								//- input(type='submit' value='傳送給我們!')
-<<<<<<< HEAD
 								input(type='hidden',value='sg',name='country')
-								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交
-=======
-								
 								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a Submit
->>>>>>> 2c70fb77d972d3299e264882d74ffed08474dffe
 								//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
 
 							.col-md-4.contact-details.no-pad-m

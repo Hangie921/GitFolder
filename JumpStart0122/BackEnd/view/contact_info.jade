@@ -1,33 +1,48 @@
-//- head
-	meta(charset="UTF-8")
-	meta(name="viewport",content="width=device-width,initial-scale=1.0")
-	script(src="https://code.jquery.com/jquery-1.12.0.min.js")
-	script(src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js")
-	script(src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js")
-	link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel='stylesheet')
-	link(href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css", rel='stylesheet')
-	title Simple Backend
-//- body
 extends layout
 
 block content
 	div.span6.offset3
-		h1 BackEnd index
+	ul.nav.nav-tabs
+		if country == 'all'
+			li.active(role='presentation')
+				a(href='/contact_info/all') For EVERYONE
+		else 
+			li(role='presentation')
+				a(href='/contact_info/all') For EVERYONE
+		if country == 'tw'
+			li.active(role='presentation')
+				a(href='/contact_info/tw') For TW
+		else 
+			li(role='presentation')
+				a(href='/contact_info/tw') For TW
+		if country == 'sg'
+			li.active(role='presentation')
+				a(href='/contact_info/sg') For SG
+		else 
+			li(role='presentation')
+				a(href='/contact_info/sg') For SG
+	br
 	table#enroll_data.table.table-striped.table-bordered(border='1')
 		thead
 			tr
-				th 姓名
+				th Nationality
+				tD Name
 				th E-mail
-				th 標題
-				th 內容
-				th 發送時間
+				th Subject
+				th Mes
+				th Post Time
 		//- tbody
 		each result in results
 			// - var member_counter = 1;
 			tr
+				td
+					h3
+						span(class= "flag-icon"+' '+"flag-icon-"+result.contact_us.country)
+						|#{result.contact_us.country.toUpperCase()}
 				td #{result.contact_us.name}
 				td 
-					a #{result.contact_us.email}
+					//- a(target="_blank" href='http://mail.live.com/default.aspx?page=Compose&to='+result.contact_us.email+'&subject=Re: '+result.contact_us.subject) #{result.contact_us.email}
+					a(target="_blank" href='https://pod51038.outlook.com/owa/#viewmodel=IMailComposeViewModelFactory') #{result.contact_us.email}
 				//- td
 				//- 	each member in result.team_info.member_brief
 				//- 		ul 
@@ -43,7 +58,7 @@ block content
 
 	//- h3 
 	//- 	a(href='/logout') logout
-
+	//- script(src="../js/flag_docs.js")
 	script(type='text/javascript').
 		$(document).ready(function(){
 		    $('#enroll_data').DataTable();

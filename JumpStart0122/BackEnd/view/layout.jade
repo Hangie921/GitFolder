@@ -5,9 +5,13 @@ html
     script(src="https://code.jquery.com/jquery-1.12.0.min.js")
     script(src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js")
     script(src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js")
-    link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel='stylesheet')
+    script(src="../js/flag_docs.js")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" id="bootstrap")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet")
     link(href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css", rel='stylesheet')
     link(href="../css/main_backend.css", rel='stylesheet')
+    link(href='../css/flag_docs.css', rel='stylesheet')
+    link(href='../css/flag_icon.css', rel='stylesheet')
     title Simple Backend
 
 body
@@ -27,7 +31,7 @@ body
                   li#reg_info
                       a(href='/reg_info') Registration Info
                   li#contact_info
-                      a(href='/contact_info') Contact Info
+                      a(href='/contact_info/all') Contact Info
               ul.nav.navbar-nav.navbar-right
                   li
                       a(href='/logout') Logout

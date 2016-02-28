@@ -36,3 +36,5 @@ login.route(app,mongoClient);
 logout.route(app,mongoClient);
 reg_info.route(app,mongoClient);
 contact_info.route(app,mongoClient);
+// contact_info.route_tw(app,mongoClient);
+// contact_info.route_sg(app,mongoClient);

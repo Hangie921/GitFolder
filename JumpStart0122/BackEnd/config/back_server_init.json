@@ -1,13 +1,13 @@
 {
 	"server":{
 		
-		"port":5000,
+		"port":2999,
 		"view_engine": "jade",
 		"upload_path": "./upload",
 		"upload_file_format": ".pdf"
 		},
 	"mongo":{
-		"url": "localhost",
+		"url": "127.0.0.1",
 		"port": "27017",
 		"db":"jumpstart",
 		"enroll_collection":"enroll",

@@ -22,15 +22,21 @@ function route(app, mongoClient){
 			acc:req.body.acc
 		};
 		mongo_handler.handle(mongoClient,'find',null,'member',query,condition,function(err,status,result){
-			if(login.check(req.body,result)==false){
-				var session_status = false;
-				// res.render('index',{session_status:session_status});
-				res.send({status:false});
-				// res.send('error,please enter the correct account and passwords.');
-			}else{
-				console.log('psw checked');
-				res.send({status:true});
+			if (status){
+				res.send({status:login.check(req.body,result)});
 			}
+			else{
+				res.send({status:false});
+			}
+			// if(login.check(req.body,result)==false){
+			// 	// var session_status = false;
+			// 	// res.render('index',{session_status:session_status});
+			// 	res.send({status:false});
+			// 	// res.send('error,please enter the correct account and passwords.');
+			// }else{
+			// 	console.log('psw checked');
+			// 	res.send({status:true});
+			// }
 
 		});
 	});

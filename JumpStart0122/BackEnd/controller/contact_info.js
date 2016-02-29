@@ -1,6 +1,7 @@
 var login = require('../module/login'),
 	bodyParser = require('body-parser'),
 	mongo_handler = require('../../SDK/mongo_handler');
+	log = require("../../SDK/log_handler");
 
 function route(app, mongoClient){
 	app.use(bodyParser.json()); // for parsing application/json
@@ -8,41 +9,48 @@ function route(app, mongoClient){
 
 	app.get('/contact_info/:country',function(req,res){
 		var country = req.params.country
-		console.log(country);
-		if (country == "all"){
-			var query = {};
-		}
-		else{
-			var query = {'contact_us.country' : country};
+		var query = {};
+		// console.log(country);
+		if (country != "all"){
+			query = {'contact_us.country' : country};
 		}
 
-		condition = {
+		var condition = {
 			projection:{"_id":0},
 			sort:{},
 			skip:0,
 			limit:0
 		};
-		mongo_handler.handle(mongoClient,'find',null,'contact',query,condition,function(err,status,result){
+		var result = {};
+		mongo_handler.handle(mongoClient,'find',null,'contact',query,condition,function(err,status,mongo_result){
+
 			if(err){
 				console.log('error while loading the docs from contact collection');
 				console.log(err);
+				log.error("error while loading the docs from contact collection");
+				log.error(err);
+
 			}else if(status === false){
 				console.log('mongo return nothing');
-				res.send('mongo find nothing');
+				log.info("mongo found nothing here");
+				log.error(err);
 			}else{
 				console.log('result: '+ result);
-				console.log("send the doc to jade");
+				log.info( 'result: '+ JSON.stringify(result) );
+				result = mongo_result;
 				// console.log(JSON.parse(JSON.stringify(result)));
 				// res.render('index',{results:JSON.parse(JSON.stringify(result))});
-				res.render( 'contact_info',
-							{
-								results:JSON.parse(JSON.stringify(result)), 
-								"country" : country
-							}
-						);
+
 				// res.render('index',{results:result});
-				res.end();
+				
 			}
+			res.render( 'contact_info',
+						{
+							results:JSON.parse(JSON.stringify(result)), 
+							"country" : country
+						}
+					);
+			res.end();
 
 		});
 

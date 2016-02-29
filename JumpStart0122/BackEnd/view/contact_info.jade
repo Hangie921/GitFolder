@@ -42,7 +42,7 @@ block content
 				td #{result.contact_us.name}
 				td 
 					//- a(target="_blank" href='http://mail.live.com/default.aspx?page=Compose&to='+result.contact_us.email+'&subject=Re: '+result.contact_us.subject) #{result.contact_us.email}
-					a(target="_blank" href='https://pod51038.outlook.com/owa/#viewmodel=IMailComposeViewModelFactory') #{result.contact_us.email}
+					a(target="_blank" href='https://outlook.office.com/?path=/mail/action/compose&to='+result.contact_us.email+'&subject=Re:'+result.contact_us.subject) #{result.contact_us.email}
 				//- td
 				//- 	each member in result.team_info.member_brief
 				//- 		ul 

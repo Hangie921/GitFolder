@@ -705,7 +705,7 @@ div.timeline {
 	 	}
 
 	.prize-single {
-		min-height: 120px !important;
+		min-height: 180px ;
 	}
 	.col-md-4 .prize-single {
 		margin:30px auto 0;
@@ -937,6 +937,11 @@ div#sec_events{
 			display: block;
 
 		}
+
+	}
+
+	.event_sg_comingsoon {
+		@extend .event_tw_comingsoon;
 	}
 	.front_face{
 
@@ -960,7 +965,7 @@ div#sec_events{
 
 		//########### SG Events Start ###########//
 		.event_sg_tourism{
-		  background: #666 url(../img/industrial_tourism_sg.jpg) no-repeat;
+		  background: #999 url(../img/industrial_tourism_sg.jpg) no-repeat;
 		  background-blend-mode: multiply;
 		  background-size: cover;
 		  -moz-background-size: cover;
@@ -970,7 +975,7 @@ div#sec_events{
 		  z-index: 2;
 		}
 		.event_sg_ecommerce{
-		  background: #666 url(../img/industrial_ecommerce_2_sg.jpg) no-repeat;
+		  background: #999 url(../img/industrial_ecommerce_2_sg.jpg) no-repeat;
 		  background-blend-mode: multiply;
 		  background-size: cover;
 		  -moz-background-size: cover;
@@ -980,7 +985,7 @@ div#sec_events{
 		  z-index: 2;
 		}
 		.event_sg_medical{
-		  background: #666 url(../img/industrial_medical_1_sg.jpg) no-repeat;
+		  background: #999 url(../img/industrial_medical_1_sg.jpg) no-repeat;
 		  background-blend-mode: multiply;
 		  background-size: cover;
 		  -moz-background-size: cover;
@@ -1020,9 +1025,7 @@ div#sec_events{
 		  z-index: 2;
 		}
 		//########### SG Events End ###########//
-		.event_tw_comingsoon{
-		  @extend .event_sg_comingsoon
-		}
+
 
 
 	}

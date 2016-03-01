@@ -130,8 +130,31 @@ ul.menu {
 			margin:0;
 		}
 	}
+
+//****************FOR COMPETITION MENU*********//
+
+
+#competition_mobile_menu_container{
+	display:block;
+	position: absolute;
+	z-index:5;
 }
+#competition_menu{
+	display:none;
+}
+
+#competition_mobile_menu_container.fixed{
+	position: fixed;
+	z-index: 10;
+	top: 40px;
+}
+
+
+}// end of the tablet @media
 	
+
+
+
 
 
 
@@ -505,10 +528,10 @@ div.section#sec_competition{
 	}
 }
 
-
 //****************FOR COMPETITION MENU*********//
 
 #competition_mobile_menu_container{
+	display:block;
 	position: absolute;
 	z-index:5;
 }
@@ -519,10 +542,10 @@ div.section#sec_competition{
 #competition_mobile_menu_container.fixed{
 	position: fixed;
 	z-index: 10;
-	top: 0;
 }
 
 
+<<<<<<< HEAD
 //################ JUMPNOW #######################//
 
 .jumpnow-des {
@@ -549,3 +572,10 @@ div#sec_events {
 
 
 																}
+=======
+
+
+
+
+}//end of the <480 @media
+>>>>>>> origin/master

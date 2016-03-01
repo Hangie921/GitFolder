@@ -3926,16 +3926,25 @@ body.sg ul.competition-headings a {
   letter-spacing: 2px;
   font-weight: 600;
 }
-/* line 77, ../sass/modules/_sg.scss */
+/* line 76, ../sass/modules/_sg.scss */
+body.sg .jumpnow-des h3 {
+  font-family: 'fatfrank', sen-serif;
+  letter-spacing: 1px;
+}
+/* line 79, ../sass/modules/_sg.scss */
+body.sg .jumpnow-des h3 span {
+  font-family: 'fatfrank', sen-serif;
+}
+/* line 87, ../sass/modules/_sg.scss */
 body.sg .event_single .front_face, body.sg .event_single .back_face {
   background-color: #333;
   text-shadow: 0px 0px  20px black;
 }
-/* line 84, ../sass/modules/_sg.scss */
+/* line 94, ../sass/modules/_sg.scss */
 body.sg .event_single .back_face p {
   padding: 50px 0;
 }
-/* line 92, ../sass/modules/_sg.scss */
+/* line 102, ../sass/modules/_sg.scss */
 body.sg .btn {
   letter-spacing: 2px;
 }

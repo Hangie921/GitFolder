@@ -150,6 +150,7 @@ div#sec_competition {
 }
 .top_animation {
     min-height: 460px;
+    padding-top: 5%;
 }
 .rocket{
 	position:absolute;
@@ -703,6 +704,9 @@ div.timeline {
 	 		}
 	 	}
 
+	.prize-single {
+		min-height: 120px !important;
+	}
 	.col-md-4 .prize-single {
 		margin:30px auto 0;
 		min-height:180px;
@@ -710,30 +714,33 @@ div.timeline {
 		
 	 	}
 
-	& .col-md-4:first-of-type .prize-single{
+	.second-place .prize-single{
 		background: url(../img/secondplace.png) no-repeat center bottom;
 		@include background-size(200px auto);
 			
 	 	}
-	 	& .col-md-4:nth-of-type(2)  {
+	 
+		
 
-		 	h4 {
+		 	.first-place {
+		 		h4 {
 		 		border:1px solid $primary-color;
 		 		padding:10px;
 				font-size:36px !important;
 			}
-		
 
 		 	.prize-single{
 
 			background: url(../img/firstplace.png) no-repeat center bottom;
 			@include background-size(200px auto);
 			color:$navy;
+				
 
 		 		}
-	 	}
+		 	}
+	 	
 
-	 	& .col-md-4:nth-of-type(3) .prize-single{
+	 	.third-place .prize-single{
 		background: url(../img/thirdplace.png) no-repeat center bottom;
 		@include background-size(200px auto);
 			

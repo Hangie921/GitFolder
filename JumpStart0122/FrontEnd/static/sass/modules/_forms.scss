@@ -391,6 +391,31 @@ $file-upload-size: 200px;
     
 }
 
+//########## Input Error #############//
+input::-webkit-input-placeholder {
+color: $secondary-color !important;
+font-size:14px !important;
+padding-top:5px;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: $secondary-color !important;
+font-size:14px !important;
+padding-top:5px;
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: $secondary-color !important;
+font-size:14px !important;
+padding-top:5px; 
+}
+ 
+input:-ms-input-placeholder {  
+color: $secondary-color !important;
+font-size:14px !important;
+padding-top:5px; 
+}
+//########## Input Error Ends#############//
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-color: transparent !important;
 	}

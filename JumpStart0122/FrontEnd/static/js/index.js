@@ -158,6 +158,12 @@ $(document).ready(function() {
 			onLeave: function(index, nextIndex, direction) {
 				if(ww>990){
 					$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');	
+				}else{
+					if(index == 1 && direction =='down'){
+						$("#header").css("background-color","transparent");
+					}else if(index == 2 && direction =='up'){
+						$("#header").css("background-color","#0e324b");
+					}
 				}
 			},
 			afterRender:function(){

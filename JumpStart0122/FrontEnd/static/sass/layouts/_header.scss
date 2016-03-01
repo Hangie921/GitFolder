@@ -117,6 +117,9 @@ ul.menu {
 #header,#header ul li a {
 	transition:color .5s, opacity .5s;
 }
+#header{
+	transition:background-color .5s;
+}
 #header.fff{
 	background-color: transparent;
 }

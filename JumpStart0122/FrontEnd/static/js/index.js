@@ -26,46 +26,50 @@ $(document).ready(function() {
 	    	scrollingSpeed:1000,
 			afterLoad: function(anchorLink, index) { 
 				$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
-				$('#header').css({'opacity':'1'});
-				 switch(index){ //this is the function that chnages the bgcolor and color of the #header
-			    	case 1:
-			    		$('#competition_menu li:nth-child(1) a').addClass('selected');
-			    		machine3.shuffle();
-			    		break;
-					case 2:
-						$('#header').addClass('orange');
-						if(!$('#sec_about .border_container').hasClass('straightAni')){ //border animation
-							$('#sec_about .border_container').addClass('straightAni');
-							$('#sec_about').addClass('timeLineAni');
-						}
-						break;
-					case 3:
-						$('#header').addClass('fff');
-						if(!$('#competition_topic_slide').hasClass('timeLineAni')){ //border animation
-							$('#competition_topic_slide').addClass('timeLineAni');
-						}
-							
-						if(!$('#competition_topic_slide .border_container').hasClass('borderRightAni')){ //border animation
-							$('#competition_topic_slide .border_container').addClass('borderRightAni');
-						}
-						break;
-					case 4:
-						$('#header').addClass('orange');
-						if(!$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').hasClass('borderRightAni')){
-							$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').addClass('borderRightAni');
-						}
-						if(!$('#sec_jumpnow').hasClass('timeLineAni')){
-							$('#sec_jumpnow').addClass('timeLineAni');
-						}
-						if(!$('#border_btn').hasClass('borderRightAni')){
-							$('#border_btn').addClass('borderRightAni');
-						}
+				if(ww>990){
 
-						break;
-					case 5:
-						$('#header').addClass('fff');
-						break;
+					$('#header').css({'opacity':'1'});
+					 switch(index){ //this is the function that chnages the bgcolor and color of the #header
+				    	case 1:
+				    		$('#competition_menu li:nth-child(1) a').addClass('selected');
+				    		machine3.shuffle();
+				    		break;
+						case 2:
+							$('#header').addClass('orange');
+							if(!$('#sec_about .border_container').hasClass('straightAni')){ //border animation
+								$('#sec_about .border_container').addClass('straightAni');
+								$('#sec_about').addClass('timeLineAni');
+							}
+							break;
+						case 3:
+							$('#header').addClass('fff');
+							if(!$('#competition_topic_slide').hasClass('timeLineAni')){ //border animation
+								$('#competition_topic_slide').addClass('timeLineAni');
+							}
+								
+							if(!$('#competition_topic_slide .border_container').hasClass('borderRightAni')){ //border animation
+								$('#competition_topic_slide .border_container').addClass('borderRightAni');
+							}
+							break;
+						case 4:
+							$('#header').addClass('orange');
+							if(!$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').hasClass('borderRightAni')){
+								$('#sec_jumpnow .jumpnow_part1 .slide-inner .border_container').addClass('borderRightAni');
+							}
+							if(!$('#sec_jumpnow').hasClass('timeLineAni')){
+								$('#sec_jumpnow').addClass('timeLineAni');
+							}
+							if(!$('#border_btn').hasClass('borderRightAni')){
+								$('#border_btn').addClass('borderRightAni');
+							}
+
+							break;
+						case 5:
+							$('#header').addClass('fff');
+							break;
+					}
 				}
+				
 			},
 			onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
 				// alert('anchorLink:'+anchorLink+',index:'+index+',slideIndex:'+slideIndex+',nextSlideIndex:'+nextSlideIndex);
@@ -151,7 +155,10 @@ $(document).ready(function() {
 				}
 			},
 			onLeave: function(index, nextIndex, direction) {
-				$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
+				if(ww>990){
+					$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');	
+				}
+				
 
 			},
 			afterRender:function(){
@@ -181,14 +188,7 @@ $(document).ready(function() {
 		}); //end of the fullpageJS initial
 		$.fn.fullpage.setLockAnchors(false);
 
-		//menu hamburger
- 
- 		$('.menu-burger, .menu-items-mobile').on('click', function() {
- 		 $('.menu-bg, .menu-items-mobile, .menu-burger').toggleClass('fs');
-  		$('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
-		});
-
-		// menu hamburger ends
+		
 	
     
 	//add and delete the member input field dynamically with the btn clicked
@@ -331,7 +331,6 @@ $(document).ready(function() {
    		/*start to validate the member part*/
    		var name_counter = 0;
    		var info_counter = 0;
-   		// alert($member_name.length);
 
 		$member_name.each(function(){
 			name_counter = checkVal($(this),name_counter);
@@ -471,26 +470,6 @@ $(document).ready(function() {
 		}
 	});
 
-	
-
-	// var contact_info = $("#sec_jumpnow input[name$='contact'], #sec_jumpnow input[name$='phone'],#sec_jumpnow input[name$='email'], #sec_jumpnow input[name$='agree']");
-	// contact_info.addClass("ignore");
- //   	$("#sec_jumpnow a.next_btn").click(function(){
-	// 	var reg_form = $('#reg_form');
-	// 	console.log("team_name:"+$("input[name$='team_name']").val());
-	// 	console.log("product_brief:"+$("textarea[name$='product_brief']").val());
-	// 	console.log("BP_file:"+$("input[name$='BP_file']").val());
-	// 	console.log("member_brief_name:"+$("input[name$='member_brief_name']").val());
-	// 	console.log("member_brief_info:"+$("input[name$='member_brief_info']").val());
-	// 	if(reg_form.valid()){ 
- //        	$.fn.fullpage.moveTo('jumpnow',2);
- //        	contact_info.removeClass("ignore");
-	// 	}
-	// 	else{
-	// 		btn_error($(this))
-	// 	}
- //   	});
-
 	/*==========This is the product_brief textarea Counter==========*/
 	$('#product_brief').keyup(function(){
 		$('#counter').html((200-$(this).val().length));
@@ -507,30 +486,21 @@ $(document).ready(function() {
 	});
 
 
+
+
+
+	//***************************for the mobile
+	if(ww>990){
+
+	}else if(ww<=990){
+		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
+	}
+
 });//end of the document.ready
 
 
 
-//==========================mobile competition slide menu ani
 
-function revealOnScroll() {
-  var scrolled = $(window).scrollTop();
-  $('#competition_mobile_menu_container').each(function() {
-    var current = $(this), // 當前元素
-      w_height = $(window).outerHeight(), //視窗高度
-      offsetTop = current.offset().top; //當前元素離頂部的高度
-    // 計算高度差
-    // 當元素進入視窗時，加入class
-    if (scrolled + w_height - 300 > offsetTop) {
-      current.addClass("fixed");
-    } else {
-      current.removeClass("fixed");
-    }
-  });
-}
-if(ww<=990){
-	$(window).on("scroll", revealOnScroll);	
-}
 
 
 

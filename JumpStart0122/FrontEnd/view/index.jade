@@ -24,6 +24,16 @@ html
 			try{Typekit.load({ async: true });}catch(e){}
 
 	body
+		#competition_mobile_menu_container
+			ul.competition-headings#competition_mobile_menu
+				li 
+					a.selected(href="#competition/") 競賽主題
+				li
+					a(href="#competition/1") 參賽資訊
+				li 
+					a(href="#competition/2") 獎項
+				li 
+					a(href="#competition/3") 承辦贊助
 		#fullpage
 			.section#sec_home.sec_home_bg.container.section-padding(data-anchor='home')
 				header.container#header
@@ -105,16 +115,6 @@ html
 
 
 			.section#sec_competition.container.no-pad(data-anchor='competition').fp-auto-height
-				.competition_mobile_menu_container
-					ul.competition-headings#competition_mobile_menu
-						li 
-							a.selected(href="#competition/") 競賽主題
-						li
-							a(href="#competition/1") 參賽資訊
-						li 
-							a(href="#competition/2") 獎項
-						li 
-							a(href="#competition/3") 承辦贊助
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
 					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
 						.border_container
@@ -580,6 +580,7 @@ html
 	//-classie.js is the function that runs the input effect
 	script(type='text/javascript',src='../js/classie.js').
 	script(src="../js/index.js")
+	script(src='../js/mobile.js')
 
 							
 

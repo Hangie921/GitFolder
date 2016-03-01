@@ -488,12 +488,21 @@ div.section#sec_competition{
 }
 
 
+//****************FOR COMPETITION MENU*********//
 
+#competition_mobile_menu_container{
+	position: absolute;
+	z-index:5;
+}
+#competition_menu{
+	display:none;
+}
 
-
-
-
-
+#competition_mobile_menu_container.fixed{
+	position: fixed;
+	z-index: 10;
+	top: 0;
+}
 
 
 }// end of the media query 480px

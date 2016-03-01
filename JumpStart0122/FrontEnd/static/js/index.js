@@ -14,16 +14,9 @@ $(window).resize(function(){
 
 
 $(document).ready(function() {
-	ww = window.innerWidth;
-	wh = window.innerHeight;
-
+	resize();
 	initSlot();	//initial the slot machine first so that fullpage can load the
 	
-
-
-	//initail the .team_details height so it won't move after loading
-	
-
 	//initial the fullpage with the rocket animation
     	$('#fullpage').fullpage({
 	    	menu:'#header',
@@ -76,40 +69,52 @@ $(document).ready(function() {
 			},
 			onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
 				// alert('anchorLink:'+anchorLink+',index:'+index+',slideIndex:'+slideIndex+',nextSlideIndex:'+nextSlideIndex);
-				switch(anchorLink){
-					case 'jumpnow':
-						if(slideIndex == 0 && index == 4){
-							if(!$('#sec_jumpnow.timeLineAni').hasClass('opacity')){
-								$('#sec_jumpnow.timeLineAni').addClass('opacity');
+				
+				if(ww > 990){ //for PC
+					switch(anchorLink){
+						case 'jumpnow':
+							if(slideIndex == 0 && index == 4){
+								if(!$('#sec_jumpnow.timeLineAni').hasClass('opacity')){
+									$('#sec_jumpnow.timeLineAni').addClass('opacity');
+								}
+							}else if(nextSlideIndex == 0){
+								if($('#sec_jumpnow.timeLineAni').hasClass('opacity')){
+								   $('#sec_jumpnow.timeLineAni').removeClass('opacity');
+								}
 							}
-						}else if(nextSlideIndex == 0){
-							if($('#sec_jumpnow.timeLineAni').hasClass('opacity')){
-							   $('#sec_jumpnow.timeLineAni').removeClass('opacity');
+						break;
+						case 'competition':
+							if(direction =='left' || direction == 'right'){
+								$('#competition_menu li a').removeClass('selected');
+								$('#competition_menu li:nth-child('+(nextSlideIndex+1)+') a').addClass('selected');
 							}
-						}
-					break;
-					case 'competition':
-						if(nextSlideIndex == 1 && slideIndex ==0){
-							
-						}
-					break;
+						break;
+					}
+
+				}else{ // for mobile all temporary
+					switch(anchorLink){
+						case 'competition':
+							$('#competition_mobile_menu li a').removeClass('selected');
+							$('#competition_mobile_menu li:nth-child('+(nextSlideIndex+1)+') a').addClass('selected');
+						break;
+					}
 				}
+
+				
 			},
 			afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
 				if(anchorLink == 'competition'){	
-					$('#competition_menu li a').removeClass('selected');
+					// $('#competition_menu li a').removeClass('selected');
+					// $('#competition_menu li:nth-child('+slideIndex+') a').addClass('selected');
 					switch(slideIndex){
 						case 0:
-							$('#competition_menu li:nth-child(1) a').addClass('selected');
 						break;
 						case 1:
-							$('#competition_menu li:nth-child(2) a').addClass('selected');
 							if(!$('#competition_info_slide .border_container').hasClass('borderRightAni')){ //border animation
 								$('#competition_info_slide .border_container').addClass('borderRightAni');
 							}
 						break;
 						case 2:
-							$('#competition_menu li:nth-child(3) a').addClass('selected');
 							var height = $('#competition_prize_slide .slide-inner').height();
 							$('#competition_prize_slide .border_container').height(height);
 							if(!$('#competition_prize_slide .border_container').hasClass('borderRightAni')){ //border animation
@@ -117,7 +122,6 @@ $(document).ready(function() {
 							}
 						break;
 						case 3:
-							$('#competition_menu li:nth-child(4) a').addClass('selected');
 							
 							if(!$('#competition_sponsor_slide .border_container').hasClass('borderRightAni')){ //border animation
 								$('#competition_sponsor_slide .border_container').addClass('borderRightAni');
@@ -148,9 +152,10 @@ $(document).ready(function() {
 			},
 			onLeave: function(index, nextIndex, direction) {
 				$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
+
 			},
 			afterRender:function(){
-				if(ww>=990){
+				if(ww>990){
 					var info_height = $('#competition_info_slide .slide-inner').height();
 					$('#competition_info_slide .slide-inner .border_container').height(info_height);
 					$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
@@ -503,6 +508,33 @@ $(document).ready(function() {
 
 
 });//end of the document.ready
+
+
+
+//==========================mobile competition slide menu ani
+
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $('#competition_mobile_menu_container').each(function() {
+    var current = $(this), // 當前元素
+      w_height = $(window).outerHeight(), //視窗高度
+      offsetTop = current.offset().top; //當前元素離頂部的高度
+    // 計算高度差
+    // 當元素進入視窗時，加入class
+    if (scrolled + w_height - 300 > offsetTop) {
+      current.addClass("fixed");
+    } else {
+      current.removeClass("fixed");
+    }
+  });
+}
+if(ww<=990){
+	$(window).on("scroll", revealOnScroll);	
+}
+
+
+
+
 
 
 

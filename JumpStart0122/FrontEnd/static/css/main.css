@@ -3953,49 +3953,68 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     display: block;
     position: absolute;
     z-index: 5;
+    background: #e8e8e8;
+    width: 100%;
+  }
+  /* line 539, ../sass/modules/_responsive.scss */
+  #competition_mobile_menu_container ul.competition-headings {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 543, ../sass/modules/_responsive.scss */
+  #competition_mobile_menu_container ul.competition-headings a {
+    height: 100%;
+    display: block;
+    min-height: 60px;
   }
 
-  /* line 538, ../sass/modules/_responsive.scss */
+  /* line 550, ../sass/modules/_responsive.scss */
   #competition_menu {
     display: none;
   }
 
-  /* line 542, ../sass/modules/_responsive.scss */
+  /* line 554, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container.fixed {
     position: fixed;
     z-index: 10;
     width: 100%;
+    top: 50px;
     background: #e8e8e8;
   }
-  /* line 547, ../sass/modules/_responsive.scss */
-  #competition_mobile_menu_container.fixed ul {
+  /* line 560, ../sass/modules/_responsive.scss */
+  #competition_mobile_menu_container.fixed ul.competition-headings {
     padding: 0;
     margin: 0;
   }
 
-  /* line 560, ../sass/modules/_responsive.scss */
+  /* line 568, ../sass/modules/_responsive.scss */
+  #sec_competition .fp-slide {
+    padding-top: 67px;
+  }
+
+  /* line 577, ../sass/modules/_responsive.scss */
   .jumpnow-des h3 {
     text-align: center;
   }
 
-  /* line 564, ../sass/modules/_responsive.scss */
+  /* line 581, ../sass/modules/_responsive.scss */
   .jumpnow-btn-set {
     margin-top: 0;
   }
 
-  /* line 567, ../sass/modules/_responsive.scss */
+  /* line 584, ../sass/modules/_responsive.scss */
   ul.plan_list li {
     text-align: center;
   }
 
-  /* line 570, ../sass/modules/_responsive.scss */
+  /* line 587, ../sass/modules/_responsive.scss */
   .jumpnow_part1 a.bizplan_download {
     margin: 0 auto 15px;
     display: block;
     float: none;
   }
 
-  /* line 577, ../sass/modules/_responsive.scss */
+  /* line 594, ../sass/modules/_responsive.scss */
   div#sec_events {
     padding-top: 30px;
   }

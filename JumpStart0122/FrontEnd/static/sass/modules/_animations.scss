@@ -66,14 +66,14 @@
 				top: 0;
 			}
 			.front_face{
-				background:#999 url(../img/stock.jpg) no-repeat;
+				background: #666 url(../img/event_comingsoon_1.jpg) no-repeat;
 				@include background-size(cover);
 				// background-color:rgba(0,0,0,.5);
 				z-index:2;
 			}
 			.back_face{
 				@include transform(rotateY(180deg));
-				background:#999 url(../img/stock.jpg) no-repeat;
+				background: #666 url(../img/event_comingsoon_1.jpg) no-repeat;
 				background-blend-mode: multiply;
 				// background-color:rgba(255,0,0,.7);
 			}
@@ -85,12 +85,12 @@
 				@include transform(rotateY(180deg));
 		}
 		&:first-of-type .front_face {
-			background:#666 url(../img/ninebot-bg.jpg) no-repeat;
+			background:#999 url(../img/ninebot-bg.jpg) no-repeat;
 			@include background-size(cover);
 		}
 
 		&:nth-of-type(2) .front_face {
-			background:#666 url(../img/meitu.jpg) no-repeat;
+			background:#999 url(../img/meitu.jpg) no-repeat;
 			@include background-size(cover);
 		}
 	}

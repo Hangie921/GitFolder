@@ -705,7 +705,7 @@ div.timeline {
 	 	}
 
 	.prize-single {
-		min-height: 120px !important;
+		min-height: 180px ;
 	}
 	.col-md-4 .prize-single {
 		margin:30px auto 0;
@@ -908,13 +908,17 @@ div#sec_events{
 
 	h3 {
 		color:$white;
-		padding:120px 0 30px;
+		padding:15px 0 15px;
 		font-family: $english;
 		font-weight: 600;
+		width:100%;
+		background:rgba(0,0,0,0.5);
 	}
 	span {
+		display: block;
 		color:$secondary-color;
-		margin-top:30px;
+		font-size:50%;
+		margin-top:5px;
 		font-weight:600;
 		font-family: $english;
 	}
@@ -922,6 +926,23 @@ div#sec_events{
 	font-size: 14px;
     line-height: 20px;
     text-align: left;
+	}
+
+	.event_tw_comingsoon {
+		h3 {
+			background:transparent;
+			margin-top:35%;
+			text-align: center;
+			width:100%;
+			display: block;
+
+		}
+
+	}
+
+	.event_sg_comingsoon {
+		@extend .event_tw_comingsoon;
+		background: #666 url(../img/event_comingsoon_1.jpg) no-repeat;
 	}
 	.front_face{
 
@@ -941,9 +962,11 @@ div#sec_events{
 			top:7px;
 			left:7px;
 		}
+
+
 		//########### SG Events Start ###########//
 		.event_sg_tourism{
-		  background: #666 url(../img/industrial_tourism_sg.jpg) no-repeat;
+		  background: #999 url(../img/industrial_tourism_sg.jpg) no-repeat;
 		  background-blend-mode: multiply;
 		  background-size: cover;
 		  -moz-background-size: cover;
@@ -953,7 +976,7 @@ div#sec_events{
 		  z-index: 2;
 		}
 		.event_sg_ecommerce{
-		  background: #666 url(../img/industrial_ecommerce_2_sg.jpg) no-repeat;
+		  background: #999 url(../img/industrial_ecommerce_2_sg.jpg) no-repeat;
 		  background-blend-mode: multiply;
 		  background-size: cover;
 		  -moz-background-size: cover;
@@ -963,7 +986,7 @@ div#sec_events{
 		  z-index: 2;
 		}
 		.event_sg_medical{
-		  background: #666 url(../img/industrial_medical_1_sg.jpg) no-repeat;
+		  background: #999 url(../img/industrial_medical_1_sg.jpg) no-repeat;
 		  background-blend-mode: multiply;
 		  background-size: cover;
 		  -moz-background-size: cover;
@@ -1003,9 +1026,7 @@ div#sec_events{
 		  z-index: 2;
 		}
 		//########### SG Events End ###########//
-		.event_tw_comingsoon{
-		  @extend .event_sg_comingsoon
-		}
+
 
 
 	}

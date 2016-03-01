@@ -16,6 +16,7 @@ $(window).resize(function(){
 $(document).ready(function() {
 	resize();
 	initSlot();	//initial the slot machine first so that fullpage can load the
+	revealOnScroll();
 	
 	//initial the fullpage with the rocket animation
     	$('#fullpage').fullpage({

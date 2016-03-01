@@ -536,6 +536,18 @@ div.section#sec_competition{
 	display:block;
 	position: absolute;
 	z-index:5;
+	background:$gray;
+	 width: 100%;
+	ul.competition-headings{
+	padding:0;
+	margin:0;
+
+	  a {
+	  	height:100%;
+	  	display: block;
+	  	min-height: 60px;
+	  }
+	}
 }
 #competition_menu{
 	display:none;
@@ -545,15 +557,20 @@ div.section#sec_competition{
 	position: fixed;
 	z-index: 10;
 	width:100%;
+	top:50px;
 	background:$gray;
-	ul{
+	ul.competition-headings{
 	padding:0;
 	margin:0;
 	}
 
 }
 
-
+#sec_competition {
+	.fp-slide {
+		padding-top:67px;
+	}
+}
 
 
 //################ JUMPNOW #######################//

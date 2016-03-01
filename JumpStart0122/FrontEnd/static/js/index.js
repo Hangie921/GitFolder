@@ -16,7 +16,7 @@ $(window).resize(function(){
 $(document).ready(function() {
 	resize();
 	initSlot();	//initial the slot machine first so that fullpage can load the
-	revealOnScroll();
+
 	
 	//initial the fullpage with the rocket animation
     	$('#fullpage').fullpage({
@@ -163,6 +163,7 @@ $(document).ready(function() {
 
 			},
 			afterRender:function(){
+
 				if(ww>990){
 					var info_height = $('#competition_info_slide .slide-inner').height();
 					$('#competition_info_slide .slide-inner .border_container').height(info_height);
@@ -171,6 +172,8 @@ $(document).ready(function() {
 					$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
 					var height = $('#competition_sponsor_slide .slide-inner').height();
 					$('#competition_sponsor_slide .border_container').height(height);	
+				}else{
+					revealOnScroll();
 				}
 				
 			},

@@ -135,8 +135,6 @@ ul.menu {
 
 @media screen and (max-width: 480px) {
 	
-
-
 	body {
 		font-size: 16px;
 		line-height: 22px;
@@ -187,15 +185,15 @@ ul.menu {
 	
 
 
-	.sloganContainer {
+.sloganContainer {
 
-	    min-height: 600px;
-	    height: initial;
-	}
+    min-height: 600px;
+    height: initial;
+}
 
-	.fp-slidesContainer {
-	    margin-top: 14%;
-	}
+.fp-slidesContainer {
+    margin-top: 14%;
+}
 	.slide-inner {
 		width:97%;
 	}
@@ -385,6 +383,7 @@ div.contact_container {
 	}
 }
 
+
 /*************DISABLE THE ANIMATION*************/
 .rocket{
 	display:none;
@@ -424,6 +423,7 @@ div.timeLineAni::after{
 #sec_about p{
 	opacity:1;
 }
+
 
 
 div.section#sec_competition{
@@ -505,4 +505,4 @@ div.section#sec_competition{
 }
 
 
-}// end of the media query 480px
+																}

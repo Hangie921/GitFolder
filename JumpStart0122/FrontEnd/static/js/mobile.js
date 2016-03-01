@@ -7,10 +7,8 @@
 
 function revealOnScroll() {
 	var menu = $("#competition_mobile_menu_container");
-	console.log('#sec_home height '+$("#sec_home").height());
-	console.log('#sec_about height '+$("#sec_about").height());
-	var originalHeight = $("#sec_home").height() + $("#sec_about").height();
-	console.log(originalHeight);
+	var originalHeight = $("#sec_home").innerHeight() + $("#sec_about").innerHeight();
+	
 	var scrolled = $(window).scrollTop();
 	menu.css("top",originalHeight);
 
@@ -19,13 +17,14 @@ function revealOnScroll() {
 		var current = $(this), // 當前元素
 	    w_height = $(window).outerHeight(), //視窗高度
 	    offsetTop = current.offset().top; //當前元素離頂部的高度
-	    // console.log("window height:"+w_height);
-	    console.log('offset:'+offsetTop);
+	    
 	    // 計算高度差
 	    // 當元素進入視窗時，加入class
-	    if (scrolled + 70 > offsetTop) {
+
+	    //視差調整
+	    if (scrolled + $("#header").innerHeight() > offsetTop && scrolled < (offsetTop + $(this).innerHeight() - $("#header").innerHeight() - menu.innerHeight() ) ) {
 			menu.addClass("fixed");
-			menu.css("top",$("#header").height()+20);
+			menu.css("top",$("#header").innerHeight());
 		    console.log("add fixed");
 	    } else {
 			menu.removeClass("fixed");

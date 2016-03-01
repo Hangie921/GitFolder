@@ -3964,31 +3964,38 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
   #competition_mobile_menu_container.fixed {
     position: fixed;
     z-index: 10;
+    width: 100%;
+    background: #e8e8e8;
+  }
+  /* line 549, ../sass/modules/_responsive.scss */
+  #competition_mobile_menu_container.fixed ul {
+    padding: 0;
+    margin: 0;
   }
 
-  /* line 554, ../sass/modules/_responsive.scss */
+  /* line 562, ../sass/modules/_responsive.scss */
   .jumpnow-des h3 {
     text-align: center;
   }
 
-  /* line 558, ../sass/modules/_responsive.scss */
+  /* line 566, ../sass/modules/_responsive.scss */
   .jumpnow-btn-set {
     margin-top: 0;
   }
 
-  /* line 561, ../sass/modules/_responsive.scss */
+  /* line 569, ../sass/modules/_responsive.scss */
   ul.plan_list li {
     text-align: center;
   }
 
-  /* line 564, ../sass/modules/_responsive.scss */
+  /* line 572, ../sass/modules/_responsive.scss */
   .jumpnow_part1 a.bizplan_download {
     margin: 0 auto 15px;
     display: block;
     float: none;
   }
 
-  /* line 571, ../sass/modules/_responsive.scss */
+  /* line 579, ../sass/modules/_responsive.scss */
   div#sec_events {
     padding-top: 30px;
   }

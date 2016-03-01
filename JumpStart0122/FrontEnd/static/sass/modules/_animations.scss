@@ -327,9 +327,20 @@ div.borderRightAni{
 		height: 1px;
 		width: 0;
 		position: absolute;
-		left: -1px;
+		left: 2px;
 		top: 175px;
 		@include animation(horiLineBtn 0.5s $speed*5 1 linear forwards);
+
+	}
+	& .sg{
+		background-color:$primary-color;
+		z-index: 1;
+		height: 1px;
+		width: 0;
+		position: absolute;
+		left: 2px;
+		top: 175px;
+		@include animation(horiLineBtn_sg 0.5s $speed*5 1 linear forwards);
 	}
 	& .right.R_bottom{
 		background-color: $primary-color;
@@ -350,7 +361,10 @@ div.borderRightAni{
 	0%{width:0px;}
 	100%{width:900px;}
 }
-
+@keyframes horiLineBtn_sg{
+	0%{width:0px;}
+	100%{width:150px;}
+}
 
 
 

@@ -1,11 +1,11 @@
 /*
 Syntax error: Invalid CSS after "}": expected "}", was "<<<<<<< HEAD"
         on line 386 of /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_responsive.scss
-        from line 30 of /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/main.scss
+        from line 31 of /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/main.scss
 
 Backtrace:
 /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_responsive.scss:386
-/Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/main.scss:30
+/Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/main.scss:31
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129:in `expected'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061:in `tok!'
@@ -79,4 +79,4 @@ org/jruby/RubyKernel.java:1419:in `loop'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"}\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 386 of /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_responsive.scss\A         from line 30 of /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/main.scss"; }
+  content: "Syntax error: Invalid CSS after \"}\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 386 of /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/modules/_responsive.scss\A         from line 31 of /Users/Janet/Documents/Ping_git/jumpstart/JumpStart0122/FrontEnd/static/sass/main.scss"; }

@@ -15,7 +15,8 @@ var schema = function(){
 			"name" : "",
 			"email" : "",
 			"subject" : "",
-			"msg" : ""
+			"msg" : "",
+			"country":""
 		},
 		"reg_time" : timestamp,
 		"readed" : {
@@ -38,6 +39,7 @@ function to_object(req,res){
 	contact.contact_us.email = req.body.user_email;
 	contact.contact_us.subject = req.body.subject;
 	contact.contact_us.msg = req.body.user_msg;
+	contact.contact_us.country = req.body.country;
 	return contact;//team_info is already an object
 }
 

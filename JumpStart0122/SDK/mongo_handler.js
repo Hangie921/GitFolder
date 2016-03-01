@@ -18,13 +18,13 @@ function handle(mongoClient,crud,doc,collection,query,condition,callback){
 				staus = false
 				throw err;
 			}else{
-				console.log('found the detail '+ docs);
-				if(docs){
-					status = true;
-					result = docs;
-				}else{
+				if(docs.length === 0){					
 					status = false;
 					result = 'error';
+				}else{
+					console.log('found the detail '+ docs);
+					status = true;
+					result = docs;
 				}
 				callback(null,status,result);
 			}	

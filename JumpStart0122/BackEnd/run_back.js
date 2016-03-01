@@ -3,6 +3,8 @@
 var instance = require('../SDK/instance'),
 	path = require('path'),
 	index = require('../BackEnd/controller/index'),
+	reg_info = require('../BackEnd/controller/reg_info'),
+	contact_info = require('../BackEnd/controller/contact_info'),
 	login = require('../BackEnd/controller/login'),
 	logout = require('../BackEnd/controller/logout'),
 	config = require('../BackEnd/config/back_server_init.json'),
@@ -32,3 +34,5 @@ var app = instance.startApp(config.server.port,config.server.view_engine,path.di
 index.route(app,mongoClient);
 login.route(app,mongoClient);
 logout.route(app,mongoClient);
+reg_info.route(app,mongoClient);
+contact_info.route(app,mongoClient);

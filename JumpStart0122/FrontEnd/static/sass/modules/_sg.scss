@@ -1,0 +1,95 @@
+body.sg {
+	letter-spacing:initial;
+	    font-size: 16px;
+    line-height: 24px;
+
+
+//########### SG Home BG Start ###########//
+.sg_bg {
+	// @extend .sec_home_bg;
+	// background:#000 url('../img/home_bg_sg_2.jpg') no-repeat center;
+	background: url('../img/home_bg_sg_5.jpg') no-repeat center;
+	background-blend-mode: multiply;
+	background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	position: relative;
+	
+}
+//########### SG Home BG End ###########//
+
+//########### SG Home Slogan Start ###########//
+.sloganContainer_sg_bg{
+	
+	text-indent:initial;
+	background-image:none;
+	max-width:480px;
+	margin-top:58px;
+
+
+	h2 {
+		text-indent: initial;
+		text-transform: uppercase;
+		font-family: 'raleway', sen-serif;
+		font-size:48px;
+		font-weight: 800;
+		line-height: 50px;
+		letter-spacing: 3px;
+		text-align:center;
+
+		span {
+			font-size: 37px;
+			letter-spacing: 3px;
+		}
+	}
+
+	.slotMachine {
+		border:1px solid #fff;
+		margin: 14px 0 30px !important;
+		height: 68px;
+	}
+	.slot {
+		font-family: 'raleway', sen-serif;
+		font-weight: 700;
+	}
+
+	 #slotButton3 {
+	 	float:none;
+	 	display: block;
+	 	margin:0px auto;
+	 }
+
+}
+//########### SG Home Slogan End ###########//
+
+//########### Competition ##############//
+
+ul.competition-headings a {
+	letter-spacing:2px;
+	font-weight:600;
+}
+
+//###### EVENT SINGLE ###########//
+.event_single {
+
+	 .front_face {
+	 	background-color: #333 ;
+	 		text-shadow:0px 0px  20px black;
+	 	
+	 }
+
+	 .back_face {
+	 	p {
+	 		padding:50px 0;
+	 	}
+	 }
+	    
+	}
+
+//######## SG Btns #################//
+.btn {
+	letter-spacing:2px;
+}
+}

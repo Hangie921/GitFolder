@@ -55,21 +55,7 @@ div#sec_competition {
 	// position: relative;
 	
 // }
-//########### SG Home BG Start ###########//
-.sg_bg {
-	// @extend .sec_home_bg;
-	// background:#000 url('../img/home_bg_sg_2.jpg') no-repeat center;
-	background: url('../img/home_bg_sg_5.jpg') no-repeat center;
-	background-blend-mode: multiply;
-	background-size:cover;
-	-moz-background-size:cover;
-	-ms-background-size:cover;
-	-o-background-size:cover;
-	-webkit-background-size:cover;
-	position: relative;
-	
-}
-//########### SG Home BG End ###########//
+
 
 .sloganContainer {
 	margin: 90px auto 0;
@@ -155,14 +141,7 @@ div#sec_competition {
 
 
 }
-//########### SG Home Slogan Start ###########//
-.sloganContainer_sg_bg{
-	// @extend .sloganContainer;
-	background:url(../img/slogan_sg.png) no-repeat center top;
-	background-size:100% auto;
 
-}
-//########### SG Home Slogan End ###########//
 
 /*ABOUT SECTIOIN***/
 #sec_about {

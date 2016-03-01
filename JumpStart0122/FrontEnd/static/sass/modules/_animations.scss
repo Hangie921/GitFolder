@@ -85,12 +85,12 @@
 				@include transform(rotateY(180deg));
 		}
 		&:first-of-type .front_face {
-			background:#fff url(../img/ninebot-bg.jpg) no-repeat;
+			background:#666 url(../img/ninebot-bg.jpg) no-repeat;
 			@include background-size(cover);
 		}
 
 		&:nth-of-type(2) .front_face {
-			background:#fff url(../img/mtxx.jpg) no-repeat;
+			background:#666 url(../img/meitu.jpg) no-repeat;
 			@include background-size(cover);
 		}
 	}

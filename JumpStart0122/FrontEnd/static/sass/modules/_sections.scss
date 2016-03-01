@@ -908,13 +908,17 @@ div#sec_events{
 
 	h3 {
 		color:$white;
-		padding:120px 0 30px;
+		padding:15px 0 15px;
 		font-family: $english;
 		font-weight: 600;
+		width:100%;
+		background:rgba(0,0,0,0.5);
 	}
 	span {
+		display: block;
 		color:$secondary-color;
-		margin-top:30px;
+		font-size:50%;
+		margin-top:5px;
 		font-weight:600;
 		font-family: $english;
 	}
@@ -922,6 +926,17 @@ div#sec_events{
 	font-size: 14px;
     line-height: 20px;
     text-align: left;
+	}
+
+	.event_tw_comingsoon {
+		h3 {
+			background:transparent;
+			margin-top:35%;
+			text-align: center;
+			width:100%;
+			display: block;
+
+		}
 	}
 	.front_face{
 
@@ -941,6 +956,8 @@ div#sec_events{
 			top:7px;
 			left:7px;
 		}
+
+
 		//########### SG Events Start ###########//
 		.event_sg_tourism{
 		  background: #666 url(../img/industrial_tourism_sg.jpg) no-repeat;

@@ -570,6 +570,32 @@ div.section#sec_competition{
 	}
 }
 
+.info_list ul li {
+	padding-left:0;
+}
+div.timeline ul{
+	li {
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		-o-box-shadow:none;
+		-ms-box-shadow:none;
+		box-shadow:none;
+		margin-bottom:5px;
+		position:static;
+		bottom:0;
+
+		&:hover {
+			margin:initial;
+			-webkit-box-shadow:none;
+			-moz-box-shadow:none;
+			-o-box-shadow:none;
+			-ms-box-shadow:none;
+			box-shadow:none;
+			position:static;
+			bottom:0;
+		}
+	}
+}
 
 //################ JUMPNOW #######################//
 

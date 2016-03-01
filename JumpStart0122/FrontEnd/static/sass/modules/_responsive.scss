@@ -5,27 +5,27 @@
 /********************* TABLET******************/
 @media screen and (max-width: 990px) {
 
-/****HEADER******/
-.header {
-	margin:0 auto;
-	padding: 0 0 !important;
-}
+	/****HEADER******/
+	.header {
+		margin:0 auto;
+		padding: 0 0 !important;
+	}
 
-header {
-	padding: 0 3% 15px !important;
-	margin:0;
-}
-/****COMPETITION***********/
-.competition-headings li{
-			vertical-align: middle;
-			width: 25%;
+	header {
+		padding: 0 3% 15px !important;
+		margin:0;
+	}
+	/****COMPETITION***********/
+	.competition-headings li{
+		vertical-align: middle;
+		width: 25%;
 
-		    a {
-		    	text-align: center;
-		    	padding:10px;
-		    	letter-spacing: 4px;
-		    	line-height: 20px;
-		    }
+	    a {
+	    	text-align: center;
+	    	padding:10px;
+	    	letter-spacing: 4px;
+	    	line-height: 20px;
+	    }
 	}
 
 /*****MOBILE MENU************/
@@ -130,24 +130,6 @@ ul.menu {
 			margin:0;
 		}
 	}
-
-//****************FOR COMPETITION MENU*********//
-
-
-#competition_mobile_menu_container{
-	display:block;
-	position: absolute;
-	z-index:5;
-}
-#competition_menu{
-	display:none;
-}
-
-#competition_mobile_menu_container.fixed{
-	position: fixed;
-	z-index: 10;
-	top: 40px;
-}
 
 
 
@@ -432,6 +414,9 @@ div.contact_container {
 #sec_about{
 	padding-bottom:$mob-sec-pad;
 
+	& .border{
+		background-color:$primary-color;
+	}
 	.border_container{
 		margin:$mob-sec-pad 0 0;
 	}
@@ -439,20 +424,31 @@ div.contact_container {
 	& .border.top{
 		@include animation(none);
 		left: 0;
+		top: 0;
+		height: 1px;
+		width: 100%;
 	}
 	& .border.bottom{
 		&.b_right{
 			display: none;
 		}
 		&.b_left{
-			left: 0;	
+			left: 0;
+			top: 100%;	
 			@include animation(none);
 			width: 100%;
+			height: 1px;
 		}
 	}
 	& .border.left,& .border.right{
 		@include animation(none);
 		height: 100%;
+		width: 1px;
+		left: 0;
+		top: 0;	
+	}
+	& .border.right{
+		left: 100%;
 	}
 }	
 div.timeLineAni::after{
@@ -492,6 +488,10 @@ div.section#sec_competition{
 
 	}
 	& .border_container{
+		border:1px $primary-color solid;
+		& .border{
+			display:none;
+		}
 		& .straight_line{
 			height: $straightHeight;
 			@include animation(none);
@@ -523,12 +523,61 @@ div.section#sec_competition{
 		display: none;
 	}
 
-}
+} //end of teh #sec_competition
 #competition_topic_slide{
 	&.slide.competition_topic .slide-inner{
 		z-index: -1;
 	}
 }
+
+
+div.section#sec_jumpnow {
+	& .jumpnow_part1{
+		& .jumpnow-des{
+			& .border_container{
+				border:1px solid $primary-color;
+				& .border{
+					display: none;
+					@include animation(none);
+				}
+			}
+		}
+
+	}
+
+	& .team_details{
+		& .slide-inner{
+			& .border_container{
+				border:1px solid $primary-color;
+			}
+			& .border_container.borderRightAni{
+				border:1px solid $primary-color;
+				& .border{
+					display:none;
+					@include animation(none);
+				}
+			}
+		}
+	}
+	& .personal_details{
+		& .slide-inner{
+			& .border_container{
+				border:1px solid $primary-color;
+			}
+			& .border_container.borderRightAni{
+				border:1px solid $primary-color;
+				& .border{
+					display:none;
+					@include animation(none);
+				}
+			}
+		}
+	}
+
+}
+
+
+
 
 //****************FOR COMPETITION MENU*********//
 
@@ -599,4 +648,4 @@ div#sec_events {
 
 
 
-}//end of the <480 @media
+}//end of the <768 @media

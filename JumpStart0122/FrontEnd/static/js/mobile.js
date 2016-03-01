@@ -2,7 +2,7 @@
 
 
 
-//==========================mobile competition slide menu ani
+//==========================MOBILE COMPETITION SLIDE MENU==========
 
 
 function revealOnScroll() {
@@ -33,13 +33,11 @@ function revealOnScroll() {
 	    }
 	});
 }
-	
 
 
 
 
-
-//menu hamburger
+//********************MENU BURGER**********************
 
 $('.menu-burger, .menu-items-mobile').on('click', function() {
 	$('.menu-bg, .menu-items-mobile, .menu-burger').toggleClass('fs');

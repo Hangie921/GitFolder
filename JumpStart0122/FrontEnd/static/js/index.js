@@ -159,19 +159,19 @@ $(document).ready(function() {
 				if(ww>990){
 					$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');	
 				}
-				
-
 			},
 			afterRender:function(){
 
+				var info_height = $('#competition_info_slide .slide-inner').height();
+				$('#competition_info_slide .slide-inner .border_container').height(info_height);
+				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
+				$('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
+				$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
+				var height = $('#competition_sponsor_slide .slide-inner').height();
+				$('#competition_sponsor_slide .border_container').height(height);	
+				
 				if(ww>990){
-					var info_height = $('#competition_info_slide .slide-inner').height();
-					$('#competition_info_slide .slide-inner .border_container').height(info_height);
-					$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
-					$('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
-					$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
-					var height = $('#competition_sponsor_slide .slide-inner').height();
-					$('#competition_sponsor_slide .border_container').height(height);	
+
 				}else{
 					revealOnScroll();
 				}
@@ -233,8 +233,8 @@ $(document).ready(function() {
 
 	//the contact form ani,to show or hide the contact form
 	var down = true;
-	var contact_height = $('.contact_container').height();
-	$('.contact_container').css('bottom',contact_height*-0.9);
+	var contact_height = $('.contact_container').innerHeight();
+	$('.contact_container').css('bottom',contact_height*-0.8);
 	$('.contact_header').click(function(){
 		if(down){
 			$(this).parent().animate({'bottom':'0px'},1000);
@@ -242,7 +242,7 @@ $(document).ready(function() {
 			down = false;
 			// alert('if '+ down)
 		}else{
-			$(this).parent().animate({'bottom':contact_height*-0.9},1000);
+			$(this).parent().animate({'bottom':contact_height*-0.8},1000);
 			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
 			down = true;
 		}
@@ -467,7 +467,11 @@ $(document).ready(function() {
 		var btn = $('a.contact_us_btn');
 		var contact_form = $('#contact_us_form')
 		if(contact_form.valid()){  
-            submit_to_db(btn,contact_form);
+        	submit_to_db(btn,contact_form);
+        	setTimeout(function(){
+        		$('.contact_container').animate({'bottom':contact_height*-0.8},1000);
+        		down = true;
+        	},2000);
 		}
 		else{
 			btn_error(btn);

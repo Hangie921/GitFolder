@@ -94,3 +94,5 @@
 [2016-03-02 09:51:52.809] [INFO] info - result: {}
 [2016-03-02 09:53:08.331] [INFO] info - result: {}
 [2016-03-02 09:55:39.314] [INFO] info - result: {}
+[2016-03-02 09:58:26.932] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:58:26.938] [INFO] info - Express server listening on port 3000

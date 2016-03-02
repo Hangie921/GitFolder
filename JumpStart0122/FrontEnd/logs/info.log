@@ -84,3 +84,13 @@
 [2016-03-02 09:46:26.414] [INFO] info - result: {}
 [2016-03-02 09:46:29.371] [INFO] info - result: [object Object],[object Object],[object Object]
 [2016-03-02 09:47:38.427] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:50:49.622] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:50:49.659] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:51:40.358] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:51:40.395] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:51:44.965] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:51:49.487] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:51:52.044] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:51:52.809] [INFO] info - result: {}
+[2016-03-02 09:53:08.331] [INFO] info - result: {}
+[2016-03-02 09:55:39.314] [INFO] info - result: {}

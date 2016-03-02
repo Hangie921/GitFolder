@@ -16,7 +16,7 @@ $(window).resize(function(){
 $(document).ready(function() {
 	resize();
 	initSlot();	//initial the slot machine first so that fullpage can load the
-
+	revealOnScroll();
 	
 	//initial the fullpage with the rocket animation
     	$('#fullpage').fullpage({
@@ -168,24 +168,35 @@ $(document).ready(function() {
 			},
 			afterRender:function(){
 
-				var info_height = $('#competition_info_slide .slide-inner').height();
-				$('#competition_info_slide .slide-inner .border_container').height(info_height);
-				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
-				$('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
-				$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
-				var height = $('#competition_sponsor_slide .slide-inner').height();
-				$('#competition_sponsor_slide .border_container').height(height);	
 				
-				if(ww>990){
-
+				
+				if(ww>=990){
+					console.log("ww>990");
+					var info_height = $('#competition_info_slide .slide-inner').height();
+					$('#competition_info_slide .slide-inner .border_container').height(info_height);
+					$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
+					$('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
+					$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
+					var height = $('#competition_sponsor_slide .slide-inner').height();
+					$('#competition_sponsor_slide .border_container').height(height);	
+				}else if(ww<990 && ww>=768){
+					console.log("ww<=990 && ww>768");
+					var info_height = $('#competition_info_slide .slide-inner').height();
+					$('#competition_info_slide .slide-inner .border_container').height(info_height);
+				}else if(ww<768 && ww>=480){
+					console.log("ww<=768 && ww>480");
+					var info_height = $('#competition_info_slide .fp-tableCell .slide-inner').height();
+					console.log(info_height);
+					$('#competition_info_slide .slide-inner .border_container').height(info_height);
 				}else{
-					revealOnScroll();
+					console.log("ww<=480");
 				}
 				
 			},
 			verticalCentered : true,
 			resize : false,
 			fitToSectionDelay:500,
+			paddingBottom:30,
 			fixedElements:'.backToTop,header,.scrollDown',
 			loopBottom:false,
 			loopTop:false,
@@ -237,25 +248,46 @@ $(document).ready(function() {
 				$(this).hide();
 			}
 
+		$.fn.fullpage.reBuild();
+		console.log("rebuild");
+		
 	}); //end of the #add_member clicked
 	
 
 	//the contact form ani,to show or hide the contact form
 	var down = true;
 	var contact_height = $('.contact_container').innerHeight();
-	$('.contact_container').css('bottom',contact_height*-0.8);
-	$('.contact_header').click(function(){
-		if(down){
-			$(this).parent().animate({'bottom':'0px'},1000);
-			$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
-			down = false;
-			// alert('if '+ down)
-		}else{
-			$(this).parent().animate({'bottom':contact_height*-0.8},1000);
-			$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
-			down = true;
-		}
-	});
+	if(ww>=990){
+		$('.contact_container').css('bottom',contact_height*-0.8);
+		$('.contact_header').click(function(){
+			if(down){
+				$(this).parent().animate({'bottom':'0px'},1000);
+				$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
+				down = false;
+				// alert('if '+ down)
+			}else{
+				$(this).parent().animate({'bottom':contact_height*-0.8},1000);
+				$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
+				down = true;
+			}
+		});
+	}else if(ww<990 && ww>=768 ){
+		$('.contact_container').css('bottom',contact_height*-1);
+		// $('.contact_header').click(function(){
+		// 	if(down){
+		// 		$(this).parent().animate({'bottom':'0px'},1000);
+		// 		$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
+		// 		down = false;
+		// 		// alert('if '+ down)
+		// 	}else{
+		// 		$(this).parent().animate({'bottom':contact_height*-0.8},1000);
+		// 		$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
+		// 		down = true;
+		// 	}
+		// });
+	}
+	
+
 	//for SG connect btn
 	$('#connect_btn').click(function(){
 		$.fn.fullpage.moveTo(5);
@@ -509,8 +541,9 @@ $(document).ready(function() {
 	//***************************for the mobile********
 	if(ww>990){
 
-	}else if(ww<=990){
-		console.log("ww<990");
+	}else if(ww>768 && ww<=990){
+		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
+	}else if(ww<=768){
 		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
 
 		/***************DISABLE THE ANCHOR TO AVOID UNASSIGNED MOVING******/

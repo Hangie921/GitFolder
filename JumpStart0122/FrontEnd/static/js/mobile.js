@@ -10,8 +10,8 @@ function revealOnScroll(){
 	var menu = $("#competition_mobile_menu_container");
 	var originalHeight = $("#sec_home").innerHeight() + $("#sec_about").innerHeight();
 	var scrolled = $(window).scrollTop();
-	console.log("window:"+scrolled);
-	console.log("#competition:"+offset.top);
+	// console.log("window:"+scrolled);
+	// console.log("#competition:"+offset.top);
 	menu.css("top",originalHeight);
 	$('#sec_competition').each(function() {
 		var current = $(this), // 當前元素
@@ -34,7 +34,7 @@ function revealOnScroll(){
 function moveTo(section,slide){
 	console.log("move to "+section);
 
-	if(typeof slide !== null){
+	if(slide !== null){
 		moveDown(section);
 		moveRight(section,slide);
 	}else{
@@ -44,20 +44,32 @@ function moveTo(section,slide){
 }
 
 function moveRight(section,slide){
-	slide = ((Number(slide)) * -100)+"%";
+	$("#competition_mobile_menu li a").removeClass("selected");
+	$("#competition_mobile_menu li:nth-child("+(Number(slide)+1)+") a").addClass("selected");
+	if(section == 'competition'){
+		slide ="translateX("+((Number(slide)) * -25)+"%"+")";	
+	}else{
+		slide ="translateX("+((Number(slide)) * -33)+"%"+")";	
+	}
+	
+	console.log(slide);
 	console.log("moveRight");
-	$("#sec_"+section+" .fp-slideContainer").css("left",slide);
-	// $(window).scrollLeft(offset.left);
+	// $("#sec_"+section+" .fp-slidesContainer").animate({
+	// 	duration : 1000,
+	// 	step : function(){
+			$("#sec_"+section+" .fp-slidesContainer").css("transform",slide);
+	// 	},
+	// 	queue:false,
+	// 	easing:'easeInOutCubic' 
+	// });
 }
 
 function moveDown(section){
 	console.log("moveDown");
 	var offset = $("#sec_"+section).offset();
-	if(section === 'competition'){
-		$(window).scrollTop(offset.top-50);
-	}else{
-		$(window).scrollTop(offset.top-50);
-	}
+	offset = offset.top-50;
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+	$body.animate({"scrollTop":offset},1000,'easeInOutCubic');
 }
 
 

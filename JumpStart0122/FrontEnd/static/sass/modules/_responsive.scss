@@ -493,7 +493,7 @@ div.slide.team_details{
 /***CONTACT******/
 
 div.contact_container {
-	position:initial;
+	// position:initial;
 	span.input {
 		width:100%;
 	}
@@ -590,6 +590,7 @@ div.section#sec_competition{
 	}
 	& .border_container{
 		border:1px $primary-color solid;
+		min-height:380px;
 		& .border{
 			display:none;
 		}

@@ -17,7 +17,6 @@ function revealOnScroll(){
 		var current = $(this), // 當前元素
 	    w_height = $(window).outerHeight(), //視窗高度
 	    offsetTop = current.offset().top; //當前元素離頂部的高度
-	    
 	    // 計算高度差
 	    // 當元素進入視窗時，加入class
 
@@ -44,9 +43,10 @@ function moveTo(section,slide){
 }
 
 function moveRight(section,slide){
-	$("#competition_mobile_menu li a").removeClass("selected");
-	$("#competition_mobile_menu li:nth-child("+(Number(slide)+1)+") a").addClass("selected");
+	
 	if(section == 'competition'){
+		$("#competition_mobile_menu li a").removeClass("selected");
+		$("#competition_mobile_menu li:nth-child("+(Number(slide)+1)+") a").addClass("selected");
 		slide ="translateX("+((Number(slide)) * -25)+"%"+")";	
 	}else{
 		slide ="translateX("+((Number(slide)) * -33)+"%"+")";	

@@ -5,16 +5,18 @@ var wh;
 function resize(){
 	ww = window.innerWidth;
 	wh = window.innerHeight;
+	console.log("ww:"+ww);
+	console.log("wh:"+wh);
+	console.log('resize');
 }
 
 $(window).resize(function(){
 	resize();
-	console.log('resize');
 });
 
 
 $(document).ready(function() {
-	resize();
+	
 	initSlot();	//initial the slot machine first so that fullpage can load the
 	revealOnScroll();
 	
@@ -156,7 +158,7 @@ $(document).ready(function() {
 				}
 			},
 			onLeave: function(index, nextIndex, direction) {
-				if(ww>990){
+				if(ww>=990){
 					$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');	
 				}else{
 					if(index == 1 && direction =='down'){
@@ -167,30 +169,16 @@ $(document).ready(function() {
 				}
 			},
 			afterRender:function(){
-
+			
+				console.log("ww>=990");
+				var info_height = $('#competition_info_slide .slide-inner').height();
+				$('#competition_info_slide .slide-inner .border_container').height(info_height);
+				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
+				$('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
+				$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
+				var height = $('#competition_sponsor_slide .slide-inner').height();
+				$('#competition_sponsor_slide .border_container').height(height);	
 				
-				
-				if(ww>=990){
-					console.log("ww>990");
-					var info_height = $('#competition_info_slide .slide-inner').height();
-					$('#competition_info_slide .slide-inner .border_container').height(info_height);
-					$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
-					$('#competition_topic_slide .border_container').height($('#competition_topic_slide .slide-inner').height());
-					$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
-					var height = $('#competition_sponsor_slide .slide-inner').height();
-					$('#competition_sponsor_slide .border_container').height(height);	
-				}else if(ww<990 && ww>=768){
-					console.log("ww<=990 && ww>768");
-					var info_height = $('#competition_info_slide .slide-inner').height();
-					$('#competition_info_slide .slide-inner .border_container').height(info_height);
-				}else if(ww<768 && ww>=480){
-					console.log("ww<=768 && ww>480");
-					var info_height = $('#competition_info_slide .fp-tableCell .slide-inner').height();
-					console.log(info_height);
-					$('#competition_info_slide .slide-inner .border_container').height(info_height);
-				}else{
-					console.log("ww<=480");
-				}
 				
 			},
 			verticalCentered : true,
@@ -211,7 +199,7 @@ $(document).ready(function() {
 
 
 		}); //end of the fullpageJS initial
-		
+		resize();
 		
 	
     
@@ -258,6 +246,7 @@ $(document).ready(function() {
 	var down = true;
 	var contact_height = $('.contact_container').innerHeight();
 	if(ww>=990){
+		console.log(ww);
 		$('.contact_container').css('bottom',contact_height*-0.8);
 		$('.contact_header').click(function(){
 			if(down){
@@ -272,7 +261,8 @@ $(document).ready(function() {
 			}
 		});
 	}else if(ww<990 && ww>=768 ){
-		$('.contact_container').css('bottom',contact_height*-1);
+		console.log(ww);
+		$('.contact_container').css('bottom',contact_height*-1.1);
 		// $('.contact_header').click(function(){
 		// 	if(down){
 		// 		$(this).parent().animate({'bottom':'0px'},1000);
@@ -285,6 +275,8 @@ $(document).ready(function() {
 		// 		down = true;
 		// 	}
 		// });
+	}else {
+		console.log(ww);
 	}
 	
 
@@ -540,8 +532,9 @@ $(document).ready(function() {
 
 	//***************************for the mobile********
 	if(ww>990){
-
+		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
 	}else if(ww>768 && ww<=990){
+		// $.fn.fullpage.setLockAnchors(true);
 		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
 	}else if(ww<=768){
 		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
@@ -583,7 +576,7 @@ $(document).ready(function() {
 
 
 	}
-
+	
 });//end of the document.ready
 
 

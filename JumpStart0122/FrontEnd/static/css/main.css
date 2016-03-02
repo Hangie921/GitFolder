@@ -3748,7 +3748,6 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
   /* line 419, ../sass/modules/_responsive.scss */
   div.competition_topic .btn {
     margin-top: 30px;
-    position: initial;
   }
 
   /* line 423, ../sass/modules/_responsive.scss */

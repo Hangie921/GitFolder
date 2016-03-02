@@ -27,7 +27,7 @@ html
 		#competition_mobile_menu_container
 			ul.competition-headings#competition_mobile_menu
 				li 
-					a.selected(href="#competition/") 競賽主題
+					a.selected(href="#competition/0") 競賽主題
 				li
 					a(href="#competition/1") 參賽資訊
 				li 
@@ -36,7 +36,7 @@ html
 					a(href="#competition/3") 承辦贊助
 		#fullpage
 			.section#sec_home.sec_home_bg.container.section-padding(data-anchor='home')
-				header.container#header
+				header.container#header.zindex
 					.navbar-header.col-md-12
 						
 						.col-md-2
@@ -439,7 +439,7 @@ html
 											
 										button(id='add_member') 添加成員
 									.nav_group
-										a(class='button prev_btn',href='#jumpnow') 上一步
+										a(class='button prev_btn',href='#jumpnow/0') 上一步
 										a(class='button next_btn', href='javascript:void(0);') 下一步
 					.slide.personal_details.fp-auto-height.jumpnow-slide-padding.slide-padding
 						.col-md-10.col-centered
@@ -587,8 +587,9 @@ html
 
 	//-classie.js is the function that runs the input effect
 	script(type='text/javascript',src='../js/classie.js').
-	script(src="../js/index.js")
 	script(src='../js/mobile.js')
+	script(src="../js/index.js")
+	
 
 							
 

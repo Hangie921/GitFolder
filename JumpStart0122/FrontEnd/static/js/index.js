@@ -191,13 +191,16 @@ $(document).ready(function() {
 			loopTop:false,
 			loopHorizontal:false,
 			recordHistory:false,
+			keyboardScrolling:false,
+			lockAnchors:false,
+			animateAnchor:false,
 			controlArrows:false,
+			touchSensitivity:15,
 			responsiveWidth:990
 
 
 		}); //end of the fullpageJS initial
-		$.fn.fullpage.setLockAnchors(false);
-
+		
 		
 	
     
@@ -503,11 +506,49 @@ $(document).ready(function() {
 
 
 
-	//***************************for the mobile
+	//***************************for the mobile********
 	if(ww>990){
 
 	}else if(ww<=990){
+		console.log("ww<990");
 		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
+
+		/***************DISABLE THE ANCHOR TO AVOID UNASSIGNED MOVING******/
+		$.fn.fullpage.setLockAnchors(true);
+		$.fn.fullpage.setAllowScrolling(false);
+		/*******USE THE FUNCTION MOVETO TO SLIDE TO THE SECTION OR SLIDE********/
+		$("a").each(function(){
+			var a = $(this);
+			var href = a.attr("href");
+			if(typeof href!== undefined && href!=null){
+				a.click(function(){
+					var section = "";
+					var slide = "";
+					
+					if(href.lastIndexOf("/") == -1){ //means there is no slide num in the href
+						section = href.slice(1,href.length);
+						var offset = $("#sec_"+section).offset();
+						// $.fn.fullpage.moveTo(section);
+						// setTimeout(function(){
+						// 	$(window).scrollTop(offset.top-50);
+						// },1000);
+						moveTo(section,null);
+					}else{
+						slide = href.slice(href.length-1,href.length);
+						section = href.slice(1,href.lastIndexOf("/"));
+						var offset = $("#sec_"+section).offset();
+						// // $.fn.fullpage.moveTo(section,slide);
+						// setTimeout(function(){
+						// 	$(window).scrollTop(offset.top-50);
+						// },1000);
+						moveTo(section,slide);
+					}
+				});
+			}
+			
+		});
+
+
 	}
 
 });//end of the document.ready

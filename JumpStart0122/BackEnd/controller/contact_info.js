@@ -8,6 +8,13 @@ function route(app, mongoClient){
 	app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 	app.get('/contact_info/:country',function(req,res){
+		//session
+		var sess = req.session
+		if (sess.login_status === undefined || sess.login_status === null || sess.login_status === false){
+			res.redirect('/');
+			res.end();
+		}
+		// get country
 		var country = req.params.country
 		var query = {};
 		// console.log(country);
@@ -47,7 +54,8 @@ function route(app, mongoClient){
 			res.render( 'contact_info',
 						{
 							results:JSON.parse(JSON.stringify(result)), 
-							"country" : country
+							country : country,
+							user : sess.user
 						}
 					);
 			res.end();

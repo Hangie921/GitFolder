@@ -11,6 +11,7 @@ function route(app, mongoClient){
 
 	app.post('/login',function(req,res){
 		// app.use(express.bodyParser());
+		var sess = req.session
 		console.log(req.body);
 		var condition= {
 				projection: {"_id":0,"psw":1,"acc":1,},
@@ -22,6 +23,10 @@ function route(app, mongoClient){
 			acc:req.body.acc
 		};
 		mongo_handler.handle(mongoClient,'find',null,'member',query,condition,function(err,status,result){
+			sess.login_status = status;
+			sess.user = req.body.acc;
+			sess.save();
+
 			if (status){
 				res.send({status:login.check(req.body,result)});
 			}

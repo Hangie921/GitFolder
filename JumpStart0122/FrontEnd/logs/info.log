@@ -1,0 +1,86 @@
+[2016-03-02 08:57:32.835] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 08:57:32.888] [INFO] info - Express server listening on port 2999
+[2016-03-02 08:57:40.549] [INFO] info - result: {}
+[2016-03-02 08:57:52.460] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 08:57:52.496] [INFO] info - Express server listening on port 2999
+[2016-03-02 08:59:22.394] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 08:59:22.433] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:00:39.717] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:00:39.756] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:01:29.853] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:01:29.888] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:02:49.567] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:02:49.605] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:04:06.397] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:04:06.436] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:06:30.904] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:06:30.941] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:08:24.823] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:08:24.860] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:10:51.022] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:10:51.059] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:11:03.431] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:12:30.210] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:12:30.249] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:12:34.144] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:12:36.164] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:12:50.884] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:12:51.962] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:18:17.445] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:18:17.488] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:18:25.334] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:18:25.373] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:19:09.616] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:19:09.657] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:19:13.446] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:19:14.852] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:19:55.560] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:21:59.965] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:22:00.005] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:22:02.649] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:22:04.124] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:22:06.303] [INFO] info - result: {}
+[2016-03-02 09:22:14.019] [INFO] info - result: {}
+[2016-03-02 09:25:08.022] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:25:08.057] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:25:11.523] [INFO] info - result: {}
+[2016-03-02 09:25:12.758] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:25:15.703] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:25:30.583] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:25:30.620] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:25:34.142] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:25:37.191] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:27:01.603] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:27:01.642] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:27:07.112] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:27:08.992] [INFO] info - result: {}
+[2016-03-02 09:27:51.876] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:27:59.360] [INFO] info - result: {}
+[2016-03-02 09:28:51.320] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:28:51.359] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:28:55.432] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:28:57.628] [INFO] info - result: {}
+[2016-03-02 09:30:43.666] [INFO] info - result: {}
+[2016-03-02 09:30:53.861] [INFO] info - mongo found nothing here
+[2016-03-02 09:31:04.298] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:31:35.552] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:31:35.591] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:31:39.749] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:31:45.935] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:45:28.721] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:45:28.759] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:45:36.061] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:45:38.886] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:45:39.200] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:45:39.452] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:45:39.669] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:45:39.878] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:45:40.056] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:45:40.254] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:46:20.828] [INFO] info - Mongo server listening on port 27017
+[2016-03-02 09:46:20.865] [INFO] info - Express server listening on port 2999
+[2016-03-02 09:46:22.898] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:46:24.459] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:46:26.414] [INFO] info - result: {}
+[2016-03-02 09:46:29.371] [INFO] info - result: [object Object],[object Object],[object Object]
+[2016-03-02 09:47:38.427] [INFO] info - result: [object Object],[object Object],[object Object]

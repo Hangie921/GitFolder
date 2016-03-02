@@ -5,6 +5,12 @@ var login = require('../module/login'),
 
 function route(app, mongoClient){
 	app.get('/reg_info',function(req,res){
+		var sess = req.session
+		if (sess.login_status === undefined || sess.login_status === null || sess.login_status === false){
+			res.redirect('/');
+			// res.render('index',{results:result});
+			res.end();
+		}
 		var query = {};
 		var condition = {
 			projection:{"_id":0},
@@ -37,7 +43,11 @@ function route(app, mongoClient){
 				// res.end();
 				
 			}
-			res.render('reg_info',{results:JSON.parse(JSON.stringify(result))});
+			res.render('reg_info',{
+					results : JSON.parse(JSON.stringify(result)),
+					user : sess.user
+				}
+			);
 			res.end();
 
 		});

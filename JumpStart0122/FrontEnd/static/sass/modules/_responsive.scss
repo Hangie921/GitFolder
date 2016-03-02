@@ -1,8 +1,84 @@
 
 
+//########## TABLET LANDSCAPE ########################//
+
+@media screen and (max-width:1024px) and (min-width:991px) {
+	
+	
+
+//######### PRIZE ##############//
 
 
-/********************* TABLET******************/
+
+
+//########### JUMPNOW SECTION #####################//	
+
+	#sec_jumpnow {
+		
+		.slide {
+			margin-top:30px;
+		}
+	}
+
+
+
+	div.timeline ul li p {
+		font-size:11px;
+	}
+
+	div.slide.team_details span, div.slide.personal_details {
+	
+		.file-upload-button {
+			padding-left:10px;
+			padding-right:10px;
+			font-size:12px;
+		}
+
+		span.file-upload-input {
+			padding-left:10px;
+			padding-right:10px;
+			font-size:12px;
+		}
+	
+
+
+
+
+
+}//########### JUMPNOW SECTION ENDS#####################//	
+
+//########### FORMS ######################/	
+
+div.slide.team_details  {
+
+		span.responsibility {
+			width:57% !important;
+		}
+		
+	}
+
+	.next_btn, .prev_btn {
+		height:50px;
+	}
+//########### FORMS ENDS######################/	
+
+//########### EVENT SECTION ############################//
+
+.event_tw_comingsoon {
+	h3 {
+		font-size: 24px;
+	}
+}
+
+
+
+} //###### TABLET LANDSCAPE ENDS ###################//
+
+
+
+
+/********************* TABLET PORTRAIT******************/
+
 @media screen and (max-width: 990px) {
 
 	/****HEADER******/
@@ -12,10 +88,15 @@
 	}
 
 	header {
-		padding: 0 3% 15px !important;
+	
 		margin:0;
 	}
-	/****COMPETITION***********/
+	.navbar-brand {
+		margin:0 !important;
+		line-height: 50px;
+	}
+//########### OMPETITION ####################//
+
 	.competition-headings li{
 		vertical-align: middle;
 		width: 25%;
@@ -28,7 +109,8 @@
 	    }
 	}
 
-/*****MOBILE MENU************/
+//############### MOBILE MENU #####################//
+
 	.menu-mobile {
   position: fixed;
   width: 50px;
@@ -134,18 +216,25 @@ ul.menu {
 
 
 
-}// end of the tablet @media
+	}// end of the tablet @media
 	
 
+//######## COMPETITION ############//
 
 
 
+//######## SPONSOR ###############//
+
+div.sponsor-group ul.sponsor-list.second li {
+	with:32% !important;
+}
+//######### SPONSOR ENDS ###########//
 
 
 
 }/******************MOBILE************************/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	
 	body {
 		font-size: 16px;
@@ -166,7 +255,7 @@ ul.menu {
 	header#header {
 		background:$navy ;
 		height:50px;
-		padding:10px 10% ;
+		padding:10px 30px !important ;
 		margin:0;
 
 	
@@ -176,7 +265,8 @@ ul.menu {
 		width:initial;
 		height:initial;
 		margin:15px 0;
-		padding-left: 20%;
+		line-height: 30px;
+		
 		}
 		
 	}
@@ -246,6 +336,12 @@ ul.menu {
 			}
 		}
 	}
+	div.competition_topic {
+		h4 {
+			font-size:41px;
+			padding:15px 0;
+		}
+	}
 	#competition_prize_slide  {
 
 		.prize-single {
@@ -279,6 +375,9 @@ ul.menu {
 
 		}
 
+	}
+	#competition_prize_slide .first-place h4 {
+		font-size:28px !important;
 	}
 	div.competition_topic  {
 		h4 {
@@ -547,6 +646,10 @@ div.section#sec_jumpnow {
 
 	}
 
+	.jumpnow-btn-set {
+		margin-top:$mob-sec-pad;
+	}
+
 	& .team_details{
 		& .slide-inner{
 			& .border_container{
@@ -619,7 +722,7 @@ div.section#sec_jumpnow {
 
 #sec_competition {
 	.fp-slide {
-		padding-top:67px;
+		padding-top:60px;
 	}
 }
 

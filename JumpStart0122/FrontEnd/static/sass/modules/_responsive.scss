@@ -188,7 +188,7 @@ ul.menu {
 	min-width: initial;
     float: none;
 	li {
-		padding:14% 0 0 0;
+	padding: 20vw 0 0 0;
 	text-align:center;
 	margin:0 !important;
 	}
@@ -293,12 +293,20 @@ div.sponsor-group ul.sponsor-list.second li {
 
 	a.btn {
 		width:100%;
+		max-width: 340px;
+		
+    	display: block;
+    	margin-left:auto;
+    	margin-right:auto;
+	
 	}
 	a.bizplan_download {
-		margin:0 0 15px 0 !important;
+		
 
 	}
-	
+	a.imready {
+		float:none;
+	}
 
 
 .sloganContainer {
@@ -793,3 +801,16 @@ div#sec_events {
 
 
 }//end of the <768 @media
+
+
+@media screen and (max-width:768px) and (min-width:489px) {
+ div.sponsor-group {
+	ul.sponsor-list {
+		li {
+			width:48% !important;
+			float:left;
+		}
+	}
+
+	}
+}

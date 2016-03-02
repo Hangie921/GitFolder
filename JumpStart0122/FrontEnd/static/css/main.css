@@ -3567,35 +3567,45 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
   div.sponsor-group ul.sponsor-list.second li {
     with: 32% !important;
   }
+
+  /* line 236, ../sass/modules/_responsive.scss */
+  #sec_events {
+    padding: 0 !important;
+  }
+
+  /* line 241, ../sass/modules/_responsive.scss */
+  .contact_container span.input {
+    max-width: initial;
+  }
 }
 /******************MOBILE************************/
 @media screen and (max-width: 768px) {
-  /* line 239, ../sass/modules/_responsive.scss */
+  /* line 251, ../sass/modules/_responsive.scss */
   body {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: initial;
   }
 
-  /* line 246, ../sass/modules/_responsive.scss */
+  /* line 258, ../sass/modules/_responsive.scss */
   .no-pad-m {
     padding: 0 !important;
   }
 
-  /* line 250, ../sass/modules/_responsive.scss */
+  /* line 262, ../sass/modules/_responsive.scss */
   .section {
     height: auto !important;
     padding-bottom: 30px !important;
   }
 
-  /* line 255, ../sass/modules/_responsive.scss */
+  /* line 267, ../sass/modules/_responsive.scss */
   header#header {
     background: #0e324b;
     height: 50px;
     padding: 10px 30px !important;
     margin: 0;
   }
-  /* line 263, ../sass/modules/_responsive.scss */
+  /* line 275, ../sass/modules/_responsive.scss */
   header#header a.navbar-brand {
     font-size: 28px;
     width: initial;
@@ -3604,86 +3614,86 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     line-height: 30px;
   }
 
-  /* line 275, ../sass/modules/_responsive.scss */
+  /* line 287, ../sass/modules/_responsive.scss */
   div.section-padding {
     padding: 1%;
   }
 
-  /* line 278, ../sass/modules/_responsive.scss */
+  /* line 290, ../sass/modules/_responsive.scss */
   #sec_about .border_container {
     padding: 3%;
   }
 
-  /* line 282, ../sass/modules/_responsive.scss */
+  /* line 294, ../sass/modules/_responsive.scss */
   a.btn {
     width: 100%;
   }
 
-  /* line 285, ../sass/modules/_responsive.scss */
+  /* line 297, ../sass/modules/_responsive.scss */
   a.bizplan_download {
     margin: 0 0 15px 0 !important;
   }
 
-  /* line 292, ../sass/modules/_responsive.scss */
+  /* line 304, ../sass/modules/_responsive.scss */
   .sloganContainer {
     min-height: 600px;
     height: initial;
   }
 
-  /* line 298, ../sass/modules/_responsive.scss */
+  /* line 310, ../sass/modules/_responsive.scss */
   .fp-slidesContainer {
     margin-top: 0;
   }
 
-  /* line 301, ../sass/modules/_responsive.scss */
+  /* line 313, ../sass/modules/_responsive.scss */
   .slide-inner {
     width: 97%;
   }
 
-  /* line 309, ../sass/modules/_responsive.scss */
+  /* line 321, ../sass/modules/_responsive.scss */
   .info_list ul li {
     width: 100%;
     float: left;
     margin-bottom: 10px;
   }
-  /* line 313, ../sass/modules/_responsive.scss */
+  /* line 325, ../sass/modules/_responsive.scss */
   .info_list ul li .fa {
     height: 10%;
   }
 
-  /* line 319, ../sass/modules/_responsive.scss */
+  /* line 331, ../sass/modules/_responsive.scss */
   div.timeline ul li {
     width: 100%;
     padding: 20px;
   }
-  /* line 322, ../sass/modules/_responsive.scss */
+  /* line 334, ../sass/modules/_responsive.scss */
   div.timeline ul li:hover {
     margin: 0 !important;
   }
-  /* line 326, ../sass/modules/_responsive.scss */
+  /* line 338, ../sass/modules/_responsive.scss */
   div.timeline ul li:before {
     display: none;
   }
-  /* line 330, ../sass/modules/_responsive.scss */
+  /* line 342, ../sass/modules/_responsive.scss */
   div.timeline ul li:after {
     display: none;
   }
 
-  /* line 340, ../sass/modules/_responsive.scss */
+  /* line 352, ../sass/modules/_responsive.scss */
   div.competition_topic h4 {
     font-size: 41px;
     padding: 15px 0;
   }
 
-  /* line 347, ../sass/modules/_responsive.scss */
+  /* line 359, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 120px !important;
   }
-  /* line 350, ../sass/modules/_responsive.scss */
+  /* line 362, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single h4 {
     margin-top: 20px;
   }
-  /* line 354, ../sass/modules/_responsive.scss */
+  /* line 366, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3691,12 +3701,12 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-  /* line 356, ../sass/modules/_responsive.scss */
+  /* line 368, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-  /* line 361, ../sass/modules/_responsive.scss */
+  /* line 373, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3705,7 +3715,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     background-size: 50% auto;
     color: #0e324b;
   }
-  /* line 366, ../sass/modules/_responsive.scss */
+  /* line 378, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -3714,37 +3724,37 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     background-size: 50% auto;
   }
 
-  /* line 379, ../sass/modules/_responsive.scss */
+  /* line 391, ../sass/modules/_responsive.scss */
   #competition_prize_slide .first-place h4 {
     font-size: 28px !important;
   }
 
-  /* line 383, ../sass/modules/_responsive.scss */
+  /* line 395, ../sass/modules/_responsive.scss */
   div.competition_topic h4 {
     text-align: left;
   }
 
   /***Mobile Height control***/
-  /* line 389, ../sass/modules/_responsive.scss */
+  /* line 401, ../sass/modules/_responsive.scss */
   .fp-slides, .fp-slidesContainer, .border_container {
     height: auto !important;
   }
 
   /****COMPETITION*********/
-  /* line 399, ../sass/modules/_responsive.scss */
+  /* line 411, ../sass/modules/_responsive.scss */
   div.competition_topic .btn {
     margin-top: 30px;
     position: initial;
   }
 
-  /* line 403, ../sass/modules/_responsive.scss */
+  /* line 415, ../sass/modules/_responsive.scss */
   div.timeline {
     position: initial;
     margin: 0;
   }
 
   /**SPONSORSS*****/
-  /* line 409, ../sass/modules/_responsive.scss */
+  /* line 421, ../sass/modules/_responsive.scss */
   div.sponsor-group li span {
     opacity: 0;
     position: absolute;
@@ -3753,12 +3763,12 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     width: 100vw;
   }
 
-  /* line 419, ../sass/modules/_responsive.scss */
+  /* line 431, ../sass/modules/_responsive.scss */
   ul.sponsor-list li:hover span {
     display: none;
   }
 
-  /* line 430, ../sass/modules/_responsive.scss */
+  /* line 442, ../sass/modules/_responsive.scss */
   div.sponsor-group ul.sponsor-list.second li {
     width: 100%;
     margin: 0 2% 2% 0;
@@ -3766,81 +3776,81 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
   }
 
   /*Jumpnow*****/
-  /* line 439, ../sass/modules/_responsive.scss */
+  /* line 451, ../sass/modules/_responsive.scss */
   div.nav_group {
     right: 26%;
   }
 
-  /* line 443, ../sass/modules/_responsive.scss */
+  /* line 455, ../sass/modules/_responsive.scss */
   .team_details .slider-inner {
     padding-bottom: 55px;
   }
 
-  /* line 448, ../sass/modules/_responsive.scss */
+  /* line 460, ../sass/modules/_responsive.scss */
   .slide.team_details .team_detail_single, div.slide.personal_details .team_detail_single {
     border: 1px solid #f16b29;
     margin-top: 10px;
     padding: 10px;
   }
-  /* line 454, ../sass/modules/_responsive.scss */
+  /* line 466, ../sass/modules/_responsive.scss */
   .slide.team_details span.team_member, div.slide.personal_details span.team_member {
     width: 100% !important;
   }
-  /* line 458, ../sass/modules/_responsive.scss */
+  /* line 470, ../sass/modules/_responsive.scss */
   .slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
     width: 100% !important;
   }
 
-  /* line 465, ../sass/modules/_responsive.scss */
+  /* line 477, ../sass/modules/_responsive.scss */
   .file-upload-button {
     padding: 15px 0;
   }
 
-  /* line 470, ../sass/modules/_responsive.scss */
+  /* line 482, ../sass/modules/_responsive.scss */
   div.slide.team_details span.input {
     width: 100%;
   }
-  /* line 474, ../sass/modules/_responsive.scss */
+  /* line 486, ../sass/modules/_responsive.scss */
   div.slide.team_details button#del_member {
     position: absolute !important;
     background: #0e324b;
     right: -15px;
     top: -3px;
   }
-  /* line 481, ../sass/modules/_responsive.scss */
+  /* line 493, ../sass/modules/_responsive.scss */
   div.slide.team_details #add_member {
     margin: 0;
   }
 
-  /* line 486, ../sass/modules/_responsive.scss */
+  /* line 498, ../sass/modules/_responsive.scss */
   #reg_btn {
     margin: 55px auto 0;
     position: initial;
   }
 
   /***CONTACT******/
-  /* line 495, ../sass/modules/_responsive.scss */
+  /* line 507, ../sass/modules/_responsive.scss */
   div.contact_container {
     position: initial;
   }
-  /* line 497, ../sass/modules/_responsive.scss */
+  /* line 509, ../sass/modules/_responsive.scss */
   div.contact_container span.input {
     width: 100%;
   }
 
   /*************DISABLE THE ANIMATION*************/
-  /* line 504, ../sass/modules/_responsive.scss */
+  /* line 516, ../sass/modules/_responsive.scss */
   .rocket {
     display: none;
   }
 
-  /* line 507, ../sass/modules/_responsive.scss */
+  /* line 519, ../sass/modules/_responsive.scss */
   #sec_home:after {
     height: 80%;
     top: 60%;
   }
 
-  /* line 511, ../sass/modules/_responsive.scss */
+  /* line 523, ../sass/modules/_responsive.scss */
   #sec_home.timeLineAni:after {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3850,19 +3860,19 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     height: 80%;
   }
 
-  /* line 515, ../sass/modules/_responsive.scss */
+  /* line 527, ../sass/modules/_responsive.scss */
   #sec_about {
     padding-bottom: 55px;
   }
-  /* line 518, ../sass/modules/_responsive.scss */
+  /* line 530, ../sass/modules/_responsive.scss */
   #sec_about .border {
     background-color: #f16b29;
   }
-  /* line 521, ../sass/modules/_responsive.scss */
+  /* line 533, ../sass/modules/_responsive.scss */
   #sec_about .border_container {
     margin: 55px 0 0;
   }
-  /* line 525, ../sass/modules/_responsive.scss */
+  /* line 537, ../sass/modules/_responsive.scss */
   #sec_about .border.top {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3874,11 +3884,11 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     height: 1px;
     width: 100%;
   }
-  /* line 533, ../sass/modules/_responsive.scss */
+  /* line 545, ../sass/modules/_responsive.scss */
   #sec_about .border.bottom.b_right {
     display: none;
   }
-  /* line 536, ../sass/modules/_responsive.scss */
+  /* line 548, ../sass/modules/_responsive.scss */
   #sec_about .border.bottom.b_left {
     left: 0;
     top: 100%;
@@ -3890,7 +3900,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     width: 100%;
     height: 1px;
   }
-  /* line 544, ../sass/modules/_responsive.scss */
+  /* line 556, ../sass/modules/_responsive.scss */
   #sec_about .border.left, #sec_about .border.right {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3902,12 +3912,12 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     left: 0;
     top: 0;
   }
-  /* line 551, ../sass/modules/_responsive.scss */
+  /* line 563, ../sass/modules/_responsive.scss */
   #sec_about .border.right {
     left: 100%;
   }
 
-  /* line 555, ../sass/modules/_responsive.scss */
+  /* line 567, ../sass/modules/_responsive.scss */
   div.timeLineAni::after {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3917,18 +3927,18 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     height: 100%;
   }
 
-  /* line 559, ../sass/modules/_responsive.scss */
+  /* line 571, ../sass/modules/_responsive.scss */
   #sec_about p {
     opacity: 1;
   }
 
-  /* line 562, ../sass/modules/_responsive.scss */
+  /* line 574, ../sass/modules/_responsive.scss */
   .top_animation {
     min-height: auto;
     padding-top: 0;
   }
 
-  /* line 571, ../sass/modules/_responsive.scss */
+  /* line 583, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .straight_line {
     height: 450px;
     -moz-animation: none;
@@ -3937,7 +3947,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     -o-animation: none;
     animation: none;
   }
-  /* line 575, ../sass/modules/_responsive.scss */
+  /* line 587, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .straight_line_down {
     height: 450px;
     -moz-animation: none;
@@ -3946,7 +3956,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     -o-animation: none;
     animation: none;
   }
-  /* line 580, ../sass/modules/_responsive.scss */
+  /* line 592, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .horizon_line {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3955,7 +3965,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     animation: none;
     display: none;
   }
-  /* line 584, ../sass/modules/_responsive.scss */
+  /* line 596, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .horizon_line_left {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3964,15 +3974,15 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     animation: none;
     display: none;
   }
-  /* line 591, ../sass/modules/_responsive.scss */
+  /* line 603, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container {
     border: 1px #f16b29 solid;
   }
-  /* line 593, ../sass/modules/_responsive.scss */
+  /* line 605, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .border {
     display: none;
   }
-  /* line 596, ../sass/modules/_responsive.scss */
+  /* line 608, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .straight_line {
     height: 450px;
     -moz-animation: none;
@@ -3981,7 +3991,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     -o-animation: none;
     animation: none;
   }
-  /* line 600, ../sass/modules/_responsive.scss */
+  /* line 612, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .horizon_line {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3990,7 +4000,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     animation: none;
     display: none;
   }
-  /* line 606, ../sass/modules/_responsive.scss */
+  /* line 618, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.top, div.section#sec_competition .border.bottom {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3999,7 +4009,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     animation: none;
     width: 100%;
   }
-  /* line 610, ../sass/modules/_responsive.scss */
+  /* line 622, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.left {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4010,7 +4020,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     height: 100%;
     max-width: 1px;
   }
-  /* line 616, ../sass/modules/_responsive.scss */
+  /* line 628, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.right.R_top {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4021,7 +4031,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     top: 0;
     max-width: 1px;
   }
-  /* line 622, ../sass/modules/_responsive.scss */
+  /* line 634, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.right.R_bottom {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4031,16 +4041,16 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     display: none;
   }
 
-  /* line 629, ../sass/modules/_responsive.scss */
+  /* line 641, ../sass/modules/_responsive.scss */
   #competition_topic_slide.slide.competition_topic .slide-inner {
     z-index: -1;
   }
 
-  /* line 638, ../sass/modules/_responsive.scss */
+  /* line 650, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow_part1 .jumpnow-des .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 640, ../sass/modules/_responsive.scss */
+  /* line 652, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow_part1 .jumpnow-des .border_container .border {
     display: none;
     -moz-animation: none;
@@ -4049,19 +4059,19 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     -o-animation: none;
     animation: none;
   }
-  /* line 649, ../sass/modules/_responsive.scss */
+  /* line 661, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow-btn-set {
     margin-top: 55px;
   }
-  /* line 655, ../sass/modules/_responsive.scss */
+  /* line 667, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 658, ../sass/modules/_responsive.scss */
+  /* line 670, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container.borderRightAni {
     border: 1px solid #f16b29;
   }
-  /* line 660, ../sass/modules/_responsive.scss */
+  /* line 672, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container.borderRightAni .border {
     display: none;
     -moz-animation: none;
@@ -4070,15 +4080,15 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     -o-animation: none;
     animation: none;
   }
-  /* line 669, ../sass/modules/_responsive.scss */
+  /* line 681, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 672, ../sass/modules/_responsive.scss */
+  /* line 684, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container.borderRightAni {
     border: 1px solid #f16b29;
   }
-  /* line 674, ../sass/modules/_responsive.scss */
+  /* line 686, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container.borderRightAni .border {
     display: none;
     -moz-animation: none;
@@ -4088,7 +4098,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     animation: none;
   }
 
-  /* line 689, ../sass/modules/_responsive.scss */
+  /* line 701, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container {
     display: block;
     position: absolute;
@@ -4096,24 +4106,25 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     background: #e8e8e8;
     width: 100%;
   }
-  /* line 695, ../sass/modules/_responsive.scss */
+  /* line 707, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container ul.competition-headings {
     padding: 0;
     margin: 0;
   }
-  /* line 699, ../sass/modules/_responsive.scss */
+  /* line 711, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container ul.competition-headings a {
+    padding-top: 20px;
     height: 100%;
     display: block;
     min-height: 60px;
   }
 
-  /* line 706, ../sass/modules/_responsive.scss */
+  /* line 719, ../sass/modules/_responsive.scss */
   #competition_menu {
     display: none;
   }
 
-  /* line 710, ../sass/modules/_responsive.scss */
+  /* line 723, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container.fixed {
     position: fixed;
     z-index: 2;
@@ -4121,23 +4132,23 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     top: 50px;
     background: #e8e8e8;
   }
-  /* line 716, ../sass/modules/_responsive.scss */
+  /* line 729, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container.fixed ul.competition-headings {
     padding: 0;
     margin: 0;
   }
 
-  /* line 724, ../sass/modules/_responsive.scss */
+  /* line 737, ../sass/modules/_responsive.scss */
   #sec_competition .fp-slide {
     padding-top: 60px;
   }
 
-  /* line 729, ../sass/modules/_responsive.scss */
+  /* line 742, ../sass/modules/_responsive.scss */
   .info_list ul li {
     padding-left: 0;
   }
 
-  /* line 733, ../sass/modules/_responsive.scss */
+  /* line 746, ../sass/modules/_responsive.scss */
   div.timeline ul li {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -4148,7 +4159,7 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     position: static;
     bottom: 0;
   }
-  /* line 743, ../sass/modules/_responsive.scss */
+  /* line 756, ../sass/modules/_responsive.scss */
   div.timeline ul li:hover {
     margin: initial;
     -webkit-box-shadow: none;
@@ -4160,29 +4171,29 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
     bottom: 0;
   }
 
-  /* line 759, ../sass/modules/_responsive.scss */
+  /* line 772, ../sass/modules/_responsive.scss */
   .jumpnow-des h3 {
     text-align: center;
   }
 
-  /* line 763, ../sass/modules/_responsive.scss */
+  /* line 776, ../sass/modules/_responsive.scss */
   .jumpnow-btn-set {
     margin-top: 0;
   }
 
-  /* line 766, ../sass/modules/_responsive.scss */
+  /* line 779, ../sass/modules/_responsive.scss */
   ul.plan_list li {
     text-align: center;
   }
 
-  /* line 769, ../sass/modules/_responsive.scss */
+  /* line 782, ../sass/modules/_responsive.scss */
   .jumpnow_part1 a.bizplan_download {
     margin: 0 auto 15px;
     display: block;
     float: none;
   }
 
-  /* line 776, ../sass/modules/_responsive.scss */
+  /* line 789, ../sass/modules/_responsive.scss */
   div#sec_events {
     padding-top: 55px;
   }

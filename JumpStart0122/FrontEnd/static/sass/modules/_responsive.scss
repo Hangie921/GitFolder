@@ -231,6 +231,18 @@ div.sponsor-group ul.sponsor-list.second li {
 //######### SPONSOR ENDS ###########//
 
 
+//########### EVENT ####################/
+
+#sec_events {
+	padding:0 !important;
+}
+
+.contact_container {
+	span.input {
+		max-width: initial;
+	}
+}
+
 
 }/******************MOBILE************************/
 
@@ -697,6 +709,7 @@ div.section#sec_jumpnow {
 	margin:0;
 
 	  a {
+	  	padding-top:20px;
 	  	height:100%;
 	  	display: block;
 	  	min-height: 60px;

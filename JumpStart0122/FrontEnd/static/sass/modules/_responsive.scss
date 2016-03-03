@@ -665,6 +665,7 @@ div.nav_group {
 		border:1px solid $primary-color;
 		margin-top:10px;
 		padding:10px;
+		position: relative;
 	}
 
 	span.team_member {
@@ -1026,10 +1027,6 @@ div.contact_container h2 {
 		padding:2.2% 0% 2.2% 0%;
 	}
 	div.nav_group{
-		text-align: center;
-		left: 0;
-		right: 0;
-		margin:0 auto;
 		bottom:-42px;
 	}
 }
@@ -1039,10 +1036,6 @@ div.contact_container h2 {
 		padding:2.2% 0% 5% 0%;
 	}
 	div.nav_group{
-		text-align: center;
-		left: 0;
-		right: 0;
-		margin:0 auto;
 		bottom: -37px;
 	}
 

@@ -286,23 +286,6 @@ $(document).ready(function() {
 	
 
 	//for SG connect btn
-	// if(ww>990){
-	// 	console.log('connect_btn');
-	// 	$.fn.fullpage.moveTo(5);
-	// 	$(".contact_header").trigger("click");
-	// }else if(ww<=990 && ww>768 ){
-	// 	console.log(ww);
-	// 	console.log('connect_btn');
-	// 	$('html, body').animate({
- //          scrollTop: $('.contact_container').offset().top
- //        }, 1000);
-	// }else if(ww<=768 && ww >480){
-	// 	$('html, body').animate({
- //          scrollTop: $('.contact_container').offset().top
- //        }, 1000);
-	// 	console.log(ww);
-	// 	console.log('connect_btn');
-	// }
 
 	$('#connect_btn').click(function(){
 		console.log('connect_btn');

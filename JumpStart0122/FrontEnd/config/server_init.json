@@ -12,6 +12,9 @@
 		"auth": "",
 		"user_name": "",
 		"user_password": ""
+	},
+	"session" :{
+		"expires" : 3600000
 	}
 	
 }

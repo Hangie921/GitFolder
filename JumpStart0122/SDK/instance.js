@@ -7,15 +7,20 @@ var express = require("express"),
 	assert = require('assert'),
 	fs = require('fs'),
 	http = require('http'),
-	path = require('path');
-	log = require('../SDK/log_handler');
+	path = require('path'),
+	log = require('../SDK/log_handler'),
+	session = require('express-session');
 
 
 
-function initApp(port,view_engine,dir_path){
+function initApp(config,dir_path){
+	var port = config.server.port
+
 	app.set("views",path.join(dir_path, "view"));
-	app.set('view engine',view_engine);
+	app.set('view engine',config.server.view_engine);
 	app.use( express.static( path.join(dir_path, "static") ) );
+	app.use(session({ secret: 'keyboard cat', cookie: { maxAge: config.session.expires }}));
+	
 	var server = app.listen(port ,function(err){  //initial the server 
 			if(err){
 				// console.log(err);
@@ -29,13 +34,17 @@ function initApp(port,view_engine,dir_path){
 	return app;
 }
 
-function initMongo(url,port,db){  //return the mongoClient object when call the initial function 
+function initMongo(config){  //return the mongoClient object when call the initial function 
 	
 	//set up the connection to the server
+	var url = config.mongo.url;
+	var port = config.mongo.port;
 	var mongoClient = new MongoClient();
-	mongoClient.url = "mongodb://"+url+":"+port+"/"+db;
+
+	mongoClient.url = "mongodb://"+url+":"+port+"/"+config.mongo.db;
 	log.info("Mongo server listening on port " +port);
 	console.log("Mongo server listening on port " +port);
+	
 	return mongoClient;
 }
 

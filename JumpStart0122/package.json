@@ -10,6 +10,7 @@
     "jade": "^1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "log4js":"~0.6.31"
+    "log4js":"~0.6.31",
+    "express-session" : "~1.13.0"
   }
 }

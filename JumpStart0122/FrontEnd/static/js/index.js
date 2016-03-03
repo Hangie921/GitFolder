@@ -17,8 +17,7 @@ $(window).resize(function(){
 
 $(document).ready(function() {
 	
-	initSlot();	//initial the slot machine first so that fullpage can load the
-	revealOnScroll();
+	
 	
 	//initial the fullpage with the rocket animation
     	$('#fullpage').fullpage({
@@ -28,7 +27,6 @@ $(document).ready(function() {
 	    	],
 	    	scrollingSpeed:1000,
 			afterLoad: function(anchorLink, index) { 
-				$.fn.fullpage.setKeyboardScrolling(false);//disable the Keyboard scrolling
 				if(ww>990){
 
 					$('#header').css({'opacity':'1'});
@@ -169,8 +167,6 @@ $(document).ready(function() {
 				}
 			},
 			afterRender:function(){
-			
-				console.log("ww>=990");
 				var info_height = $('#competition_info_slide .slide-inner').height();
 				$('#competition_info_slide .slide-inner .border_container').height(info_height);
 				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
@@ -178,8 +174,7 @@ $(document).ready(function() {
 				$('.personal_details .slide-inner').height($('.personal_details .slide-inner').height());
 				var height = $('#competition_sponsor_slide .slide-inner').height();
 				$('#competition_sponsor_slide .border_container').height(height);	
-				
-				
+				console.log("fullpage loaded");
 			},
 			verticalCentered : true,
 			resize : false,
@@ -197,16 +192,19 @@ $(document).ready(function() {
 			touchSensitivity:15,
 			responsiveWidth:990
 
-
 		}); //end of the fullpageJS initial
 		resize();
+		initSlot();	//initial the slot machine first so that fullpage can load the
+		revealOnScroll();
 		
 	
     
 	//add and delete the member input field dynamically with the btn clicked
 	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><button id='del_member' class='button del_btn'></button></div>";
-	var counter = 1;
+	var mem_counter = 1;
+	var original_height = $("#sec_jumpnow .team_details .slide-inner").height();
 	$('#add_member').click(function(event){
+
 			event.preventDefault();
 			$(this).before(DOM);
 			$(this).prev().children().children("input[name$='member_brief_info']").focus(function(e){
@@ -215,11 +213,15 @@ $(document).ready(function() {
 			$(this).prev().children('.del_btn').click(function(event){
 				event.preventDefault();
 				$(this).parent().remove();
-				counter = counter - 1;
-				if(counter!=5){
+				mem_counter = mem_counter - 1;
+				if(mem_counter!=5){
 					$('#add_member').show();
+				}else if(mem_counter == 1){
+					$("#sec_jumpnow .team_details .slide-inner").height(original_height);
 				}
-
+				if(ww<=990){
+					$("#sec_jumpnow .team_details .slide-inner").height($("#sec_jumpnow .team_details .slide-inner .border_container").height());
+				}
 			});	
 
 			//add the input--filled class to maintain the animation
@@ -231,21 +233,24 @@ $(document).ready(function() {
 				}
 			});
 
-			counter = counter + 1;
-			if(counter==5){
+			mem_counter = mem_counter + 1;
+			if(mem_counter==5){
 				$(this).hide();
 			}
 
-		$.fn.fullpage.reBuild();
-		console.log("rebuild");
+			if(ww<=990){
+				$("#sec_jumpnow .team_details .slide-inner").height($("#sec_jumpnow .team_details .slide-inner .border_container").height());
+			}
+
 		
 	}); //end of the #add_member clicked
 	
 
+	//**********FOR CONTACT FORM**************//
 	//the contact form ani,to show or hide the contact form
 	var down = true;
 	var contact_height = $('.contact_container').innerHeight();
-	if(ww>=990){
+	if(ww>990){
 		console.log(ww);
 		$('.contact_container').css('bottom',contact_height*-0.8);
 		$('.contact_header').click(function(){
@@ -260,22 +265,22 @@ $(document).ready(function() {
 				down = true;
 			}
 		});
-	}else if(ww<990 && ww>=768 ){
+	}else if(ww<=990 && ww>768 ){
 		console.log(ww);
-		$('.contact_container').css('bottom',contact_height*-1.1);
+		$('.contact_container').css('top','350px');
 		// $('.contact_header').click(function(){
 		// 	if(down){
 		// 		$(this).parent().animate({'bottom':'0px'},1000);
 		// 		$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
 		// 		down = false;
-		// 		// alert('if '+ down)
 		// 	}else{
-		// 		$(this).parent().animate({'bottom':contact_height*-0.8},1000);
+		// 		$(this).parent().animate({'bottom':contact_height*-0.9},1000);
 		// 		$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
 		// 		down = true;
 		// 	}
 		// });
-	}else {
+	}else if(ww<=768 && ww >480){
+		$('.contact_container').css('bottom',contact_height*-1.1);
 		console.log(ww);
 	}
 	
@@ -530,15 +535,14 @@ $(document).ready(function() {
 
 
 
-	//***************************for the mobile********
+	//***************************FOR ANCHOR ********
 	if(ww>990){
 		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
 	}else if(ww>768 && ww<=990){
-		$.fn.fullpage.setLockAnchors(true);
 		// $.fn.fullpage.setLockAnchors(true);
-		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
+		$(window).on("scroll", revealOnScroll);	
 	}else if(ww<=768){
-		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
+		$(window).on("scroll", revealOnScroll);	
 
 		/***************DISABLE THE ANCHOR TO AVOID UNASSIGNED MOVING******/
 		$.fn.fullpage.setLockAnchors(true);

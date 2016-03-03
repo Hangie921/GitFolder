@@ -719,6 +719,7 @@ div.section#sec_jumpnow {
 	ul.competition-headings{
 	padding:0;
 	margin:0;
+	border-bottom: 1px solid $primary-color;
 
 	  a {
 	  	padding-top:20px;
@@ -822,3 +823,11 @@ div.contact_container h2 {
 
 	}
 }
+
+@media screen and (max-width:400px)  {
+ #competition_mobile_menu_container ul.competition-headings a {
+ 	font-size:13px;
+ }
+}
+
+

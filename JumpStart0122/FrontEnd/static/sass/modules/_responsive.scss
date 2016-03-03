@@ -257,8 +257,8 @@ div.sponsor-group ul.sponsor-list.second li {
 	display:none;
 }
 #sec_home:after{
-	height: 80%;
-	top: 60%;
+	height: 55%;
+	top: 30%;
 }
 #sec_home.timeLineAni:after{
 	@include animation(none);
@@ -724,6 +724,9 @@ div.contact_container {
 #sec_home:after{
 	height: 80%;
 	top: 60%;
+}
+.sg #sec_home::after{
+	top: 70%;
 }
 #sec_home.timeLineAni:after{
 	@include animation(none);

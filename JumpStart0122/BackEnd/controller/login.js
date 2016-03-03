@@ -25,16 +25,18 @@ function route(app, mongoClient){
 		};
 
 		mongo_handler.handle(mongoClient,'find',null,'member',query,condition,function(err,status,result){
-			sess.login_status = status;
-			sess.user = req.body.acc;
-			sess.save();
+			var login_check = false;
 
 			if (status){
-				res.send({status:login.check(req.body,result)});
+				login_check = login.check(req.body,result)
+				sess.login_status = login_check;
+				sess.user = req.body.acc;
+				sess.save();
 			}
 			else{
-				res.send({status:false});
+				
 			}
+			res.send({status:login_check});
 			// if(login.check(req.body,result)==false){
 			// 	// var session_status = false;
 			// 	// res.render('index',{session_status:session_status});

@@ -1,3 +1,5 @@
 [2016-03-03 09:19:24.870] [INFO] info - Mongo server listening on port 27017
 [2016-03-03 09:19:24.934] [INFO] info - Express server listening on port 2999
 [2016-03-03 09:20:12.907] [INFO] info - result: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2016-03-03 14:54:49.518] [INFO] info - Mongo server listening on port 27017
+[2016-03-03 14:54:49.523] [INFO] info - Express server listening on port 3000

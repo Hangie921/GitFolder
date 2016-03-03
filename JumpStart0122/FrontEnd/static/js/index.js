@@ -551,6 +551,7 @@ $(document).ready(function() {
 		$("a").each(function(){
 			var a = $(this);
 			var href = a.attr("href");
+			var headerLi = $("#main_menu .menu-items-mobile ul li");
 			if(typeof href!== undefined && href!=null){
 				a.click(function(){
 					var section = "";
@@ -574,6 +575,13 @@ $(document).ready(function() {
 						// },1000);
 						moveTo(section,slide);
 					}
+
+					headerLi.each(function(){
+						if($(this).attr("data-menuanchor")==section){
+							headerLi.removeClass("active");
+							$(this).addClass("active");
+						}
+					});
 				});
 			}
 			

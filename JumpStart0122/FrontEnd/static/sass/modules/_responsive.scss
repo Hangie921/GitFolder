@@ -80,7 +80,11 @@ div.slide.team_details  {
 /********************* TABLET PORTRAIT******************/
 
 @media screen and (max-width: 990px) {
-
+	/********ABOUT*******/
+	div#sec_about::after{
+		height: 100%;
+	}
+	
 	/****HEADER******/
 	.header {
 		margin:0 auto;
@@ -636,7 +640,7 @@ div.sponsor-group li span {
 ul.sponsor-list li {
 
 	&:hover span{
-		display:none;
+		// display:none;  By Walter
 	}
 
 	

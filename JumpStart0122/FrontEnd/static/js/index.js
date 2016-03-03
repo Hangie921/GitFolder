@@ -331,7 +331,7 @@ $(document).ready(function() {
     
 
 
-/********to validate the previous part of the reg_form*/
+	/********to validate the previous part of the reg_form*/
 
    var err_msg=['恩?隊伍名稱？','你做什麼產品？','隊友名稱呢?','隊友走哪路？','產品介紹呢？(.pdf)'];
    //to validate the team_details input field 
@@ -534,6 +534,7 @@ $(document).ready(function() {
 	if(ww>990){
 		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
 	}else if(ww>768 && ww<=990){
+		$.fn.fullpage.setLockAnchors(true);
 		// $.fn.fullpage.setLockAnchors(true);
 		$(window).on("scroll", revealOnScroll);	//add the fixed class to #competition_mobile_menu_container
 	}else if(ww<=768){

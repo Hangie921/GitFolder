@@ -25,7 +25,7 @@ html
 
 	body.sg
 		#fullpage
-			.section#sec_home.sec_home_bg.sg_bg.container.section-padding(data-anchor='home').fp-auto-height
+			.section#sec_home.sec_home_bg.sg_bg.container.section-padding(data-anchor='home')
 				header.container#header
 					.navbar-header.col-md-12
 						
@@ -53,11 +53,11 @@ html
 									li(data-menuanchor='about')
 										a(href='#about') about us
 									li(data-menuanchor='competition')
-										a(href='#competition') competition
+										a(href='#competition') What We Do
 									li.jumpnow_link(data-menuanchor='jumpnow') 
-										a(href='#jumpnow') jump now
+										a(href='#jumpnow') Connect
 									li(data-menuanchor='events') 
-										a(href='#events') events
+										a(href='#events') Industries
 									
 
 				.sloganContainer.sloganContainer_sg_bg.zindex
@@ -79,7 +79,7 @@ html
 					//- span.machine-border
 					
 	
-			.section#sec_about.container.primary_bg.section-padding(data-anchor='about').fp-auto-height
+			.section#sec_about.container.primary_bg.section-padding(data-anchor='about')
 				.top_animation.col-md-12.col-centered.zindex.xs-no-pad
 					.rocket
 					.col-md-8.col-centered
@@ -156,7 +156,7 @@ html
 	
 
 
-			.section#sec_competition.container.no-pad(data-anchor='competition').fp-auto-height
+			.section#sec_competition.container.no-pad(data-anchor='competition')
 
 				.slide.competition_topic.active#competition_topic_slide.relative-position.slide-padding
 					.slide-inner.zindex.clearfix.col-md-11.col-centered.no-pad
@@ -437,7 +437,7 @@ html
 					
 
 
-			.section#sec_jumpnow(data-anchor='jumpnow').section-padding.fp-auto-height
+			.section#sec_jumpnow(data-anchor='jumpnow').section-padding
 				//- 這樣包我就可以一個form包兩個slide的input
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1.zindex
@@ -567,7 +567,7 @@ html
 							
 
 
-			.section#sec_events.section-padding(data-anchor='events').fp-auto-height
+			.section#sec_events.section-padding(data-anchor='events')
 				.event_group.col-md-12
 					.event_single.col-md-4.col-sm-4
 						.event_single_rotate

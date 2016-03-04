@@ -32,14 +32,19 @@ function revealOnScroll(){
 
 
 	//to active the right menu in mobile
-	
-	// $(".section").each(function(){
-	// 	var current = $(this), // 當前元素
-	//     w_height = $(window).outerHeight(), //視窗高度
-	//     offsetTop = current.offset().top; //當前元素離頂部的高度
 
-	//    if(scrolled > )
-	// });
+	$(".section").each(function(){
+		var current = $(this), // 當前元素
+	    w_height = $(window).outerHeight(), //視窗高度
+	    offsetTop = current.offset().top; //當前元素離頂部的高度
+
+		if(scrolled > offsetTop + 100){
+			var sec = current.attr("data-menuanchor");
+			$(".menu-items-mobile ul li").removeClass("active");
+			$(".menu-items-mobile ul li[data-menuahcnor='"+sec+"']").addClass("active");
+		}
+
+	});
 
 
 }

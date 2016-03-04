@@ -4936,7 +4936,7 @@ body.sg .btn {
 
   /* line 1489, ../sass/modules/_responsive.scss */
   #sec_events .contact_container {
-    margin-bottom: 170px;
+    margin-bottom: 0px;
   }
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (orientation: landscape) {
@@ -5137,7 +5137,7 @@ body.sg .btn {
 
   /* line 1679, ../sass/modules/_responsive.scss */
   div.contact_container {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 735px) and (orientation: landscape) {

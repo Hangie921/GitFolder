@@ -487,7 +487,7 @@ and (orientation : portrait) {
 	}
 
 	.section {
-		height:auto;
+		height:auto !important;
 		padding-bottom:30px !important;
 	}
 
@@ -512,7 +512,7 @@ and (orientation : portrait) {
 
 
 	div.section-padding{
-		padding:0%;  //by Walter to show the middle line of #about 
+		padding:1%;
 	}
 	#sec_about .border_container {
 		padding:3%;
@@ -638,7 +638,7 @@ and (orientation : portrait) {
 
 	/***Mobile Height control***/
 	.fp-slides, .fp-slidesContainer,.border_container  {
-		height: auto;
+		height: auto !important;
 	}
 
 
@@ -656,28 +656,6 @@ div.timeline {
    margin:0;
 }
 
-body.sg #sec_competition{
-	padding-bottom: 0 !Important ; //by Walter
-	& #competition_topic_slide{
-		& .border_container{
-			& .straight_line{
-				top:-450px;
-				left: 50%;
-				width: 1px;
-				background-color:$primary-color;
-				display: block;
-			}
-			& .straight_line_down{
-				top: 100%;
-				left: 50%;
-				width: 1px;
-				background-color:$primary-color;
-				display: block;
-				height: 450px;
-			}
-		}
-	}
-}
 /**SPONSORSS*****/
 div.sponsor-group li span {
     opacity: 0;
@@ -1101,7 +1079,6 @@ and (min-width:489px) {
 }
 
 
-<<<<<<< HEAD
 
 
 /******ADD BY WALTER TO SHOW THE .nav_group********/
@@ -1135,42 +1112,6 @@ and (min-width:481px){
     	}
 	}
 
-=======
-
-/******ADDED BY WALTER TO ADJUST THE CONTACT FORM**/
-@media screen and (max-width:768px){
-	div#sec_events{
-		& .contact_container{
-			position: relative;
-			top: 350px;
-			& .contact_header h2{
-				height:57px;
-			}
-		}
-	}
-}
-
-@media screen and (max-width:480px){
-	div#sec_events{
-		& .contact_container{
-			position: relative;
-			top: 0px;
-			margin-bottom:100px;
-		}
-	}
-}
-@media screen and (max-width:375px){
-	div#sec_events{
-		& .contact_container{
-			position: relative;
-			top: 0px;
-			margin-bottom:0px;
-		}
-	}
-}
-/******ADDED BY WALTER TO SHOW THE .nav_group********/
-@media screen and (max-width:768px) and (min-width:481px){
->>>>>>> origin/master
 	div.slide.team_details{ 
 		padding:2.2% 0% 2.2% 0%;
 	}
@@ -1222,7 +1163,6 @@ and (max-width:480px){
 
 
 }
-
 
 /****************    IPHONE 5, 6, 6+    ****************/
 

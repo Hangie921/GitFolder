@@ -175,6 +175,7 @@ $(document).ready(function() {
 				var height = $('#competition_sponsor_slide .slide-inner').height();
 				$('#competition_sponsor_slide .border_container').height(height);	
 				console.log("fullpage loaded");
+
 			},
 			verticalCentered : true,
 			resize : false,
@@ -190,12 +191,17 @@ $(document).ready(function() {
 			animateAnchor:false,
 			controlArrows:false,
 			touchSensitivity:15,
-			responsiveWidth:990
+			responsiveWidth:990,
+			responsiveHeight:600
 
 		}); //end of the fullpageJS initial
 		resize();
 		initSlot();	//initial the slot machine first so that fullpage can load the
 		revealOnScroll();
+		// if(ww<=990){
+		// 	$("div.section").css("height","auto");
+		// 	console.log("section");
+		// }
 		
 	
     
@@ -280,7 +286,7 @@ $(document).ready(function() {
 		// 	}
 		// });
 	}else if(ww<=768 && ww >480){
-		$('.contact_container').css('bottom',contact_height*-1.1);
+		// $('.contact_container').css('bottom',contact_height*-1.1);
 		console.log(ww);
 	}
 	

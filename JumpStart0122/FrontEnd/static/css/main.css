@@ -3954,8 +3954,7 @@ body.sg .btn {
 @media screen and (max-width: 768px) and (orientation: portrait) {
   /* line 502, ../sass/modules/_responsive.scss */
   div.contact_container {
-    margin-bottom: 450px;
-    bottom: -131%;
+    margin-bottom: 121px;
   }
 
   /* line 510, ../sass/modules/_responsive.scss */

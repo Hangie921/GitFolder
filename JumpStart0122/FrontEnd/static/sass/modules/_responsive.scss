@@ -1203,7 +1203,7 @@ and (orientation : portrait) {
 		letter-spacing:initial;
 		font-size: 16px;
 	    line-height: 24px;
-		
+				
 
 
 		//########### SG Home BG Start ###########//
@@ -1272,6 +1272,10 @@ and (orientation : portrait) {
 		}
 
 		//########### Competition ##############//
+		div#sec_competition:after{
+			height: 100%;
+			top: 0;
+		}
 
 		ul.competition-headings a {
 			letter-spacing:2px;
@@ -1501,7 +1505,11 @@ and (orientation : landscape) {
 @media screen and (max-width:375px)
 and (orientation : portrait){
 	
-
+	//########### Competition ##############//
+		div#sec_competition:after{
+			height: 100%;
+			top: 0;
+		}
 
 
 
@@ -1690,6 +1698,11 @@ and (orientation : portrait) { /* STYLES GO HERE */
 		}
 
 		//########### Competition ##############//
+		
+		div#sec_competition:after{
+			height: 100%;
+			top: 0;
+		}
 
 		ul.competition-headings a {
 			letter-spacing:2px;

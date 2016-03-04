@@ -1185,18 +1185,60 @@ and (min-width:481px){
 
 	//ABOUT TEXT
 	body.sg #sec_about p {
-    font-size: 20px !important;
-    line-height: 1.7em;
+    font-size: 25px !important;
+    line-height: 2.0em;
 	}
+	body.sg .competition_topic {
+		font-size: 17px;
+		// h4 {
+		// 	font-size:45px;
+		// 	padding:15px 0;
 
-	//JUMPNOW LIST
-	ul.plan_list {
-		max-width: 40%;
-		min-width: 270px;
+		// 	span{
+		// 		font-size: 40px;
+		// 	}
+		// }
+		h5{
+			font-size: 34px;
+		}
+		p{
+			    font-size: 17px;
+			    line-height: 22px;
+			    letter-spacing: initial;
+		}
+		ul{
+			li{
+				font-size: 17px;
+				line-height: 22px;
+			}
+		}
+	}
+	body.sg .jumpnow-des h3 {
+	    font-family: 'fatfrank', sen-serif;
+	    letter-spacing: 1px;
+	    font-size: 40px;
+	}
+	body.sg ul.plan_list {
+		max-width: 50%;
+		min-width: 350px;
     	margin: 0 auto;
 
     	li {
     		text-align: left;
+    		font-size: 23px;
+			// line-height: 22px;
+    	}
+	}
+	//JUMPNOW LIST
+	ul.plan_list {
+		max-width: 42%;
+		min-width: 200px;
+    	margin: 0 auto;
+
+    	li {
+    		text-align: left;
+    		font-size: 23px;
+			// line-height: 22px;
     	}
 	}
 
@@ -1205,6 +1247,72 @@ and (min-width:481px){
 	}
 	div.nav_group{
 		bottom:-42px;
+	}
+
+	#sec_about p {
+    font-size: 25px !important;
+    line-height: 2.0em;
+	}
+
+	div.competition_topic {
+		font-size: 20px;
+		line-height: 28px;
+		h4 {
+			font-size:40px;
+			padding:15px 0;
+
+			span{
+				font-size: 35px;
+			}
+		}
+		h5{
+			font-size: 28px;
+		}
+		p{
+			    font-size: 20px;
+			    line-height: 28px;
+			    letter-spacing: initial;
+		}
+		ul{
+			li{
+				font-size: 20px;
+				line-height: 33px;
+			}
+		}
+	}
+	#competition_prize_slide  {
+
+		.prize-single {
+
+			min-height: 140px !important;
+			h4 {
+				margin-top:20px;
+			}
+
+		&:first-of-type {
+		@include background-size(50% auto);
+			h4{
+				font-size:34px;
+				color:#2b4252;
+			}
+	 	}
+	 	&:nth-of-type(2) {
+		@include background-size(50% auto);
+			color:$navy;
+		
+	 	}
+	 	&:nth-of-type(3) {
+	
+		@include background-size(50% auto);
+		
+	 	
+
+			}
+
+
+
+		}
+
 	}
 }
 

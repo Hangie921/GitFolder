@@ -1088,7 +1088,13 @@ div.section#sec_jumpnow {
 	//############# Event #########################//
 	div#sec_events {
 		padding-top:$mob-sec-pad;
-		
+		& .event_group{
+			& .event_single{
+				float:none;
+				clear:both;
+			}
+		}
+
 	}
 	//EVENT BOX
 	.event_group {

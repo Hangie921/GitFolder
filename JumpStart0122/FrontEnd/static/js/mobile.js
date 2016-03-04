@@ -38,8 +38,9 @@ function revealOnScroll(){
 	    w_height = $(window).outerHeight(), //視窗高度
 	    offsetTop = current.offset().top; //當前元素離頂部的高度
 
-		if(scrolled > offsetTop + 100){
-			var sec = current.attr("data-menuanchor");
+		if(scrolled == offsetTop){
+			var sec = current.attr("data-anchor");
+			console.log(sec);
 			$(".menu-items-mobile ul li").removeClass("active");
 			$(".menu-items-mobile ul li[data-menuahcnor='"+sec+"']").addClass("active");
 		}

@@ -465,7 +465,7 @@ and (orientation : portrait) {
 	}
 
 	.section {
-		height:auto !important;
+		height:auto;
 		padding-bottom:30px !important;
 	}
 
@@ -490,7 +490,7 @@ and (orientation : portrait) {
 
 
 	div.section-padding{
-		padding:1%;
+		padding:0%;  //by Walter to show the middle line of #about 
 	}
 	#sec_about .border_container {
 		padding:3%;
@@ -613,7 +613,7 @@ and (orientation : portrait) {
 
 	/***Mobile Height control***/
 	.fp-slides, .fp-slidesContainer,.border_container  {
-		height: auto !important;
+		height: auto;
 	}
 
 
@@ -1064,8 +1064,13 @@ div.contact_container h2 {
 /******ADDED BY WALTER TO ADJUST THE CONTACT FORM**/
 @media screen and (max-width:768px){
 	div#sec_events{
-		height:initial !important;
-
+		& .contact_container{
+			position: relative;
+			top: 350px;
+			& .contact_header h2{
+				height:57px;
+			}
+		}
 	}
 }
 /******ADDED BY WALTER TO SHOW THE .nav_group********/

@@ -175,6 +175,7 @@ $(document).ready(function() {
 				var height = $('#competition_sponsor_slide .slide-inner').height();
 				$('#competition_sponsor_slide .border_container').height(height);	
 				console.log("fullpage loaded");
+
 			},
 			verticalCentered : true,
 			resize : false,
@@ -196,6 +197,10 @@ $(document).ready(function() {
 		resize();
 		initSlot();	//initial the slot machine first so that fullpage can load the
 		revealOnScroll();
+		// if(ww<=990){
+		// 	$("div.section").css("height","auto");
+		// 	console.log("section");
+		// }
 		
 	
     

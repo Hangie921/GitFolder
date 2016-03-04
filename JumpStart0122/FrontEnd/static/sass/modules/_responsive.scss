@@ -447,9 +447,11 @@ div.section#sec_jumpnow {
 
 
 
-}/******************MOBILE************************/
-
-@media screen and (max-width: 768px) {
+}
+/******************MOBILE************************/
+// Randy ipad
+@media screen and (max-width: 768px)
+and (orientation : portrait) {
 	
 	body {
 		font-size: 16px;
@@ -512,22 +514,23 @@ div.section#sec_jumpnow {
 	}
 
 
-.sloganContainer {
+	.sloganContainer {
 
-    min-height: 600px;
-    height: initial;
-}
-
-.fp-slidesContainer {
-    margin-top: 0;
-}
-	.slide-inner {
-		width:97%;
+	    min-height: 600px;
+	    height: initial;
 	}
 
+	.fp-slidesContainer {
+	    margin-top: 0;
+	}
+		.slide-inner {
+			width:97%;
+		}
 
-
-	
+	#sec_about p{
+		font-size:25px;
+		line-height: 35px;
+	}
 
 	.info_list ul li{
 		width:100%;
@@ -944,6 +947,7 @@ div.section#sec_jumpnow {
 	ul.competition-headings{
 	padding:0;
 	margin:0;
+	border-bottom: 1px solid $primary-color;
 
 	  a {
 	  	padding-top:20px;
@@ -1049,6 +1053,14 @@ div.contact_container h2 {
 }
 
 
+@media screen and (max-width:400px)  {
+ #competition_mobile_menu_container ul.competition-headings a {
+ 	font-size:13px;
+ }
+}
+
+
+
 /******ADDED BY WALTER TO ADJUST THE CONTACT FORM**/
 @media screen and (max-width:768px){
 	div#sec_events{
@@ -1073,8 +1085,790 @@ div.contact_container h2 {
 	div.nav_group{
 		bottom: -37px;
 	}
+}
+
+/****************    IPHONE 5, 6, 6+    ****************/
+
+//Randy 04032016 for i6+ portrait
+@media only screen 
+and (max-width : 414px) 
+and (orientation : portrait) { 
+	//SG
+	body.sg {
+		letter-spacing:initial;
+		font-size: 16px;
+	    line-height: 24px;
+
+
+		//########### SG Home BG Start ###########//
+		.sg_bg {
+			// @extend .sec_home_bg;
+			// background:#000 url('../img/home_bg_sg_2.jpg') no-repeat center;
+			background: url('../img/home_bg_sg_5.jpg') no-repeat center;
+			background-blend-mode: multiply;
+			background-size:cover;
+			-moz-background-size:cover;
+			-ms-background-size:cover;
+			-o-background-size:cover;
+			-webkit-background-size:cover;
+			position: relative;
+			
+		}
+		//########### SG Home BG End ###########//
+
+		//########### SG Home Slogan Start ###########//
+		.sloganContainer_sg_bg{
+			
+			text-indent:initial;
+			background-image:none;
+			max-width:480px;
+			margin-top:58px;
+
+
+			h2 {
+
+				font-size:40px;//RK
+				font-weight: 800;
+				line-height: 50px;
+				letter-spacing: 3px;
+				text-align:center;
+
+				span {
+					font-size: 27px;//RK
+					letter-spacing: 3px;
+				}
+			}
+
+			.slotMachine {
+				border:1px solid #fff;
+				margin: 14px 0 30px !important;
+				height: 68px;
+			}
+			.slot {
+				font-family: 'raleway', sen-serif;
+				font-weight: 700;
+				font-size: 25px;
+			}
+
+			 #slotButton3 {
+			 	float:none;
+			 	display: block;
+			 	margin:0px auto;
+			 }
+
+		}
+		//########### SG Home Slogan End ###########//
+
+		#sec_about p{
+			font-size:22px;
+			line-height: 30px;
+		}
+
+		//########### Competition ##############//
+
+		ul.competition-headings a {
+			letter-spacing:2px;
+			font-weight:600;
+		}
+
+		div.competition_topic {
+			font-size: 14px;
+			h4 {
+				font-size:45px;
+				padding:15px 0;
+
+				span{
+					font-size: 40px;
+				}
+			}
+			h5{
+				font-size: 30px;
+			}
+			p{
+				    font-size: 14px;
+				    line-height: 22px;
+				    letter-spacing: initial;
+			}
+			ul{
+				li{
+					font-size: 18px;
+					line-height: 28px;
+				}
+			}
+		}
+
+
+		//###### Jumpnow home ###########//
+		.jumpnow-des {
+			h3{
+				font-family:'fatfrank', sen-serif;
+				letter-spacing:1px;
+				font-size: 27px;//RK
+				span {
+					font-family:'fatfrank', sen-serif;
+				}
+			}
+			ul{
+				li{
+					font-size: 20px;
+					line-height: 35px;
+				}
+			}
+		}
+
+		
+
+		//###### EVENT SINGLE ###########//
+		.event_single {
+
+			 .front_face {
+			 	background-color: #333 ;
+			 		text-shadow:0px 0px  20px black;
+			 	
+			 }
+
+			 .back_face {
+			 	p {
+			 		padding:50px 0;
+			 	}
+			 }
+			    
+			}
+
+		//######## SG Btns #################//
+		.btn {
+			letter-spacing:2px;
+			}
+		}
+	//SG END
+	div.competition_topic {
+		font-size: 17px;
+		h4 {
+			font-size:45px;
+			padding:15px 0;
+
+			span{
+				font-size: 35px;
+			}
+		}
+		h5{
+			font-size: 26px;
+		}
+		p{
+			    font-size: 17px;
+			    line-height: 22px;
+			    letter-spacing: initial;
+		}
+		ul{
+			li{
+				font-size: 17px;
+			}
+		}
+	}
+	#competition_prize_slide  {
+
+		.prize-single {
+
+			min-height: 140px !important;
+			h4 {
+				margin-top:20px;
+			}
+
+		&:first-of-type {
+		@include background-size(50% auto);
+			h4{
+				font-size:34px;
+				color:#2b4252;
+			}
+	 	}
+	 	&:nth-of-type(2) {
+		@include background-size(50% auto);
+			color:$navy;
+		
+	 	}
+	 	&:nth-of-type(3) {
+	
+		@include background-size(50% auto);
+		
+	 	
+
+			}
+
+
+
+		}
+
+	}
+	#sec_about p{
+		font-size:20px;
+		line-height: 30px;
+	}
+ }
+
+//Randy 04032016 for i6+ landscape
+@media only screen 
+and (max-width : 736px) 
+and (orientation : landscape) { 
+	div.competition_topic {
+		font-size: 15px;
+		h4 {
+			font-size:35px;
+			padding:15px 0;
+
+			span{
+				font-size: 30px;
+			}
+		}
+		h5{
+			font-size: 19px;
+		}
+		p{
+			    font-size: 15px;
+			    line-height: 22px;
+			    letter-spacing: initial;
+		}
+		ul{
+			li{
+				font-size: 15px;
+			}
+		}
+	}
+	#competition_prize_slide  {
+
+		.prize-single {
+			margin: 5px auto 0;
+			min-height: 290px !important;
+			h4 {
+				margin-top:20px;
+			}
+
+		&:first-of-type {
+		@include background-size(50% auto);
+			h4{
+				font-size:34px;
+				color:#2b4252;
+			}
+	 	}
+	 	&:nth-of-type(2) {
+		@include background-size(50% auto);
+			color:$navy;
+		
+	 	}
+	 	&:nth-of-type(3) {
+	
+		@include background-size(50% auto);
+		
+	 	
+
+			}
+
+
+
+		}
+
+	}
+	#sec_about p{
+		font-size:20px;
+		line-height: 30px;
+	}
+}
+
+
+//Randy 04032016 for i6 portrait
+@media screen and (max-width:375px)
+and (orientation : portrait){
+	
+	div.slide.team_details{
+		padding:2.2% 0% 5% 0%;
+	}
+	div.nav_group{
+		bottom: -37px;
+	}
+	//Randy 04032016
+
+	div.competition_topic {
+		font-size: 15px;
+		h4 {
+			font-size:35px;
+			padding:15px 0;
+
+			span{
+				font-size: 30px;
+			}
+		}
+		h5{
+			font-size: 19px;
+		}
+		p{
+			    font-size: 15px;
+			    line-height: 22px;
+			    letter-spacing: initial;
+		}
+		ul{
+			li{
+				font-size: 15px;
+			}
+		}
+	}
+	#competition_prize_slide  {
+
+		.prize-single {
+
+			min-height: 125px !important;
+			h4 {
+				margin-top:20px;
+			}
+
+		&:first-of-type {
+		@include background-size(50% auto);
+			h4{
+				font-size:34px;
+				color:#2b4252;
+			}
+	 	}
+	 	&:nth-of-type(2) {
+		@include background-size(50% auto);
+			color:$navy;
+		
+	 	}
+	 	&:nth-of-type(3) {
+	
+		@include background-size(50% auto);
+		
+	 	
+
+			}
+
+
+
+		}
+
+	}
+	.sloganContainer {
+		background-size: 80% auto;
+	}
+
 
 }
+
+//Randy 04032016 for i6 landscape
+@media only screen 
+and (max-width : 667px) 
+and (orientation : landscape) {
+/* STYLES GO HERE */
+#competition_prize_slide  {
+
+	.prize-single {
+
+		min-height: 260px !important;
+		h4 {
+			margin-top:20px;
+		}
+
+	&:first-of-type {
+	@include background-size(50% auto);
+		h4{
+			font-size:34px;
+			color:#2b4252;
+		}
+ 	}
+ 	&:nth-of-type(2) {
+	@include background-size(50% auto);
+		color:$navy;
+	
+ 	}
+ 	&:nth-of-type(3) {
+
+	@include background-size(50% auto);
+	
+ 	
+
+		}
+
+
+
+	}
+
+	}
+
+}
+
+
+//Randy 04032016 for i5 portrait
+@media only screen 
+and (min-width : 320px) 
+and (orientation : portrait) { /* STYLES GO HERE */ 
+	
+	//SG
+	body.sg {
+		letter-spacing:initial;
+		font-size: 16px;
+	    line-height: 24px;
+
+		//########### SG Home Slogan Start ###########//
+		.sloganContainer_sg_bg{
+			
+			text-indent:initial;
+			background-image:none;
+			max-width:480px;
+			margin-top:58px;
+
+
+			h2 {
+
+				font-size:40px;//RK
+				font-weight: 800;
+				line-height: 50px;
+				letter-spacing: 3px;
+				text-align:center;
+
+				span {
+					font-size: 27px;//RK
+					letter-spacing: 3px;
+				}
+			}
+
+			.slotMachine {
+				border:1px solid #fff;
+				margin: 14px 0 30px !important;
+				height: 68px;
+			}
+			.slot {
+				font-family: 'raleway', sen-serif;
+				font-weight: 700;
+				font-size: 25px;
+			}
+
+			 #slotButton3 {
+			 	float:none;
+			 	display: block;
+			 	margin:0px auto;
+			 }
+
+		}
+		//########### SG Home Slogan End ###########//
+
+		#sec_about p{
+			font-size:15px;
+			line-height: 20px;
+		}
+
+		//########### Competition ##############//
+
+		ul.competition-headings a {
+			letter-spacing:2px;
+			font-weight:600;
+		}
+
+		div.competition_topic {
+			font-size: 14px;
+			h4 {
+				font-size:32px;
+				padding:15px 0;
+
+				span{
+					font-size: 27px;
+				}
+			}
+			h5{
+				font-size: 19px;
+			}
+			p{
+				    font-size: 14px;
+				    line-height: 22px;
+				    letter-spacing: initial;
+			}
+			ul{
+				li{
+					font-size: 14px;
+				}
+			}
+		}
+
+
+
+		//###### Jumpnow home ###########//
+		.jumpnow-des h3 {
+			font-family:'fatfrank', sen-serif;
+			letter-spacing:1px;
+			font-size: 25px;//RK
+			span {
+				font-family:'fatfrank', sen-serif;
+			}
+		}
+
+		//###### EVENT SINGLE ###########//
+		.event_single {
+
+			 .front_face {
+			 	background-color: #333 ;
+			 		text-shadow:0px 0px  20px black;
+			 	
+			 }
+
+			 .back_face {
+			 	p {
+			 		padding:50px 0;
+			 	}
+			 }
+			    
+			}
+
+		//######## SG Btns #################//
+		.btn {
+			letter-spacing:2px;
+			}
+		}
+	//SG END
+	
+	div.slide.team_details{
+		padding:2.2% 0% 5% 0%;
+	}
+	div.nav_group{
+		bottom: -37px;
+	}
+	//Randy 04032016
+	#competition_mobile_menu_container{
+		display:block;
+		position: absolute;
+		z-index:2;
+		background:$gray;
+		width: 100%;
+		ul.competition-headings{
+		padding:0;
+		margin:0;
+
+		  a {
+		  	padding-top:10px;
+		  	height:100%;
+		  	display: block;
+		  	min-height: 60px;
+		  }
+		}
+	}
+
+	div.competition_topic {
+		font-size: 14px;
+		h4 {
+			font-size:35px;
+			padding:15px 0;
+
+			span{
+				font-size: 30px;
+			}
+		}
+		h5{
+			font-size: 19px;
+		}
+		p{
+			    font-size: 14px;
+			    line-height: 22px;
+			    letter-spacing: initial;
+		}
+		ul{
+			li{
+				font-size: 14px;
+			}
+		}
+	}
+	.sloganContainer {
+		background-size: 80% auto;
+	}
+	.jumpnow-des {
+		h3 {
+			text-align: center ;
+			font-size: 27px;
+		}
+	}
+	#sec_about p{
+		font-size:15px;
+		line-height: 25px;
+	}
+
+
+}
+//Randy 04032016 for i5 landscape
+@media only screen 
+and (max-width : 568px) 
+and (orientation : landscape) {
+
+	//SG
+	body.sg {
+		letter-spacing:initial;
+		font-size: 16px;
+	    line-height: 24px;
+
+
+		//########### SG Home BG Start ###########//
+		.sg_bg {
+			// @extend .sec_home_bg;
+			// background:#000 url('../img/home_bg_sg_2.jpg') no-repeat center;
+			background: url('../img/home_bg_sg_5.jpg') no-repeat center;
+			background-blend-mode: multiply;
+			background-size:cover;
+			-moz-background-size:cover;
+			-ms-background-size:cover;
+			-o-background-size:cover;
+			-webkit-background-size:cover;
+			position: relative;
+			
+		}
+		//########### SG Home BG End ###########//
+
+		//########### SG Home Slogan Start ###########//
+		.sloganContainer_sg_bg{
+			
+			text-indent:initial;
+			background-image:none;
+			max-width:480px;
+			margin-top:58px;
+
+
+			h2 {
+
+				font-size:40px;//RK
+				font-weight: 800;
+				line-height: 50px;
+				letter-spacing: 3px;
+				text-align:center;
+
+				span {
+					font-size: 27px;//RK
+					letter-spacing: 3px;
+				}
+			}
+
+			.slotMachine {
+				border:1px solid #fff;
+				margin: 14px 0 30px !important;
+				height: 68px;
+			}
+			.slot {
+				font-family: 'raleway', sen-serif;
+				font-weight: 700;
+				font-size: 25px;
+			}
+
+			 #slotButton3 {
+			 	float:none;
+			 	display: block;
+			 	margin:0px auto;
+			 }
+
+		}
+		//########### SG Home Slogan End ###########//
+
+		#sec_about p{
+			font-size:15px;
+			line-height: 20px;
+		}
+
+		//########### Competition ##############//
+
+		ul.competition-headings a {
+			letter-spacing:2px;
+			font-weight:600;
+		}
+
+		div.competition_topic {
+			font-size: 14px;
+			h4 {
+				font-size:32px;
+				padding:15px 0;
+
+				span{
+					font-size: 27px;
+				}
+			}
+			h5{
+				font-size: 19px;
+			}
+			p{
+				    font-size: 14px;
+				    line-height: 22px;
+				    letter-spacing: initial;
+			}
+			ul{
+				li{
+					font-size: 14px;
+				}
+			}
+		}
+
+
+		//###### Jumpnow home ###########//
+		.jumpnow-des h3 {
+			font-family:'fatfrank', sen-serif;
+			letter-spacing:1px;
+			font-size: 25px;//RK
+			span {
+				font-family:'fatfrank', sen-serif;
+			}
+		}
+
+		//###### EVENT SINGLE ###########//
+		.event_single {
+
+			 .front_face {
+			 	background-color: #333 ;
+			 		text-shadow:0px 0px  20px black;
+			 	
+			 }
+
+			 .back_face {
+			 	p {
+			 		padding:50px 0;
+			 	}
+			 }
+			    
+			}
+
+		//######## SG Btns #################//
+		.btn {
+			letter-spacing:2px;
+			}
+		}
+	//SG END
+/* STYLES GO HERE */
+#competition_prize_slide  {
+
+	.prize-single {
+
+		min-height: 210px !important;
+		h4 {
+			margin-top:20px;
+		}
+
+	&:first-of-type {
+	@include background-size(50% auto);
+		h4{
+			font-size:34px;
+			color:#2b4252;
+		}
+ 	}
+ 	&:nth-of-type(2) {
+	@include background-size(50% auto);
+		color:$navy;
+	
+ 	}
+ 	&:nth-of-type(3) {
+
+	@include background-size(50% auto);
+	
+ 	
+
+		}
+
+
+
+	}
+
+	}
+
+}
+
+
+
 
 /******ADDED BY WALTER TO SHOW THE .nav_group********/
 
@@ -1086,3 +1880,4 @@ div.contact_container h2 {
 		top: 48%;
 	}
 }
+

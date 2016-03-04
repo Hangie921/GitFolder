@@ -8,13 +8,17 @@ var instance = require("../SDK/instance"),
 	contact_us = require("./controller/contact_us");
 	index_page_sg = require("./controller/index_page_sg");
 var path = require('path');
-
-
 var config = require ("../FrontEnd/config/server_init.json");
 
 
-var app = instance.startApp(config.server.port,config.server.view_engine,path.dirname(process.argv[1])),
-	mongoClient = instance.startMongo(config.mongo.url,config.mongo.port,config.mongo.db);
+var app = instance.startApp(
+								config,
+								path.dirname(process.argv[1])
+							),
+	//the app has been set the port, the view engine and the dir.path
+	mongoClient = instance.startMongo(
+								config
+							);
 
 
 //route the different page

@@ -19,6 +19,9 @@
 	"backend_default_account":{
 		"acc":"admin",
 		"psw":"admin"
+	},
+	"session" :{
+		"expires" : 3600000
 	}
 
 }

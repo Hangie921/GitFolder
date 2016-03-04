@@ -80,7 +80,9 @@
 		}
 		
 		&:nth-child(1):hover .event_single_rotate,
-		&:nth-child(2):hover .event_single_rotate{
+		&:nth-child(1):focus .event_single_rotate,
+		&:nth-child(2):hover .event_single_rotate,
+		&:nth-child(2):focus .event_single_rotate,{
 			 	@include transition(all .5s ease-In);
 				@include transform(rotateY(180deg));
 		}

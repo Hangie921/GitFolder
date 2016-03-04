@@ -9,13 +9,18 @@ var instance = require('../SDK/instance'),
 	logout = require('../BackEnd/controller/logout'),
 	config = require('../BackEnd/config/back_server_init.json'),
 	mongo_handler = require('../SDK/mongo_handler'),
-	encrypt = require('../BackEnd/module/encrypt');
+	encrypt = require('../BackEnd/module/encrypt')
 
 
 
-var app = instance.startApp(config.server.port,config.server.view_engine,path.dirname(process.argv[1])),
+var app = instance.startApp(
+								config,
+								path.dirname(process.argv[1])
+							),
 	//the app has been set the port, the view engine and the dir.path
-	mongoClient = instance.startMongo(config.mongo.url,config.mongo.port,config.mongo.db);
+	mongoClient = instance.startMongo(
+								config
+							);
 
 
 	//start to insert the default account in mongo
@@ -30,6 +35,7 @@ var app = instance.startApp(config.server.port,config.server.view_engine,path.di
 	// 		console.log("U have the default account 'admin' in your 'member' collection");
 	// 	}
 	// });
+
 
 index.route(app,mongoClient);
 login.route(app,mongoClient);

@@ -2,11 +2,18 @@
 
 //########## TABLET LANDSCAPE ########################//
 
-@media screen and (max-width:1024px) and (min-width:991px) {
-	
-	
+@media screen 
+and (max-width:1024px) 
+and (min-width:991px) {
 
-//######### PRIZE ##############//
+	.event_group {
+		.event_single {
+			.event_single_rotate div {
+				height: 25vw;
+			}
+		}
+	}
+	
 
 
 
@@ -67,6 +74,7 @@ div.slide.team_details  {
 .event_tw_comingsoon {
 	h3 {
 		font-size: 24px;
+
 	}
 }
 
@@ -167,8 +175,10 @@ div.slide.team_details  {
     padding-top: 10%;
     display: block;
     width: 100%;
+    padding: 25vw 0 0 0;
 
     a {
+
     	font-size:30px !important;
     	font-weight:bold !important;
     }
@@ -196,7 +206,7 @@ ul.menu {
 	min-width: initial;
     float: none;
 	li {
-	padding: 25vw 0 0 0;
+	
 	text-align:center;
 	margin:0 !important;
 	}
@@ -241,9 +251,6 @@ div.sponsor-group ul.sponsor-list.second li {
 
 //########### EVENT ####################/
 
-#sec_events {
-	padding:0 !important;
-}
 
 .contact_container {
 	span.input {
@@ -448,6 +455,23 @@ div.section#sec_jumpnow {
 
 
 }
+
+/******ADDED BY WALTER TO SHOW THE .nav_group********/
+
+
+/****************FOR THE STRAIGHT LINE IN THE #HOME SECTION ADDED BY WALTER******/
+
+@media screen 
+and (max-width:990px) 
+and (min-width:768px){
+
+	#sec_home::after{
+		top: 48%;
+	}
+
+	
+}
+
 /******************MOBILE************************/
 // Randy ipad
 @media screen and (max-width: 768px)
@@ -490,7 +514,7 @@ and (orientation : portrait) {
 
 
 	div.section-padding{
-		padding:0%;  //by Walter to show the middle line of #about 
+		padding:1%;
 	}
 	#sec_about .border_container {
 		padding:3%;
@@ -567,6 +591,9 @@ and (orientation : portrait) {
 			font-size:41px;
 			padding:15px 0;
 		}
+		h5 {
+			padding-top:15px;
+		}
 	}
 	#competition_prize_slide  {
 
@@ -613,7 +640,7 @@ and (orientation : portrait) {
 
 	/***Mobile Height control***/
 	.fp-slides, .fp-slidesContainer,.border_container  {
-		height: auto;
+		height: auto !important;
 	}
 
 
@@ -631,28 +658,6 @@ div.timeline {
    margin:0;
 }
 
-body.sg #sec_competition{
-	padding-bottom: 0 !Important ; //by Walter
-	& #competition_topic_slide{
-		& .border_container{
-			& .straight_line{
-				top:-450px;
-				left: 50%;
-				width: 1px;
-				background-color:$primary-color;
-				display: block;
-			}
-			& .straight_line_down{
-				top: 100%;
-				left: 50%;
-				width: 1px;
-				background-color:$primary-color;
-				display: block;
-				height: 450px;
-			}
-		}
-	}
-}
 /**SPONSORSS*****/
 div.sponsor-group li span {
     opacity: 0;
@@ -936,111 +941,128 @@ div.section#sec_jumpnow {
 
 
 
-//****************FOR COMPETITION MENU*********//
+	//****************FOR COMPETITION MENU*********//
 
-#competition_mobile_menu_container{
-	display:block;
-	position: absolute;
-	z-index:2;
-	background:$gray;
-	 width: 100%;
-	ul.competition-headings{
-	padding:0;
-	margin:0;
-	border-bottom: 1px solid $primary-color;
+	#competition_mobile_menu_container{
+		display:block;
+		position: absolute;
+		z-index:2;
+		background:$gray;
+		 width: 100%;
+		ul.competition-headings{
+		padding:0;
+		margin:0;
+		border-bottom: 1px solid $primary-color;
 
-	  a {
-	  	padding-top:20px;
-	  	height:100%;
-	  	display: block;
-	  	min-height: 60px;
-	  }
+		  a {
+
+		  	padding-top:20px;
+		  	height:100%;
+		  	display: block;
+		  	min-height: 60px;
+		  }
+		}
 	}
-}
-#competition_menu{
-	display:none;
-}
-
-#competition_mobile_menu_container.fixed{
-	position: fixed;
-	z-index: 2;
-	width:100%;
-	top:50px;
-	background:$gray;
-	ul.competition-headings{
-	padding:0;
-	margin:0;
+	#competition_menu{
+		display:none;
 	}
 
-}
+	#competition_mobile_menu_container.fixed{
+		position: fixed;
+		z-index: 2;
+		width:100%;
+		top:50px;
+		background:$gray;
+		ul.competition-headings{
+		padding:0;
+		margin:0;
+		}
 
-#sec_competition {
-	.fp-slide {
-		padding-top:60px;
 	}
-}
 
-.info_list ul li {
-	padding-left:0;
-}
-div.timeline ul{
-	li {
-		-webkit-box-shadow:none;
-		-moz-box-shadow:none;
-		-o-box-shadow:none;
-		-ms-box-shadow:none;
-		box-shadow:none;
-		margin-bottom:5px;
-		position:static;
-		bottom:0;
+	#sec_competition {
+		.fp-slide {
+			padding-top:60px;
+		}
+	}
 
-		&:hover {
-			margin:initial;
+	.info_list ul li {
+		padding-left:0;
+	}
+	div.timeline ul{
+		li {
 			-webkit-box-shadow:none;
 			-moz-box-shadow:none;
 			-o-box-shadow:none;
 			-ms-box-shadow:none;
 			box-shadow:none;
+			margin-bottom:5px;
 			position:static;
 			bottom:0;
+
+			&:hover {
+				margin:initial;
+				-webkit-box-shadow:none;
+				-moz-box-shadow:none;
+				-o-box-shadow:none;
+				-ms-box-shadow:none;
+				box-shadow:none;
+				position:static;
+				bottom:0;
+			}
 		}
 	}
-}
 
-//################ JUMPNOW #######################//
+	//################ JUMPNOW #######################//
 
-.jumpnow-des {
-	h3 {
-		text-align: center ;
+	.jumpnow-des {
+		h3 {
+			text-align: center ;
+		}
 	}
-}
-.jumpnow-btn-set {
-	margin-top:0;
-}
-ul.plan_list li{
-	text-align:center;
-}
-.jumpnow_part1 a.bizplan_download {
-	margin:0 auto 15px;
-	display:block;
-	float:none;
-}
+	.jumpnow-btn-set {
+		margin-top:0;
+	}
+	ul.plan_list li{
+		text-align:left;
+	}
+	.jumpnow_part1 a.bizplan_download {
+		margin:0 auto 15px;
+		display:block;
+		float:none;
+	}
 
-//############# Event #########################//
-div#sec_events {
-	padding-top:$mob-sec-pad;
-}
+	//############# Event #########################//
+	div#sec_events {
+		padding-top:$mob-sec-pad;
+	}
+	//EVENT BOX
+	.event_group {
+		.event_single {
+			.event_single_rotate div {
+				height: 20vh;
+			}
+		}
 
-//######## CONTACT #####################//
-div.contact_container h2 {
-	width:auto;
-}
+		.event_tw_comingsoon,.event_tw_comingsoon {
+			h3 {
+				margin-top:5vh;
+			}
+		}
+	}
+
+	//######## CONTACT #####################//
+	div.contact_container h2 {
+		width:auto;
+	}
 
 
 }//end of the <768 @media
 
 
-@media screen and (max-width:768px) and (min-width:489px) {
+@media screen and (max-width:768px) 
+and (min-width:489px) {
+
  div.sponsor-group {
 	ul.sponsor-list {
 		li {
@@ -1050,9 +1072,19 @@ div.contact_container h2 {
 	}
 
 	}
-}
 
 
+	#competition_mobile_menu_container{
+		
+		ul.competition-headings{
+		
+
+		  a {
+		  	line-height: 37px;
+		  }
+		}
+	}
+} // 768px - 489 px ends
 @media screen and (max-width:400px)  {
  #competition_mobile_menu_container ul.competition-headings a {
  	font-size:13px;
@@ -1061,40 +1093,38 @@ div.contact_container h2 {
 
 
 
-/******ADDED BY WALTER TO ADJUST THE CONTACT FORM**/
-@media screen and (max-width:768px){
-	div#sec_events{
-		& .contact_container{
-			position: relative;
-			top: 350px;
-			& .contact_header h2{
-				height:57px;
-			}
+
+/******ADD BY WALTER TO SHOW THE .nav_group********/
+@media screen 
+and (max-width:768px){
+
+	.team_details, .personal_details {
+		.slide-inner {
+			margin:0 auto 50px;
 		}
+
+		.nav_group {
+			bottom:-107px;
+		}
+	}
+	
+}
+
+@media screen 
+and (max-width:768px) 
+and (min-width:481px){
+
+	//JUMPNOW LIST
+	ul.plan_list {
+		max-width: 40%;
+		min-width: 270px;
+    	margin: 0 auto;
+
+    	li {
+    		text-align: left;
+    	}
 	}
 
-}
-
-@media screen and (max-width:480px){
-	div#sec_events{
-		& .contact_container{
-			position: relative;
-			top: 0px;
-			margin-bottom:100px;
-		}
-	}
-}
-@media screen and (max-width:375px){
-	div#sec_events{
-		& .contact_container{
-			position: relative;
-			top: 0px;
-			margin-bottom:0px;
-		}
-	}
-}
-/******ADDED BY WALTER TO SHOW THE .nav_group********/
-@media screen and (max-width:768px) and (min-width:481px){
 	div.slide.team_details{ 
 		padding:2.2% 0% 2.2% 0%;
 	}
@@ -1102,16 +1132,50 @@ div.contact_container h2 {
 		bottom:-42px;
 	}
 }
-@media screen and (max-width:480px){
+
+@media screen 
+and (max-width:480px){
+
+	//JUMPNOW LIST
+	ul.plan_list {
+		
+		width:auto;
+
+    	li {
+    		text-align: left;
+    	}
+	}
 	
 	div.slide.team_details{
-		padding:2.2% 0% 5% 0%;
+		padding:2.2% 0% 90px 0%;
 	}
 	div.nav_group{
 		bottom: -37px;
 	}
-}
 
+	//EVENT BOX
+	.event_group {
+		.event_single {
+			margin-bottom:30px;
+			min-height: 40vh;
+			.event_single_rotate {
+				height:auto;
+				div {
+					height: 40vh;
+				}
+			}
+		}
+
+		.event_tw_comingsoon,.event_tw_comingsoon {
+			h3 {
+				margin-top:12vh;
+			}
+		}
+		
+	}
+
+
+}
 
 /****************    IPHONE 5, 6, 6+    ****************/
 
@@ -1156,13 +1220,14 @@ and (orientation : portrait) {
 
 				font-size:40px;//RK
 				font-weight: 800;
-				line-height: 50px;
+				line-height: 1.2em;
 				letter-spacing: 3px;
 				text-align:center;
 
 				span {
 					font-size: 27px;//RK
 					letter-spacing: 3px;
+					line-height: 1.2em;
 				}
 			}
 
@@ -1196,6 +1261,7 @@ and (orientation : portrait) {
 		ul.competition-headings a {
 			letter-spacing:2px;
 			font-weight:600;
+
 		}
 
 		div.competition_topic {
@@ -1237,7 +1303,7 @@ and (orientation : portrait) {
 			}
 			ul{
 				li{
-					font-size: 20px;
+					font-size: 15px;
 					line-height: 35px;
 				}
 			}
@@ -1347,6 +1413,7 @@ and (orientation : landscape) {
 		h4 {
 			font-size:35px;
 			padding:15px 0;
+			text-align: left;
 
 			span{
 				font-size: 30px;
@@ -1635,6 +1702,8 @@ and (orientation : portrait) { /* STYLES GO HERE */
 			ul{
 				li{
 					font-size: 14px;
+				    margin-bottom: 10px;
+				    line-height: 1.7em;
 				}
 			}
 		}
@@ -1886,7 +1955,7 @@ and (orientation : landscape) {
 			}
 		}
 	//SG END
-/* STYLES GO HERE */
+
 #competition_prize_slide  {
 
 	.prize-single {
@@ -1924,17 +1993,25 @@ and (orientation : landscape) {
 
 }
 
+@media only screen 
+and (max-width : 480px) 
+and (min-width : 321px) 
+and (orientation : portrait) {
+
+	#competition_mobile_menu_container ul.competition-headings a {
+		line-height: 37px;
+	}
 
 
 
-/******ADDED BY WALTER TO SHOW THE .nav_group********/
+}
 
-
-/****************FOR THE STRAIGHT LINE IN THE #HOME SECTION ADDED BY WALTER******/
-
-@media screen and (max-width:990px) and (min-width:769px){
-	#sec_home::after{
-		top: 48%;
+@media only screen 
+and (orientation:landscape) {
+	.menu-items-mobile.fs li {
+		padding-top:15vh;
 	}
 }
+
+
 

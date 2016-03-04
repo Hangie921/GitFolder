@@ -29,6 +29,19 @@ function revealOnScroll(){
 			menu.css("top",originalHeight);
 	    }
 	});
+
+
+	//to active the right menu in mobile
+	
+	// $(".section").each(function(){
+	// 	var current = $(this), // 當前元素
+	//     w_height = $(window).outerHeight(), //視窗高度
+	//     offsetTop = current.offset().top; //當前元素離頂部的高度
+
+	//    if(scrolled > )
+	// });
+
+
 }
 function moveTo(section,slide){
 	console.log("move to "+section);

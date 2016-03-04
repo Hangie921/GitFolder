@@ -109,6 +109,9 @@ div.slide.team_details  {
 		position:relative;
 		z-index: 5;
 	}
+
+
+	
 //########### COMPETITION ####################//
 
 	.competition-headings li{
@@ -165,17 +168,26 @@ div.slide.team_details  {
   height:100%;
   position:fixed;
   top:50px;
-  left:0;
+  left:0;  
   pointer-events:none;
+
+  ul {
+  	padding:17vh 0 0 0;
+  }
+
+
   li {
   	text-align: center;
     transition: 1s;
     opacity: 0;
     margin-top: 0px;
-    padding-top: 10%;
     display: block;
     width: 100%;
-    padding: 25vw 0 0 0;
+    padding: 0px 0px 15vh 0px;
+
+    &.jumpnow_link a {
+    	paddding:0 !important;
+    }
 
     a {
 
@@ -183,8 +195,11 @@ div.slide.team_details  {
     	font-weight:bold !important;
     }
   }
+
+
   &.fs {
     pointer-events:auto;
+
     opacity: 1;
  	z-index: 2;
   width:100%;
@@ -197,6 +212,8 @@ div.slide.team_details  {
   position:fixed;
     li{
       opacity: 1;
+      padding: 0px 0px 15vh 0px;
+
     
     }
   }
@@ -213,9 +230,7 @@ ul.menu {
 }
 
 
-.jumpnow_link a {
-	padding:15px !important;
-}
+
 .menu-items-mobile {
 
 	li {
@@ -1977,8 +1992,16 @@ and (orientation : portrait) {
 
 @media only screen 
 and (orientation:landscape) {
+
+	.menu-items-mobile.fs  ul{
+		padding:22vh 0 0 0;
+
+		.jumpnow_link a{
+			padding:0 !important;
+		}
+	}
 	.menu-items-mobile.fs li {
-		padding-top:15vh;
+		padding:0 0 10vh 0;
 	}
 }
 

@@ -4028,8 +4028,8 @@ body.sg .btn {
 
   /* line 569, ../sass/modules/_responsive.scss */
   #sec_about p {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 1.7em;
   }
 
   /* line 574, ../sass/modules/_responsive.scss */
@@ -5163,7 +5163,7 @@ body.sg .btn {
   /* line 1695, ../sass/modules/_responsive.scss */
   body.sg #sec_about p {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 1.7em;
   }
   /* line 1702, ../sass/modules/_responsive.scss */
   body.sg div#sec_competition:after {

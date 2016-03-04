@@ -1073,6 +1073,25 @@ div.contact_container h2 {
 		}
 	}
 }
+
+@media screen and (max-width:480px){
+	div#sec_events{
+		& .contact_container{
+			position: relative;
+			top: 0px;
+			margin-bottom:100px;
+		}
+	}
+}
+@media screen and (max-width:375px){
+	div#sec_events{
+		& .contact_container{
+			position: relative;
+			top: 0px;
+			margin-bottom:0px;
+		}
+	}
+}
 /******ADDED BY WALTER TO SHOW THE .nav_group********/
 @media screen and (max-width:768px) and (min-width:481px){
 	div.slide.team_details{ 
@@ -1091,6 +1110,7 @@ div.contact_container h2 {
 		bottom: -37px;
 	}
 }
+
 
 /****************    IPHONE 5, 6, 6+    ****************/
 

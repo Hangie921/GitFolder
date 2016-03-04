@@ -191,7 +191,8 @@ $(document).ready(function() {
 			animateAnchor:false,
 			controlArrows:false,
 			touchSensitivity:15,
-			responsiveWidth:990
+			responsiveWidth:990,
+			responsiveHeight:600
 
 		}); //end of the fullpageJS initial
 		resize();

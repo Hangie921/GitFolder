@@ -2,11 +2,18 @@
 
 //########## TABLET LANDSCAPE ########################//
 
-@media screen and (max-width:1024px) and (min-width:991px) {
-	
-	
+@media screen 
+and (max-width:1024px) 
+and (min-width:991px) {
 
-//######### PRIZE ##############//
+	.event_group {
+		.event_single {
+			.event_single_rotate div {
+				height: 25vw;
+			}
+		}
+	}
+	
 
 
 
@@ -67,6 +74,7 @@ div.slide.team_details  {
 .event_tw_comingsoon {
 	h3 {
 		font-size: 24px;
+
 	}
 }
 
@@ -241,9 +249,6 @@ div.sponsor-group ul.sponsor-list.second li {
 
 //########### EVENT ####################/
 
-#sec_events {
-	padding:0 !important;
-}
 
 .contact_container {
 	span.input {
@@ -448,6 +453,23 @@ div.section#sec_jumpnow {
 
 
 }
+
+/******ADDED BY WALTER TO SHOW THE .nav_group********/
+
+
+/****************FOR THE STRAIGHT LINE IN THE #HOME SECTION ADDED BY WALTER******/
+
+@media screen 
+and (max-width:990px) 
+and (min-width:768px){
+
+	#sec_home::after{
+		top: 48%;
+	}
+
+	
+}
+
 /******************MOBILE************************/
 // Randy ipad
 @media screen and (max-width: 768px)
@@ -566,6 +588,9 @@ and (orientation : portrait) {
 		h4 {
 			font-size:41px;
 			padding:15px 0;
+		}
+		h5 {
+			padding-top:15px;
 		}
 	}
 	#competition_prize_slide  {
@@ -914,111 +939,127 @@ div.section#sec_jumpnow {
 
 
 
-//****************FOR COMPETITION MENU*********//
+	//****************FOR COMPETITION MENU*********//
 
-#competition_mobile_menu_container{
-	display:block;
-	position: absolute;
-	z-index:2;
-	background:$gray;
-	 width: 100%;
-	ul.competition-headings{
-	padding:0;
-	margin:0;
-	border-bottom: 1px solid $primary-color;
+	#competition_mobile_menu_container{
+		display:block;
+		position: absolute;
+		z-index:2;
+		background:$gray;
+		 width: 100%;
+		ul.competition-headings{
+		padding:0;
+		margin:0;
+		border-bottom: 1px solid $primary-color;
 
-	  a {
-	  	padding-top:20px;
-	  	height:100%;
-	  	display: block;
-	  	min-height: 60px;
-	  }
+		  a {
+		  	padding-top:20px;
+		  	height:100%;
+		  	display: block;
+		  	min-height: 60px;
+		  }
+		}
 	}
-}
-#competition_menu{
-	display:none;
-}
-
-#competition_mobile_menu_container.fixed{
-	position: fixed;
-	z-index: 2;
-	width:100%;
-	top:50px;
-	background:$gray;
-	ul.competition-headings{
-	padding:0;
-	margin:0;
+	#competition_menu{
+		display:none;
 	}
 
-}
+	#competition_mobile_menu_container.fixed{
+		position: fixed;
+		z-index: 2;
+		width:100%;
+		top:50px;
+		background:$gray;
+		ul.competition-headings{
+		padding:0;
+		margin:0;
+		}
 
-#sec_competition {
-	.fp-slide {
-		padding-top:60px;
 	}
-}
 
-.info_list ul li {
-	padding-left:0;
-}
-div.timeline ul{
-	li {
-		-webkit-box-shadow:none;
-		-moz-box-shadow:none;
-		-o-box-shadow:none;
-		-ms-box-shadow:none;
-		box-shadow:none;
-		margin-bottom:5px;
-		position:static;
-		bottom:0;
+	#sec_competition {
+		.fp-slide {
+			padding-top:60px;
+		}
+	}
 
-		&:hover {
-			margin:initial;
+	.info_list ul li {
+		padding-left:0;
+	}
+	div.timeline ul{
+		li {
 			-webkit-box-shadow:none;
 			-moz-box-shadow:none;
 			-o-box-shadow:none;
 			-ms-box-shadow:none;
 			box-shadow:none;
+			margin-bottom:5px;
 			position:static;
 			bottom:0;
+
+			&:hover {
+				margin:initial;
+				-webkit-box-shadow:none;
+				-moz-box-shadow:none;
+				-o-box-shadow:none;
+				-ms-box-shadow:none;
+				box-shadow:none;
+				position:static;
+				bottom:0;
+			}
 		}
 	}
-}
 
-//################ JUMPNOW #######################//
+	//################ JUMPNOW #######################//
 
-.jumpnow-des {
-	h3 {
-		text-align: center ;
+	.jumpnow-des {
+		h3 {
+			text-align: center ;
+		}
 	}
-}
-.jumpnow-btn-set {
-	margin-top:0;
-}
-ul.plan_list li{
-	text-align:center;
-}
-.jumpnow_part1 a.bizplan_download {
-	margin:0 auto 15px;
-	display:block;
-	float:none;
-}
+	.jumpnow-btn-set {
+		margin-top:0;
+	}
+	ul.plan_list li{
+		text-align:center;
+	}
+	.jumpnow_part1 a.bizplan_download {
+		margin:0 auto 15px;
+		display:block;
+		float:none;
+	}
 
-//############# Event #########################//
-div#sec_events {
-	padding-top:$mob-sec-pad;
-}
+	//############# Event #########################//
+	div#sec_events {
+		padding-top:$mob-sec-pad;
+	}
+	//EVENT BOX
+	.event_group {
+		.event_single {
+			.event_single_rotate div {
+				height: 20vh;
+			}
+		}
 
-//######## CONTACT #####################//
-div.contact_container h2 {
-	width:auto;
-}
+		.event_tw_comingsoon,.event_tw_comingsoon {
+			h3 {
+				margin-top:5vh;
+			}
+		}
+	}
+
+	//######## CONTACT #####################//
+	div.contact_container h2 {
+		width:auto;
+	}
 
 
 }//end of the <768 @media
 
 
-@media screen and (max-width:768px) and (min-width:489px) {
+@media screen and (max-width:768px) 
+and (min-width:489px) {
+
  div.sponsor-group {
 	ul.sponsor-list {
 		li {
@@ -1030,7 +1071,7 @@ div.contact_container h2 {
 	}
 }
 
-<<<<<<< HEAD
+
 @media screen and (max-width:400px)  {
  #competition_mobile_menu_container ul.competition-headings a {
  	font-size:13px;
@@ -1038,13 +1079,39 @@ div.contact_container h2 {
 }
 
 
-=======
+
 
 /******ADD BY WALTER TO SHOW THE .nav_group********/
-@media screen and (max-width:768px){
+@media screen 
+and (max-width:768px){
+
+	.team_details, .personal_details {
+		.slide-inner {
+			margin:0 auto 50px;
+		}
+
+		.nav_group {
+			bottom:-107px;
+		}
+	}
 	
 }
-@media screen and (max-width:768px) and (min-width:481px){
+
+@media screen 
+and (max-width:768px) 
+and (min-width:481px){
+
+	//JUMPNOW LIST
+	ul.plan_list {
+		max-width: 40%;
+		min-width: 300px;
+    	margin: 0 auto;
+
+    	li {
+    		text-align: left;
+    	}
+	}
+
 	div.slide.team_details{ 
 		padding:2.2% 0% 2.2% 0%;
 	}
@@ -1052,14 +1119,49 @@ div.contact_container h2 {
 		bottom:-42px;
 	}
 }
-@media screen and (max-width:480px){
+
+@media screen 
+and (max-width:480px){
+
+	//JUMPNOW LIST
+	ul.plan_list {
+		
+		width:auto;
+
+    	li {
+    		text-align: left;
+    	}
+	}
 	
 	div.slide.team_details{
-		padding:2.2% 0% 5% 0%;
+		padding:2.2% 0% 90px 0%;
 	}
 	div.nav_group{
 		bottom: -37px;
 	}
+
+	//EVENT BOX
+	.event_group {
+		.event_single {
+			margin-bottom:30px;
+			min-height: 40vh;
+			.event_single_rotate {
+				height:auto;
+				div {
+					height: 40vh;
+				}
+			}
+		}
+
+		.event_tw_comingsoon,.event_tw_comingsoon {
+			h3 {
+				margin-top:12vh;
+			}
+		}
+		
+	}
+
+
 }
 
 /****************    IPHONE 5, 6, 6+    ****************/
@@ -1104,13 +1206,14 @@ and (orientation : portrait) {
 
 				font-size:40px;//RK
 				font-weight: 800;
-				line-height: 50px;
+				line-height: 1.2em;
 				letter-spacing: 3px;
 				text-align:center;
 
 				span {
 					font-size: 27px;//RK
 					letter-spacing: 3px;
+					line-height: 1.2em;
 				}
 			}
 
@@ -1289,6 +1392,7 @@ and (orientation : landscape) {
 		h4 {
 			font-size:35px;
 			padding:15px 0;
+			text-align: left;
 
 			span{
 				font-size: 30px;
@@ -1556,6 +1660,8 @@ and (orientation : portrait) { /* STYLES GO HERE */
 			ul{
 				li{
 					font-size: 14px;
+				    margin-bottom: 10px;
+				    line-height: 1.7em;
 				}
 			}
 		}
@@ -1804,7 +1910,7 @@ and (orientation : landscape) {
 			}
 		}
 	//SG END
-/* STYLES GO HERE */
+
 #competition_prize_slide  {
 
 	.prize-single {
@@ -1845,14 +1951,4 @@ and (orientation : landscape) {
 
 
 
-/******ADDED BY WALTER TO SHOW THE .nav_group********/
 
-
-/****************FOR THE STRAIGHT LINE IN THE #HOME SECTION ADDED BY WALTER******/
-
-@media screen and (max-width:990px) and (min-width:769px){
-	#sec_home::after{
-		top: 48%;
-	}
-}
->>>>>>> origin/master

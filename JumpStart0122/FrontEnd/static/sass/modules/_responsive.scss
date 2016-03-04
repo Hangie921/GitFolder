@@ -628,6 +628,28 @@ div.timeline {
    margin:0;
 }
 
+body.sg #sec_competition{
+	padding-bottom: 0 !Important ; //by Walter
+	& #competition_topic_slide{
+		& .border_container{
+			& .straight_line{
+				top:-450px;
+				left: 50%;
+				width: 1px;
+				background-color:$primary-color;
+				display: block;
+			}
+			& .straight_line_down{
+				top: 100%;
+				left: 50%;
+				width: 1px;
+				background-color:$primary-color;
+				display: block;
+				height: 450px;
+			}
+		}
+	}
+}
 /**SPONSORSS*****/
 div.sponsor-group li span {
     opacity: 0;
@@ -1027,10 +1049,14 @@ div.contact_container h2 {
 }
 
 
-/******ADD BY WALTER TO SHOW THE .nav_group********/
+/******ADDED BY WALTER TO ADJUST THE CONTACT FORM**/
 @media screen and (max-width:768px){
-	
+	div#sec_events{
+		height:initial !important;
+
+	}
 }
+/******ADDED BY WALTER TO SHOW THE .nav_group********/
 @media screen and (max-width:768px) and (min-width:481px){
 	div.slide.team_details{ 
 		padding:2.2% 0% 2.2% 0%;

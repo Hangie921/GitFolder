@@ -280,7 +280,7 @@ $(document).ready(function() {
 		// 	}
 		// });
 	}else if(ww<=768 && ww >480){
-		$('.contact_container').css('bottom',contact_height*-1.1);
+		// $('.contact_container').css('bottom',contact_height*-1.1);
 		console.log(ww);
 	}
 	

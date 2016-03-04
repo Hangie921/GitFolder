@@ -1197,6 +1197,7 @@ and (max-width:480px){
 //Randy 04032016 for i6+ portrait
 @media only screen 
 and (max-width : 414px) 
+and (min-width : 376px)
 and (orientation : portrait) { 
 	//SG
 	body.sg {
@@ -1204,7 +1205,10 @@ and (orientation : portrait) {
 		font-size: 16px;
 	    line-height: 24px;
 				
-
+		//########### home middle line ######/
+		div#sec_home:after{
+			top:56%;
+		}
 
 		//########### SG Home BG Start ###########//
 		.sg_bg {
@@ -1502,12 +1506,11 @@ and (orientation : landscape) {
 
 
 //Randy 04032016 for i6 portrait
-@media screen and (max-width:375px)
+@media screen 
+and (max-width:375px)
+and (min-width:321px)
 and (orientation : portrait){
 	
-	.sg div#sec_home::after{
-		top: 60%;
-	}
 
 
 	//########### Competition ##############//
@@ -1587,7 +1590,10 @@ and (orientation : portrait){
 	.sloganContainer {
 		background-size: 80% auto;
 	}
-
+	//################ contact_container ##########//
+	div.contact_container{
+		margin-bottom:100px;
+	}
 
 }
 
@@ -1646,6 +1652,7 @@ and (orientation : landscape) {
 //Randy 04032016 for i5 portrait
 @media only screen 
 and (min-width : 320px) 
+and (max-width : 374px)
 and (orientation : portrait) { /* STYLES GO HERE */ 
 	
 	//SG
@@ -1841,6 +1848,12 @@ and (orientation : portrait) { /* STYLES GO HERE */
 		line-height: 25px;
 	}
 
+
+
+	//************SG contacnt_container ********//
+	div.contact_container{
+		margin-bottom:0px;
+	}
 
 }
 //Randy 04032016 for i5 landscape

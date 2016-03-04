@@ -12,7 +12,10 @@ function resize(){
 
 $(window).resize(function(){
 	resize();
-	location.reload();
+
+	if(ww>990){
+		location.reload();	
+	}
 });
 
 

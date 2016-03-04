@@ -488,10 +488,42 @@ and (min-width:768px){
 }
 
 /******************MOBILE************************/
+
+
+
+
 // Randy ipad
 @media screen and (max-width: 768px)
 and (orientation : portrait) {
+
 	
+	//********* for Contact form ******///
+
+	div.contact_container{
+		margin-bottom: 450px;
+		bottom:-131%;
+	}
+	//********* for Contact form end ******///
+
+
+	//********* middle line ******////
+	div#sec_competition::after{
+		height: 100%;
+		top: 0;
+	}
+	div#sec_home::after{
+		top: 60%;
+	}
+	//********* middle line end ******////
+
+	//********* arrow ******////
+	div#sec_competition{
+		& .arrow{
+			display:none;
+		}
+	}
+	//********* arrow ******////
+
 	body {
 		font-size: 16px;
 		line-height: 22px;
@@ -551,6 +583,8 @@ and (orientation : portrait) {
 	a.imready {
 		float:none;
 	}
+
+	
 
 
 	.sloganContainer {
@@ -689,9 +723,16 @@ ul.sponsor-list li {
 	}
 
 	
+	//******** for middle line
+	.sg div#sec_home::after{
+		top: 60%;
+	}
+	.sg div#sec_competition::after{
+		height: 100%;
+		top: 0;
+	}
 
 
-	
 
 }
 
@@ -775,9 +816,6 @@ div.contact_container {
 #sec_home:after{
 	height: 80%;
 	top: 60%;
-}
-.sg #sec_home::after{
-	top: 70%;
 }
 #sec_home.timeLineAni:after{
 	@include animation(none);
@@ -1050,6 +1088,9 @@ div.section#sec_jumpnow {
 	//############# Event #########################//
 	div#sec_events {
 		padding-top:$mob-sec-pad;
+		& .event_group{
+			text-align: center;
+		}
 	}
 	//EVENT BOX
 	.event_group {
@@ -1066,6 +1107,8 @@ div.section#sec_jumpnow {
 		}
 	}
 
+
+
 	//######## CONTACT #####################//
 	div.contact_container h2 {
 		width:auto;
@@ -1073,6 +1116,8 @@ div.section#sec_jumpnow {
 
 
 }//end of the <768 @media
+
+
 
 
 @media screen and (max-width:768px) 
@@ -1203,12 +1248,18 @@ and (max-width:480px){
 
 }
 
+
+
+
+
+
+
 /****************    IPHONE 5, 6, 6+    ****************/
 
 //Randy 04032016 for i6+ portrait
 @media only screen 
-and (max-width : 414px) 
-and (min-width : 376px)
+and (max-width : 567px) 
+and (min-width : 414px)
 and (orientation : portrait) { 
 	//SG
 	body.sg {
@@ -1438,7 +1489,8 @@ and (orientation : portrait) {
 
 //Randy 04032016 for i6+ landscape
 @media only screen 
-and (max-width : 736px) 
+and (min-width : 736px)
+and (max-width : 767px) 
 and (orientation : landscape) { 
 
 	//************SG #home middle line ********//
@@ -1536,8 +1588,8 @@ and (orientation : landscape) {
 
 //Randy 04032016 for i6 portrait
 @media screen 
-and (max-width:375px)
-and (min-width:321px)
+and (max-width:413px)
+and (min-width:375px)
 and (orientation : portrait){
 	
 
@@ -1628,7 +1680,8 @@ and (orientation : portrait){
 
 //Randy 04032016 for i6 landscape
 @media only screen 
-and (max-width : 667px) 
+and (min-width : 667px)
+and (max-width : 735px) 
 and (orientation : landscape) {
 
 
@@ -1638,7 +1691,7 @@ and (orientation : landscape) {
 //****** SG to avoid section hidden while landscape
 
 div#sec_competition{
-	min-height:510px;
+	min-height:580px;
 }
 div#sec_jumpnow{
 	min-height:650px;
@@ -1652,6 +1705,16 @@ div#sec_events{
 	#sec_home:after{
 		top:55%;	
 	}
+	
+	#sec_about::after{
+		height: 100%;
+		top: 0;
+	}
+	#sec_competition::after{
+		height: 100%;
+		top: 0;
+	}
+
 
 #competition_prize_slide  {
 
@@ -1757,7 +1820,9 @@ and (orientation : portrait) { /* STYLES GO HERE */
 			height: 100%;
 			top: 0;
 		}
-
+		div#sec_home::after{
+			top: 70%;
+		}
 		ul.competition-headings a {
 			letter-spacing:2px;
 			font-weight:600;
@@ -1899,7 +1964,8 @@ and (orientation : portrait) { /* STYLES GO HERE */
 }
 //Randy 04032016 for i5 landscape
 @media only screen 
-and (max-width : 568px) 
+and (min-width : 568px)
+and (max-width : 666px) 
 and (orientation : landscape) {
 
 	//SG
@@ -1908,9 +1974,19 @@ and (orientation : landscape) {
 		font-size: 16px;
 	    line-height: 24px;
 		//************SG #home middle line ********//
-		#sec_home:after{
+		#sec_home::after{
 			top:55%;	
 		}
+		//************SG #about middle line ********//
+		#sec_about::after{
+			top: 0;
+			height: 100%;	
+		}
+		#sec_competition::after{
+			height: 100%;
+			top: 0;
+		}
+
 
 		//########### SG Home BG Start ###########//
 		.sg_bg {
@@ -1972,7 +2048,7 @@ and (orientation : landscape) {
 		//########### SG Home Slogan End ###########//
 
 		#sec_about p{
-			font-size:15px;
+			font-size:15px !important;
 			line-height: 20px;
 		}
 

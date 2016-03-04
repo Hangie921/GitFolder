@@ -1505,11 +1505,16 @@ and (orientation : landscape) {
 @media screen and (max-width:375px)
 and (orientation : portrait){
 	
+	.sg div#sec_home::after{
+		top: 60%;
+	}
+
+
 	//########### Competition ##############//
-		div#sec_competition:after{
-			height: 100%;
-			top: 0;
-		}
+	div#sec_competition:after{
+		height: 100%;
+		top: 0;
+	}
 
 
 

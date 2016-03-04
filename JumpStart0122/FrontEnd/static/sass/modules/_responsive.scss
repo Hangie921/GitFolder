@@ -175,8 +175,10 @@ div.slide.team_details  {
     padding-top: 10%;
     display: block;
     width: 100%;
+    padding: 25vw 0 0 0;
 
     a {
+
     	font-size:30px !important;
     	font-weight:bold !important;
     }
@@ -204,7 +206,7 @@ ul.menu {
 	min-width: initial;
     float: none;
 	li {
-	padding: 25vw 0 0 0;
+	
 	text-align:center;
 	margin:0 !important;
 	}
@@ -953,6 +955,7 @@ div.section#sec_jumpnow {
 		border-bottom: 1px solid $primary-color;
 
 		  a {
+
 		  	padding-top:20px;
 		  	height:100%;
 		  	display: block;
@@ -1021,7 +1024,7 @@ div.section#sec_jumpnow {
 		margin-top:0;
 	}
 	ul.plan_list li{
-		text-align:center;
+		text-align:left;
 	}
 	.jumpnow_part1 a.bizplan_download {
 		margin:0 auto 15px;
@@ -1069,9 +1072,19 @@ and (min-width:489px) {
 	}
 
 	}
-}
 
 
+	#competition_mobile_menu_container{
+		
+		ul.competition-headings{
+		
+
+		  a {
+		  	line-height: 37px;
+		  }
+		}
+	}
+} // 768px - 489 px ends
 @media screen and (max-width:400px)  {
  #competition_mobile_menu_container ul.competition-headings a {
  	font-size:13px;
@@ -1104,7 +1117,7 @@ and (min-width:481px){
 	//JUMPNOW LIST
 	ul.plan_list {
 		max-width: 40%;
-		min-width: 300px;
+		min-width: 270px;
     	margin: 0 auto;
 
     	li {
@@ -1247,6 +1260,7 @@ and (orientation : portrait) {
 		ul.competition-headings a {
 			letter-spacing:2px;
 			font-weight:600;
+
 		}
 
 		div.competition_topic {
@@ -1288,7 +1302,7 @@ and (orientation : portrait) {
 			}
 			ul{
 				li{
-					font-size: 20px;
+					font-size: 15px;
 					line-height: 35px;
 				}
 			}
@@ -1948,7 +1962,25 @@ and (orientation : landscape) {
 
 }
 
+@media only screen 
+and (max-width : 480px) 
+and (min-width : 321px) 
+and (orientation : portrait) {
 
+	#competition_mobile_menu_container ul.competition-headings a {
+		line-height: 37px;
+	}
+
+
+
+}
+
+@media only screen 
+and (orientation:landscape) {
+	.menu-items-mobile.fs li {
+		padding-top:15vh;
+	}
+}
 
 
 

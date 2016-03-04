@@ -138,8 +138,8 @@ $(document).ready(function() {
 						case 0:
 						break;
 						case 1:
-							var height = $('.team_details .slide-inner').height();
-							$('.team_details .slide-inner').height(height);
+							var height = $('.team_details .slide-inner .border_container').height();
+							$('.team_details .slide-inner .border_container').height(height);
 							if(!$('.team_details .slide-inner .border_container').hasClass('borderRightAni')){
 								$('.team_details .slide-inner .border_container').addClass('borderRightAni');
 							}
@@ -208,7 +208,8 @@ $(document).ready(function() {
 	//add and delete the member input field dynamically with the btn clicked
 	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><button id='del_member' class='button del_btn'></button></div>";
 	var mem_counter = 1;
-	var original_height = $("#sec_jumpnow .team_details .slide-inner").height();
+	var original_height = $("#sec_jumpnow .team_details .slide-inner .border_container").height();
+	var single_height = $("#sec_jumpnow .team_details .team_detail_single").innerHeight();
 	$('#add_member').click(function(event){
 
 			event.preventDefault();
@@ -220,13 +221,15 @@ $(document).ready(function() {
 				event.preventDefault();
 				$(this).parent().remove();
 				mem_counter = mem_counter - 1;
+
 				if(mem_counter!=5){
 					$('#add_member').show();
-				}else if(mem_counter == 1){
-					$("#sec_jumpnow .team_details .slide-inner").height(original_height);
 				}
-				if(ww<=990){
-					$("#sec_jumpnow .team_details .slide-inner").height($("#sec_jumpnow .team_details .slide-inner .border_container").height());
+				if(ww<=990 && mem_counter ==1 ){
+					$("#sec_jumpnow .team_details .slide-inner .border_container").height(original_height);
+					
+				}else if(ww<= 990 && mem_counter!=1){
+					$("#sec_jumpnow .team_details .slide-inner .border_container").height($("#sec_jumpnow .team_details .slide-inner .border_container").height()-single_height);
 				}
 			});	
 
@@ -245,9 +248,9 @@ $(document).ready(function() {
 			}
 
 			if(ww<=990){
-				$("#sec_jumpnow .team_details .slide-inner").height($("#sec_jumpnow .team_details .slide-inner .border_container").height());
+				$("#sec_jumpnow .team_details .slide-inner .border_container").height($("#sec_jumpnow .team_details .slide-inner .border_container").height()+single_height);
 			}
-
+			
 		
 	}); //end of the #add_member clicked
 	

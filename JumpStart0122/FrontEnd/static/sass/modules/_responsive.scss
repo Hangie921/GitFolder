@@ -1203,6 +1203,7 @@ and (orientation : portrait) {
 		letter-spacing:initial;
 		font-size: 16px;
 	    line-height: 24px;
+		
 
 
 		//########### SG Home BG Start ###########//
@@ -1416,6 +1417,12 @@ and (orientation : portrait) {
 @media only screen 
 and (max-width : 736px) 
 and (orientation : landscape) { 
+
+	//************SG #home middle line ********//
+	#sec_home:after{
+		top:55%;	
+	}
+
 	div.competition_topic {
 		font-size: 15px;
 		h4 {
@@ -1479,6 +1486,14 @@ and (orientation : landscape) {
 		font-size:20px;
 		line-height: 30px;
 	}
+	#sec_about:after{
+		top: 0;
+	}
+
+	#sec_competition:after{
+		height: 100%;
+		top: 0;
+	}
 }
 
 
@@ -1486,6 +1501,10 @@ and (orientation : landscape) {
 @media screen and (max-width:375px)
 and (orientation : portrait){
 	
+
+
+
+
 	div.slide.team_details{
 		padding:2.2% 0% 5% 0%;
 	}
@@ -1563,7 +1582,16 @@ and (orientation : portrait){
 @media only screen 
 and (max-width : 667px) 
 and (orientation : landscape) {
+
+
 /* STYLES GO HERE */
+
+
+//************SG #home middle line ********//
+	#sec_home:after{
+		top:55%;	
+	}
+
 #competition_prize_slide  {
 
 	.prize-single {
@@ -1807,7 +1835,10 @@ and (orientation : landscape) {
 		letter-spacing:initial;
 		font-size: 16px;
 	    line-height: 24px;
-
+		//************SG #home middle line ********//
+		#sec_home:after{
+			top:55%;	
+		}
 
 		//########### SG Home BG Start ###########//
 		.sg_bg {

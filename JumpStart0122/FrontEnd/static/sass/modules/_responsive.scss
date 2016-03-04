@@ -1099,6 +1099,11 @@ and (min-width:489px) {
 		  }
 		}
 	}
+
+	.event_single {
+		width:70%;
+		margin:0 auto;
+	}
 } // 768px - 489 px ends
 @media screen and (max-width:400px)  {
  #competition_mobile_menu_container ul.competition-headings a {
@@ -1128,6 +1133,12 @@ and (max-width:768px){
 @media screen 
 and (max-width:768px) 
 and (min-width:481px){
+
+	//ABOUT TEXT
+	body.sg #sec_about p {
+    font-size: 20px !important;
+    line-height: 1.7em;
+	}
 
 	//JUMPNOW LIST
 	ul.plan_list {

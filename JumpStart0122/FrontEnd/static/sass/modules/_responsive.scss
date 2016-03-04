@@ -1287,7 +1287,7 @@ and (orientation : portrait) {
 		}
 
 		//########### Competition ##############//
-		div#sec_competition:after{
+		div#sec_competition::after{
 			height: 100%;
 			top: 0;
 		}
@@ -1529,7 +1529,7 @@ and (orientation : portrait){
 
 
 	//########### Competition ##############//
-	div#sec_competition:after{
+	div#sec_competition::after{
 		height: 100%;
 		top: 0;
 	}
@@ -1726,7 +1726,7 @@ and (orientation : portrait) { /* STYLES GO HERE */
 
 		//########### Competition ##############//
 		
-		div#sec_competition:after{
+		div#sec_competition::after{
 			height: 100%;
 			top: 0;
 		}

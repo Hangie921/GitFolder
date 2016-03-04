@@ -12,6 +12,7 @@ function resize(){
 
 $(window).resize(function(){
 	resize();
+	location.reload();
 });
 
 

@@ -40,7 +40,6 @@ function revealOnScroll(){
 
 		if(scrolled == offsetTop){
 			var sec = current.attr("data-anchor");
-			console.log(sec);
 			$(".menu-items-mobile ul li").removeClass("active");
 			$(".menu-items-mobile ul li[data-menuahcnor='"+sec+"']").addClass("active");
 		}

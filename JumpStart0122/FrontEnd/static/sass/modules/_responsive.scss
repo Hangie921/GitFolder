@@ -1517,6 +1517,20 @@ and (orientation : landscape) {
 		height: 100%;
 		top: 0;
 	}
+
+
+
+	//****** SG to avoid section hidden while landscape
+
+	div#sec_competition{
+		min-height:530px;
+	}
+	div#sec_jumpnow{
+		min-height:650px;
+	}
+	div#sec_events{
+		padding-top: 50px;
+	}
 }
 
 
@@ -1619,6 +1633,19 @@ and (orientation : landscape) {
 
 
 /* STYLES GO HERE */
+
+
+//****** SG to avoid section hidden while landscape
+
+div#sec_competition{
+	min-height:510px;
+}
+div#sec_jumpnow{
+	min-height:650px;
+}
+div#sec_events{
+	padding-top: 50px;
+}
 
 
 //************SG #home middle line ********//
@@ -1762,7 +1789,6 @@ and (orientation : portrait) { /* STYLES GO HERE */
 				}
 			}
 		}
-
 
 
 		//###### Jumpnow home ###########//
@@ -1981,7 +2007,18 @@ and (orientation : landscape) {
 				}
 			}
 		}
+		//###### Competition slides ###########//
+		div#sec_competition{
+			min-height:500px;
+		}
+		div#sec_jumpnow{
+			min-height:650px;
+		}
 
+		//###### Events ######//
+		div#sec_events{
+			padding-top: 45px;
+		}
 
 		//###### Jumpnow home ###########//
 		.jumpnow-des h3 {

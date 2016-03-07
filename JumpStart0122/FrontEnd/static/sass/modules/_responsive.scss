@@ -499,7 +499,7 @@ and (orientation : portrait) {
 	
 	//********* for Contact form ******///
 
-	div.contact_container{
+	body.sg div.contact_container{
 		margin-bottom: 121px;
 		
 	}
@@ -1594,7 +1594,7 @@ and (orientation : portrait) {
 		line-height: 30px;
 	}
 
-	#sec_events .contact_container{
+	body.sg #sec_events .contact_container{
 		margin-bottom: 0px;
 	}
  }
@@ -1784,7 +1784,7 @@ and (orientation : portrait){
 		background-size: 80% auto;
 	}
 	//################ contact_container ##########//
-	div.contact_container{
+	body.sg div.contact_container{
 		margin-bottom:0px;
 	}
 
@@ -2069,7 +2069,7 @@ and (orientation : portrait) { /* STYLES GO HERE */
 
 
 	//************SG contacnt_container ********//
-	div.contact_container{
+	body.sg div.contact_container{
 		margin-bottom:0px;
 	}
 

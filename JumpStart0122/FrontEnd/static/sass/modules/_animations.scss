@@ -321,7 +321,7 @@ div.borderRightAni{
 #border_btn.borderRightAni{
 	position: relative;
 	z-index: -5;
-	left:-25.3%;
+	left:-16px;
 	height: 100%;
 	& .horizon_line{
 		background-color:$primary-color;
@@ -361,11 +361,11 @@ div.borderRightAni{
 /********keyframes for the button*****/
 @keyframes horiLineBtn{
 	0%{width:0px;}
-	100%{width:900px;}
+	100%{width:1200px;}
 }
 @keyframes horiLineBtn_sg{
 	0%{width:0px;}
-	100%{width:150px;}
+	100%{width:1800px;}
 }
 
 

@@ -773,6 +773,7 @@ div.timeline {
 	float:left;
 	position:relative;
 	margin-top:70px;
+	margin-left: 100px; //by Walter
 	@include orange-border;
 	min-width:240px;
 	font-size:18px;
@@ -839,6 +840,7 @@ div.timeline {
 
 .imready {
 	margin-top:10px;
+	margin-left: 100px; //By Walter
 }
 /***FORMS*****/
 
@@ -884,6 +886,16 @@ div.timeline {
 	width:100px;
 	clear:none !important;
 }
+body.sg #sec_jumpnow{
+	.jumpnow_part1{
+		.jumpnow-btn-set{
+			a.btn{
+				margin-left: 150px;
+			}
+		}
+	}
+}
+
 /*****Event Section**********/
 div#sec_events{
 	background:#fbfbfb;

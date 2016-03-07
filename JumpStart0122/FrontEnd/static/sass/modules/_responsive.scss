@@ -126,6 +126,10 @@ div.slide.team_details  {
 	    }
 	}
 
+	#competition_menu {
+   		display: none; // By Walter
+	}
+
 //############### MOBILE MENU #####################//
 
 	.menu-mobile {
@@ -254,6 +258,17 @@ ul.menu {
 
 //######## COMPETITION ############//
 
+
+//######## JUMPNOW ############//
+body div#sec_jumpnow{
+	div.jumpnow_part1{
+		div.jumpnow-btn-set{
+			#sg_download_btn,#sg_connect_btn{
+				margin-left: 0;
+			}
+		}
+	}
+}
 
 
 //######## SPONSOR ###############//
@@ -500,7 +515,7 @@ and (orientation : portrait) {
 	//********* for Contact form ******///
 
 	body.sg div.contact_container{
-		margin-bottom: 121px;
+		margin-bottom: 450px;
 		
 	}
 	//********* for Contact form end ******///
@@ -1596,7 +1611,7 @@ and (orientation : portrait) {
 	
 	//################ SG contact_container ##########//	
 	body.sg #sec_events .contact_container{
-		margin-bottom: 0px;
+		margin-bottom: 150px;
 	}
 
 	//################ TW contact_container ##########//
@@ -1720,6 +1735,12 @@ and (orientation : landscape) {
 	div#sec_events{
 		padding-top: 50px;
 	}
+
+	// body #sec_competition{
+	// 		#competition_menu{
+	// 			display:none;
+	// 		}
+	// }
 }
 
 
@@ -1810,7 +1831,7 @@ and (orientation : portrait){
 	}
 	//################ SG contact_container ##########//
 	body.sg div.contact_container{
-		margin-bottom:0px;
+		margin-bottom:100px;
 	}
 	//################ TW contact_container ##########//
 	div.contact_container{
@@ -1927,6 +1948,12 @@ body.sg div#sec_events{
 	div#sec_events{
 		padding-top: 50px;
 	}
+
+	body #sec_competition{
+			#competition_menu{
+				display:none;
+			}
+	}
 }
 
 
@@ -2042,6 +2069,7 @@ and (orientation : portrait) { /* STYLES GO HERE */
 			}
 		}
 
+
 		//###### EVENT SINGLE ###########//
 		.event_single {
 
@@ -2155,6 +2183,13 @@ and (orientation : landscape) {
 			margin-bottom: 50px;
 		}
 	}
+	
+	body #sec_competition{
+			#competition_menu{
+				display:none;
+			}
+	}
+
 
 	body.sg div#sec_about{
 		.border_container{
@@ -2407,9 +2442,6 @@ and (orientation:landscape) {
 	}
 	.menu-items-mobile.fs li {
 		padding:0 0 10vh 0;
-	}
-	#competition_menu {
-    display: none;
 	}
 }
 

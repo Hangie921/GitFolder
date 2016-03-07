@@ -15,6 +15,8 @@ $(window).resize(function(){
 
 	if(ww>990){
 		location.reload();	
+	}else if(wh<=768 && ww>=1024){ // for iPad
+		location.reload();	
 	}
 });
 
@@ -263,7 +265,22 @@ $(document).ready(function() {
 	//the contact form ani,to show or hide the contact form
 	var down = true;
 	var contact_height = $('.contact_container').innerHeight();
-	if(ww>990){
+	if(ww>990 && wh<=768){
+		$('.contact_container').css('bottom',contact_height*-0.35);
+		$('.contact_header').click(function(){
+			if(down){
+				$(this).parent().animate({'bottom':contact_height*0.4},1000);
+				$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
+				down = false;
+				// alert('if '+ down)
+			}else{
+				$(this).parent().animate({'bottom':contact_height*-0.35},1000);
+				$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
+				down = true;
+			}
+		});
+		
+	}else if(ww>990){
 		console.log(ww);
 		$('.contact_container').css('bottom',contact_height*-0.8);
 		$('.contact_header').click(function(){
@@ -278,6 +295,7 @@ $(document).ready(function() {
 				down = true;
 			}
 		});
+		
 	}else if(ww<=990 && ww>768 ){
 		console.log(ww);
 		$('.contact_container').css('top','350px');
@@ -300,7 +318,7 @@ $(document).ready(function() {
 
 	//for SG connect btn
 
-	$('#connect_btn').click(function(){
+	$('#sg_connect_btn').click(function(){
 		console.log('connect_btn');
 		console.log(ww);
 		if(ww>990){

@@ -3712,7 +3712,7 @@ body.sg .btn {
 
   /* line 266, ../sass/modules/_responsive.scss */
   body div#sec_jumpnow div.jumpnow_part1 div.jumpnow-btn-set #sg_download_btn, body div#sec_jumpnow div.jumpnow_part1 div.jumpnow-btn-set #sg_connect_btn {
-    margin-left: 0;
+    margin-left: auto;
   }
 
   /* line 276, ../sass/modules/_responsive.scss */

@@ -1833,7 +1833,7 @@ and (orientation : portrait){
 		margin-bottom:0px;
 	}
 	//################ TW contact_container ##########//
-	div.contact_container{
+	body #sec_events div.contact_container{
 		margin-bottom:0px
 	}
 
@@ -2095,6 +2095,9 @@ and (orientation : portrait) { /* STYLES GO HERE */
 		//************SG contacnt_container ********//
 		body.sg div.contact_container{
 			margin-bottom:0px;
+		}
+		body div.contact_container{
+			margin-bottom: 0px;
 		}
 	//******************** SG END **********************
 	

@@ -514,9 +514,8 @@ and (orientation : portrait) {
 	
 	//********* for Contact form ******///
 
-	body.sg div.contact_container{
-		margin-bottom: 450px;
-		
+	body div.contact_container{
+		margin-bottom: 100px;
 	}
 	//********* for Contact form end ******///
 
@@ -1546,6 +1545,7 @@ and (orientation : portrait) {
 			}
 		}
 	//SG END
+
 	div.competition_topic {
 		font-size: 17px;
 		h4 {
@@ -1608,16 +1608,15 @@ and (orientation : portrait) {
 		font-size:20px;
 		line-height: 30px;
 	}
-	
-	//################ SG contact_container ##########//	
-	body.sg #sec_events .contact_container{
-		margin-bottom: 150px;
-	}
 
 	//################ TW contact_container ##########//
-	div.contact_container{
-		margin-bottom:150px
+	body div#sec_events .contact_container{
+		margin-bottom:0px
 	}
+	body.sg div#sec_events .contact_container{
+		margin-bottom:0px	
+	}
+
  }
 
 //Randy 04032016 for i6+ landscape
@@ -1831,11 +1830,11 @@ and (orientation : portrait){
 	}
 	//################ SG contact_container ##########//
 	body.sg div.contact_container{
-		margin-bottom:100px;
+		margin-bottom:0px;
 	}
 	//################ TW contact_container ##########//
 	div.contact_container{
-		margin-bottom:100px
+		margin-bottom:0px
 	}
 
 

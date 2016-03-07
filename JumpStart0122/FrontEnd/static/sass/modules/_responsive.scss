@@ -1593,9 +1593,15 @@ and (orientation : portrait) {
 		font-size:20px;
 		line-height: 30px;
 	}
-
+	
+	//################ SG contact_container ##########//	
 	body.sg #sec_events .contact_container{
 		margin-bottom: 0px;
+	}
+
+	//################ TW contact_container ##########//
+	div.contact_container{
+		margin-bottom:150px
 	}
  }
 
@@ -1686,12 +1692,31 @@ and (orientation : landscape) {
 
 	//****** SG to avoid section hidden while landscape
 
-	div#sec_competition{
+	body.sg div#sec_competition{
 		min-height:530px;
 	}
-	div#sec_jumpnow{
+	body.sg div#sec_jumpnow{
 		min-height:650px;
 	}
+	body.sg div#sec_events{
+		padding-top: 50px;
+	}
+
+	/********** TW sections min-height *******/
+
+	div#sec_competition{
+		.fp-slides{
+			min-height:700px;	
+		}
+		
+	}
+	div#sec_jumpnow{
+		.fp-slides{
+			min-height:800px;	
+		}
+		
+	}
+	
 	div#sec_events{
 		padding-top: 50px;
 	}
@@ -1783,10 +1808,15 @@ and (orientation : portrait){
 	.sloganContainer {
 		background-size: 80% auto;
 	}
-	//################ contact_container ##########//
+	//################ SG contact_container ##########//
 	body.sg div.contact_container{
 		margin-bottom:0px;
 	}
+	//################ TW contact_container ##########//
+	div.contact_container{
+		margin-bottom:100px
+	}
+
 
 }
 
@@ -1802,13 +1832,13 @@ and (orientation : landscape) {
 
 //****** SG to avoid section hidden while landscape
 
-div#sec_competition{
+body.sg div#sec_competition{
 	min-height:580px;
 }
-div#sec_jumpnow{
+body.sg div#sec_jumpnow{
 	min-height:650px;
 }
-div#sec_events{
+body.sg div#sec_events{
 	padding-top: 50px;
 }
 
@@ -1863,6 +1893,24 @@ div#sec_events{
 
 	}
 
+/********** TW sections min-height *******/
+
+	div#sec_competition{
+		.fp-slides{
+			min-height:700px;	
+		}
+		
+	}
+	div#sec_jumpnow{
+		.fp-slides{
+			min-height:800px;	
+		}
+		
+	}
+	
+	div#sec_events{
+		padding-top: 50px;
+	}
 }
 
 
@@ -2000,7 +2048,12 @@ and (orientation : portrait) { /* STYLES GO HERE */
 			letter-spacing:2px;
 			}
 		}
-	//SG END
+
+		//************SG contacnt_container ********//
+		body.sg div.contact_container{
+			margin-bottom:0px;
+		}
+	//******************** SG END **********************
 	
 	div.slide.team_details{
 		padding:2.2% 0% 5% 0%;
@@ -2068,10 +2121,7 @@ and (orientation : portrait) { /* STYLES GO HERE */
 
 
 
-	//************SG contacnt_container ********//
-	body.sg div.contact_container{
-		margin-bottom:0px;
-	}
+	
 
 }
 //Randy 04032016 for i5 landscape
@@ -2241,6 +2291,25 @@ and (orientation : landscape) {
 			}
 		}
 	//SG END
+
+//*********** min-height for sections ********//
+
+div#sec_competition{
+	.fp-slides{
+		min-height:700px;	
+	}
+	
+}
+div#sec_jumpnow{
+	.fp-slides{
+		min-height:800px;
+	}
+}
+
+div#sec_home::after{
+		top: 55%;
+	}
+
 
 #competition_prize_slide  {
 

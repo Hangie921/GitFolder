@@ -286,7 +286,7 @@ div.sponsor-group ul.sponsor-list.second li {
 }
 #sec_home:after{
 	height: 55%;
-	top: 30%;
+	top: 55%;
 }
 #sec_home.timeLineAni:after{
 	@include animation(none);
@@ -1676,7 +1676,7 @@ and (orientation : landscape) {
 
 	}
 	#sec_about p{
-		font-size:20px;
+		font-size:20px !important;
 		line-height: 30px;
 	}
 	#sec_about:after{
@@ -1828,6 +1828,22 @@ and (orientation : landscape) {
 
 
 /* STYLES GO HERE */
+
+//########### About #########//
+	div#sec_about{
+		.border_container{
+			margin-bottom: 50px;
+		}
+	}
+	body div#sec_about{
+		.border_container{
+			.white-text {
+				font-size: 20px !important;
+			}
+		}
+	}
+
+
 
 
 //****** SG to avoid section hidden while landscape
@@ -2129,6 +2145,24 @@ and (orientation : portrait) { /* STYLES GO HERE */
 and (min-width : 568px)
 and (max-width : 666px) 
 and (orientation : landscape) {
+
+
+	body div#sec_about{
+		.border_container{
+			.white-text{
+				font-size: 20px !important;
+			}
+			margin-bottom: 50px;
+		}
+	}
+
+	body.sg div#sec_about{
+		.border_container{
+			.white-text{
+				font-size: 15px !important;
+			}
+		}
+	}
 
 	//SG
 	body.sg {

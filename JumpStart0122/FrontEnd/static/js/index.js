@@ -13,16 +13,12 @@ function resize(){
 
 $(window).resize(function(){
 	resize();
-	$.fn.fullpage.reBuild();
-	
 });
 
 
 
 $(document).ready(function() {
-	
-	
-	
+
 	//initial the fullpage with the rocket animation
     	$('#fullpage').fullpage({
 	    	menu:'#header',
@@ -263,7 +259,7 @@ $(document).ready(function() {
 	//the contact form ani,to show or hide the contact form
 	
 	var down = true;
-	var contact_height = $('.contact_container').innerHeight()-100;
+	var contact_height = $('.contact_container').innerHeight();
 	if(ww>990){
 		console.log(ww);
 		$('.contact_container').css('bottom',contact_height*-0.8);
@@ -606,12 +602,8 @@ $(document).ready(function() {
 	$(window).on("orientationchange",function(){
 		if(wh == 768 && ww == 1024){ // for iPad landscape
 			location.reload();
-			console.log("iPad landscape");
-			
 		}else if(wh == 1024 && ww == 768){
-
 			location.reload();
-			console.log("iPad portrait");
 		}
 	});
 

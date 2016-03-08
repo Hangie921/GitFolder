@@ -954,7 +954,7 @@ div#sec_competition .slide-inner {
 /********** Jump Now Section ********/
 /* line 199, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
-  background: #0e324b url(../img/tiles.png);
+  background: #0e324b url(../img/tiles.png) center center;
   background-size: 20% auto;
   -moz-background-size: 20% auto;
   -webkit-background-size: 20% auto;
@@ -3302,16 +3302,21 @@ header div {
 }
 /* line 13, ../sass/layouts/_header.scss */
 header a.navbar-brand {
-  font-family: "fatfrank", sen-serif;
   color: #f16b29;
   display: block;
   width: 220px;
   height: 50px;
   padding: 0;
   font-size: 35px;
-  margin: 20px 0;
+  text-indent: -9999px;
+  background: url(../img/jumpstart-logo.png) no-repeat top left;
+  background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  background-size: 100% auto;
 }
-/* line 25, ../sass/layouts/_header.scss */
+/* line 27, ../sass/layouts/_header.scss */
 header a {
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
@@ -3320,7 +3325,7 @@ header a {
   transition: all 1s;
 }
 
-/* line 31, ../sass/layouts/_header.scss */
+/* line 33, ../sass/layouts/_header.scss */
 div.main-menu {
   float: right;
   position: absolute;
@@ -3328,7 +3333,7 @@ div.main-menu {
   right: 0;
 }
 
-/* line 38, ../sass/layouts/_header.scss */
+/* line 40, ../sass/layouts/_header.scss */
 ul.menu {
   margin: 0;
   padding: 0;
@@ -3336,7 +3341,7 @@ ul.menu {
   float: right;
   text-align: right;
 }
-/* line 44, ../sass/layouts/_header.scss */
+/* line 46, ../sass/layouts/_header.scss */
 ul.menu li {
   display: inline-block;
   margin: 13px 0 0 5%;
@@ -3345,11 +3350,11 @@ ul.menu li {
   vertical-align: top;
   background-color: transparent;
 }
-/* line 52, ../sass/layouts/_header.scss */
+/* line 54, ../sass/layouts/_header.scss */
 ul.menu li.active a {
   font-weight: 600;
 }
-/* line 58, ../sass/layouts/_header.scss */
+/* line 60, ../sass/layouts/_header.scss */
 ul.menu li a {
   position: relative;
   display: inline-block;
@@ -3364,7 +3369,7 @@ ul.menu li a {
   font-family: "raleway", "文鼎黑體";
   font-size: 14px;
 }
-/* line 72, ../sass/layouts/_header.scss */
+/* line 74, ../sass/layouts/_header.scss */
 ul.menu li a:after {
   position: absolute;
   top: 100%;
@@ -3381,11 +3386,11 @@ ul.menu li a:after {
   -moz-transform: translateY(10px);
   transform: translateY(10px);
 }
-/* line 89, ../sass/layouts/_header.scss */
+/* line 91, ../sass/layouts/_header.scss */
 ul.menu li a:hover {
   font-weight: 600;
 }
-/* line 99, ../sass/layouts/_header.scss */
+/* line 101, ../sass/layouts/_header.scss */
 ul.menu li a:hover::after, ul.menu li.active a:after {
   opacity: 1 !important;
   -webkit-transform: translateY(0px);
@@ -3394,32 +3399,32 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
   color: white;
 }
 
-/* line 117, ../sass/layouts/_header.scss */
+/* line 119, ../sass/layouts/_header.scss */
 #header, #header ul li a {
   transition: color .5s, opacity .5s;
 }
 
-/* line 120, ../sass/layouts/_header.scss */
+/* line 122, ../sass/layouts/_header.scss */
 #header {
   transition: background-color .5s;
 }
 
-/* line 123, ../sass/layouts/_header.scss */
+/* line 125, ../sass/layouts/_header.scss */
 #header.fff {
   background-color: transparent;
 }
 
-/* line 126, ../sass/layouts/_header.scss */
+/* line 128, ../sass/layouts/_header.scss */
 #header.fff ul li a {
   color: #333;
 }
 
-/* line 129, ../sass/layouts/_header.scss */
+/* line 131, ../sass/layouts/_header.scss */
 #header.orange {
   background-color: transparent;
 }
 
-/* line 132, ../sass/layouts/_header.scss */
+/* line 134, ../sass/layouts/_header.scss */
 #header.orange ul li a {
   color: #fff;
 }

@@ -1,8 +1,7 @@
 // this is the js that contain and execute the all Front-End related js
 var ww;
 var wh;
-var down = true;
-var contact_height = $('.contact_container').innerHeight();
+
 
 function resize(){
 	ww = window.innerWidth;
@@ -263,6 +262,8 @@ $(document).ready(function() {
 	//**********FOR CONTACT FORM**************//
 	//the contact form ani,to show or hide the contact form
 	
+	var down = true;
+	var contact_height = $('.contact_container').innerHeight()-100;
 	if(ww>990){
 		console.log(ww);
 		$('.contact_container').css('bottom',contact_height*-0.8);
@@ -604,29 +605,12 @@ $(document).ready(function() {
 	//orientation change
 	$(window).on("orientationchange",function(){
 		if(wh == 768 && ww == 1024){ // for iPad landscape
-			$.fn.fullpage.reBuild();
-			$.fn.fullpage.setAllowScrolling(true);
-			$("#header").css("background-color","transparent");
-
-			$('.contact_container').css('bottom',contact_height*-0.8);
-			$('.contact_header').click(function(){
-				if(down){
-					$(this).parent().animate({'bottom':'0px'},1000);
-					$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
-					down = false;
-					// alert('if '+ down)
-				}else{
-					$(this).parent().animate({'bottom':contact_height*-0.8},1000);
-					$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
-					down = true;
-				}
-			});
-
-
+			location.reload();
 			console.log("iPad landscape");
-
+			
 		}else if(wh == 1024 && ww == 768){
-			$.fn.fullpage.reBuild();
+
+			location.reload();
 			console.log("iPad portrait");
 		}
 	});

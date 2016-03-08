@@ -967,16 +967,16 @@ div#sec_jumpnow p {
   line-height: 40px;
 }
 
-/* line 211, ../sass/modules/_sections.scss */
+/* line 212, ../sass/modules/_sections.scss */
 ul.plan_list {
   padding: 30px 0 20px;
   counter-reset: my-badass-counter;
 }
-/* line 215, ../sass/modules/_sections.scss */
+/* line 216, ../sass/modules/_sections.scss */
 ul.plan_list li {
   line-height: 35px;
 }
-/* line 220, ../sass/modules/_sections.scss */
+/* line 221, ../sass/modules/_sections.scss */
 ul.plan_list li:before {
   width: 25px;
   height: 25px;
@@ -997,19 +997,19 @@ ul.plan_list li:before {
 }
 
 /*COMPETITION****/
-/* line 242, ../sass/modules/_sections.scss */
+/* line 243, ../sass/modules/_sections.scss */
 .jumpnow_part1 .slide-inner {
   border: none;
 }
 
-/* line 246, ../sass/modules/_sections.scss */
+/* line 247, ../sass/modules/_sections.scss */
 .slide-inner {
   position: relative;
   margin: 0 auto 0;
   border: 1px none #f16b29;
 }
 
-/* line 254, ../sass/modules/_sections.scss */
+/* line 255, ../sass/modules/_sections.scss */
 div.competition_topic h4 {
   text-align: right;
   font-size: 52px;
@@ -1020,18 +1020,18 @@ div.competition_topic h4 {
   letter-spacing: 3px;
   margin-bottom: 0;
 }
-/* line 264, ../sass/modules/_sections.scss */
+/* line 265, ../sass/modules/_sections.scss */
 div.competition_topic h4 span {
   display: block;
   font-size: 35px;
   color: #fbaf5d;
 }
-/* line 271, ../sass/modules/_sections.scss */
+/* line 272, ../sass/modules/_sections.scss */
 div.competition_topic h5 {
   color: #f16b29;
   font-size: 26px;
 }
-/* line 276, ../sass/modules/_sections.scss */
+/* line 277, ../sass/modules/_sections.scss */
 div.competition_topic .btn {
   margin: 30px auto 0;
   text-align: center;
@@ -1041,28 +1041,28 @@ div.competition_topic .btn {
   z-index: 5;
 }
 
-/* line 290, ../sass/modules/_sections.scss */
+/* line 291, ../sass/modules/_sections.scss */
 div#sec_competition ul {
   padding: 0;
 }
-/* line 297, ../sass/modules/_sections.scss */
+/* line 298, ../sass/modules/_sections.scss */
 div#sec_competition ul li i:before {
   display: inline-block;
   margin-right: 10px;
   color: #fbaf5d;
 }
 
-/* line 307, ../sass/modules/_sections.scss */
+/* line 308, ../sass/modules/_sections.scss */
 ul.competition-headings {
   text-align: left;
   padding: 0px 0 20px;
 }
-/* line 311, ../sass/modules/_sections.scss */
+/* line 312, ../sass/modules/_sections.scss */
 ul.competition-headings li {
   display: inline-block;
   vertical-align: top;
 }
-/* line 315, ../sass/modules/_sections.scss */
+/* line 316, ../sass/modules/_sections.scss */
 ul.competition-headings a {
   color: #999;
   display: block;
@@ -1070,14 +1070,14 @@ ul.competition-headings a {
   letter-spacing: 10px;
   transition: all .5s;
 }
-/* line 321, ../sass/modules/_sections.scss */
+/* line 322, ../sass/modules/_sections.scss */
 ul.competition-headings a.selected {
   transition: all .5s;
   background-color: #f16b29;
   color: white;
 }
 
-/* line 332, ../sass/modules/_sections.scss */
+/* line 333, ../sass/modules/_sections.scss */
 .slide_next.arrow, .slide_prev.arrow {
   z-index: 5;
   background: transparent;
@@ -1101,7 +1101,7 @@ ul.competition-headings a.selected {
   position: absolute;
   background: #e8e8e8;
 }
-/* line 346, ../sass/modules/_sections.scss */
+/* line 347, ../sass/modules/_sections.scss */
 .slide_next.arrow:before, .slide_prev.arrow:before {
   position: absolute;
   content: '';
@@ -1117,7 +1117,7 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 361, ../sass/modules/_sections.scss */
+/* line 362, ../sass/modules/_sections.scss */
 .slide_next.arrow:after, .slide_prev.arrow:after {
   position: absolute;
   content: '';
@@ -1133,24 +1133,24 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-/* line 377, ../sass/modules/_sections.scss */
+/* line 378, ../sass/modules/_sections.scss */
 .slide_next.arrow:hover, .slide_prev.arrow:hover {
   background-color: #f16b29 !important;
 }
-/* line 379, ../sass/modules/_sections.scss */
+/* line 380, ../sass/modules/_sections.scss */
 .slide_next.arrow:hover:before, .slide_prev.arrow:hover:before, .slide_next.arrow:hover:after, .slide_prev.arrow:hover:after {
   border-color: #e8e8e8;
 }
-/* line 384, ../sass/modules/_sections.scss */
+/* line 385, ../sass/modules/_sections.scss */
 .slide_next.arrow.slide_team_details_arrow, .slide_team_details_arrow.slide_prev.arrow {
   background: #0e324b;
 }
 
-/* line 390, ../sass/modules/_sections.scss */
+/* line 391, ../sass/modules/_sections.scss */
 .slide_prev.arrow {
   left: -20px;
 }
-/* line 393, ../sass/modules/_sections.scss */
+/* line 394, ../sass/modules/_sections.scss */
 .slide_prev.arrow:before {
   left: 40%;
   top: 31%;
@@ -1158,7 +1158,7 @@ ul.competition-headings a.selected {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 400, ../sass/modules/_sections.scss */
+/* line 401, ../sass/modules/_sections.scss */
 .slide_prev.arrow:after {
   left: 40%;
   top: 31%;
@@ -1168,17 +1168,17 @@ ul.competition-headings a.selected {
 }
 
 /**COMPETITION PARTNERS*******/
-/* line 412, ../sass/modules/_sections.scss */
+/* line 413, ../sass/modules/_sections.scss */
 div.competition_topic a.basic_btn {
   margin-top: 5%;
   margin-left: 140px !important;
 }
 
-/* line 418, ../sass/modules/_sections.scss */
+/* line 419, ../sass/modules/_sections.scss */
 div.sponsor-group, div.sponsor-list {
   margin-top: 30px;
 }
-/* line 421, ../sass/modules/_sections.scss */
+/* line 422, ../sass/modules/_sections.scss */
 div.sponsor-group h3, div.sponsor-list h3 {
   color: #f16b29;
   font-weight: bold;
@@ -1186,7 +1186,7 @@ div.sponsor-group h3, div.sponsor-list h3 {
   letter-spacing: 3px;
   padding-bottom: 10px;
 }
-/* line 430, ../sass/modules/_sections.scss */
+/* line 431, ../sass/modules/_sections.scss */
 div.sponsor-group li, div.sponsor-list li {
   background-size: 90% auto;
   -moz-background-size: 90% auto;
@@ -1201,7 +1201,7 @@ div.sponsor-group li, div.sponsor-list li {
   height: auto;
   vertical-align: top;
 }
-/* line 442, ../sass/modules/_sections.scss */
+/* line 443, ../sass/modules/_sections.scss */
 div.sponsor-group li img, div.sponsor-list li img {
   width: 70%;
   display: block;
@@ -1213,7 +1213,7 @@ div.sponsor-group li img, div.sponsor-list li img {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
-/* line 452, ../sass/modules/_sections.scss */
+/* line 453, ../sass/modules/_sections.scss */
 div.sponsor-group li .gotosite, div.sponsor-list li .gotosite {
   background: #333333;
   -moz-border-radius: 20px;
@@ -1233,12 +1233,12 @@ div.sponsor-group li .gotosite, div.sponsor-list li .gotosite {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 463, ../sass/modules/_sections.scss */
+/* line 464, ../sass/modules/_sections.scss */
 div.sponsor-group li .gotosite:hover, div.sponsor-list li .gotosite:hover {
   background-color: gainsboro;
   color: white;
 }
-/* line 469, ../sass/modules/_sections.scss */
+/* line 470, ../sass/modules/_sections.scss */
 div.sponsor-group li span, div.sponsor-list li span {
   opacity: 0;
   position: absolute;
@@ -1263,11 +1263,11 @@ div.sponsor-group li span, div.sponsor-list li span {
   -o-box-shadow: 0px 0px 0px 0px gainsboro;
   -webkit-box-shadow: 0px 0px 0px 0px gainsboro;
 }
-/* line 490, ../sass/modules/_sections.scss */
+/* line 491, ../sass/modules/_sections.scss */
 div.sponsor-group li:hover, div.sponsor-group li:focus, div.sponsor-list li:hover, div.sponsor-list li:focus {
   z-index: 5;
 }
-/* line 492, ../sass/modules/_sections.scss */
+/* line 493, ../sass/modules/_sections.scss */
 div.sponsor-group li:hover span, div.sponsor-group li:focus span, div.sponsor-list li:hover span, div.sponsor-list li:focus span {
   border: 1px solid gainsboro;
   opacity: 1;
@@ -1277,7 +1277,7 @@ div.sponsor-group li:hover span, div.sponsor-group li:focus span, div.sponsor-li
   -o-box-shadow: 3px 10px 0px -5px gainsboro;
   -webkit-box-shadow: 3px 10px 0px -5px gainsboro;
 }
-/* line 507, ../sass/modules/_sections.scss */
+/* line 508, ../sass/modules/_sections.scss */
 div.sponsor-group ul.sponsor-list.second li, div.sponsor-list ul.sponsor-list.second li {
   width: 31%;
   margin: 0 2% 2% 0;
@@ -1285,45 +1285,45 @@ div.sponsor-group ul.sponsor-list.second li, div.sponsor-list ul.sponsor-list.se
 }
 
 /**COMPETITION DETAILS**/
-/* line 521, ../sass/modules/_sections.scss */
+/* line 522, ../sass/modules/_sections.scss */
 #competition_mobile_menu_container {
   display: none;
 }
 
-/* line 528, ../sass/modules/_sections.scss */
+/* line 529, ../sass/modules/_sections.scss */
 .info_list ul {
   padding: 0 0 0 40px;
   margin-top: 30px;
 }
-/* line 532, ../sass/modules/_sections.scss */
+/* line 533, ../sass/modules/_sections.scss */
 .info_list ul li {
   float: left;
   margin-left: 1%;
   padding-left: 20px;
 }
-/* line 539, ../sass/modules/_sections.scss */
+/* line 540, ../sass/modules/_sections.scss */
 .info_list ul li .fa {
   display: block;
   float: left;
   clear: both;
 }
 
-/* line 550, ../sass/modules/_sections.scss */
+/* line 551, ../sass/modules/_sections.scss */
 div.timeline {
   position: relative;
   margin-top: 25px;
   top: 40px;
 }
-/* line 554, ../sass/modules/_sections.scss */
+/* line 555, ../sass/modules/_sections.scss */
 div.timeline ul {
   position: relative;
   padding: 0 0 25px;
 }
-/* line 559, ../sass/modules/_sections.scss */
+/* line 560, ../sass/modules/_sections.scss */
 div.timeline ul:after {
   display: none;
 }
-/* line 564, ../sass/modules/_sections.scss */
+/* line 565, ../sass/modules/_sections.scss */
 div.timeline ul li {
   vertical-align: bottom;
   display: inline-block;
@@ -1350,7 +1350,7 @@ div.timeline ul li {
   -o-transition: all 0.25s;
   -moz-transition: all 0.25s;
 }
-/* line 590, ../sass/modules/_sections.scss */
+/* line 591, ../sass/modules/_sections.scss */
 div.timeline ul li:hover {
   position: relative;
   bottom: 15px;
@@ -1360,38 +1360,38 @@ div.timeline ul li:hover {
   -o-box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
   box-shadow: 3px 15px 2px -3px rgba(220, 220, 220, 0.6);
 }
-/* line 600, ../sass/modules/_sections.scss */
+/* line 601, ../sass/modules/_sections.scss */
 div.timeline ul li:first-child {
   z-index: 10;
   padding-left: 10px;
 }
-/* line 604, ../sass/modules/_sections.scss */
+/* line 605, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(2) {
   z-index: 9;
 }
-/* line 607, ../sass/modules/_sections.scss */
+/* line 608, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(3) {
   z-index: 8;
 }
-/* line 611, ../sass/modules/_sections.scss */
+/* line 612, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(4) {
   padding-right: 10px;
 }
-/* line 613, ../sass/modules/_sections.scss */
+/* line 614, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(4):after {
   display: none;
 }
-/* line 616, ../sass/modules/_sections.scss */
+/* line 617, ../sass/modules/_sections.scss */
 div.timeline ul li:nth-child(4):before {
   display: none;
 }
-/* line 622, ../sass/modules/_sections.scss */
+/* line 623, ../sass/modules/_sections.scss */
 div.timeline ul li h4 {
   color: #f16b29;
   margin: 0;
   font-size: 18px;
 }
-/* line 627, ../sass/modules/_sections.scss */
+/* line 628, ../sass/modules/_sections.scss */
 div.timeline ul li h4 span {
   margin-top: -4px;
   font-size: 14px;
@@ -1404,14 +1404,14 @@ div.timeline ul li h4 span {
   padding: 0px 10px;
   color: #fff !important;
 }
-/* line 641, ../sass/modules/_sections.scss */
+/* line 642, ../sass/modules/_sections.scss */
 div.timeline ul li p {
   clear: both;
   font-size: 12px;
   margin: 0;
   color: #999;
 }
-/* line 651, ../sass/modules/_sections.scss */
+/* line 652, ../sass/modules/_sections.scss */
 div.timeline ul li:after {
   content: '';
   position: absolute;
@@ -1424,7 +1424,7 @@ div.timeline ul li:after {
   right: -45px;
   top: -1px;
 }
-/* line 664, ../sass/modules/_sections.scss */
+/* line 665, ../sass/modules/_sections.scss */
 div.timeline ul li:before {
   content: '';
   position: absolute;
@@ -1437,13 +1437,13 @@ div.timeline ul li:before {
   right: -46px;
   top: -1px;
 }
-/* line 679, ../sass/modules/_sections.scss */
+/* line 680, ../sass/modules/_sections.scss */
 div.timeline ul li:last-child {
   margin-right: 0px;
 }
 
 /* PRIZE**/
-/* line 693, ../sass/modules/_sections.scss */
+/* line 694, ../sass/modules/_sections.scss */
 #competition_prize_slide p {
   color: #f16b29 !important;
   font-size: 18px;
@@ -1451,22 +1451,22 @@ div.timeline ul li:last-child {
   text-align: center;
   clear: both;
 }
-/* line 700, ../sass/modules/_sections.scss */
+/* line 701, ../sass/modules/_sections.scss */
 #competition_prize_slide p small {
   line-height: 18px;
   font-size: 12px;
   color: #999;
 }
-/* line 707, ../sass/modules/_sections.scss */
+/* line 708, ../sass/modules/_sections.scss */
 #competition_prize_slide .prize-single {
   min-height: 180px;
 }
-/* line 710, ../sass/modules/_sections.scss */
+/* line 711, ../sass/modules/_sections.scss */
 #competition_prize_slide .col-md-4 .prize-single {
   margin: 30px auto 0;
   min-height: 180px;
 }
-/* line 717, ../sass/modules/_sections.scss */
+/* line 718, ../sass/modules/_sections.scss */
 #competition_prize_slide .second-place .prize-single {
   background: url(../img/secondplace.png) no-repeat center bottom;
   background-size: 200px auto;
@@ -1475,13 +1475,13 @@ div.timeline ul li:last-child {
   -ms-background-size: 200px auto;
   background-size: 200px auto;
 }
-/* line 726, ../sass/modules/_sections.scss */
+/* line 727, ../sass/modules/_sections.scss */
 #competition_prize_slide .first-place h4 {
   border: 1px solid #f16b29;
   padding: 10px;
   font-size: 36px !important;
 }
-/* line 732, ../sass/modules/_sections.scss */
+/* line 733, ../sass/modules/_sections.scss */
 #competition_prize_slide .first-place .prize-single {
   background: url(../img/firstplace.png) no-repeat center bottom;
   background-size: 200px auto;
@@ -1491,7 +1491,7 @@ div.timeline ul li:last-child {
   background-size: 200px auto;
   color: #0e324b;
 }
-/* line 743, ../sass/modules/_sections.scss */
+/* line 744, ../sass/modules/_sections.scss */
 #competition_prize_slide .third-place .prize-single {
   background: url(../img/thirdplace.png) no-repeat center bottom;
   background-size: 200px auto;
@@ -1500,7 +1500,7 @@ div.timeline ul li:last-child {
   -ms-background-size: 200px auto;
   background-size: 200px auto;
 }
-/* line 748, ../sass/modules/_sections.scss */
+/* line 749, ../sass/modules/_sections.scss */
 #competition_prize_slide h4 {
   display: block;
   text-align: center;
@@ -1513,7 +1513,7 @@ div.timeline ul li:last-child {
 }
 
 /**JUMP******/
-/* line 772, ../sass/modules/_sections.scss */
+/* line 773, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download {
   float: left;
   position: relative;
@@ -1535,7 +1535,7 @@ div.timeline ul li:last-child {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-/* line 793, ../sass/modules/_sections.scss */
+/* line 794, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download :after {
   content: "";
   display: inline-block;
@@ -1543,7 +1543,7 @@ div.timeline ul li:last-child {
   width: 20px;
   height: 20px;
 }
-/* line 803, ../sass/modules/_sections.scss */
+/* line 804, ../sass/modules/_sections.scss */
 .jumpnow_part1 a.bizplan_download:after {
   content: "";
   position: absolute;
@@ -1555,7 +1555,7 @@ div.timeline ul li:last-child {
   background: url(../img/download_btn.png) no-repeat center center;
 }
 
-/* line 821, ../sass/modules/_sections.scss */
+/* line 822, ../sass/modules/_sections.scss */
 .jumpnow-des {
   border: 1px none #f16b29;
   background: #0e324b;
@@ -1565,31 +1565,31 @@ div.timeline ul li:last-child {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
-/* line 826, ../sass/modules/_sections.scss */
+/* line 827, ../sass/modules/_sections.scss */
 .jumpnow-des h3 {
   color: #f16b29;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 833, ../sass/modules/_sections.scss */
+/* line 834, ../sass/modules/_sections.scss */
 .jumpnow-des li {
   color: white;
 }
 
-/* line 837, ../sass/modules/_sections.scss */
+/* line 838, ../sass/modules/_sections.scss */
 .jumpnow-btn-set {
   margin-top: 20%;
 }
 
-/* line 841, ../sass/modules/_sections.scss */
+/* line 842, ../sass/modules/_sections.scss */
 .imready {
   margin-top: 10px;
   margin-left: 100px;
 }
 
 /***FORMS*****/
-/* line 848, ../sass/modules/_sections.scss */
+/* line 849, ../sass/modules/_sections.scss */
 #sec_jumpnow h2 {
   color: #f16b29;
   font-weight: bold;
@@ -1600,7 +1600,7 @@ div.timeline ul li:last-child {
   padding-bottom: 10px;
   margin-left: 40px;
 }
-/* line 859, ../sass/modules/_sections.scss */
+/* line 860, ../sass/modules/_sections.scss */
 #sec_jumpnow .slide-inner {
   margin: 0 auto;
   background: #0e324b;
@@ -1608,42 +1608,46 @@ div.timeline ul li:last-child {
   vertical-align: top;
   height: 100%;
 }
-/* line 867, ../sass/modules/_sections.scss */
+/* line 868, ../sass/modules/_sections.scss */
 #sec_jumpnow .slide-inner:first-child {
   background: transparent;
 }
 
-/* line 878, ../sass/modules/_sections.scss */
+/* line 879, ../sass/modules/_sections.scss */
 .team_details_single > span {
   clear: none;
 }
 
-/* line 881, ../sass/modules/_sections.scss */
+/* line 882, ../sass/modules/_sections.scss */
 .team_member {
   width: 100px;
   clear: none !important;
 }
 
-/* line 885, ../sass/modules/_sections.scss */
+/* line 886, ../sass/modules/_sections.scss */
 .responsibility {
   width: 100px;
   clear: none !important;
 }
 
-/* line 892, ../sass/modules/_sections.scss */
+/* line 893, ../sass/modules/_sections.scss */
 body.sg #sec_jumpnow .jumpnow_part1 .jumpnow-btn-set a.btn {
   margin-left: 150px;
 }
+/* line 899, ../sass/modules/_sections.scss */
+body.sg #sec_jumpnow.section-padding {
+  padding: 8% 0% 0% 0%;
+}
 
 /*****Event Section**********/
-/* line 900, ../sass/modules/_sections.scss */
+/* line 905, ../sass/modules/_sections.scss */
 div#sec_events {
   background: #fbfbfb;
   padding-top: 150px;
   position: relative;
 }
 
-/* line 908, ../sass/modules/_sections.scss */
+/* line 913, ../sass/modules/_sections.scss */
 .event_single {
   position: relative;
   padding: 10px;
@@ -1657,7 +1661,7 @@ div#sec_events {
   -ms-background-size: cover;
   background-size: cover;
 }
-/* line 921, ../sass/modules/_sections.scss */
+/* line 926, ../sass/modules/_sections.scss */
 .event_single h3 {
   color: white;
   padding: 15px 0 15px;
@@ -1666,7 +1670,7 @@ div#sec_events {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 929, ../sass/modules/_sections.scss */
+/* line 934, ../sass/modules/_sections.scss */
 .event_single span {
   display: block;
   color: #fbaf5d;
@@ -1675,13 +1679,13 @@ div#sec_events {
   font-weight: 600;
   font-family: "raleway", "文鼎黑體";
 }
-/* line 937, ../sass/modules/_sections.scss */
+/* line 942, ../sass/modules/_sections.scss */
 .event_single p {
   font-size: 14px;
   line-height: 20px;
   text-align: left;
 }
-/* line 944, ../sass/modules/_sections.scss */
+/* line 949, ../sass/modules/_sections.scss */
 .event_single .event_tw_comingsoon h3, .event_single .event_sg_comingsoon h3 {
   background: transparent;
   margin-top: 35%;
@@ -1689,11 +1693,11 @@ div#sec_events {
   width: 100%;
   display: block;
 }
-/* line 955, ../sass/modules/_sections.scss */
+/* line 960, ../sass/modules/_sections.scss */
 .event_single .event_sg_comingsoon {
   background: #666666 url(../img/event_comingsoon_1.jpg) no-repeat;
 }
-/* line 959, ../sass/modules/_sections.scss */
+/* line 964, ../sass/modules/_sections.scss */
 .event_single .front_face, .event_single .back_face {
   padding: 10px;
   background: #888888 url(../img/ninebot-bg.jpg) no-repeat;
@@ -1705,7 +1709,7 @@ div#sec_events {
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
-/* line 967, ../sass/modules/_sections.scss */
+/* line 972, ../sass/modules/_sections.scss */
 .event_single .front_face :after, .event_single .back_face :after {
   content: "";
   border: 1px solid #fff;
@@ -1716,7 +1720,7 @@ div#sec_events {
   top: 2.5%;
   left: 2.5%;
 }
-/* line 980, ../sass/modules/_sections.scss */
+/* line 985, ../sass/modules/_sections.scss */
 .event_single .front_face .event_sg_tourism, .event_single .back_face .event_sg_tourism {
   background: #999999 url(../img/industrial_tourism_sg.jpg) no-repeat;
   background-blend-mode: multiply;
@@ -1727,7 +1731,7 @@ div#sec_events {
   background-size: cover;
   z-index: 2;
 }
-/* line 990, ../sass/modules/_sections.scss */
+/* line 995, ../sass/modules/_sections.scss */
 .event_single .front_face .event_sg_ecommerce, .event_single .back_face .event_sg_ecommerce {
   background: #999999 url(../img/industrial_ecommerce_2_sg.jpg) no-repeat;
   background-blend-mode: multiply;
@@ -1738,7 +1742,7 @@ div#sec_events {
   background-size: cover;
   z-index: 2;
 }
-/* line 1000, ../sass/modules/_sections.scss */
+/* line 1005, ../sass/modules/_sections.scss */
 .event_single .front_face .event_sg_medical, .event_single .back_face .event_sg_medical {
   background: #999999 url(../img/industrial_medical_1_sg.jpg) no-repeat;
   background-blend-mode: multiply;
@@ -1749,7 +1753,7 @@ div#sec_events {
   background-size: cover;
   z-index: 2;
 }
-/* line 1010, ../sass/modules/_sections.scss */
+/* line 1015, ../sass/modules/_sections.scss */
 .event_single .front_face .event_sg_robotic, .event_single .back_face .event_sg_robotic {
   background: #666666 url(../img/industrial_robotic_sg.jpg) no-repeat;
   background-blend-mode: multiply;
@@ -1760,7 +1764,7 @@ div#sec_events {
   background-size: cover;
   z-index: 2;
 }
-/* line 1020, ../sass/modules/_sections.scss */
+/* line 1025, ../sass/modules/_sections.scss */
 .event_single .front_face .event_sg_smartcity, .event_single .back_face .event_sg_smartcity {
   background: #666666 url(../img/industrial_smartcity_1_sg.jpg) no-repeat;
   background-blend-mode: multiply;
@@ -1771,7 +1775,7 @@ div#sec_events {
   background-size: cover;
   z-index: 2;
 }
-/* line 1030, ../sass/modules/_sections.scss */
+/* line 1035, ../sass/modules/_sections.scss */
 .event_single .front_face .event_sg_comingsoon, .event_single .back_face .event_sg_comingsoon {
   background: #666666 url(../img/event_comingsoon_1.jpg) no-repeat;
   background-blend-mode: multiply;
@@ -1782,14 +1786,14 @@ div#sec_events {
   background-size: cover;
   z-index: 2;
 }
-/* line 1045, ../sass/modules/_sections.scss */
+/* line 1050, ../sass/modules/_sections.scss */
 .event_single .back_face {
   padding: 30px;
   background-color: #222 !important;
 }
 
 /***CONTACT_US******/
-/* line 1055, ../sass/modules/_sections.scss */
+/* line 1060, ../sass/modules/_sections.scss */
 div.contact_container {
   width: 100%;
   background: #313131;
@@ -1798,11 +1802,11 @@ div.contact_container {
   padding: 30px;
   left: 0;
 }
-/* line 1064, ../sass/modules/_sections.scss */
+/* line 1069, ../sass/modules/_sections.scss */
 div.contact_container .contact_header {
   cursor: pointer;
 }
-/* line 1067, ../sass/modules/_sections.scss */
+/* line 1072, ../sass/modules/_sections.scss */
 div.contact_container h2 {
   color: #fff;
   font-family: "raleway", "文鼎黑體";
@@ -1814,20 +1818,20 @@ div.contact_container h2 {
   margin: 0 auto;
   display: block;
 }
-/* line 1079, ../sass/modules/_sections.scss */
+/* line 1084, ../sass/modules/_sections.scss */
 div.contact_container .input {
   margin: 0;
 }
-/* line 1081, ../sass/modules/_sections.scss */
+/* line 1086, ../sass/modules/_sections.scss */
 div.contact_container .input input {
   color: #fbaf5d;
   font-weight: normal !important;
 }
-/* line 1085, ../sass/modules/_sections.scss */
+/* line 1090, ../sass/modules/_sections.scss */
 div.contact_container .input label {
   color: #fff;
 }
-/* line 1092, ../sass/modules/_sections.scss */
+/* line 1097, ../sass/modules/_sections.scss */
 div.contact_container textarea {
   width: 100%;
   border: 1px solid #fff;
@@ -1839,11 +1843,11 @@ div.contact_container textarea {
   height: 250px;
   outline: none;
 }
-/* line 1103, ../sass/modules/_sections.scss */
+/* line 1108, ../sass/modules/_sections.scss */
 div.contact_container textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 1108, ../sass/modules/_sections.scss */
+/* line 1113, ../sass/modules/_sections.scss */
 div.contact_container input[type="submit"] {
   border: 1px solid #fff;
   padding: 5px 20px;
@@ -1854,56 +1858,56 @@ div.contact_container input[type="submit"] {
   float: right;
   margin-top: 15px;
 }
-/* line 1119, ../sass/modules/_sections.scss */
+/* line 1124, ../sass/modules/_sections.scss */
 div.contact_container .reminder {
   color: #fbaf5d;
 }
 
-/* line 1126, ../sass/modules/_sections.scss */
+/* line 1131, ../sass/modules/_sections.scss */
 .contact-details {
   font-family: "raleway", "文鼎黑體";
   text-align: left;
   color: #fff;
 }
-/* line 1131, ../sass/modules/_sections.scss */
+/* line 1136, ../sass/modules/_sections.scss */
 .contact-details h3 {
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 1138, ../sass/modules/_sections.scss */
+/* line 1143, ../sass/modules/_sections.scss */
 .contact-details ul {
   padding: 0;
 }
-/* line 1141, ../sass/modules/_sections.scss */
+/* line 1146, ../sass/modules/_sections.scss */
 .contact-details ul li {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 20px;
 }
-/* line 1145, ../sass/modules/_sections.scss */
+/* line 1150, ../sass/modules/_sections.scss */
 .contact-details ul li h4 {
   font-weight: bold;
   color: #f16b29;
 }
-/* line 1150, ../sass/modules/_sections.scss */
+/* line 1155, ../sass/modules/_sections.scss */
 .contact-details ul li i {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 1160, ../sass/modules/_sections.scss */
+/* line 1165, ../sass/modules/_sections.scss */
 a.contact_us_btn {
   margin: 30px auto 0;
   text-align: center;
   display: block;
   float: none;
 }
-/* line 1165, ../sass/modules/_sections.scss */
+/* line 1170, ../sass/modules/_sections.scss */
 a.contact_us_btn.btn-error:after {
   left: 10%;
 }
-/* line 1168, ../sass/modules/_sections.scss */
+/* line 1173, ../sass/modules/_sections.scss */
 a.contact_us_btn.btn-success:after {
   left: 10%;
 }
@@ -2647,32 +2651,32 @@ div.timeLineAni::after {
   animation: lineDown 1.5s 0s 1 linear forwards;
 }
 
-/* line 136, ../sass/modules/_animations.scss */
+/* line 137, ../sass/modules/_animations.scss */
 .border_container {
   height: 100%;
   position: relative;
 }
 
-/* line 140, ../sass/modules/_animations.scss */
+/* line 141, ../sass/modules/_animations.scss */
 .border {
   position: absolute;
 }
 
 /****for the straightDown border ani***/
-/* line 144, ../sass/modules/_animations.scss */
+/* line 145, ../sass/modules/_animations.scss */
 div.straightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 150, ../sass/modules/_animations.scss */
+/* line 151, ../sass/modules/_animations.scss */
 div.straightAni .border {
   background-color: #f16b29;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 156, ../sass/modules/_animations.scss */
+/* line 157, ../sass/modules/_animations.scss */
 div.straightAni .border.top {
   width: 100%;
   height: 1px;
@@ -2683,12 +2687,12 @@ div.straightAni .border.top {
   -o-animation: borderTopAni 0.3s 0s 1 linear forwards;
   animation: borderTopAni 0.3s 0s 1 linear forwards;
 }
-/* line 162, ../sass/modules/_animations.scss */
+/* line 163, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom {
   height: 1px;
   top: 100%;
 }
-/* line 165, ../sass/modules/_animations.scss */
+/* line 166, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_right {
   width: 0%;
   left: 100%;
@@ -2698,7 +2702,7 @@ div.straightAni .border.bottom.b_right {
   -o-animation: borderB_right 0.3s 0.9s 1 linear forwards;
   animation: borderB_right 0.3s 0.9s 1 linear forwards;
 }
-/* line 170, ../sass/modules/_animations.scss */
+/* line 171, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_left {
   width: 0%;
   left: 0;
@@ -2708,7 +2712,7 @@ div.straightAni .border.bottom.b_left {
   -o-animation: borderB_left 0.3s 0.9s 1 linear forwards;
   animation: borderB_left 0.3s 0.9s 1 linear forwards;
 }
-/* line 177, ../sass/modules/_animations.scss */
+/* line 178, ../sass/modules/_animations.scss */
 div.straightAni .border.left, div.straightAni .border.right {
   width: 1px;
   max-width: 2px;
@@ -2719,19 +2723,19 @@ div.straightAni .border.left, div.straightAni .border.right {
   -o-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
   animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 184, ../sass/modules/_animations.scss */
+/* line 185, ../sass/modules/_animations.scss */
 div.straightAni .border.right {
   left: 100%;
 }
 
 @keyframes borderTopAni {
-  /* line 189, ../sass/modules/_animations.scss */
+  /* line 190, ../sass/modules/_animations.scss */
   0% {
     left: 50%;
     width: 0;
   }
 
-  /* line 190, ../sass/modules/_animations.scss */
+  /* line 191, ../sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 100%;
@@ -2739,25 +2743,25 @@ div.straightAni .border.right {
 }
 
 @keyframes borderSidesAni {
-  /* line 194, ../sass/modules/_animations.scss */
+  /* line 195, ../sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 195, ../sass/modules/_animations.scss */
+  /* line 196, ../sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
 @keyframes borderB_left {
-  /* line 199, ../sass/modules/_animations.scss */
+  /* line 200, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 0;
   }
 
-  /* line 200, ../sass/modules/_animations.scss */
+  /* line 201, ../sass/modules/_animations.scss */
   100% {
     width: 50.59%;
     left: 0;
@@ -2765,13 +2769,13 @@ div.straightAni .border.right {
 }
 
 @keyframes borderB_right {
-  /* line 204, ../sass/modules/_animations.scss */
+  /* line 205, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 100%;
   }
 
-  /* line 205, ../sass/modules/_animations.scss */
+  /* line 206, ../sass/modules/_animations.scss */
   100% {
     width: 50.59%;
     left: 49.5%;
@@ -2779,17 +2783,17 @@ div.straightAni .border.right {
 }
 
 /*****for the all borderRight except the jumpnow-des*****/
-/* line 210, ../sass/modules/_animations.scss */
+/* line 211, ../sass/modules/_animations.scss */
 div.borderRightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 214, ../sass/modules/_animations.scss */
+/* line 215, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container {
   height: 100%;
 }
-/* line 216, ../sass/modules/_animations.scss */
+/* line 217, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .straight_line {
   width: 1px;
   height: 0px;
@@ -2804,7 +2808,7 @@ div.borderRightAni.border_container .straight_line {
   -o-animation: straightLineAni 0.9s 0s 1 linear forwards;
   animation: straightLineAni 0.9s 0s 1 linear forwards;
 }
-/* line 226, ../sass/modules/_animations.scss */
+/* line 227, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .straight_line_down {
   width: 1px;
   height: 0;
@@ -2819,7 +2823,7 @@ div.borderRightAni.border_container .straight_line_down {
   -o-animation: straightLineAni 0.3s 1.2s 1 linear forwards;
   animation: straightLineAni 0.3s 1.2s 1 linear forwards;
 }
-/* line 236, ../sass/modules/_animations.scss */
+/* line 237, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .horizon_line {
   height: 1px;
   width: 0px;
@@ -2835,7 +2839,7 @@ div.borderRightAni.border_container .horizon_line {
   -o-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
   animation: horiLineAni 0.3s 1.5s 1 linear forwards;
 }
-/* line 247, ../sass/modules/_animations.scss */
+/* line 248, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .horizon_line_left {
   height: 1px;
   width: 0px;
@@ -2851,11 +2855,11 @@ div.borderRightAni.border_container .horizon_line_left {
   -o-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
   animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
 }
-/* line 259, ../sass/modules/_animations.scss */
+/* line 260, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container {
   height: 100%;
 }
-/* line 261, ../sass/modules/_animations.scss */
+/* line 262, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container .straight_line {
   width: 1px;
   height: 0px;
@@ -2870,7 +2874,7 @@ div.borderRightAni .border_container .straight_line {
   -o-animation: straightLineAni 0.3s 0s 1 linear forwards;
   animation: straightLineAni 0.3s 0s 1 linear forwards;
 }
-/* line 271, ../sass/modules/_animations.scss */
+/* line 272, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container .horizon_line {
   height: 1px;
   width: 0px;
@@ -2886,14 +2890,14 @@ div.borderRightAni .border_container .horizon_line {
   -o-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
   animation: horiLineAni 0.3s 1.5s 1 linear forwards;
 }
-/* line 284, ../sass/modules/_animations.scss */
+/* line 285, ../sass/modules/_animations.scss */
 div.borderRightAni .border {
   position: absolute;
   background-color: #f16b29;
   left: 0;
   top: 0;
 }
-/* line 290, ../sass/modules/_animations.scss */
+/* line 291, ../sass/modules/_animations.scss */
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   height: 1px;
   width: 0;
@@ -2903,11 +2907,11 @@ div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   -o-animation: borderTopBottomAni 0.6s 0.6s 1 linear forwards;
   animation: borderTopBottomAni 0.6s 0.6s 1 linear forwards;
 }
-/* line 295, ../sass/modules/_animations.scss */
+/* line 296, ../sass/modules/_animations.scss */
 div.borderRightAni .border.bottom {
   top: 100%;
 }
-/* line 298, ../sass/modules/_animations.scss */
+/* line 299, ../sass/modules/_animations.scss */
 div.borderRightAni .border.left {
   width: 1px;
   height: 0;
@@ -2918,7 +2922,7 @@ div.borderRightAni .border.left {
   -o-animation: borderLeftAni 0.3s 0.3s 1 linear forwards;
   animation: borderLeftAni 0.3s 0.3s 1 linear forwards;
 }
-/* line 304, ../sass/modules/_animations.scss */
+/* line 305, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_top {
   width: 1px;
   left: 100%;
@@ -2928,7 +2932,7 @@ div.borderRightAni .border.right.R_top {
   -o-animation: borderR_top 0.3s 1.2s 1 linear forwards;
   animation: borderR_top 0.3s 1.2s 1 linear forwards;
 }
-/* line 309, ../sass/modules/_animations.scss */
+/* line 310, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_bottom {
   width: 1px;
   left: 100%;
@@ -2938,7 +2942,7 @@ div.borderRightAni .border.right.R_bottom {
   -o-animation: borderR_bottom 0.3s 1.2s 1 linear forwards;
   animation: borderR_bottom 0.3s 1.2s 1 linear forwards;
 }
-/* line 315, ../sass/modules/_animations.scss */
+/* line 316, ../sass/modules/_animations.scss */
 div.borderRightAni .horizon_line_left#jumpnow_team_details {
   -moz-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
   -webkit-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
@@ -2948,14 +2952,14 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 /*for the I am ready btn*/
-/* line 321, ../sass/modules/_animations.scss */
+/* line 322, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni {
   position: relative;
   z-index: -5;
   left: -16px;
   height: 100%;
 }
-/* line 326, ../sass/modules/_animations.scss */
+/* line 327, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .horizon_line {
   background-color: #f16b29;
   z-index: 1;
@@ -2970,7 +2974,7 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   -o-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
   animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
 }
-/* line 337, ../sass/modules/_animations.scss */
+/* line 338, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .sg {
   background-color: #f16b29;
   z-index: 1;
@@ -2985,14 +2989,14 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   -o-animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
   animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
 }
-/* line 347, ../sass/modules/_animations.scss */
+/* line 348, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .right.R_bottom {
   background-color: #f16b29;
   width: 1px;
   position: absolute;
   height: 0;
 }
-/* line 354, ../sass/modules/_animations.scss */
+/* line 355, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .horizon_line_short {
   background-color: #f16b29;
   height: 1px;
@@ -3002,30 +3006,30 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 
 /********keyframes for the button*****/
 @keyframes horiLineBtn {
-  /* line 363, ../sass/modules/_animations.scss */
+  /* line 364, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 364, ../sass/modules/_animations.scss */
+  /* line 365, ../sass/modules/_animations.scss */
   100% {
     width: 1200px;
   }
 }
 
 @keyframes horiLineBtn_sg {
-  /* line 367, ../sass/modules/_animations.scss */
+  /* line 368, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 368, ../sass/modules/_animations.scss */
+  /* line 369, ../sass/modules/_animations.scss */
   100% {
-    width: 1800px;
+    width: 1200px;
   }
 }
 
-/* line 374, ../sass/modules/_animations.scss */
+/* line 375, ../sass/modules/_animations.scss */
 div.borderRightAni #jumpnow_part1_line {
   -moz-animation: horiLineJumpnowFirst 0.3s 0.6s 1 linear forwards;
   -webkit-animation: horiLineJumpnowFirst 0.3s 0.6s 1 linear forwards;
@@ -3034,8 +3038,17 @@ div.borderRightAni #jumpnow_part1_line {
   animation: horiLineJumpnowFirst 0.3s 0.6s 1 linear forwards;
 }
 
+/* line 381, ../sass/modules/_animations.scss */
+body.sg div.borderRightAni #jumpnow_part1_line {
+  -moz-animation: horiLineJumpnowFirstSg 0.3s 0.6s 1 linear forwards;
+  -webkit-animation: horiLineJumpnowFirstSg 0.3s 0.6s 1 linear forwards;
+  -ms-animation: horiLineJumpnowFirstSg 0.3s 0.6s 1 linear forwards;
+  -o-animation: horiLineJumpnowFirstSg 0.3s 0.6s 1 linear forwards;
+  animation: horiLineJumpnowFirstSg 0.3s 0.6s 1 linear forwards;
+}
+
 /*****for the jumpnow-des*****/
-/* line 383, ../sass/modules/_animations.scss */
+/* line 391, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.top {
   height: 1px;
   top: 0;
@@ -3045,7 +3058,7 @@ div.borderRightAni #jumpnow_part1_line {
   -o-animation: jumpnow-desTop 0.3s 1.2s 1 linear forwards;
   animation: jumpnow-desTop 0.3s 1.2s 1 linear forwards;
 }
-/* line 388, ../sass/modules/_animations.scss */
+/* line 396, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.bottom {
   height: 1px;
   top: 100%;
@@ -3055,7 +3068,7 @@ div.borderRightAni #jumpnow_part1_line {
   -o-animation: jumpnow-desTop 0.3s 1.2s 1 linear forwards;
   animation: jumpnow-desTop 0.3s 1.2s 1 linear forwards;
 }
-/* line 393, ../sass/modules/_animations.scss */
+/* line 401, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.right {
   width: 1px;
   left: 100%;
@@ -3065,7 +3078,7 @@ div.borderRightAni #jumpnow_part1_line {
   -o-animation: jumpnow-desRight 0.3s 0.9s 1 linear forwards;
   animation: jumpnow-desRight 0.3s 0.9s 1 linear forwards;
 }
-/* line 400, ../sass/modules/_animations.scss */
+/* line 408, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.L_top {
   left: 0;
   width: 1px;
@@ -3076,7 +3089,7 @@ div.borderRightAni #jumpnow_part1_line {
   -o-animation: jumpnow-desL_top 0.3s 1.5s 1 linear forwards;
   animation: jumpnow-desL_top 0.3s 1.5s 1 linear forwards;
 }
-/* line 406, ../sass/modules/_animations.scss */
+/* line 414, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.L_bottom {
   left: 0;
   width: 1px;
@@ -3089,13 +3102,13 @@ div.borderRightAni #jumpnow_part1_line {
 
 /***keyframes for jumpnow-des****/
 @keyframes jumpnow-desTop {
-  /* line 415, ../sass/modules/_animations.scss */
+  /* line 423, ../sass/modules/_animations.scss */
   0% {
     left: 100%;
     width: 0;
   }
 
-  /* line 416, ../sass/modules/_animations.scss */
+  /* line 424, ../sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 100%;
@@ -3103,13 +3116,13 @@ div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes jumpnow-desRight {
-  /* line 419, ../sass/modules/_animations.scss */
+  /* line 427, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
   }
 
-  /* line 420, ../sass/modules/_animations.scss */
+  /* line 428, ../sass/modules/_animations.scss */
   100% {
     top: 0%;
     height: 100%;
@@ -3117,25 +3130,25 @@ div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes jumpnow-desL_top {
-  /* line 423, ../sass/modules/_animations.scss */
+  /* line 431, ../sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 424, ../sass/modules/_animations.scss */
+  /* line 432, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
   }
 }
 
 @keyframes jumpnow-desL_bottom {
-  /* line 428, ../sass/modules/_animations.scss */
+  /* line 436, ../sass/modules/_animations.scss */
   0% {
     top: 100%;
     height: 0;
   }
 
-  /* line 429, ../sass/modules/_animations.scss */
+  /* line 437, ../sass/modules/_animations.scss */
   100% {
     top: 50%;
     height: 50%;
@@ -3144,13 +3157,13 @@ div.borderRightAni #jumpnow_part1_line {
 
 /*****keyframes for others line***/
 @keyframes leftLineForTeamDetail {
-  /* line 435, ../sass/modules/_animations.scss */
+  /* line 443, ../sass/modules/_animations.scss */
   0% {
     left: -40px;
     width: 0;
   }
 
-  /* line 436, ../sass/modules/_animations.scss */
+  /* line 444, ../sass/modules/_animations.scss */
   100% {
     left: -25px;
     width: 10px;
@@ -3158,38 +3171,52 @@ div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes horiLineAni {
-  /* line 439, ../sass/modules/_animations.scss */
+  /* line 447, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 440, ../sass/modules/_animations.scss */
+  /* line 448, ../sass/modules/_animations.scss */
   100% {
     width: 400px;
   }
 }
 
 @keyframes horiLineJumpnowFirst {
-  /* line 443, ../sass/modules/_animations.scss */
+  /* line 451, ../sass/modules/_animations.scss */
   0% {
     left: 120.04163%;
     width: 0px;
   }
 
-  /* line 444, ../sass/modules/_animations.scss */
+  /* line 452, ../sass/modules/_animations.scss */
   100% {
-    left: 99.5%;
+    left: 100%;
     width: 20.54163%;
   }
 }
 
+@keyframes horiLineJumpnowFirstSg {
+  /* line 455, ../sass/modules/_animations.scss */
+  0% {
+    left: 125%;
+    width: 0px;
+  }
+
+  /* line 456, ../sass/modules/_animations.scss */
+  100% {
+    left: 100%;
+    width: 25%;
+  }
+}
+
 @keyframes straightLineAni {
-  /* line 448, ../sass/modules/_animations.scss */
+  /* line 460, ../sass/modules/_animations.scss */
   0% {
     height: 0px;
   }
 
-  /* line 449, ../sass/modules/_animations.scss */
+  /* line 461, ../sass/modules/_animations.scss */
   100% {
     height: 450px;
   }
@@ -3197,14 +3224,14 @@ div.borderRightAni #jumpnow_part1_line {
 
 /***keyframes for borderRightAni***/
 @keyframes borderLeftAni {
-  /* line 454, ../sass/modules/_animations.scss */
+  /* line 466, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
-  /* line 455, ../sass/modules/_animations.scss */
+  /* line 467, ../sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 100%;
@@ -3213,26 +3240,26 @@ div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes borderTopBottomAni {
-  /* line 459, ../sass/modules/_animations.scss */
+  /* line 471, ../sass/modules/_animations.scss */
   0% {
     width: 0;
   }
 
-  /* line 460, ../sass/modules/_animations.scss */
+  /* line 472, ../sass/modules/_animations.scss */
   100% {
     width: 100%;
   }
 }
 
 @keyframes borderR_top {
-  /* line 464, ../sass/modules/_animations.scss */
+  /* line 476, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
-  /* line 465, ../sass/modules/_animations.scss */
+  /* line 477, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 0;
@@ -3241,14 +3268,14 @@ div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes borderR_bottom {
-  /* line 469, ../sass/modules/_animations.scss */
+  /* line 481, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
-  /* line 470, ../sass/modules/_animations.scss */
+  /* line 482, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 50.1%;
@@ -3572,7 +3599,12 @@ body.sg .btn {
     line-height: 20px;
   }
 
-  /* line 131, ../sass/modules/_responsive.scss */
+  /* line 129, ../sass/modules/_responsive.scss */
+  #competition_menu {
+    display: none;
+  }
+
+  /* line 135, ../sass/modules/_responsive.scss */
   .menu-mobile, .menu-burger {
     position: fixed;
     width: 50px;
@@ -3584,7 +3616,7 @@ body.sg .btn {
     top: 12px;
   }
 
-  /* line 144, ../sass/modules/_responsive.scss */
+  /* line 148, ../sass/modules/_responsive.scss */
   .menu-burger {
     z-index: 5;
     color: white;
@@ -3594,12 +3626,12 @@ body.sg .btn {
     transition: .4s;
     transform-origin: center;
   }
-  /* line 153, ../sass/modules/_responsive.scss */
+  /* line 157, ../sass/modules/_responsive.scss */
   .menu-burger.fs {
     z-index: 5;
   }
 
-  /* line 157, ../sass/modules/_responsive.scss */
+  /* line 161, ../sass/modules/_responsive.scss */
   .menu-items-mobile {
     font-weight: bold;
     font-size: 40px;
@@ -3616,11 +3648,11 @@ body.sg .btn {
     left: 0;
     pointer-events: none;
   }
-  /* line 174, ../sass/modules/_responsive.scss */
+  /* line 178, ../sass/modules/_responsive.scss */
   .menu-items-mobile ul {
     padding: 17vh 0 0 0;
   }
-  /* line 179, ../sass/modules/_responsive.scss */
+  /* line 183, ../sass/modules/_responsive.scss */
   .menu-items-mobile li {
     text-align: center;
     transition: 1s;
@@ -3630,16 +3662,16 @@ body.sg .btn {
     width: 100%;
     padding: 0px 0px 15vh 0px;
   }
-  /* line 188, ../sass/modules/_responsive.scss */
+  /* line 192, ../sass/modules/_responsive.scss */
   .menu-items-mobile li.jumpnow_link a {
     paddding: 0 !important;
   }
-  /* line 192, ../sass/modules/_responsive.scss */
+  /* line 196, ../sass/modules/_responsive.scss */
   .menu-items-mobile li a {
     font-size: 30px !important;
     font-weight: bold !important;
   }
-  /* line 200, ../sass/modules/_responsive.scss */
+  /* line 204, ../sass/modules/_responsive.scss */
   .menu-items-mobile.fs {
     pointer-events: auto;
     opacity: 1;
@@ -3653,64 +3685,69 @@ body.sg .btn {
     top: 0px;
     position: fixed;
   }
-  /* line 213, ../sass/modules/_responsive.scss */
+  /* line 217, ../sass/modules/_responsive.scss */
   .menu-items-mobile.fs li {
     opacity: 1;
     padding: 0px 0px 15vh 0px;
   }
 
-  /* line 222, ../sass/modules/_responsive.scss */
+  /* line 226, ../sass/modules/_responsive.scss */
   ul.menu {
     min-width: initial;
     float: none;
   }
-  /* line 225, ../sass/modules/_responsive.scss */
+  /* line 229, ../sass/modules/_responsive.scss */
   ul.menu li {
     text-align: center;
     margin: 0 !important;
   }
 
-  /* line 236, ../sass/modules/_responsive.scss */
+  /* line 240, ../sass/modules/_responsive.scss */
   .menu-items-mobile li {
     width: 100%;
     display: block;
     padding-left: 30px;
     text-align: center;
   }
-  /* line 243, ../sass/modules/_responsive.scss */
+  /* line 247, ../sass/modules/_responsive.scss */
   .menu-items-mobile li a {
     padding: 0;
     margin: 0;
   }
 
-  /* line 261, ../sass/modules/_responsive.scss */
+  /* line 266, ../sass/modules/_responsive.scss */
+  body div#sec_jumpnow div.jumpnow_part1 div.jumpnow-btn-set #sg_download_btn, body div#sec_jumpnow div.jumpnow_part1 div.jumpnow-btn-set #sg_connect_btn {
+    margin-left: auto;
+  }
+
+  /* line 276, ../sass/modules/_responsive.scss */
   div.sponsor-group ul.sponsor-list.second li {
     with: 32% !important;
   }
 
-  /* line 271, ../sass/modules/_responsive.scss */
+  /* line 286, ../sass/modules/_responsive.scss */
   .contact_container span.input {
     max-width: initial;
   }
 
-  /* line 276, ../sass/modules/_responsive.scss */
+  /* line 291, ../sass/modules/_responsive.scss */
   .contact_header span {
     display: none;
   }
 
   /*************DISABLE THE ANIMATION*************/
-  /* line 284, ../sass/modules/_responsive.scss */
+  /* line 299, ../sass/modules/_responsive.scss */
   .rocket {
     display: none;
   }
 
-  /* line 287, ../sass/modules/_responsive.scss */
+  /* line 302, ../sass/modules/_responsive.scss */
   #sec_home:after {
     height: 55%;
-    top: 30%;
+    top: 55%;
   }
 
-  /* line 291, ../sass/modules/_responsive.scss */
+  /* line 306, ../sass/modules/_responsive.scss */
   #sec_home.timeLineAni:after {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3720,19 +3757,19 @@ body.sg .btn {
     height: 80%;
   }
 
-  /* line 295, ../sass/modules/_responsive.scss */
+  /* line 310, ../sass/modules/_responsive.scss */
   #sec_about {
     padding-bottom: 55px;
   }
-  /* line 298, ../sass/modules/_responsive.scss */
+  /* line 313, ../sass/modules/_responsive.scss */
   #sec_about .border {
     background-color: #f16b29;
   }
-  /* line 301, ../sass/modules/_responsive.scss */
+  /* line 316, ../sass/modules/_responsive.scss */
   #sec_about .border_container {
     margin: 55px 0 0;
   }
-  /* line 305, ../sass/modules/_responsive.scss */
+  /* line 320, ../sass/modules/_responsive.scss */
   #sec_about .border.top {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3744,11 +3781,11 @@ body.sg .btn {
     height: 1px;
     width: 100%;
   }
-  /* line 313, ../sass/modules/_responsive.scss */
+  /* line 328, ../sass/modules/_responsive.scss */
   #sec_about .border.bottom.b_right {
     display: none;
   }
-  /* line 316, ../sass/modules/_responsive.scss */
+  /* line 331, ../sass/modules/_responsive.scss */
   #sec_about .border.bottom.b_left {
     left: 0;
     top: 100%;
@@ -3760,7 +3797,7 @@ body.sg .btn {
     width: 100%;
     height: 1px;
   }
-  /* line 324, ../sass/modules/_responsive.scss */
+  /* line 339, ../sass/modules/_responsive.scss */
   #sec_about .border.left, #sec_about .border.right {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3772,12 +3809,12 @@ body.sg .btn {
     left: 0;
     top: 0;
   }
-  /* line 331, ../sass/modules/_responsive.scss */
+  /* line 346, ../sass/modules/_responsive.scss */
   #sec_about .border.right {
     left: 100%;
   }
 
-  /* line 335, ../sass/modules/_responsive.scss */
+  /* line 350, ../sass/modules/_responsive.scss */
   div.timeLineAni::after {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3787,18 +3824,18 @@ body.sg .btn {
     height: 100%;
   }
 
-  /* line 339, ../sass/modules/_responsive.scss */
+  /* line 354, ../sass/modules/_responsive.scss */
   #sec_about p {
     opacity: 1;
   }
 
-  /* line 342, ../sass/modules/_responsive.scss */
+  /* line 357, ../sass/modules/_responsive.scss */
   .top_animation {
     min-height: auto;
     padding-top: 0;
   }
 
-  /* line 351, ../sass/modules/_responsive.scss */
+  /* line 366, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .straight_line {
     height: 450px;
     -moz-animation: none;
@@ -3807,7 +3844,7 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 355, ../sass/modules/_responsive.scss */
+  /* line 370, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .straight_line_down {
     height: 450px;
     -moz-animation: none;
@@ -3816,7 +3853,7 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 360, ../sass/modules/_responsive.scss */
+  /* line 375, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .horizon_line {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3825,7 +3862,7 @@ body.sg .btn {
     animation: none;
     display: none;
   }
-  /* line 364, ../sass/modules/_responsive.scss */
+  /* line 379, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .horizon_line_left {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3834,16 +3871,16 @@ body.sg .btn {
     animation: none;
     display: none;
   }
-  /* line 371, ../sass/modules/_responsive.scss */
+  /* line 386, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container {
     border: 1px #f16b29 solid;
     min-height: 380px;
   }
-  /* line 374, ../sass/modules/_responsive.scss */
+  /* line 389, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .border {
     display: none;
   }
-  /* line 377, ../sass/modules/_responsive.scss */
+  /* line 392, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .straight_line {
     height: 450px;
     -moz-animation: none;
@@ -3852,7 +3889,7 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 381, ../sass/modules/_responsive.scss */
+  /* line 396, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .horizon_line {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3861,7 +3898,7 @@ body.sg .btn {
     animation: none;
     display: none;
   }
-  /* line 387, ../sass/modules/_responsive.scss */
+  /* line 402, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.top, div.section#sec_competition .border.bottom {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3870,7 +3907,7 @@ body.sg .btn {
     animation: none;
     width: 100%;
   }
-  /* line 391, ../sass/modules/_responsive.scss */
+  /* line 406, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.left {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3881,7 +3918,7 @@ body.sg .btn {
     height: 100%;
     max-width: 1px;
   }
-  /* line 397, ../sass/modules/_responsive.scss */
+  /* line 412, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.right.R_top {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3892,7 +3929,7 @@ body.sg .btn {
     top: 0;
     max-width: 1px;
   }
-  /* line 403, ../sass/modules/_responsive.scss */
+  /* line 418, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.right.R_bottom {
     -moz-animation: none;
     -webkit-animation: none;
@@ -3902,11 +3939,11 @@ body.sg .btn {
     display: none;
   }
 
-  /* line 419, ../sass/modules/_responsive.scss */
+  /* line 434, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow_part1 .jumpnow-des .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 421, ../sass/modules/_responsive.scss */
+  /* line 436, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow_part1 .jumpnow-des .border_container .border {
     display: none;
     -moz-animation: none;
@@ -3915,19 +3952,19 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 430, ../sass/modules/_responsive.scss */
+  /* line 445, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow-btn-set {
     margin-top: 55px;
   }
-  /* line 436, ../sass/modules/_responsive.scss */
+  /* line 451, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 439, ../sass/modules/_responsive.scss */
+  /* line 454, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container.borderRightAni {
     border: 1px solid #f16b29;
   }
-  /* line 441, ../sass/modules/_responsive.scss */
+  /* line 456, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container.borderRightAni .border {
     display: none;
     -moz-animation: none;
@@ -3936,15 +3973,15 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 450, ../sass/modules/_responsive.scss */
+  /* line 465, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 453, ../sass/modules/_responsive.scss */
+  /* line 468, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container.borderRightAni {
     border: 1px solid #f16b29;
   }
-  /* line 455, ../sass/modules/_responsive.scss */
+  /* line 470, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container.borderRightAni .border {
     display: none;
     -moz-animation: none;
@@ -3957,60 +3994,60 @@ body.sg .btn {
 /******ADDED BY WALTER TO SHOW THE .nav_group********/
 /****************FOR THE STRAIGHT LINE IN THE #HOME SECTION ADDED BY WALTER******/
 @media screen and (max-width: 990px) and (min-width: 768px) {
-  /* line 483, ../sass/modules/_responsive.scss */
+  /* line 498, ../sass/modules/_responsive.scss */
   #sec_home::after {
     top: 48%;
   }
 }
 /******************MOBILE************************/
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  /* line 502, ../sass/modules/_responsive.scss */
-  body.sg div.contact_container {
-    margin-bottom: 121px;
+  /* line 517, ../sass/modules/_responsive.scss */
+  body div.contact_container {
+    margin-bottom: 100px;
   }
 
-  /* line 510, ../sass/modules/_responsive.scss */
+  /* line 524, ../sass/modules/_responsive.scss */
   div#sec_competition::after {
     height: 100%;
     top: 0;
   }
 
-  /* line 514, ../sass/modules/_responsive.scss */
+  /* line 528, ../sass/modules/_responsive.scss */
   div#sec_home::after {
     top: 60%;
   }
 
-  /* line 521, ../sass/modules/_responsive.scss */
+  /* line 535, ../sass/modules/_responsive.scss */
   div#sec_competition .arrow {
     display: none;
   }
 
-  /* line 527, ../sass/modules/_responsive.scss */
+  /* line 541, ../sass/modules/_responsive.scss */
   body {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: initial;
   }
 
-  /* line 534, ../sass/modules/_responsive.scss */
+  /* line 548, ../sass/modules/_responsive.scss */
   .no-pad-m {
     padding: 0 !important;
   }
 
-  /* line 538, ../sass/modules/_responsive.scss */
+  /* line 552, ../sass/modules/_responsive.scss */
   .section {
     height: auto !important;
     padding-bottom: 30px !important;
   }
 
-  /* line 543, ../sass/modules/_responsive.scss */
+  /* line 557, ../sass/modules/_responsive.scss */
   header#header {
     background: #0e324b;
     height: 50px;
     padding: 10px 30px !important;
     margin: 0;
   }
-  /* line 551, ../sass/modules/_responsive.scss */
+  /* line 565, ../sass/modules/_responsive.scss */
   header#header a.navbar-brand {
     font-size: 28px;
     width: initial;
@@ -4019,17 +4056,17 @@ body.sg .btn {
     line-height: 30px;
   }
 
-  /* line 563, ../sass/modules/_responsive.scss */
+  /* line 577, ../sass/modules/_responsive.scss */
   div.section-padding {
     padding: 0;
   }
 
-  /* line 566, ../sass/modules/_responsive.scss */
+  /* line 580, ../sass/modules/_responsive.scss */
   #sec_about .border_container {
     padding: 3%;
   }
 
-  /* line 570, ../sass/modules/_responsive.scss */
+  /* line 584, ../sass/modules/_responsive.scss */
   a.btn {
     width: 100%;
     max-width: 340px;
@@ -4038,81 +4075,81 @@ body.sg .btn {
     margin-right: auto;
   }
 
-  /* line 583, ../sass/modules/_responsive.scss */
+  /* line 597, ../sass/modules/_responsive.scss */
   a.imready {
     float: none;
   }
 
-  /* line 590, ../sass/modules/_responsive.scss */
+  /* line 604, ../sass/modules/_responsive.scss */
   .sloganContainer {
     min-height: 600px;
     height: initial;
   }
 
-  /* line 596, ../sass/modules/_responsive.scss */
+  /* line 610, ../sass/modules/_responsive.scss */
   .fp-slidesContainer {
     margin-top: 0;
   }
 
-  /* line 599, ../sass/modules/_responsive.scss */
+  /* line 613, ../sass/modules/_responsive.scss */
   .slide-inner {
     width: 97%;
   }
 
-  /* line 603, ../sass/modules/_responsive.scss */
+  /* line 617, ../sass/modules/_responsive.scss */
   #sec_about p {
     font-size: 20px;
     line-height: 1.7em;
   }
 
-  /* line 608, ../sass/modules/_responsive.scss */
+  /* line 622, ../sass/modules/_responsive.scss */
   .info_list ul li {
     width: 100%;
     float: left;
     margin-bottom: 10px;
   }
-  /* line 612, ../sass/modules/_responsive.scss */
+  /* line 626, ../sass/modules/_responsive.scss */
   .info_list ul li .fa {
     height: 10%;
   }
 
-  /* line 618, ../sass/modules/_responsive.scss */
+  /* line 632, ../sass/modules/_responsive.scss */
   div.timeline ul li {
     width: 100%;
     padding: 20px;
   }
-  /* line 621, ../sass/modules/_responsive.scss */
+  /* line 635, ../sass/modules/_responsive.scss */
   div.timeline ul li:hover {
     margin: 0 !important;
   }
-  /* line 625, ../sass/modules/_responsive.scss */
+  /* line 639, ../sass/modules/_responsive.scss */
   div.timeline ul li:before {
     display: none;
   }
-  /* line 629, ../sass/modules/_responsive.scss */
+  /* line 643, ../sass/modules/_responsive.scss */
   div.timeline ul li:after {
     display: none;
   }
 
-  /* line 639, ../sass/modules/_responsive.scss */
+  /* line 653, ../sass/modules/_responsive.scss */
   div.competition_topic h4 {
     font-size: 35px;
     padding: 15px 0;
   }
-  /* line 643, ../sass/modules/_responsive.scss */
+  /* line 657, ../sass/modules/_responsive.scss */
   div.competition_topic h5 {
     padding-top: 15px;
   }
 
-  /* line 649, ../sass/modules/_responsive.scss */
+  /* line 663, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 120px !important;
   }
-  /* line 652, ../sass/modules/_responsive.scss */
+  /* line 666, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single h4 {
     margin-top: 20px;
   }
-  /* line 656, ../sass/modules/_responsive.scss */
+  /* line 670, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -4120,12 +4157,12 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-  /* line 658, ../sass/modules/_responsive.scss */
+  /* line 672, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-  /* line 663, ../sass/modules/_responsive.scss */
+  /* line 677, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -4134,7 +4171,7 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
-  /* line 668, ../sass/modules/_responsive.scss */
+  /* line 682, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -4143,36 +4180,36 @@ body.sg .btn {
     background-size: 50% auto;
   }
 
-  /* line 681, ../sass/modules/_responsive.scss */
+  /* line 695, ../sass/modules/_responsive.scss */
   #competition_prize_slide .first-place h4 {
     font-size: 28px !important;
   }
 
-  /* line 685, ../sass/modules/_responsive.scss */
+  /* line 699, ../sass/modules/_responsive.scss */
   div.competition_topic h4 {
     text-align: left;
   }
 
   /***Mobile Height control***/
-  /* line 691, ../sass/modules/_responsive.scss */
+  /* line 705, ../sass/modules/_responsive.scss */
   .fp-slides, .fp-slidesContainer, .border_container {
     height: auto !important;
   }
 
   /****COMPETITION*********/
-  /* line 701, ../sass/modules/_responsive.scss */
+  /* line 715, ../sass/modules/_responsive.scss */
   div.competition_topic .btn {
     margin-top: 30px;
   }
 
-  /* line 705, ../sass/modules/_responsive.scss */
+  /* line 719, ../sass/modules/_responsive.scss */
   div.timeline {
     position: initial;
     margin: 0;
   }
 
   /**SPONSORSS*****/
-  /* line 711, ../sass/modules/_responsive.scss */
+  /* line 725, ../sass/modules/_responsive.scss */
   div.sponsor-group li span {
     opacity: 0;
     position: absolute;
@@ -4181,95 +4218,95 @@ body.sg .btn {
     width: 100vw;
   }
 
-  /* line 727, ../sass/modules/_responsive.scss */
+  /* line 741, ../sass/modules/_responsive.scss */
   ul.sponsor-list li .sg div#sec_home::after {
     top: 60%;
   }
-  /* line 730, ../sass/modules/_responsive.scss */
+  /* line 744, ../sass/modules/_responsive.scss */
   ul.sponsor-list li .sg div#sec_competition::after {
     height: 100%;
     top: 0;
   }
 
-  /* line 739, ../sass/modules/_responsive.scss */
+  /* line 753, ../sass/modules/_responsive.scss */
   div.sponsor-group ul.sponsor-list.second li {
     width: 100%;
     margin: 0 2% 2% 0;
     position: relative;
   }
 
-  /* line 747, ../sass/modules/_responsive.scss */
+  /* line 761, ../sass/modules/_responsive.scss */
   div.nav_group {
     right: 26%;
   }
 
-  /* line 751, ../sass/modules/_responsive.scss */
+  /* line 765, ../sass/modules/_responsive.scss */
   .team_details .slider-inner {
     padding-bottom: 55px;
   }
 
-  /* line 756, ../sass/modules/_responsive.scss */
+  /* line 770, ../sass/modules/_responsive.scss */
   .slide.team_details .team_detail_single, div.slide.personal_details .team_detail_single {
     border: 1px solid #f16b29;
     margin-top: 10px;
     padding: 10px;
     position: relative;
   }
-  /* line 763, ../sass/modules/_responsive.scss */
+  /* line 777, ../sass/modules/_responsive.scss */
   .slide.team_details span.team_member, div.slide.personal_details span.team_member {
     width: 100% !important;
   }
-  /* line 767, ../sass/modules/_responsive.scss */
+  /* line 781, ../sass/modules/_responsive.scss */
   .slide.team_details span.responsibility, div.slide.personal_details span.responsibility {
     width: 100% !important;
   }
 
-  /* line 774, ../sass/modules/_responsive.scss */
+  /* line 788, ../sass/modules/_responsive.scss */
   .file-upload-button {
     padding: 15px 0;
   }
 
-  /* line 779, ../sass/modules/_responsive.scss */
+  /* line 793, ../sass/modules/_responsive.scss */
   div.slide.team_details span.input {
     width: 100%;
   }
-  /* line 783, ../sass/modules/_responsive.scss */
+  /* line 797, ../sass/modules/_responsive.scss */
   div.slide.team_details button#del_member {
     position: absolute !important;
     background: #0e324b;
     right: -15px;
     top: -3px;
   }
-  /* line 790, ../sass/modules/_responsive.scss */
+  /* line 804, ../sass/modules/_responsive.scss */
   div.slide.team_details #add_member {
     margin: 0;
   }
 
-  /* line 795, ../sass/modules/_responsive.scss */
+  /* line 809, ../sass/modules/_responsive.scss */
   #reg_btn {
     margin: 55px auto 0;
     position: initial;
   }
 
   /***CONTACT******/
-  /* line 806, ../sass/modules/_responsive.scss */
+  /* line 820, ../sass/modules/_responsive.scss */
   div.contact_container span.input {
     width: 100%;
   }
 
   /*************DISABLE THE ANIMATION*************/
-  /* line 813, ../sass/modules/_responsive.scss */
+  /* line 827, ../sass/modules/_responsive.scss */
   .rocket {
     display: none;
   }
 
-  /* line 816, ../sass/modules/_responsive.scss */
+  /* line 830, ../sass/modules/_responsive.scss */
   #sec_home:after {
     height: 80%;
     top: 60%;
   }
 
-  /* line 820, ../sass/modules/_responsive.scss */
+  /* line 834, ../sass/modules/_responsive.scss */
   #sec_home.timeLineAni:after {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4279,19 +4316,19 @@ body.sg .btn {
     height: 80%;
   }
 
-  /* line 824, ../sass/modules/_responsive.scss */
+  /* line 838, ../sass/modules/_responsive.scss */
   #sec_about {
     padding-bottom: 55px;
   }
-  /* line 827, ../sass/modules/_responsive.scss */
+  /* line 841, ../sass/modules/_responsive.scss */
   #sec_about .border {
     background-color: #f16b29;
   }
-  /* line 830, ../sass/modules/_responsive.scss */
+  /* line 844, ../sass/modules/_responsive.scss */
   #sec_about .border_container {
     margin: 55px 0 0;
   }
-  /* line 834, ../sass/modules/_responsive.scss */
+  /* line 848, ../sass/modules/_responsive.scss */
   #sec_about .border.top {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4303,11 +4340,11 @@ body.sg .btn {
     height: 1px;
     width: 100%;
   }
-  /* line 842, ../sass/modules/_responsive.scss */
+  /* line 856, ../sass/modules/_responsive.scss */
   #sec_about .border.bottom.b_right {
     display: none;
   }
-  /* line 845, ../sass/modules/_responsive.scss */
+  /* line 859, ../sass/modules/_responsive.scss */
   #sec_about .border.bottom.b_left {
     left: 0;
     top: 100%;
@@ -4319,7 +4356,7 @@ body.sg .btn {
     width: 100%;
     height: 1px;
   }
-  /* line 853, ../sass/modules/_responsive.scss */
+  /* line 867, ../sass/modules/_responsive.scss */
   #sec_about .border.left, #sec_about .border.right {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4331,12 +4368,12 @@ body.sg .btn {
     left: 0;
     top: 0;
   }
-  /* line 860, ../sass/modules/_responsive.scss */
+  /* line 874, ../sass/modules/_responsive.scss */
   #sec_about .border.right {
     left: 100%;
   }
 
-  /* line 864, ../sass/modules/_responsive.scss */
+  /* line 878, ../sass/modules/_responsive.scss */
   div.timeLineAni::after {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4346,18 +4383,18 @@ body.sg .btn {
     height: 100%;
   }
 
-  /* line 868, ../sass/modules/_responsive.scss */
+  /* line 882, ../sass/modules/_responsive.scss */
   #sec_about p {
     opacity: 1;
   }
 
-  /* line 871, ../sass/modules/_responsive.scss */
+  /* line 885, ../sass/modules/_responsive.scss */
   .top_animation {
     min-height: auto;
     padding-top: 0;
   }
 
-  /* line 880, ../sass/modules/_responsive.scss */
+  /* line 894, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .straight_line {
     height: 450px;
     -moz-animation: none;
@@ -4366,7 +4403,7 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 884, ../sass/modules/_responsive.scss */
+  /* line 898, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .straight_line_down {
     height: 450px;
     -moz-animation: none;
@@ -4375,7 +4412,7 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 889, ../sass/modules/_responsive.scss */
+  /* line 903, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .horizon_line {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4384,7 +4421,7 @@ body.sg .btn {
     animation: none;
     display: none;
   }
-  /* line 893, ../sass/modules/_responsive.scss */
+  /* line 907, ../sass/modules/_responsive.scss */
   div.section#sec_competition.border_container .horizon_line_left {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4393,16 +4430,16 @@ body.sg .btn {
     animation: none;
     display: none;
   }
-  /* line 900, ../sass/modules/_responsive.scss */
+  /* line 914, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container {
     border: 1px #f16b29 solid;
     min-height: 380px;
   }
-  /* line 903, ../sass/modules/_responsive.scss */
+  /* line 917, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .border {
     display: none;
   }
-  /* line 906, ../sass/modules/_responsive.scss */
+  /* line 920, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .straight_line {
     height: 450px;
     -moz-animation: none;
@@ -4411,7 +4448,7 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 910, ../sass/modules/_responsive.scss */
+  /* line 924, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border_container .horizon_line {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4420,7 +4457,7 @@ body.sg .btn {
     animation: none;
     display: none;
   }
-  /* line 916, ../sass/modules/_responsive.scss */
+  /* line 930, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.top, div.section#sec_competition .border.bottom {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4429,7 +4466,7 @@ body.sg .btn {
     animation: none;
     width: 100%;
   }
-  /* line 920, ../sass/modules/_responsive.scss */
+  /* line 934, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.left {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4440,7 +4477,7 @@ body.sg .btn {
     height: 100%;
     max-width: 1px;
   }
-  /* line 926, ../sass/modules/_responsive.scss */
+  /* line 940, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.right.R_top {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4451,7 +4488,7 @@ body.sg .btn {
     top: 0;
     max-width: 1px;
   }
-  /* line 932, ../sass/modules/_responsive.scss */
+  /* line 946, ../sass/modules/_responsive.scss */
   div.section#sec_competition .border.right.R_bottom {
     -moz-animation: none;
     -webkit-animation: none;
@@ -4461,16 +4498,16 @@ body.sg .btn {
     display: none;
   }
 
-  /* line 939, ../sass/modules/_responsive.scss */
+  /* line 953, ../sass/modules/_responsive.scss */
   #competition_topic_slide.slide.competition_topic .slide-inner {
     z-index: -1;
   }
 
-  /* line 948, ../sass/modules/_responsive.scss */
+  /* line 962, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow_part1 .jumpnow-des .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 950, ../sass/modules/_responsive.scss */
+  /* line 964, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow_part1 .jumpnow-des .border_container .border {
     display: none;
     -moz-animation: none;
@@ -4479,19 +4516,19 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 959, ../sass/modules/_responsive.scss */
+  /* line 973, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .jumpnow-btn-set {
     margin-top: 55px;
   }
-  /* line 965, ../sass/modules/_responsive.scss */
+  /* line 979, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 968, ../sass/modules/_responsive.scss */
+  /* line 982, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container.borderRightAni {
     border: 1px solid #f16b29;
   }
-  /* line 970, ../sass/modules/_responsive.scss */
+  /* line 984, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .team_details .slide-inner .border_container.borderRightAni .border {
     display: none;
     -moz-animation: none;
@@ -4500,15 +4537,15 @@ body.sg .btn {
     -o-animation: none;
     animation: none;
   }
-  /* line 979, ../sass/modules/_responsive.scss */
+  /* line 993, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container {
     border: 1px solid #f16b29;
   }
-  /* line 982, ../sass/modules/_responsive.scss */
+  /* line 996, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container.borderRightAni {
     border: 1px solid #f16b29;
   }
-  /* line 984, ../sass/modules/_responsive.scss */
+  /* line 998, ../sass/modules/_responsive.scss */
   div.section#sec_jumpnow .personal_details .slide-inner .border_container.borderRightAni .border {
     display: none;
     -moz-animation: none;
@@ -4518,7 +4555,7 @@ body.sg .btn {
     animation: none;
   }
 
-  /* line 999, ../sass/modules/_responsive.scss */
+  /* line 1013, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container {
     display: block;
     position: absolute;
@@ -4526,13 +4563,13 @@ body.sg .btn {
     background: #e8e8e8;
     width: 100%;
   }
-  /* line 1005, ../sass/modules/_responsive.scss */
+  /* line 1019, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container ul.competition-headings {
     padding: 0;
     margin: 0;
     border-bottom: 1px solid #f16b29;
   }
-  /* line 1010, ../sass/modules/_responsive.scss */
+  /* line 1024, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container ul.competition-headings a {
     padding-top: 20px;
     height: 100%;
@@ -4540,12 +4577,12 @@ body.sg .btn {
     min-height: 60px;
   }
 
-  /* line 1019, ../sass/modules/_responsive.scss */
+  /* line 1033, ../sass/modules/_responsive.scss */
   #competition_menu {
     display: none;
   }
 
-  /* line 1023, ../sass/modules/_responsive.scss */
+  /* line 1037, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container.fixed {
     position: fixed;
     z-index: 2;
@@ -4553,23 +4590,23 @@ body.sg .btn {
     top: 50px;
     background: #e8e8e8;
   }
-  /* line 1029, ../sass/modules/_responsive.scss */
+  /* line 1043, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container.fixed ul.competition-headings {
     padding: 0;
     margin: 0;
   }
 
-  /* line 1037, ../sass/modules/_responsive.scss */
+  /* line 1051, ../sass/modules/_responsive.scss */
   #sec_competition .fp-slide {
     padding-top: 60px;
   }
 
-  /* line 1042, ../sass/modules/_responsive.scss */
+  /* line 1056, ../sass/modules/_responsive.scss */
   .info_list ul li {
     padding-left: 0;
   }
 
-  /* line 1046, ../sass/modules/_responsive.scss */
+  /* line 1060, ../sass/modules/_responsive.scss */
   div.timeline ul li {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -4580,7 +4617,7 @@ body.sg .btn {
     position: static;
     bottom: 0;
   }
-  /* line 1056, ../sass/modules/_responsive.scss */
+  /* line 1070, ../sass/modules/_responsive.scss */
   div.timeline ul li:hover {
     margin: initial;
     -webkit-box-shadow: none;
@@ -4592,200 +4629,200 @@ body.sg .btn {
     bottom: 0;
   }
 
-  /* line 1072, ../sass/modules/_responsive.scss */
+  /* line 1086, ../sass/modules/_responsive.scss */
   .jumpnow-des h3 {
     text-align: center;
   }
 
-  /* line 1076, ../sass/modules/_responsive.scss */
+  /* line 1090, ../sass/modules/_responsive.scss */
   .jumpnow-btn-set {
     margin-top: 0;
   }
 
-  /* line 1079, ../sass/modules/_responsive.scss */
+  /* line 1093, ../sass/modules/_responsive.scss */
   ul.plan_list li {
     text-align: left;
   }
 
-  /* line 1082, ../sass/modules/_responsive.scss */
+  /* line 1096, ../sass/modules/_responsive.scss */
   .jumpnow_part1 a.bizplan_download {
     margin: 0 auto 15px;
     display: block;
     float: none;
   }
 
-  /* line 1089, ../sass/modules/_responsive.scss */
+  /* line 1103, ../sass/modules/_responsive.scss */
   div#sec_events {
     padding-top: 55px;
   }
-  /* line 1092, ../sass/modules/_responsive.scss */
+  /* line 1106, ../sass/modules/_responsive.scss */
   div#sec_events .event_group .event_single {
     float: none;
     clear: both;
   }
 
-  /* line 1102, ../sass/modules/_responsive.scss */
+  /* line 1116, ../sass/modules/_responsive.scss */
   .event_group .event_single .event_single_rotate div {
     height: 20vh;
   }
-  /* line 1108, ../sass/modules/_responsive.scss */
+  /* line 1122, ../sass/modules/_responsive.scss */
   .event_group .event_tw_comingsoon h3, .event_group .event_single .event_sg_comingsoon h3, .event_single .event_group .event_sg_comingsoon h3, .event_group .event_tw_comingsoon h3, .event_group .event_single .event_sg_comingsoon h3, .event_single .event_group .event_sg_comingsoon h3 {
     margin-top: 5vh;
   }
 
-  /* line 1117, ../sass/modules/_responsive.scss */
+  /* line 1131, ../sass/modules/_responsive.scss */
   div.contact_container h2 {
     width: auto;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 489px) {
-  /* line 1132, ../sass/modules/_responsive.scss */
+  /* line 1146, ../sass/modules/_responsive.scss */
   div.sponsor-group ul.sponsor-list li {
     width: 48% !important;
     float: left;
   }
 
-  /* line 1146, ../sass/modules/_responsive.scss */
+  /* line 1160, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container ul.competition-headings a {
     line-height: 37px;
   }
 
-  /* line 1152, ../sass/modules/_responsive.scss */
+  /* line 1166, ../sass/modules/_responsive.scss */
   .event_single {
     width: 70%;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 1158, ../sass/modules/_responsive.scss */
+  /* line 1172, ../sass/modules/_responsive.scss */
   #competition_mobile_menu_container ul.competition-headings a {
     font-size: 13px;
   }
 }
 /******ADD BY WALTER TO SHOW THE .nav_group********/
 @media screen and (max-width: 768px) {
-  /* line 1171, ../sass/modules/_responsive.scss */
+  /* line 1185, ../sass/modules/_responsive.scss */
   .team_details .slide-inner, .personal_details .slide-inner {
     margin: 0 auto 50px;
   }
-  /* line 1175, ../sass/modules/_responsive.scss */
+  /* line 1189, ../sass/modules/_responsive.scss */
   .team_details .nav_group, .personal_details .nav_group {
     bottom: -107px;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 481px) {
-  /* line 1187, ../sass/modules/_responsive.scss */
+  /* line 1201, ../sass/modules/_responsive.scss */
   body.sg #sec_about p {
     font-size: 25px !important;
     line-height: 2.0em;
   }
 
-  /* line 1191, ../sass/modules/_responsive.scss */
+  /* line 1205, ../sass/modules/_responsive.scss */
   body.sg .competition_topic {
     font-size: 17px;
   }
-  /* line 1201, ../sass/modules/_responsive.scss */
+  /* line 1215, ../sass/modules/_responsive.scss */
   body.sg .competition_topic h5 {
     font-size: 34px;
   }
-  /* line 1204, ../sass/modules/_responsive.scss */
+  /* line 1218, ../sass/modules/_responsive.scss */
   body.sg .competition_topic p {
     font-size: 17px;
     line-height: 22px;
     letter-spacing: initial;
   }
-  /* line 1210, ../sass/modules/_responsive.scss */
+  /* line 1224, ../sass/modules/_responsive.scss */
   body.sg .competition_topic ul li {
     font-size: 17px;
     line-height: 22px;
   }
 
-  /* line 1216, ../sass/modules/_responsive.scss */
+  /* line 1230, ../sass/modules/_responsive.scss */
   body.sg .jumpnow-des h3 {
     font-family: 'fatfrank', sen-serif;
     letter-spacing: 1px;
     font-size: 40px;
   }
 
-  /* line 1221, ../sass/modules/_responsive.scss */
+  /* line 1235, ../sass/modules/_responsive.scss */
   body.sg ul.plan_list {
     max-width: 50%;
     min-width: 350px;
     margin: 0 auto;
   }
-  /* line 1226, ../sass/modules/_responsive.scss */
+  /* line 1240, ../sass/modules/_responsive.scss */
   body.sg ul.plan_list li {
     text-align: left;
     font-size: 23px;
   }
 
-  /* line 1233, ../sass/modules/_responsive.scss */
+  /* line 1247, ../sass/modules/_responsive.scss */
   ul.plan_list {
     max-width: 42%;
     min-width: 200px;
     margin: 0 auto;
   }
-  /* line 1238, ../sass/modules/_responsive.scss */
+  /* line 1252, ../sass/modules/_responsive.scss */
   ul.plan_list li {
     text-align: left;
     font-size: 23px;
   }
 
-  /* line 1245, ../sass/modules/_responsive.scss */
+  /* line 1259, ../sass/modules/_responsive.scss */
   div.slide.team_details {
     padding: 2.2% 0% 2.2% 0%;
   }
 
-  /* line 1248, ../sass/modules/_responsive.scss */
+  /* line 1262, ../sass/modules/_responsive.scss */
   div.nav_group {
     bottom: -42px;
   }
 
-  /* line 1252, ../sass/modules/_responsive.scss */
+  /* line 1266, ../sass/modules/_responsive.scss */
   #sec_about p {
     font-size: 25px !important;
     line-height: 2.0em;
   }
 
-  /* line 1257, ../sass/modules/_responsive.scss */
+  /* line 1271, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 20px;
     line-height: 28px;
   }
-  /* line 1260, ../sass/modules/_responsive.scss */
+  /* line 1274, ../sass/modules/_responsive.scss */
   div.competition_topic h4 {
     font-size: 40px;
     padding: 15px 0;
   }
-  /* line 1264, ../sass/modules/_responsive.scss */
+  /* line 1278, ../sass/modules/_responsive.scss */
   div.competition_topic h4 span {
     font-size: 35px;
   }
-  /* line 1268, ../sass/modules/_responsive.scss */
+  /* line 1282, ../sass/modules/_responsive.scss */
   div.competition_topic h5 {
     font-size: 28px;
   }
-  /* line 1271, ../sass/modules/_responsive.scss */
+  /* line 1285, ../sass/modules/_responsive.scss */
   div.competition_topic p {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: initial;
   }
-  /* line 1277, ../sass/modules/_responsive.scss */
+  /* line 1291, ../sass/modules/_responsive.scss */
   div.competition_topic ul li {
     font-size: 20px;
     line-height: 33px;
   }
 
-  /* line 1285, ../sass/modules/_responsive.scss */
+  /* line 1299, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 140px !important;
   }
-  /* line 1288, ../sass/modules/_responsive.scss */
+  /* line 1302, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single h4 {
     margin-top: 20px;
   }
-  /* line 1292, ../sass/modules/_responsive.scss */
+  /* line 1306, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -4793,12 +4830,12 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-  /* line 1294, ../sass/modules/_responsive.scss */
+  /* line 1308, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-  /* line 1299, ../sass/modules/_responsive.scss */
+  /* line 1313, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -4807,7 +4844,7 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
-  /* line 1304, ../sass/modules/_responsive.scss */
+  /* line 1318, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -4817,56 +4854,68 @@ body.sg .btn {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 1323, ../sass/modules/_responsive.scss */
+  /* line 1337, ../sass/modules/_responsive.scss */
   ul.plan_list {
     width: auto;
   }
-  /* line 1327, ../sass/modules/_responsive.scss */
+  /* line 1341, ../sass/modules/_responsive.scss */
   ul.plan_list li {
     text-align: left;
   }
 
-  /* line 1332, ../sass/modules/_responsive.scss */
+  /* line 1346, ../sass/modules/_responsive.scss */
   div.slide.team_details {
     padding: 2.2% 0% 90px 0%;
   }
 
-  /* line 1335, ../sass/modules/_responsive.scss */
+  /* line 1349, ../sass/modules/_responsive.scss */
   div.nav_group {
     bottom: -37px;
   }
 
-  /* line 1341, ../sass/modules/_responsive.scss */
+  /* line 1355, ../sass/modules/_responsive.scss */
   .event_group .event_single {
     margin-bottom: 30px;
     min-height: 40vh;
   }
-  /* line 1344, ../sass/modules/_responsive.scss */
+  /* line 1358, ../sass/modules/_responsive.scss */
   .event_group .event_single .event_single_rotate {
     height: auto;
   }
-  /* line 1346, ../sass/modules/_responsive.scss */
+  /* line 1360, ../sass/modules/_responsive.scss */
   .event_group .event_single .event_single_rotate div {
     height: 40vh;
   }
-  /* line 1353, ../sass/modules/_responsive.scss */
+  /* line 1367, ../sass/modules/_responsive.scss */
   .event_group .event_tw_comingsoon h3, .event_group .event_single .event_sg_comingsoon h3, .event_single .event_group .event_sg_comingsoon h3, .event_group .event_tw_comingsoon h3, .event_group .event_single .event_sg_comingsoon h3, .event_single .event_group .event_sg_comingsoon h3 {
     margin-top: 12vh;
   }
 }
 /****************    IPHONE 5, 6, 6+    ****************/
 @media only screen and (max-width: 567px) and (min-width: 414px) and (orientation: portrait) {
+<<<<<<< HEAD
   /* line 1377, ../sass/modules/_responsive.scss */
+=======
+  /* line 1391, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg {
     letter-spacing: initial;
     font-size: 16px;
     line-height: 24px;
   }
+<<<<<<< HEAD
   /* line 1383, ../sass/modules/_responsive.scss */
   body.sg div#sec_home:after {
     top: 56%;
   }
   /* line 1388, ../sass/modules/_responsive.scss */
+=======
+  /* line 1397, ../sass/modules/_responsive.scss */
+  body.sg div#sec_home:after {
+    top: 56%;
+  }
+  /* line 1402, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sg_bg {
     background: url("../img/home_bg_sg_5.jpg") no-repeat center;
     background-blend-mode: multiply;
@@ -4877,14 +4926,22 @@ body.sg .btn {
     -webkit-background-size: cover;
     position: relative;
   }
+<<<<<<< HEAD
   /* line 1404, ../sass/modules/_responsive.scss */
+=======
+  /* line 1418, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg {
     text-indent: initial;
     background-image: none;
     max-width: 480px;
     margin-top: 58px;
   }
+<<<<<<< HEAD
   /* line 1412, ../sass/modules/_responsive.scss */
+=======
+  /* line 1426, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg h2 {
     font-size: 40px;
     font-weight: 800;
@@ -4892,54 +4949,91 @@ body.sg .btn {
     letter-spacing: 3px;
     text-align: center;
   }
+<<<<<<< HEAD
   /* line 1420, ../sass/modules/_responsive.scss */
+=======
+  /* line 1434, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg h2 span {
     font-size: 27px;
     letter-spacing: 3px;
     line-height: 1.2em;
   }
+<<<<<<< HEAD
   /* line 1427, ../sass/modules/_responsive.scss */
+=======
+  /* line 1441, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg .slotMachine {
     border: 1px solid #fff;
     margin: 14px 0 30px !important;
     height: 68px;
   }
+<<<<<<< HEAD
   /* line 1432, ../sass/modules/_responsive.scss */
+=======
+  /* line 1446, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg .slot {
     font-family: 'raleway', sen-serif;
     font-weight: 700;
     font-size: 25px;
   }
+<<<<<<< HEAD
   /* line 1438, ../sass/modules/_responsive.scss */
+=======
+  /* line 1452, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg #slotButton3 {
     float: none;
     display: block;
     margin: 0px auto;
   }
+<<<<<<< HEAD
   /* line 1447, ../sass/modules/_responsive.scss */
+=======
+  /* line 1461, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg #sec_about p {
     font-size: 22px;
     line-height: 30px;
   }
+<<<<<<< HEAD
   /* line 1453, ../sass/modules/_responsive.scss */
+=======
+  /* line 1467, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div#sec_competition::after {
     height: 100%;
     top: 0;
   }
+<<<<<<< HEAD
   /* line 1458, ../sass/modules/_responsive.scss */
+=======
+  /* line 1472, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg ul.competition-headings a {
     letter-spacing: 2px;
     font-weight: 600;
   }
+<<<<<<< HEAD
   /* line 1464, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic {
     font-size: 14px;
   }
   /* line 1466, ../sass/modules/_responsive.scss */
+=======
+  /* line 1478, ../sass/modules/_responsive.scss */
+  body.sg div.competition_topic {
+    font-size: 14px;
+  }
+  /* line 1480, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic h4 {
     font-size: 45px;
     padding: 15px 0;
   }
+<<<<<<< HEAD
   /* line 1470, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic h4 span {
     font-size: 40px;
@@ -4949,73 +5043,133 @@ body.sg .btn {
     font-size: 30px;
   }
   /* line 1477, ../sass/modules/_responsive.scss */
+=======
+  /* line 1484, ../sass/modules/_responsive.scss */
+  body.sg div.competition_topic h4 span {
+    font-size: 40px;
+  }
+  /* line 1488, ../sass/modules/_responsive.scss */
+  body.sg div.competition_topic h5 {
+    font-size: 30px;
+  }
+  /* line 1491, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: initial;
   }
+<<<<<<< HEAD
   /* line 1483, ../sass/modules/_responsive.scss */
+=======
+  /* line 1497, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic ul li {
     font-size: 18px;
     line-height: 28px;
   }
+<<<<<<< HEAD
   /* line 1493, ../sass/modules/_responsive.scss */
+=======
+  /* line 1507, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .jumpnow-des h3 {
     font-family: 'fatfrank', sen-serif;
     letter-spacing: 1px;
     font-size: 27px;
   }
+<<<<<<< HEAD
   /* line 1497, ../sass/modules/_responsive.scss */
   body.sg .jumpnow-des h3 span {
     font-family: 'fatfrank', sen-serif;
   }
   /* line 1502, ../sass/modules/_responsive.scss */
+=======
+  /* line 1511, ../sass/modules/_responsive.scss */
+  body.sg .jumpnow-des h3 span {
+    font-family: 'fatfrank', sen-serif;
+  }
+  /* line 1516, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .jumpnow-des ul li {
     font-size: 15px;
     line-height: 35px;
   }
+<<<<<<< HEAD
   /* line 1514, ../sass/modules/_responsive.scss */
+=======
+  /* line 1528, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .event_single .front_face, body.sg .event_single .back_face {
     background-color: #333;
     text-shadow: 0px 0px  20px black;
   }
+<<<<<<< HEAD
   /* line 1521, ../sass/modules/_responsive.scss */
   body.sg .event_single .back_face p {
     padding: 50px 0;
   }
   /* line 1529, ../sass/modules/_responsive.scss */
+=======
+  /* line 1535, ../sass/modules/_responsive.scss */
+  body.sg .event_single .back_face p {
+    padding: 50px 0;
+  }
+  /* line 1543, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .btn {
     letter-spacing: 2px;
   }
 
+<<<<<<< HEAD
   /* line 1534, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 17px;
   }
   /* line 1536, ../sass/modules/_responsive.scss */
+=======
+  /* line 1549, ../sass/modules/_responsive.scss */
+  div.competition_topic {
+    font-size: 17px;
+  }
+  /* line 1551, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic h4 {
     font-size: 45px;
     padding: 15px 0;
   }
+<<<<<<< HEAD
   /* line 1540, ../sass/modules/_responsive.scss */
+=======
+  /* line 1555, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic h4 span {
     font-size: 35px;
   }
-  /* line 1544, ../sass/modules/_responsive.scss */
+  /* line 1559, ../sass/modules/_responsive.scss */
   div.competition_topic h5 {
     font-size: 26px;
   }
+<<<<<<< HEAD
   /* line 1547, ../sass/modules/_responsive.scss */
+=======
+  /* line 1562, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic p {
     font-size: 17px;
     line-height: 22px;
     letter-spacing: initial;
   }
+<<<<<<< HEAD
   /* line 1553, ../sass/modules/_responsive.scss */
+=======
+  /* line 1568, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic ul li {
     font-size: 17px;
   }
 
+<<<<<<< HEAD
   /* line 1560, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 140px !important;
@@ -5025,6 +5179,17 @@ body.sg .btn {
     margin-top: 20px;
   }
   /* line 1567, ../sass/modules/_responsive.scss */
+=======
+  /* line 1575, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single {
+    min-height: 140px !important;
+  }
+  /* line 1578, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single h4 {
+    margin-top: 20px;
+  }
+  /* line 1582, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5032,12 +5197,20 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
+<<<<<<< HEAD
   /* line 1569, ../sass/modules/_responsive.scss */
+=======
+  /* line 1584, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
+<<<<<<< HEAD
   /* line 1574, ../sass/modules/_responsive.scss */
+=======
+  /* line 1589, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5046,7 +5219,11 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
+<<<<<<< HEAD
   /* line 1579, ../sass/modules/_responsive.scss */
+=======
+  /* line 1594, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5055,38 +5232,60 @@ body.sg .btn {
     background-size: 50% auto;
   }
 
+<<<<<<< HEAD
   /* line 1592, ../sass/modules/_responsive.scss */
+=======
+  /* line 1607, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #sec_about p {
     font-size: 20px;
     line-height: 30px;
   }
 
+<<<<<<< HEAD
   /* line 1598, ../sass/modules/_responsive.scss */
   body.sg #sec_events .contact_container {
+=======
+  /* line 1613, ../sass/modules/_responsive.scss */
+  body div#sec_events .contact_container {
+>>>>>>> origin/master
     margin-bottom: 0px;
   }
 
-  /* line 1603, ../sass/modules/_responsive.scss */
-  div.contact_container {
-    margin-bottom: 150px;
+  /* line 1616, ../sass/modules/_responsive.scss */
+  body.sg div#sec_events .contact_container {
+    margin-bottom: 0px;
   }
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (orientation: landscape) {
+<<<<<<< HEAD
   /* line 1615, ../sass/modules/_responsive.scss */
+=======
+  /* line 1629, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #sec_home:after {
     top: 55%;
   }
 
+<<<<<<< HEAD
   /* line 1619, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 15px;
   }
   /* line 1621, ../sass/modules/_responsive.scss */
+=======
+  /* line 1633, ../sass/modules/_responsive.scss */
+  div.competition_topic {
+    font-size: 15px;
+  }
+  /* line 1635, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic h4 {
     font-size: 35px;
     padding: 15px 0;
     text-align: left;
   }
+<<<<<<< HEAD
   /* line 1626, ../sass/modules/_responsive.scss */
   div.competition_topic h4 span {
     font-size: 30px;
@@ -5096,26 +5295,53 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 1633, ../sass/modules/_responsive.scss */
+=======
+  /* line 1640, ../sass/modules/_responsive.scss */
+  div.competition_topic h4 span {
+    font-size: 30px;
+  }
+  /* line 1644, ../sass/modules/_responsive.scss */
+  div.competition_topic h5 {
+    font-size: 19px;
+  }
+  /* line 1647, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic p {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: initial;
   }
+<<<<<<< HEAD
   /* line 1639, ../sass/modules/_responsive.scss */
+=======
+  /* line 1653, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic ul li {
     font-size: 15px;
   }
 
+<<<<<<< HEAD
   /* line 1646, ../sass/modules/_responsive.scss */
+=======
+  /* line 1660, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single {
     margin: 5px auto 0;
     min-height: 290px !important;
   }
+<<<<<<< HEAD
   /* line 1649, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single h4 {
     margin-top: 20px;
   }
   /* line 1653, ../sass/modules/_responsive.scss */
+=======
+  /* line 1663, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single h4 {
+    margin-top: 20px;
+  }
+  /* line 1667, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5123,12 +5349,20 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
+<<<<<<< HEAD
   /* line 1655, ../sass/modules/_responsive.scss */
+=======
+  /* line 1669, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
+<<<<<<< HEAD
   /* line 1660, ../sass/modules/_responsive.scss */
+=======
+  /* line 1674, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5137,7 +5371,11 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
+<<<<<<< HEAD
   /* line 1665, ../sass/modules/_responsive.scss */
+=======
+  /* line 1679, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5146,80 +5384,109 @@ body.sg .btn {
     background-size: 50% auto;
   }
 
+<<<<<<< HEAD
   /* line 1678, ../sass/modules/_responsive.scss */
+=======
+  /* line 1692, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #sec_about p {
-    font-size: 20px;
+    font-size: 20px !important;
     line-height: 30px;
   }
 
+<<<<<<< HEAD
   /* line 1682, ../sass/modules/_responsive.scss */
+=======
+  /* line 1696, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #sec_about:after {
     top: 0;
   }
 
+<<<<<<< HEAD
   /* line 1686, ../sass/modules/_responsive.scss */
+=======
+  /* line 1700, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #sec_competition:after {
     height: 100%;
     top: 0;
   }
 
-  /* line 1695, ../sass/modules/_responsive.scss */
+  /* line 1709, ../sass/modules/_responsive.scss */
   body.sg div#sec_competition {
     min-height: 530px;
   }
 
-  /* line 1698, ../sass/modules/_responsive.scss */
+  /* line 1712, ../sass/modules/_responsive.scss */
   body.sg div#sec_jumpnow {
     min-height: 650px;
   }
 
-  /* line 1701, ../sass/modules/_responsive.scss */
+  /* line 1715, ../sass/modules/_responsive.scss */
   body.sg div#sec_events {
     padding-top: 50px;
   }
 
   /********** TW sections min-height *******/
-  /* line 1708, ../sass/modules/_responsive.scss */
+  /* line 1722, ../sass/modules/_responsive.scss */
   div#sec_competition .fp-slides {
     min-height: 700px;
   }
 
-  /* line 1714, ../sass/modules/_responsive.scss */
+  /* line 1728, ../sass/modules/_responsive.scss */
   div#sec_jumpnow .fp-slides {
     min-height: 800px;
   }
 
-  /* line 1720, ../sass/modules/_responsive.scss */
+  /* line 1734, ../sass/modules/_responsive.scss */
   div#sec_events {
     padding-top: 50px;
   }
 }
 @media screen and (max-width: 413px) and (min-width: 375px) and (orientation: portrait) {
-  /* line 1735, ../sass/modules/_responsive.scss */
+  /* line 1755, ../sass/modules/_responsive.scss */
   div#sec_competition::after {
     height: 100%;
     top: 0;
   }
 
+<<<<<<< HEAD
   /* line 1742, ../sass/modules/_responsive.scss */
+=======
+  /* line 1762, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.slide.team_details {
     padding: 2.2% 0% 5% 0%;
   }
 
+<<<<<<< HEAD
   /* line 1745, ../sass/modules/_responsive.scss */
+=======
+  /* line 1765, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.nav_group {
     bottom: -37px;
   }
 
+<<<<<<< HEAD
   /* line 1750, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 15px;
   }
   /* line 1752, ../sass/modules/_responsive.scss */
+=======
+  /* line 1770, ../sass/modules/_responsive.scss */
+  div.competition_topic {
+    font-size: 15px;
+  }
+  /* line 1772, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic h4 {
     font-size: 35px;
     padding: 15px 0;
   }
+<<<<<<< HEAD
   /* line 1756, ../sass/modules/_responsive.scss */
   div.competition_topic h4 span {
     font-size: 30px;
@@ -5229,16 +5496,32 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 1763, ../sass/modules/_responsive.scss */
+=======
+  /* line 1776, ../sass/modules/_responsive.scss */
+  div.competition_topic h4 span {
+    font-size: 30px;
+  }
+  /* line 1780, ../sass/modules/_responsive.scss */
+  div.competition_topic h5 {
+    font-size: 19px;
+  }
+  /* line 1783, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic p {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: initial;
   }
+<<<<<<< HEAD
   /* line 1769, ../sass/modules/_responsive.scss */
+=======
+  /* line 1789, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic ul li {
     font-size: 15px;
   }
 
+<<<<<<< HEAD
   /* line 1776, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 125px !important;
@@ -5248,6 +5531,17 @@ body.sg .btn {
     margin-top: 20px;
   }
   /* line 1783, ../sass/modules/_responsive.scss */
+=======
+  /* line 1796, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single {
+    min-height: 125px !important;
+  }
+  /* line 1799, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single h4 {
+    margin-top: 20px;
+  }
+  /* line 1803, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5255,12 +5549,20 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
+<<<<<<< HEAD
   /* line 1785, ../sass/modules/_responsive.scss */
+=======
+  /* line 1805, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
+<<<<<<< HEAD
   /* line 1790, ../sass/modules/_responsive.scss */
+=======
+  /* line 1810, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5269,7 +5571,11 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
+<<<<<<< HEAD
   /* line 1795, ../sass/modules/_responsive.scss */
+=======
+  /* line 1815, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5278,55 +5584,92 @@ body.sg .btn {
     background-size: 50% auto;
   }
 
+<<<<<<< HEAD
   /* line 1808, ../sass/modules/_responsive.scss */
+=======
+  /* line 1828, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   .sloganContainer {
     background-size: 80% auto;
   }
 
+<<<<<<< HEAD
   /* line 1812, ../sass/modules/_responsive.scss */
+=======
+  /* line 1832, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.contact_container {
     margin-bottom: 0px;
   }
 
+<<<<<<< HEAD
   /* line 1816, ../sass/modules/_responsive.scss */
   div.contact_container {
     margin-bottom: 100px;
+=======
+  /* line 1836, ../sass/modules/_responsive.scss */
+  body #sec_events div.contact_container {
+    margin-bottom: 0px;
+>>>>>>> origin/master
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 735px) and (orientation: landscape) {
   /* STYLES GO HERE */
+<<<<<<< HEAD
   /* line 1835, ../sass/modules/_responsive.scss */
+=======
+  /* line 1854, ../sass/modules/_responsive.scss */
+  div#sec_about .border_container {
+    margin-bottom: 50px;
+  }
+
+  /* line 1860, ../sass/modules/_responsive.scss */
+  body div#sec_about .border_container .white-text {
+    font-size: 20px !important;
+  }
+
+  /* line 1871, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div#sec_competition {
     min-height: 580px;
   }
 
-  /* line 1838, ../sass/modules/_responsive.scss */
+  /* line 1874, ../sass/modules/_responsive.scss */
   body.sg div#sec_jumpnow {
     min-height: 650px;
   }
 
-  /* line 1841, ../sass/modules/_responsive.scss */
+  /* line 1877, ../sass/modules/_responsive.scss */
   body.sg div#sec_events {
     padding-top: 50px;
   }
 
+<<<<<<< HEAD
   /* line 1847, ../sass/modules/_responsive.scss */
+=======
+  /* line 1883, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #sec_home:after {
     top: 55%;
   }
 
+<<<<<<< HEAD
   /* line 1851, ../sass/modules/_responsive.scss */
+=======
+  /* line 1887, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #sec_about::after {
     height: 100%;
     top: 0;
   }
 
-  /* line 1855, ../sass/modules/_responsive.scss */
+  /* line 1891, ../sass/modules/_responsive.scss */
   #sec_competition::after {
     height: 100%;
     top: 0;
   }
 
+<<<<<<< HEAD
   /* line 1863, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 260px !important;
@@ -5336,6 +5679,17 @@ body.sg .btn {
     margin-top: 20px;
   }
   /* line 1870, ../sass/modules/_responsive.scss */
+=======
+  /* line 1899, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single {
+    min-height: 260px !important;
+  }
+  /* line 1902, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single h4 {
+    margin-top: 20px;
+  }
+  /* line 1906, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5343,12 +5697,20 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
+<<<<<<< HEAD
   /* line 1872, ../sass/modules/_responsive.scss */
+=======
+  /* line 1908, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
+<<<<<<< HEAD
   /* line 1877, ../sass/modules/_responsive.scss */
+=======
+  /* line 1913, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5357,7 +5719,11 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
+<<<<<<< HEAD
   /* line 1882, ../sass/modules/_responsive.scss */
+=======
+  /* line 1918, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5367,37 +5733,54 @@ body.sg .btn {
   }
 
   /********** TW sections min-height *******/
-  /* line 1899, ../sass/modules/_responsive.scss */
+  /* line 1935, ../sass/modules/_responsive.scss */
   div#sec_competition .fp-slides {
     min-height: 700px;
   }
 
-  /* line 1905, ../sass/modules/_responsive.scss */
+  /* line 1941, ../sass/modules/_responsive.scss */
   div#sec_jumpnow .fp-slides {
     min-height: 800px;
   }
 
-  /* line 1911, ../sass/modules/_responsive.scss */
+  /* line 1947, ../sass/modules/_responsive.scss */
   div#sec_events {
     padding-top: 50px;
+  }
+
+  /* line 1952, ../sass/modules/_responsive.scss */
+  body #sec_competition #competition_menu {
+    display: none;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   /* STYLES GO HERE */
+<<<<<<< HEAD
   /* line 1924, ../sass/modules/_responsive.scss */
+=======
+  /* line 1966, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg {
     letter-spacing: initial;
     font-size: 16px;
     line-height: 24px;
   }
+<<<<<<< HEAD
   /* line 1930, ../sass/modules/_responsive.scss */
+=======
+  /* line 1972, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg {
     text-indent: initial;
     background-image: none;
     max-width: 480px;
     margin-top: 58px;
   }
+<<<<<<< HEAD
   /* line 1938, ../sass/modules/_responsive.scss */
+=======
+  /* line 1980, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg h2 {
     font-size: 40px;
     font-weight: 800;
@@ -5405,57 +5788,94 @@ body.sg .btn {
     letter-spacing: 3px;
     text-align: center;
   }
+<<<<<<< HEAD
   /* line 1946, ../sass/modules/_responsive.scss */
+=======
+  /* line 1988, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg h2 span {
     font-size: 27px;
     letter-spacing: 3px;
   }
+<<<<<<< HEAD
   /* line 1952, ../sass/modules/_responsive.scss */
+=======
+  /* line 1994, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg .slotMachine {
     border: 1px solid #fff;
     margin: 14px 0 30px !important;
     height: 68px;
   }
+<<<<<<< HEAD
   /* line 1957, ../sass/modules/_responsive.scss */
+=======
+  /* line 1999, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg .slot {
     font-family: 'raleway', sen-serif;
     font-weight: 700;
     font-size: 25px;
   }
+<<<<<<< HEAD
   /* line 1963, ../sass/modules/_responsive.scss */
+=======
+  /* line 2005, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg #slotButton3 {
     float: none;
     display: block;
     margin: 0px auto;
   }
+<<<<<<< HEAD
   /* line 1972, ../sass/modules/_responsive.scss */
+=======
+  /* line 2014, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg #sec_about p {
     font-size: 15px;
     line-height: 1.7em;
   }
+<<<<<<< HEAD
   /* line 1979, ../sass/modules/_responsive.scss */
+=======
+  /* line 2021, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div#sec_competition::after {
     height: 100%;
     top: 0;
   }
-  /* line 1983, ../sass/modules/_responsive.scss */
+  /* line 2025, ../sass/modules/_responsive.scss */
   body.sg div#sec_home::after {
     top: 70%;
   }
+<<<<<<< HEAD
   /* line 1986, ../sass/modules/_responsive.scss */
+=======
+  /* line 2028, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg ul.competition-headings a {
     letter-spacing: 2px;
     font-weight: 600;
   }
+<<<<<<< HEAD
   /* line 1991, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic {
     font-size: 14px;
   }
   /* line 1993, ../sass/modules/_responsive.scss */
+=======
+  /* line 2033, ../sass/modules/_responsive.scss */
+  body.sg div.competition_topic {
+    font-size: 14px;
+  }
+  /* line 2035, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic h4 {
     font-size: 32px;
     padding: 15px 0;
   }
+<<<<<<< HEAD
   /* line 1997, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic h4 span {
     font-size: 27px;
@@ -5465,57 +5885,113 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 2004, ../sass/modules/_responsive.scss */
+=======
+  /* line 2039, ../sass/modules/_responsive.scss */
+  body.sg div.competition_topic h4 span {
+    font-size: 27px;
+  }
+  /* line 2043, ../sass/modules/_responsive.scss */
+  body.sg div.competition_topic h5 {
+    font-size: 19px;
+  }
+  /* line 2046, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: initial;
   }
+<<<<<<< HEAD
   /* line 2010, ../sass/modules/_responsive.scss */
+=======
+  /* line 2052, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic ul li {
     font-size: 14px;
     margin-bottom: 10px;
     line-height: 1.7em;
   }
+<<<<<<< HEAD
   /* line 2020, ../sass/modules/_responsive.scss */
+=======
+  /* line 2062, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .jumpnow-des h3 {
     font-family: 'fatfrank', sen-serif;
     letter-spacing: 1px;
     font-size: 25px;
   }
+<<<<<<< HEAD
   /* line 2024, ../sass/modules/_responsive.scss */
   body.sg .jumpnow-des h3 span {
     font-family: 'fatfrank', sen-serif;
   }
   /* line 2032, ../sass/modules/_responsive.scss */
+=======
+  /* line 2066, ../sass/modules/_responsive.scss */
+  body.sg .jumpnow-des h3 span {
+    font-family: 'fatfrank', sen-serif;
+  }
+  /* line 2075, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .event_single .front_face, body.sg .event_single .back_face {
     background-color: #333;
     text-shadow: 0px 0px  20px black;
   }
+<<<<<<< HEAD
   /* line 2039, ../sass/modules/_responsive.scss */
   body.sg .event_single .back_face p {
     padding: 50px 0;
   }
   /* line 2047, ../sass/modules/_responsive.scss */
+=======
+  /* line 2082, ../sass/modules/_responsive.scss */
+  body.sg .event_single .back_face p {
+    padding: 50px 0;
+  }
+  /* line 2090, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .btn {
     letter-spacing: 2px;
   }
 
+<<<<<<< HEAD
   /* line 2053, ../sass/modules/_responsive.scss */
+=======
+  /* line 2096, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.contact_container {
     margin-bottom: 0px;
   }
 
+<<<<<<< HEAD
   /* line 2058, ../sass/modules/_responsive.scss */
+=======
+  /* line 2099, ../sass/modules/_responsive.scss */
+  body div.contact_container {
+    margin-bottom: 0px;
+  }
+
+  /* line 2104, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.slide.team_details {
     padding: 2.2% 0% 5% 0%;
   }
 
+<<<<<<< HEAD
   /* line 2061, ../sass/modules/_responsive.scss */
+=======
+  /* line 2107, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.nav_group {
     bottom: -37px;
   }
 
+<<<<<<< HEAD
   /* line 2065, ../sass/modules/_responsive.scss */
+=======
+  /* line 2111, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_mobile_menu_container {
     display: block;
     position: absolute;
@@ -5523,12 +5999,20 @@ body.sg .btn {
     background: #e8e8e8;
     width: 100%;
   }
+<<<<<<< HEAD
   /* line 2071, ../sass/modules/_responsive.scss */
+=======
+  /* line 2117, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_mobile_menu_container ul.competition-headings {
     padding: 0;
     margin: 0;
   }
+<<<<<<< HEAD
   /* line 2075, ../sass/modules/_responsive.scss */
+=======
+  /* line 2121, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_mobile_menu_container ul.competition-headings a {
     padding-top: 10px;
     height: 100%;
@@ -5536,15 +6020,24 @@ body.sg .btn {
     min-height: 60px;
   }
 
+<<<<<<< HEAD
   /* line 2084, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 14px;
   }
   /* line 2086, ../sass/modules/_responsive.scss */
+=======
+  /* line 2130, ../sass/modules/_responsive.scss */
+  div.competition_topic {
+    font-size: 14px;
+  }
+  /* line 2132, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic h4 {
     font-size: 35px;
     padding: 15px 0;
   }
+<<<<<<< HEAD
   /* line 2090, ../sass/modules/_responsive.scss */
   div.competition_topic h4 span {
     font-size: 30px;
@@ -5554,55 +6047,113 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 2097, ../sass/modules/_responsive.scss */
+=======
+  /* line 2136, ../sass/modules/_responsive.scss */
+  div.competition_topic h4 span {
+    font-size: 30px;
+  }
+  /* line 2140, ../sass/modules/_responsive.scss */
+  div.competition_topic h5 {
+    font-size: 19px;
+  }
+  /* line 2143, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: initial;
   }
+<<<<<<< HEAD
   /* line 2103, ../sass/modules/_responsive.scss */
+=======
+  /* line 2149, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div.competition_topic ul li {
     font-size: 14px;
   }
 
+<<<<<<< HEAD
   /* line 2108, ../sass/modules/_responsive.scss */
+=======
+  /* line 2154, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   .sloganContainer {
     background-size: 80% auto;
   }
 
+<<<<<<< HEAD
   /* line 2112, ../sass/modules/_responsive.scss */
+=======
+  /* line 2158, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   .jumpnow-des h3 {
     text-align: center;
     font-size: 27px;
   }
 
+<<<<<<< HEAD
   /* line 2117, ../sass/modules/_responsive.scss */
+=======
+  /* line 2163, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #sec_about p {
     font-size: 15px;
     line-height: 25px;
   }
 }
 @media only screen and (min-width: 568px) and (max-width: 666px) and (orientation: landscape) {
+<<<<<<< HEAD
   /* line 2134, ../sass/modules/_responsive.scss */
+=======
+  /* line 2181, ../sass/modules/_responsive.scss */
+  body div#sec_about .border_container {
+    margin-bottom: 50px;
+  }
+  /* line 2182, ../sass/modules/_responsive.scss */
+  body div#sec_about .border_container .white-text {
+    font-size: 20px !important;
+  }
+
+  /* line 2190, ../sass/modules/_responsive.scss */
+  body #sec_competition #competition_menu {
+    display: none;
+  }
+
+  /* line 2198, ../sass/modules/_responsive.scss */
+  body.sg div#sec_about .border_container .white-text {
+    font-size: 15px !important;
+  }
+
+  /* line 2205, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg {
     letter-spacing: initial;
     font-size: 16px;
     line-height: 24px;
   }
+<<<<<<< HEAD
   /* line 2139, ../sass/modules/_responsive.scss */
+=======
+  /* line 2210, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg #sec_home::after {
     top: 55%;
   }
-  /* line 2143, ../sass/modules/_responsive.scss */
+  /* line 2214, ../sass/modules/_responsive.scss */
   body.sg #sec_about::after {
     top: 0;
     height: 100%;
   }
-  /* line 2147, ../sass/modules/_responsive.scss */
+  /* line 2218, ../sass/modules/_responsive.scss */
   body.sg #sec_competition::after {
     height: 100%;
     top: 0;
   }
+<<<<<<< HEAD
   /* line 2154, ../sass/modules/_responsive.scss */
+=======
+  /* line 2225, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sg_bg {
     background: url("../img/home_bg_sg_5.jpg") no-repeat center;
     background-blend-mode: multiply;
@@ -5613,14 +6164,22 @@ body.sg .btn {
     -webkit-background-size: cover;
     position: relative;
   }
+<<<<<<< HEAD
   /* line 2170, ../sass/modules/_responsive.scss */
+=======
+  /* line 2241, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg {
     text-indent: initial;
     background-image: none;
     max-width: 480px;
     margin-top: 58px;
   }
+<<<<<<< HEAD
   /* line 2178, ../sass/modules/_responsive.scss */
+=======
+  /* line 2249, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg h2 {
     font-size: 40px;
     font-weight: 800;
@@ -5628,117 +6187,186 @@ body.sg .btn {
     letter-spacing: 3px;
     text-align: center;
   }
+<<<<<<< HEAD
   /* line 2186, ../sass/modules/_responsive.scss */
+=======
+  /* line 2257, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg h2 span {
     font-size: 27px;
     letter-spacing: 3px;
   }
+<<<<<<< HEAD
   /* line 2192, ../sass/modules/_responsive.scss */
+=======
+  /* line 2263, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg .slotMachine {
     border: 1px solid #fff;
     margin: 14px 0 30px !important;
     height: 68px;
   }
+<<<<<<< HEAD
   /* line 2197, ../sass/modules/_responsive.scss */
+=======
+  /* line 2268, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg .slot {
     font-family: 'raleway', sen-serif;
     font-weight: 700;
     font-size: 25px;
   }
+<<<<<<< HEAD
   /* line 2203, ../sass/modules/_responsive.scss */
+=======
+  /* line 2274, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .sloganContainer_sg_bg #slotButton3 {
     float: none;
     display: block;
     margin: 0px auto;
   }
+<<<<<<< HEAD
   /* line 2212, ../sass/modules/_responsive.scss */
+=======
+  /* line 2283, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg #sec_about p {
     font-size: 15px !important;
     line-height: 20px;
   }
+<<<<<<< HEAD
   /* line 2219, ../sass/modules/_responsive.scss */
+=======
+  /* line 2290, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg ul.competition-headings a {
     letter-spacing: 2px;
     font-weight: 600;
   }
+<<<<<<< HEAD
   /* line 2224, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic {
     font-size: 14px;
   }
   /* line 2226, ../sass/modules/_responsive.scss */
+=======
+  /* line 2295, ../sass/modules/_responsive.scss */
+  body.sg div.competition_topic {
+    font-size: 14px;
+  }
+  /* line 2297, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic h4 {
     font-size: 32px;
     padding: 15px 0;
   }
+<<<<<<< HEAD
   /* line 2230, ../sass/modules/_responsive.scss */
+=======
+  /* line 2301, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic h4 span {
     font-size: 27px;
   }
-  /* line 2234, ../sass/modules/_responsive.scss */
+  /* line 2305, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic h5 {
     font-size: 19px;
   }
+<<<<<<< HEAD
   /* line 2237, ../sass/modules/_responsive.scss */
+=======
+  /* line 2308, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: initial;
   }
+<<<<<<< HEAD
   /* line 2243, ../sass/modules/_responsive.scss */
+=======
+  /* line 2314, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg div.competition_topic ul li {
     font-size: 14px;
   }
-  /* line 2249, ../sass/modules/_responsive.scss */
+  /* line 2320, ../sass/modules/_responsive.scss */
   body.sg div#sec_competition {
     min-height: 500px;
   }
-  /* line 2252, ../sass/modules/_responsive.scss */
+  /* line 2323, ../sass/modules/_responsive.scss */
   body.sg div#sec_jumpnow {
     min-height: 650px;
   }
-  /* line 2257, ../sass/modules/_responsive.scss */
+  /* line 2328, ../sass/modules/_responsive.scss */
   body.sg div#sec_events {
     padding-top: 45px;
   }
+<<<<<<< HEAD
   /* line 2262, ../sass/modules/_responsive.scss */
+=======
+  /* line 2333, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .jumpnow-des h3 {
     font-family: 'fatfrank', sen-serif;
     letter-spacing: 1px;
     font-size: 25px;
   }
+<<<<<<< HEAD
   /* line 2266, ../sass/modules/_responsive.scss */
   body.sg .jumpnow-des h3 span {
     font-family: 'fatfrank', sen-serif;
   }
   /* line 2274, ../sass/modules/_responsive.scss */
+=======
+  /* line 2337, ../sass/modules/_responsive.scss */
+  body.sg .jumpnow-des h3 span {
+    font-family: 'fatfrank', sen-serif;
+  }
+  /* line 2345, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .event_single .front_face, body.sg .event_single .back_face {
     background-color: #333;
     text-shadow: 0px 0px  20px black;
   }
+<<<<<<< HEAD
   /* line 2281, ../sass/modules/_responsive.scss */
   body.sg .event_single .back_face p {
     padding: 50px 0;
   }
   /* line 2289, ../sass/modules/_responsive.scss */
+=======
+  /* line 2352, ../sass/modules/_responsive.scss */
+  body.sg .event_single .back_face p {
+    padding: 50px 0;
+  }
+  /* line 2360, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   body.sg .btn {
     letter-spacing: 2px;
   }
 
+<<<<<<< HEAD
   /* line 2298, ../sass/modules/_responsive.scss */
+=======
+  /* line 2369, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   div#sec_competition .fp-slides {
     min-height: 700px;
   }
 
-  /* line 2304, ../sass/modules/_responsive.scss */
+  /* line 2375, ../sass/modules/_responsive.scss */
   div#sec_jumpnow .fp-slides {
     min-height: 800px;
   }
 
-  /* line 2309, ../sass/modules/_responsive.scss */
+  /* line 2380, ../sass/modules/_responsive.scss */
   div#sec_home::after {
     top: 55%;
   }
 
+<<<<<<< HEAD
   /* line 2316, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 210px !important;
@@ -5748,6 +6376,17 @@ body.sg .btn {
     margin-top: 20px;
   }
   /* line 2323, ../sass/modules/_responsive.scss */
+=======
+  /* line 2387, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single {
+    min-height: 210px !important;
+  }
+  /* line 2390, ../sass/modules/_responsive.scss */
+  #competition_prize_slide .prize-single h4 {
+    margin-top: 20px;
+  }
+  /* line 2394, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5755,12 +6394,20 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
+<<<<<<< HEAD
   /* line 2325, ../sass/modules/_responsive.scss */
+=======
+  /* line 2396, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
+<<<<<<< HEAD
   /* line 2330, ../sass/modules/_responsive.scss */
+=======
+  /* line 2401, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5769,7 +6416,11 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
+<<<<<<< HEAD
   /* line 2335, ../sass/modules/_responsive.scss */
+=======
+  /* line 2406, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5779,21 +6430,34 @@ body.sg .btn {
   }
 }
 @media only screen and (max-width: 480px) and (min-width: 321px) and (orientation: portrait) {
+<<<<<<< HEAD
   /* line 2356, ../sass/modules/_responsive.scss */
+=======
+  /* line 2427, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   #competition_mobile_menu_container ul.competition-headings a {
     line-height: 37px;
   }
 }
 @media only screen and (orientation: landscape) {
+<<<<<<< HEAD
   /* line 2367, ../sass/modules/_responsive.scss */
   .menu-items-mobile.fs ul {
     padding: 22vh 0 0 0;
   }
   /* line 2370, ../sass/modules/_responsive.scss */
+=======
+  /* line 2438, ../sass/modules/_responsive.scss */
+  .menu-items-mobile.fs ul {
+    padding: 22vh 0 0 0;
+  }
+  /* line 2441, ../sass/modules/_responsive.scss */
+>>>>>>> origin/master
   .menu-items-mobile.fs ul .jumpnow_link a {
     padding: 0 !important;
   }
 
+<<<<<<< HEAD
   /* line 2374, ../sass/modules/_responsive.scss */
   .menu-items-mobile.fs li {
     padding: 0 0 10vh 0;
@@ -5803,4 +6467,10 @@ body.sg .btn {
   #competition_menu {
     display: none;
   }
+=======
+  /* line 2445, ../sass/modules/_responsive.scss */
+  .menu-items-mobile.fs li {
+    padding: 0 0 10vh 0;
+  }
+>>>>>>> origin/master
 }

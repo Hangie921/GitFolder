@@ -132,6 +132,7 @@ $speed:.3s;
 $horizonWidth:180px;
 $straightHeight:450px;
 $horizonWidthForJumpFirst:20.541631%;
+$horizonWidthForJumpFirstSg:25%;
 
 .border_container{
 	height: 100%;
@@ -365,7 +366,7 @@ div.borderRightAni{
 }
 @keyframes horiLineBtn_sg{
 	0%{width:0px;}
-	100%{width:1800px;}
+	100%{width:1200px;}
 }
 
 
@@ -375,6 +376,13 @@ div.borderRightAni{
 		@include animation(horiLineJumpnowFirst $speed $speed*2 1 linear forwards);
 	}
 }
+
+body.sg div.borderRightAni{
+	& #jumpnow_part1_line{
+		@include animation(horiLineJumpnowFirstSg $speed $speed*2 1 linear forwards);
+	}
+}
+
 
 /*****for the jumpnow-des*****/
 
@@ -441,7 +449,11 @@ div.borderRightAni{
 }
 @keyframes horiLineJumpnowFirst{
 	0%{left:(99.5%+$horizonWidthForJumpFirst);width:0px;}
-	100%{left:99.5%;width: $horizonWidthForJumpFirst;}
+	100%{left:100%;width: $horizonWidthForJumpFirst;}
+}
+@keyframes horiLineJumpnowFirstSg{
+	0%{left:(100%+$horizonWidthForJumpFirstSg);width:0px;}
+	100%{left:100%;width: $horizonWidthForJumpFirstSg;}	
 }
 
 @keyframes straightLineAni{

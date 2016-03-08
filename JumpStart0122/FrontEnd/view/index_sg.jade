@@ -2,6 +2,8 @@ html
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport",content="width=device-width,initial-scale=1.0")
+		meta(name="description",content="We are Asia’s first centralized Corporate Innovation Outpost. Our platform is open to global corporations expanding into Asia to tap into the regional innovation clusters to seek out innovation clusters to seek out Potential Threats and Opportunities in Disruptive Technologies.")
+		title Jumpstart Singapore
 		//- script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
 		script(src="https://use.typekit.net/umx0psn.js")
 		script(type='text/javascript').
@@ -12,7 +14,9 @@ html
 		script(src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js")
 		script(src="../js/jquery.slotmachine.min.js")
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js")
-		
+
+		link(href="http://jumpstarter.asia", rel='canonical')
+		link(href="http://jumpstarter.asia#home", rel='canonical')
 		link(href="../css/jquery_fullPage.css", rel='stylesheet')
 		link(href="../css/bootstrap.css", rel='stylesheet')
 		link(href="../css/set1.css", rel='stylesheet')
@@ -447,7 +451,7 @@ html
 				form#reg_form(action="/upload",enctype="multipart/form-data",method="post")  
 					.slide.jumpnow_part1.zindex
 						.slide-inner.zindex.clearfix
-							.col-md-5.jumpnow-des.no-pad
+							.col-md-4.col-md-offset-1.jumpnow-des.no-pad
 								.border_container.add-border-pad
 									.border.top
 									.border.right
@@ -471,10 +475,10 @@ html
 							.col-md-6.col-md-offset-1.white-text.jumpnow-btn-set.clearfix
 								.border_container#border_btn
 									.border.horizon_line.sg
-								a(href="../file/jumpstart.pdf").bizplan_download.btn.btn-4.btn-4a.sec-orange Download PDF 
+								a(href="../file/jumpstart.pdf",target="_blank")#sg_download_btn.bizplan_download.btn.btn-4.btn-4a.sec-orange Download PDF 
 										i.fa.fa-cloud-download
 								//- a(href="mailto:zzz22741@gmail.com?https://pod51038.outlook.com/owa/#viewmodel=IMailComposeViewModelFactory" target="_blank") randy@ping.com.sg
-								a#connect_btn.imready.btn.btn-4.btn-4a.orange.icon-arrow-down2 Connect
+								a#sg_connect_btn.imready.btn.btn-4.btn-4a.orange.icon-arrow-down2 Connect
 								//- a.imready.btn.btn-4.btn-4a.orange.icon-arrow-right(href='mailto:hello@jumpstarter.asia') Connect
 									
 						

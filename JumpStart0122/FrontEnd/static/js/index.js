@@ -1,7 +1,6 @@
 // this is the js that contain and execute the all Front-End related js
 var ww;
 var wh;
-var orientation = window.orientation;
 var down = true;
 var contact_height = $('.contact_container').innerHeight();
 
@@ -15,26 +14,10 @@ function resize(){
 
 $(window).resize(function(){
 	resize();
-
-	if(ww > 990 && orientation == -90){ //ipad landscape
-		$.fn.fullpage.reBuild();
-		console.log("ww>990 PC");
-	}else if(wh == 768 && ww == 1024){ // for iPad
-		$.fn.fullpage.reBuild();
-		$.fn.fullpage.setAllowScrolling(true);
-		$("#header").css("background-coloe","transparent");
-		console.log("iPad landscape");
-	}else if(wh == 1024 && ww == 768){
-		$.fn.fullpage.reBuild();
-		console.log("iPad portrait");
-	}
-	// else if(ww == 568 && wh ==320){// i5 landscape
-	// 	console.log("i5 landscape");
-	// }else if(wh == 414 && ww ==736){ // i6+ landscape
-	// 	$.fn.fullpage.reBuild();
-	// 	console.log("i6+ landscape");
-	// } 
+	$.fn.fullpage.reBuild();
+	
 });
+
 
 
 $(document).ready(function() {
@@ -214,7 +197,7 @@ $(document).ready(function() {
 			controlArrows:false,
 			touchSensitivity:15,
 			responsiveWidth:990,
-			responsiveHeight:768
+			// responsiveHeight:768
 
 		}); //end of the fullpageJS initial
 		resize();
@@ -618,6 +601,37 @@ $(document).ready(function() {
 
 	}
 	
+	//orientation change
+	$(window).on("orientationchange",function(){
+		if(wh == 768 && ww == 1024){ // for iPad landscape
+			$.fn.fullpage.reBuild();
+			$.fn.fullpage.setAllowScrolling(true);
+			$("#header").css("background-color","transparent");
+
+			$('.contact_container').css('bottom',contact_height*-0.8);
+			$('.contact_header').click(function(){
+				if(down){
+					$(this).parent().animate({'bottom':'0px'},1000);
+					$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
+					down = false;
+					// alert('if '+ down)
+				}else{
+					$(this).parent().animate({'bottom':contact_height*-0.8},1000);
+					$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
+					down = true;
+				}
+			});
+
+
+			console.log("iPad landscape");
+
+		}else if(wh == 1024 && ww == 768){
+			$.fn.fullpage.reBuild();
+			console.log("iPad portrait");
+		}
+	});
+
+
 });//end of the document.ready
 
 

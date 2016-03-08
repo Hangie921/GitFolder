@@ -2,6 +2,8 @@
 var ww;
 var wh;
 var orientation = window.orientation;
+var down = true;
+var contact_height = $('.contact_container').innerHeight();
 
 function resize(){
 	ww = window.innerWidth;
@@ -14,20 +16,17 @@ function resize(){
 $(window).resize(function(){
 	resize();
 
-	if(ww > 990 && orientation == 90){ //ipad landscape
+	if(ww > 990 && orientation == -90){ //ipad landscape
 		$.fn.fullpage.reBuild();
-		$.fn.fullpage.setAutoScrolling(true);
-		$.fn.fullpage.setLockAnchors(true);
-		console.log("ww>990 ipad landscape");
-	}else if(ww > 990 && orientation == -90){ //PC
-		$.fn.fullpage.reBuild();
-		console.log("ww> 990 PC");
+		console.log("ww>990 PC");
 	}else if(wh == 768 && ww == 1024){ // for iPad
 		$.fn.fullpage.reBuild();
-		console.log("iPad portrait");
+		$.fn.fullpage.setAllowScrolling(true);
+		$("#header").css("background-coloe","transparent");
+		console.log("iPad landscape");
 	}else if(wh == 1024 && ww == 768){
 		$.fn.fullpage.reBuild();
-		console.log("iPad landscape");
+		console.log("iPad portrait");
 	}
 	// else if(ww == 568 && wh ==320){// i5 landscape
 	// 	console.log("i5 landscape");
@@ -215,7 +214,7 @@ $(document).ready(function() {
 			controlArrows:false,
 			touchSensitivity:15,
 			responsiveWidth:990,
-			responsiveHeight:600
+			responsiveHeight:768
 
 		}); //end of the fullpageJS initial
 		resize();
@@ -280,8 +279,7 @@ $(document).ready(function() {
 
 	//**********FOR CONTACT FORM**************//
 	//the contact form ani,to show or hide the contact form
-	var down = true;
-	var contact_height = $('.contact_container').innerHeight();
+	
 	if(ww>990){
 		console.log(ww);
 		$('.contact_container').css('bottom',contact_height*-0.8);

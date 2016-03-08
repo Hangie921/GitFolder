@@ -927,7 +927,7 @@ div#sec_competition .slide-inner {
   -ms-background-size: 75% auto;
   background-size: 75% auto;
   left: -10%;
-  top: 50%;
+  top: 70%;
 }
 
 /* line 168, ../sass/modules/_sections.scss */
@@ -2421,79 +2421,79 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 @keyframes moveTo {
   /* line 25, ../sass/modules/_animations.scss */
   0% {
-    top: 50%;
+    top: 70%;
     left: -10%;
   }
 
   /* line 26, ../sass/modules/_animations.scss */
   0.0001% {
-    top: 49%;
+    top: 69%;
     left: -10%;
   }
 
   /* line 27, ../sass/modules/_animations.scss */
   1% {
-    top: 50%;
+    top: 70%;
     left: -10%;
   }
 
   /* line 28, ../sass/modules/_animations.scss */
   2% {
-    top: 49%;
+    top: 69%;
     left: -10%;
   }
 
   /* line 29, ../sass/modules/_animations.scss */
   3% {
-    top: 50%;
+    top: 70%;
     left: -10%;
   }
 
   /* line 30, ../sass/modules/_animations.scss */
   4% {
-    top: 49%;
+    top: 69%;
     left: -10%;
   }
 
   /* line 31, ../sass/modules/_animations.scss */
   5% {
-    top: 50%;
+    top: 70%;
     left: -10%;
   }
 
   /* line 32, ../sass/modules/_animations.scss */
   6% {
-    top: 49%;
+    top: 69%;
     left: -10%;
   }
 
   /* line 33, ../sass/modules/_animations.scss */
   7% {
-    top: 50%;
+    top: 70%;
     left: -10%;
   }
 
   /* line 34, ../sass/modules/_animations.scss */
   8% {
-    top: 49%;
+    top: 69%;
     left: -10%;
   }
 
   /* line 35, ../sass/modules/_animations.scss */
   9% {
-    top: 50%;
+    top: 70%;
     left: -10%;
   }
 
   /* line 36, ../sass/modules/_animations.scss */
   10% {
-    top: 49%;
+    top: 69%;
     left: -10%;
   }
 
   /* line 37, ../sass/modules/_animations.scss */
   11% {
-    top: 50%;
+    top: 70%;
     left: -10%;
   }
 

@@ -515,7 +515,7 @@ and (orientation : portrait) {
 	//********* for Contact form ******///
 
 	body div.contact_container{
-		margin-bottom: 100px;
+		margin-bottom: 450px;
 	}
 	//********* for Contact form end ******///
 
@@ -1611,10 +1611,10 @@ and (orientation : portrait) {
 
 	//################ TW contact_container ##########//
 	body div#sec_events .contact_container{
-		margin-bottom:0px
+		margin-bottom:150px
 	}
 	body.sg div#sec_events .contact_container{
-		margin-bottom:0px	
+		margin-bottom:150px	
 	}
 
  }
@@ -1701,7 +1701,12 @@ and (orientation : landscape) {
 		height: 100%;
 		top: 0;
 	}
-
+	
+	body.sg #competition_topic_slide{
+		& .border_container{
+			height:100% !important;
+		}
+	}
 
 
 	//****** SG to avoid section hidden while landscape
@@ -1756,7 +1761,9 @@ and (orientation : portrait){
 		height: 100%;
 		top: 0;
 	}
-
+	body.sg div#sec_home::after{
+		top:75%;
+	}
 
 
 	div.slide.team_details{
@@ -1830,11 +1837,11 @@ and (orientation : portrait){
 	}
 	//################ SG contact_container ##########//
 	body.sg div.contact_container{
-		margin-bottom:0px;
+		margin-bottom:100px;
 	}
 	//################ TW contact_container ##########//
 	body #sec_events div.contact_container{
-		margin-bottom:0px
+		margin-bottom:100px
 	}
 
 
@@ -2219,7 +2226,11 @@ and (orientation : landscape) {
 			height: 100%;
 			top: 0;
 		}
-
+		#competition_topic_slide{
+			& .border_container{
+				height: 100% !important;
+			}
+		}
 
 		//########### SG Home BG Start ###########//
 		.sg_bg {

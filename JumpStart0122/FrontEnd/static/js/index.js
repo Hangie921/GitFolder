@@ -1,6 +1,7 @@
 // this is the js that contain and execute the all Front-End related js
 var ww;
 var wh;
+var orientation = window.orientation;
 
 function resize(){
 	ww = window.innerWidth;
@@ -13,13 +14,27 @@ function resize(){
 $(window).resize(function(){
 	resize();
 
-	if(ww>990){
-		location.reload();	
-	}else if(wh<=768 && ww>=1024){ // for iPad
+	if(ww > 990 && orientation == 90){ //ipad landscape
 		$.fn.fullpage.reBuild();
-	}else if(ww<=1024 && wh<=768){
+		$.fn.fullpage.setAutoScrolling(true);
+		$.fn.fullpage.setLockAnchors(true);
+		console.log("ww>990 ipad landscape");
+	}else if(ww > 990 && orientation == -90){ //PC
 		$.fn.fullpage.reBuild();
+		console.log("ww> 990 PC");
+	}else if(wh == 768 && ww == 1024){ // for iPad
+		$.fn.fullpage.reBuild();
+		console.log("iPad portrait");
+	}else if(wh == 1024 && ww == 768){
+		$.fn.fullpage.reBuild();
+		console.log("iPad landscape");
 	}
+	// else if(ww == 568 && wh ==320){// i5 landscape
+	// 	console.log("i5 landscape");
+	// }else if(wh == 414 && ww ==736){ // i6+ landscape
+	// 	$.fn.fullpage.reBuild();
+	// 	console.log("i6+ landscape");
+	// } 
 });
 
 

@@ -177,6 +177,7 @@ $(document).ready(function() {
 				console.log("fullpage loaded");
 
 			},
+			// css3:false,
 			verticalCentered : true,
 			resize : false,
 			fitToSectionDelay:500,

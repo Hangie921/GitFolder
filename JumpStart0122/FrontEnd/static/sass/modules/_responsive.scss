@@ -557,17 +557,15 @@ and (orientation : portrait) {
 	header#header {
 		background:$navy ;
 		height:50px;
-		padding:10px 30px !important ;
 		margin:0;
 
 	
 	
 	a.navbar-brand {
 		font-size:28px ;
-		width:initial;
-		height:initial;
 		margin:15px 0;
 		line-height: 30px;
+		@include background-size(90% auto);
 		
 		}
 		

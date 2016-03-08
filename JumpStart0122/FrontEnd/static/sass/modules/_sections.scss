@@ -197,7 +197,7 @@ div#sec_competition {
 /********** Jump Now Section ********/
 
 div#sec_jumpnow {
-	background: $navy url(../img/tiles.png);
+	background: $navy url(../img/tiles.png) center center;
 	@include background-size(20% auto);
 
 	p {

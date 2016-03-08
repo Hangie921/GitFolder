@@ -954,7 +954,7 @@ div#sec_competition .slide-inner {
 /********** Jump Now Section ********/
 /* line 199, ../sass/modules/_sections.scss */
 div#sec_jumpnow {
-  background: #0e324b url(../img/tiles.png);
+  background: #0e324b url(../img/tiles.png) center center;
   background-size: 20% auto;
   -moz-background-size: 20% auto;
   -webkit-background-size: 20% auto;
@@ -3275,16 +3275,21 @@ header div {
 }
 /* line 13, ../sass/layouts/_header.scss */
 header a.navbar-brand {
-  font-family: "fatfrank", sen-serif;
   color: #f16b29;
   display: block;
   width: 220px;
   height: 50px;
   padding: 0;
   font-size: 35px;
-  margin: 20px 0;
+  text-indent: -9999px;
+  background: url(../img/jumpstart-logo.png) no-repeat top left;
+  background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  background-size: 100% auto;
 }
-/* line 25, ../sass/layouts/_header.scss */
+/* line 27, ../sass/layouts/_header.scss */
 header a {
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
@@ -3293,7 +3298,7 @@ header a {
   transition: all 1s;
 }
 
-/* line 31, ../sass/layouts/_header.scss */
+/* line 33, ../sass/layouts/_header.scss */
 div.main-menu {
   float: right;
   position: absolute;
@@ -3301,7 +3306,7 @@ div.main-menu {
   right: 0;
 }
 
-/* line 38, ../sass/layouts/_header.scss */
+/* line 40, ../sass/layouts/_header.scss */
 ul.menu {
   margin: 0;
   padding: 0;
@@ -3309,7 +3314,7 @@ ul.menu {
   float: right;
   text-align: right;
 }
-/* line 44, ../sass/layouts/_header.scss */
+/* line 46, ../sass/layouts/_header.scss */
 ul.menu li {
   display: inline-block;
   margin: 13px 0 0 5%;
@@ -3318,11 +3323,11 @@ ul.menu li {
   vertical-align: top;
   background-color: transparent;
 }
-/* line 52, ../sass/layouts/_header.scss */
+/* line 54, ../sass/layouts/_header.scss */
 ul.menu li.active a {
   font-weight: 600;
 }
-/* line 58, ../sass/layouts/_header.scss */
+/* line 60, ../sass/layouts/_header.scss */
 ul.menu li a {
   position: relative;
   display: inline-block;
@@ -3337,7 +3342,7 @@ ul.menu li a {
   font-family: "raleway", "文鼎黑體";
   font-size: 14px;
 }
-/* line 72, ../sass/layouts/_header.scss */
+/* line 74, ../sass/layouts/_header.scss */
 ul.menu li a:after {
   position: absolute;
   top: 100%;
@@ -3354,11 +3359,11 @@ ul.menu li a:after {
   -moz-transform: translateY(10px);
   transform: translateY(10px);
 }
-/* line 89, ../sass/layouts/_header.scss */
+/* line 91, ../sass/layouts/_header.scss */
 ul.menu li a:hover {
   font-weight: 600;
 }
-/* line 99, ../sass/layouts/_header.scss */
+/* line 101, ../sass/layouts/_header.scss */
 ul.menu li a:hover::after, ul.menu li.active a:after {
   opacity: 1 !important;
   -webkit-transform: translateY(0px);
@@ -3367,32 +3372,32 @@ ul.menu li a:hover::after, ul.menu li.active a:after {
   color: white;
 }
 
-/* line 117, ../sass/layouts/_header.scss */
+/* line 119, ../sass/layouts/_header.scss */
 #header, #header ul li a {
   transition: color .5s, opacity .5s;
 }
 
-/* line 120, ../sass/layouts/_header.scss */
+/* line 122, ../sass/layouts/_header.scss */
 #header {
   transition: background-color .5s;
 }
 
-/* line 123, ../sass/layouts/_header.scss */
+/* line 125, ../sass/layouts/_header.scss */
 #header.fff {
   background-color: transparent;
 }
 
-/* line 126, ../sass/layouts/_header.scss */
+/* line 128, ../sass/layouts/_header.scss */
 #header.fff ul li a {
   color: #333;
 }
 
-/* line 129, ../sass/layouts/_header.scss */
+/* line 131, ../sass/layouts/_header.scss */
 #header.orange {
   background-color: transparent;
 }
 
-/* line 132, ../sass/layouts/_header.scss */
+/* line 134, ../sass/layouts/_header.scss */
 #header.orange ul li a {
   color: #fff;
 }
@@ -4850,31 +4855,18 @@ body.sg .btn {
   }
 }
 /****************    IPHONE 5, 6, 6+    ****************/
-<<<<<<< Updated upstream
 @media only screen and (max-width: 567px) and (min-width: 414px) and (orientation: portrait) {
   /* line 1377, ../sass/modules/_responsive.scss */
-=======
-@media only screen and (max-width: 414px) and (min-width: 376px) and (orientation: portrait) {
-  /* line 1214, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg {
     letter-spacing: initial;
     font-size: 16px;
     line-height: 24px;
   }
-<<<<<<< Updated upstream
   /* line 1383, ../sass/modules/_responsive.scss */
   body.sg div#sec_home:after {
     top: 56%;
   }
   /* line 1388, ../sass/modules/_responsive.scss */
-=======
-  /* line 1220, ../sass/modules/_responsive.scss */
-  body.sg div#sec_home:after {
-    top: 56%;
-  }
-  /* line 1225, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sg_bg {
     background: url("../img/home_bg_sg_5.jpg") no-repeat center;
     background-blend-mode: multiply;
@@ -4885,22 +4877,14 @@ body.sg .btn {
     -webkit-background-size: cover;
     position: relative;
   }
-<<<<<<< Updated upstream
   /* line 1404, ../sass/modules/_responsive.scss */
-=======
-  /* line 1241, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg {
     text-indent: initial;
     background-image: none;
     max-width: 480px;
     margin-top: 58px;
   }
-<<<<<<< Updated upstream
   /* line 1412, ../sass/modules/_responsive.scss */
-=======
-  /* line 1249, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg h2 {
     font-size: 40px;
     font-weight: 800;
@@ -4908,92 +4892,54 @@ body.sg .btn {
     letter-spacing: 3px;
     text-align: center;
   }
-<<<<<<< Updated upstream
   /* line 1420, ../sass/modules/_responsive.scss */
-=======
-  /* line 1257, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg h2 span {
     font-size: 27px;
     letter-spacing: 3px;
     line-height: 1.2em;
   }
-<<<<<<< Updated upstream
   /* line 1427, ../sass/modules/_responsive.scss */
-=======
-  /* line 1264, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg .slotMachine {
     border: 1px solid #fff;
     margin: 14px 0 30px !important;
     height: 68px;
   }
-<<<<<<< Updated upstream
   /* line 1432, ../sass/modules/_responsive.scss */
-=======
-  /* line 1269, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg .slot {
     font-family: 'raleway', sen-serif;
     font-weight: 700;
     font-size: 25px;
   }
-<<<<<<< Updated upstream
   /* line 1438, ../sass/modules/_responsive.scss */
-=======
-  /* line 1275, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg #slotButton3 {
     float: none;
     display: block;
     margin: 0px auto;
   }
-<<<<<<< Updated upstream
   /* line 1447, ../sass/modules/_responsive.scss */
-=======
-  /* line 1284, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg #sec_about p {
     font-size: 22px;
     line-height: 30px;
   }
-<<<<<<< Updated upstream
   /* line 1453, ../sass/modules/_responsive.scss */
   body.sg div#sec_competition::after {
     height: 100%;
     top: 0;
   }
   /* line 1458, ../sass/modules/_responsive.scss */
-=======
-  /* line 1290, ../sass/modules/_responsive.scss */
-  body.sg div#sec_competition:after {
-    height: 100%;
-    top: 0;
-  }
-  /* line 1295, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg ul.competition-headings a {
     letter-spacing: 2px;
     font-weight: 600;
   }
-<<<<<<< Updated upstream
   /* line 1464, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic {
     font-size: 14px;
   }
   /* line 1466, ../sass/modules/_responsive.scss */
-=======
-  /* line 1301, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic {
-    font-size: 14px;
-  }
-  /* line 1303, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg div.competition_topic h4 {
     font-size: 45px;
     padding: 15px 0;
   }
-<<<<<<< Updated upstream
   /* line 1470, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic h4 span {
     font-size: 40px;
@@ -5003,102 +4949,54 @@ body.sg .btn {
     font-size: 30px;
   }
   /* line 1477, ../sass/modules/_responsive.scss */
-=======
-  /* line 1307, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic h4 span {
-    font-size: 40px;
-  }
-  /* line 1311, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic h5 {
-    font-size: 30px;
-  }
-  /* line 1314, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg div.competition_topic p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: initial;
   }
-<<<<<<< Updated upstream
   /* line 1483, ../sass/modules/_responsive.scss */
-=======
-  /* line 1320, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg div.competition_topic ul li {
     font-size: 18px;
     line-height: 28px;
   }
-<<<<<<< Updated upstream
   /* line 1493, ../sass/modules/_responsive.scss */
-=======
-  /* line 1330, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .jumpnow-des h3 {
     font-family: 'fatfrank', sen-serif;
     letter-spacing: 1px;
     font-size: 27px;
   }
-<<<<<<< Updated upstream
   /* line 1497, ../sass/modules/_responsive.scss */
   body.sg .jumpnow-des h3 span {
     font-family: 'fatfrank', sen-serif;
   }
   /* line 1502, ../sass/modules/_responsive.scss */
-=======
-  /* line 1334, ../sass/modules/_responsive.scss */
-  body.sg .jumpnow-des h3 span {
-    font-family: 'fatfrank', sen-serif;
-  }
-  /* line 1339, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .jumpnow-des ul li {
     font-size: 15px;
     line-height: 35px;
   }
-<<<<<<< Updated upstream
   /* line 1514, ../sass/modules/_responsive.scss */
-=======
-  /* line 1351, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .event_single .front_face, body.sg .event_single .back_face {
     background-color: #333;
     text-shadow: 0px 0px  20px black;
   }
-<<<<<<< Updated upstream
   /* line 1521, ../sass/modules/_responsive.scss */
   body.sg .event_single .back_face p {
     padding: 50px 0;
   }
   /* line 1529, ../sass/modules/_responsive.scss */
-=======
-  /* line 1358, ../sass/modules/_responsive.scss */
-  body.sg .event_single .back_face p {
-    padding: 50px 0;
-  }
-  /* line 1366, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .btn {
     letter-spacing: 2px;
   }
 
-<<<<<<< Updated upstream
   /* line 1534, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 17px;
   }
   /* line 1536, ../sass/modules/_responsive.scss */
-=======
-  /* line 1371, ../sass/modules/_responsive.scss */
-  div.competition_topic {
-    font-size: 17px;
-  }
-  /* line 1373, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic h4 {
     font-size: 45px;
     padding: 15px 0;
   }
-<<<<<<< Updated upstream
   /* line 1540, ../sass/modules/_responsive.scss */
   div.competition_topic h4 span {
     font-size: 35px;
@@ -5108,32 +5006,16 @@ body.sg .btn {
     font-size: 26px;
   }
   /* line 1547, ../sass/modules/_responsive.scss */
-=======
-  /* line 1377, ../sass/modules/_responsive.scss */
-  div.competition_topic h4 span {
-    font-size: 35px;
-  }
-  /* line 1381, ../sass/modules/_responsive.scss */
-  div.competition_topic h5 {
-    font-size: 26px;
-  }
-  /* line 1384, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic p {
     font-size: 17px;
     line-height: 22px;
     letter-spacing: initial;
   }
-<<<<<<< Updated upstream
   /* line 1553, ../sass/modules/_responsive.scss */
-=======
-  /* line 1390, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic ul li {
     font-size: 17px;
   }
 
-<<<<<<< Updated upstream
   /* line 1560, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 140px !important;
@@ -5143,17 +5025,6 @@ body.sg .btn {
     margin-top: 20px;
   }
   /* line 1567, ../sass/modules/_responsive.scss */
-=======
-  /* line 1397, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single {
-    min-height: 140px !important;
-  }
-  /* line 1400, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single h4 {
-    margin-top: 20px;
-  }
-  /* line 1404, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5161,20 +5032,12 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-<<<<<<< Updated upstream
   /* line 1569, ../sass/modules/_responsive.scss */
-=======
-  /* line 1406, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-<<<<<<< Updated upstream
   /* line 1574, ../sass/modules/_responsive.scss */
-=======
-  /* line 1411, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5183,11 +5046,7 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
-<<<<<<< Updated upstream
   /* line 1579, ../sass/modules/_responsive.scss */
-=======
-  /* line 1416, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5196,17 +5055,12 @@ body.sg .btn {
     background-size: 50% auto;
   }
 
-<<<<<<< Updated upstream
   /* line 1592, ../sass/modules/_responsive.scss */
-=======
-  /* line 1429, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #sec_about p {
     font-size: 20px;
     line-height: 30px;
   }
 
-<<<<<<< Updated upstream
   /* line 1598, ../sass/modules/_responsive.scss */
   body.sg #sec_events .contact_container {
     margin-bottom: 0px;
@@ -5219,38 +5073,20 @@ body.sg .btn {
 }
 @media only screen and (min-width: 736px) and (max-width: 767px) and (orientation: landscape) {
   /* line 1615, ../sass/modules/_responsive.scss */
-=======
-  /* line 1434, ../sass/modules/_responsive.scss */
-  #sec_events .contact_container {
-    margin-bottom: 170px;
-  }
-}
-@media only screen and (max-width: 736px) and (orientation: landscape) {
-  /* line 1445, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #sec_home:after {
     top: 55%;
   }
 
-<<<<<<< Updated upstream
   /* line 1619, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 15px;
   }
   /* line 1621, ../sass/modules/_responsive.scss */
-=======
-  /* line 1449, ../sass/modules/_responsive.scss */
-  div.competition_topic {
-    font-size: 15px;
-  }
-  /* line 1451, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic h4 {
     font-size: 35px;
     padding: 15px 0;
     text-align: left;
   }
-<<<<<<< Updated upstream
   /* line 1626, ../sass/modules/_responsive.scss */
   div.competition_topic h4 span {
     font-size: 30px;
@@ -5260,53 +5096,26 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 1633, ../sass/modules/_responsive.scss */
-=======
-  /* line 1456, ../sass/modules/_responsive.scss */
-  div.competition_topic h4 span {
-    font-size: 30px;
-  }
-  /* line 1460, ../sass/modules/_responsive.scss */
-  div.competition_topic h5 {
-    font-size: 19px;
-  }
-  /* line 1463, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic p {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: initial;
   }
-<<<<<<< Updated upstream
   /* line 1639, ../sass/modules/_responsive.scss */
-=======
-  /* line 1469, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic ul li {
     font-size: 15px;
   }
 
-<<<<<<< Updated upstream
   /* line 1646, ../sass/modules/_responsive.scss */
-=======
-  /* line 1476, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single {
     margin: 5px auto 0;
     min-height: 290px !important;
   }
-<<<<<<< Updated upstream
   /* line 1649, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single h4 {
     margin-top: 20px;
   }
   /* line 1653, ../sass/modules/_responsive.scss */
-=======
-  /* line 1479, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single h4 {
-    margin-top: 20px;
-  }
-  /* line 1483, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5314,20 +5123,12 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-<<<<<<< Updated upstream
   /* line 1655, ../sass/modules/_responsive.scss */
-=======
-  /* line 1485, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-<<<<<<< Updated upstream
   /* line 1660, ../sass/modules/_responsive.scss */
-=======
-  /* line 1490, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5336,11 +5137,7 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
-<<<<<<< Updated upstream
   /* line 1665, ../sass/modules/_responsive.scss */
-=======
-  /* line 1495, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5349,30 +5146,18 @@ body.sg .btn {
     background-size: 50% auto;
   }
 
-<<<<<<< Updated upstream
   /* line 1678, ../sass/modules/_responsive.scss */
-=======
-  /* line 1508, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #sec_about p {
     font-size: 20px;
     line-height: 30px;
   }
 
-<<<<<<< Updated upstream
   /* line 1682, ../sass/modules/_responsive.scss */
-=======
-  /* line 1512, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #sec_about:after {
     top: 0;
   }
 
-<<<<<<< Updated upstream
   /* line 1686, ../sass/modules/_responsive.scss */
-=======
-  /* line 1516, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #sec_competition:after {
     height: 100%;
     top: 0;
@@ -5409,55 +5194,32 @@ body.sg .btn {
     padding-top: 50px;
   }
 }
-<<<<<<< Updated upstream
 @media screen and (max-width: 413px) and (min-width: 375px) and (orientation: portrait) {
   /* line 1735, ../sass/modules/_responsive.scss */
   div#sec_competition::after {
-=======
-@media screen and (max-width: 375px) and (min-width: 321px) and (orientation: portrait) {
-  /* line 1532, ../sass/modules/_responsive.scss */
-  div#sec_competition:after {
->>>>>>> Stashed changes
     height: 100%;
     top: 0;
   }
 
-<<<<<<< Updated upstream
   /* line 1742, ../sass/modules/_responsive.scss */
-=======
-  /* line 1539, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.slide.team_details {
     padding: 2.2% 0% 5% 0%;
   }
 
-<<<<<<< Updated upstream
   /* line 1745, ../sass/modules/_responsive.scss */
-=======
-  /* line 1542, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.nav_group {
     bottom: -37px;
   }
 
-<<<<<<< Updated upstream
   /* line 1750, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 15px;
   }
   /* line 1752, ../sass/modules/_responsive.scss */
-=======
-  /* line 1547, ../sass/modules/_responsive.scss */
-  div.competition_topic {
-    font-size: 15px;
-  }
-  /* line 1549, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic h4 {
     font-size: 35px;
     padding: 15px 0;
   }
-<<<<<<< Updated upstream
   /* line 1756, ../sass/modules/_responsive.scss */
   div.competition_topic h4 span {
     font-size: 30px;
@@ -5467,32 +5229,16 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 1763, ../sass/modules/_responsive.scss */
-=======
-  /* line 1553, ../sass/modules/_responsive.scss */
-  div.competition_topic h4 span {
-    font-size: 30px;
-  }
-  /* line 1557, ../sass/modules/_responsive.scss */
-  div.competition_topic h5 {
-    font-size: 19px;
-  }
-  /* line 1560, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic p {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: initial;
   }
-<<<<<<< Updated upstream
   /* line 1769, ../sass/modules/_responsive.scss */
-=======
-  /* line 1566, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic ul li {
     font-size: 15px;
   }
 
-<<<<<<< Updated upstream
   /* line 1776, ../sass/modules/_responsive.scss */
   #competition_prize_slide .prize-single {
     min-height: 125px !important;
@@ -5502,17 +5248,6 @@ body.sg .btn {
     margin-top: 20px;
   }
   /* line 1783, ../sass/modules/_responsive.scss */
-=======
-  /* line 1573, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single {
-    min-height: 125px !important;
-  }
-  /* line 1576, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single h4 {
-    margin-top: 20px;
-  }
-  /* line 1580, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5520,20 +5255,12 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-<<<<<<< Updated upstream
   /* line 1785, ../sass/modules/_responsive.scss */
-=======
-  /* line 1582, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-<<<<<<< Updated upstream
   /* line 1790, ../sass/modules/_responsive.scss */
-=======
-  /* line 1587, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5542,11 +5269,7 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
-<<<<<<< Updated upstream
   /* line 1795, ../sass/modules/_responsive.scss */
-=======
-  /* line 1592, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5555,32 +5278,23 @@ body.sg .btn {
     background-size: 50% auto;
   }
 
-<<<<<<< Updated upstream
   /* line 1808, ../sass/modules/_responsive.scss */
-=======
-  /* line 1605, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   .sloganContainer {
     background-size: 80% auto;
   }
 
-<<<<<<< Updated upstream
   /* line 1812, ../sass/modules/_responsive.scss */
   body.sg div.contact_container {
     margin-bottom: 0px;
   }
 
   /* line 1816, ../sass/modules/_responsive.scss */
-=======
-  /* line 1609, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.contact_container {
     margin-bottom: 100px;
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 735px) and (orientation: landscape) {
   /* STYLES GO HERE */
-<<<<<<< Updated upstream
   /* line 1835, ../sass/modules/_responsive.scss */
   body.sg div#sec_competition {
     min-height: 580px;
@@ -5597,14 +5311,10 @@ body.sg .btn {
   }
 
   /* line 1847, ../sass/modules/_responsive.scss */
-=======
-  /* line 1625, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #sec_home:after {
     top: 55%;
   }
 
-<<<<<<< Updated upstream
   /* line 1851, ../sass/modules/_responsive.scss */
   #sec_about::after {
     height: 100%;
@@ -5626,17 +5336,6 @@ body.sg .btn {
     margin-top: 20px;
   }
   /* line 1870, ../sass/modules/_responsive.scss */
-=======
-  /* line 1631, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single {
-    min-height: 260px !important;
-  }
-  /* line 1634, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single h4 {
-    margin-top: 20px;
-  }
-  /* line 1638, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5644,20 +5343,12 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-<<<<<<< Updated upstream
   /* line 1872, ../sass/modules/_responsive.scss */
-=======
-  /* line 1640, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-<<<<<<< Updated upstream
   /* line 1877, ../sass/modules/_responsive.scss */
-=======
-  /* line 1645, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5666,11 +5357,7 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
-<<<<<<< Updated upstream
   /* line 1882, ../sass/modules/_responsive.scss */
-=======
-  /* line 1650, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -5697,32 +5384,20 @@ body.sg .btn {
 }
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   /* STYLES GO HERE */
-<<<<<<< Updated upstream
   /* line 1924, ../sass/modules/_responsive.scss */
-=======
-  /* line 1674, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg {
     letter-spacing: initial;
     font-size: 16px;
     line-height: 24px;
   }
-<<<<<<< Updated upstream
   /* line 1930, ../sass/modules/_responsive.scss */
-=======
-  /* line 1680, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg {
     text-indent: initial;
     background-image: none;
     max-width: 480px;
     margin-top: 58px;
   }
-<<<<<<< Updated upstream
   /* line 1938, ../sass/modules/_responsive.scss */
-=======
-  /* line 1688, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg h2 {
     font-size: 40px;
     font-weight: 800;
@@ -5730,55 +5405,34 @@ body.sg .btn {
     letter-spacing: 3px;
     text-align: center;
   }
-<<<<<<< Updated upstream
   /* line 1946, ../sass/modules/_responsive.scss */
-=======
-  /* line 1696, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg h2 span {
     font-size: 27px;
     letter-spacing: 3px;
   }
-<<<<<<< Updated upstream
   /* line 1952, ../sass/modules/_responsive.scss */
-=======
-  /* line 1702, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg .slotMachine {
     border: 1px solid #fff;
     margin: 14px 0 30px !important;
     height: 68px;
   }
-<<<<<<< Updated upstream
   /* line 1957, ../sass/modules/_responsive.scss */
-=======
-  /* line 1707, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg .slot {
     font-family: 'raleway', sen-serif;
     font-weight: 700;
     font-size: 25px;
   }
-<<<<<<< Updated upstream
   /* line 1963, ../sass/modules/_responsive.scss */
-=======
-  /* line 1713, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg #slotButton3 {
     float: none;
     display: block;
     margin: 0px auto;
   }
-<<<<<<< Updated upstream
   /* line 1972, ../sass/modules/_responsive.scss */
-=======
-  /* line 1722, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg #sec_about p {
     font-size: 15px;
     line-height: 1.7em;
   }
-<<<<<<< Updated upstream
   /* line 1979, ../sass/modules/_responsive.scss */
   body.sg div#sec_competition::after {
     height: 100%;
@@ -5789,36 +5443,19 @@ body.sg .btn {
     top: 70%;
   }
   /* line 1986, ../sass/modules/_responsive.scss */
-=======
-  /* line 1729, ../sass/modules/_responsive.scss */
-  body.sg div#sec_competition:after {
-    height: 100%;
-    top: 0;
-  }
-  /* line 1734, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg ul.competition-headings a {
     letter-spacing: 2px;
     font-weight: 600;
   }
-<<<<<<< Updated upstream
   /* line 1991, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic {
     font-size: 14px;
   }
   /* line 1993, ../sass/modules/_responsive.scss */
-=======
-  /* line 1739, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic {
-    font-size: 14px;
-  }
-  /* line 1741, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg div.competition_topic h4 {
     font-size: 32px;
     padding: 15px 0;
   }
-<<<<<<< Updated upstream
   /* line 1997, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic h4 span {
     font-size: 27px;
@@ -5828,104 +5465,57 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 2004, ../sass/modules/_responsive.scss */
-=======
-  /* line 1745, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic h4 span {
-    font-size: 27px;
-  }
-  /* line 1749, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic h5 {
-    font-size: 19px;
-  }
-  /* line 1752, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg div.competition_topic p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: initial;
   }
-<<<<<<< Updated upstream
   /* line 2010, ../sass/modules/_responsive.scss */
-=======
-  /* line 1758, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg div.competition_topic ul li {
     font-size: 14px;
     margin-bottom: 10px;
     line-height: 1.7em;
   }
-<<<<<<< Updated upstream
   /* line 2020, ../sass/modules/_responsive.scss */
-=======
-  /* line 1769, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .jumpnow-des h3 {
     font-family: 'fatfrank', sen-serif;
     letter-spacing: 1px;
     font-size: 25px;
   }
-<<<<<<< Updated upstream
   /* line 2024, ../sass/modules/_responsive.scss */
   body.sg .jumpnow-des h3 span {
     font-family: 'fatfrank', sen-serif;
   }
   /* line 2032, ../sass/modules/_responsive.scss */
-=======
-  /* line 1773, ../sass/modules/_responsive.scss */
-  body.sg .jumpnow-des h3 span {
-    font-family: 'fatfrank', sen-serif;
-  }
-  /* line 1781, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .event_single .front_face, body.sg .event_single .back_face {
     background-color: #333;
     text-shadow: 0px 0px  20px black;
   }
-<<<<<<< Updated upstream
   /* line 2039, ../sass/modules/_responsive.scss */
   body.sg .event_single .back_face p {
     padding: 50px 0;
   }
   /* line 2047, ../sass/modules/_responsive.scss */
-=======
-  /* line 1788, ../sass/modules/_responsive.scss */
-  body.sg .event_single .back_face p {
-    padding: 50px 0;
-  }
-  /* line 1796, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .btn {
     letter-spacing: 2px;
   }
 
-<<<<<<< Updated upstream
   /* line 2053, ../sass/modules/_responsive.scss */
   body.sg div.contact_container {
     margin-bottom: 0px;
   }
 
   /* line 2058, ../sass/modules/_responsive.scss */
-=======
-  /* line 1802, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.slide.team_details {
     padding: 2.2% 0% 5% 0%;
   }
 
-<<<<<<< Updated upstream
   /* line 2061, ../sass/modules/_responsive.scss */
-=======
-  /* line 1805, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.nav_group {
     bottom: -37px;
   }
 
-<<<<<<< Updated upstream
   /* line 2065, ../sass/modules/_responsive.scss */
-=======
-  /* line 1809, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_mobile_menu_container {
     display: block;
     position: absolute;
@@ -5933,20 +5523,12 @@ body.sg .btn {
     background: #e8e8e8;
     width: 100%;
   }
-<<<<<<< Updated upstream
   /* line 2071, ../sass/modules/_responsive.scss */
-=======
-  /* line 1815, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_mobile_menu_container ul.competition-headings {
     padding: 0;
     margin: 0;
   }
-<<<<<<< Updated upstream
   /* line 2075, ../sass/modules/_responsive.scss */
-=======
-  /* line 1819, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_mobile_menu_container ul.competition-headings a {
     padding-top: 10px;
     height: 100%;
@@ -5954,24 +5536,15 @@ body.sg .btn {
     min-height: 60px;
   }
 
-<<<<<<< Updated upstream
   /* line 2084, ../sass/modules/_responsive.scss */
   div.competition_topic {
     font-size: 14px;
   }
   /* line 2086, ../sass/modules/_responsive.scss */
-=======
-  /* line 1828, ../sass/modules/_responsive.scss */
-  div.competition_topic {
-    font-size: 14px;
-  }
-  /* line 1830, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic h4 {
     font-size: 35px;
     padding: 15px 0;
   }
-<<<<<<< Updated upstream
   /* line 2090, ../sass/modules/_responsive.scss */
   div.competition_topic h4 span {
     font-size: 30px;
@@ -5981,79 +5554,40 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 2097, ../sass/modules/_responsive.scss */
-=======
-  /* line 1834, ../sass/modules/_responsive.scss */
-  div.competition_topic h4 span {
-    font-size: 30px;
-  }
-  /* line 1838, ../sass/modules/_responsive.scss */
-  div.competition_topic h5 {
-    font-size: 19px;
-  }
-  /* line 1841, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: initial;
   }
-<<<<<<< Updated upstream
   /* line 2103, ../sass/modules/_responsive.scss */
-=======
-  /* line 1847, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   div.competition_topic ul li {
     font-size: 14px;
   }
 
-<<<<<<< Updated upstream
   /* line 2108, ../sass/modules/_responsive.scss */
-=======
-  /* line 1852, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   .sloganContainer {
     background-size: 80% auto;
   }
 
-<<<<<<< Updated upstream
   /* line 2112, ../sass/modules/_responsive.scss */
-=======
-  /* line 1856, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   .jumpnow-des h3 {
     text-align: center;
     font-size: 27px;
   }
 
-<<<<<<< Updated upstream
   /* line 2117, ../sass/modules/_responsive.scss */
-=======
-  /* line 1861, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #sec_about p {
     font-size: 15px;
     line-height: 25px;
   }
-<<<<<<< Updated upstream
 }
 @media only screen and (min-width: 568px) and (max-width: 666px) and (orientation: landscape) {
   /* line 2134, ../sass/modules/_responsive.scss */
-=======
-
-  /* line 1869, ../sass/modules/_responsive.scss */
-  div.contact_container {
-    margin-bottom: 0px;
-  }
-}
-@media only screen and (max-width: 568px) and (orientation: landscape) {
-  /* line 1880, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg {
     letter-spacing: initial;
     font-size: 16px;
     line-height: 24px;
   }
-<<<<<<< Updated upstream
   /* line 2139, ../sass/modules/_responsive.scss */
   body.sg #sec_home::after {
     top: 55%;
@@ -6069,13 +5603,6 @@ body.sg .btn {
     top: 0;
   }
   /* line 2154, ../sass/modules/_responsive.scss */
-=======
-  /* line 1885, ../sass/modules/_responsive.scss */
-  body.sg #sec_home:after {
-    top: 55%;
-  }
-  /* line 1890, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sg_bg {
     background: url("../img/home_bg_sg_5.jpg") no-repeat center;
     background-blend-mode: multiply;
@@ -6086,22 +5613,14 @@ body.sg .btn {
     -webkit-background-size: cover;
     position: relative;
   }
-<<<<<<< Updated upstream
   /* line 2170, ../sass/modules/_responsive.scss */
-=======
-  /* line 1906, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg {
     text-indent: initial;
     background-image: none;
     max-width: 480px;
     margin-top: 58px;
   }
-<<<<<<< Updated upstream
   /* line 2178, ../sass/modules/_responsive.scss */
-=======
-  /* line 1914, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg h2 {
     font-size: 40px;
     font-weight: 800;
@@ -6109,81 +5628,48 @@ body.sg .btn {
     letter-spacing: 3px;
     text-align: center;
   }
-<<<<<<< Updated upstream
   /* line 2186, ../sass/modules/_responsive.scss */
-=======
-  /* line 1922, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg h2 span {
     font-size: 27px;
     letter-spacing: 3px;
   }
-<<<<<<< Updated upstream
   /* line 2192, ../sass/modules/_responsive.scss */
-=======
-  /* line 1928, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg .slotMachine {
     border: 1px solid #fff;
     margin: 14px 0 30px !important;
     height: 68px;
   }
-<<<<<<< Updated upstream
   /* line 2197, ../sass/modules/_responsive.scss */
-=======
-  /* line 1933, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg .slot {
     font-family: 'raleway', sen-serif;
     font-weight: 700;
     font-size: 25px;
   }
-<<<<<<< Updated upstream
   /* line 2203, ../sass/modules/_responsive.scss */
-=======
-  /* line 1939, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .sloganContainer_sg_bg #slotButton3 {
     float: none;
     display: block;
     margin: 0px auto;
   }
-<<<<<<< Updated upstream
   /* line 2212, ../sass/modules/_responsive.scss */
-=======
-  /* line 1948, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg #sec_about p {
     font-size: 15px !important;
     line-height: 20px;
   }
-<<<<<<< Updated upstream
   /* line 2219, ../sass/modules/_responsive.scss */
-=======
-  /* line 1955, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg ul.competition-headings a {
     letter-spacing: 2px;
     font-weight: 600;
   }
-<<<<<<< Updated upstream
   /* line 2224, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic {
     font-size: 14px;
   }
   /* line 2226, ../sass/modules/_responsive.scss */
-=======
-  /* line 1960, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic {
-    font-size: 14px;
-  }
-  /* line 1962, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg div.competition_topic h4 {
     font-size: 32px;
     padding: 15px 0;
   }
-<<<<<<< Updated upstream
   /* line 2230, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic h4 span {
     font-size: 27px;
@@ -6193,23 +5679,11 @@ body.sg .btn {
     font-size: 19px;
   }
   /* line 2237, ../sass/modules/_responsive.scss */
-=======
-  /* line 1966, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic h4 span {
-    font-size: 27px;
-  }
-  /* line 1970, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic h5 {
-    font-size: 19px;
-  }
-  /* line 1973, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg div.competition_topic p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: initial;
   }
-<<<<<<< Updated upstream
   /* line 2243, ../sass/modules/_responsive.scss */
   body.sg div.competition_topic ul li {
     font-size: 14px;
@@ -6227,53 +5701,29 @@ body.sg .btn {
     padding-top: 45px;
   }
   /* line 2262, ../sass/modules/_responsive.scss */
-=======
-  /* line 1979, ../sass/modules/_responsive.scss */
-  body.sg div.competition_topic ul li {
-    font-size: 14px;
-  }
-  /* line 1987, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .jumpnow-des h3 {
     font-family: 'fatfrank', sen-serif;
     letter-spacing: 1px;
     font-size: 25px;
   }
-<<<<<<< Updated upstream
   /* line 2266, ../sass/modules/_responsive.scss */
   body.sg .jumpnow-des h3 span {
     font-family: 'fatfrank', sen-serif;
   }
   /* line 2274, ../sass/modules/_responsive.scss */
-=======
-  /* line 1991, ../sass/modules/_responsive.scss */
-  body.sg .jumpnow-des h3 span {
-    font-family: 'fatfrank', sen-serif;
-  }
-  /* line 1999, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .event_single .front_face, body.sg .event_single .back_face {
     background-color: #333;
     text-shadow: 0px 0px  20px black;
   }
-<<<<<<< Updated upstream
   /* line 2281, ../sass/modules/_responsive.scss */
   body.sg .event_single .back_face p {
     padding: 50px 0;
   }
   /* line 2289, ../sass/modules/_responsive.scss */
-=======
-  /* line 2006, ../sass/modules/_responsive.scss */
-  body.sg .event_single .back_face p {
-    padding: 50px 0;
-  }
-  /* line 2014, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   body.sg .btn {
     letter-spacing: 2px;
   }
 
-<<<<<<< Updated upstream
   /* line 2298, ../sass/modules/_responsive.scss */
   div#sec_competition .fp-slides {
     min-height: 700px;
@@ -6298,17 +5748,6 @@ body.sg .btn {
     margin-top: 20px;
   }
   /* line 2323, ../sass/modules/_responsive.scss */
-=======
-  /* line 2022, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single {
-    min-height: 210px !important;
-  }
-  /* line 2025, ../sass/modules/_responsive.scss */
-  #competition_prize_slide .prize-single h4 {
-    margin-top: 20px;
-  }
-  /* line 2029, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -6316,20 +5755,12 @@ body.sg .btn {
     -ms-background-size: 50% auto;
     background-size: 50% auto;
   }
-<<<<<<< Updated upstream
   /* line 2325, ../sass/modules/_responsive.scss */
-=======
-  /* line 2031, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:first-of-type h4 {
     font-size: 34px;
     color: #2b4252;
   }
-<<<<<<< Updated upstream
   /* line 2330, ../sass/modules/_responsive.scss */
-=======
-  /* line 2036, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(2) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -6338,11 +5769,7 @@ body.sg .btn {
     background-size: 50% auto;
     color: #0e324b;
   }
-<<<<<<< Updated upstream
   /* line 2335, ../sass/modules/_responsive.scss */
-=======
-  /* line 2041, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_prize_slide .prize-single:nth-of-type(3) {
     background-size: 50% auto;
     -moz-background-size: 50% auto;
@@ -6352,47 +5779,27 @@ body.sg .btn {
   }
 }
 @media only screen and (max-width: 480px) and (min-width: 321px) and (orientation: portrait) {
-<<<<<<< Updated upstream
   /* line 2356, ../sass/modules/_responsive.scss */
-=======
-  /* line 2062, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_mobile_menu_container ul.competition-headings a {
     line-height: 37px;
   }
 }
 @media only screen and (orientation: landscape) {
-<<<<<<< Updated upstream
   /* line 2367, ../sass/modules/_responsive.scss */
   .menu-items-mobile.fs ul {
     padding: 22vh 0 0 0;
   }
   /* line 2370, ../sass/modules/_responsive.scss */
-=======
-  /* line 2073, ../sass/modules/_responsive.scss */
-  .menu-items-mobile.fs ul {
-    padding: 22vh 0 0 0;
-  }
-  /* line 2076, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   .menu-items-mobile.fs ul .jumpnow_link a {
     padding: 0 !important;
   }
 
-<<<<<<< Updated upstream
   /* line 2374, ../sass/modules/_responsive.scss */
-=======
-  /* line 2080, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   .menu-items-mobile.fs li {
     padding: 0 0 10vh 0;
   }
 
-<<<<<<< Updated upstream
   /* line 2377, ../sass/modules/_responsive.scss */
-=======
-  /* line 2083, ../sass/modules/_responsive.scss */
->>>>>>> Stashed changes
   #competition_menu {
     display: none;
   }

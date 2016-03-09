@@ -212,7 +212,7 @@ $(document).ready(function() {
 	var original_height = $("#sec_jumpnow .team_details .slide-inner .border_container").height();
 	var single_height = $("#sec_jumpnow .team_details .team_detail_single").innerHeight();
 	$('#add_member').click(function(event){
-
+			$(".team_details .slide-inner").css("height","auto");
 			event.preventDefault();
 			$(this).before(DOM);
 			$(this).prev().children().children("input[name$='member_brief_info']").focus(function(e){
@@ -515,10 +515,13 @@ $(document).ready(function() {
 		var contact_form = $('#contact_us_form')
 		if(contact_form.valid()){  
         	submit_to_db(btn,contact_form);
-        	setTimeout(function(){
-        		$('.contact_container').animate({'bottom':contact_height*-0.8},1000);
-        		down = true;
-        	},2000);
+        	if(ww>768){ // larger than iPad ,this will slide down
+        		setTimeout(function(){
+	        		$('.contact_container').animate({'bottom':contact_height*-0.8},1000);
+	        		down = true;
+        		},2000);	
+        	}
+        	
 		}
 		else{
 			btn_error(btn);
@@ -561,7 +564,7 @@ $(document).ready(function() {
 			var a = $(this);
 			var href = a.attr("href");
 			var headerLi = $("#main_menu .menu-items-mobile ul li");
-			if(typeof href!== undefined && href!=null){
+			if(typeof href!== undefined && href!=null && href.length <15 ){
 				a.click(function(){
 					var section = "";
 					var slide = "";

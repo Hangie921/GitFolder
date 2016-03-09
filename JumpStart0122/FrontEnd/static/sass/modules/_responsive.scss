@@ -283,6 +283,21 @@ body.sg div#sec_jumpnow{
 	}
 }
 
+body div#sec_jumpnow{
+	div.team_details{
+		.border_container{
+			margin-bottom:100px;
+		}
+		.nav_group{
+			bottom:initial;
+			& a.button{
+				margin-top: -10px;
+			}
+		}
+	}
+
+}
+
 
 //######## SPONSOR ###############//
 
@@ -523,7 +538,6 @@ and (min-width:768px){
 // Randy ipad
 @media screen and (max-width: 768px)
 and (orientation : portrait) {
-
 	
 	//********* for Contact form ******///
 
@@ -672,34 +686,27 @@ and (orientation : portrait) {
 	#competition_prize_slide  {
 
 		.prize-single {
-
 			min-height: 120px !important;
+			
 			h4 {
 				margin-top:20px;
 			}
 
-		&:first-of-type {
-		@include background-size(50% auto);
-			h4{
-				font-size:34px;
-				color:#2b4252;
+			&:first-of-type {
+				@include background-size(50% auto);
+					h4{
+						font-size:34px;
+						color:#2b4252;
+					}
+		 	}
+		 	&:nth-of-type(2) {
+				@include background-size(50% auto);
+				color:$navy;
+		 	}
+		 	&:nth-of-type(3) {
+				@include background-size(50% auto);
 			}
-	 	}
-	 	&:nth-of-type(2) {
-		@include background-size(50% auto);
-			color:$navy;
 		
-	 	}
-	 	&:nth-of-type(3) {
-	
-		@include background-size(50% auto);
-		
-	 	
-
-			}
-
-
-
 		}
 
 	}
@@ -719,54 +726,56 @@ and (orientation : portrait) {
 
 
 
-/****COMPETITION*********/
+    /****COMPETITION*********/
 
 
 
-div.competition_topic .btn {
-	margin-top:30px;
-   
-   }
-div.timeline {
-   position:initial;
-   margin:0;
-}
-
-/**SPONSORSS*****/
-div.sponsor-group li span {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: -12vw;
-    width: 100vw;
-}
-
-ul.sponsor-list li {
-
-	&:hover span{
-		// display:none;  By Walter
+	div.competition_topic .btn {
+		margin-top:30px;
+	   
+	   }
+	div.timeline {
+	   position:initial;
+	   margin:0;
 	}
 
-	
-	//******** for middle line
-	.sg div#sec_home::after{
-		top: 60%;
+	/**SPONSORSS*****/
+	ul.sponsor-list li span {
+	    // opacity: 0;
+	    position: absolute;
+	    top: -1;
+	    left: -3vw;
+	    width: 95vw;
 	}
-	.sg div#sec_competition::after{
-		height: 100%;
-		top: 0;
+	ul.second li span{
+		position: absolute;
+		width: 95vw;
+		left:-47.5vw;
+
 	}
 
 
+	ul.sponsor-list li {
 
-}
+		&:hover span{
+			// display:none;  //By Walter
+			// opacity:1;
+		}
 
-div.sponsor-group ul.sponsor-list.second li {
-	width:100%;
-	margin:0 2% 2% 0;
-	position:relative;
-
-			}
+		//******** for middle line
+		.sg div#sec_home::after{
+			top: 60%;
+		}
+		.sg div#sec_competition::after{
+			height: 100%;
+			top: 0;
+		}
+	}
+		div.sponsor-group ul.sponsor-list.second li {
+			width:100%;
+			margin:0 2% 2% 0;
+			position:relative;
+		}
 
 
 div.nav_group {
@@ -823,6 +832,24 @@ div.slide.team_details{
 
 }
 
+/****** Jumpnow *****/
+body #sec_jumpnow{
+		.personal_details_group{
+			min-height:330px;
+		}
+	}
+
+div.slide.personal_details{
+		#reg_btn{
+			margin-top: 135px;
+			margin-left: 280px;
+		}
+		.nav_group{
+			right:initial;
+			left:15%;
+			
+		}
+	}
 
 /***CONTACT******/
 
@@ -1620,6 +1647,33 @@ and (orientation : portrait) {
 		line-height: 30px;
 	}
 
+	div.sponsor-group li span{
+		left: -6.5vw;
+		width:95vw;
+		top: -1px;
+	}
+
+
+	//############### TW personal_details ###############//
+	body #sec_jumpnow{
+		.personal_details_group{
+			min-height:330px;
+		}
+	}
+	div.slide.personal_details{
+		#reg_btn{
+			position: absolute;
+			top: 430px;	
+		}
+		.nav_group{
+			bottom:initial;
+			right:initial;
+			left:40%;
+			top: 100%;
+		}
+	}
+
+
 	//################ TW contact_container ##########//
 	body div#sec_events .contact_container{
 		margin-bottom:150px
@@ -1783,6 +1837,30 @@ and (orientation : portrait){
 	div.nav_group{
 		bottom: -37px;
 	}
+
+	body #sec_jumpnow{
+		.personal_details_group{
+			min-height:450px;
+		}
+	}
+	div.slide.personal_details{
+		#reg_btn{
+			position: absolute;
+			top: 430px;	
+		}
+		.nav_group{
+			bottom:initial;
+			right:initial;
+			left:40%;
+		}
+	}
+	
+	div.sponsor-group li span{
+		left: -7.5vw;
+		width:95vw;
+		top: -1px;
+	}
+
 	//Randy 04032016
 
 	div.competition_topic {
@@ -2119,12 +2197,34 @@ and (orientation : portrait) { /* STYLES GO HERE */
 		}
 	//******************** SG END **********************
 	
+	body #sec_jumpnow{
+		.personal_details_group{
+			min-height:350px;
+		}
+	}
 	div.slide.team_details{
 		padding:2.2% 0% 5% 0%;
+		.nav_group{
+			bottom: -37px;
+		}
 	}
-	div.nav_group{
-		bottom: -37px;
+	div.slide.personal_details{
+		#reg_btn{
+			position: absolute;
+			top: 430px;	
+		}
+		.nav_group{
+			bottom:initial;
+			right:initial;
+			left:40%;
+		}
 	}
+	div.sponsor-group li span{
+		left: -9.5vw;
+		width:95vw;
+		top: -1px;
+	}
+
 	//Randy 04032016
 	#competition_mobile_menu_container{
 		display:block;

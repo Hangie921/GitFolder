@@ -10,8 +10,6 @@ function revealOnScroll(){
 	var menu = $("#competition_mobile_menu_container");
 	var originalHeight = $("#sec_home").innerHeight() + $("#sec_about").innerHeight();
 	var scrolled = $(window).scrollTop();
-	// console.log("window:"+scrolled);
-	// console.log("#competition:"+offset.top);
 	menu.css("top",originalHeight);
 	$('#sec_competition').each(function() {
 		var current = $(this), // 當前元素
@@ -38,10 +36,10 @@ function revealOnScroll(){
 	    w_height = $(window).outerHeight(), //視窗高度
 	    offsetTop = current.offset().top; //當前元素離頂部的高度
 
-		if(scrolled == offsetTop){
+		if(scrolled >= offsetTop){
 			var sec = current.attr("data-anchor");
 			$(".menu-items-mobile ul li").removeClass("active");
-			$(".menu-items-mobile ul li[data-menuahcnor='"+sec+"']").addClass("active");
+			$(".menu-items-mobile ul li[data-menuanchor='"+sec+"']").addClass("active");
 		}
 
 	});

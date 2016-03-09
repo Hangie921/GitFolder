@@ -371,6 +371,9 @@ $file-upload-size: 200px;
         background-color: darken(white, 30);
         outline: none; 
     }
+    text-overflow : ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .file-upload-button {
     cursor: pointer; 

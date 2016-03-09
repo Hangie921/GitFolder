@@ -129,7 +129,11 @@ div.slide.team_details  {
 	#competition_menu {
    		display: none; // By Walter
 	}
-
+	
+	#sec_competition div.timeline ul li:hover{
+		margin-bottom: 5px !important; 
+	}
+	
 //############### MOBILE MENU #####################//
 
 	.menu-mobile {
@@ -2609,4 +2613,10 @@ and (orientation:landscape) {
 }
 
 
-
+@media only screen 
+and (max-width:768px)
+and (orientation:portrait){
+	ul.second li:nth-of-type(even){
+		left:-7.5vw;
+	}
+}

@@ -818,7 +818,7 @@ div.slide.team_details{
  
 	    position: absolute !important;
 	    background:$navy;
-	    right: -15px;
+	    right: -32px;
 	    top: -3px;
 	}
 	#add_member {
@@ -1150,9 +1150,15 @@ div.section#sec_jumpnow {
 	}
 	//EVENT BOX
 	.event_group {
+		margin-bottom:50px;
 		.event_single {
+			p{
+				font-size: 20px;
+				line-height:30px;
+			}
+			margin-bottom: 50px;
 			.event_single_rotate div {
-				height: 20vh;
+				height: 33vh;
 			}
 		}
 
@@ -2206,6 +2212,8 @@ and (orientation : portrait) { /* STYLES GO HERE */
 		padding:2.2% 0% 5% 0%;
 		.nav_group{
 			bottom: -37px;
+			right:initial;
+			left:23%;
 		}
 	}
 	div.slide.personal_details{

@@ -598,7 +598,12 @@ $(document).ready(function() {
 			}
 			
 		});
-
+		/******* FOR THE 開始行動 BTN********/
+		$("#slotButton3").click(function(){
+			setTimeout(function(){
+				moveTo("about",0);
+			}, 1000);
+		});
 
 	}
 	

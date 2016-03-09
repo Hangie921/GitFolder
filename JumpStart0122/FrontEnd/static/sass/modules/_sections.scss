@@ -1135,6 +1135,10 @@ div.contact_container{
 	.reminder {
 		color:$secondary-color;
 	}
+
+	.contact_form div:nth-child(a){
+		margin-top:10px;
+	}
 }
 
 

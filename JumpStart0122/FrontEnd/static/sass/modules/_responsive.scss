@@ -521,13 +521,40 @@ div.section#sec_jumpnow {
 
 @media screen 
 and (max-width:990px) 
-and (min-width:768px){
-
+and (min-width:769px){
+	#competition_mobile_menu_container{
+		display:block;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+		background:#e8e8e8;
+		ul{
+			padding: 0 ;
+			border-bottom:1px solid  $primary-color;
+			li{
+				height: 40px;
+			}
+		}
+	}
+	#competition_mobile_menu_container.fixed{
+		position: fixed;
+	}
 	#sec_home::after{
 		top: 48%;
 	}
+	#sec_competition .slide{
+		.border_container{
+			margin-top: 30px;
+		}
+	}
+	div#sec_events{
+		padding-top: 100px;
+		.contact_container{
+			bottom:-520px;
+		}	
+	}
 
-	
+
 }
 
 /******************MOBILE************************/
@@ -746,12 +773,16 @@ and (orientation : portrait) {
 	    top: -1;
 	    left: -3vw;
 	    width: 95vw;
+	    z-index: -1;
 	}
 	ul.second li span{
 		position: absolute;
 		width: 95vw;
-		left:-47.5vw;
+		left:-3vw;
 
+	}
+	ul.second li:nth-of-type(even) span{
+		left:-47.5vw;
 	}
 
 
@@ -759,7 +790,7 @@ and (orientation : portrait) {
 
 		&:hover span{
 			// display:none;  //By Walter
-			// opacity:1;
+			z-index: initial;
 		}
 
 		//******** for middle line

@@ -53,7 +53,8 @@ var schema = function(){
 				"readed_time" : null,
 				"readed_flag" : false
 			}
-		}
+		},
+		"device":""
 	};
 }//end of the schema function
 
@@ -81,6 +82,7 @@ function to_object(req,res,callback){   //pack all the info of the form into a o
 	team_info.contact.name = req.body.contact;
 	team_info.contact.email = req.body.email;
 	team_info.contact.phone = req.body.phone;
+	doc.device = req.body.device;
 	console.log(req.file);
 	team_info.bp_file.file_name = req.file != undefined ? req.file.filename:null;
 	team_info.bp_file.file_path = req.file != undefined ? req.file.path:null;

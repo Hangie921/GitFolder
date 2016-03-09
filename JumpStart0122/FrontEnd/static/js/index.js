@@ -515,7 +515,7 @@ $(document).ready(function() {
 		var contact_form = $('#contact_us_form')
 		if(contact_form.valid()){  
         	submit_to_db(btn,contact_form);
-        	if(ww>768){ // larger than iPad ,this will slide down
+        	if(ww>990){ // larger than iPad ,this will slide down
         		setTimeout(function(){
 	        		$('.contact_container').animate({'bottom':contact_height*-0.8},1000);
 	        		down = true;
@@ -616,6 +616,13 @@ $(document).ready(function() {
 		}
 	});
 
+
+	//enter the device of user
+	if(ww<=768 && ww>415){
+		$("#device").val("pad");
+	}else if(ww<=414){
+		$("#device").val("mobile");
+	}
 
 });//end of the document.ready
 

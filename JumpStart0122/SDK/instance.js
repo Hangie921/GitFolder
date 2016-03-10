@@ -19,7 +19,12 @@ function initApp(config,dir_path){
 	app.set("views",path.join(dir_path, "view"));
 	app.set('view engine',config.server.view_engine);
 	app.use( express.static( path.join(dir_path, "static") ) );
-	app.use(session({ secret: 'keyboard cat', cookie: { maxAge: config.session.expires }}));
+	app.use(session({ 
+		secret: 'keyboard cat', 
+		cookie: { maxAge: config.session.expires },
+		resave: true,
+		saveUninitialized:true
+	}));
 	
 	var server = app.listen(port ,function(err){  //initial the server 
 			if(err){

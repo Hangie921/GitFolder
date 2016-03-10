@@ -398,7 +398,9 @@ $(document).ready(function() {
 		
 
    		if(input_counter && name_counter && file_counter){      // two groups of counter must be true to next slide
-   			// $.fn.fullpage.moveTo('jumpnow',2);
+   			if(ww>990){
+   				$.fn.fullpage.moveTo('jumpnow',2);  //only use the fp while on PC	
+   			}
    			moveTo("jumpnow",2);
    		}else{
    			btn_error($(this));
@@ -572,19 +574,11 @@ $(document).ready(function() {
 					if(href.lastIndexOf("/") == -1){ //means there is no slide num in the href
 						section = href.slice(1,href.length);
 						var offset = $("#sec_"+section).offset();
-						// $.fn.fullpage.moveTo(section);
-						// setTimeout(function(){
-						// 	$(window).scrollTop(offset.top-50);
-						// },1000);
 						moveTo(section,null);
 					}else{
 						slide = href.slice(href.length-1,href.length);
 						section = href.slice(1,href.lastIndexOf("/"));
 						var offset = $("#sec_"+section).offset();
-						// // $.fn.fullpage.moveTo(section,slide);
-						// setTimeout(function(){
-						// 	$(window).scrollTop(offset.top-50);
-						// },1000);
 						moveTo(section,slide);
 					}
 

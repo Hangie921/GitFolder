@@ -99,15 +99,32 @@
 				background-blend-mode: multiply;
 				// background-color:rgba(255,0,0,.7);
 			}
+			
+
+			
+
 		}
 		
-		&:nth-child(1):hover .event_single_rotate,
-		&:nth-child(1):focus .event_single_rotate,
-		&:nth-child(2):hover .event_single_rotate,
-		&:nth-child(2):focus .event_single_rotate,{
-			 	@include transition(all .5s ease-In);
+		@media only screen
+		and (max-width:990px){
+			.event_single_rotate.rotated{
+				@include transition(all .5s ease-In);
 				@include transform(rotateY(180deg));
+			}
 		}
+
+			@media only screen 
+			and (min-width:991px){
+				&:nth-child(1):hover .event_single_rotate,
+				&:nth-child(1):focus .event_single_rotate,
+				&:nth-child(2):hover .event_single_rotate,
+				&:nth-child(2):focus .event_single_rotate,{
+				 	@include transition(all .5s ease-In);
+					@include transform(rotateY(180deg));
+				}	
+			}
+		
+			
 		&:first-of-type .front_face {
 			background:#999 url(../img/ninebot-bg.jpg) no-repeat;
 			@include background-size(cover);

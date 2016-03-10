@@ -398,7 +398,8 @@ $(document).ready(function() {
 		
 
    		if(input_counter && name_counter && file_counter){      // two groups of counter must be true to next slide
-   			$.fn.fullpage.moveTo('jumpnow',2);
+   			// $.fn.fullpage.moveTo('jumpnow',2);
+   			moveTo("jumpnow",2);
    		}else{
    			btn_error($(this));
    		}
@@ -564,11 +565,10 @@ $(document).ready(function() {
 			var a = $(this);
 			var href = a.attr("href");
 			var headerLi = $("#main_menu .menu-items-mobile ul li");
-			if(typeof href!== undefined && href!=null && href.length <15 ){
+			if(typeof href!== undefined && href!=null ){
 				a.click(function(){
 					var section = "";
 					var slide = "";
-					
 					if(href.lastIndexOf("/") == -1){ //means there is no slide num in the href
 						section = href.slice(1,href.length);
 						var offset = $("#sec_"+section).offset();
@@ -622,6 +622,35 @@ $(document).ready(function() {
 		$("#device").val("pad");
 	}else if(ww<=414){
 		$("#device").val("mobile");
+	}
+
+
+	//rotate the event_single while mobile device
+	if(ww<=990){
+		var event1 = $(".event_single:nth-of-type(1) .event_single_rotate");
+		var event2 = $(".event_single:nth-of-type(2) .event_single_rotate");
+		event1.hover(function(){
+
+			if(!$(this).hasClass("rotated")){
+				$(this).not().removeClass("rotated");
+				$(this).addClass("rotated");	
+			}else{
+				$(this).removeClass("rotated");	
+			}
+			
+		});
+		event2.hover(function(){
+
+			if(!$(this).hasClass("rotated")){
+				$(this).not().removeClass("rotated");
+				$(this).addClass("rotated");	
+			}else{
+				$(this).removeClass("rotated");	
+			}
+			
+		});
+
+
 	}
 
 });//end of the document.ready

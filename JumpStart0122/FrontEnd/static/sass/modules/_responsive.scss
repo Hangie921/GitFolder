@@ -2614,9 +2614,9 @@ and (orientation:landscape) {
 
 
 @media only screen 
-and (max-width:768px)
+and (max-width:414px)
 and (orientation:portrait){
-	ul.second li:nth-of-type(even){
+	ul.second li:nth-of-type(even) span{
 		left:-7.5vw;
 	}
 }

@@ -2682,20 +2682,37 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background: #666666 url(../img/event_comingsoon_1.jpg) no-repeat;
   background-blend-mode: multiply;
 }
-/* line 107, ../sass/modules/_animations.scss */
-.event_group .event_single:nth-child(1):hover .event_single_rotate, .event_group .event_single:nth-child(1):focus .event_single_rotate, .event_group .event_single:nth-child(2):hover .event_single_rotate, .event_group .event_single:nth-child(2):focus .event_single_rotate {
-  -moz-transition: all 0.5s ease-In;
-  -webkit-transition: all 0.5s ease-In;
-  -ms-transition: all 0.5s ease-In;
-  -o-transition: all 0.5s ease-In;
-  transition: all 0.5s ease-In;
-  -moz-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+@media only screen and (max-width: 990px) {
+  /* line 110, ../sass/modules/_animations.scss */
+  .event_group .event_single .event_single_rotate.rotated {
+    -moz-transition: all 0.5s ease-In;
+    -webkit-transition: all 0.5s ease-In;
+    -ms-transition: all 0.5s ease-In;
+    -o-transition: all 0.5s ease-In;
+    transition: all 0.5s ease-In;
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
 }
-/* line 111, ../sass/modules/_animations.scss */
+@media only screen and (min-width: 991px) {
+  /* line 121, ../sass/modules/_animations.scss */
+  .event_group .event_single:nth-child(1):hover .event_single_rotate, .event_group .event_single:nth-child(1):focus .event_single_rotate, .event_group .event_single:nth-child(2):hover .event_single_rotate, .event_group .event_single:nth-child(2):focus .event_single_rotate {
+    -moz-transition: all 0.5s ease-In;
+    -webkit-transition: all 0.5s ease-In;
+    -ms-transition: all 0.5s ease-In;
+    -o-transition: all 0.5s ease-In;
+    transition: all 0.5s ease-In;
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+/* line 128, ../sass/modules/_animations.scss */
 .event_group .event_single:first-of-type .front_face, .event_group .event_single:first-of-type .back_face {
   background: #999999 url(../img/ninebot-bg.jpg) no-repeat;
   background-size: cover;
@@ -2704,7 +2721,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -ms-background-size: cover;
   background-size: cover;
 }
-/* line 116, ../sass/modules/_animations.scss */
+/* line 133, ../sass/modules/_animations.scss */
 .event_group .event_single:nth-of-type(2) .front_face, .event_group .event_single:nth-of-type(2) .back_face {
   background: #999999 url(../img/meitu.jpg) no-repeat;
   background-size: cover;
@@ -2714,7 +2731,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-size: cover;
 }
 
-/* line 124, ../sass/modules/_animations.scss */
+/* line 141, ../sass/modules/_animations.scss */
 div.timeLineAni::after {
   -moz-animation: lineDown 1.5s 0s 1 linear forwards;
   -webkit-animation: lineDown 1.5s 0s 1 linear forwards;
@@ -2723,50 +2740,50 @@ div.timeLineAni::after {
   animation: lineDown 1.5s 0s 1 linear forwards;
 }
 
-/* line 128, ../sass/modules/_animations.scss */
+/* line 145, ../sass/modules/_animations.scss */
 #sec_jumpnow.timeLineAni.opacity::after {
   opacity: 0;
   transition: opacity 1s 0s;
 }
 
-/* line 132, ../sass/modules/_animations.scss */
+/* line 149, ../sass/modules/_animations.scss */
 #sec_jumpnow.timeLineani::after {
   transition: opacity 1s 0s;
 }
 
 @keyframes lineDown {
-  /* line 136, ../sass/modules/_animations.scss */
+  /* line 153, ../sass/modules/_animations.scss */
   0% {
     top: 0;
     height: 0%;
   }
 
-  /* line 137, ../sass/modules/_animations.scss */
+  /* line 154, ../sass/modules/_animations.scss */
   30% {
     top: 0;
     height: 30%;
   }
 
-  /* line 138, ../sass/modules/_animations.scss */
+  /* line 155, ../sass/modules/_animations.scss */
   50% {
     top: 0;
     height: 50%;
   }
 
-  /* line 139, ../sass/modules/_animations.scss */
+  /* line 156, ../sass/modules/_animations.scss */
   80% {
     top: 0;
     height: 80%;
   }
 
-  /* line 140, ../sass/modules/_animations.scss */
+  /* line 157, ../sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 100%;
   }
 }
 
-/* line 142, ../sass/modules/_animations.scss */
+/* line 159, ../sass/modules/_animations.scss */
 #sec_about.borderRightAni::after {
   -moz-animation: lineDown 1.5s 0s 1 linear forwards;
   -webkit-animation: lineDown 1.5s 0s 1 linear forwards;
@@ -2775,32 +2792,32 @@ div.timeLineAni::after {
   animation: lineDown 1.5s 0s 1 linear forwards;
 }
 
-/* line 159, ../sass/modules/_animations.scss */
+/* line 176, ../sass/modules/_animations.scss */
 .border_container {
   height: 100%;
   position: relative;
 }
 
-/* line 163, ../sass/modules/_animations.scss */
+/* line 180, ../sass/modules/_animations.scss */
 .border {
   position: absolute;
 }
 
 /****for the straightDown border ani***/
-/* line 167, ../sass/modules/_animations.scss */
+/* line 184, ../sass/modules/_animations.scss */
 div.straightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 173, ../sass/modules/_animations.scss */
+/* line 190, ../sass/modules/_animations.scss */
 div.straightAni .border {
   background-color: #f16b29;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 179, ../sass/modules/_animations.scss */
+/* line 196, ../sass/modules/_animations.scss */
 div.straightAni .border.top {
   width: 100%;
   height: 1px;
@@ -2811,12 +2828,12 @@ div.straightAni .border.top {
   -o-animation: borderTopAni 0.3s 0s 1 linear forwards;
   animation: borderTopAni 0.3s 0s 1 linear forwards;
 }
-/* line 185, ../sass/modules/_animations.scss */
+/* line 202, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom {
   height: 1px;
   top: 100%;
 }
-/* line 188, ../sass/modules/_animations.scss */
+/* line 205, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_right {
   width: 0%;
   left: 100%;
@@ -2826,7 +2843,7 @@ div.straightAni .border.bottom.b_right {
   -o-animation: borderB_right 0.3s 0.9s 1 linear forwards;
   animation: borderB_right 0.3s 0.9s 1 linear forwards;
 }
-/* line 193, ../sass/modules/_animations.scss */
+/* line 210, ../sass/modules/_animations.scss */
 div.straightAni .border.bottom.b_left {
   width: 0%;
   left: 0;
@@ -2836,7 +2853,7 @@ div.straightAni .border.bottom.b_left {
   -o-animation: borderB_left 0.3s 0.9s 1 linear forwards;
   animation: borderB_left 0.3s 0.9s 1 linear forwards;
 }
-/* line 200, ../sass/modules/_animations.scss */
+/* line 217, ../sass/modules/_animations.scss */
 div.straightAni .border.left, div.straightAni .border.right {
   width: 1px;
   max-width: 2px;
@@ -2847,19 +2864,19 @@ div.straightAni .border.left, div.straightAni .border.right {
   -o-animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
   animation: borderSidesAni 0.6s 0.3s 1 linear forwards;
 }
-/* line 207, ../sass/modules/_animations.scss */
+/* line 224, ../sass/modules/_animations.scss */
 div.straightAni .border.right {
   left: 100%;
 }
 
 @keyframes borderTopAni {
-  /* line 212, ../sass/modules/_animations.scss */
+  /* line 229, ../sass/modules/_animations.scss */
   0% {
     left: 50%;
     width: 0;
   }
 
-  /* line 213, ../sass/modules/_animations.scss */
+  /* line 230, ../sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 100%;
@@ -2867,25 +2884,25 @@ div.straightAni .border.right {
 }
 
 @keyframes borderSidesAni {
-  /* line 217, ../sass/modules/_animations.scss */
+  /* line 234, ../sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 218, ../sass/modules/_animations.scss */
+  /* line 235, ../sass/modules/_animations.scss */
   100% {
     height: 100%;
   }
 }
 
 @keyframes borderB_left {
-  /* line 222, ../sass/modules/_animations.scss */
+  /* line 239, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 0;
   }
 
-  /* line 223, ../sass/modules/_animations.scss */
+  /* line 240, ../sass/modules/_animations.scss */
   100% {
     width: 50.59%;
     left: 0;
@@ -2893,13 +2910,13 @@ div.straightAni .border.right {
 }
 
 @keyframes borderB_right {
-  /* line 227, ../sass/modules/_animations.scss */
+  /* line 244, ../sass/modules/_animations.scss */
   0% {
     width: 0;
     left: 100%;
   }
 
-  /* line 228, ../sass/modules/_animations.scss */
+  /* line 245, ../sass/modules/_animations.scss */
   100% {
     width: 50.59%;
     left: 49.5%;
@@ -2907,17 +2924,17 @@ div.straightAni .border.right {
 }
 
 /*****for the all borderRight except the jumpnow-des*****/
-/* line 233, ../sass/modules/_animations.scss */
+/* line 250, ../sass/modules/_animations.scss */
 div.borderRightAni {
   position: relative;
   box-sizing: border-box;
   height: 100%;
 }
-/* line 237, ../sass/modules/_animations.scss */
+/* line 254, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container {
   height: 100%;
 }
-/* line 239, ../sass/modules/_animations.scss */
+/* line 256, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .straight_line {
   width: 1px;
   height: 0px;
@@ -2932,7 +2949,7 @@ div.borderRightAni.border_container .straight_line {
   -o-animation: straightLineAni 0.9s 0s 1 linear forwards;
   animation: straightLineAni 0.9s 0s 1 linear forwards;
 }
-/* line 249, ../sass/modules/_animations.scss */
+/* line 266, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .straight_line_down {
   width: 1px;
   height: 0;
@@ -2947,7 +2964,7 @@ div.borderRightAni.border_container .straight_line_down {
   -o-animation: straightLineAni 0.3s 1.2s 1 linear forwards;
   animation: straightLineAni 0.3s 1.2s 1 linear forwards;
 }
-/* line 259, ../sass/modules/_animations.scss */
+/* line 276, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .horizon_line {
   height: 1px;
   width: 0px;
@@ -2963,7 +2980,7 @@ div.borderRightAni.border_container .horizon_line {
   -o-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
   animation: horiLineAni 0.3s 1.5s 1 linear forwards;
 }
-/* line 270, ../sass/modules/_animations.scss */
+/* line 287, ../sass/modules/_animations.scss */
 div.borderRightAni.border_container .horizon_line_left {
   height: 1px;
   width: 0px;
@@ -2979,11 +2996,11 @@ div.borderRightAni.border_container .horizon_line_left {
   -o-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
   animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
 }
-/* line 282, ../sass/modules/_animations.scss */
+/* line 299, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container {
   height: 100%;
 }
-/* line 284, ../sass/modules/_animations.scss */
+/* line 301, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container .straight_line {
   width: 1px;
   height: 0px;
@@ -2998,7 +3015,7 @@ div.borderRightAni .border_container .straight_line {
   -o-animation: straightLineAni 0.3s 0s 1 linear forwards;
   animation: straightLineAni 0.3s 0s 1 linear forwards;
 }
-/* line 294, ../sass/modules/_animations.scss */
+/* line 311, ../sass/modules/_animations.scss */
 div.borderRightAni .border_container .horizon_line {
   height: 1px;
   width: 0px;
@@ -3014,14 +3031,14 @@ div.borderRightAni .border_container .horizon_line {
   -o-animation: horiLineAni 0.3s 1.5s 1 linear forwards;
   animation: horiLineAni 0.3s 1.5s 1 linear forwards;
 }
-/* line 307, ../sass/modules/_animations.scss */
+/* line 324, ../sass/modules/_animations.scss */
 div.borderRightAni .border {
   position: absolute;
   background-color: #f16b29;
   left: 0;
   top: 0;
 }
-/* line 313, ../sass/modules/_animations.scss */
+/* line 330, ../sass/modules/_animations.scss */
 div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   height: 1px;
   width: 0;
@@ -3031,11 +3048,11 @@ div.borderRightAni .border.top, div.borderRightAni .border.bottom {
   -o-animation: borderTopBottomAni 0.6s 0.6s 1 linear forwards;
   animation: borderTopBottomAni 0.6s 0.6s 1 linear forwards;
 }
-/* line 318, ../sass/modules/_animations.scss */
+/* line 335, ../sass/modules/_animations.scss */
 div.borderRightAni .border.bottom {
   top: 100%;
 }
-/* line 321, ../sass/modules/_animations.scss */
+/* line 338, ../sass/modules/_animations.scss */
 div.borderRightAni .border.left {
   width: 1px;
   height: 0;
@@ -3046,7 +3063,7 @@ div.borderRightAni .border.left {
   -o-animation: borderLeftAni 0.3s 0.3s 1 linear forwards;
   animation: borderLeftAni 0.3s 0.3s 1 linear forwards;
 }
-/* line 327, ../sass/modules/_animations.scss */
+/* line 344, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_top {
   width: 1px;
   left: 100%;
@@ -3056,7 +3073,7 @@ div.borderRightAni .border.right.R_top {
   -o-animation: borderR_top 0.3s 1.2s 1 linear forwards;
   animation: borderR_top 0.3s 1.2s 1 linear forwards;
 }
-/* line 332, ../sass/modules/_animations.scss */
+/* line 349, ../sass/modules/_animations.scss */
 div.borderRightAni .border.right.R_bottom {
   width: 1px;
   left: 100%;
@@ -3066,7 +3083,7 @@ div.borderRightAni .border.right.R_bottom {
   -o-animation: borderR_bottom 0.3s 1.2s 1 linear forwards;
   animation: borderR_bottom 0.3s 1.2s 1 linear forwards;
 }
-/* line 338, ../sass/modules/_animations.scss */
+/* line 355, ../sass/modules/_animations.scss */
 div.borderRightAni .horizon_line_left#jumpnow_team_details {
   -moz-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
   -webkit-animation: leftLineForTeamDetail 0.3s 0s 1 linear forwards;
@@ -3076,14 +3093,14 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 }
 
 /*for the I am ready btn*/
-/* line 344, ../sass/modules/_animations.scss */
+/* line 361, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni {
   position: relative;
   z-index: -5;
   left: -16px;
   height: 100%;
 }
-/* line 349, ../sass/modules/_animations.scss */
+/* line 366, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .horizon_line {
   background-color: #f16b29;
   z-index: 1;
@@ -3098,7 +3115,7 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   -o-animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
   animation: horiLineBtn 0.5s 1.5s 1 linear forwards;
 }
-/* line 360, ../sass/modules/_animations.scss */
+/* line 377, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .sg {
   background-color: #f16b29;
   z-index: 1;
@@ -3113,14 +3130,14 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
   -o-animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
   animation: horiLineBtn_sg 0.5s 1.5s 1 linear forwards;
 }
-/* line 370, ../sass/modules/_animations.scss */
+/* line 387, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .right.R_bottom {
   background-color: #f16b29;
   width: 1px;
   position: absolute;
   height: 0;
 }
-/* line 377, ../sass/modules/_animations.scss */
+/* line 394, ../sass/modules/_animations.scss */
 #border_btn.borderRightAni .horizon_line_short {
   background-color: #f16b29;
   height: 1px;
@@ -3130,30 +3147,30 @@ div.borderRightAni .horizon_line_left#jumpnow_team_details {
 
 /********keyframes for the button*****/
 @keyframes horiLineBtn {
-  /* line 386, ../sass/modules/_animations.scss */
+  /* line 403, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 387, ../sass/modules/_animations.scss */
+  /* line 404, ../sass/modules/_animations.scss */
   100% {
     width: 1200px;
   }
 }
 
 @keyframes horiLineBtn_sg {
-  /* line 390, ../sass/modules/_animations.scss */
+  /* line 407, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 391, ../sass/modules/_animations.scss */
+  /* line 408, ../sass/modules/_animations.scss */
   100% {
     width: 1200px;
   }
 }
 
-/* line 397, ../sass/modules/_animations.scss */
+/* line 414, ../sass/modules/_animations.scss */
 div.borderRightAni #jumpnow_part1_line {
   -moz-animation: horiLineJumpnowFirst 0.3s 0.6s 1 linear forwards;
   -webkit-animation: horiLineJumpnowFirst 0.3s 0.6s 1 linear forwards;
@@ -3162,7 +3179,7 @@ div.borderRightAni #jumpnow_part1_line {
   animation: horiLineJumpnowFirst 0.3s 0.6s 1 linear forwards;
 }
 
-/* line 403, ../sass/modules/_animations.scss */
+/* line 420, ../sass/modules/_animations.scss */
 body.sg div.borderRightAni #jumpnow_part1_line {
   -moz-animation: horiLineJumpnowFirstSg 0.3s 0.6s 1 linear forwards;
   -webkit-animation: horiLineJumpnowFirstSg 0.3s 0.6s 1 linear forwards;
@@ -3172,7 +3189,7 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 }
 
 /*****for the jumpnow-des*****/
-/* line 413, ../sass/modules/_animations.scss */
+/* line 430, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.top {
   height: 1px;
   top: 0;
@@ -3182,7 +3199,7 @@ body.sg div.borderRightAni #jumpnow_part1_line {
   -o-animation: jumpnow-desTop 0.3s 1.2s 1 linear forwards;
   animation: jumpnow-desTop 0.3s 1.2s 1 linear forwards;
 }
-/* line 418, ../sass/modules/_animations.scss */
+/* line 435, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.bottom {
   height: 1px;
   top: 100%;
@@ -3192,7 +3209,7 @@ body.sg div.borderRightAni #jumpnow_part1_line {
   -o-animation: jumpnow-desTop 0.3s 1.2s 1 linear forwards;
   animation: jumpnow-desTop 0.3s 1.2s 1 linear forwards;
 }
-/* line 423, ../sass/modules/_animations.scss */
+/* line 440, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.right {
   width: 1px;
   left: 100%;
@@ -3202,7 +3219,7 @@ body.sg div.borderRightAni #jumpnow_part1_line {
   -o-animation: jumpnow-desRight 0.3s 0.9s 1 linear forwards;
   animation: jumpnow-desRight 0.3s 0.9s 1 linear forwards;
 }
-/* line 430, ../sass/modules/_animations.scss */
+/* line 447, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.L_top {
   left: 0;
   width: 1px;
@@ -3213,7 +3230,7 @@ body.sg div.borderRightAni #jumpnow_part1_line {
   -o-animation: jumpnow-desL_top 0.3s 1.5s 1 linear forwards;
   animation: jumpnow-desL_top 0.3s 1.5s 1 linear forwards;
 }
-/* line 436, ../sass/modules/_animations.scss */
+/* line 453, ../sass/modules/_animations.scss */
 #sec_jumpnow .jumpnow-des .border_container.borderRightAni .border.L_bottom {
   left: 0;
   width: 1px;
@@ -3226,13 +3243,13 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 
 /***keyframes for jumpnow-des****/
 @keyframes jumpnow-desTop {
-  /* line 445, ../sass/modules/_animations.scss */
+  /* line 462, ../sass/modules/_animations.scss */
   0% {
     left: 100%;
     width: 0;
   }
 
-  /* line 446, ../sass/modules/_animations.scss */
+  /* line 463, ../sass/modules/_animations.scss */
   100% {
     left: 0;
     width: 100%;
@@ -3240,13 +3257,13 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes jumpnow-desRight {
-  /* line 449, ../sass/modules/_animations.scss */
+  /* line 466, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
   }
 
-  /* line 450, ../sass/modules/_animations.scss */
+  /* line 467, ../sass/modules/_animations.scss */
   100% {
     top: 0%;
     height: 100%;
@@ -3254,25 +3271,25 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes jumpnow-desL_top {
-  /* line 453, ../sass/modules/_animations.scss */
+  /* line 470, ../sass/modules/_animations.scss */
   0% {
     height: 0;
   }
 
-  /* line 454, ../sass/modules/_animations.scss */
+  /* line 471, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
   }
 }
 
 @keyframes jumpnow-desL_bottom {
-  /* line 458, ../sass/modules/_animations.scss */
+  /* line 475, ../sass/modules/_animations.scss */
   0% {
     top: 100%;
     height: 0;
   }
 
-  /* line 459, ../sass/modules/_animations.scss */
+  /* line 476, ../sass/modules/_animations.scss */
   100% {
     top: 50%;
     height: 50%;
@@ -3281,13 +3298,13 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 
 /*****keyframes for others line***/
 @keyframes leftLineForTeamDetail {
-  /* line 465, ../sass/modules/_animations.scss */
+  /* line 482, ../sass/modules/_animations.scss */
   0% {
     left: -40px;
     width: 0;
   }
 
-  /* line 466, ../sass/modules/_animations.scss */
+  /* line 483, ../sass/modules/_animations.scss */
   100% {
     left: -25px;
     width: 10px;
@@ -3295,25 +3312,25 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes horiLineAni {
-  /* line 469, ../sass/modules/_animations.scss */
+  /* line 486, ../sass/modules/_animations.scss */
   0% {
     width: 0px;
   }
 
-  /* line 470, ../sass/modules/_animations.scss */
+  /* line 487, ../sass/modules/_animations.scss */
   100% {
     width: 400px;
   }
 }
 
 @keyframes horiLineJumpnowFirst {
-  /* line 473, ../sass/modules/_animations.scss */
+  /* line 490, ../sass/modules/_animations.scss */
   0% {
     left: 120.04163%;
     width: 0px;
   }
 
-  /* line 474, ../sass/modules/_animations.scss */
+  /* line 491, ../sass/modules/_animations.scss */
   100% {
     left: 100%;
     width: 20.54163%;
@@ -3321,13 +3338,13 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes horiLineJumpnowFirstSg {
-  /* line 477, ../sass/modules/_animations.scss */
+  /* line 494, ../sass/modules/_animations.scss */
   0% {
     left: 125%;
     width: 0px;
   }
 
-  /* line 478, ../sass/modules/_animations.scss */
+  /* line 495, ../sass/modules/_animations.scss */
   100% {
     left: 100%;
     width: 25%;
@@ -3335,12 +3352,12 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes straightLineAni {
-  /* line 482, ../sass/modules/_animations.scss */
+  /* line 499, ../sass/modules/_animations.scss */
   0% {
     height: 0px;
   }
 
-  /* line 483, ../sass/modules/_animations.scss */
+  /* line 500, ../sass/modules/_animations.scss */
   100% {
     height: 450px;
   }
@@ -3348,14 +3365,14 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 
 /***keyframes for borderRightAni***/
 @keyframes borderLeftAni {
-  /* line 488, ../sass/modules/_animations.scss */
+  /* line 505, ../sass/modules/_animations.scss */
   0% {
     top: 50%;
     height: 0;
     max-width: 1px;
   }
 
-  /* line 489, ../sass/modules/_animations.scss */
+  /* line 506, ../sass/modules/_animations.scss */
   100% {
     top: 0;
     height: 100%;
@@ -3364,26 +3381,26 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes borderTopBottomAni {
-  /* line 493, ../sass/modules/_animations.scss */
+  /* line 510, ../sass/modules/_animations.scss */
   0% {
     width: 0;
   }
 
-  /* line 494, ../sass/modules/_animations.scss */
+  /* line 511, ../sass/modules/_animations.scss */
   100% {
     width: 100%;
   }
 }
 
 @keyframes borderR_top {
-  /* line 498, ../sass/modules/_animations.scss */
+  /* line 515, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 0;
     max-width: 1px;
   }
 
-  /* line 499, ../sass/modules/_animations.scss */
+  /* line 516, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 0;
@@ -3392,14 +3409,14 @@ body.sg div.borderRightAni #jumpnow_part1_line {
 }
 
 @keyframes borderR_bottom {
-  /* line 503, ../sass/modules/_animations.scss */
+  /* line 520, ../sass/modules/_animations.scss */
   0% {
     height: 0;
     top: 100%;
     max-width: 1px;
   }
 
-  /* line 504, ../sass/modules/_animations.scss */
+  /* line 521, ../sass/modules/_animations.scss */
   100% {
     height: 50%;
     top: 50.1%;
@@ -6199,9 +6216,9 @@ body.sg .btn {
     padding: 0 0 10vh 0;
   }
 }
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 414px) and (orientation: portrait) {
   /* line 2619, ../sass/modules/_responsive.scss */
-  ul.second li:nth-of-type(even) {
+  ul.second li:nth-of-type(even) span {
     left: -7.5vw;
   }
 }

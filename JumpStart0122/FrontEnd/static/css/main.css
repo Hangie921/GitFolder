@@ -6219,6 +6219,18 @@ body.sg .btn {
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   /* line 2619, ../sass/modules/_responsive.scss */
   ul.second li:nth-of-type(even) span {
+    left: -7vw;
+  }
+}
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+  /* line 2627, ../sass/modules/_responsive.scss */
+  ul.second li:nth-of-type(even) span {
     left: -7.5vw;
+  }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* line 2635, ../sass/modules/_responsive.scss */
+  ul.second li:nth-of-type(even) span {
+    left: -9vw;
   }
 }

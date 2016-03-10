@@ -2617,6 +2617,22 @@ and (orientation:landscape) {
 and (max-width:414px)
 and (orientation:portrait){
 	ul.second li:nth-of-type(even) span{
+		left:-7vw;
+	}
+}
+
+@media only screen 
+and (max-width:375px)
+and (orientation:portrait){
+	ul.second li:nth-of-type(even) span{
 		left:-7.5vw;
+	}
+}
+
+@media only screen 
+and (max-width:320px)
+and (orientation:portrait){
+	ul.second li:nth-of-type(even) span{
+		left:-9vw;
 	}
 }

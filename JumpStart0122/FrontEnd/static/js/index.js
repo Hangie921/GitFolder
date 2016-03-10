@@ -563,6 +563,7 @@ $(document).ready(function() {
 		$.fn.fullpage.setLockAnchors(true);
 		$.fn.fullpage.setAllowScrolling(false);
 		/*******USE THE FUNCTION MOVETO TO SLIDE TO THE SECTION OR SLIDE********/
+		$(".fp-slidesContainer").css("transition","all 1s ease");
 		$("a").each(function(){
 			var a = $(this);
 			var href = a.attr("href");

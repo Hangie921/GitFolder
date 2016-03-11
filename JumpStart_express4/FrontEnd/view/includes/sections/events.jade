@@ -1,0 +1,101 @@
+//- includes/sections/events.jade
+.section#sec_events.section-padding(data-anchor='events')
+				.event_group.col-md-12
+					.event_single.col-md-4.col-sm-4
+						.event_single_rotate
+							.front_face
+								h3 Ninebot
+									span 8月 2016
+								
+								
+							.back_face
+								p.description
+									a.primary-text(href="http://www.ninebot.com", target="_blank") 
+										|Ninebot
+									|，最大的機器人移動設備製造商，正在打造一個機器人平台讓開發者們研發更多的創新產品。</br></br>
+									|而
+									a.primary-text(href="http://www.ninebot.com", target="_blank") 
+										|Ninebot 
+									| 更在2015收購
+									a.primary-text(href="http://www.segway.com", target="_blank") 
+										|Segway
+									|，並在未來研發家用機器人，打破你對生活的定義。</br></br>
+									|讓我們期待下次的挑戰吧！
+					.event_single.col-md-4.col-sm-4
+						.event_single_rotate
+							.front_face
+								h3 美圖秀秀
+									span 2月 2017
+								
+							.back_face
+								p.description 
+									|愛美是人的天性，拜APP所賜，輕鬆修圖創造了『顏值』經濟。</br></br>
+									a.primary-text(href="http://xiuxiu.meitu.com", target="_blank") 
+										|美圖秀秀
+									|成立於2008年並在2015年10月31日為止成為，一個擁有9億行動用戶的修圖APP，成功讓他擠身成為全球前十大行動應用開發商。</br></br>
+									|而如此龐大的用戶量能帶給我們什麼驚喜呢？
+					.event_single.col-md-4.col-sm-4
+						.event_single_rotate
+							.front_face
+								.event_tw_comingsoon
+									h3 COMING SOON!
+								
+							.back_face
+								p.description 本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+				.contact_container
+					.col-md-12.contact_header.no-pad
+						.col-md-12.no-pad
+							h2 GET IN CONTACT
+								span 
+									i.fa.fa-angle-up
+					.col-md-12.contact_form
+						form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
+							//- input(type="hidden" name="country" value="tw")
+							.col-md-4.no-pad-m
+								span.input.input--hoshi
+									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-name')
+											span.input__label-content.input__label-content--hoshi 姓名
+											span.input__label-content.input__label-content--hoshi.reminder
+								span.input.input--hoshi
+									input#input-4-email.input__field.input__field--hoshi(type='email',name='user_email')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-email')
+											span.input__label-content.input__label-content--hoshi Email
+											span.input__label-content.input__label-content--hoshi.reminder
+								span.input.input--hoshi
+									input#input-4-sub.input__field.input__field--hoshi(type='text',name='subject')
+									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-sub')
+											span.input__label-content.input__label-content--hoshi 標題
+											span.input__label-content.input__label-content--hoshi.reminder
+							.col-md-4.no-pad-m
+								textarea#textarea_mes(placeholder='我有疑問...',name='user_msg',require)
+								//- label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='textarea_mes')
+								//- 	span.input__label-content.input__label-content--hoshi 
+								//- 	span.input__label-content.input__label-content--hoshi
+								
+								
+								//- input(type='submit' value='傳送給我們!')
+								input(type='hidden',value='tw',name='country')
+								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交
+								//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
+
+							.col-md-4.contact-details.no-pad-m
+								h3 Ping! Connect
+								ul
+									li
+										h4 TAIWAN <br/>
+										i.fa.fa-map-marker
+										|台灣台北市中山區南京東路二段137號14樓 <br/>
+										i.fa.fa-phone 
+										|+886 2 7745 8486+65 6805 4339 <br/>
+										i.fa.fa-envelope
+										|hello@ping.com.sg
+									li
+										h4 SINGAPORE ( HQ ) <br/>
+										i.fa.fa-map-marker
+										|20 Malacca Street, #16-00
+										|Malacca Centre, Singapore  <br/>
+										i.fa.fa-phone 
+										|+65 6805 4339 <br/>
+										i.fa.fa-envelope
+										|hello@ping.com.sg

@@ -1,0 +1,61 @@
+================
+FrontEnd
+================
+DB : Jumpstart
+Collection : detail
+{
+	"team_info" : {
+		"team_name" : "",  
+		"product_brief" : "",
+		"member_brief" : {
+			"member_1" :{
+				"name" : "",
+				"intro" : ""
+			},
+			"member_2" :{
+				"name" : "",
+				"intro" : ""
+			},
+			"member_3" :{
+				"name" : "",
+				"intro" : ""
+			}
+		},
+		"bp_file" : {
+			"file_name" : "",
+			"file_path" : ""
+		},
+
+		"contact" : {
+			"name" : "",
+			"email" : "",
+			"address" : "",
+			"phone" : ""
+		}
+	},
+	"reg_time" : timestamp,
+	"readed" : {
+		"Randy" : {
+			"readed_time" : timestamp,
+			"readed_flag" : true
+		},
+		"Walter" : {
+			"readed_time" : timestamp,
+			"readed_flag" : false
+		}
+	},
+	"_id":
+}
+
+===================
+BackEnd
+===================
+DB : Jumpstart
+Collection : member
+{
+	"req_time" : timestamp,
+	"last_login_time" : timestamp,
+	"acc" : "",
+	"psw" : "md5 encode!!!!!!!!",
+}
+

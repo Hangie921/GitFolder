@@ -12,7 +12,6 @@ var express = require("express"),
 	session = require('express-session');
 
 
-
 function initApp(config,dir_path){
 	var port = config.server.port
 

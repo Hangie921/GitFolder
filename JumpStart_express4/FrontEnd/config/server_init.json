@@ -1,6 +1,6 @@
 {
 	"server":{
-		"port":80,
+		"port":2999,
 		"view_engine": "jade",
 		"upload_path": "./upload",
 		"upload_file_format": ".pdf"

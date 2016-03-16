@@ -1,7 +1,7 @@
 #ignore the main.css because of the comment
 
 #ignore the .log
-*.log
+
 
 #ignore the .scssc
 *.scssc

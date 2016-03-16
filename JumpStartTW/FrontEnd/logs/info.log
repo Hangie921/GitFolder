@@ -1,0 +1,59 @@
+[2016-03-09 15:07:55.934] [INFO] info - Mongo server listening on port 27017
+[2016-03-09 15:07:55.938] [INFO] info - Express server listening on port 80
+[2016-03-09 15:08:40.032] [INFO] info - /upload route accepted
+[2016-03-09 15:08:40.033] [INFO] info - Start uploading the file to server.
+[2016-03-09 15:08:40.087] [INFO] info - file uploaded.
+[2016-03-09 15:08:40.087] [INFO] info - file uploaded
+[2016-03-09 15:08:40.088] [INFO] info - Start uploading the user info.
+[2016-03-09 15:08:40.089] [INFO] info - Start to input members to the member_brief field
+[2016-03-09 15:08:40.112] [INFO] info - Start to insert to detail
+[2016-03-09 15:08:40.202] [INFO] info - Connet to mongo successfully
+[2016-03-09 15:08:40.209] [INFO] info - Insert doc into 'detail' collection!
+[2016-03-09 15:08:40.210] [INFO] info - Insert doc successfully
+[2016-03-09 15:08:40.211] [INFO] info - mongo connections closed
+[2016-03-09 15:10:37.368] [INFO] info - Mongo server listening on port 27017
+[2016-03-09 15:10:37.372] [INFO] info - Express server listening on port 80
+[2016-03-09 15:12:32.741] [INFO] info - /upload route accepted
+[2016-03-09 15:12:32.741] [INFO] info - Start uploading the file to server.
+[2016-03-09 15:12:32.863] [INFO] info - file uploaded.
+[2016-03-09 15:12:32.864] [INFO] info - file uploaded
+[2016-03-09 15:12:32.864] [INFO] info - Start uploading the user info.
+[2016-03-09 15:12:32.864] [INFO] info - Start to input members to the member_brief field
+[2016-03-09 15:12:32.899] [INFO] info - Start to insert to detail
+[2016-03-09 15:12:33.095] [INFO] info - Connet to mongo successfully
+[2016-03-09 15:12:33.104] [INFO] info - Insert doc into 'detail' collection!
+[2016-03-09 15:12:33.104] [INFO] info - Insert doc successfully
+[2016-03-09 15:12:33.106] [INFO] info - mongo connections closed
+[2016-03-09 15:17:55.064] [INFO] info - /contact route accepted
+[2016-03-09 15:17:55.065] [INFO] info - Uploading the detail from contact form
+[2016-03-09 15:17:55.069] [INFO] info - detail uploaded
+[2016-03-09 15:17:55.072] [INFO] info - Start to insert to contact
+[2016-03-09 15:17:55.101] [INFO] info - Connet to mongo successfully
+[2016-03-09 15:17:55.104] [INFO] info - Insert doc into 'contact' collection!
+[2016-03-09 15:17:55.104] [INFO] info - Insert doc successfully
+[2016-03-09 15:17:55.105] [INFO] info - mongo connections closed
+[2016-03-09 15:25:30.371] [INFO] info - /upload route accepted
+[2016-03-09 15:25:30.371] [INFO] info - Start uploading the file to server.
+[2016-03-09 15:25:30.394] [INFO] info - file uploaded.
+[2016-03-09 15:25:30.395] [INFO] info - file uploaded
+[2016-03-09 15:25:30.395] [INFO] info - Start uploading the user info.
+[2016-03-09 15:25:30.395] [INFO] info - Start to input members to the member_brief field
+[2016-03-09 15:25:30.398] [INFO] info - Start to insert to detail
+[2016-03-09 15:25:30.427] [INFO] info - Connet to mongo successfully
+[2016-03-09 15:25:30.431] [INFO] info - Insert doc into 'detail' collection!
+[2016-03-09 15:25:30.432] [INFO] info - Insert doc successfully
+[2016-03-09 15:25:30.435] [INFO] info - mongo connections closed
+[2016-03-09 15:33:35.343] [INFO] info - /contact route accepted
+[2016-03-09 15:33:35.345] [INFO] info - Uploading the detail from contact form
+[2016-03-09 15:33:35.361] [INFO] info - detail uploaded
+[2016-03-09 15:33:35.362] [INFO] info - Start to insert to contact
+[2016-03-09 15:33:35.405] [INFO] info - Connet to mongo successfully
+[2016-03-09 15:33:35.411] [INFO] info - Insert doc into 'contact' collection!
+[2016-03-09 15:33:35.411] [INFO] info - Insert doc successfully
+[2016-03-09 15:33:35.412] [INFO] info - mongo connections closed
+[2016-03-10 16:12:17.040] [INFO] info - Mongo server listening on port 27017
+[2016-03-10 16:12:17.044] [INFO] info - Express server listening on port 80
+[2016-03-14 11:59:41.445] [INFO] info - Mongo server listening on port 27017
+[2016-03-14 11:59:41.449] [INFO] info - Express server listening on port 80
+[2016-03-16 17:30:11.972] [INFO] info - Mongo server listening on port 27017
+[2016-03-16 17:30:11.977] [INFO] info - Express server listening on port 80

@@ -1,7 +1,7 @@
 
 
 #ignore the .log
-*.log
+
 
 #ignore the .scssc
 *.scssc

@@ -1,3 +1,8 @@
+/*test*/
+.test{
+	// background-color:#fff;
+}
+
 /* Sections */
 div.fp-section{
 	box-sizing:border-box;
@@ -44,7 +49,6 @@ div#sec_competition {
 	-webkit-background-size:cover;
 	position: relative;
 }
-
 // div#sec_home {
 	// background:url('../img/home_bg.jpg') no-repeat center;
 	// background-size:cover;
@@ -55,8 +59,6 @@ div#sec_competition {
 	// position: relative;
 	
 // }
-
-
 .sloganContainer {
 	margin: 90px auto 0;
     max-width: 294px;
@@ -484,7 +486,7 @@ div.sponsor-group, div.sponsor-list {
 				top: 99%;
     			width: 100%;
     			left: 0;
-    			border-top: none !Important;
+    			border-top:none!important;
 				display: block;
 				background-color:rgba(232,232,232,1);
 				@include transition(all .25s);

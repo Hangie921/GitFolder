@@ -4,18 +4,19 @@ var path = require("path");
 var log4js = require('log4js');
 var dir_path = path.dirname(path.dirname(process.argv[1]));
 console.log(dir_path);
+
 log4js.configure({
   "appenders":[
     {
       "type":"file",
-      "filename": path.join(dir_path,"FrontEnd","logs","info.log"),
+      "filename": path.join(dir_path,"FrontEnd",'logs',"info.log"),
       "maxLogSize": 20480,
       "backups": 3,
       "category": "info"
     },
     {
       "type":"file",
-      "filename": path.join(dir_path,"FrontEnd","logs","debug.log"),
+      "filename": path.join(dir_path,"FrontEnd",'logs',"debug.log"),
       "maxLogSize": 20480,
       "backups": 3,
       "category": "debug"
@@ -25,7 +26,7 @@ log4js.configure({
           "level": "ERROR",
           "appender": {
             "type": "file",
-            "filename": path.join(dir_path,"FrontEnd","logs","errors.log")
+            "filename": path.join(dir_path,"FrontEnd",'logs',"errors.log")
           }
     }
   ]

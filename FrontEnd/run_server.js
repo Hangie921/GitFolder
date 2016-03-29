@@ -6,7 +6,7 @@ var instance = require("../SDK/instance"),
 	upload = require("./controller/upload"),
 	show = require("./controller/show"),
 	contact_us = require("./controller/contact_us");
-	index_page_sg = require("./controller/index_page_sg");
+	// index_page_sg = require("./controller/index_page_sg");
 var path = require('path');
 var config = require ("../FrontEnd/config/server_init.json");
 
@@ -28,7 +28,7 @@ coming_page.coming_route(app,mongoClient);
 upload.route(app,mongoClient);
 show.show_route(app,mongoClient);
 contact_us.route(app,mongoClient);
-index_page_sg.route(app,mongoClient);
+// index_page_sg.route(app,mongoClient);
 
 
 

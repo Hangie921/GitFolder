@@ -23,11 +23,13 @@ $(document).ready(function() {
     	$('#fullpage').fullpage({
 	    	menu:'#header',
 	    	anchors:['home','about','competition',
-	    			'jumpnow','events','gallery','tagboard'
+	    			'jumpnow','events'
 	    	],
 	    	scrollingSpeed:1000,
 			afterLoad: function(anchorLink, index) { 
 				if(ww>990){
+
+					$('#header').css({'opacity':'1'});
 					 switch(index){ //this is the function that chnages the bgcolor and color of the #header
 				    	case 1:
 				    		$('#competition_menu li:nth-child(1) a').addClass('selected');
@@ -67,12 +69,11 @@ $(document).ready(function() {
 							$('#header').addClass('fff');
 							break;
 					}
-					$('#header').css({'opacity':'1'});
 				}
 				
 			},
 			onSlideLeave:function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-				
+				// alert('anchorLink:'+anchorLink+',index:'+index+',slideIndex:'+slideIndex+',nextSlideIndex:'+nextSlideIndex);
 				
 				if(ww > 990){ //for PC
 					switch(anchorLink){
@@ -166,10 +167,6 @@ $(document).ready(function() {
 				}
 			},
 			afterRender:function(){
-				// $('.sec_tagboard').slimScroll({
-    //     			height: '250px'
-    // 			});
-
 				var info_height = $('#competition_info_slide .slide-inner').height();
 				$('#competition_info_slide .slide-inner .border_container').height(info_height);
 				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
@@ -180,6 +177,7 @@ $(document).ready(function() {
 				console.log("fullpage loaded");
 
 			},
+			// css3:false,
 			verticalCentered : true,
 			resize : false,
 			fitToSectionDelay:500,
@@ -195,7 +193,6 @@ $(document).ready(function() {
 			controlArrows:false,
 			touchSensitivity:15,
 			responsiveWidth:990,
-			scrollOverflow:true
 			// responsiveHeight:768
 
 		}); //end of the fullpageJS initial

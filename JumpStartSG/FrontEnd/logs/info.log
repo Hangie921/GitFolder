@@ -1,1 +1,2 @@
-test
+test[2016-03-29 14:25:56.667] [INFO] info - Mongo server listening on port 27017
+[2016-03-29 14:25:56.671] [INFO] info - Express server listening on port 80

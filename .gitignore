@@ -1,4 +1,5 @@
 #ignore the main.css because of the comment
+node_modules
 
 #ignore the .log
 

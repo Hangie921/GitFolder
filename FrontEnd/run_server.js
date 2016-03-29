@@ -1,6 +1,8 @@
 //start combine of the server and mongo , return the port
 var instance = require("../SDK/instance"),
-	index_page = require("./controller/index"),
+	// index_page = require("./controller/index"),  
+	//For Pepper temporary
+	index_page = require("./controller/index_pepper"),
 	submit_page = require("./controller/submit"),
 	coming_page = require("./controller/coming_soon"),
 	upload = require("./controller/upload"),

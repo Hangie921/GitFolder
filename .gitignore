@@ -1,8 +1,9 @@
 #ignore the main.css because of the comment
-node_modules
+node_modules/
 
 #ignore the .log
-
+*.log
+logs/
 
 #ignore the .scssc
 *.scssc

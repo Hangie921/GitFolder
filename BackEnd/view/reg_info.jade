@@ -16,6 +16,7 @@ block content
 	table#enroll_data.table.table-striped.table-bordered(border='1')
 		thead
 			tr
+				th 報名序號
 				th 隊伍名稱
 				th 產品介紹
 				th 隊員介紹
@@ -28,6 +29,9 @@ block content
 		each result in results
 			- var member_counter = 1;
 			tr
+				td #{result._id}
+					button
+						a(href="reg_info/#{result._id}") Edit
 				td #{result.team_info.team_name}
 				td #{result.team_info.product_brief}
 				td

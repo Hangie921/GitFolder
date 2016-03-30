@@ -22,7 +22,7 @@ function handle(mongoClient, crud, doc, collection, query, condition, callback) 
                     status = false;
                     result = 'error';
                 } else {
-                    console.log('found the detail ' + docs);
+                    console.log('handle(crud === "find"): ', docs);
                     status = true;
                     result = docs;
                 }
@@ -53,9 +53,9 @@ function handle(mongoClient, crud, doc, collection, query, condition, callback) 
 
 function updateCollection(mongoClient, collection, query, newDoc, upsert, callback) {
     newDoc = query;
-    console.log(query);
-    console.log(newDoc);
-    console.log(upsert);
+    console.log("query", query);
+    console.log("newDoc", newDoc);
+    console.log("upsert", upsert);
 
     mongoClient.connect(mongoClient.url, function(err, db) {
         if (err) {
@@ -70,7 +70,8 @@ function updateCollection(mongoClient, collection, query, newDoc, upsert, callba
                     console.log('err while upserting the db');
                     throw err;
                 } else {
-                    console.log(status);
+                    log.info("status: " + status);
+                    // console.log("status: ", status);
                     callback(null, status);
                     db.close();
                 }
@@ -85,7 +86,7 @@ function findDetail(mongoClient, collection, query, condition, callback) {
     // this function shall return an docArray
     if (typeof condition !== Object) { //if there is no condition,give it a default
         condition = {
-            projection: { "_id": 0 },
+            // projection: { "_id": 0 }, // 0: disable, 1: enable
             sort: {},
             skip: 0,
             limit: 0

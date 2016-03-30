@@ -16,7 +16,6 @@ function route(app, mongoClient){
 		}
 
 		res.render('index',{session_status:sess.login_status});
-		res.end();
 	});
 }
  

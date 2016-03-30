@@ -14,7 +14,7 @@ node_fs.mkdirSync(dir_backend, 0770, true);
 function checkFile(filename) {
     fs.stat(filename, function(err, stat) {
         if (err == null) {
-            console.log('File exists');
+            console.log(filename + ' exists');
         } else if (err.code == 'ENOENT') {
             fs.writeFile(filename, '');
         } else {
@@ -49,10 +49,6 @@ log4js.configure({
         }
     }]
 });
-
-
-
-
 
 function logInfo(msg) {
     var logger = log4js.getLogger('info');

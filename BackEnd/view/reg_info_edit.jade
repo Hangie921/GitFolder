@@ -1,0 +1,45 @@
+extends layout
+block content
+	//- show object
+	p= JSON.stringify(result)
+
+	p #{result._id}
+	- info = result.team_details
+	form(method="post", action="#{result._id}")
+		input(type="hidden" name="_method" value="put")
+		| ID:
+		input(type="text", name="id", value="#{result._id}" style='width:60%' readonly)
+		br
+		| Team Name:
+		input(type="text", name="team_name", value="#{info.team_name}")
+		br
+		| Team Category:
+		input(type="text", name="team_category", value="#{info.team_category}")
+		br
+		| Leader Name:
+		input(type="text", name="team_leader_name", value="#{info.team_leader_name}")
+		br
+		| Leader Email:
+		input(type="text", name="team_leader_name", value="#{info.team_leader_name}")
+		br
+		| Mobile:
+		input(type="text", name="mobile", value="#{info.mobile}")
+		br
+		| Agree Subscribe:
+		input(type="text", name="agree_subscribe", value="#{info.agree_subscribe}")
+		br
+		| Agree Terms:
+		input(type="text", name="agree_terms", value="#{info.agree_terms}")
+		br
+		| Team members:
+		input(type="text", name="team_member", value="#{info.team_member}")
+		br
+		| Paid ?!:
+		if info.paid
+			input(type="checkbox", name="paid", value="#{info.paid}" checked)
+		else
+			input(type="checkbox", name="paid", value="#{info.paid}")
+		br
+		button(type="sumbit") Update
+
+

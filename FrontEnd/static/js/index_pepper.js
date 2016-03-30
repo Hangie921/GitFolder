@@ -210,7 +210,7 @@ $(document).ready(function() {
 	
     
 	//add and delete the member input field dynamically with the btn clicked
-	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member'><input id='input-4' type='text' name='member_brief_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>成員</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='text' name='member_brief_info' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>負責項目</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><button id='del_member' class='button del_btn'></button></div>";
+	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member'><input id='input-4' type='text' name='member_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>隊員</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='email' name='member_email' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>信箱</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><button id='del_member' class='button del_btn'></button></div>";
 	var mem_counter = 1;
 	var original_height = $("#sec_jumpnow .team_details .slide-inner .border_container").height();
 	var single_height = $("#sec_jumpnow .team_details .team_detail_single").innerHeight();
@@ -226,7 +226,7 @@ $(document).ready(function() {
 				$(this).parent().remove();
 				mem_counter = mem_counter - 1;
 
-				if(mem_counter!=5){
+				if(mem_counter!=4){
 					$('#add_member').show();
 				}
 				if(ww<=990 && mem_counter ==1 ){
@@ -247,7 +247,7 @@ $(document).ready(function() {
 			});
 
 			mem_counter = mem_counter + 1;
-			if(mem_counter==5){
+			if(mem_counter==4){
 				$(this).hide();
 			}
 
@@ -435,7 +435,7 @@ $(document).ready(function() {
 				$(element).closest("form").find("input[name$="+element.attr("name")+"]").next().children().next().empty().append(error.text());
 				if(element.is("textarea")){
 					element.empty().attr("placeholder",error.text())
-				}else if(element.attr("id")=='agree'){
+				}else if(element.attr("id")=='agree_terms'){
 					$(element).next().next().empty().append(error.text());
 				}	
 			}else{
@@ -447,20 +447,12 @@ $(document).ready(function() {
 		success: 'valid',
 		rules: {
 			team_name:"required",
-			product_brief:{
-				minlength:3,
-				required:true
-			},	
-			BP_file:{
+			team_leader_name:"required",
+			leader_email:{
 				required:true,
-				extension:"pdf"
+				email:true
 			},
-			member_brief_name:"required",
-			member_brief_info:"required",
-		    contact: {
-		    	required: true
-		    },
-		    phone: {
+		    mobile: {
 		    	required: true,
 		    	number:true
 		    },
@@ -468,34 +460,51 @@ $(document).ready(function() {
 		    	required: true,
 		    	email: true
 		    },
-		    agree:{ // agree checkbox
+		    BP_file:{
+				required:true,
+				extension:"pdf"
+			},
+		    agree_terms:{ // agree checkbox
 		    	required:true
+		    },
+		    member_name:{
+		    	required:true
+		    },
+		    member_email:{
+		    	required:true,
+		    	email:true
 		    }
 		}
 		,messages:{
 			team_name:"隊伍名稱咧？",
-			product_brief:{
-				minlength:"話太少了吧？",
-				required:"你做什麼產品？"
+			team_leader_name:{
+				required:"隊長叫什麼？"
 			},	
-			BP_file:{
-				required:"說好的BP呢？",
-				extension:"就說要pdf"
+			leader_email:{
+				required:"必填",
+				email:"請輸入有效email"
 			},
-			member_brief_name:"你的隊友呢？！",
-			member_brief_info:"隊友走哪路？",
-		    contact: {
-		    	required: "怎麼稱呼？"
-		    },
-		    phone: {
-		    	required: "請給我你的電話>///<"
+		    mobile: {
+		    	required: "必填",
+		    	number: "請輸入有效電話"
 		    },
 		    email:{
-		    	required: "這超重要",
-		    	email: "格式錯誤了吧"
+		    	required: "必填",
+		    	email: "請輸入有效email"
 		    },
-		    agree:{ // agree checkbox
-		    	required:"拜託按他"
+		    BP_file:{
+				required:"你的報名表呢？",
+				extension:"要pdf檔喔"
+			},
+		    agree_terms:{ // agree checkbox
+		    	required:"要同意喔"
+		    },
+		    member_name:{
+		    	required:"隊友呢？"
+		    },
+		    member_email:{
+		    	required:"聯絡方式？",
+		    	email: "請輸入有效email"
 		    }
 		}
 	});
@@ -692,7 +701,7 @@ function focused(evt){
       var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
         $wrap = $('<div class="file-upload-wrapper">'),
         // $input = $('<input type="text" class="file-upload-input" />'),
-        $input = $("<span class='file-upload-input'>限定上傳PDF</span>"),
+        $input = $("<span class='file-upload-input' title='限定上傳PDF'>限定上傳PDF</span>"),
         // Button that will be used in non-IE browsers
         $button = $('<button type="button" class="file-upload-button">上傳商業計劃書</button>'),
         // Hack for IE

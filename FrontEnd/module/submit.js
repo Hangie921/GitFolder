@@ -14,8 +14,6 @@ var log = require('../../SDK/log_handler');
 //setting above
 
 
-
-
 var schema = function(){
 	var d = new Date();
 	var sec = d.getSeconds().toString().length == 1?('0'+d.getSeconds()):d.getSeconds();
@@ -24,68 +22,63 @@ var schema = function(){
 	var timestamp = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate()+" "+hour+":"+min+":"+ sec;
 	
 	return {
-		"team_info" : {
-			"team_name" : "",  
-			"product_brief" : "",
-			"member_brief" : {
+		"team_details":{
+			"team_name":"",
+			"team_category":"",
+			"team_leader_name":"",
+			"leader_email":"",
+			"mobile":"",
+			"agree_subscribe":false,
+			"agree_terms":false,
+			
+			"PDF_path":"",
+			"PDF_name":"",
 
-			},
+			"team_member":{
 
-			"bp_file" : {
-				"file_name" : "",
-				"file_path" : ""
-			},
-
-			"contact" : {
-				"name" : "",
-				"email" : "",
-				"phone" : ""
-			}
+				},
+			"reg_time":"",
+			"paid":false,
 		},
-
-		"reg_time" : timestamp,
-		"readed" : {
-			"Randy" : {
-				"readed_time" : null,
-				"readed_flag" : true
-			},
-			"Walter" : {
-				"readed_time" : null,
-				"readed_flag" : false
+		"admin_detail":{
+			"last_editor_id":null,
+			"last_edit_time":null
 			}
-		},
-		"device":""
 	};
 }//end of the schema function
 
 
 function to_object(req,res,callback){   //pack all the info of the form into a object
 	var doc = schema();
-	team_info = doc.team_info;
+	team_details = doc.team_details;
 
-	team_info.team_name = req.body.team_name;
-	team_info.product_brief = req.body.product_brief;
+	//enter the team_details into doc object
+	team_details.team_name = req.body.team_name;
+	team_details.team_category = req.body.team_category;
+	team_details.team_leader_name = req.body.team_leader_name;
+	team_details.leader_email = req.body.leader_email;
+	team_details.mobile = req.body.mobile;
+	team_details.agree_subscribe = req.body.agree_subscribe;
+	team_details.agree_terms = req.body.agree_terms;
+
 	
 	log.info("Start to input members to the member_brief field");
+	console.log("Start to input members to the member_brief field");
 
-	if(typeof req.body.member_brief_name === 'string'){
-		team_info.member_brief["member_0"] = {"name":req.body.member_brief_name,"info":req.body.member_brief_info };
+	if(typeof req.body.member_name === 'string'){
+		team_details.team_member["member_0"] = {"name":req.body.member_name,"email":req.body.member_email };
 	}else{
-		for(var i =0; i<req.body.member_brief_name.length;i++){
+		for(var i =0; i<req.body.member_name.length;i++){
 			var name = "member_" + i;
-			team_info.member_brief[name] = { "name":req.body.member_brief_name[i],"info":req.body.member_brief_info[i]};
+			team_details.team_member[name] = { "name":req.body.member_name[i],"email":req.body.member_email[i]};
 		}
 	}
 
-	log.debug("Member_brief object = " + team_info.member_brief);
+	log.debug("Member_brief object = " + team_details.team_member);
 
-	team_info.contact.name = req.body.contact;
-	team_info.contact.email = req.body.email;
-	team_info.contact.phone = req.body.phone;
-	doc.device = req.body.device;
 	console.log(req.file);
-	team_info.bp_file.file_name = req.file != undefined ? req.file.filename:null;
-	team_info.bp_file.file_path = req.file != undefined ? req.file.path:null;
+	team_details.PDF_name = req.file != undefined ? req.file.filename:null;
+	team_details.PDF_path = req.file != undefined ? req.file.path:null;
 	return doc;//doc is already an object
 }
 

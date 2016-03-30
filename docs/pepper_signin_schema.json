@@ -1,0 +1,30 @@
+{
+	"team_details":{
+		"team_name":"",
+		"team_category":"",
+		"team_leader_name":"",
+		"leader_email":"",
+		"mobile":"",
+		"agree_subscribe":"",
+		"agree_terms":"",
+		
+		"PDF_path":"",
+		"PDF_name":"",
+
+		"team_member":{
+			"member_0":{
+				"name":"",
+				"email":""
+			},
+
+		},
+
+		"reg_time":"",
+	},
+
+	"admin_detail":{
+
+		"last_editor_id":null,
+		"last_edit_time":null
+		}
+}

@@ -1,36 +1,7 @@
 var login = require('../module/login'),
     mongo_handler = require('../../SDK/mongo_handler'),
-    log = require("../../SDK/log_handler"),
-    mongoose = require('mongoose'),
-    Schema = mongoose.Schema,
-    ObjectId = Schema.Types.ObjectId
-
-
-var teamSchema = new mongoose.Schema({
-    _id: ObjectId,
-    team_details: {
-        team_name: String,
-        team_category: String,
-        team_leader_name: String,
-        leader_email: String,
-        mobile: String,
-        agree_subscribe: Boolean,
-        agree_terms: Boolean,
-        PDF_path: String,
-        PDF_name: String,
-        team_member: Schema.Types.Mixed,
-        reg_time: Date,
-        paid: Boolean
-    },
-    admin_detail: {
-        last_editor_id: ObjectId,
-        last_edit_time: Date
-    }
-}, { collection: 'application' });
-
-// 第三個參數可以強制指定collection不是複數
-var Team = mongoose.model('Application', teamSchema, 'application');
-
+    log = require("../../SDK/log_handler");
+var Team = require('../module/team.js');
 
 
 function route(app, mongoClient) {
@@ -43,7 +14,6 @@ function route(app, mongoClient) {
         // Team.find(function(err, teams) {
         Team.find({ _id: "56fb8b3ec10bafa51367313d" }, function(err, teams) {
             if (err) return console.error(err);
-            console.log(teams);
             res.send(teams);
         })
     });
@@ -91,55 +61,21 @@ function route(app, mongoClient) {
     });
 
     app.get('/reg_info/:id', function(req, res) {
-        // res.send(req.params.id);
-
-        Team.find({ _id: req.params.id }, function(err, teams) {
+        Team.findById(req.params.id, function(err, team) {
             if (err) return console.error(err);
-            // @Todo: db.find()
             res.render('reg_info_edit', {
-                result: teams[0]
-                    // result: JSON.stringify(result)
+                result: team
             });
-
         })
-        var result = {
-            "_id": "56fb8b3ec10bafa51367313d",
-            "team_details": {
-                "team_name": "Q",
-                "team_category": "student",
-                "team_leader_name": "WW",
-                "leader_email": "2223@2",
-                "mobile": "222",
-                "agree_subscribe": "true",
-                "agree_terms": "true",
-                "PDF_path": "upload/1459325758177.pdf",
-                "PDF_name": "1459325758177.pdf",
-                "team_member": { "member_0": { "name": "WW", "email": "123@23" } },
-                "reg_time": "",
-                "paid": false
-            },
-            "admin_detail": {
-                "last_editor_id": null,
-                "last_edit_time": null
-            }
-        };
-
     });
 
     // PUT
     app.put('/reg_info/:id', function(req, res) {
         var newTeam = req.body;
-        console.log("new team: ",newTeam);
         newTeam.team_member = {};
-        console.log("paid",newTeam.paid)
-        console.log("agree_subscribe",newTeam.agree_subscribe)
-        console.log("agree_terms",newTeam.agree_terms)
         newTeam.paid = newTeam.paid == "true";
         newTeam.agree_subscribe = newTeam.agree_subscribe == "true";
         newTeam.agree_terms = newTeam.agree_terms == "true";
-        console.log("paid2",newTeam.paid)
-        console.log("agree_subscribe2",newTeam.agree_subscribe)
-        console.log("agree_terms2",newTeam.agree_terms)
 
         // if (typeof req.body.member_name === 'string') {
         //     newTeam.team_member["member_0"] = { "name": req.body.member_name, "email": req.body.member_email };
@@ -153,19 +89,19 @@ function route(app, mongoClient) {
         delete newTeam.member_name;
         delete newTeam.member_email;
 
-
-        Team.findByIdAndUpdate(newTeam.id, { $set: { team_details: newTeam } }, function(err, team) {
-            if (err) return console.error(err);
-            // console.log(team);
-            // console.log(JSON.stringify(team));
-            res.send(team);
-        })
-        // }
+        Team.findByIdAndUpdate(newTeam.id, { team_details: newTeam }, function(err, team) {
+                if (err) return console.error(err);
+                // console.log(team);
+                // console.log(JSON.stringify(team));
+                res.send(team);
+            })
+            // }
 
         // db find and update
         // res.send(obj);
         // res.send(req.body.team_member);
     });
+
 }
 
 exports.route = route;

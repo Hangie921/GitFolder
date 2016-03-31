@@ -5,7 +5,7 @@ var instance = require('../SDK/instance'),
     path = require('path'),
     index = require('./controller/index'),
     reg_info = require('./controller/reg_info'),
-    pdf = require('./controller/pdf'),
+    download = require('./controller/download'),
     contact_info = require('./controller/contact_info'),
     login = require('./controller/login'),
     logout = require('./controller/logout'),
@@ -43,7 +43,7 @@ mongo_handler.handle(mongoClient, 'upsert', null, 'member', query, null, functio
 
 
 index.route(app, mongoClient);
-pdf.route(app, mongoClient);
+download.route(app, mongoClient);
 login.route(app, mongoClient);
 logout.route(app, mongoClient);
 reg_info.route(app, mongoClient);

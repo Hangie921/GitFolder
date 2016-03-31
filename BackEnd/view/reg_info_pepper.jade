@@ -9,6 +9,7 @@ extends layout
 block content
 	div.span6.offset3
 		h1 Hi #{user} !
+			a#download_btn.btn.btn-lg.btn-primary.pull-right(href="/download/csv") Download csv
 	table#enroll_data.table.table-striped.table-bordered(border='1')
 		thead
 			tr

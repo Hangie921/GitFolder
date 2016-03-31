@@ -41,12 +41,13 @@ function route(app, mongoClient) {
         // 	console.log(status);
         // });
         // Team.find(function(err, teams) {
-        Team.find({_id: "56fb8b3ec10bafa51367313d"},function(err, teams) {
+        Team.find({ _id: "56fb8b3ec10bafa51367313d" }, function(err, teams) {
             if (err) return console.error(err);
             console.log(teams);
             res.send(teams);
         })
     });
+
     app.get('/reg_info', function(req, res) {
         //session
         var sess = req.session
@@ -92,9 +93,8 @@ function route(app, mongoClient) {
     app.get('/reg_info/:id', function(req, res) {
         // res.send(req.params.id);
 
-        Team.find({_id: req.params.id},function(err, teams) {
+        Team.find({ _id: req.params.id }, function(err, teams) {
             if (err) return console.error(err);
-            console.log(teams);
             // @Todo: db.find()
             res.render('reg_info_edit', {
                 result: teams[0]
@@ -128,8 +128,43 @@ function route(app, mongoClient) {
 
     // PUT
     app.put('/reg_info/:id', function(req, res) {
-        console.log("innnnnnnnnnnnn")
-        res.send(req.body);
+        var newTeam = req.body;
+        console.log("new team: ",newTeam);
+        newTeam.team_member = {};
+        console.log("paid",newTeam.paid)
+        console.log("agree_subscribe",newTeam.agree_subscribe)
+        console.log("agree_terms",newTeam.agree_terms)
+        newTeam.paid = newTeam.paid == "true";
+        newTeam.agree_subscribe = newTeam.agree_subscribe == "true";
+        newTeam.agree_terms = newTeam.agree_terms == "true";
+        console.log("paid2",newTeam.paid)
+        console.log("agree_subscribe2",newTeam.agree_subscribe)
+        console.log("agree_terms2",newTeam.agree_terms)
+
+        // if (typeof req.body.member_name === 'string') {
+        //     newTeam.team_member["member_0"] = { "name": req.body.member_name, "email": req.body.member_email };
+        // } else {
+        for (var i = 0; i < newTeam.member_name.length; i++) {
+            var newName = newTeam.member_name[i];
+            var newEmail = newTeam.member_email[i];
+            if (newName !== "" && newEmail !== "")
+                newTeam.team_member["member_" + i] = { "name": newName, "email": newEmail };
+        }
+        delete newTeam.member_name;
+        delete newTeam.member_email;
+
+
+        Team.findByIdAndUpdate(newTeam.id, { $set: { team_details: newTeam } }, function(err, team) {
+            if (err) return console.error(err);
+            // console.log(team);
+            // console.log(JSON.stringify(team));
+            res.send(team);
+        })
+        // }
+
+        // db find and update
+        // res.send(obj);
+        // res.send(req.body.team_member);
     });
 }
 

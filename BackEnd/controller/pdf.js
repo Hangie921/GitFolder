@@ -1,6 +1,7 @@
 var fs = require('fs')
 
 function route(app, mongoClient) {
+	// @Todo: let admin can download/review pdfs
     app.get('/pdf/:path', function(req, res) {
         var filename = req.params.path;
         console.log(filename)

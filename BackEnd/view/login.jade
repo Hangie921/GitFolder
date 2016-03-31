@@ -29,7 +29,7 @@ block content
 	script(type='text/javascript').
 		$(document).ready(function(){
 
-		    $('#login_btn').click(function(){
+			$('#login_btn').click(function(){
 				//- alert($('#login_form').serialize())
 				$.ajax({
 					type:'POST',
@@ -37,13 +37,13 @@ block content
 					data:$('#login_form').serialize(),
 					dataType:'json',
 					success:function(data){
-					    if(data.status==true) {
-					        $(location).attr('href', '/reg_info')
-					    }else if(data.status==null){
-					        alertify.alert('{{_("Save error. Mail already send.")}}');
-					    }else{
-					        $('#error_mes').empty().html('我們沒有提供忘記密碼的服務唷！')
-					    }
+						if(data.status==true) {
+							$(location).attr('href', '/reg_info')
+						}else if(data.status==null){
+							alert('{{_("Save error. Mail already send.")}}');
+						}else{
+							$('#error_mes').empty().html('我們沒有提供忘記密碼的服務唷！')
+						}
 					}
 				});
 			});

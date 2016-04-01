@@ -23,12 +23,11 @@ block content
 				th 付錢沒
 				th 最後編輯者＆編輯時間
 		each result in results
-			//- tr= JSON.stringify(result)
+			- info = result.team_details
 			tr
 				td #{result._id}
 					button
 						a(href="reg_info/#{result._id}") Edit
-				- info = result.team_details
 				+teamname(info.team_category, info.team_name)
 				td <b>* </b>#{info.team_leader_name}
 				td #{info.leader_email}

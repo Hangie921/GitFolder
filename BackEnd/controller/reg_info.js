@@ -63,6 +63,7 @@ function route(app, mongoClient) {
     app.get('/reg_info/:id', function(req, res) {
         Team.findById(req.params.id, function(err, team) {
             if (err) return console.error(err);
+            console.log(team);
             res.render('reg_info_edit', {
                 result: team
             });

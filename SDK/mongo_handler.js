@@ -22,7 +22,7 @@ function handle(mongoClient, crud, doc, collection, query, condition, callback) 
                     status = false;
                     result = 'error';
                 } else {
-                    console.log('handle(crud === "find"): ', docs);
+                    // console.log('handle(crud === "find"): ', docs);
                     status = true;
                     result = docs;
                 }

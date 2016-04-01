@@ -34,6 +34,13 @@
 }
 
 /***GROUP FORM*****/
+div.team_details{
+	.agree_subscribe{
+		display:block;
+		margin-top: 240px;
+	}
+}
+
 
 div.slide.team_details, div.slide.personal_details {
 	input.input__field--hoshi{
@@ -123,6 +130,7 @@ div.slide.team_details, div.slide.personal_details {
 	button#del_member {
 		float:right;
 		margin:15px;
+		margin-top:-45px;
 		width:30px;
 		height:30px;
 		background:transparent;
@@ -189,7 +197,7 @@ div.slide.team_details, div.slide.personal_details {
 .nav_group {
 	position: absolute;
     right: 50px;
-    bottom: -24px;
+    bottom: -117px;
 	
 }
 .next_btn {
@@ -347,6 +355,12 @@ $file-upload-size: 200px;
         display: block;
         margin-bottom: 5px;
     }
+    &:after{
+    	content:"＊檔名為 Pepper_09XXXXXXXX (隊長手機號碼)";
+    	display:block;
+    	position: relative;
+    	height: 2px;
+    }
 }
 
 .file-upload-wrapper {
@@ -376,20 +390,32 @@ $file-upload-size: 200px;
     white-space: nowrap;
 }
 .file-upload-button {
+	position: relative;
     cursor: pointer; 
     display: inline-block; 
     color: $navy;
     width:50%;
+    height: 52px;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 11px 0px; 
+    padding:0px; 
     border: none;
     margin-left: -1px;  
     background-color: white; 
     float: left; /* IE 9 Fix */
     @include transition(all 0.2s ease-in);
+    
     &:hover {
         background-color: darken(white, 30);
+    }
+    &:after{
+    	margin-top: -5px;
+    	content:"      ＊檔名為 Pepper_隊長手機號碼";
+    	position: relative;
+    	color:$navy;
+    	font-size: 10px;
+    	display:block;
+    	width:100%;
     }
 
     

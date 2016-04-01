@@ -674,6 +674,12 @@ and (orientation : portrait) {
     	line-height: 1.7em;
 	}
 
+	#sec_about{
+		.border_container{
+			max-height:initial;
+		}
+	}
+
 	.info_list ul li{
 		width:100%;
 		float:left;

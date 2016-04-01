@@ -1,7 +1,9 @@
-/*test*/
-.test{
-	// background-color:#fff;
+/**for scrollDiv only*/
+#sec_home .slimScrollBar,#sec_about .slimScrollBar{
+	display:none !important;
 }
+
+
 
 /* Sections */
 div.fp-section{
@@ -201,6 +203,7 @@ div#sec_competition {
 		padding: 50px 30px;
 		background-color: $navy; 
 		position: relative;
+		max-height:400px;
 	}
 
 	
@@ -256,6 +259,10 @@ ul.plan_list {
 .jumpnow_part1 .slide-inner {
 	border:none;
 }
+div.team_details .slide-inner{
+	min-height:460px;
+}
+
 
 .slide-inner {
 	position:relative;
@@ -887,7 +894,7 @@ div.timeline {
 }
 .team_details {
 	
-	
+	margin-top: 40px;
 }
 .team_details_single>span {
 	clear:none;
@@ -1191,6 +1198,12 @@ a.contact_us_btn {
 		left:10%;
 		}
 	}
+
+div.section#sec_tagboard{
+	padding-top: 150px;
+	height: 500px;
+	
+}
 
 
 

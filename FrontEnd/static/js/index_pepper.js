@@ -3,27 +3,51 @@ var ww;
 var wh;
 
 
+function loadScript(ww){
+	if(ww>=990){  //load the slimscroll dynamcally
+		$.getScript("jquery.slimscroll.min.js", function(){
+			console.log("load slimscroll.js");
+		});
+		$.getScript("jquery_fullPage.js", function(){
+			console.log("load jquery_fullPage.js");
+		});
+	}else{
+		$.getScript("jquery_fullPage.js", function(){
+			console.log("load jquery_fullPage.js");
+		});
+	}
+}
 function resize(){
 	ww = window.innerWidth;
 	wh = window.innerHeight;
 	console.log("ww:"+ww);
 	console.log("wh:"+wh);
 	console.log('resize');
+
+	if(ww>768){
+		$('#sec_tagboard').innerHeight(450); 
+		//Above line makes sure the slimScroll of the tagboard section works well.
+	}else if(ww<=768 && ww>=480){
+		$('#sec_tagboard').innerHeight(1000);
+	}else if(ww<480){
+		$('#sec_tagboard').innerHeight(400);
+	}
+	// $('.fp-scrollable').innerHeight('auto');
+	// loadScript(ww);
 }
 
 $(window).resize(function(){
 	resize();
 });
 
-
-
 $(document).ready(function() {
-
+	resize();
+	initSlot();	//initial the slot machine first so that fullpage can load the
 	//initial the fullpage with the rocket animation
     	$('#fullpage').fullpage({
 	    	menu:'#header',
 	    	anchors:['home','about','competition',
-	    			'jumpnow','events','gallery','tagboard'
+	    			'jumpnow','events','tagboard'
 	    	],
 	    	scrollingSpeed:1000,
 			afterLoad: function(anchorLink, index) { 
@@ -156,7 +180,20 @@ $(document).ready(function() {
 			},
 			onLeave: function(index, nextIndex, direction) {
 				if(ww>=990){
-					$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');	
+					// return false;
+					var top = $('.slimScrollBar').css('top');
+					console.log(top);
+					if(index == 6){
+						if(top=='0px'){
+							$.fn.fullpage.moveTo(nextIndex);
+						}else{
+							return false
+						}
+					}else{
+						$('#header').css({'opacity':'0'}).removeClass('fff').removeClass('orange');
+					}
+					
+					
 				}else{
 					if(index == 1 && direction =='down'){
 						$("#header").css("background-color","#0e324b");
@@ -166,10 +203,8 @@ $(document).ready(function() {
 				}
 			},
 			afterRender:function(){
-				// $('.sec_tagboard').slimScroll({
-    //     			height: '250px'
-    // 			});
-
+				// $('#sec_home .fp-scrollable').innerHeight('auto');
+				// $('.fp-scrollable').parent().parent().parent().not('#sec_tagboard').innerHeight('auto');
 				var info_height = $('#competition_info_slide .slide-inner').height();
 				$('#competition_info_slide .slide-inner .border_container').height(info_height);
 				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
@@ -179,11 +214,14 @@ $(document).ready(function() {
 				$('#competition_sponsor_slide .border_container').height(height);	
 				console.log("fullpage loaded");
 
+				setTimeout(function(){  // To hide the loading 
+					$('.loading_mask').fadeOut();
+				},3000);
 			},
 			verticalCentered : true,
 			resize : false,
 			fitToSectionDelay:500,
-			paddingBottom:30,
+			// paddingBottom:30,
 			fixedElements:'.backToTop,header,.scrollDown',
 			loopBottom:false,
 			loopTop:false,
@@ -197,17 +235,23 @@ $(document).ready(function() {
 			responsiveWidth:990,
 			scrollOverflow:false
 			// responsiveHeight:768
-
 		}); //end of the fullpageJS initial
-		resize();
-		initSlot();	//initial the slot machine first so that fullpage can load the
-		revealOnScroll();
-		// if(ww<=990){
-		// 	$("div.section").css("height","auto");
-		// 	console.log("section");
-		// }
 		
-	
+		resize();
+		revealOnScroll();
+		/****
+		To initial the slimscroll
+		****/
+		if(ww>=990){
+			$('#sec_tagboard .tagboard-embed').slimScroll({
+				height:'70%',
+				allowPageScrol:true
+			});
+		}
+		/****
+		Important!!!!
+		*****/
+
     
 	//add and delete the member input field dynamically with the btn clicked
 	var DOM = "<div class='team_detail_single clearfix'><span class='input input--hoshi team_member'><input id='input-4' type='text' name='member_name' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>隊員</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><span class='input input--hoshi responsibility'><input id='input-4' type='email' name='member_email' class='input__field input__field--hoshi'/><label for='input-4' class='input__label input__label--hoshi input__label--hoshi-color-1'><span class='input__label-content input__label-content--hoshi'>信箱</span><span class='input__label-content input__label-content--hoshi reminder'></span></label></span><button id='del_member' class='button del_btn'></button></div>";
@@ -440,6 +484,7 @@ $(document).ready(function() {
 				}	
 			}else{
 				$(element).next().empty().append(error.text());
+				console.log("tetetetetet");
 			}
 			// element.attr("placeholder",error.text()).parent().addClass('input--filled');	
 		},
@@ -516,11 +561,12 @@ $(document).ready(function() {
 		if(reg_form.valid()){  
             submit_to_db(btn,reg_form);
             $("#sec_jumpnow input").attr("placeholder","");
-            $(".file-upload-input").empty().append("限定.pdf");
+            // $(".file-upload-input").empty().append("限定.pdf");
             $('#counter').html('200');
 		}else{
 			btn_error(btn);
-			$('.file-upload-input').empty().append(span);
+			// $('.file-upload-input').empty().append(span);
+			console.log("hihihihihih");
 		}
 	});
 
@@ -703,9 +749,9 @@ function focused(evt){
         // $input = $('<input type="text" class="file-upload-input" />'),
         $input = $("<span class='file-upload-input' title='限定上傳PDF'>限定上傳PDF</span>"),
         // Button that will be used in non-IE browsers
-        $button = $('<button type="button" class="file-upload-button">上傳商業計劃書</button>'),
+        $button = $('<button type="button" class="file-upload-button">上傳報名表</button>'),
         // Hack for IE
-        $label = $('<label class="file-upload-button" for="' + $file[0].id + '">上傳商業計劃書</label>');
+        $label = $('<label class="file-upload-button" for="' + $file[0].id + '">上傳報名表</label>');
 
       // Hide by shifting to the left so we
       // can still trigger events

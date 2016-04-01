@@ -62,10 +62,10 @@ function moveRight(section,slide){
 	
 	if(section == 'competition'){
 		$("#competition_mobile_menu li a").removeClass("selected");
-	$("#competition_mobile_menu li:nth-child("+(Number(slide)+1)+") a").addClass("selected");
+		$("#competition_mobile_menu li:nth-child("+(Number(slide)+1)+") a").addClass("selected");
 		slide ="translateX("+((Number(slide)) * -25)+"%"+")";	
 	}else{
-		slide ="translateX("+((Number(slide)) * -33)+"%"+")";	
+		slide ="translateX("+((Number(slide)) * -50)+"%"+")";	
 	}
 	
 	console.log(slide);

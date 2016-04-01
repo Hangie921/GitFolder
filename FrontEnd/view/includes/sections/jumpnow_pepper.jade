@@ -48,7 +48,7 @@
 								//- a.slide_prev.arrow.slide_team_details_arrow.hidden-xs(href="#jumpnow") prev
 								
 								.col-md-11.clearfix
-								.col-md-5.clearfix
+								.col-md-6.clearfix
 										span.input.input--hoshi.team_other
 											input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
@@ -62,6 +62,7 @@
 											//- 	span#counter.reminder  200
 											//- 	|字 
 												
+											span 團隊組別
 											input(type='radio', name='team_category',value='student' checked) 
 											span 學生組
 											input(type='radio', name='team_category',value='society') 
@@ -72,34 +73,26 @@
 												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 														span.input__label-content.input__label-content--hoshi 隊長
 														span.input__label-content.input__label-content--hoshi.reminder
+										
+										span.input.input--hoshi.responsibility
+											input#input-4.input__field.input__field--hoshi(type='text' ,name='mobile')
+
+											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+													span.input__label-content.input__label-content--hoshi 手機
+													span.input__label-content.input__label-content--hoshi.reminder
 										span.input.input--hoshi.responsibility
 											input#input-4.input__field.input__field--hoshi(type='text' ,name='leader_email')
 
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 													span.input__label-content.input__label-content--hoshi 信箱
 													span.input__label-content.input__label-content--hoshi.reminder
-										span.input.input--hoshi.responsibility
-											input#input-4.input__field.input__field--hoshi(type='text' ,name='mobile')
-
-											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 聯絡電話/手機
-													span.input__label-content.input__label-content--hoshi.reminder
-										label.iagree.agree_subscribe
-											input#agree_subscribe(type="checkbox", name='agree_subscribe', value="true" checked) 
-											span   我同意訂閱XXX
-											span.input__label-content.input__label-content--hoshi.remind
-										label.iagree.agree_terms
-											input#agree_terms(type="checkbox", name='agree_terms', value="true") 
-											
-											span   我同意本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
-											span.input__label-content.input__label-content--hoshi.remind
 										span.input
 											.custom-file-upload.clearfix
 													input#file.input__field(type='file',name='BP_file',multiple)
 													span.input__label-content.input__label-content--hoshi.reminder
 													label.input__label(for='file')
 
-									.col-md-7.clearfix
+									.col-md-6.clearfix
 										.team_detail_single.clearfix
 											span.input.input--hoshi.team_member
 												input#input-4.input__field.input__field--hoshi(type='text' ,name='member_name')
@@ -114,9 +107,26 @@
 														span.input__label-content.input__label-content--hoshi.reminder
 											
 										button(id='add_member') 添加成員
-							.nav_group
+								
+								.col-md-12.col-centered
+									label.iagree.agree_subscribe
+											input#agree_subscribe(type="checkbox", name='agree_subscribe', value="true" checked) 
+											span 是否同意訂閱 
+												a(href='http://bit.ly/1RwDLdo')
+													| StarRocket創業週報
+												，了解臺灣新創圈
+											span.input__label-content.input__label-content--hoshi.remind
+									label.iagree.agree_terms
+										input#agree_terms(type="checkbox", name='agree_terms', value="true") 
+										
+										span   我同意本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+										//- span 我已閱讀報名條款？
+										span.input__label-content.input__label-content--hoshi.reminder
 								a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange
 										|完成了，我要提交!
+							.nav_group
+								a(class='button prev_btn',href='#jumpnow/0') 上一步
+								
 								//- a(class='button next_btn', href='javascript:void(0);') 下一步
 					//- .slide.personal_details.fp-auto-height.jumpnow-slide-padding.slide-padding
 						.col-md-10.col-centered

@@ -1,8 +1,8 @@
 {
 	"server":{
-		"port":80,
+		"port":3000,
 		"view_engine": "jade",
-		"upload_path": "./upload",
+		"upload_path": "./upload1/",
 		"upload_file_format": ".pdf"
 		},
 	"mongo":{

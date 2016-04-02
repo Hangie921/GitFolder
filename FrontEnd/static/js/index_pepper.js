@@ -929,7 +929,7 @@ function initSlot(){
 	});
 
 	$('#slotButton3').click(function(){
-			machine3.futureActive = 7;
+			// machine3.futureActive = 7;
 			machine3.stop();
 			if(!$('#sec_home .border_container').hasClass('straightAni')){ //border animation
 				$('#sec_home .border_container').addClass('straightAni');

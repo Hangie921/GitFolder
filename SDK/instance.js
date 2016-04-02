@@ -27,7 +27,8 @@ function initApp(config, dir_path) {
         resave: true,
         saveUninitialized: true
     }));
-    app.use(bodyParser.urlencoded())
+    app.use(bodyParser.urlencoded({extended: false}));
+    // app.use(bodyParser.urlencoded())
     app.use(methodOverride(function(req, res) {
         if (req.body && typeof req.body === 'object' && '_method' in req.body) {
             // look in urlencoded POST bodies and delete it

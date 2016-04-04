@@ -1,60 +1,60 @@
 .section#sec_tagboard(data-anchor='tagboard')
-	.tagboard-embed(tgb-slug="TravelPhotography/266732", tgb-layout="waterfall" ,tgb-post-count="25",tgb-mobile-count="3",tgb-feed-type="default" ,tgb-toolbar="none", tgb-animation-type="default")
+	.container
+		.tagboard-embed(tgb-slug="TravelPhotography/266732", tgb-layout="waterfall" ,tgb-post-count="25",tgb-mobile-count="3",tgb-feed-type="default" ,tgb-toolbar="light", tgb-animation-type="default")
+		.contact_container
+			.col-md-12.contact_header.no-pad
+				.col-md-12.no-pad
+					h2 GET IN CONTACT
+						span 
+							i.fa.fa-angle-up
+			.col-md-12.contact_form
+				form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
+					//- input(type="hidden" name="country" value="tw")
+					.col-md-4.no-pad-m
+						span.input.input--hoshi
+							input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-name')
+									span.input__label-content.input__label-content--hoshi 姓名
+									span.input__label-content.input__label-content--hoshi.reminder
+						span.input.input--hoshi
+							input#input-4-email.input__field.input__field--hoshi(type='email',name='user_email')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-email')
+									span.input__label-content.input__label-content--hoshi Email
+									span.input__label-content.input__label-content--hoshi.reminder
+						span.input.input--hoshi
+							input#input-4-sub.input__field.input__field--hoshi(type='text',name='subject')
+							label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-sub')
+									span.input__label-content.input__label-content--hoshi 標題
+									span.input__label-content.input__label-content--hoshi.reminder
+					.col-md-4.no-pad-m
+						textarea#textarea_mes(placeholder='我有疑問...',name='user_msg',require)
+						//- label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='textarea_mes')
+						//- 	span.input__label-content.input__label-content--hoshi 
+						//- 	span.input__label-content.input__label-content--hoshi
+						
+						
+						//- input(type='submit' value='傳送給我們!')
+						input(type='hidden',value='tw',name='country')
+						a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交
+						//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
 
-	.contact_container
-					.col-md-12.contact_header.no-pad
-						.col-md-12.no-pad
-							h2 GET IN CONTACT
-								span 
-									i.fa.fa-angle-up
-					.col-md-12.contact_form
-						form#contact_us_form(action="/contact", enctype="multipart/form-data",method="post")
-							//- input(type="hidden" name="country" value="tw")
-							.col-md-4.no-pad-m
-								span.input.input--hoshi
-									input#input-4-name.input__field.input__field--hoshi(type='text',name='user_name')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-name')
-											span.input__label-content.input__label-content--hoshi 姓名
-											span.input__label-content.input__label-content--hoshi.reminder
-								span.input.input--hoshi
-									input#input-4-email.input__field.input__field--hoshi(type='email',name='user_email')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-email')
-											span.input__label-content.input__label-content--hoshi Email
-											span.input__label-content.input__label-content--hoshi.reminder
-								span.input.input--hoshi
-									input#input-4-sub.input__field.input__field--hoshi(type='text',name='subject')
-									label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4-sub')
-											span.input__label-content.input__label-content--hoshi 標題
-											span.input__label-content.input__label-content--hoshi.reminder
-							.col-md-4.no-pad-m
-								textarea#textarea_mes(placeholder='我有疑問...',name='user_msg',require)
-								//- label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='textarea_mes')
-								//- 	span.input__label-content.input__label-content--hoshi 
-								//- 	span.input__label-content.input__label-content--hoshi
-								
-								
-								//- input(type='submit' value='傳送給我們!')
-								input(type='hidden',value='tw',name='country')
-								a#contact_btn.contact_us_btn.btn.orange.btn-4.btn-4a 提交
-								//- button.contact_us_btn.btn.orange.btn-4.btn-4a|提交
-
-							.col-md-4.contact-details.no-pad-m
-								h3 Ping! Connect
-								ul
-									li
-										h4 TAIWAN <br/>
-										i.fa.fa-map-marker
-										|台灣台北市中山區南京東路二段137號14樓 <br/>
-										i.fa.fa-phone 
-										|+886 2 7745 8486+65 6805 4339 <br/>
-										i.fa.fa-envelope
-										|hello@ping.com.sg
-									li
-										h4 SINGAPORE ( HQ ) <br/>
-										i.fa.fa-map-marker
-										|20 Malacca Street, #16-00
-										|Malacca Centre, Singapore  <br/>
-										i.fa.fa-phone 
-										|+65 6805 4339 <br/>
-										i.fa.fa-envelope
-										|hello@ping.com.sg
+					.col-md-4.contact-details.no-pad-m
+						h3 Ping! Connect
+						ul
+							li
+								h4 TAIWAN <br/>
+								i.fa.fa-map-marker
+								|台灣台北市中山區南京東路二段137號14樓 <br/>
+								i.fa.fa-phone 
+								|+886 2 7745 8486+65 6805 4339 <br/>
+								i.fa.fa-envelope
+								|hello@ping.com.sg
+							li
+								h4 SINGAPORE ( HQ ) <br/>
+								i.fa.fa-map-marker
+								|20 Malacca Street, #16-00
+								|Malacca Centre, Singapore  <br/>
+								i.fa.fa-phone 
+								|+65 6805 4339 <br/>
+								i.fa.fa-envelope
+								|hello@ping.com.sg

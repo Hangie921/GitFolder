@@ -1200,9 +1200,15 @@ a.contact_us_btn {
 	}
 
 div.section#sec_tagboard{
-	padding-top: 150px;
-	height: 500px;
+	box-sizing:border-box;
+	padding-top: 90px;
+	& .container{
+		height: 84vh;
+	}
 	
+}
+div.tagboard-embed{
+	height:100%-201;
 }
 
 

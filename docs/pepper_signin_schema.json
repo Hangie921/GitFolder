@@ -1,29 +1,23 @@
 {
 	"team_details":{
-		"team_name":"",
-		"team_category":"",
-		"team_leader_name":"",
-		"leader_email":"",
-		"mobile":"",
-		"agree_subscribe":"",
-		"agree_terms":"",
-		
-		"PDF_path":"",
-		"PDF_name":"",
-
+		"team_name":"hihih",
+		"team_category":"student",
+		"team_leader_name":"walter",
+		"leader_email":"walter@ping.com.sg",
+		"mobile":"345678",
+		"agree_subscribe":true,
+		"agree_terms":true,
+		"PDF_path":"456/567",
+		"PDF_name":"walte.pdf",
 		"team_member":{
 			"member_0":{
-				"name":"",
-				"email":""
+				"name":"walter",
+				"email":"afasdfsaf@fasdf"
 			},
-
 		},
-
 		"reg_time":"",
 	},
-
 	"admin_detail":{
-
 		"last_editor_id":null,
 		"last_edit_time":null
 		}

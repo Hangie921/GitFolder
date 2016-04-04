@@ -90,6 +90,9 @@ $(document).ready(function() {
 						case 5:
 							$('#header').addClass('fff');
 							break;
+						case 6:
+							$('#header').addClass('fff');
+							break;
 					}
 					$('#header').css({'opacity':'1'});
 				}
@@ -203,8 +206,23 @@ $(document).ready(function() {
 				}
 			},
 			afterRender:function(){
-				// $('#sec_home .fp-scrollable').innerHeight('auto');
-				// $('.fp-scrollable').parent().parent().parent().not('#sec_tagboard').innerHeight('auto');
+				
+				/****
+				To initial the slimscroll
+				****/
+				if(ww>=990){
+					$('#sec_tagboard .tagboard-embed').slimScroll({
+						height:'432px',
+						allowPageScroll:true
+					});
+
+					console.log("slim initial")
+				}
+				/****
+				Important!!!!
+				*****/
+
+
 				var info_height = $('#competition_info_slide .slide-inner').height();
 				$('#competition_info_slide .slide-inner .border_container').height(info_height);
 				$('.team_details .slide-inner').height($('.team_details .slide-inner').height());
@@ -239,18 +257,7 @@ $(document).ready(function() {
 		
 		resize();
 		revealOnScroll();
-		/****
-		To initial the slimscroll
-		****/
-		if(ww>=990){
-			$('#sec_tagboard .tagboard-embed').slimScroll({
-				height:'70%',
-				allowPageScrol:true
-			});
-		}
-		/****
-		Important!!!!
-		*****/
+
 
     
 	//add and delete the member input field dynamically with the btn clicked
@@ -313,7 +320,7 @@ $(document).ready(function() {
 		$('.contact_container').css('bottom',contact_height*-0.8);
 		$('.contact_header').click(function(){
 			if(down){
-				$(this).parent().animate({'bottom':'0px'},1000);
+				$(this).parent().animate({'bottom':'-12px'},1000);
 				$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
 				down = false;
 				// alert('if '+ down)

@@ -48,27 +48,23 @@
 								//- a.slide_prev.arrow.slide_team_details_arrow.hidden-xs(href="#jumpnow") prev
 								
 								.col-md-11.clearfix
-								.col-md-6.clearfix
-										span.input.input--hoshi.team_other
+								.col-md-6.clearfix.team_details_left
+										span.input.input--hoshi.team_other 
+												span#input_title 團隊組別
+												input#g_student(type='radio', name='team_category',value='student' checked)
+												label(for='g_student')
+												span 學生組
+												input#g_society(type='radio', name='team_category',value='society')
+												label(for='g_society')
+												span 社會組
+												//- textarea(name='product_brief')#product_brief
+										span.input.input--hoshi.team_other.team_name
 											input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 													span.input__label-content.input__label-content--hoshi 隊伍名稱
 													span.input__label-content.input__label-content--hoshi.reminder
-										span.input.input--hoshi.team_other 
-											//- |產品介紹	 
-											
-											//- span#counter_container.reminder 
-											//- 	|還剩下
-											//- 	span#counter.reminder  200
-											//- 	|字 
-												
-											span 團隊組別
-											input(type='radio', name='team_category',value='student' checked) 
-											span 學生組
-											input(type='radio', name='team_category',value='society') 
-											span 社會組
-											//- textarea(name='product_brief')#product_brief
-										span.input.input--hoshi.team_member
+										
+										span.input.input--hoshi.team_member.team_leader_name
 												input#input-4.input__field.input__field--hoshi(type='text' ,name='team_leader_name')
 												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 														span.input__label-content.input__label-content--hoshi 隊長
@@ -122,7 +118,8 @@
 										span   我同意本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
 										//- span 我已閱讀報名條款？
 										span.input__label-content.input__label-content--hoshi.reminder
-								a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange
+								.reg_btn_container.col-md-3.col-md-offset-8
+									a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange
 										|完成了，我要提交!
 							.nav_group
 								a(class='button prev_btn',href='#jumpnow/0') 上一步

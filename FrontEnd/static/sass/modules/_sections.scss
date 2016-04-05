@@ -164,7 +164,7 @@ div#sec_competition {
 	background: url(../img/rocket-new.png) no-repeat center center;
 	@include background-size(75% auto);
 	left: -3%;
-	top: 100%;
+	top: 80%;
 }
 
 .sg .rocket{
@@ -295,7 +295,7 @@ div.competition_topic {
 	}
 
 	.btn {
-	 margin: 30px auto 0;
+	 margin: 12px auto 0;
     text-align: center;
     display: block;
     float: none;
@@ -893,8 +893,7 @@ div.timeline {
 
 }
 .team_details {
-	
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .team_details_single>span {
 	clear:none;

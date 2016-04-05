@@ -487,7 +487,7 @@ $(document).ready(function() {
 				if(element.is("textarea")){
 					element.empty().attr("placeholder",error.text())
 				}else if(element.attr("id")=='agree_terms'){
-					$(element).next().next().empty().append(error.text());
+					$(element).parent().children('.reminder').empty().append(error.text());
 				}	
 			}else{
 				$(element).next().empty().append(error.text());

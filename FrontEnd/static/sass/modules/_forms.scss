@@ -37,10 +37,12 @@
 div.team_details{
 	.agree_subscribe{
 		display:block;
-		margin-top: 240px;
+		// margin-top: 240px;
 	}
 }
-
+.reg_btn_container{
+	position: relative;
+}
 
 div.slide.team_details, div.slide.personal_details {
 	input.input__field--hoshi{
@@ -116,7 +118,7 @@ div.slide.team_details, div.slide.personal_details {
 
 	span.team_member {
 		width: 20%;
-    	margin-right: 30px;
+    	margin-right: 17px;
 	}
 	span.responsibility {
 		width: 60%
@@ -198,7 +200,7 @@ div.slide.team_details, div.slide.personal_details {
 .nav_group {
 	position: absolute;
     right: 50px;
-    bottom: -62px;
+    bottom: -25px;
 	
 }
 .next_btn {
@@ -326,8 +328,8 @@ button.submit_btn {
 
 
 #reg_btn {
-    margin: 30px 0 0;
-    right: 0px;
+    margin: -71px 0 0;
+    right: 150px;
 	&.btn-error:after {
 		left:10%;
 	}
@@ -458,7 +460,6 @@ label.iagree{
 }
 .team_other{
 	& input[type="radio"]{
-		// display:none;
 		visibility: hidden;
 		& + label{
 			margin-right: 5px;
@@ -483,7 +484,35 @@ label.iagree{
 
 		}
 	}
+}
+.agree_subscribe,.agree_terms{
+	& input[type="checkbox"]{
+		// display:none;
+		position: absolute;
+		visibility: hidden;
+		& + label{
+			margin-right: 5px;
+			cursor:pointer;
+			position: relative;
+		}
+		& + label:before{
+			content:"\2713";
+			border:1px solid #fff;
+			width: 15px;
+			height: 15px;
+			color:$navy;
+			position: relative;
+			display:block;
+			font-size: 10px;
+			line-height:10px;
+			text-align: center;
+			padding-top: 2px;
+		}
+		&:checked + label:before{
+			color:#fff;
 
+		}
+	}
 }
 
 #input_title{

@@ -2,6 +2,7 @@
 //
 var config = require("../config/server_init.json");
 var multer = require('multer'),
+	time = require('mongodb').ObjectID();
     storage1 = multer.diskStorage({
 	  destination: function (req, file, cb) {
 	    cb(null, config.server.upload_path)
@@ -12,6 +13,7 @@ var multer = require('multer'),
 	});
 var log = require('../../SDK/log_handler');
 //setting above
+	
 
 
 var schema = function(){
@@ -37,7 +39,7 @@ var schema = function(){
 			"team_member":{
 
 				},
-			"reg_time":"",
+			"reg_time":time.getTimestamp(),
 			"paid":false,
 		},
 		"admin_detail":{

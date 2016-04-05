@@ -49,75 +49,77 @@
 								
 								.col-md-11.clearfix
 								.col-md-6.clearfix.team_details_left
-										span.input.input--hoshi.team_other 
-												span#input_title 團隊組別
-												input#g_student(type='radio', name='team_category',value='student' checked)
-												label(for='g_student')
-												span 學生組
-												input#g_society(type='radio', name='team_category',value='society')
-												label(for='g_society')
-												span 社會組
-												//- textarea(name='product_brief')#product_brief
-										span.input.input--hoshi.team_other.team_name
-											input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
+									span.input.input--hoshi.team_other 
+											span#input_title 團隊組別
+											input#g_student(type='radio', name='team_category',value='student' checked)
+											label(for='g_student')
+											span 學生組
+											input#g_society(type='radio', name='team_category',value='society')
+											label(for='g_society')
+											span 社會組
+											//- textarea(name='product_brief')#product_brief
+									span.input.input--hoshi.team_other.team_name
+										input#input-4.input__field.input__field--hoshi(type='text',name='team_name')
+										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+												span.input__label-content.input__label-content--hoshi 隊伍名稱
+												span.input__label-content.input__label-content--hoshi.reminder
+									
+									span.input.input--hoshi.team_member.team_leader_name
+											input#input-4.input__field.input__field--hoshi(type='text' ,name='team_leader_name')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 隊伍名稱
+													span.input__label-content.input__label-content--hoshi 隊長
 													span.input__label-content.input__label-content--hoshi.reminder
-										
-										span.input.input--hoshi.team_member.team_leader_name
-												input#input-4.input__field.input__field--hoshi(type='text' ,name='team_leader_name')
-												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-														span.input__label-content.input__label-content--hoshi 隊長
-														span.input__label-content.input__label-content--hoshi.reminder
-										
-										span.input.input--hoshi.responsibility
-											input#input-4.input__field.input__field--hoshi(type='text' ,name='mobile')
+									
+									span.input.input--hoshi.responsibility
+										input#input-4.input__field.input__field--hoshi(type='text' ,name='mobile')
 
+										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+												span.input__label-content.input__label-content--hoshi 手機
+												span.input__label-content.input__label-content--hoshi.reminder
+									span.input.input--hoshi.responsibility
+										input#input-4.input__field.input__field--hoshi(type='text' ,name='leader_email')
+
+										label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
+												span.input__label-content.input__label-content--hoshi 信箱
+												span.input__label-content.input__label-content--hoshi.reminder
+									span.input
+										.custom-file-upload.clearfix
+												input#file.input__field(type='file',name='BP_file',multiple)
+												span.input__label-content.input__label-content--hoshi.reminder
+												label.input__label(for='file')
+									.iagree_container.col-md-12
+										label.iagree.agree_subscribe
+												input#agree_subscribe(type="checkbox", name='agree_subscribe', value="true" checked)
+												label(for='agree_subscribe') 
+												span 是否同意訂閱 
+													a(href='http://bit.ly/1RwDLdo')
+														| StarRocket創業週報
+													，了解臺灣新創圈
+												span.input__label-content.input__label-content--hoshi.remind
+										label.iagree.agree_terms
+											input#agree_terms(type="checkbox", name='agree_terms', value="true") 
+											label(for='agree_terms')
+											span   我同意本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
+											//- span 我已閱讀報名條款？
+											span.input__label-content.input__label-content--hoshi.reminder 
+
+								.col-md-6.clearfix
+									.team_detail_single.clearfix
+										span.input.input--hoshi.team_member
+											input#input-4.input__field.input__field--hoshi(type='text' ,name='member_name')
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-													span.input__label-content.input__label-content--hoshi 手機
+													span.input__label-content.input__label-content--hoshi 隊員
 													span.input__label-content.input__label-content--hoshi.reminder
 										span.input.input--hoshi.responsibility
-											input#input-4.input__field.input__field--hoshi(type='text' ,name='leader_email')
+											input#input-4.input__field.input__field--hoshi(type='email' ,name='member_email')
 
 											label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
 													span.input__label-content.input__label-content--hoshi 信箱
 													span.input__label-content.input__label-content--hoshi.reminder
-										span.input
-											.custom-file-upload.clearfix
-													input#file.input__field(type='file',name='BP_file',multiple)
-													span.input__label-content.input__label-content--hoshi.reminder
-													label.input__label(for='file')
-
-									.col-md-6.clearfix
-										.team_detail_single.clearfix
-											span.input.input--hoshi.team_member
-												input#input-4.input__field.input__field--hoshi(type='text' ,name='member_name')
-												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-														span.input__label-content.input__label-content--hoshi 隊員
-														span.input__label-content.input__label-content--hoshi.reminder
-											span.input.input--hoshi.responsibility
-												input#input-4.input__field.input__field--hoshi(type='email' ,name='member_email')
-
-												label.input__label.input__label--hoshi.input__label--hoshi-color-1(for='input-4')
-														span.input__label-content.input__label-content--hoshi 信箱
-														span.input__label-content.input__label-content--hoshi.reminder
-											
-										button(id='add_member') 添加成員
-								
-								.col-md-12.col-centered
-									label.iagree.agree_subscribe
-											input#agree_subscribe(type="checkbox", name='agree_subscribe', value="true" checked) 
-											span 是否同意訂閱 
-												a(href='http://bit.ly/1RwDLdo')
-													| StarRocket創業週報
-												，了解臺灣新創圈
-											span.input__label-content.input__label-content--hoshi.remind
-									label.iagree.agree_terms
-										input#agree_terms(type="checkbox", name='agree_terms', value="true") 
 										
-										span   我同意本人或本團體已詳細閱讀過本活動之競賽規程且同意亦保證遵守大會於競賽規程中所約定之事項。
-										//- span 我已閱讀報名條款？
-										span.input__label-content.input__label-content--hoshi.reminder
+									button(id='add_member') 添加成員
+								
+								
 								.reg_btn_container.col-md-3.col-md-offset-8
 									a#reg_btn.submit_btn.btn.btn-4.btn-4a.orange
 										|完成了，我要提交!

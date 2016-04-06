@@ -212,7 +212,8 @@ $(document).ready(function() {
 				****/
 				if(ww>=990){
 					$('#sec_tagboard .tagboard-embed').slimScroll({
-						height:'432px',
+						height:'20%',
+						width:'100%',
 						allowPageScroll:true
 					});
 

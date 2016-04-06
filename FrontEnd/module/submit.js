@@ -3,7 +3,7 @@
 var config = require("../config/server_init.json");
 var multer = require('multer'),
 	time = require('mongodb').ObjectID();
-    storage1 = multer.diskStorage({
+	storage1 = multer.diskStorage({
 	  destination: function (req, file, cb) {
 	    cb(null, config.server.upload_path)
 	  },
@@ -32,10 +32,6 @@ var schema = function(){
 			"mobile":"",
 			"agree_subscribe":false,
 			"agree_terms":false,
-			
-			"PDF_path":"",
-			"PDF_name":"",
-
 			"team_member":{
 
 				},
@@ -45,7 +41,11 @@ var schema = function(){
 		"admin_detail":{
 			"last_editor_id":null,
 			"last_edit_time":null
-			}
+			},
+		"pdf":{
+			path:String,
+			name:String
+		}
 	};
 }//end of the schema function
 
@@ -79,8 +79,8 @@ function to_object(req,res,callback){   //pack all the info of the form into a o
 	log.debug("Member_brief object = " + team_details.team_member);
 
 	console.log(req.file);
-	team_details.PDF_name = req.file != undefined ? req.file.filename:null;
-	team_details.PDF_path = req.file != undefined ? req.file.path:null;
+	doc.pdf.name = req.file != undefined ? req.file.filename:null;
+	doc.pdf.path= req.file != undefined ? req.file.path:null;
 	return doc;//doc is already an object
 }
 
@@ -93,7 +93,8 @@ function file_handler(req,res,field_name,callback){ // upload the bp file if the
 			log.error(err);
 		}else{
 			log.info('file uploaded.');
-			log.debug('read file'+ req.file);
+			// log.debug('read file'+ req.file);
+			console.log('read file after upload'+ req.file); // true
 			callback(null,req,res);	
 		}
 		

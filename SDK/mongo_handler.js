@@ -14,7 +14,7 @@ function handle(mongoClient, crud, doc, collection, query, condition, callback) 
         findDetail(mongoClient, collection, query, condition, function(err, docs) {
             if (err) {
                 console.log('error while finding the details');
-                console.log(err);
+                console.log('mongo_handler.js',err);
                 staus = false
                 throw err;
             } else {
@@ -22,7 +22,7 @@ function handle(mongoClient, crud, doc, collection, query, condition, callback) 
                     status = false;
                     result = 'error';
                 } else {
-                    console.log('handle(crud === "find"): ', docs);
+                    // console.log('handle(crud === "find"): ', docs);
                     status = true;
                     result = docs;
                 }
@@ -98,15 +98,15 @@ function findDetail(mongoClient, collection, query, condition, callback) {
     console.log("start to find docs in collection '" + collection + "'.");
     mongoClient.connect(mongoClient.url, function(err, db) {
         if (!err) {
-            console.log("connect mongo successfully");
+            console.log('mongo_handler.js',"connect mongo successfully");
             var cursor = db.collection(collection).find(query, condition.projection);
             cursor.toArray(function(err, docs) {
                 callback(null, docs);
             });
 
         } else {
-            console.log('error while connecting to the mongo client');
-            console.log(err);
+            console.log('mongo_handler.js','error while connecting to the mongo client');
+            console.log('mongo_handler.js',err);
             return;
         }
     });
@@ -119,7 +119,7 @@ function insertToCollection(mongoClient, doc, collection) {
     mongoClient.connect(mongoClient.url, function(err, db) {
         if (err) {
             //modify by Randy 19.02.2016
-            console.log('Unexpected error happened,please retry it later.');
+            console.log('mongo_handler.js','mongo_handler.js','Unexpected error happened,please retry it later.');
             log.error("Unexpected error below while connecting to DB");
             log.error(err);
             return;
@@ -128,8 +128,8 @@ function insertToCollection(mongoClient, doc, collection) {
             db.collection(collection).insertOne(doc, function(err) {
                 if (err) {
                     //modify by Randy 19.02.2016
-                    console.log(collection);
-                    console.log(err);
+                    console.log('mongo_handler.js',collection);
+                    console.log('mongo_handler.js',err);
                     console.log('Unexpected error happend, please retry it later');
                     log.error('error while inserting the info to ' + collection);
                     log.error(err);

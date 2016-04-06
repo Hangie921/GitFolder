@@ -1,22 +1,35 @@
+function route(app, mongoClient) {
 
+//	在這裡設定全域session load/save
+    app.use(function(req, res, next) {
+        var views = req.session.views
 
-function route(app, mongoClient){
-	
-	app.get('/',function(req,res){
-		//session
-		var sess = req.session
+        if (!views) {
+            views = req.session.views = {}
+        }
 
-		console.log(sess);
-		console.log(req.session.id);
-		console.log(sess.login_status);
+        // get the url pathname 
+        var pathname = req.pathname
 
-		if (sess.login_status === undefined){
-			sess.login_status = false;
-			sess.save();
-		}
+        // count the views 
+        views[pathname] = (views[pathname] || 0) + 1
+        console.log("index.js", views)
 
-		res.render('index',{session_status:sess.login_status});
-	});
+        next()
+    })
+
+    app.get('/', function(req, res) {
+        //session
+        var sess = req.session
+        console.log('session in "/"', sess);
+
+        if (sess.login_status === undefined) {
+            sess.login_status = false;
+            sess.save();
+        }
+
+        res.render('index', { session_status: sess.login_status });
+    });
 }
- 
+
 exports.route = route;

@@ -10,7 +10,11 @@ block content
 		input(type="text" name="team_name" value="#{info.team_name}")
 		br
 		| Team Category:
-		input(type="text" name="team_category" value="#{info.team_category}")
+		p=info.team_category
+		input(type="radio" name="team_category" value="student" checked=info.team_category=="student")
+		| 學生組
+		input(type="radio" name="team_category" value="society" checked=info.team_category=="society")
+		| 社會組
 		br
 		| Leader Name:
 		input(type="text" name="team_leader_name" value="#{info.team_leader_name}")

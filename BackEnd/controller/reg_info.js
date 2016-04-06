@@ -21,11 +21,14 @@ function route(app, mongoClient) {
     app.get('/reg_info', function(req, res) {
         //session
         var sess = req.session
+        console.log('session in "/reg_info"', sess);
         if (sess.login_status === undefined || sess.login_status === null || sess.login_status === false) {
             res.redirect('/');
             // res.render('index',{results:result});
             res.end();
         }
+
+        sess.save();
         //query
         var query = {};
         var condition = {
@@ -61,6 +64,8 @@ function route(app, mongoClient) {
     });
 
     app.get('/reg_info/:id', function(req, res) {
+        var sess = req.session
+        console.log('session in "/reg_info:id"', sess);
         Team.findById(req.params.id, function(err, team) {
             if (err) return console.error(err);
             res.render('reg_info_edit', {
@@ -71,15 +76,21 @@ function route(app, mongoClient) {
 
     // PUT
     app.put('/reg_info/:id', function(req, res) {
+        // update admin info
+        var sess = req.session
+        var adminInfo = {
+            "last_editor_id": sess.user,
+            "last_edit_time": new Date().toISOString()
+        };
+        console.log('put /reg_info/:id', adminInfo);
+
+        // update team info
         var newTeam = req.body;
         newTeam.team_member = {};
         newTeam.paid = newTeam.paid == "true";
         newTeam.agree_subscribe = newTeam.agree_subscribe == "true";
         newTeam.agree_terms = newTeam.agree_terms == "true";
 
-        // if (typeof req.body.member_name === 'string') {
-        //     newTeam.team_member["member_0"] = { "name": req.body.member_name, "email": req.body.member_email };
-        // } else {
         for (var i = 0; i < newTeam.member_name.length; i++) {
             var newName = newTeam.member_name[i];
             var newEmail = newTeam.member_email[i];
@@ -89,7 +100,7 @@ function route(app, mongoClient) {
         delete newTeam.member_name;
         delete newTeam.member_email;
 
-        Team.findByIdAndUpdate(newTeam.id, { team_details: newTeam }, function(err, team) {
+        Team.findByIdAndUpdate(newTeam.id, { team_details: newTeam , admin_detail:adminInfo}, function(err, team) {
                 if (err) return console.error(err);
                 // console.log(team);
                 // console.log(JSON.stringify(team));
@@ -97,9 +108,6 @@ function route(app, mongoClient) {
             })
             // }
 
-        // db find and update
-        // res.send(obj);
-        // res.send(req.body.team_member);
     });
 
 }

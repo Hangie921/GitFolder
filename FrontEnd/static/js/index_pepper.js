@@ -212,7 +212,7 @@ $(document).ready(function() {
 				****/
 				if(ww>=990){
 					$('#sec_tagboard .tagboard-embed').slimScroll({
-						height:'20%',
+						height:'700px',
 						width:'100%',
 						allowPageScroll:true
 					});
@@ -318,15 +318,15 @@ $(document).ready(function() {
 	var contact_height = $('.contact_container').innerHeight();
 	if(ww>990){
 		console.log(ww);
-		$('.contact_container').css('bottom',contact_height*-0.8);
+		$('.contact_container').css('bottom',contact_height*-0.6);
 		$('.contact_header').click(function(){
 			if(down){
-				$(this).parent().animate({'bottom':'-12px'},1000);
+				$(this).parent().animate({'bottom':'10%'},1000);
 				$('.contact_header div h2 span').html('<i class="fa fa-angle-down"></i>');
 				down = false;
 				// alert('if '+ down)
 			}else{
-				$(this).parent().animate({'bottom':contact_height*-0.8},1000);
+				$(this).parent().animate({'bottom':contact_height*-0.6},1000);
 				$('.contact_header div h2 span').html('<i class="fa fa-angle-up"></i>');
 				down = true;
 			}

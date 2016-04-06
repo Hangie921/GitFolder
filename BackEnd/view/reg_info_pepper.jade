@@ -33,7 +33,8 @@ block content
 				td #{info.leader_email}
 				td #{info.mobile}
 				td 
-					a(href="#{info.PDF_path}") #{info.PDF_name}
+					if result.pdf
+						a(href="#{result.pdf.path}" target="_blank") #{result.pdf.name}
 				td #{info.reg_time}
 				if info.paid
 					td Yes

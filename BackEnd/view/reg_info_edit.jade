@@ -1,8 +1,8 @@
 extends layout
 block content
 	- info = result.team_details
-	form#post_form(method="post" action="#{result._id}")
-		input(type="hidden" name="_method" value="put")
+	form#post_form(method="post" ,enctype="multipart/form-data",action="#{result._id}")
+		//- input(type="hidden" name="_method" value="put")
 		| ID:
 		input(type="text" name="id" value="#{result._id}" style='width:60%' readonly)
 		br
@@ -56,34 +56,48 @@ block content
 		input(type="radio" name="paid" value="false" checked=(!info.paid ? "checked" : undefined))
 		| No
 		br
-		input#file.input__field(type='file',name='BP_file',multiple)
+		input(type='file',name='BP_file')
 			
-		//- button(type="sumbit") Update
-		a#post_btn.btn.btn-lg.btn-primary Update
+		button(type="sumbit") Update
+		//- a#post_btn.btn.btn-lg.btn-primary Update
 
 		div.span6.offset3.sec_login
 			h2#error_mes 
 
+
 	script(type='text/javascript').
 		$(document).ready(function(){
-
+			
 			$('#post_btn').click(function(){
-				//- alert($('#post_form').serialize())
-				$.ajax({
-					type:'PUT',
-					url:"#{result._id}",
-					data:$('#post_form').serialize(),
-					dataType:'json',
-					success:function(data){
-						//- alert(JSON.stringify(data))
-						//- if(data.status==true) {
-						$(location).attr('href',"/reg_info/#{result._id}")
-						//- }else if(data.status==null){
-						//- 	alert('{{_("Save error. Mail already send.")}}');
-						//- }else{
-						//- 	$('#error_mes').empty().html('我們沒有提供忘記密碼的服務唷！')
-						//- }
-					}
-				});
+			console.log("click");
+				$('#post_form').submit(function() {
+			console.log("submit");
+
+			    var formData = new FormData($(this)[0]);
+			        alert(formData);
+
+			    $.post($(this).attr("action"), formData, function(data) {
+			        alert(data);
+			    });
+
+			    return false;
+			});
+				//- alert($('#post_form').serialize());
+				//- $.ajax({
+				//- 	type:'POST',
+				//- 	url:"#{result._id}",
+				//- 	data:$('#post_form').serialize(),
+				//- 	dataType:'json',
+				//- 	success:function(data){
+				//- 		//- alert(JSON.stringify(data))
+				//- 		//- if(data.status==true) {
+				//- 		$(location).attr('href',"/reg_info/#{result._id}")
+				//- 		//- }else if(data.status==null){
+				//- 		//- 	alert('{{_("Save error. Mail already send.")}}');
+				//- 		//- }else{
+				//- 		//- 	$('#error_mes').empty().html('我們沒有提供忘記密碼的服務唷！')
+				//- 		//- }
+				//- 	}
+				//- });
 			});
 		});

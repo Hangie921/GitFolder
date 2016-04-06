@@ -13,7 +13,6 @@ function jsonTocsv(teams) {
         row[1] = team.team_details.team_name;
         if (team.team_details.team_category === "student") {
             row[1] = 'S ' + row[1];
-            console.log("in student")
         }
         row[2] = '* ' + team.team_details.team_leader_name;
         row[3] = team.team_details.leader_email;
@@ -38,7 +37,6 @@ function jsonTocsv(teams) {
             obj += "\n" + row.join();
         }
     }
-    console.log("obj", obj)
     return obj;
 }
 

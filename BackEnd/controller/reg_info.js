@@ -4,6 +4,18 @@ var login = require('../module/login'),
 var Team = require('../module/team.js');
 var Member = require('../module/member.js');
 
+//  file upload setting
+var multer = require('multer');
+storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+        cb(null, './upload')
+    },
+    filename: function(req, file, cb) {
+        cb(null, Date.now() + ".pdf")
+    }
+})
+var upload = multer({ storage: storage }).single('BP_file');
+
 
 function route(app, mongoClient) {
     app.get('/try', function(req, res) {
@@ -76,41 +88,57 @@ function route(app, mongoClient) {
     });
 
     // PUT
-    app.put('/reg_info/:id', function(req, res) {
-        // update admin info
-        var sess = req.session
-        var adminInfo = {
-            "last_editor_id": sess.user,
-            "last_edit_time": new Date().toISOString()
-        };
+    app.post('/reg_info/:id', function(req, res) {
 
-        // update team info
-        var newTeam = req.body;
-        newTeam.team_member = {};
-        newTeam.paid = newTeam.paid == "true";
-        newTeam.agree_subscribe = newTeam.agree_subscribe == "true";
-        newTeam.agree_terms = newTeam.agree_terms == "true";
+        upload(req, res, function(err) {
+            if (err) {
+                console.log(err);
+                console.log('err');
+                // An error occurred when uploading
+                return
+            }
 
-        for (var i = 0; i < newTeam.member_name.length; i++) {
-            var newName = newTeam.member_name[i];
-            var newEmail = newTeam.member_email[i];
-            if (newName !== "" && newEmail !== "")
-                newTeam.team_member["member_" + i] = { "name": newName, "email": newEmail };
-        }
-        delete newTeam.member_name;
-        delete newTeam.member_email;
+            // update admin info
+            var sess = req.session
+            var adminInfo = {
+                "last_editor_id": sess.user,
+                "last_edit_time": new Date().toISOString()
+            };
 
-        Member.findOne({ acc: adminInfo.last_editor_id }, function(err, member) {
-            // adminInfo.last_editor_id = member._id;
-            console.log("adminInfo", adminInfo);
-            
-            // Team.findByIdAndUpdate(newTeam.id, { team_details: newTeam }, function(err, team) {
-            Team.findByIdAndUpdate(newTeam.id, { team_details: newTeam, admin_detail: adminInfo }, function(err, team) {
-                if (err) return console.error(err);
-                res.send(team);
+            // update team info
+            var newTeam = req.body;
+            newTeam.team_member = {};
+            newTeam.paid = newTeam.paid == "true";
+            newTeam.agree_subscribe = newTeam.agree_subscribe == "true";
+            newTeam.agree_terms = newTeam.agree_terms == "true";
+
+            for (var i = 0; i < newTeam.member_name.length; i++) {
+                var newName = newTeam.member_name[i];
+                var newEmail = newTeam.member_email[i];
+                if (newName !== "" && newEmail !== "")
+                    newTeam.team_member["member_" + i] = { "name": newName, "email": newEmail };
+            }
+            delete newTeam.member_name;
+            delete newTeam.member_email;
+
+            var doc = {};
+            if (req.file) {
+                var newPdf = { path: req.file.path, name: req.file.filename };
+                console.log(newPdf);
+                doc.pdf = newPdf;
+            }
+            if (newTeam) { doc.team_details = newTeam };
+            if (adminInfo) { doc.admin_detail = adminInfo };
+            console.log(doc);
+            // update DB
+            Member.findOne({ acc: adminInfo.last_editor_id }, function(err, member) {
+                Team.findByIdAndUpdate(newTeam.id, doc, function(err, team) {
+                    if (err) return console.error(err);
+                    sess.save();
+                    res.redirect("/reg_info");
+                });
             });
-
-        });
+        })
 
     });
 

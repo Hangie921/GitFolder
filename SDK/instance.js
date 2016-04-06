@@ -21,6 +21,7 @@ function initApp(config, dir_path) {
     app.set('view engine', config.server.view_engine);
     // app.use(express.static(__dirname + '/upload'));
     app.use(express.static(path.join(dir_path, "static")));
+    app.use("/upload",express.static(path.join(dir_path, "upload")));
     app.use(session({
         secret: 'keyboard cat',
         cookie: { maxAge: config.session.expires },

@@ -12,8 +12,6 @@ var teamSchema = new mongoose.Schema({
         mobile: String,
         agree_subscribe: Boolean,
         agree_terms: Boolean,
-        PDF_path: String,
-        PDF_name: String,
         team_member: Schema.Types.Mixed,
         reg_time: Date,
         paid: Boolean
@@ -21,6 +19,10 @@ var teamSchema = new mongoose.Schema({
     admin_detail: {
         last_editor_id: String,
         last_edit_time: Date
+    },
+    pdf: {
+        path: String,
+        name: String
     }
 }, { collection: 'application' });
 

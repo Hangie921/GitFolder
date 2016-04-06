@@ -19,13 +19,13 @@ var teamSchema = new mongoose.Schema({
         paid: Boolean
     },
     admin_detail: {
-        last_editor_id: ObjectId,
+        last_editor_id: String,
         last_edit_time: Date
     }
 }, { collection: 'application' });
 
 // 第三個參數可以強制指定collection不是複數
-var Team = mongoose.model('Application', teamSchema, 'application');
+var Team = mongoose.model('Application', teamSchema);
 
 
 exports.show = function show(callback) {

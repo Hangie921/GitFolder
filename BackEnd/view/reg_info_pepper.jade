@@ -35,7 +35,10 @@ block content
 				td 
 					a(href="#{info.PDF_path}") #{info.PDF_name}
 				td #{info.reg_time}
-				td #{info.paid}
+				if info.paid
+					td Yes
+				else
+					td No
 				if result.admin_detail.last_editor_id
 					td #{result.admin_detail.last_editor_id} : #{result.admin_detail.last_edit_time}
 				else

@@ -13,7 +13,7 @@ function route(app, mongoClient) {
 
         // count the views 
         views[pathname] = (views[pathname] || 0) + 1
-        console.log("index.js", views)
+        // console.log("index.js", views)
 
         next()
     })

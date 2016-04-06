@@ -2,6 +2,7 @@ var login = require('../module/login'),
     mongo_handler = require('../../SDK/mongo_handler'),
     log = require("../../SDK/log_handler");
 var Team = require('../module/team.js');
+var Member = require('../module/member.js');
 
 
 function route(app, mongoClient) {
@@ -9,7 +10,7 @@ function route(app, mongoClient) {
         // var temp = new Team();
         // temp.team_details.team_name = "M";
         // temp.save(function (err,status) {
-        // 	console.log(status);
+        //  console.log(status);
         // });
         // Team.find(function(err, teams) {
         Team.find({ _id: "56fb8b3ec10bafa51367313d" }, function(err, teams) {
@@ -82,7 +83,6 @@ function route(app, mongoClient) {
             "last_editor_id": sess.user,
             "last_edit_time": new Date().toISOString()
         };
-        console.log('put /reg_info/:id', adminInfo);
 
         // update team info
         var newTeam = req.body;
@@ -100,13 +100,17 @@ function route(app, mongoClient) {
         delete newTeam.member_name;
         delete newTeam.member_email;
 
-        Team.findByIdAndUpdate(newTeam.id, { team_details: newTeam , admin_detail:adminInfo}, function(err, team) {
+        Member.findOne({ acc: adminInfo.last_editor_id }, function(err, member) {
+            // adminInfo.last_editor_id = member._id;
+            console.log("adminInfo", adminInfo);
+            
+            // Team.findByIdAndUpdate(newTeam.id, { team_details: newTeam }, function(err, team) {
+            Team.findByIdAndUpdate(newTeam.id, { team_details: newTeam, admin_detail: adminInfo }, function(err, team) {
                 if (err) return console.error(err);
-                // console.log(team);
-                // console.log(JSON.stringify(team));
                 res.send(team);
-            })
-            // }
+            });
+
+        });
 
     });
 

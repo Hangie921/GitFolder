@@ -1,0 +1,148 @@
+[2016-04-06 14:14:12.732] [INFO] info - mongo connections closed
+[2016-04-06 14:18:06.472] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 14:18:06.476] [INFO] info - Express server listening on port 3000
+[2016-04-06 14:18:25.395] [INFO] info - /upload route accepted
+[2016-04-06 14:18:25.396] [INFO] info - Start uploading the file to server.
+[2016-04-06 14:18:25.436] [INFO] info - file uploaded.
+[2016-04-06 14:18:25.437] [INFO] info - file uploaded
+[2016-04-06 14:18:25.437] [INFO] info - Start uploading the user info.
+[2016-04-06 14:18:25.440] [INFO] info - Start to input members to the member_brief field
+[2016-04-06 14:18:25.463] [INFO] info - Start to insert to application
+[2016-04-06 14:18:25.527] [INFO] info - Connet to mongo successfully
+[2016-04-06 14:18:25.533] [INFO] info - Insert doc into 'application' collection!
+[2016-04-06 14:18:25.533] [INFO] info - Insert doc successfully
+[2016-04-06 14:18:25.534] [INFO] info - mongo connections closed
+[2016-04-06 16:02:59.021] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:02:59.025] [INFO] info - Express server listening on port 3000
+[2016-04-06 16:04:34.544] [INFO] info - /upload route accepted
+[2016-04-06 16:04:34.544] [INFO] info - Start uploading the file to server.
+[2016-04-06 16:04:34.607] [INFO] info - file uploaded.
+[2016-04-06 16:04:34.607] [INFO] info - file uploaded
+[2016-04-06 16:04:34.608] [INFO] info - Start uploading the user info.
+[2016-04-06 16:04:34.609] [INFO] info - Start to input members to the member_brief field
+[2016-04-06 16:04:34.633] [INFO] info - Start to insert to application
+[2016-04-06 16:04:34.690] [INFO] info - Connet to mongo successfully
+[2016-04-06 16:04:34.698] [INFO] info - Insert doc into 'application' collection!
+[2016-04-06 16:04:34.701] [INFO] info - Insert doc successfully
+[2016-04-06 16:04:34.702] [INFO] info - mongo connections closed
+[2016-04-06 16:05:11.509] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:05:11.515] [INFO] info - Express server listening on port 3000
+[2016-04-06 16:10:54.917] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:10:54.921] [INFO] info - Express server listening on port 3000
+[2016-04-06 16:11:09.748] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:11:09.752] [INFO] info - Express server listening on port 3000
+[2016-04-06 16:11:46.295] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:11:46.301] [INFO] info - Express server listening on port 3000
+[2016-04-06 16:12:14.791] [INFO] info - /upload route accepted
+[2016-04-06 16:12:14.792] [INFO] info - Start uploading the file to server.
+[2016-04-06 16:12:14.855] [INFO] info - file uploaded.
+[2016-04-06 16:12:14.855] [INFO] info - file uploaded
+[2016-04-06 16:12:14.856] [INFO] info - Start uploading the user info.
+[2016-04-06 16:12:14.858] [INFO] info - Start to input members to the member_brief field
+[2016-04-06 16:12:14.879] [INFO] info - Start to insert to application
+[2016-04-06 16:12:14.935] [INFO] info - Connet to mongo successfully
+[2016-04-06 16:12:14.955] [INFO] info - Insert doc into 'application' collection!
+[2016-04-06 16:12:14.955] [INFO] info - Insert doc successfully
+[2016-04-06 16:12:14.956] [INFO] info - mongo connections closed
+[2016-04-06 16:12:54.007] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:12:54.013] [INFO] info - Express server listening on port 3000
+[2016-04-06 16:13:11.007] [INFO] info - /upload route accepted
+[2016-04-06 16:13:11.007] [INFO] info - Start uploading the file to server.
+[2016-04-06 16:13:11.084] [INFO] info - file uploaded.
+[2016-04-06 16:13:11.085] [INFO] info - file uploaded
+[2016-04-06 16:13:11.085] [INFO] info - Start uploading the user info.
+[2016-04-06 16:13:11.087] [INFO] info - Start to input members to the member_brief field
+[2016-04-06 16:13:11.109] [INFO] info - Start to insert to application
+[2016-04-06 16:13:11.174] [INFO] info - Connet to mongo successfully
+[2016-04-06 16:13:11.179] [INFO] info - Insert doc into 'application' collection!
+[2016-04-06 16:13:11.179] [INFO] info - Insert doc successfully
+[2016-04-06 16:13:11.180] [INFO] info - mongo connections closed
+[2016-04-06 16:13:41.742] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:13:41.747] [INFO] info - Express server listening on port 3000
+[2016-04-06 16:13:53.962] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:13:53.967] [INFO] info - Express server listening on port 3000
+[2016-04-06 16:14:01.346] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 16:14:01.351] [INFO] info - Express server listening on port 3000
+[2016-04-06 17:12:37.529] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 17:12:37.533] [INFO] info - Express server listening on port 3000
+[2016-04-06 17:13:33.024] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 17:13:33.028] [INFO] info - Express server listening on port 3000
+[2016-04-06 17:13:52.724] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 17:13:52.728] [INFO] info - Express server listening on port 3000
+[2016-04-06 17:15:25.224] [INFO] info - /upload route accepted
+[2016-04-06 17:15:25.225] [INFO] info - Start uploading the file to server.
+[2016-04-06 17:15:25.308] [INFO] info - file uploaded.
+[2016-04-06 17:15:25.309] [INFO] info - file uploaded
+[2016-04-06 17:15:25.309] [INFO] info - Start uploading the user info.
+[2016-04-06 17:15:25.310] [INFO] info - Start to input members to the member_brief field
+[2016-04-06 17:15:25.333] [INFO] info - Start to insert to application
+[2016-04-06 17:15:25.387] [INFO] info - Connet to mongo successfully
+[2016-04-06 17:15:25.393] [INFO] info - Insert doc into 'application' collection!
+[2016-04-06 17:15:25.393] [INFO] info - Insert doc successfully
+[2016-04-06 17:15:25.394] [INFO] info - mongo connections closed
+[2016-04-06 17:16:48.770] [INFO] info - /upload route accepted
+[2016-04-06 17:16:48.770] [INFO] info - Start uploading the file to server.
+[2016-04-06 17:17:17.855] [INFO] info - /upload route accepted
+[2016-04-06 17:17:17.855] [INFO] info - Start uploading the file to server.
+[2016-04-06 17:18:54.653] [INFO] info - /upload route accepted
+[2016-04-06 17:18:54.653] [INFO] info - Start uploading the file to server.
+[2016-04-06 17:20:26.451] [INFO] info - /upload route accepted
+[2016-04-06 17:20:26.452] [INFO] info - Start uploading the file to server.
+[2016-04-06 17:21:01.796] [INFO] info - /upload route accepted
+[2016-04-06 17:21:01.796] [INFO] info - Start uploading the file to server.
+[2016-04-06 17:21:02.905] [INFO] info - /upload route accepted
+[2016-04-06 17:21:02.905] [INFO] info - Start uploading the file to server.
+[2016-04-06 17:21:16.644] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 17:21:16.650] [INFO] info - Express server listening on port 3000
+[2016-04-06 17:21:24.549] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 17:21:24.554] [INFO] info - Express server listening on port 3000
+[2016-04-06 17:21:35.946] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 17:21:35.950] [INFO] info - Express server listening on port 3000
+[2016-04-06 17:21:37.722] [INFO] info - /upload route accepted
+[2016-04-06 17:21:37.722] [INFO] info - Start uploading the file to server.
+[2016-04-06 17:21:37.759] [INFO] info - file uploaded.
+[2016-04-06 17:21:37.759] [INFO] info - file uploaded
+[2016-04-06 17:21:37.759] [INFO] info - Start uploading the user info.
+[2016-04-06 17:21:37.761] [INFO] info - Start to input members to the member_brief field
+[2016-04-06 17:21:37.780] [INFO] info - Start to insert to application
+[2016-04-06 17:21:37.846] [INFO] info - Connet to mongo successfully
+[2016-04-06 17:21:37.851] [INFO] info - Insert doc into 'application' collection!
+[2016-04-06 17:21:37.851] [INFO] info - Insert doc successfully
+[2016-04-06 17:21:37.852] [INFO] info - mongo connections closed
+[2016-04-06 22:00:46.889] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:00:46.893] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:02:20.598] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:02:20.604] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:03:00.916] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:03:00.920] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:03:16.012] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:03:16.016] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:03:21.243] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:03:21.248] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:44:58.315] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:44:58.320] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:45:30.140] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:45:30.146] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:45:53.779] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:45:53.784] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:47:27.280] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:47:27.284] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:47:33.041] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:47:33.046] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:47:52.915] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:47:52.920] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:47:56.707] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:47:56.712] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:48:47.787] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:48:47.791] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:49:27.739] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:49:27.744] [INFO] info - Express server listening on port 3000
+[2016-04-06 22:50:52.807] [INFO] info - Mongo server listening on port 27017
+[2016-04-06 22:50:52.812] [INFO] info - Express server listening on port 3000
+[2016-04-12 11:34:18.462] [INFO] info - Mongo server listening on port 27017
+[2016-04-12 11:34:18.498] [INFO] info - Express server listening on port 2999
+[2016-04-12 11:34:18.542] [INFO] info - status: {"ok":1,"nModified":1,"n":1}
+[2016-05-23 15:23:04.834] [INFO] info - Mongo server listening on port 27017
+[2016-05-23 15:23:04.838] [INFO] info - Express server listening on port 3000
+[2016-05-23 15:24:40.324] [INFO] info - Mongo server listening on port 27017
+[2016-05-23 15:24:40.328] [INFO] info - Express server listening on port 3000

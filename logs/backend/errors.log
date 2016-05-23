@@ -1,0 +1,97 @@
+[2016-03-30 18:42:04.718] [ERROR] error - Unexpected error
+[2016-03-30 18:42:04.718] [ERROR] error - { [Error: ENOENT: no such file or directory, open 'upload/1459334524702.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'upload/1459334524702.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open 'upload/1459334524702.pdf'
+    at Error (native)
+[2016-03-30 18:43:25.510] [ERROR] error - Unexpected error
+[2016-03-30 18:43:25.510] [ERROR] error - { [Error: ENOENT: no such file or directory, open 'upload/1459334605481.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'upload/1459334605481.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open 'upload/1459334605481.pdf'
+    at Error (native)
+[2016-03-30 18:44:43.458] [ERROR] error - Unexpected error
+[2016-03-30 18:44:43.458] [ERROR] error - { [Error: ENOENT: no such file or directory, open '../upload/1459334683442.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '../upload/1459334683442.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open '../upload/1459334683442.pdf'
+    at Error (native)
+[2016-04-01 19:05:41.183] [ERROR] error - null
+[2016-04-05 12:53:20.680] [ERROR] error - error while inserting the info to application
+[2016-04-05 12:53:20.680] [ERROR] error - { [MongoError: key $type must not start with '$']
+  name: 'MongoError',
+  message: 'key $type must not start with \'$\'' }
+Error: key $type must not start with '$'
+    at Error (native)
+    at serializeInto (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:680:19)
+    at serializeObject (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:280:18)
+    at serializeInto (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:705:17)
+    at serializeObject (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:280:18)
+    at serializeInto (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:705:17)
+    at serializeObject (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:280:18)
+    at serializeInto (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:551:17)
+    at serializeObject (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:280:18)
+    at serializeInto (/Users/hangie921/Desktop/GitFolder/Jumpstart/node_modules/bson/lib/bson/parser/serializer.js:705:17)
+[2016-04-06 17:16:48.791] [ERROR] error - Unexpected error
+[2016-04-06 17:16:48.791] [ERROR] error - { [Error: ENOENT: no such file or directory, open 'upload1/1459934208776.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'upload1/1459934208776.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open 'upload1/1459934208776.pdf'
+    at Error (native)
+[2016-04-06 17:17:17.871] [ERROR] error - Unexpected error
+[2016-04-06 17:17:17.871] [ERROR] error - { [Error: ENOENT: no such file or directory, open 'upload1/1459934237861.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'upload1/1459934237861.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open 'upload1/1459934237861.pdf'
+    at Error (native)
+[2016-04-06 17:18:54.671] [ERROR] error - Unexpected error
+[2016-04-06 17:18:54.672] [ERROR] error - { [Error: ENOENT: no such file or directory, open 'upload1/1459934334658.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'upload1/1459934334658.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open 'upload1/1459934334658.pdf'
+    at Error (native)
+[2016-04-06 17:20:26.466] [ERROR] error - Unexpected error
+[2016-04-06 17:20:26.467] [ERROR] error - { [Error: ENOENT: no such file or directory, open 'upload1/1459934426456.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'upload1/1459934426456.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open 'upload1/1459934426456.pdf'
+    at Error (native)
+[2016-04-06 17:21:01.806] [ERROR] error - Unexpected error
+[2016-04-06 17:21:01.806] [ERROR] error - { [Error: ENOENT: no such file or directory, open 'upload1/1459934461798.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'upload1/1459934461798.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open 'upload1/1459934461798.pdf'
+    at Error (native)
+[2016-04-06 17:21:02.922] [ERROR] error - Unexpected error
+[2016-04-06 17:21:02.922] [ERROR] error - { [Error: ENOENT: no such file or directory, open 'upload1/1459934462908.pdf']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'upload1/1459934462908.pdf',
+  storageErrors: [] }
+Error: ENOENT: no such file or directory, open 'upload1/1459934462908.pdf'
+    at Error (native)
